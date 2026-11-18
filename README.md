@@ -1,5 +1,7 @@
 # AKG for UML behavioral models: ontology, code, and data
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24347428.svg)](https://doi.org/10.5281/zenodo.24347428)
+
 Replication package for the article
 
 > G. Kulkarni, C. S. Lamba, and S. Solanki, "Architectural Knowledge Graphs from UML Behavioural Models for Early Architectural Bottleneck and Smell Detection," *Discover Artificial Intelligence* (under review).
@@ -46,4 +48,4 @@ Code: Apache License 2.0 (`LICENSE`). Ontology, documentation, models, and resul
 
 ## Citation
 
-See `CITATION.cff`.
+Archived at Zenodo: https://doi.org/10.5281/zenodo.24347428. See `CITATION.cff`.

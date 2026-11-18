@@ -3,6 +3,7 @@ message: "If you use this software, ontology, or data, please cite it as below."
 title: "AKG for UML behavioral models: ontology, code, and data"
 version: 1.0.0
 date-released: 2026-11-18
+doi: 10.5281/zenodo.24347428
 license: Apache-2.0
 repository-code: "https://github.com/gurukraj/akg-uml-behavioral"
 authors:
