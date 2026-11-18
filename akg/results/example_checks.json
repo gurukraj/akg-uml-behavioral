@@ -1,0 +1,36 @@
+{
+ "Q4": {
+  "rows": [
+   [
+    "PaymentService",
+    "PaymentProcessing",
+    "PT2S",
+    "4"
+   ]
+  ],
+  "expected_rows": 1,
+  "ok": true
+ },
+ "Q6": {
+  "rows": [
+   [
+    "LargeLifecycle",
+    "16"
+   ]
+  ],
+  "expected_rows": 1,
+  "ok": true
+ },
+ "Q8": {
+  "rows": [
+   [
+    "OrderService",
+    "3",
+    "4",
+    "75.0"
+   ]
+  ],
+  "expected_rows": 1,
+  "ok": true
+ }
+}

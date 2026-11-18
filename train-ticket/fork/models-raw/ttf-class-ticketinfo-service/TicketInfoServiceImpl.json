@@ -1,0 +1,49 @@
+{
+    "name": "TicketInfoServiceImpl",
+    "key": "_00ab20a3064a4846a4545b58",
+    "type": "class",
+    "hasTypeVariable": false,
+    "position": null,
+    "modifiers": [],
+    "fields": {},
+    "methods": {
+        "queryForTravel": {
+            "name": "queryForTravel",
+            "key": "_fa5b0c363de34df4aacf538d",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "Travel",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "queryForStationId": {
+            "name": "queryForStationId",
+            "key": "_e23ea908d7f74b2e9cbad3f6",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "String",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        }
+    },
+    "file_path": "./TicketInfoServiceImpl",
+    "anonymous": false,
+    "auxclass": false,
+    "implements_": [
+        "_8ebe5b2c848f47efabe28bec"
+    ],
+    "extends_": [],
+    "definedInClassOrInterfaceTypeKey": null,
+    "innerDefinedClasses": {},
+    "innerDefinedInterfaces": {}
+}

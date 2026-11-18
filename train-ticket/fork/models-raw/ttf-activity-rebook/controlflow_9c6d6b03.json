@@ -1,0 +1,8 @@
+{
+    "name": "CancelOldOrder_to_FinalNode_Success",
+    "key": "_55db895906af480e9c6d6b03",
+    "type": "uml:ControlFlow",
+    "source": "_2512e855f70948539fc17b6e",
+    "target": "_5c98784e40b34475961e8cfd",
+    "guard": null
+}

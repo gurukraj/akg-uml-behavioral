@@ -1,0 +1,76 @@
+{
+    "name": "OrderOtherServiceImpl",
+    "key": "_5a57589d902140a4b9583111",
+    "type": "class",
+    "hasTypeVariable": false,
+    "position": null,
+    "modifiers": [],
+    "fields": {},
+    "methods": {
+        "findOrderById": {
+            "name": "findOrderById",
+            "key": "_c02f26913db94976b834e638",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "UUID",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "create": {
+            "name": "create",
+            "key": "_8a1c7047f4e04b77b3a005ef",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "Order",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "getAllOrders": {
+            "name": "getAllOrders",
+            "key": "_2e91340f13df4c05801d3f97",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "getSoldTickets": {
+            "name": "getSoldTickets",
+            "key": "_5f82fc60f813404194926ebe",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "Seat",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        }
+    },
+    "file_path": "./OrderOtherServiceImpl",
+    "anonymous": false,
+    "auxclass": false,
+    "implements_": [
+        "_b2e2e0260c6948aebf1ba092"
+    ],
+    "extends_": [],
+    "definedInClassOrInterfaceTypeKey": null,
+    "innerDefinedClasses": {},
+    "innerDefinedInterfaces": {}
+}

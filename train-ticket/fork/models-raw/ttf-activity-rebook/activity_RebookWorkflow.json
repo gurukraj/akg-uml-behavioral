@@ -1,0 +1,23 @@
+{
+    "name": "RebookWorkflow",
+    "key": "_0358a58316b741889141e089",
+    "type": "uml:Activity",
+    "description": "Ticket rebooking workflow (fork: includes station name conversion fault)",
+    "nodes": [
+        "_564d559e2bc546fdb15a4ddc",
+        "_eb2e85627011418598252637",
+        "_10e54eb6fc474f6aae56f7f4",
+        "_c6431bb1369f4168a46c0a32",
+        "_4e9bf7926c7848478ac243a9",
+        "_24cf43b23dae4280baf0f75b",
+        "_ac1ce763fa2f43b1b6ff7349",
+        "_4ded5cbaa284402788f8eb99",
+        "_27f9f5bd995b4ae7a4040a55",
+        "_2512e855f70948539fc17b6e",
+        "_788ed9e4b8be4330bb29d39e",
+        "_c5df986b63324ed5b274aa6a",
+        "_5c98784e40b34475961e8cfd",
+        "_d04533f3573444db9b7f14fe"
+    ],
+    "edges": 14
+}

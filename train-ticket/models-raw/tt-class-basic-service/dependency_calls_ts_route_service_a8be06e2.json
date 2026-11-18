@@ -1,0 +1,8 @@
+{
+    "name": "calls_ts_route_service",
+    "key": "_c1766b4c648840e9a8be06e2",
+    "type": "dependency",
+    "source": "tt-class-basic-service",
+    "target": "ts-route-service",
+    "endpoint": "GET /api/v1/routeservice/routes/{routeId}"
+}

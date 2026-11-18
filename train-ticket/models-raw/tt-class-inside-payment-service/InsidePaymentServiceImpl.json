@@ -1,0 +1,106 @@
+{
+    "name": "InsidePaymentServiceImpl",
+    "key": "_cb4a73d17130480fb699bc8b",
+    "type": "class",
+    "hasTypeVariable": false,
+    "position": null,
+    "modifiers": [],
+    "fields": {
+        "addMoneyRepository": {
+            "name": "addMoneyRepository",
+            "key": "_81010a39b5fa4cd39dfd64bf",
+            "type": "AddMoneyRepository",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "paymentRepository": {
+            "name": "paymentRepository",
+            "key": "_39621e6a32d148a6ad43ed1a",
+            "type": "PaymentRepository",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "restTemplate": {
+            "name": "restTemplate",
+            "key": "_fe6b475ac4614d0495a4adf2",
+            "type": "RestTemplate",
+            "visibility": "private",
+            "isStatic": false
+        }
+    },
+    "methods": {
+        "pay": {
+            "name": "pay",
+            "key": "_11b8d05b383d477ba874acc6",
+            "returnType": "Response",
+            "parameters": "PaymentInfo info, HttpHeaders headers",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "createAccount": {
+            "name": "createAccount",
+            "key": "_6ee70e926b2842a7a2082197",
+            "returnType": "Response",
+            "parameters": "AccountInfo info, HttpHeaders headers",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "addMoney": {
+            "name": "addMoney",
+            "key": "_5794f4eaa6334190987d127b",
+            "returnType": "Response",
+            "parameters": "String userId, String money, HttpHeaders headers",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "queryPayment": {
+            "name": "queryPayment",
+            "key": "_79c3319e20db4e628f71f877",
+            "returnType": "Response",
+            "parameters": "HttpHeaders headers",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "drawBack": {
+            "name": "drawBack",
+            "key": "_9119e9018d834424af15e871",
+            "returnType": "Response",
+            "parameters": "String userId, String money, HttpHeaders headers",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "payDifference": {
+            "name": "payDifference",
+            "key": "_62509cb9c35e43ccadeb89ee",
+            "returnType": "Response",
+            "parameters": "PaymentInfo info, HttpHeaders headers",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "setOrderStatus": {
+            "name": "setOrderStatus",
+            "key": "_1eb4e2ae2b234583af391496",
+            "returnType": "Response",
+            "parameters": "String tripId, String orderId, HttpHeaders headers",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        }
+    },
+    "file_path": "./InsidePaymentServiceImpl",
+    "anonymous": false,
+    "auxclass": false,
+    "implements_": [
+        "_d0001bcaf9e8482d9d9d4016"
+    ],
+    "extends_": [],
+    "definedInClassOrInterfaceTypeKey": null,
+    "innerDefinedClasses": {},
+    "innerDefinedInterfaces": {}
+}

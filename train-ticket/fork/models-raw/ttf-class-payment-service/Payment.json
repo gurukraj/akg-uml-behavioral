@@ -1,0 +1,47 @@
+{
+    "name": "Payment",
+    "key": "_64759e6a056742d9a97ff6a2",
+    "type": "class",
+    "hasTypeVariable": false,
+    "position": null,
+    "modifiers": [],
+    "fields": {
+        "id": {
+            "name": "id",
+            "key": "_4b4aa8614e504eb8be27f741",
+            "type": "String",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "orderId": {
+            "name": "orderId",
+            "key": "_b9833ccfc6194d79b45314f4",
+            "type": "String",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "userId": {
+            "name": "userId",
+            "key": "_731ab4eaa75e4ccd9094d5bd",
+            "type": "String",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "price": {
+            "name": "price",
+            "key": "_601d026846bf4665857ac8ad",
+            "type": "String",
+            "visibility": "private",
+            "isStatic": false
+        }
+    },
+    "methods": {},
+    "file_path": "./Payment",
+    "anonymous": false,
+    "auxclass": false,
+    "implements_": [],
+    "extends_": [],
+    "definedInClassOrInterfaceTypeKey": null,
+    "innerDefinedClasses": {},
+    "innerDefinedInterfaces": {}
+}

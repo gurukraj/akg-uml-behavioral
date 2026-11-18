@@ -1,0 +1,21 @@
+PREFIX akg: <https://w3id.org/akg/behavioral#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+ 
+SELECT ?startComponent ?endComponent ?chainDepth
+WHERE {
+  ?startMsg rdf:type akg:Message ;
+            akg:isSync true ;
+            akg:callChainDepth ?startDepth ;
+            akg:involves ?startComp .
+ 
+  ?endMsg rdf:type akg:Message ;
+          akg:isSync true ;
+          akg:callChainDepth ?endDepth ;
+          akg:causedBy+ ?startMsg ;
+          akg:involves ?endComp .
+   ?startComp akg:componentName ?startComponent .
+  ?endComp akg:componentName ?endComponent .
+   BIND((?endDepth - ?startDepth + 1) AS ?chainDepth) 
+  FILTER(?chainDepth > 3)
+}
+ORDER BY DESC(?chainDepth)

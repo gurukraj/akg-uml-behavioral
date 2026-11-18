@@ -1,0 +1,8 @@
+{
+    "name": "QueryTrainTypeInfo_to_GetSoldTickets",
+    "key": "_bd6a75d78c3e4c4fbec7f146",
+    "type": "uml:ControlFlow",
+    "source": "_00d732ccfa6f46a0880859f2",
+    "target": "_605cd46fa9c94f099042cbcb",
+    "guard": null
+}

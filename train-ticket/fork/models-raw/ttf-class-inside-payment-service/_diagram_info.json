@@ -1,0 +1,21 @@
+{
+    "classification": {
+        "categories": [
+            "Class"
+        ],
+        "primary": "Class",
+        "is_class_diagram": true,
+        "is_behavioral": false
+    },
+    "detectedTypes": {
+        "uml:Class": 4,
+        "uml:Dependency": 1
+    },
+    "elementCounts": {
+        "classes": 4,
+        "dependencies": 1
+    },
+    "totalElements": 5,
+    "diagram_id": "ttf-class-inside-payment-service",
+    "source_file": "ttf-class-inside-payment-service.json"
+}

@@ -1,0 +1,8 @@
+{
+    "name": "CheckPriceDifference_to_DecisionNode_PriceCompare",
+    "key": "_87421576a2f94f7a951b84e8",
+    "type": "uml:ControlFlow",
+    "source": "_24cf43b23dae4280baf0f75b",
+    "target": "_ac1ce763fa2f43b1b6ff7349",
+    "guard": null
+}

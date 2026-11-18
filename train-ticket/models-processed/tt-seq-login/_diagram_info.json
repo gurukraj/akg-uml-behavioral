@@ -1,0 +1,22 @@
+{
+    "classification": {
+        "categories": [
+            "Sequence"
+        ],
+        "primary": "Sequence",
+        "is_class_diagram": false,
+        "is_behavioral": true
+    },
+    "detectedTypes": {
+        "uml:Class": 3,
+        "uml:Interaction": 1,
+        "uml:MessageOccurrenceSpecification": 12
+    },
+    "elementCounts": {
+        "classes": 3,
+        "interactions": 1
+    },
+    "totalElements": 4,
+    "diagram_id": "tt-seq-login",
+    "source_file": "tt-seq-login.json"
+}

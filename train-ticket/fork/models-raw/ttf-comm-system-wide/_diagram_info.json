@@ -1,0 +1,23 @@
+{
+    "classification": {
+        "categories": [
+            "Communication"
+        ],
+        "primary": "Communication",
+        "is_class_diagram": false,
+        "is_behavioral": true
+    },
+    "detectedTypes": {
+        "uml:Collaboration": 1,
+        "uml:LifelineOrObject": 39,
+        "uml:Message": 83
+    },
+    "elementCounts": {
+        "collaborations": 1,
+        "objects": 39,
+        "messages": 83
+    },
+    "totalElements": 123,
+    "diagram_id": "ttf-comm-system-wide",
+    "source_file": "ttf-comm-system-wide.json"
+}

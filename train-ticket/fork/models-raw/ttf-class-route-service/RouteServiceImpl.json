@@ -1,0 +1,76 @@
+{
+    "name": "RouteServiceImpl",
+    "key": "_6eb74bad761d4429a5d26a50",
+    "type": "class",
+    "hasTypeVariable": false,
+    "position": null,
+    "modifiers": [],
+    "fields": {},
+    "methods": {
+        "createAndModify": {
+            "name": "createAndModify",
+            "key": "_afb738d20e3240fc939a7a85",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "RouteInfo",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "deleteRoute": {
+            "name": "deleteRoute",
+            "key": "_4ad740d3956741bf9d0cf2b6",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "String",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "getRouteById": {
+            "name": "getRouteById",
+            "key": "_d4a01d392d46405c94a258d3",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "String",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "getAllRoutes": {
+            "name": "getAllRoutes",
+            "key": "_bbc17b0335da4e96a194654b",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        }
+    },
+    "file_path": "./RouteServiceImpl",
+    "anonymous": false,
+    "auxclass": false,
+    "implements_": [
+        "_ddacbca713844cc4a91e8c1a"
+    ],
+    "extends_": [],
+    "definedInClassOrInterfaceTypeKey": null,
+    "innerDefinedClasses": {},
+    "innerDefinedInterfaces": {}
+}

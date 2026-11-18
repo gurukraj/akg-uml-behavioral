@@ -1,0 +1,8 @@
+{
+    "name": "getPriceByWeightAndRegion()",
+    "key": "_aca2b0f2803a4dc78398344e",
+    "type": "uml:Message",
+    "sender": "_f86a0667bcc24f37a65df7fa",
+    "receiver": "_e2ba39eb3c6d4c1db7ed7170",
+    "messageLabel": "getPriceByWeightAndRegion()"
+}

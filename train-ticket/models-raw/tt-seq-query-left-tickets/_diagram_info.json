@@ -1,0 +1,22 @@
+{
+    "classification": {
+        "categories": [
+            "Sequence"
+        ],
+        "primary": "Sequence",
+        "is_class_diagram": false,
+        "is_behavioral": true
+    },
+    "detectedTypes": {
+        "uml:Class": 9,
+        "uml:Interaction": 1,
+        "uml:MessageOccurrenceSpecification": 32
+    },
+    "elementCounts": {
+        "classes": 9,
+        "interactions": 1
+    },
+    "totalElements": 10,
+    "diagram_id": "tt-seq-query-left-tickets",
+    "source_file": "tt-seq-query-left-tickets.json"
+}

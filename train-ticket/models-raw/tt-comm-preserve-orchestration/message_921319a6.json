@@ -1,0 +1,8 @@
+{
+    "name": "4.1: getSoldTickets()",
+    "key": "_45abd90becc0487b921319a6",
+    "type": "uml:Message",
+    "sender": "_41fdbf9a94c142e79873bc3b",
+    "receiver": "_f32c1514a72f456d9b79cd10",
+    "messageLabel": "4.1: getSoldTickets()"
+}

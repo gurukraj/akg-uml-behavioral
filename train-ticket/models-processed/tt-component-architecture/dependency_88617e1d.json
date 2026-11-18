@@ -1,0 +1,7 @@
+{
+    "name": "ts-preserve-service_depends_on_ts-user-service",
+    "key": "_9fbcb1965bf24da488617e1d",
+    "type": "dependency",
+    "source": "_7b342fb86d1e4256a0f3061e",
+    "target": "_030a684bbf2b4479b48bd990"
+}

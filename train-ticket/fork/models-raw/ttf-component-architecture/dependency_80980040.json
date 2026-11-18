@@ -1,0 +1,7 @@
+{
+    "name": "ts-basic-service_depends_on_ts-station-service",
+    "key": "_015659014e49403880980040",
+    "type": "dependency",
+    "source": "_345dfecb7cb4471ab8788b9e",
+    "target": "_d3816f92dda243b3a7782cc5"
+}

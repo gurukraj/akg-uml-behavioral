@@ -1,0 +1,33 @@
+{
+    "name": "PreserveOtherController",
+    "key": "_6ea13806e7834367a34757c6",
+    "type": "class",
+    "hasTypeVariable": false,
+    "position": null,
+    "modifiers": [],
+    "fields": {},
+    "methods": {
+        "preserve": {
+            "name": "preserve",
+            "key": "_66e6939207724dfc8e9d1159",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "OrderTicketsInfo",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        }
+    },
+    "file_path": "./PreserveOtherController",
+    "anonymous": false,
+    "auxclass": false,
+    "implements_": [],
+    "extends_": [],
+    "definedInClassOrInterfaceTypeKey": null,
+    "innerDefinedClasses": {},
+    "innerDefinedInterfaces": {}
+}

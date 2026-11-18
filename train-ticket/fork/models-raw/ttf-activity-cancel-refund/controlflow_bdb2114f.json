@@ -1,0 +1,8 @@
+{
+    "name": "DecisionNode_Cancellable_to_CalculateRefund",
+    "key": "_8761aed8720e4522bdb2114f",
+    "type": "uml:ControlFlow",
+    "source": "_40962ad3645e43eb86bb1fcc",
+    "target": "_de86eb749a414e47a60a46a4",
+    "guard": "cancellable"
+}

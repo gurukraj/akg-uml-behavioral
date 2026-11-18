@@ -1,0 +1,72 @@
+{
+    "name": "PriceController",
+    "key": "_9a37276b5d4a4c338ad08210",
+    "type": "class",
+    "hasTypeVariable": false,
+    "position": null,
+    "modifiers": [],
+    "fields": {
+        "priceService": {
+            "name": "priceService",
+            "key": "_ee805bae5ab54618a6b686b9",
+            "type": "PriceService",
+            "visibility": "private",
+            "isStatic": false
+        }
+    },
+    "methods": {
+        "query": {
+            "name": "query",
+            "key": "_8956d9cb91f54821a298155c",
+            "returnType": "HttpEntity",
+            "parameters": "String routeId, String trainType, HttpHeaders headers",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "queryAll": {
+            "name": "queryAll",
+            "key": "_c46cfcb4acfb48f288aa5256",
+            "returnType": "HttpEntity",
+            "parameters": "HttpHeaders headers",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "create": {
+            "name": "create",
+            "key": "_f33d42b486dc4e72ae022dbc",
+            "returnType": "HttpEntity",
+            "parameters": "PriceConfig info, HttpHeaders headers",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "delete": {
+            "name": "delete",
+            "key": "_9ec47d57387243c68c919c01",
+            "returnType": "HttpEntity",
+            "parameters": "String pricesId, HttpHeaders headers",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "update": {
+            "name": "update",
+            "key": "_e67a2b7118004d53a392996a",
+            "returnType": "HttpEntity",
+            "parameters": "PriceConfig info, HttpHeaders headers",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        }
+    },
+    "file_path": "./PriceController",
+    "anonymous": false,
+    "auxclass": false,
+    "implements_": [],
+    "extends_": [],
+    "definedInClassOrInterfaceTypeKey": null,
+    "innerDefinedClasses": {},
+    "innerDefinedInterfaces": {}
+}

@@ -1,0 +1,59 @@
+{
+    "name": "TokenServiceImpl",
+    "key": "_cedfad73949c4ad2aa894ce9",
+    "type": "class",
+    "hasTypeVariable": false,
+    "position": null,
+    "modifiers": [],
+    "fields": {
+        "jwtProvider": {
+            "name": "jwtProvider",
+            "key": "_b411d4641af74d6bbdd0cbcc",
+            "type": "JWTProvider",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "userRepository": {
+            "name": "userRepository",
+            "key": "_771d35921d0a4976a194b446",
+            "type": "UserRepository",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "authenticationManager": {
+            "name": "authenticationManager",
+            "key": "_70168546264d41408186daf2",
+            "type": "AuthenticationManager",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "restTemplate": {
+            "name": "restTemplate",
+            "key": "_82e3104e87ff435b9ed9fdac",
+            "type": "RestTemplate",
+            "visibility": "private",
+            "isStatic": false
+        }
+    },
+    "methods": {
+        "getToken": {
+            "name": "getToken",
+            "key": "_0ea7ea0054914a89ad84f109",
+            "returnType": "Response",
+            "parameters": "BasicAuthDto dto, HttpHeaders headers",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        }
+    },
+    "file_path": "./TokenServiceImpl",
+    "anonymous": false,
+    "auxclass": false,
+    "implements_": [
+        "_ec2304c3a2bb484bb65b8e6c"
+    ],
+    "extends_": [],
+    "definedInClassOrInterfaceTypeKey": null,
+    "innerDefinedClasses": {},
+    "innerDefinedInterfaces": {}
+}

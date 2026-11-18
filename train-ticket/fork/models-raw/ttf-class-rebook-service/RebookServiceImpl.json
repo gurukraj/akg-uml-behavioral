@@ -1,0 +1,119 @@
+{
+    "name": "RebookServiceImpl",
+    "key": "_57eab7aa230c43168f21b52c",
+    "type": "class",
+    "hasTypeVariable": false,
+    "position": null,
+    "modifiers": [],
+    "fields": {},
+    "methods": {
+        "rebook": {
+            "name": "rebook",
+            "key": "_a0e610c93f964f8dbe455370",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "RebookInfo",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "payDifference": {
+            "name": "payDifference",
+            "key": "_54d1d13b46de4a179340d99b",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "RebookInfo",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "getOrderByIdFromOrder": {
+            "name": "getOrderByIdFromOrder",
+            "key": "_94ee25ba14234064afaa3771",
+            "returnType": "Order",
+            "parameters": [
+                [
+                    "String",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "getOrderByIdFromOrderOther": {
+            "name": "getOrderByIdFromOrderOther",
+            "key": "_0c34b4cb3b824ac0a44ed261",
+            "returnType": "Order",
+            "parameters": [
+                [
+                    "String",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "queryForStationName": {
+            "name": "queryForStationName",
+            "key": "_638d55783a884da594a15fb0",
+            "returnType": "String",
+            "parameters": [
+                [
+                    "String",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "getTripAllDetailInfo": {
+            "name": "getTripAllDetailInfo",
+            "key": "_c30b43e839bc42b0a1be15a0",
+            "returnType": "TripAllDetail",
+            "parameters": [
+                [
+                    "TripAllDetailInfo",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "distributeSeat": {
+            "name": "distributeSeat",
+            "key": "_b3a6049347b440b3b234f29e",
+            "returnType": "Ticket",
+            "parameters": [
+                [
+                    "Seat",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        }
+    },
+    "file_path": "./RebookServiceImpl",
+    "anonymous": false,
+    "auxclass": false,
+    "implements_": [
+        "_bff71f315a154e4ea481931c"
+    ],
+    "extends_": [],
+    "definedInClassOrInterfaceTypeKey": null,
+    "innerDefinedClasses": {},
+    "innerDefinedInterfaces": {}
+}

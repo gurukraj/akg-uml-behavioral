@@ -1,0 +1,103 @@
+{
+    "name": "NotifyInfo",
+    "key": "_96a110f28f3c4c93b62ced45",
+    "type": "class",
+    "hasTypeVariable": false,
+    "position": null,
+    "modifiers": [],
+    "fields": {
+        "id": {
+            "name": "id",
+            "key": "_903e6f1f485b458eae051a1b",
+            "type": "UUID",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "sendStatus": {
+            "name": "sendStatus",
+            "key": "_148d071bf2664c8ebdd88f10",
+            "type": "boolean",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "email": {
+            "name": "email",
+            "key": "_0eeabbcfd25e4212b20feb88",
+            "type": "String",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "orderNumber": {
+            "name": "orderNumber",
+            "key": "_8c73ecffd1e1400abab0f0fc",
+            "type": "String",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "username": {
+            "name": "username",
+            "key": "_c0a31326f41947c4bc1e24a2",
+            "type": "String",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "startingPlace": {
+            "name": "startingPlace",
+            "key": "_403aa1cec4a04edf817b1bde",
+            "type": "String",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "endPlace": {
+            "name": "endPlace",
+            "key": "_5c734b07ef8f497b88f52ccb",
+            "type": "String",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "startingTime": {
+            "name": "startingTime",
+            "key": "_0ffdaf760d844dc5b71b4a6e",
+            "type": "String",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "date": {
+            "name": "date",
+            "key": "_ccee2375f37f48e094c9c72c",
+            "type": "String",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "seatClass": {
+            "name": "seatClass",
+            "key": "_16109c693c6a42d8b23580ed",
+            "type": "String",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "seatNumber": {
+            "name": "seatNumber",
+            "key": "_8a32080a72e348a3a496a901",
+            "type": "String",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "price": {
+            "name": "price",
+            "key": "_247626a7a2ec42ecbdd511d6",
+            "type": "String",
+            "visibility": "private",
+            "isStatic": false
+        }
+    },
+    "methods": {},
+    "file_path": "./NotifyInfo",
+    "anonymous": false,
+    "auxclass": false,
+    "implements_": [],
+    "extends_": [],
+    "definedInClassOrInterfaceTypeKey": null,
+    "innerDefinedClasses": {},
+    "innerDefinedInterfaces": {}
+}

@@ -1,0 +1,7 @@
+{
+    "name": "PaymentController_uses_PaymentServiceImpl",
+    "key": "_d76f8e5637734a87be9bb3f7",
+    "type": "dependency",
+    "source": "_36d1514b025f45cf96f37f06",
+    "target": "_269a0dffacc64c43b064ae48"
+}

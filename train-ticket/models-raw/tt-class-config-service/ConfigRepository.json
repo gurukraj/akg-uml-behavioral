@@ -1,0 +1,46 @@
+{
+    "name": "ConfigRepository",
+    "key": "_ce28b077873b4e399ab795f9",
+    "type": "interface",
+    "hasTypeVariable": false,
+    "position": null,
+    "modifiers": [],
+    "fields": {},
+    "methods": {
+        "findByName": {
+            "name": "findByName",
+            "key": "_2a8a54f7d66d473cbf1e012a",
+            "returnType": "Config",
+            "parameters": "String name",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": true
+        },
+        "findAll": {
+            "name": "findAll",
+            "key": "_03edcfcddf4847cfaa4858f2",
+            "returnType": "List<Config>",
+            "parameters": "",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": true
+        },
+        "deleteByName": {
+            "name": "deleteByName",
+            "key": "_10f7f5068d134f4f8affccc7",
+            "returnType": "void",
+            "parameters": "String name",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": true
+        }
+    },
+    "file_path": "./ConfigRepository",
+    "anonymous": false,
+    "auxclass": false,
+    "implements_": [],
+    "extends_": [],
+    "definedInClassOrInterfaceTypeKey": null,
+    "innerDefinedClasses": {},
+    "innerDefinedInterfaces": {}
+}

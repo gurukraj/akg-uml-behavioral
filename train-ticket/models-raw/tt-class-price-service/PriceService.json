@@ -1,0 +1,64 @@
+{
+    "name": "PriceService",
+    "key": "_ed656923b3154645a2163ce2",
+    "type": "interface",
+    "hasTypeVariable": false,
+    "position": null,
+    "modifiers": [],
+    "fields": {},
+    "methods": {
+        "createNewPriceConfig": {
+            "name": "createNewPriceConfig",
+            "key": "_9d4645446d194b348167e1fd",
+            "returnType": "Response",
+            "parameters": "PriceConfig priceConfig, HttpHeaders headers",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": true
+        },
+        "findByRouteIdAndTrainType": {
+            "name": "findByRouteIdAndTrainType",
+            "key": "_1349c4b98dfb4e82842fa666",
+            "returnType": "Response",
+            "parameters": "String routeId, String trainType, HttpHeaders headers",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": true
+        },
+        "findAllPriceConfig": {
+            "name": "findAllPriceConfig",
+            "key": "_3c2bbcb052b34a75ac43d39c",
+            "returnType": "Response",
+            "parameters": "HttpHeaders headers",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": true
+        },
+        "deletePriceConfig": {
+            "name": "deletePriceConfig",
+            "key": "_585795a3bd634ce5a0e2a2a4",
+            "returnType": "Response",
+            "parameters": "String pcId, HttpHeaders headers",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": true
+        },
+        "updatePriceConfig": {
+            "name": "updatePriceConfig",
+            "key": "_b76794fd2fdb4f6ba50c4756",
+            "returnType": "Response",
+            "parameters": "PriceConfig c, HttpHeaders headers",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": true
+        }
+    },
+    "file_path": "./PriceService",
+    "anonymous": false,
+    "auxclass": false,
+    "implements_": [],
+    "extends_": [],
+    "definedInClassOrInterfaceTypeKey": null,
+    "innerDefinedClasses": {},
+    "innerDefinedInterfaces": {}
+}

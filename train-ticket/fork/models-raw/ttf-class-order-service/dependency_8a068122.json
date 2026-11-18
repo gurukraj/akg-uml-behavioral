@@ -1,0 +1,7 @@
+{
+    "name": "OrderServiceImpl_uses_OrderRepository",
+    "key": "_25408e730db54cef8a068122",
+    "type": "dependency",
+    "source": "_4d8cf6d88bd949a7b6e7bd03",
+    "target": "_f64adfabc74f48f686712548"
+}

@@ -1,0 +1,7 @@
+{
+    "name": "ConfigController_uses_ConfigServiceImpl",
+    "key": "_4999f4fc8edc490099dd31f9",
+    "type": "dependency",
+    "source": "_7abbd4f440bb45ea9802fad0",
+    "target": "_31e24f82b7be43218c01c850"
+}

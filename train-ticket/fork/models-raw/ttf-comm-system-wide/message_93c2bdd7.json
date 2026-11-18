@@ -1,0 +1,8 @@
+{
+    "name": "createFoodOrder()",
+    "key": "_92fe9c7f4392410e93c2bdd7",
+    "type": "uml:Message",
+    "sender": "_d9d5a5caa3984328ae337519",
+    "receiver": "_43323138be014533b25387fa",
+    "messageLabel": "createFoodOrder()"
+}

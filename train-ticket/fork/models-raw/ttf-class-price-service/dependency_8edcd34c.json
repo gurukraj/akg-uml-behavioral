@@ -1,0 +1,7 @@
+{
+    "name": "PriceServiceImpl_uses_PriceConfigRepository",
+    "key": "_5a522e979d7541e68edcd34c",
+    "type": "dependency",
+    "source": "_e632894634f34faa9cad2fd9",
+    "target": "_b7636f691ef042d8bd4aefde"
+}

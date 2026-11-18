@@ -1,0 +1,8 @@
+{
+    "name": "DecisionNode_PaymentSuccess_to_FinalNode_PaymentFail",
+    "key": "_454bfb2766ad48d0859b196a",
+    "type": "uml:ControlFlow",
+    "source": "_1ba6a6fdba224ae0aabab31f",
+    "target": "_81643e93d2ef44329db1bf65",
+    "guard": "fail"
+}

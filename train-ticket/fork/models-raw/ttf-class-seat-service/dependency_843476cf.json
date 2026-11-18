@@ -1,0 +1,7 @@
+{
+    "name": "SeatServiceImpl_uses_SeatService",
+    "key": "_f44e333f57a34e5c843476cf",
+    "type": "dependency",
+    "source": "_e17784d265b6440baff48a69",
+    "target": "_bafe566bda684bda92fdcd07"
+}

@@ -1,0 +1,7 @@
+{
+    "name": "ts-rebook-service_depends_on_ts-train-service",
+    "key": "_e7125ddd282d470989026c15",
+    "type": "dependency",
+    "source": "_146049ac4799472f8fbc9bcd",
+    "target": "_dc970c4a237f4c1f88fdf10b"
+}

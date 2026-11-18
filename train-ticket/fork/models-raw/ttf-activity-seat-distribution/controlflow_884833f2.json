@@ -1,0 +1,8 @@
+{
+    "name": "InitialNode_to_DetermineTrainType",
+    "key": "_e52cc700f8cd4379884833f2",
+    "type": "uml:ControlFlow",
+    "source": "_49b4953eb75041eca00c58e2",
+    "target": "_3d9dd7a8a7d64bbb967a2f21",
+    "guard": null
+}

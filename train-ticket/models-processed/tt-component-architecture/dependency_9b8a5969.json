@@ -1,0 +1,7 @@
+{
+    "name": "ts-basic-service_depends_on_ts-price-service",
+    "key": "_428288abe08546829b8a5969",
+    "type": "dependency",
+    "source": "_1363abce517147298b50e305",
+    "target": "_952d9a02b44f4811b02949dd"
+}

@@ -1,0 +1,9 @@
+{
+    "name": "TokenServiceImpl_uses_UserRepository",
+    "key": "_5952377a7a8a49d2ac9c8cad",
+    "type": "association",
+    "source": "_cedfad73949c4ad2aa894ce9",
+    "target": "_9c680073a714430689262360",
+    "sourceMultiplicity": "1",
+    "targetMultiplicity": "1"
+}

@@ -1,0 +1,7 @@
+{
+    "name": "StationServiceImpl_uses_StationRepository",
+    "key": "_6ed181545e6746dbbbee229b",
+    "type": "dependency",
+    "source": "_dc91dc8369734e908a30ab2d",
+    "target": "_deb6185c6990412cb55bcc6c"
+}

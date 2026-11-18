@@ -1,0 +1,230 @@
+{
+    "name": "EnterStation",
+    "key": "_d3f01f80929a4ae8bdb53c42",
+    "type": "interaction",
+    "lifelines": [
+        {
+            "name": "Client",
+            "key": "_e0034b72d1104eeebb6a84ff",
+            "represents": "_320aada3ca2040b39342a878",
+            "coveredBy": []
+        },
+        {
+            "name": "ts-execute-service",
+            "key": "_76f56bbd2ffd4217bb4acc3e",
+            "represents": "_c042da0db98b4b658badf2b1",
+            "coveredBy": []
+        },
+        {
+            "name": "ts-order-service",
+            "key": "_e1dff93bbfee42719229c4a5",
+            "represents": "_8ca46bf5a92547158a869864",
+            "coveredBy": []
+        },
+        {
+            "name": "ts-order-other-service",
+            "key": "_ba71a878f6024b9f8148638c",
+            "represents": "_b1efb41ed42247a7b24e1a44",
+            "coveredBy": []
+        }
+    ],
+    "messages": [
+        {
+            "name": "GET /execute/execute/{orderId}",
+            "key": "_6faec361e1bb44e7b6dc53e5",
+            "messageSort": "synchCall",
+            "sendEvent": "_5c62ca9381f8441ba4c5a546",
+            "receiveEvent": "_a39003a4099e4a9297458418",
+            "connector": null,
+            "signature": null
+        },
+        {
+            "name": "GET /order/{orderId}",
+            "key": "_9597851a1e774229848e3eb0",
+            "messageSort": "synchCall",
+            "sendEvent": "_5bcc9e8babbf4400a5ce0430",
+            "receiveEvent": "_1663301bc9434956baccc6e9",
+            "connector": null,
+            "signature": null
+        },
+        {
+            "name": "orderInfo",
+            "key": "_63300ebcfd494e3d89fb64ef",
+            "messageSort": "reply",
+            "sendEvent": "_2c3bd4891dd04658991ef27c",
+            "receiveEvent": "_cf5de1755f3c4f91829f7c09",
+            "connector": null,
+            "signature": null
+        },
+        {
+            "name": "GET /order/status/{orderId}/6",
+            "key": "_80c61b0ad2484e9ea7ce1839",
+            "messageSort": "synchCall",
+            "sendEvent": "_c244790c00804d59bcc1f147",
+            "receiveEvent": "_a0e06b5cc49f434b89ad3646",
+            "connector": null,
+            "signature": null
+        },
+        {
+            "name": "statusUpdateResult",
+            "key": "_d295bcd94e0247e8ad288bca",
+            "messageSort": "reply",
+            "sendEvent": "_0a0226ae720845c0adeabc77",
+            "receiveEvent": "_91ddcca586e44cbe980a0054",
+            "connector": null,
+            "signature": null
+        },
+        {
+            "name": "executeResult",
+            "key": "_2bed722a300d4442a7f8ff2d",
+            "messageSort": "reply",
+            "sendEvent": "_2dc8530c7f6a49eb88ec10e5",
+            "receiveEvent": "_e23d520b06ff45899b55aa96",
+            "connector": null,
+            "signature": null
+        }
+    ],
+    "fragments": [
+        {
+            "key": "_5c62ca9381f8441ba4c5a546",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_e0034b72d1104eeebb6a84ff",
+            "enclosingInteraction": "tt-seq-enter-station",
+            "message": "_6faec361e1bb44e7b6dc53e5",
+            "execution": null
+        },
+        {
+            "key": "_a39003a4099e4a9297458418",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_76f56bbd2ffd4217bb4acc3e",
+            "enclosingInteraction": "tt-seq-enter-station",
+            "message": "_6faec361e1bb44e7b6dc53e5",
+            "execution": null
+        },
+        {
+            "key": "_5bcc9e8babbf4400a5ce0430",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_76f56bbd2ffd4217bb4acc3e",
+            "enclosingInteraction": "tt-seq-enter-station",
+            "message": "_9597851a1e774229848e3eb0",
+            "execution": null
+        },
+        {
+            "key": "_1663301bc9434956baccc6e9",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_e1dff93bbfee42719229c4a5",
+            "enclosingInteraction": "tt-seq-enter-station",
+            "message": "_9597851a1e774229848e3eb0",
+            "execution": null
+        },
+        {
+            "key": "_2c3bd4891dd04658991ef27c",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_e1dff93bbfee42719229c4a5",
+            "enclosingInteraction": "tt-seq-enter-station",
+            "message": "_63300ebcfd494e3d89fb64ef",
+            "execution": null
+        },
+        {
+            "key": "_cf5de1755f3c4f91829f7c09",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_76f56bbd2ffd4217bb4acc3e",
+            "enclosingInteraction": "tt-seq-enter-station",
+            "message": "_63300ebcfd494e3d89fb64ef",
+            "execution": null
+        },
+        {
+            "key": "_c244790c00804d59bcc1f147",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_76f56bbd2ffd4217bb4acc3e",
+            "enclosingInteraction": "tt-seq-enter-station",
+            "message": "_80c61b0ad2484e9ea7ce1839",
+            "execution": null
+        },
+        {
+            "key": "_a0e06b5cc49f434b89ad3646",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_e1dff93bbfee42719229c4a5",
+            "enclosingInteraction": "tt-seq-enter-station",
+            "message": "_80c61b0ad2484e9ea7ce1839",
+            "execution": null
+        },
+        {
+            "key": "_0a0226ae720845c0adeabc77",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_e1dff93bbfee42719229c4a5",
+            "enclosingInteraction": "tt-seq-enter-station",
+            "message": "_d295bcd94e0247e8ad288bca",
+            "execution": null
+        },
+        {
+            "key": "_91ddcca586e44cbe980a0054",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_76f56bbd2ffd4217bb4acc3e",
+            "enclosingInteraction": "tt-seq-enter-station",
+            "message": "_d295bcd94e0247e8ad288bca",
+            "execution": null
+        },
+        {
+            "key": "_2dc8530c7f6a49eb88ec10e5",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_76f56bbd2ffd4217bb4acc3e",
+            "enclosingInteraction": "tt-seq-enter-station",
+            "message": "_2bed722a300d4442a7f8ff2d",
+            "execution": null
+        },
+        {
+            "key": "_e23d520b06ff45899b55aa96",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_e0034b72d1104eeebb6a84ff",
+            "enclosingInteraction": "tt-seq-enter-station",
+            "message": "_2bed722a300d4442a7f8ff2d",
+            "execution": null
+        },
+        {
+            "key": "_c88a3e7e3cf64e4188da4d6d",
+            "type": "uml:BehaviorExecutionSpecification",
+            "name": null,
+            "covered": "_76f56bbd2ffd4217bb4acc3e",
+            "enclosingInteraction": "EnterStation",
+            "message": null,
+            "execution": null,
+            "start": "_a39003a4099e4a9297458418",
+            "finish": "_2dc8530c7f6a49eb88ec10e5"
+        },
+        {
+            "key": "_9cade5a1b18c40e29b53e03f",
+            "type": "uml:BehaviorExecutionSpecification",
+            "name": null,
+            "covered": "_e1dff93bbfee42719229c4a5",
+            "enclosingInteraction": "EnterStation",
+            "message": null,
+            "execution": null,
+            "start": "_1663301bc9434956baccc6e9",
+            "finish": "_2c3bd4891dd04658991ef27c"
+        },
+        {
+            "key": "_1e348e0291ad4051871b9a68",
+            "type": "uml:BehaviorExecutionSpecification",
+            "name": null,
+            "covered": "_e1dff93bbfee42719229c4a5",
+            "enclosingInteraction": "EnterStation",
+            "message": null,
+            "execution": null,
+            "start": "_a0e06b5cc49f434b89ad3646",
+            "finish": "_0a0226ae720845c0adeabc77"
+        }
+    ]
+}

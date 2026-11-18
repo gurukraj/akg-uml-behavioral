@@ -1,0 +1,93 @@
+{
+    "name": "User",
+    "key": "_e5529f9de7d6464aa0c45b70",
+    "type": "class",
+    "hasTypeVariable": false,
+    "position": null,
+    "modifiers": [],
+    "fields": {
+        "userId": {
+            "name": "userId",
+            "key": "_c9bdeee20e894a98b6d66eb2",
+            "type": "String",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "username": {
+            "name": "username",
+            "key": "_6cb516f9b33247eb8775f5ba",
+            "type": "String",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "password": {
+            "name": "password",
+            "key": "_e1b726b4549e4b4ca3ba8527",
+            "type": "String",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "roles": {
+            "name": "roles",
+            "key": "_c239e29d3e1e47f4a5b07da3",
+            "type": "Set<String>",
+            "visibility": "private",
+            "isStatic": false
+        }
+    },
+    "methods": {
+        "getAuthorities": {
+            "name": "getAuthorities",
+            "key": "_07e9afd472cc48198fe14929",
+            "returnType": "Collection<GrantedAuthority>",
+            "parameters": "",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "isAccountNonExpired": {
+            "name": "isAccountNonExpired",
+            "key": "_d92e1fdada7e4334a4a370f4",
+            "returnType": "boolean",
+            "parameters": "",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "isAccountNonLocked": {
+            "name": "isAccountNonLocked",
+            "key": "_ba486d7823204b03a9f92870",
+            "returnType": "boolean",
+            "parameters": "",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "isCredentialsNonExpired": {
+            "name": "isCredentialsNonExpired",
+            "key": "_da8abd9b3f7b436d8fa5f2b3",
+            "returnType": "boolean",
+            "parameters": "",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "isEnabled": {
+            "name": "isEnabled",
+            "key": "_1b78122b0e314e3da5d66836",
+            "returnType": "boolean",
+            "parameters": "",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        }
+    },
+    "file_path": "./User",
+    "anonymous": false,
+    "auxclass": false,
+    "implements_": [],
+    "extends_": [],
+    "definedInClassOrInterfaceTypeKey": null,
+    "innerDefinedClasses": {},
+    "innerDefinedInterfaces": {}
+}

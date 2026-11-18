@@ -1,0 +1,8 @@
+{
+    "name": "JoinNode_ParallelComplete_to_SendNotification",
+    "key": "_1592de2b98fa427eb88dce01",
+    "type": "uml:ControlFlow",
+    "source": "_e8eb24e8e5d04449adb12160",
+    "target": "_8fa9717ec97844ab9ee506cd",
+    "guard": null
+}

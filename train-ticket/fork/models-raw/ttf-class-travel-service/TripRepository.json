@@ -1,0 +1,41 @@
+{
+    "name": "TripRepository",
+    "key": "_18432fc70f704a0ab329093d",
+    "type": "interface",
+    "hasTypeVariable": false,
+    "position": null,
+    "modifiers": [],
+    "fields": {},
+    "methods": {
+        "findByTripId": {
+            "name": "findByTripId",
+            "key": "_61c64d4b0b1149fca389b9cd",
+            "returnType": "Trip",
+            "parameters": [
+                [
+                    "TripId"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": true
+        },
+        "findAll": {
+            "name": "findAll",
+            "key": "_51eedefcf1ce4d148e69d436",
+            "returnType": "List<Trip>",
+            "parameters": [],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": true
+        }
+    },
+    "file_path": "./TripRepository",
+    "anonymous": false,
+    "auxclass": false,
+    "implements_": [],
+    "extends_": [],
+    "definedInClassOrInterfaceTypeKey": null,
+    "innerDefinedClasses": {},
+    "innerDefinedInterfaces": {}
+}

@@ -1,0 +1,132 @@
+{
+    "name": "AssuranceController",
+    "key": "_40e62459763f4c9386957d55",
+    "type": "class",
+    "hasTypeVariable": false,
+    "position": null,
+    "modifiers": [],
+    "fields": {},
+    "methods": {
+        "create": {
+            "name": "create",
+            "key": "_845c9fa484d44fbba43a5fca",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "int",
+                    "String",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "deleteById": {
+            "name": "deleteById",
+            "key": "_93caf2e8a58b4e1483bf6845",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "String",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "deleteByOrderId": {
+            "name": "deleteByOrderId",
+            "key": "_3ce913b353e749169b166427",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "String",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "modify": {
+            "name": "modify",
+            "key": "_8f149311d25d44ce94d49461",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "String",
+                    "String",
+                    "int",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "getById": {
+            "name": "getById",
+            "key": "_9e3399ad6a31471b8603870a",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "String",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "findAssuranceByOrderId": {
+            "name": "findAssuranceByOrderId",
+            "key": "_5120bffe932b4a18902cf24e",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "String",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "findAll": {
+            "name": "findAll",
+            "key": "_09c0987e949647d988788479",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "getAllAssuranceType": {
+            "name": "getAllAssuranceType",
+            "key": "_a66a67117dcb4be7a765e782",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        }
+    },
+    "file_path": "./AssuranceController",
+    "anonymous": false,
+    "auxclass": false,
+    "implements_": [],
+    "extends_": [],
+    "definedInClassOrInterfaceTypeKey": null,
+    "innerDefinedClasses": {},
+    "innerDefinedInterfaces": {}
+}

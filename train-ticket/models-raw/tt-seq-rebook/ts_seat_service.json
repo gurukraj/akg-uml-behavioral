@@ -1,0 +1,18 @@
+{
+    "name": "ts-seat-service",
+    "key": "_900d0ab2102c4e3589c352d3",
+    "type": "class",
+    "hasTypeVariable": false,
+    "position": null,
+    "modifiers": [],
+    "fields": {},
+    "methods": {},
+    "file_path": "./ts-seat-service",
+    "anonymous": false,
+    "auxclass": false,
+    "implements_": [],
+    "extends_": [],
+    "definedInClassOrInterfaceTypeKey": null,
+    "innerDefinedClasses": {},
+    "innerDefinedInterfaces": {}
+}

@@ -1,0 +1,14 @@
+{
+    "name": "BasicServiceAggregation",
+    "key": "_0ff683574a7846bab4df0f61",
+    "type": "uml:Collaboration",
+    "description": "Communication topology showing ts-basic-service aggregating data from 4 services",
+    "objects": [
+        "_5c5d546cf3bc4f5b93e2bde3",
+        "_436f31f298954e74846facd3",
+        "_9f4955382bc047c1bd6bbc55",
+        "_27ace91a89db4dfc89568ca2",
+        "_204e4609884f4fdd91d60b4c"
+    ],
+    "links": 4
+}

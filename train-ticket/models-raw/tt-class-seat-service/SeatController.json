@@ -1,0 +1,45 @@
+{
+    "name": "SeatController",
+    "key": "_ea3976d37ff14232bc16a45f",
+    "type": "class",
+    "hasTypeVariable": false,
+    "position": null,
+    "modifiers": [],
+    "fields": {
+        "seatService": {
+            "name": "seatService",
+            "key": "_6ee194b6c41d4f9fb02a5955",
+            "type": "SeatService",
+            "visibility": "private",
+            "isStatic": false
+        }
+    },
+    "methods": {
+        "create": {
+            "name": "create",
+            "key": "_1e23afa110fd4ceab62b148e",
+            "returnType": "HttpEntity",
+            "parameters": "Seat seatRequest, HttpHeaders headers",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "getLeftTicketOfInterval": {
+            "name": "getLeftTicketOfInterval",
+            "key": "_dcfc5de1ee034ca59e90b00c",
+            "returnType": "HttpEntity",
+            "parameters": "Seat seatRequest, HttpHeaders headers",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        }
+    },
+    "file_path": "./SeatController",
+    "anonymous": false,
+    "auxclass": false,
+    "implements_": [],
+    "extends_": [],
+    "definedInClassOrInterfaceTypeKey": null,
+    "innerDefinedClasses": {},
+    "innerDefinedInterfaces": {}
+}

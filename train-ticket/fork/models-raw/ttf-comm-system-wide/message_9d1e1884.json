@@ -1,0 +1,8 @@
+{
+    "name": "queryById()",
+    "key": "_985ef2f8a99c47689d1e1884",
+    "type": "uml:Message",
+    "sender": "_43323138be014533b25387fa",
+    "receiver": "_02ee3276a08944f997dcaa84",
+    "messageLabel": "queryById()"
+}

@@ -1,0 +1,9 @@
+{
+    "name": "TrainController_uses_TrainService",
+    "key": "_8ff3e711a09149d1b9061c7a",
+    "type": "association",
+    "source": "_23ff8c61d3a34f69be7b2e54",
+    "target": "_947d9e860acb4b18a28b74e9",
+    "sourceMultiplicity": "1",
+    "targetMultiplicity": "1"
+}

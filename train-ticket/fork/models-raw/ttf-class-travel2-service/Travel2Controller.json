@@ -1,0 +1,103 @@
+{
+    "name": "Travel2Controller",
+    "key": "_d6f5551c688d4404b31901ba",
+    "type": "class",
+    "hasTypeVariable": false,
+    "position": null,
+    "modifiers": [],
+    "fields": {},
+    "methods": {
+        "getTrainTypeByTripId": {
+            "name": "getTrainTypeByTripId",
+            "key": "_5133868402d745339a88b074",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "String",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "getRouteByTripId": {
+            "name": "getRouteByTripId",
+            "key": "_6d2b8ba489524c3dbbfd3e44",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "String",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "getTripsByRouteId": {
+            "name": "getTripsByRouteId",
+            "key": "_2febd6d6d91b438b915b18bc",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "List<String>",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "create": {
+            "name": "create",
+            "key": "_f04d8dd557bd43b4bb784285",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "TravelInfo",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "query": {
+            "name": "query",
+            "key": "_1e30588e08f44c85af34757c",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "TripInfo",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "getTripAllDetailInfo": {
+            "name": "getTripAllDetailInfo",
+            "key": "_12e96849ab394594b72b9e12",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "TripAllDetailInfo",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        }
+    },
+    "file_path": "./Travel2Controller",
+    "anonymous": false,
+    "auxclass": false,
+    "implements_": [],
+    "extends_": [],
+    "definedInClassOrInterfaceTypeKey": null,
+    "innerDefinedClasses": {},
+    "innerDefinedInterfaces": {}
+}

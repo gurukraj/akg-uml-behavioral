@@ -1,0 +1,18 @@
+{
+    "name": "ts-order-other-service",
+    "key": "_b9a835d6cae7486da1d151ae",
+    "type": "class",
+    "hasTypeVariable": false,
+    "position": null,
+    "modifiers": [],
+    "fields": {},
+    "methods": {},
+    "file_path": "./ts-order-other-service",
+    "anonymous": false,
+    "auxclass": false,
+    "implements_": [],
+    "extends_": [],
+    "definedInClassOrInterfaceTypeKey": null,
+    "innerDefinedClasses": {},
+    "innerDefinedInterfaces": {}
+}

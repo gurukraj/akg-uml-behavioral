@@ -1,0 +1,23 @@
+{
+    "classification": {
+        "categories": [
+            "Communication"
+        ],
+        "primary": "Communication",
+        "is_class_diagram": false,
+        "is_behavioral": true
+    },
+    "detectedTypes": {
+        "uml:Collaboration": 1,
+        "uml:LifelineOrObject": 12,
+        "uml:Message": 13
+    },
+    "elementCounts": {
+        "collaborations": 1,
+        "objects": 12,
+        "messages": 13
+    },
+    "totalElements": 26,
+    "diagram_id": "tt-comm-preserve-orchestration",
+    "source_file": "tt-comm-preserve-orchestration.json"
+}

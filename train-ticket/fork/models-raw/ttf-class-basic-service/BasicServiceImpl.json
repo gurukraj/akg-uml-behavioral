@@ -1,0 +1,77 @@
+{
+    "name": "BasicServiceImpl",
+    "key": "_58d053b5088a44baa7438f75",
+    "type": "class",
+    "hasTypeVariable": false,
+    "position": null,
+    "modifiers": [],
+    "fields": {},
+    "methods": {
+        "queryForTravel": {
+            "name": "queryForTravel",
+            "key": "_65a3f89861fe4d8482d998c6",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "Travel",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "queryForStationId": {
+            "name": "queryForStationId",
+            "key": "_a4ea55ff22554326bf015d52",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "String",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "queryTrainType": {
+            "name": "queryTrainType",
+            "key": "_e506a918c16c4d1a9686cc71",
+            "returnType": "TrainType",
+            "parameters": [
+                [
+                    "String",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "queryRoute": {
+            "name": "queryRoute",
+            "key": "_6365e1d0a933463d9c43341e",
+            "returnType": "Route",
+            "parameters": [
+                [
+                    "String",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        }
+    },
+    "file_path": "./BasicServiceImpl",
+    "anonymous": false,
+    "auxclass": false,
+    "implements_": [
+        "_1be8f6e937514b8aa4b819df"
+    ],
+    "extends_": [],
+    "definedInClassOrInterfaceTypeKey": null,
+    "innerDefinedClasses": {},
+    "innerDefinedInterfaces": {}
+}

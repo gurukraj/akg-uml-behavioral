@@ -1,0 +1,8 @@
+{
+    "name": "InitialNode_to_SearchTrips",
+    "key": "_901aef4f1ac34b40bacbf193",
+    "type": "uml:ControlFlow",
+    "source": "_6cec3760f34e4d9ba64579b9",
+    "target": "_672942190e8c416e903aae5a",
+    "guard": null
+}

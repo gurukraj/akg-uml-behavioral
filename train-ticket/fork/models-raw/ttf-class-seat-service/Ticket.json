@@ -1,0 +1,40 @@
+{
+    "name": "Ticket",
+    "key": "_f7f037a3d77f46c5ba03ce05",
+    "type": "class",
+    "hasTypeVariable": false,
+    "position": null,
+    "modifiers": [],
+    "fields": {
+        "seatNo": {
+            "name": "seatNo",
+            "key": "_b5265a6e4cf143398b3d1805",
+            "type": "int",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "startStation": {
+            "name": "startStation",
+            "key": "_bd7c181528034899a0ec25d2",
+            "type": "String",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "destStation": {
+            "name": "destStation",
+            "key": "_6d7e0d27fac94051b47d86ba",
+            "type": "String",
+            "visibility": "private",
+            "isStatic": false
+        }
+    },
+    "methods": {},
+    "file_path": "./Ticket",
+    "anonymous": false,
+    "auxclass": false,
+    "implements_": [],
+    "extends_": [],
+    "definedInClassOrInterfaceTypeKey": null,
+    "innerDefinedClasses": {},
+    "innerDefinedInterfaces": {}
+}

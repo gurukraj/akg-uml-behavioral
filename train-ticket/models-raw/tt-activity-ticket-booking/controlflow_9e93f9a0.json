@@ -1,0 +1,8 @@
+{
+    "name": "ForkNode_OptionalServices_to_AddAssurance",
+    "key": "_934f52fb5c064ebd9e93f9a0",
+    "type": "uml:ControlFlow",
+    "source": "_10d6214267914765b2338906",
+    "target": "_ea120bccb6a04219a964b880",
+    "guard": null
+}

@@ -1,0 +1,7 @@
+{
+    "name": "BasicServiceImpl_uses_BasicService",
+    "key": "_0392e1de8f9e4746bf7d69b3",
+    "type": "dependency",
+    "source": "_58d053b5088a44baa7438f75",
+    "target": "_1be8f6e937514b8aa4b819df"
+}

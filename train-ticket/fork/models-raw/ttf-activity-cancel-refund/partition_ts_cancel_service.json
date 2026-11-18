@@ -1,0 +1,11 @@
+{
+    "name": "ts-cancel-service",
+    "key": "_a04fcca0f0bd4312b263b68b",
+    "type": "uml:ActivityPartition",
+    "nodes": [
+        "_956f727ab6c44d8a9120b537",
+        "_ec59b2d831464f4ab50254db",
+        "_df1f3c33c9e44e0887542074",
+        "_de86eb749a414e47a60a46a4"
+    ]
+}

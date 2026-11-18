@@ -1,0 +1,7 @@
+{
+    "name": "ts-execute-service_depends_on_ts-order-service",
+    "key": "_b331c6337e4947aa944dde26",
+    "type": "dependency",
+    "source": "_755be40cacc142c6acfcb96d",
+    "target": "_59941a9d63334e70a025fbb1"
+}

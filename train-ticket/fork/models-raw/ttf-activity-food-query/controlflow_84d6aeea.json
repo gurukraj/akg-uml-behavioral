@@ -1,0 +1,8 @@
+{
+    "name": "CombineResults_to_FinalNode",
+    "key": "_db5d678968dd466c84d6aeea",
+    "type": "uml:ControlFlow",
+    "source": "_938d3c811b4e46bfa7615cea",
+    "target": "_595a178532f149ad87b47a84",
+    "guard": null
+}

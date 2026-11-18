@@ -1,0 +1,28 @@
+{
+    "name": "PreserveService",
+    "key": "_d9f4687e16114cf7adfd77d0",
+    "type": "interface",
+    "hasTypeVariable": false,
+    "position": null,
+    "modifiers": [],
+    "fields": {},
+    "methods": {
+        "preserve": {
+            "name": "preserve",
+            "key": "_6ef40fb776b449e9a846c458",
+            "returnType": "Response",
+            "parameters": "OrderTicketsInfo oti, HttpHeaders headers",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": true
+        }
+    },
+    "file_path": "./PreserveService",
+    "anonymous": false,
+    "auxclass": false,
+    "implements_": [],
+    "extends_": [],
+    "definedInClassOrInterfaceTypeKey": null,
+    "innerDefinedClasses": {},
+    "innerDefinedInterfaces": {}
+}

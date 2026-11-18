@@ -1,0 +1,47 @@
+{
+    "name": "TicketInfoController",
+    "key": "_9c9f3ae56d7f41a5b0718a77",
+    "type": "class",
+    "hasTypeVariable": false,
+    "position": null,
+    "modifiers": [],
+    "fields": {},
+    "methods": {
+        "queryForTravel": {
+            "name": "queryForTravel",
+            "key": "_b4b0dd662bc0441989c100c9",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "Travel",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "queryForStationId": {
+            "name": "queryForStationId",
+            "key": "_6083cda9c30f43db9eed7beb",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "String",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        }
+    },
+    "file_path": "./TicketInfoController",
+    "anonymous": false,
+    "auxclass": false,
+    "implements_": [],
+    "extends_": [],
+    "definedInClassOrInterfaceTypeKey": null,
+    "innerDefinedClasses": {},
+    "innerDefinedInterfaces": {}
+}

@@ -1,0 +1,8 @@
+{
+    "name": "calls_ts_train_service",
+    "key": "_b3cff2fe36a246cea12b316d",
+    "type": "dependency",
+    "source": "tt-class-travel-service",
+    "target": "ts-train-service",
+    "endpoint": "GET /api/v1/trainservice/trains/byName/{trainTypeName}"
+}

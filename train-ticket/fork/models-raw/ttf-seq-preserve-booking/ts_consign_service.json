@@ -1,0 +1,18 @@
+{
+    "name": "ts-consign-service",
+    "key": "_5b95b255ce004f31aababba6",
+    "type": "class",
+    "hasTypeVariable": false,
+    "position": null,
+    "modifiers": [],
+    "fields": {},
+    "methods": {},
+    "file_path": "./ts-consign-service",
+    "anonymous": false,
+    "auxclass": false,
+    "implements_": [],
+    "extends_": [],
+    "definedInClassOrInterfaceTypeKey": null,
+    "innerDefinedClasses": {},
+    "innerDefinedInterfaces": {}
+}

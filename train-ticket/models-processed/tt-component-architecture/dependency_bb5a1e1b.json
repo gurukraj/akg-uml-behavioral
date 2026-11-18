@@ -1,0 +1,7 @@
+{
+    "name": "ts-seat-service_depends_on_ts-order-other-service",
+    "key": "_728de6adc5964281bb5a1e1b",
+    "type": "dependency",
+    "source": "_54be9461f3534393adc17d54",
+    "target": "_885d5571a135470faf72aaeb"
+}

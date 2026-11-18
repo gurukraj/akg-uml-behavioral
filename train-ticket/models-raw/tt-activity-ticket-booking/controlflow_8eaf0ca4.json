@@ -1,0 +1,8 @@
+{
+    "name": "DecisionNode_SecurityPass_to_FinalNode_SecurityFail",
+    "key": "_07a56af61f4a46938eaf0ca4",
+    "type": "uml:ControlFlow",
+    "source": "_940ef42a0a3e45c2908c01a7",
+    "target": "_26caf2652e0a4b558482352b",
+    "guard": "fail"
+}

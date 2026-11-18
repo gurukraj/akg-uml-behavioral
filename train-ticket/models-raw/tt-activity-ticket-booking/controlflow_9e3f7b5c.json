@@ -1,0 +1,8 @@
+{
+    "name": "DecisionNode_TripsFound_to_FinalNode_NoTrips",
+    "key": "_54b27a157aa9490a9e3f7b5c",
+    "type": "uml:ControlFlow",
+    "source": "_e1134a818b994b4b9040fa42",
+    "target": "_2fe4bc6737d74fbd93fb169e",
+    "guard": "no trips"
+}

@@ -1,0 +1,7 @@
+{
+    "name": "RoutePlanController_uses_RoutePlanServiceImpl",
+    "key": "_239b4243867f40a885bce87b",
+    "type": "dependency",
+    "source": "_b67cf1c3d7304d89811f938e",
+    "target": "_0680ffd0b6f24d81b5e563b2"
+}

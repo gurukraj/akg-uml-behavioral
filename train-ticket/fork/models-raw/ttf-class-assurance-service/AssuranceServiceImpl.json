@@ -1,0 +1,134 @@
+{
+    "name": "AssuranceServiceImpl",
+    "key": "_ad17d370904547bd8afbc1c6",
+    "type": "class",
+    "hasTypeVariable": false,
+    "position": null,
+    "modifiers": [],
+    "fields": {},
+    "methods": {
+        "create": {
+            "name": "create",
+            "key": "_3c36c7ab4df24fdd8900884e",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "int",
+                    "String",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "deleteById": {
+            "name": "deleteById",
+            "key": "_402343c6c66241a5b873a61b",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "UUID",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "deleteByOrderId": {
+            "name": "deleteByOrderId",
+            "key": "_11a8a94faf88464eaf326089",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "UUID",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "modify": {
+            "name": "modify",
+            "key": "_3d9e7ca4f8de453e9c784d54",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "UUID",
+                    "UUID",
+                    "int",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "getById": {
+            "name": "getById",
+            "key": "_7558c21e811e4d7e9d4f5ced",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "UUID",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "findAssuranceByOrderId": {
+            "name": "findAssuranceByOrderId",
+            "key": "_04e2c75042a34e65b61d33c1",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "UUID",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "findAll": {
+            "name": "findAll",
+            "key": "_a7811c177fba41f5924d81c8",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "getAllAssuranceType": {
+            "name": "getAllAssuranceType",
+            "key": "_cdb40b3e54d04884813242e2",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        }
+    },
+    "file_path": "./AssuranceServiceImpl",
+    "anonymous": false,
+    "auxclass": false,
+    "implements_": [
+        "_a3a438d21a7e49b4b3ad8ae3"
+    ],
+    "extends_": [],
+    "definedInClassOrInterfaceTypeKey": null,
+    "innerDefinedClasses": {},
+    "innerDefinedInterfaces": {}
+}

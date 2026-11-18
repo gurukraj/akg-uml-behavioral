@@ -1,0 +1,90 @@
+{
+    "name": "SecurityServiceImpl",
+    "key": "_e07a2aa295f84bbeb3b9a784",
+    "type": "class",
+    "hasTypeVariable": false,
+    "position": null,
+    "modifiers": [],
+    "fields": {},
+    "methods": {
+        "findAllSecurityConfig": {
+            "name": "findAllSecurityConfig",
+            "key": "_f9edfb48c0d84882a3a61290",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "addNewSecurityConfig": {
+            "name": "addNewSecurityConfig",
+            "key": "_942f068e187f4fbe972c420c",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "SecurityConfig",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "modifySecurityConfig": {
+            "name": "modifySecurityConfig",
+            "key": "_72a39d19677944c8bf76e980",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "SecurityConfig",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "deleteSecurityConfig": {
+            "name": "deleteSecurityConfig",
+            "key": "_39bc911d75cb445aa6c7e684",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "String",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "check": {
+            "name": "check",
+            "key": "_a11db432756540829d2475bd",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "String",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        }
+    },
+    "file_path": "./SecurityServiceImpl",
+    "anonymous": false,
+    "auxclass": false,
+    "implements_": [
+        "_0fe79246b36046eca4ea6397"
+    ],
+    "extends_": [],
+    "definedInClassOrInterfaceTypeKey": null,
+    "innerDefinedClasses": {},
+    "innerDefinedInterfaces": {}
+}

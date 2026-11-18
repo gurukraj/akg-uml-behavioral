@@ -1,0 +1,7 @@
+{
+    "name": "ts-preserve-service_depends_on_ts-contacts-service",
+    "key": "_b872eb6e272246b2bf84a576",
+    "type": "dependency",
+    "source": "_c7757c4dc8124dfb8243ddd0",
+    "target": "_e528d67600984ca2b81a5b1d"
+}

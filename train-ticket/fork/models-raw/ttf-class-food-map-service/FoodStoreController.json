@@ -1,0 +1,60 @@
+{
+    "name": "FoodStoreController",
+    "key": "_b74bc3c557304c08916982a1",
+    "type": "class",
+    "hasTypeVariable": false,
+    "position": null,
+    "modifiers": [],
+    "fields": {},
+    "methods": {
+        "getAllFoodStores": {
+            "name": "getAllFoodStores",
+            "key": "_3c98f62f4f2144b3b3707ad0",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "getFoodStoresByStationId": {
+            "name": "getFoodStoresByStationId",
+            "key": "_f6b09ba23d1b465ab7281cc5",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "String",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "getFoodStoresByStationIds": {
+            "name": "getFoodStoresByStationIds",
+            "key": "_51e84800702e494ebeef18c7",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "List<String>",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        }
+    },
+    "file_path": "./FoodStoreController",
+    "anonymous": false,
+    "auxclass": false,
+    "implements_": [],
+    "extends_": [],
+    "definedInClassOrInterfaceTypeKey": null,
+    "innerDefinedClasses": {},
+    "innerDefinedInterfaces": {}
+}

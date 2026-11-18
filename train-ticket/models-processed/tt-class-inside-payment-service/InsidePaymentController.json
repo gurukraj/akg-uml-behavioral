@@ -1,0 +1,99 @@
+{
+    "name": "InsidePaymentController",
+    "key": "_c044a4181f1640ac833997e9",
+    "type": "class",
+    "hasTypeVariable": false,
+    "position": null,
+    "modifiers": [],
+    "fields": {
+        "insidePaymentService": {
+            "name": "insidePaymentService",
+            "key": "_20e194af67d14fec85ffc2a4",
+            "type": "InsidePaymentService",
+            "visibility": "private",
+            "isStatic": false
+        }
+    },
+    "methods": {
+        "pay": {
+            "name": "pay",
+            "key": "_5b219742f8554f1eba554120",
+            "returnType": "HttpEntity",
+            "parameters": "PaymentInfo info, HttpHeaders headers",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "createAccount": {
+            "name": "createAccount",
+            "key": "_85e04fb572f24d0697218161",
+            "returnType": "HttpEntity",
+            "parameters": "AccountInfo info, HttpHeaders headers",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "addMoney": {
+            "name": "addMoney",
+            "key": "_0751bb4abae34a5fa8733c99",
+            "returnType": "HttpEntity",
+            "parameters": "String userId, String money, HttpHeaders headers",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "queryPayment": {
+            "name": "queryPayment",
+            "key": "_86fd292398694fae9e2ae08c",
+            "returnType": "HttpEntity",
+            "parameters": "HttpHeaders headers",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "queryAccount": {
+            "name": "queryAccount",
+            "key": "_85f809aa717c47ed84f83e73",
+            "returnType": "HttpEntity",
+            "parameters": "HttpHeaders headers",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "drawBack": {
+            "name": "drawBack",
+            "key": "_ac6d3e560ab540b2b9444786",
+            "returnType": "HttpEntity",
+            "parameters": "String userId, String money, HttpHeaders headers",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "payDifference": {
+            "name": "payDifference",
+            "key": "_4944e59fac9842db9796c274",
+            "returnType": "HttpEntity",
+            "parameters": "PaymentInfo info, HttpHeaders headers",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "queryAddMoney": {
+            "name": "queryAddMoney",
+            "key": "_0ee7bce680a24489b09a8970",
+            "returnType": "HttpEntity",
+            "parameters": "HttpHeaders headers",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        }
+    },
+    "file_path": "./InsidePaymentController",
+    "anonymous": false,
+    "auxclass": false,
+    "implements_": [],
+    "extends_": [],
+    "definedInClassOrInterfaceTypeKey": null,
+    "innerDefinedClasses": {},
+    "innerDefinedInterfaces": {}
+}

@@ -1,0 +1,8 @@
+{
+    "name": "orderCancelSuccess()",
+    "key": "_299d5038a2e74c418dd667f3",
+    "type": "uml:Message",
+    "sender": "_677504f8827d4c729343f1ac",
+    "receiver": "_efbb5fd5fc844b939a408119",
+    "messageLabel": "orderCancelSuccess()"
+}

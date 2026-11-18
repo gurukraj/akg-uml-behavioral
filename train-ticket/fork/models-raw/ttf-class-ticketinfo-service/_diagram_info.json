@@ -1,0 +1,23 @@
+{
+    "classification": {
+        "categories": [
+            "Class"
+        ],
+        "primary": "Class",
+        "is_class_diagram": true,
+        "is_behavioral": false
+    },
+    "detectedTypes": {
+        "uml:Class": 7,
+        "uml:Interface": 1,
+        "uml:Dependency": 2
+    },
+    "elementCounts": {
+        "classes": 7,
+        "interfaces": 1,
+        "dependencies": 2
+    },
+    "totalElements": 10,
+    "diagram_id": "ttf-class-ticketinfo-service",
+    "source_file": "ttf-class-ticketinfo-service.json"
+}

@@ -1,0 +1,149 @@
+{
+    "name": "CancelServiceImpl",
+    "key": "_b2e84015121a4cdfb2fe0c3e",
+    "type": "class",
+    "hasTypeVariable": false,
+    "position": null,
+    "modifiers": [],
+    "fields": {},
+    "methods": {
+        "cancelOrder": {
+            "name": "cancelOrder",
+            "key": "_147317c842db47068000d405",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "String",
+                    "String",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "calculateRefund": {
+            "name": "calculateRefund",
+            "key": "_479375a2d91a4bc3b35f2500",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "String",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "getOrderByIdFromOrder": {
+            "name": "getOrderByIdFromOrder",
+            "key": "_b8b2e4d1cc014b78b761cbd0",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "String",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "getOrderByIdFromOrderOther": {
+            "name": "getOrderByIdFromOrderOther",
+            "key": "_27312a37fe8a43bcb72a5bc6",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "String",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "cancelFromOrder": {
+            "name": "cancelFromOrder",
+            "key": "_e13d070ae83040f4a28f4957",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "Order",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "cancelFromOtherOrder": {
+            "name": "cancelFromOtherOrder",
+            "key": "_5d72ee0f75d9405e9730487c",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "Order",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "drawbackMoney": {
+            "name": "drawbackMoney",
+            "key": "_7e691af7d2e94450a07a697e",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "String",
+                    "String",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "getAccount": {
+            "name": "getAccount",
+            "key": "_9eac05a39a774c2baf834473",
+            "returnType": "User",
+            "parameters": [
+                [
+                    "String",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "sendEmail": {
+            "name": "sendEmail",
+            "key": "_ebb5c9f1b4664e94a8799412",
+            "returnType": "boolean",
+            "parameters": [
+                [
+                    "NotifyInfo",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        }
+    },
+    "file_path": "./CancelServiceImpl",
+    "anonymous": false,
+    "auxclass": false,
+    "implements_": [
+        "_9cad392414c0486c9401d570"
+    ],
+    "extends_": [],
+    "definedInClassOrInterfaceTypeKey": null,
+    "innerDefinedClasses": {},
+    "innerDefinedInterfaces": {}
+}

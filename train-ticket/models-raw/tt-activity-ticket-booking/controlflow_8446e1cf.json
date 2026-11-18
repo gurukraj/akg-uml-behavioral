@@ -1,0 +1,8 @@
+{
+    "name": "CreateOrder_to_ProcessPayment",
+    "key": "_ee9f1d065a814c648446e1cf",
+    "type": "uml:ControlFlow",
+    "source": "_eadfef27794441de85bff0a5",
+    "target": "_9efd4086cffd4178ac9de2b7",
+    "guard": null
+}

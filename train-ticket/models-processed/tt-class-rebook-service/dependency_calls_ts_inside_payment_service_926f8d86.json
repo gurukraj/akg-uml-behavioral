@@ -1,0 +1,8 @@
+{
+    "name": "calls_ts_inside_payment_service",
+    "key": "_2b1634dd7cd1451e926f8d86",
+    "type": "dependency",
+    "source": "tt-class-rebook-service",
+    "target": "ts-inside-payment-service",
+    "endpoint": "GET /api/v1/inside_pay_service/inside_payment/drawback/{userId}/{money}"
+}

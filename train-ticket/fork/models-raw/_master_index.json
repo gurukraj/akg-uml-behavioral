@@ -1,0 +1,405 @@
+{
+    "project": "TrainTicket-Fork Microservice Application",
+    "source": "trainticket-fork (forked from FudanSELab/train-ticket)",
+    "description": "UML dataset for architectural smell detection research. This fork contains induced faults including: ts-ticketinfo-service intermediary (extra hop), ts-food-map-service (service decomposition change), hardcoded service URLs (no service discovery), UUID vs String ID type mismatches, field name inconsistencies.",
+    "total_diagrams": 64,
+    "generation_method": "Automated extraction from source code analysis",
+    "fork_specific_services": [
+        "ts-ticketinfo-service",
+        "ts-food-map-service"
+    ],
+    "removed_from_original": [
+        "ts-gateway-service",
+        "ts-delivery-service",
+        "ts-food-delivery-service",
+        "ts-station-food-service",
+        "ts-train-food-service",
+        "ts-wait-order-service"
+    ],
+    "diagrams": [
+        {
+            "diagram_id": "ttf-class-auth-service",
+            "primary_type": "Class",
+            "is_behavioral": false,
+            "total_elements": 10
+        },
+        {
+            "diagram_id": "ttf-class-user-service",
+            "primary_type": "Class",
+            "is_behavioral": false,
+            "total_elements": 8
+        },
+        {
+            "diagram_id": "ttf-class-order-service",
+            "primary_type": "Class",
+            "is_behavioral": false,
+            "total_elements": 9
+        },
+        {
+            "diagram_id": "ttf-class-order-other-service",
+            "primary_type": "Class",
+            "is_behavioral": false,
+            "total_elements": 6
+        },
+        {
+            "diagram_id": "ttf-class-travel-service",
+            "primary_type": "Class",
+            "is_behavioral": false,
+            "total_elements": 12
+        },
+        {
+            "diagram_id": "ttf-class-travel2-service",
+            "primary_type": "Class",
+            "is_behavioral": false,
+            "total_elements": 4
+        },
+        {
+            "diagram_id": "ttf-class-ticketinfo-service",
+            "primary_type": "Class",
+            "is_behavioral": false,
+            "total_elements": 10
+        },
+        {
+            "diagram_id": "ttf-class-basic-service",
+            "primary_type": "Class",
+            "is_behavioral": false,
+            "total_elements": 7
+        },
+        {
+            "diagram_id": "ttf-class-station-service",
+            "primary_type": "Class",
+            "is_behavioral": false,
+            "total_elements": 7
+        },
+        {
+            "diagram_id": "ttf-class-train-service",
+            "primary_type": "Class",
+            "is_behavioral": false,
+            "total_elements": 7
+        },
+        {
+            "diagram_id": "ttf-class-route-service",
+            "primary_type": "Class",
+            "is_behavioral": false,
+            "total_elements": 7
+        },
+        {
+            "diagram_id": "ttf-class-preserve-service",
+            "primary_type": "Class",
+            "is_behavioral": false,
+            "total_elements": 6
+        },
+        {
+            "diagram_id": "ttf-class-preserve-other-service",
+            "primary_type": "Class",
+            "is_behavioral": false,
+            "total_elements": 4
+        },
+        {
+            "diagram_id": "ttf-class-seat-service",
+            "primary_type": "Class",
+            "is_behavioral": false,
+            "total_elements": 8
+        },
+        {
+            "diagram_id": "ttf-class-price-service",
+            "primary_type": "Class",
+            "is_behavioral": false,
+            "total_elements": 6
+        },
+        {
+            "diagram_id": "ttf-class-contacts-service",
+            "primary_type": "Class",
+            "is_behavioral": false,
+            "total_elements": 6
+        },
+        {
+            "diagram_id": "ttf-class-config-service",
+            "primary_type": "Class",
+            "is_behavioral": false,
+            "total_elements": 6
+        },
+        {
+            "diagram_id": "ttf-class-security-service",
+            "primary_type": "Class",
+            "is_behavioral": false,
+            "total_elements": 6
+        },
+        {
+            "diagram_id": "ttf-class-inside-payment-service",
+            "primary_type": "Class",
+            "is_behavioral": false,
+            "total_elements": 5
+        },
+        {
+            "diagram_id": "ttf-class-payment-service",
+            "primary_type": "Class",
+            "is_behavioral": false,
+            "total_elements": 7
+        },
+        {
+            "diagram_id": "ttf-class-cancel-service",
+            "primary_type": "Class",
+            "is_behavioral": false,
+            "total_elements": 3
+        },
+        {
+            "diagram_id": "ttf-class-rebook-service",
+            "primary_type": "Class",
+            "is_behavioral": false,
+            "total_elements": 4
+        },
+        {
+            "diagram_id": "ttf-class-assurance-service",
+            "primary_type": "Class",
+            "is_behavioral": false,
+            "total_elements": 7
+        },
+        {
+            "diagram_id": "ttf-class-notification-service",
+            "primary_type": "Class",
+            "is_behavioral": false,
+            "total_elements": 4
+        },
+        {
+            "diagram_id": "ttf-class-execute-service",
+            "primary_type": "Class",
+            "is_behavioral": false,
+            "total_elements": 3
+        },
+        {
+            "diagram_id": "ttf-class-food-service",
+            "primary_type": "Class",
+            "is_behavioral": false,
+            "total_elements": 7
+        },
+        {
+            "diagram_id": "ttf-class-food-map-service",
+            "primary_type": "Class",
+            "is_behavioral": false,
+            "total_elements": 12
+        },
+        {
+            "diagram_id": "ttf-class-consign-service",
+            "primary_type": "Class",
+            "is_behavioral": false,
+            "total_elements": 6
+        },
+        {
+            "diagram_id": "ttf-class-consign-price-service",
+            "primary_type": "Class",
+            "is_behavioral": false,
+            "total_elements": 6
+        },
+        {
+            "diagram_id": "ttf-class-route-plan-service",
+            "primary_type": "Class",
+            "is_behavioral": false,
+            "total_elements": 4
+        },
+        {
+            "diagram_id": "ttf-class-travel-plan-service",
+            "primary_type": "Class",
+            "is_behavioral": false,
+            "total_elements": 4
+        },
+        {
+            "diagram_id": "ttf-class-verification-code-service",
+            "primary_type": "Class",
+            "is_behavioral": false,
+            "total_elements": 1
+        },
+        {
+            "diagram_id": "ttf-class-voucher-service",
+            "primary_type": "Class",
+            "is_behavioral": false,
+            "total_elements": 2
+        },
+        {
+            "diagram_id": "ttf-class-admin-order-service",
+            "primary_type": "Class",
+            "is_behavioral": false,
+            "total_elements": 3
+        },
+        {
+            "diagram_id": "ttf-class-admin-basic-info-service",
+            "primary_type": "Class",
+            "is_behavioral": false,
+            "total_elements": 3
+        },
+        {
+            "diagram_id": "ttf-class-admin-route-service",
+            "primary_type": "Class",
+            "is_behavioral": false,
+            "total_elements": 3
+        },
+        {
+            "diagram_id": "ttf-class-admin-travel-service",
+            "primary_type": "Class",
+            "is_behavioral": false,
+            "total_elements": 3
+        },
+        {
+            "diagram_id": "ttf-class-admin-user-service",
+            "primary_type": "Class",
+            "is_behavioral": false,
+            "total_elements": 3
+        },
+        {
+            "diagram_id": "ttf-class-news-service",
+            "primary_type": "Class",
+            "is_behavioral": false,
+            "total_elements": 1
+        },
+        {
+            "diagram_id": "ttf-class-avatar-service",
+            "primary_type": "Class",
+            "is_behavioral": false,
+            "total_elements": 1
+        },
+        {
+            "diagram_id": "ttf-seq-login",
+            "primary_type": "Sequence",
+            "is_behavioral": true,
+            "total_elements": 5
+        },
+        {
+            "diagram_id": "ttf-seq-preserve-booking",
+            "primary_type": "Sequence",
+            "is_behavioral": true,
+            "total_elements": 16
+        },
+        {
+            "diagram_id": "ttf-seq-query-tickets",
+            "primary_type": "Sequence",
+            "is_behavioral": true,
+            "total_elements": 11
+        },
+        {
+            "diagram_id": "ttf-seq-cancel-order",
+            "primary_type": "Sequence",
+            "is_behavioral": true,
+            "total_elements": 8
+        },
+        {
+            "diagram_id": "ttf-seq-rebook",
+            "primary_type": "Sequence",
+            "is_behavioral": true,
+            "total_elements": 8
+        },
+        {
+            "diagram_id": "ttf-seq-execute-collect",
+            "primary_type": "Sequence",
+            "is_behavioral": true,
+            "total_elements": 5
+        },
+        {
+            "diagram_id": "ttf-seq-payment",
+            "primary_type": "Sequence",
+            "is_behavioral": true,
+            "total_elements": 5
+        },
+        {
+            "diagram_id": "ttf-seq-voucher",
+            "primary_type": "Sequence",
+            "is_behavioral": true,
+            "total_elements": 5
+        },
+        {
+            "diagram_id": "ttf-seq-food-query",
+            "primary_type": "Sequence",
+            "is_behavioral": true,
+            "total_elements": 6
+        },
+        {
+            "diagram_id": "ttf-seq-consign",
+            "primary_type": "Sequence",
+            "is_behavioral": true,
+            "total_elements": 4
+        },
+        {
+            "diagram_id": "ttf-seq-travel-plan",
+            "primary_type": "Sequence",
+            "is_behavioral": true,
+            "total_elements": 10
+        },
+        {
+            "diagram_id": "ttf-activity-preserve-booking",
+            "primary_type": "Activity",
+            "is_behavioral": true,
+            "total_elements": 51
+        },
+        {
+            "diagram_id": "ttf-activity-cancel-refund",
+            "primary_type": "Activity",
+            "is_behavioral": true,
+            "total_elements": 29
+        },
+        {
+            "diagram_id": "ttf-activity-rebook",
+            "primary_type": "Activity",
+            "is_behavioral": true,
+            "total_elements": 32
+        },
+        {
+            "diagram_id": "ttf-activity-food-query",
+            "primary_type": "Activity",
+            "is_behavioral": true,
+            "total_elements": 20
+        },
+        {
+            "diagram_id": "ttf-activity-seat-distribution",
+            "primary_type": "Activity",
+            "is_behavioral": true,
+            "total_elements": 23
+        },
+        {
+            "diagram_id": "ttf-comm-preserve-orchestration",
+            "primary_type": "Communication",
+            "is_behavioral": true,
+            "total_elements": 29
+        },
+        {
+            "diagram_id": "ttf-comm-ticketinfo-intermediary",
+            "primary_type": "Communication",
+            "is_behavioral": true,
+            "total_elements": 24
+        },
+        {
+            "diagram_id": "ttf-comm-basic-aggregation",
+            "primary_type": "Communication",
+            "is_behavioral": true,
+            "total_elements": 10
+        },
+        {
+            "diagram_id": "ttf-comm-payment-flow",
+            "primary_type": "Communication",
+            "is_behavioral": true,
+            "total_elements": 10
+        },
+        {
+            "diagram_id": "ttf-comm-cancel-flow",
+            "primary_type": "Communication",
+            "is_behavioral": true,
+            "total_elements": 13
+        },
+        {
+            "diagram_id": "ttf-comm-food-map-flow",
+            "primary_type": "Communication",
+            "is_behavioral": true,
+            "total_elements": 9
+        },
+        {
+            "diagram_id": "ttf-comm-system-wide",
+            "primary_type": "Communication",
+            "is_behavioral": true,
+            "total_elements": 123
+        },
+        {
+            "diagram_id": "ttf-component-architecture",
+            "primary_type": "Component",
+            "is_behavioral": false,
+            "total_elements": 123
+        }
+    ]
+}

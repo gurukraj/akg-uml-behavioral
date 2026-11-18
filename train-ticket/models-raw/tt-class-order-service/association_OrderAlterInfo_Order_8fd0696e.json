@@ -1,0 +1,9 @@
+{
+    "name": "OrderAlterInfo_uses_Order",
+    "key": "_f77b767e3eb44c8a8fd0696e",
+    "type": "association",
+    "source": "_00998d0da4e2417d9e9604b3",
+    "target": "_09d8f1992ce6492c82089606",
+    "sourceMultiplicity": "1",
+    "targetMultiplicity": "1"
+}

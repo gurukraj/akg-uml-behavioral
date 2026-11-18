@@ -1,0 +1,18 @@
+{
+    "name": "ts-basic-service",
+    "key": "_0ed16462a811483e9055df25",
+    "type": "class",
+    "hasTypeVariable": false,
+    "position": null,
+    "modifiers": [],
+    "fields": {},
+    "methods": {},
+    "file_path": "./ts-basic-service",
+    "anonymous": false,
+    "auxclass": false,
+    "implements_": [],
+    "extends_": [],
+    "definedInClassOrInterfaceTypeKey": null,
+    "innerDefinedClasses": {},
+    "innerDefinedInterfaces": {}
+}

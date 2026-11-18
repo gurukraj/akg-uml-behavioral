@@ -1,0 +1,8 @@
+{
+    "name": "calls_ts_user_service",
+    "key": "_a5aaad9760b748f59bac3403",
+    "type": "dependency",
+    "source": "tt-class-preserve-service",
+    "target": "ts-user-service",
+    "endpoint": "GET /api/v1/userservice/users/id/{accountId}"
+}

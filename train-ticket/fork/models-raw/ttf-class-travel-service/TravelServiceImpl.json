@@ -1,0 +1,91 @@
+{
+    "name": "TravelServiceImpl",
+    "key": "_3b1b3ad5a6c147ec99587284",
+    "type": "class",
+    "hasTypeVariable": false,
+    "position": null,
+    "modifiers": [],
+    "fields": {},
+    "methods": {
+        "create": {
+            "name": "create",
+            "key": "_42642590890545f981b3edf9",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "TravelInfo",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "query": {
+            "name": "query",
+            "key": "_cd31b13ac31b489280c1bda3",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "TripInfo",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "getTripAllDetailInfo": {
+            "name": "getTripAllDetailInfo",
+            "key": "_d44c70b162e3408680ad4515",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "TripAllDetailInfo",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "queryForTravel": {
+            "name": "queryForTravel",
+            "key": "_58473fa7081c40e7b3d94776",
+            "returnType": "TravelResult",
+            "parameters": [
+                [
+                    "Travel",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "queryForStationId": {
+            "name": "queryForStationId",
+            "key": "_be3dba5d14c04dbf9ce2c00d",
+            "returnType": "String",
+            "parameters": [
+                [
+                    "String",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        }
+    },
+    "file_path": "./TravelServiceImpl",
+    "anonymous": false,
+    "auxclass": false,
+    "implements_": [
+        "_d435a5692bcd49a79269d3c7"
+    ],
+    "extends_": [],
+    "definedInClassOrInterfaceTypeKey": null,
+    "innerDefinedClasses": {},
+    "innerDefinedInterfaces": {}
+}

@@ -1,0 +1,191 @@
+{
+    "name": "UserLogin",
+    "key": "_81c40cbee7d34ab8b4ac1b5d",
+    "type": "interaction",
+    "lifelines": [
+        {
+            "name": "Client",
+            "key": "_59e30c2983d043b2a84168c6",
+            "represents": "_1987b9d8d5c440be87a78d48",
+            "coveredBy": []
+        },
+        {
+            "name": "ts-auth-service",
+            "key": "_9b49287e4876437d926c7e1e",
+            "represents": "_415b3b7ec149427db2c5291b",
+            "coveredBy": []
+        },
+        {
+            "name": "ts-verification-code-service",
+            "key": "_036503229df84ef6a05bdeb8",
+            "represents": "_f7be5b3a9fd34af79c588f0a",
+            "coveredBy": []
+        }
+    ],
+    "messages": [
+        {
+            "name": "POST /users/login",
+            "key": "_881c2c6752be408ca4f13278",
+            "messageSort": "synchCall",
+            "sendEvent": "_fb7cc796bef34d02bc3160f4",
+            "receiveEvent": "_0d8d24733a1b4bccb49a6647",
+            "connector": null,
+            "signature": null
+        },
+        {
+            "name": "GET /verifycode/verify/{code}",
+            "key": "_f012c154c1a041d9ad717181",
+            "messageSort": "synchCall",
+            "sendEvent": "_c76d5b4b80754227b71952e0",
+            "receiveEvent": "_114358cebda8453da1839a1b",
+            "connector": null,
+            "signature": null
+        },
+        {
+            "name": "verifyResult",
+            "key": "_d62d0edf92a041c6a3a0d7d8",
+            "messageSort": "reply",
+            "sendEvent": "_857964a3151b4467ab75acb7",
+            "receiveEvent": "_9f416156daae4c8787bac9fe",
+            "connector": null,
+            "signature": null
+        },
+        {
+            "name": "authenticate(username, password)",
+            "key": "_fc34fe6accfd4a469cb39ca0",
+            "messageSort": "synchCall",
+            "sendEvent": "_48bf420a391a45ce8ee8d539",
+            "receiveEvent": "_ac504b5493a84df3ad324caa",
+            "connector": null,
+            "signature": null
+        },
+        {
+            "name": "createToken(user)",
+            "key": "_fe7e690c2dc847e5ab63d991",
+            "messageSort": "synchCall",
+            "sendEvent": "_2deb32268d1e4149a0d8e479",
+            "receiveEvent": "_b5212ce99e7041ca94996baa",
+            "connector": null,
+            "signature": null
+        },
+        {
+            "name": "TokenDto(userId, username, token)",
+            "key": "_71ff51d85ff340e9af409828",
+            "messageSort": "reply",
+            "sendEvent": "_3ac73d29faf34d78b094a77d",
+            "receiveEvent": "_e97e81a4d9f34b3ebf36c5b5",
+            "connector": null,
+            "signature": null
+        }
+    ],
+    "fragments": [
+        {
+            "key": "_fb7cc796bef34d02bc3160f4",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_59e30c2983d043b2a84168c6",
+            "enclosingInteraction": "tt-seq-login",
+            "message": "_881c2c6752be408ca4f13278",
+            "execution": null
+        },
+        {
+            "key": "_0d8d24733a1b4bccb49a6647",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_9b49287e4876437d926c7e1e",
+            "enclosingInteraction": "tt-seq-login",
+            "message": "_881c2c6752be408ca4f13278",
+            "execution": null
+        },
+        {
+            "key": "_c76d5b4b80754227b71952e0",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_9b49287e4876437d926c7e1e",
+            "enclosingInteraction": "tt-seq-login",
+            "message": "_f012c154c1a041d9ad717181",
+            "execution": null
+        },
+        {
+            "key": "_114358cebda8453da1839a1b",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_036503229df84ef6a05bdeb8",
+            "enclosingInteraction": "tt-seq-login",
+            "message": "_f012c154c1a041d9ad717181",
+            "execution": null
+        },
+        {
+            "key": "_857964a3151b4467ab75acb7",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_036503229df84ef6a05bdeb8",
+            "enclosingInteraction": "tt-seq-login",
+            "message": "_d62d0edf92a041c6a3a0d7d8",
+            "execution": null
+        },
+        {
+            "key": "_9f416156daae4c8787bac9fe",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_9b49287e4876437d926c7e1e",
+            "enclosingInteraction": "tt-seq-login",
+            "message": "_d62d0edf92a041c6a3a0d7d8",
+            "execution": null
+        },
+        {
+            "key": "_48bf420a391a45ce8ee8d539",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_9b49287e4876437d926c7e1e",
+            "enclosingInteraction": "tt-seq-login",
+            "message": "_fc34fe6accfd4a469cb39ca0",
+            "execution": null
+        },
+        {
+            "key": "_ac504b5493a84df3ad324caa",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_9b49287e4876437d926c7e1e",
+            "enclosingInteraction": "tt-seq-login",
+            "message": "_fc34fe6accfd4a469cb39ca0",
+            "execution": null
+        },
+        {
+            "key": "_2deb32268d1e4149a0d8e479",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_9b49287e4876437d926c7e1e",
+            "enclosingInteraction": "tt-seq-login",
+            "message": "_fe7e690c2dc847e5ab63d991",
+            "execution": null
+        },
+        {
+            "key": "_b5212ce99e7041ca94996baa",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_9b49287e4876437d926c7e1e",
+            "enclosingInteraction": "tt-seq-login",
+            "message": "_fe7e690c2dc847e5ab63d991",
+            "execution": null
+        },
+        {
+            "key": "_3ac73d29faf34d78b094a77d",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_9b49287e4876437d926c7e1e",
+            "enclosingInteraction": "tt-seq-login",
+            "message": "_71ff51d85ff340e9af409828",
+            "execution": null
+        },
+        {
+            "key": "_e97e81a4d9f34b3ebf36c5b5",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_59e30c2983d043b2a84168c6",
+            "enclosingInteraction": "tt-seq-login",
+            "message": "_71ff51d85ff340e9af409828",
+            "execution": null
+        }
+    ]
+}

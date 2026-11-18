@@ -1,0 +1,13 @@
+{
+  "title": "AKG for UML behavioral models: ontology, code, and data",
+  "upload_type": "software",
+  "description": "Replication package of the article 'Architectural Knowledge Graphs from UML Behavioural Models for Early Architectural Bottleneck and Smell Detection': AKG ontology (RDFS/Turtle), extraction, sampling, reference-label and detection code, AKG materialization and SPARQL query execution, Train-Ticket models, and result files.",
+  "creators": [
+    {"name": "Kulkarni, Gururaj", "affiliation": "Manipal University Jaipur"},
+    {"name": "Lamba, Chattar Singh", "affiliation": "Manipal University Jaipur"},
+    {"name": "Solanki, Surendra", "affiliation": "Manipal University Jaipur"}
+  ],
+  "license": "Apache-2.0",
+  "keywords": ["UML", "knowledge graph", "RDF", "SPARQL", "architectural smells", "software architecture"],
+  "version": "1.0.0"
+}

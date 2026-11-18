@@ -1,0 +1,8 @@
+{
+    "name": "queryByStartAndTerminal()",
+    "key": "_8a18b03e4b7a4a3bb927b8e0",
+    "type": "uml:Message",
+    "sender": "_942c29b0e40e4ff58df23e97",
+    "receiver": "_f27b792545a54e24af600aa9",
+    "messageLabel": "queryByStartAndTerminal()"
+}

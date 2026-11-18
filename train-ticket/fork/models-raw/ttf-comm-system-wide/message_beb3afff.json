@@ -1,0 +1,8 @@
+{
+    "name": "calculateSoldTicket()",
+    "key": "_d61c121db8bf4d80beb3afff",
+    "type": "uml:Message",
+    "sender": "_6801a52e9d3d4175a2d53b0f",
+    "receiver": "_51e89aa45dce45cc8c20f5ca",
+    "messageLabel": "calculateSoldTicket()"
+}

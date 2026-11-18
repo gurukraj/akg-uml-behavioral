@@ -1,0 +1,912 @@
+diff --git a/ts-assurance-service/pom.xml b/ts-assurance-service/pom.xml
+index 3e298f52..a09ab637 100644
+--- a/ts-assurance-service/pom.xml
++++ b/ts-assurance-service/pom.xml
+@@ -24,6 +24,10 @@
+     </properties>
+ 
+     <dependencies>
++        <dependency>
++            <groupId>org.springframework.boot</groupId>
++            <artifactId>spring-boot-starter-amqp</artifactId>
++        </dependency>
+         <dependency>
+             <groupId>org.springframework.boot</groupId>
+             <artifactId>spring-boot-starter-data-jpa</artifactId>
+diff --git a/ts-assurance-service/src/main/java/assurance/mq/OrderCreatedListener.java b/ts-assurance-service/src/main/java/assurance/mq/OrderCreatedListener.java
+new file mode 100644
+index 00000000..a0df19bc
+--- /dev/null
++++ b/ts-assurance-service/src/main/java/assurance/mq/OrderCreatedListener.java
+@@ -0,0 +1,60 @@
++package assurance.mq;
++
++import edu.fudan.common.entity.OrderCreatedEvent;
++import edu.fudan.common.util.JsonUtils;
++import org.slf4j.Logger;
++import org.slf4j.LoggerFactory;
++import org.springframework.amqp.core.Binding;
++import org.springframework.amqp.core.BindingBuilder;
++import org.springframework.amqp.core.FanoutExchange;
++import org.springframework.amqp.core.Queue;
++import org.springframework.amqp.rabbit.annotation.RabbitListener;
++import org.springframework.beans.factory.annotation.Autowired;
++import org.springframework.context.annotation.Bean;
++import org.springframework.context.annotation.Configuration;
++import org.springframework.http.HttpHeaders;
++import assurance.service.AssuranceService;
++
++/**
++ * Consumes OrderCreated events published by ts-preserve-service and executes the
++ * assurance step asynchronously (previously a synchronous call from ts-preserve-service).
++ */
++@Configuration
++public class OrderCreatedListener {
++
++    public static final String QUEUE = "order-events.assurance";
++
++    private static final Logger LOGGER = LoggerFactory.getLogger(OrderCreatedListener.class);
++
++    @Autowired
++    private AssuranceService assuranceService;
++
++    @Bean
++    public FanoutExchange orderEventsExchange() {
++        return new FanoutExchange(OrderCreatedEvent.EXCHANGE);
++    }
++
++    @Bean
++    public Queue orderCreatedAssuranceQueue() {
++        return new Queue(QUEUE, true);
++    }
++
++    @Bean
++    public Binding orderCreatedAssuranceBinding(Queue orderCreatedAssuranceQueue, FanoutExchange orderEventsExchange) {
++        return BindingBuilder.bind(orderCreatedAssuranceQueue).to(orderEventsExchange);
++    }
++
++    @RabbitListener(queues = QUEUE)
++    public void onOrderCreated(String message) {
++        OrderCreatedEvent event = JsonUtils.json2Object(message, OrderCreatedEvent.class);
++        if (event == null || !(event.getAssuranceType() != 0)) {
++            return;
++        }
++        HttpHeaders headers = new HttpHeaders();
++        if (event.getAuthorization() != null) {
++            headers.set(HttpHeaders.AUTHORIZATION, event.getAuthorization());
++        }
++        LOGGER.info("[onOrderCreated][assurance][OrderId: {}]", event.getOrderId());
++        assuranceService.create(event.getAssuranceType(), event.getOrderId(), headers);
++    }
++}
+diff --git a/ts-assurance-service/src/main/resources/application.yml b/ts-assurance-service/src/main/resources/application.yml
+index ff9158e4..44a5d59a 100644
+--- a/ts-assurance-service/src/main/resources/application.yml
++++ b/ts-assurance-service/src/main/resources/application.yml
+@@ -5,6 +5,9 @@ spring:
+         server-addr: ${NACOS_ADDRS:nacos-0.nacos-headless.default.svc.cluster.local,nacos-1.nacos-headless.default.svc.cluster.local,nacos-2.nacos-headless.default.svc.cluster.local}
+   application:
+     name: ts-assurance-service
++  rabbitmq:
++    host: ${rabbitmq_host:localhost}
++    port: 5672
+   datasource:
+     url: jdbc:mysql://${ASSURANCE_MYSQL_HOST:ts-assurance-mysql}:${ASSURANCE_MYSQL_PORT:3306}/${ASSURANCE_MYSQL_DATABASE:ts-assurance-mysql}?useUnicode=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=UTC
+     username: ${ASSURANCE_MYSQL_USER:root}
+diff --git a/ts-basic-service/pom.xml b/ts-basic-service/pom.xml
+index d459f1eb..680d66c5 100644
+--- a/ts-basic-service/pom.xml
++++ b/ts-basic-service/pom.xml
+@@ -25,6 +25,10 @@
+     </properties>
+ 
+     <dependencies>
++        <dependency>
++            <groupId>org.springframework.boot</groupId>
++            <artifactId>spring-boot-starter-amqp</artifactId>
++        </dependency>
+         <dependency>
+             <groupId>org.services</groupId>
+             <artifactId>ts-common</artifactId>
+diff --git a/ts-basic-service/src/main/java/fdse/microservice/cache/StationReferenceCache.java b/ts-basic-service/src/main/java/fdse/microservice/cache/StationReferenceCache.java
+new file mode 100644
+index 00000000..1119483a
+--- /dev/null
++++ b/ts-basic-service/src/main/java/fdse/microservice/cache/StationReferenceCache.java
+@@ -0,0 +1,134 @@
++package fdse.microservice.cache;
++
++import edu.fudan.common.entity.Station;
++import edu.fudan.common.entity.StationChangedEvent;
++import edu.fudan.common.util.JsonUtils;
++import edu.fudan.common.util.Response;
++import org.slf4j.Logger;
++import org.slf4j.LoggerFactory;
++import org.springframework.amqp.core.AnonymousQueue;
++import org.springframework.amqp.core.Binding;
++import org.springframework.amqp.core.BindingBuilder;
++import org.springframework.amqp.core.FanoutExchange;
++import org.springframework.amqp.core.Queue;
++import org.springframework.amqp.rabbit.annotation.RabbitListener;
++import org.springframework.beans.factory.annotation.Autowired;
++import org.springframework.boot.context.event.ApplicationReadyEvent;
++import org.springframework.context.annotation.Bean;
++import org.springframework.context.annotation.Configuration;
++import org.springframework.context.event.EventListener;
++import org.springframework.core.ParameterizedTypeReference;
++import org.springframework.http.HttpEntity;
++import org.springframework.http.HttpMethod;
++import org.springframework.http.ResponseEntity;
++import org.springframework.web.client.RestTemplate;
++
++import java.util.List;
++import java.util.Map;
++import java.util.Optional;
++import java.util.concurrent.ConcurrentHashMap;
++
++/**
++ * Local, event-updated copy of the station reference data (name -> id).
++ *
++ * The copy is loaded once from ts-station-service at start-up (or lazily on first use if the
++ * service was not reachable at start-up) and is afterwards kept current through the
++ * station-events exchange. Request processing in ts-basic-service therefore no longer calls
++ * ts-station-service.
++ */
++@Configuration
++public class StationReferenceCache {
++
++    private static final Logger LOGGER = LoggerFactory.getLogger(StationReferenceCache.class);
++
++    private final Map<String, String> idByName = new ConcurrentHashMap<>();
++
++    private final Map<String, String> nameById = new ConcurrentHashMap<>();
++
++    private volatile boolean loaded = false;
++
++    @Autowired
++    private RestTemplate restTemplate;
++
++    @Bean
++    public FanoutExchange stationEventsExchange() {
++        return new FanoutExchange(StationChangedEvent.EXCHANGE);
++    }
++
++    @Bean
++    public Queue basicStationEventsQueue() {
++        return new AnonymousQueue();
++    }
++
++    @Bean
++    public Binding basicStationEventsBinding(Queue basicStationEventsQueue, FanoutExchange stationEventsExchange) {
++        return BindingBuilder.bind(basicStationEventsQueue).to(stationEventsExchange);
++    }
++
++    @EventListener(ApplicationReadyEvent.class)
++    public void loadOnStartup() {
++        load();
++    }
++
++    /** Loads the complete station list from ts-station-service (start-up / cold-start path only). */
++    public synchronized boolean load() {
++        try {
++            ResponseEntity<Response<List<Station>>> re = restTemplate.exchange(
++                    "http://ts-station-service/api/v1/stationservice/stations",
++                    HttpMethod.GET, new HttpEntity<>(null),
++                    new ParameterizedTypeReference<Response<List<Station>>>() {
++                    });
++            Response<List<Station>> body = re.getBody();
++            if (body != null && body.getData() != null) {
++                for (Station s : body.getData()) {
++                    put(s.getId(), s.getName());
++                }
++            }
++            loaded = true;
++            LOGGER.info("[load][Station reference data loaded][stations: {}]", idByName.size());
++        } catch (Exception e) {
++            LOGGER.warn("[load][Station reference data not loaded yet][{}]", e.getMessage());
++        }
++        return loaded;
++    }
++
++    @RabbitListener(queues = "#{basicStationEventsQueue.name}")
++    public void onStationChanged(String message) {
++        StationChangedEvent event = JsonUtils.json2Object(message, StationChangedEvent.class);
++        if (event == null) {
++            return;
++        }
++        if (StationChangedEvent.DELETE.equals(event.getOperation())) {
++            String name = nameById.remove(event.getStationId());
++            if (name != null) {
++                idByName.remove(name);
++            }
++        } else {
++            put(event.getStationId(), event.getStationName());
++        }
++        LOGGER.info("[onStationChanged][{}][stationId: {}, stationName: {}]", event.getOperation(), event.getStationId(), event.getStationName());
++    }
++
++    private void put(String id, String name) {
++        String oldName = nameById.put(id, name);
++        if (oldName != null && !oldName.equals(name)) {
++            idByName.remove(oldName);
++        }
++        idByName.put(name, id);
++    }
++
++    private void ensureLoaded() {
++        if (!loaded) {
++            load();
++        }
++    }
++
++    public Optional<String> idOf(String stationName) {
++        ensureLoaded();
++        return Optional.ofNullable(stationName == null ? null : idByName.get(stationName));
++    }
++
++    public boolean exists(String stationName) {
++        return idOf(stationName).isPresent();
++    }
++}
+diff --git a/ts-basic-service/src/main/java/fdse/microservice/service/BasicServiceImpl.java b/ts-basic-service/src/main/java/fdse/microservice/service/BasicServiceImpl.java
+index 4020b0b0..6c8fbd50 100644
+--- a/ts-basic-service/src/main/java/fdse/microservice/service/BasicServiceImpl.java
++++ b/ts-basic-service/src/main/java/fdse/microservice/service/BasicServiceImpl.java
+@@ -5,6 +5,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
+ import edu.fudan.common.entity.*;
+ import edu.fudan.common.util.JsonUtils;
+ import edu.fudan.common.util.Response;
++import fdse.microservice.cache.StationReferenceCache;
+ import org.slf4j.Logger;
+ import org.slf4j.LoggerFactory;
+ import org.springframework.beans.factory.annotation.Autowired;
+@@ -30,6 +31,9 @@ public class BasicServiceImpl implements BasicService {
+     @Autowired
+     private DiscoveryClient discoveryClient;
+ 
++    @Autowired
++    private StationReferenceCache stationReferenceCache;
++
+     private static final Logger LOGGER = LoggerFactory.getLogger(BasicServiceImpl.class);
+ 
+     private String getServiceUrl(String serviceName) {
+@@ -323,50 +327,26 @@ public class BasicServiceImpl implements BasicService {
+     @Override
+     public Response queryForStationId(String stationName, HttpHeaders headers) {
+         BasicServiceImpl.LOGGER.info("[queryForStationId][Query For Station Id][stationName: {}]", stationName);
+-        HttpEntity requestEntity = new HttpEntity(null);
+-        String station_service_url=getServiceUrl("ts-station-service");
+-        ResponseEntity<Response> re = restTemplate.exchange(
+-                station_service_url + "/api/v1/stationservice/stations/id/" + stationName,
+-                HttpMethod.GET,
+-                requestEntity,
+-                Response.class);
+-        if (re.getBody().getStatus() != 1) {
+-            String msg = re.getBody().getMsg();
+-            BasicServiceImpl.LOGGER.warn("[queryForStationId][Query for stationId error][stationName: {}, message: {}]", stationName, msg);
+-            return new Response<>(0, msg, null);
++        Optional<String> id = stationReferenceCache.idOf(stationName);
++        if (!id.isPresent()) {
++            BasicServiceImpl.LOGGER.warn("[queryForStationId][Query for stationId error][stationName: {}, message: Not exists]", stationName);
++            return new Response<>(0, "Not exists", null);
+         }
+-        return  re.getBody();
++        return new Response<>(1, "Success", id.get());
+     }
+ 
+     public Map<String,String> checkStationsExists(List<String> stationNames, HttpHeaders headers) {
+         BasicServiceImpl.LOGGER.info("[checkStationsExists][Check Stations Exists][stationNames: {}]", stationNames);
+-        HttpEntity requestEntity = new HttpEntity(stationNames, null);
+-        String station_service_url=getServiceUrl("ts-station-service");
+-        ResponseEntity<Response> re = restTemplate.exchange(
+-                station_service_url + "/api/v1/stationservice/stations/idlist",
+-                HttpMethod.POST,
+-                requestEntity,
+-                Response.class);
+-        Response<Map<String, String>> r = re.getBody();
+-        if(r.getStatus() == 0) {
+-            return null;
++        Map<String, String> stationMap = new HashMap<>();
++        for (String name : stationNames) {
++            stationMap.put(name, stationReferenceCache.idOf(name).orElse(null));
+         }
+-        Map<String, String> stationMap = r.getData();
+-        return stationMap;
++        return stationMap.isEmpty() ? null : stationMap;
+     }
+ 
+     public boolean checkStationExists(String stationName, HttpHeaders headers) {
+         BasicServiceImpl.LOGGER.info("[checkStationExists][Check Station Exists][stationName: {}]", stationName);
+-        HttpEntity requestEntity = new HttpEntity(null);
+-        String station_service_url=getServiceUrl("ts-station-service");
+-        ResponseEntity<Response> re = restTemplate.exchange(
+-                station_service_url + "/api/v1/stationservice/stations/id/" + stationName,
+-                HttpMethod.GET,
+-                requestEntity,
+-                Response.class);
+-        Response exist = re.getBody();
+-
+-        return exist.getStatus() == 1;
++        return stationReferenceCache.exists(stationName);
+     }
+ 
+     public List<TrainType> queryTrainTypeByNames(List<String> trainTypeNames, HttpHeaders headers) {
+diff --git a/ts-basic-service/src/main/resources/application.yml b/ts-basic-service/src/main/resources/application.yml
+index ec0b3dd1..6014eabe 100644
+--- a/ts-basic-service/src/main/resources/application.yml
++++ b/ts-basic-service/src/main/resources/application.yml
+@@ -8,6 +8,9 @@ spring:
+         server-addr: ${NACOS_ADDRS:nacos-0.nacos-headless.default.svc.cluster.local,nacos-1.nacos-headless.default.svc.cluster.local,nacos-2.nacos-headless.default.svc.cluster.local}
+   application:
+     name: ts-basic-service
++  rabbitmq:
++    host: ${rabbitmq_host:localhost}
++    port: 5672
+ 
+ swagger:
+   controllerPackage: fdse.microservice.controller
+\ No newline at end of file
+diff --git a/ts-common/src/main/java/edu/fudan/common/entity/OrderCreatedEvent.java b/ts-common/src/main/java/edu/fudan/common/entity/OrderCreatedEvent.java
+new file mode 100644
+index 00000000..d39116a1
+--- /dev/null
++++ b/ts-common/src/main/java/edu/fudan/common/entity/OrderCreatedEvent.java
+@@ -0,0 +1,35 @@
++package edu.fudan.common.entity;
++
++import lombok.AllArgsConstructor;
++import lombok.Data;
++import lombok.NoArgsConstructor;
++
++/**
++ * Event published by ts-preserve-service after an order has been created.
++ * It carries the optional post-booking requests (assurance, food, consignment),
++ * which are processed asynchronously by the services that own them.
++ */
++@Data
++@NoArgsConstructor
++@AllArgsConstructor
++public class OrderCreatedEvent {
++
++    /** Fan-out exchange on which the event is published. */
++    public static final String EXCHANGE = "order-events";
++
++    private String orderId;
++
++    private String accountId;
++
++    /** Assurance type index; 0 means that no assurance was requested. */
++    private int assuranceType;
++
++    /** Food order; null means that no food was requested. */
++    private FoodOrder foodOrder;
++
++    /** Consignment; null means that no consignment was requested. */
++    private Consign consign;
++
++    /** Authorization header of the original request, propagated to the asynchronous consumers. */
++    private String authorization;
++}
+diff --git a/ts-common/src/main/java/edu/fudan/common/entity/StationChangedEvent.java b/ts-common/src/main/java/edu/fudan/common/entity/StationChangedEvent.java
+new file mode 100644
+index 00000000..87138502
+--- /dev/null
++++ b/ts-common/src/main/java/edu/fudan/common/entity/StationChangedEvent.java
+@@ -0,0 +1,28 @@
++package edu.fudan.common.entity;
++
++import lombok.AllArgsConstructor;
++import lombok.Data;
++import lombok.NoArgsConstructor;
++
++/**
++ * Event published by ts-station-service whenever a station is created, updated, or deleted,
++ * so that consumers can maintain a local copy of the station reference data.
++ */
++@Data
++@NoArgsConstructor
++@AllArgsConstructor
++public class StationChangedEvent {
++
++    /** Fan-out exchange on which the event is published. */
++    public static final String EXCHANGE = "station-events";
++
++    public static final String UPSERT = "UPSERT";
++
++    public static final String DELETE = "DELETE";
++
++    private String operation;
++
++    private String stationId;
++
++    private String stationName;
++}
+diff --git a/ts-consign-service/pom.xml b/ts-consign-service/pom.xml
+index 9899aebf..6bc972db 100644
+--- a/ts-consign-service/pom.xml
++++ b/ts-consign-service/pom.xml
+@@ -24,6 +24,10 @@
+     </properties>
+ 
+     <dependencies>
++        <dependency>
++            <groupId>org.springframework.boot</groupId>
++            <artifactId>spring-boot-starter-amqp</artifactId>
++        </dependency>
+         <dependency>
+             <groupId>org.springframework.boot</groupId>
+             <artifactId>spring-boot-starter-data-jpa</artifactId>
+diff --git a/ts-consign-service/src/main/java/consign/mq/OrderCreatedListener.java b/ts-consign-service/src/main/java/consign/mq/OrderCreatedListener.java
+new file mode 100644
+index 00000000..90b12546
+--- /dev/null
++++ b/ts-consign-service/src/main/java/consign/mq/OrderCreatedListener.java
+@@ -0,0 +1,60 @@
++package consign.mq;
++
++import edu.fudan.common.entity.OrderCreatedEvent;
++import edu.fudan.common.util.JsonUtils;
++import org.slf4j.Logger;
++import org.slf4j.LoggerFactory;
++import org.springframework.amqp.core.Binding;
++import org.springframework.amqp.core.BindingBuilder;
++import org.springframework.amqp.core.FanoutExchange;
++import org.springframework.amqp.core.Queue;
++import org.springframework.amqp.rabbit.annotation.RabbitListener;
++import org.springframework.beans.factory.annotation.Autowired;
++import org.springframework.context.annotation.Bean;
++import org.springframework.context.annotation.Configuration;
++import org.springframework.http.HttpHeaders;
++import consign.service.ConsignService;
++
++/**
++ * Consumes OrderCreated events published by ts-preserve-service and executes the
++ * consignment step asynchronously (previously a synchronous call from ts-preserve-service).
++ */
++@Configuration
++public class OrderCreatedListener {
++
++    public static final String QUEUE = "order-events.consign";
++
++    private static final Logger LOGGER = LoggerFactory.getLogger(OrderCreatedListener.class);
++
++    @Autowired
++    private ConsignService consignService;
++
++    @Bean
++    public FanoutExchange orderEventsExchange() {
++        return new FanoutExchange(OrderCreatedEvent.EXCHANGE);
++    }
++
++    @Bean
++    public Queue orderCreatedConsignQueue() {
++        return new Queue(QUEUE, true);
++    }
++
++    @Bean
++    public Binding orderCreatedConsignBinding(Queue orderCreatedConsignQueue, FanoutExchange orderEventsExchange) {
++        return BindingBuilder.bind(orderCreatedConsignQueue).to(orderEventsExchange);
++    }
++
++    @RabbitListener(queues = QUEUE)
++    public void onOrderCreated(String message) {
++        OrderCreatedEvent event = JsonUtils.json2Object(message, OrderCreatedEvent.class);
++        if (event == null || !(event.getConsign() != null)) {
++            return;
++        }
++        HttpHeaders headers = new HttpHeaders();
++        if (event.getAuthorization() != null) {
++            headers.set(HttpHeaders.AUTHORIZATION, event.getAuthorization());
++        }
++        LOGGER.info("[onOrderCreated][consignment][OrderId: {}]", event.getOrderId());
++        consignService.insertConsignRecord(JsonUtils.conveterObject(event.getConsign(), consign.entity.Consign.class), headers);
++    }
++}
+diff --git a/ts-consign-service/src/main/resources/application.yml b/ts-consign-service/src/main/resources/application.yml
+index 78b06e00..f10529f7 100644
+--- a/ts-consign-service/src/main/resources/application.yml
++++ b/ts-consign-service/src/main/resources/application.yml
+@@ -5,6 +5,9 @@ spring:
+         server-addr: ${NACOS_ADDRS:nacos-0.nacos-headless.default.svc.cluster.local,nacos-1.nacos-headless.default.svc.cluster.local,nacos-2.nacos-headless.default.svc.cluster.local}
+   application:
+     name: ts-consign-service
++  rabbitmq:
++    host: ${rabbitmq_host:localhost}
++    port: 5672
+   datasource:
+     url: jdbc:mysql://${CONSIGN_MYSQL_HOST:ts-consign-mysql}:${CONSIGN_MYSQL_PORT:3306}/${CONSIGN_MYSQL_DATABASE:ts-consign-mysql}?useUnicode=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=UTC
+     username: ${CONSIGN_MYSQL_USER:root}
+diff --git a/ts-food-service/src/main/java/foodsearch/mq/OrderCreatedListener.java b/ts-food-service/src/main/java/foodsearch/mq/OrderCreatedListener.java
+new file mode 100644
+index 00000000..5e1a4314
+--- /dev/null
++++ b/ts-food-service/src/main/java/foodsearch/mq/OrderCreatedListener.java
+@@ -0,0 +1,60 @@
++package foodsearch.mq;
++
++import edu.fudan.common.entity.OrderCreatedEvent;
++import edu.fudan.common.util.JsonUtils;
++import org.slf4j.Logger;
++import org.slf4j.LoggerFactory;
++import org.springframework.amqp.core.Binding;
++import org.springframework.amqp.core.BindingBuilder;
++import org.springframework.amqp.core.FanoutExchange;
++import org.springframework.amqp.core.Queue;
++import org.springframework.amqp.rabbit.annotation.RabbitListener;
++import org.springframework.beans.factory.annotation.Autowired;
++import org.springframework.context.annotation.Bean;
++import org.springframework.context.annotation.Configuration;
++import org.springframework.http.HttpHeaders;
++import foodsearch.service.FoodService;
++
++/**
++ * Consumes OrderCreated events published by ts-preserve-service and executes the
++ * food order step asynchronously (previously a synchronous call from ts-preserve-service).
++ */
++@Configuration
++public class OrderCreatedListener {
++
++    public static final String QUEUE = "order-events.food";
++
++    private static final Logger LOGGER = LoggerFactory.getLogger(OrderCreatedListener.class);
++
++    @Autowired
++    private FoodService foodService;
++
++    @Bean
++    public FanoutExchange orderEventsExchange() {
++        return new FanoutExchange(OrderCreatedEvent.EXCHANGE);
++    }
++
++    @Bean
++    public Queue orderCreatedFoodQueue() {
++        return new Queue(QUEUE, true);
++    }
++
++    @Bean
++    public Binding orderCreatedFoodBinding(Queue orderCreatedFoodQueue, FanoutExchange orderEventsExchange) {
++        return BindingBuilder.bind(orderCreatedFoodQueue).to(orderEventsExchange);
++    }
++
++    @RabbitListener(queues = QUEUE)
++    public void onOrderCreated(String message) {
++        OrderCreatedEvent event = JsonUtils.json2Object(message, OrderCreatedEvent.class);
++        if (event == null || !(event.getFoodOrder() != null)) {
++            return;
++        }
++        HttpHeaders headers = new HttpHeaders();
++        if (event.getAuthorization() != null) {
++            headers.set(HttpHeaders.AUTHORIZATION, event.getAuthorization());
++        }
++        LOGGER.info("[onOrderCreated][food order][OrderId: {}]", event.getOrderId());
++        foodService.createFoodOrder(JsonUtils.conveterObject(event.getFoodOrder(), foodsearch.entity.FoodOrder.class), headers);
++    }
++}
+diff --git a/ts-preserve-service/src/main/java/preserve/config/OrderEventsConfig.java b/ts-preserve-service/src/main/java/preserve/config/OrderEventsConfig.java
+new file mode 100644
+index 00000000..3d5b180c
+--- /dev/null
++++ b/ts-preserve-service/src/main/java/preserve/config/OrderEventsConfig.java
+@@ -0,0 +1,15 @@
++package preserve.config;
++
++import edu.fudan.common.entity.OrderCreatedEvent;
++import org.springframework.amqp.core.FanoutExchange;
++import org.springframework.context.annotation.Bean;
++import org.springframework.context.annotation.Configuration;
++
++@Configuration
++public class OrderEventsConfig {
++
++    @Bean
++    public FanoutExchange orderEventsExchange() {
++        return new FanoutExchange(OrderCreatedEvent.EXCHANGE);
++    }
++}
+diff --git a/ts-preserve-service/src/main/java/preserve/mq/OrderEventPublisher.java b/ts-preserve-service/src/main/java/preserve/mq/OrderEventPublisher.java
+new file mode 100644
+index 00000000..ac98f150
+--- /dev/null
++++ b/ts-preserve-service/src/main/java/preserve/mq/OrderEventPublisher.java
+@@ -0,0 +1,27 @@
++package preserve.mq;
++
++import edu.fudan.common.entity.OrderCreatedEvent;
++import edu.fudan.common.util.JsonUtils;
++import org.slf4j.Logger;
++import org.slf4j.LoggerFactory;
++import org.springframework.amqp.core.AmqpTemplate;
++import org.springframework.beans.factory.annotation.Autowired;
++import org.springframework.stereotype.Component;
++
++/**
++ * Publishes OrderCreated events to the order-events fan-out exchange.
++ */
++@Component
++public class OrderEventPublisher {
++
++    private static final Logger LOGGER = LoggerFactory.getLogger(OrderEventPublisher.class);
++
++    @Autowired
++    private AmqpTemplate rabbitTemplate;
++
++    public void publishOrderCreated(OrderCreatedEvent event) {
++        String json = JsonUtils.object2Json(event);
++        rabbitTemplate.convertAndSend(OrderCreatedEvent.EXCHANGE, "", json);
++        LOGGER.info("[publishOrderCreated][OrderId: {}]", event.getOrderId());
++    }
++}
+diff --git a/ts-preserve-service/src/main/java/preserve/service/PreserveServiceImpl.java b/ts-preserve-service/src/main/java/preserve/service/PreserveServiceImpl.java
+index 71058d88..7231d8d2 100644
+--- a/ts-preserve-service/src/main/java/preserve/service/PreserveServiceImpl.java
++++ b/ts-preserve-service/src/main/java/preserve/service/PreserveServiceImpl.java
+@@ -17,6 +17,7 @@ import org.springframework.http.ResponseEntity;
+ import org.springframework.stereotype.Service;
+ import org.springframework.web.client.RestTemplate;
+ import edu.fudan.common.entity.*;
++import preserve.mq.OrderEventPublisher;
+ import preserve.mq.RabbitSend;
+ 
+ import java.util.Date;
+@@ -38,6 +39,9 @@ public class PreserveServiceImpl implements PreserveService {
+     @Autowired
+     private DiscoveryClient discoveryClient;
+ 
++    @Autowired
++    private OrderEventPublisher orderEventPublisher;
++
+ 
+     private static final Logger LOGGER = LoggerFactory.getLogger(PreserveServiceImpl.class);
+ 
+@@ -175,48 +179,29 @@ public class PreserveServiceImpl implements PreserveService {
+         PreserveServiceImpl.LOGGER.info("[preserve][Step 4][Do Order][Do Order Complete]");
+ 
+         Response returnResponse = new Response<>(1, "Success.", cor.getMsg());
+-        //5.Check insurance options
+-        if (oti.getAssurance() == 0) {
+-            PreserveServiceImpl.LOGGER.info("[preserve][Step 5][Buy Assurance][Do not need to buy assurance]");
+-        } else {
+-            Response addAssuranceResult = addAssuranceForOrder(
+-                    oti.getAssurance(), cor.getData().getId().toString(), headers);
+-            if (addAssuranceResult.getStatus() == 1) {
+-                PreserveServiceImpl.LOGGER.info("[preserve][Step 5][Buy Assurance][Preserve Buy Assurance Success]");
+-            } else {
+-                PreserveServiceImpl.LOGGER.warn("[preserve][Step 5][Buy Assurance][Buy Assurance Fail][assurance: {}, OrderId: {}]", oti.getAssurance(),cor.getData().getId());
+-                returnResponse.setMsg("Success.But Buy Assurance Fail.");
+-            }
+-        }
++        //5-7. Optional post-booking steps (assurance, food, consignment) are no longer executed
++        //     synchronously. They are published as one OrderCreated event and processed
++        //     asynchronously by ts-assurance-service, ts-food-service, and ts-consign-service.
++        OrderCreatedEvent orderCreated = new OrderCreatedEvent();
++        orderCreated.setOrderId(cor.getData().getId());
++        orderCreated.setAccountId(cor.getData().getAccountId());
++        orderCreated.setAssuranceType(oti.getAssurance());
++        orderCreated.setAuthorization(headers.getFirst(HttpHeaders.AUTHORIZATION));
+ 
+-        //6.Increase the food order
+         if (oti.getFoodType() != 0) {
+-
+             FoodOrder foodOrder = new FoodOrder();
+             foodOrder.setOrderId(cor.getData().getId());
+             foodOrder.setFoodType(oti.getFoodType());
+             foodOrder.setFoodName(oti.getFoodName());
+             foodOrder.setPrice(oti.getFoodPrice());
+-
+             if (oti.getFoodType() == 2) {
+                 foodOrder.setStationName(oti.getStationName());
+                 foodOrder.setStoreName(oti.getStoreName());
+-                //PreserveServiceImpl.LOGGER.info("foodstore= {}   {}   {}", foodOrder.getFoodType(), foodOrder.getStationName(), foodOrder.getStoreName());
+             }
+-            Response afor = createFoodOrder(foodOrder, headers);
+-            if (afor.getStatus() == 1) {
+-                PreserveServiceImpl.LOGGER.info("[preserve][Step 6][Buy Food][Buy Food Success]");
+-            } else {
+-                PreserveServiceImpl.LOGGER.error("[preserve][Step 6][Buy Food][Buy Food Fail][OrderId: {}]",cor.getData().getId());
+-                returnResponse.setMsg("Success.But Buy Food Fail.");
+-            }
+-        } else {
+-            PreserveServiceImpl.LOGGER.info("[preserve][Step 6][Buy Food][Do not need to buy food]");
++            orderCreated.setFoodOrder(foodOrder);
+         }
+ 
+-        //7.add consign
+         if (null != oti.getConsigneeName() && !"".equals(oti.getConsigneeName())) {
+-
+             Consign consignRequest = new Consign();
+             consignRequest.setOrderId(cor.getData().getId());
+             consignRequest.setAccountId(cor.getData().getAccountId());
+@@ -228,16 +213,14 @@ public class PreserveServiceImpl implements PreserveService {
+             consignRequest.setPhone(oti.getConsigneePhone());
+             consignRequest.setWeight(oti.getConsigneeWeight());
+             consignRequest.setWithin(oti.isWithin());
+-            LOGGER.info("CONSIGN INFO : " +consignRequest.toString());
+-            Response icresult = createConsign(consignRequest, headers);
+-            if (icresult.getStatus() == 1) {
+-                PreserveServiceImpl.LOGGER.info("[preserve][Step 7][Add Consign][Consign Success]");
+-            } else {
+-                PreserveServiceImpl.LOGGER.error("[preserve][Step 7][Add Consign][Preserve Consign Fail][OrderId: {}]", cor.getData().getId());
+-                returnResponse.setMsg("Consign Fail.");
+-            }
++            orderCreated.setConsign(consignRequest);
++        }
++
++        if (orderCreated.getAssuranceType() != 0 || orderCreated.getFoodOrder() != null || orderCreated.getConsign() != null) {
++            orderEventPublisher.publishOrderCreated(orderCreated);
++            PreserveServiceImpl.LOGGER.info("[preserve][Step 5-7][Optional steps published as OrderCreated event][OrderId: {}]", cor.getData().getId());
+         } else {
+-            PreserveServiceImpl.LOGGER.info("[preserve][Step 7][Add Consign][Do not need to consign]");
++            PreserveServiceImpl.LOGGER.info("[preserve][Step 5-7][No optional steps requested]");
+         }
+ 
+         //8.send notification
+@@ -313,19 +296,6 @@ public class PreserveServiceImpl implements PreserveService {
+         return result.getData();
+     }
+ 
+-    private Response addAssuranceForOrder(int assuranceType, String orderId, HttpHeaders httpHeaders) {
+-        PreserveServiceImpl.LOGGER.info("[addAssuranceForOrder][Preserve Service][Add Assurance Type For Order]");
+-        HttpEntity requestAddAssuranceResult = new HttpEntity(httpHeaders);
+-        String assurance_service_url = getServiceUrl("ts-assurance-service");
+-        ResponseEntity<Response> reAddAssuranceResult = restTemplate.exchange(
+-                assurance_service_url + "/api/v1/assuranceservice/assurances/" + assuranceType + "/" + orderId,
+-                HttpMethod.GET,
+-                requestAddAssuranceResult,
+-                Response.class);
+-
+-        return reAddAssuranceResult.getBody();
+-    }
+-
+     private String queryForStationId(String stationName, HttpHeaders httpHeaders) {
+         PreserveServiceImpl.LOGGER.info("[queryForStationId][Preserve Other Service][Get Station By  Name]");
+ 
+@@ -403,31 +373,4 @@ public class PreserveServiceImpl implements PreserveService {
+         return reCreateOrderResult.getBody();
+     }
+ 
+-    private Response createFoodOrder(FoodOrder afi, HttpHeaders httpHeaders) {
+-        PreserveServiceImpl.LOGGER.info("[createFoodOrder][Preserve Service][Add Preserve food Order]");
+-
+-        HttpEntity requestEntityAddFoodOrderResult = new HttpEntity(afi, httpHeaders);
+-        String food_service_url = getServiceUrl("ts-food-service");
+-        ResponseEntity<Response> reAddFoodOrderResult = restTemplate.exchange(
+-                food_service_url + "/api/v1/foodservice/orders",
+-                HttpMethod.POST,
+-                requestEntityAddFoodOrderResult,
+-                Response.class);
+-
+-        return reAddFoodOrderResult.getBody();
+-    }
+-
+-    private Response createConsign(Consign cr, HttpHeaders httpHeaders) {
+-        PreserveServiceImpl.LOGGER.info("[createConsign][Preserve Service][Add Condign");
+-
+-        HttpEntity requestEntityResultForTravel = new HttpEntity(cr, httpHeaders);
+-        String consign_service_url = getServiceUrl("ts-consign-service");
+-        ResponseEntity<Response> reResultForTravel = restTemplate.exchange(
+-                consign_service_url + "/api/v1/consignservice/consigns",
+-                HttpMethod.POST,
+-                requestEntityResultForTravel,
+-                Response.class);
+-        return reResultForTravel.getBody();
+-    }
+-
+ }
+diff --git a/ts-station-service/pom.xml b/ts-station-service/pom.xml
+index dccab77a..428c9c1a 100644
+--- a/ts-station-service/pom.xml
++++ b/ts-station-service/pom.xml
+@@ -25,6 +25,10 @@
+ 	</properties>
+ 
+ 	<dependencies>
++        <dependency>
++            <groupId>org.springframework.boot</groupId>
++            <artifactId>spring-boot-starter-amqp</artifactId>
++        </dependency>
+ <!--		<dependency>-->
+ <!--			<groupId>org.springframework.boot</groupId>-->
+ <!--			<artifactId>spring-boot-starter-data-mongodb</artifactId>-->
+diff --git a/ts-station-service/src/main/java/fdse/microservice/mq/StationEventPublisher.java b/ts-station-service/src/main/java/fdse/microservice/mq/StationEventPublisher.java
+new file mode 100644
+index 00000000..776ef9c4
+--- /dev/null
++++ b/ts-station-service/src/main/java/fdse/microservice/mq/StationEventPublisher.java
+@@ -0,0 +1,35 @@
++package fdse.microservice.mq;
++
++import edu.fudan.common.entity.StationChangedEvent;
++import edu.fudan.common.util.JsonUtils;
++import org.slf4j.Logger;
++import org.slf4j.LoggerFactory;
++import org.springframework.amqp.core.AmqpTemplate;
++import org.springframework.amqp.core.FanoutExchange;
++import org.springframework.beans.factory.annotation.Autowired;
++import org.springframework.context.annotation.Bean;
++import org.springframework.context.annotation.Configuration;
++
++/**
++ * Publishes station changes so that consumers (ts-basic-service) can keep a local copy of the
++ * station reference data instead of querying ts-station-service on every request.
++ */
++@Configuration
++public class StationEventPublisher {
++
++    private static final Logger LOGGER = LoggerFactory.getLogger(StationEventPublisher.class);
++
++    @Autowired
++    private AmqpTemplate rabbitTemplate;
++
++    @Bean
++    public FanoutExchange stationEventsExchange() {
++        return new FanoutExchange(StationChangedEvent.EXCHANGE);
++    }
++
++    public void publish(String operation, String stationId, String stationName) {
++        StationChangedEvent event = new StationChangedEvent(operation, stationId, stationName);
++        rabbitTemplate.convertAndSend(StationChangedEvent.EXCHANGE, "", JsonUtils.object2Json(event));
++        LOGGER.info("[publish][{}][stationId: {}, stationName: {}]", operation, stationId, stationName);
++    }
++}
+diff --git a/ts-station-service/src/main/java/fdse/microservice/service/StationServiceImpl.java b/ts-station-service/src/main/java/fdse/microservice/service/StationServiceImpl.java
+index b170eb49..68dcf848 100644
+--- a/ts-station-service/src/main/java/fdse/microservice/service/StationServiceImpl.java
++++ b/ts-station-service/src/main/java/fdse/microservice/service/StationServiceImpl.java
+@@ -1,5 +1,8 @@
+ package fdse.microservice.service;
+ 
++import edu.fudan.common.entity.StationChangedEvent;
++import fdse.microservice.mq.StationEventPublisher;
++
+ import edu.fudan.common.util.Response;
+ import fdse.microservice.entity.*;
+ import fdse.microservice.repository.StationRepository;
+@@ -15,6 +18,10 @@ import java.util.*;
+ @Service
+ public class StationServiceImpl implements StationService {
+ 
++    @Autowired
++    private StationEventPublisher stationEventPublisher;
++
++
+     @Autowired
+     private StationRepository repository;
+ 
+@@ -31,6 +38,7 @@ public class StationServiceImpl implements StationService {
+         if (repository.findByName(station.getName()) == null) {
+             station.setStayTime(station.getStayTime());
+             repository.save(station);
++            stationEventPublisher.publish(StationChangedEvent.UPSERT, station.getId(), station.getName());
+             return new Response<>(1, "Create success", station);
+         }
+         StationServiceImpl.LOGGER.error("[create][Create station error][Already exists][StationId: {}]",station.getId());
+@@ -59,6 +67,7 @@ public class StationServiceImpl implements StationService {
+             station.setName(info.getName());
+             station.setStayTime(info.getStayTime());
+             repository.save(station);
++            stationEventPublisher.publish(StationChangedEvent.UPSERT, station.getId(), station.getName());
+             return new Response<>(1, "Update success", station);
+         }
+     }
+@@ -69,6 +78,7 @@ public class StationServiceImpl implements StationService {
+         if (op.isPresent()) {
+             Station station = op.get();
+             repository.delete(station);
++            stationEventPublisher.publish(StationChangedEvent.DELETE, station.getId(), station.getName());
+             return new Response<>(1, "Delete success", station);
+         }
+         StationServiceImpl.LOGGER.error("[delete][Delete station error][Station not found][StationId: {}]",stationsId);
+diff --git a/ts-station-service/src/main/resources/application.yml b/ts-station-service/src/main/resources/application.yml
+index 3242965f..af1b268a 100644
+--- a/ts-station-service/src/main/resources/application.yml
++++ b/ts-station-service/src/main/resources/application.yml
+@@ -5,6 +5,9 @@ spring:
+         server-addr: ${NACOS_ADDRS:nacos-0.nacos-headless.default.svc.cluster.local,nacos-1.nacos-headless.default.svc.cluster.local,nacos-2.nacos-headless.default.svc.cluster.local}
+   application:
+     name: ts-station-service
++  rabbitmq:
++    host: ${rabbitmq_host:localhost}
++    port: 5672
+   datasource:
+     url: jdbc:mysql://${STATION_MYSQL_HOST:ts-station-mysql}:${STATION_MYSQL_PORT:3306}/${STATION_MYSQL_DATABASE:ts-station-mysql}?useSSL=false
+     username: ${STATION_MYSQL_USER:root}

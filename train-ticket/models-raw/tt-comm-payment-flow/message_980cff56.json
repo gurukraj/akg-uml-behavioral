@@ -1,0 +1,8 @@
+{
+    "name": "3: setOrderStatus()",
+    "key": "_3bef5ed8be4f4cb2980cff56",
+    "type": "uml:Message",
+    "sender": "_0d34845014f74f72b5dc3d0b",
+    "receiver": "_bc24df1f5dff4c87a84106df",
+    "messageLabel": "3: setOrderStatus()"
+}

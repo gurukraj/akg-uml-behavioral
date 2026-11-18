@@ -1,0 +1,7 @@
+{
+    "name": "TravelServiceImpl_uses_TripRepository",
+    "key": "_50bdae9bd8cc4443938b85c8",
+    "type": "dependency",
+    "source": "_3b1b3ad5a6c147ec99587284",
+    "target": "_18432fc70f704a0ab329093d"
+}

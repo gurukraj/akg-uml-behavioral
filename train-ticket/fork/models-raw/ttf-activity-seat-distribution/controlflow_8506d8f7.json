@@ -1,0 +1,8 @@
+{
+    "name": "DecisionNode_TrainType_to_QueryRouteFromTravel",
+    "key": "_bf3a1534de6345028506d8f7",
+    "type": "uml:ControlFlow",
+    "source": "_9eee5209da714d5798c4879f",
+    "target": "_a15ca52986e7411f971e239b",
+    "guard": "G/D train"
+}

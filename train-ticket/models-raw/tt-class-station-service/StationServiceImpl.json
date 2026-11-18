@@ -1,0 +1,110 @@
+{
+    "name": "StationServiceImpl",
+    "key": "_e6937565eee34903aeac68e4",
+    "type": "class",
+    "hasTypeVariable": false,
+    "position": null,
+    "modifiers": [],
+    "fields": {
+        "repository": {
+            "name": "repository",
+            "key": "_a7c3d18f023d4cc0a7645e74",
+            "type": "StationRepository",
+            "visibility": "private",
+            "isStatic": false
+        }
+    },
+    "methods": {
+        "create": {
+            "name": "create",
+            "key": "_577ccc76cc744619a3d2c60e",
+            "returnType": "Response",
+            "parameters": "Station station, HttpHeaders headers",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "exist": {
+            "name": "exist",
+            "key": "_98310348a29b4f5e80eb2918",
+            "returnType": "boolean",
+            "parameters": "String stationName, HttpHeaders headers",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "update": {
+            "name": "update",
+            "key": "_7dbe9ad1b74c433daad7c8a2",
+            "returnType": "Response",
+            "parameters": "Station info, HttpHeaders headers",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "delete": {
+            "name": "delete",
+            "key": "_04cd52a13e0a4aa688d4fc4d",
+            "returnType": "Response",
+            "parameters": "String stationsId, HttpHeaders headers",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "query": {
+            "name": "query",
+            "key": "_c04f3ea97009463690ec134e",
+            "returnType": "Response",
+            "parameters": "HttpHeaders headers",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "queryForId": {
+            "name": "queryForId",
+            "key": "_a353669cc5d24d679ad5d95a",
+            "returnType": "Response",
+            "parameters": "String stationName, HttpHeaders headers",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "queryForIdBatch": {
+            "name": "queryForIdBatch",
+            "key": "_08d847cfa4c049f6a8be3524",
+            "returnType": "Response",
+            "parameters": "List<String> nameList, HttpHeaders headers",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "queryById": {
+            "name": "queryById",
+            "key": "_75169ba94dca4db3814764c3",
+            "returnType": "Response",
+            "parameters": "String stationId, HttpHeaders headers",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "queryByIdBatch": {
+            "name": "queryByIdBatch",
+            "key": "_a11cf40bb21a4bfaa7fa3bb9",
+            "returnType": "Response",
+            "parameters": "List<String> idList, HttpHeaders headers",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        }
+    },
+    "file_path": "./StationServiceImpl",
+    "anonymous": false,
+    "auxclass": false,
+    "implements_": [
+        "_0ecaa43f3ffa468da2f46d87"
+    ],
+    "extends_": [],
+    "definedInClassOrInterfaceTypeKey": null,
+    "innerDefinedClasses": {},
+    "innerDefinedInterfaces": {}
+}

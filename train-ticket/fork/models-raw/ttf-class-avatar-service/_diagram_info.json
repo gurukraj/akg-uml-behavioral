@@ -1,0 +1,19 @@
+{
+    "classification": {
+        "categories": [
+            "Class"
+        ],
+        "primary": "Class",
+        "is_class_diagram": true,
+        "is_behavioral": false
+    },
+    "detectedTypes": {
+        "uml:Class": 1
+    },
+    "elementCounts": {
+        "classes": 1
+    },
+    "totalElements": 1,
+    "diagram_id": "ttf-class-avatar-service",
+    "source_file": "ttf-class-avatar-service.json"
+}

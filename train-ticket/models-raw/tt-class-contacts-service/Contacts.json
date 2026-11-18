@@ -1,0 +1,61 @@
+{
+    "name": "Contacts",
+    "key": "_ed0e4afdc459404fb7c89b63",
+    "type": "class",
+    "hasTypeVariable": false,
+    "position": null,
+    "modifiers": [],
+    "fields": {
+        "id": {
+            "name": "id",
+            "key": "_256e45eab21740249e295466",
+            "type": "String",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "accountId": {
+            "name": "accountId",
+            "key": "_11880a1fe033461b8d4ab7ef",
+            "type": "String",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "name": {
+            "name": "name",
+            "key": "_5dbe66abd81d49db9aae19be",
+            "type": "String",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "documentType": {
+            "name": "documentType",
+            "key": "_0bb67989a97547289739d3fc",
+            "type": "int",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "documentNumber": {
+            "name": "documentNumber",
+            "key": "_4743cc5e9d8e49a1974c3492",
+            "type": "String",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "phoneNumber": {
+            "name": "phoneNumber",
+            "key": "_740ef6d4d7bc43a894aed670",
+            "type": "String",
+            "visibility": "private",
+            "isStatic": false
+        }
+    },
+    "methods": {},
+    "file_path": "./Contacts",
+    "anonymous": false,
+    "auxclass": false,
+    "implements_": [],
+    "extends_": [],
+    "definedInClassOrInterfaceTypeKey": null,
+    "innerDefinedClasses": {},
+    "innerDefinedInterfaces": {}
+}

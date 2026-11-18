@@ -1,0 +1,36 @@
+{
+    "name": "PreserveController",
+    "key": "_016800d2d8d94107bb73cc15",
+    "type": "class",
+    "hasTypeVariable": false,
+    "position": null,
+    "modifiers": [],
+    "fields": {
+        "preserveService": {
+            "name": "preserveService",
+            "key": "_9ba5ed1d714a4d41a72a0e0a",
+            "type": "PreserveService",
+            "visibility": "private",
+            "isStatic": false
+        }
+    },
+    "methods": {
+        "preserve": {
+            "name": "preserve",
+            "key": "_f98317925a894acdb963d5de",
+            "returnType": "HttpEntity",
+            "parameters": "OrderTicketsInfo oti, HttpHeaders headers",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        }
+    },
+    "file_path": "./PreserveController",
+    "anonymous": false,
+    "auxclass": false,
+    "implements_": [],
+    "extends_": [],
+    "definedInClassOrInterfaceTypeKey": null,
+    "innerDefinedClasses": {},
+    "innerDefinedInterfaces": {}
+}

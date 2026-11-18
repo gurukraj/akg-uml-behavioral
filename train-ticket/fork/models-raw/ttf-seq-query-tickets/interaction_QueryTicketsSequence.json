@@ -1,0 +1,557 @@
+{
+    "name": "QueryTicketsSequence",
+    "key": "_db15c8842cb1445bba9c64ec",
+    "type": "interaction",
+    "lifelines": [
+        {
+            "name": "Client",
+            "key": "_62e77973d8384f7798626260",
+            "represents": "_ad02e16079cc43f28d35fda0",
+            "coveredBy": []
+        },
+        {
+            "name": "ts-travel-service",
+            "key": "_b0b72c02b82c49ee98013f35",
+            "represents": "_9cc9948267244d619faa7709",
+            "coveredBy": []
+        },
+        {
+            "name": "ts-ticketinfo-service",
+            "key": "_21e009f923bc4b0ebe7ea149",
+            "represents": "_b81fea24653d4de99d9a29f3",
+            "coveredBy": []
+        },
+        {
+            "name": "ts-basic-service",
+            "key": "_29e6cb2721624429a211619a",
+            "represents": "_04b472208c854545aaa68a3e",
+            "coveredBy": []
+        },
+        {
+            "name": "ts-train-service",
+            "key": "_41637b32b6ca48fea756a54f",
+            "represents": "_305bd23821264fb4a84bc8c7",
+            "coveredBy": []
+        },
+        {
+            "name": "ts-route-service",
+            "key": "_f6ad3eb8318a4f06aa48ea10",
+            "represents": "_d6d3eebfe11a4604af8dfc58",
+            "coveredBy": []
+        },
+        {
+            "name": "ts-station-service",
+            "key": "_6343c608cc8c45cc8b130a05",
+            "represents": "_1bac9a43f381470abf7141f7",
+            "coveredBy": []
+        },
+        {
+            "name": "ts-price-service",
+            "key": "_9b7269d84e7f469a8f3d407a",
+            "represents": "_55869de837f4462b89fdf288",
+            "coveredBy": []
+        },
+        {
+            "name": "ts-seat-service",
+            "key": "_67aaadb3645549da93f2b6be",
+            "represents": "_0067cae7e346430f8b7b9ad6",
+            "coveredBy": []
+        },
+        {
+            "name": "ts-order-service",
+            "key": "_76db177c62914ce1a220821d",
+            "represents": "_00f2f6c68b854b59a0d4f3a9",
+            "coveredBy": []
+        }
+    ],
+    "messages": [
+        {
+            "name": "queryLeftTickets(tripInfo)",
+            "key": "_4f1bc886a3dc48a1a83be0ab",
+            "messageSort": "synchCall",
+            "sendEvent": "_6ae44f47e3604d2da78fdd58",
+            "receiveEvent": "_6b0ac82ead4a40abb5eeabae",
+            "connector": null,
+            "signature": null
+        },
+        {
+            "name": "queryForTravel(travel)",
+            "key": "_ed07135bd80e427888d08943",
+            "messageSort": "synchCall",
+            "sendEvent": "_5e7af43888c2420885ff59ee",
+            "receiveEvent": "_dac9c2ae04f84b52bb71b55d",
+            "connector": null,
+            "signature": null
+        },
+        {
+            "name": "queryForTravel(travel)",
+            "key": "_39e4251d040546f0815f1907",
+            "messageSort": "synchCall",
+            "sendEvent": "_6029c78645974256b8d45654",
+            "receiveEvent": "_bf35e161a45045779e4303fa",
+            "connector": null,
+            "signature": null
+        },
+        {
+            "name": "queryTrainType(trainTypeId)",
+            "key": "_e03a2ebccc5d4d8da1c0a117",
+            "messageSort": "synchCall",
+            "sendEvent": "_5bfba3c91d3b4c20be9aa580",
+            "receiveEvent": "_b6564bc8a96547e6af7dca2e",
+            "connector": null,
+            "signature": null
+        },
+        {
+            "name": "trainType",
+            "key": "_81e01d13a6354291a2803706",
+            "messageSort": "reply",
+            "sendEvent": "_ce8d926f7680489fbf002e34",
+            "receiveEvent": "_0c270fab62b443e0b2cd1bb2",
+            "connector": null,
+            "signature": null
+        },
+        {
+            "name": "getRouteById(routeId)",
+            "key": "_7290187fa2f34c4e834d17f1",
+            "messageSort": "synchCall",
+            "sendEvent": "_994c357e60544b659bf8c301",
+            "receiveEvent": "_0d4933516d644204b25e8439",
+            "connector": null,
+            "signature": null
+        },
+        {
+            "name": "route",
+            "key": "_eadaf508d6d24c9ea9a52f60",
+            "messageSort": "reply",
+            "sendEvent": "_834aa5c78581446c9c462954",
+            "receiveEvent": "_db4c8e4ae47a46b69401bf8c",
+            "connector": null,
+            "signature": null
+        },
+        {
+            "name": "queryById(stationId)",
+            "key": "_e03c292e6229412696080ee2",
+            "messageSort": "synchCall",
+            "sendEvent": "_12b9b79e8448425abc30f0f5",
+            "receiveEvent": "_428d0a10a9644907b2486d6b",
+            "connector": null,
+            "signature": null
+        },
+        {
+            "name": "station",
+            "key": "_cc5da7383a074503bc8080b3",
+            "messageSort": "reply",
+            "sendEvent": "_dd46c0a40193446f9e3a4cdb",
+            "receiveEvent": "_1a2621a8e38e4622aa0afcd9",
+            "connector": null,
+            "signature": null
+        },
+        {
+            "name": "findByRouteIdAndTrainType()",
+            "key": "_ea0b3b949c324cc0b9392382",
+            "messageSort": "synchCall",
+            "sendEvent": "_1be461e8ef234711bb11e723",
+            "receiveEvent": "_d01a0fd611fe474897293cb4",
+            "connector": null,
+            "signature": null
+        },
+        {
+            "name": "priceConfig",
+            "key": "_8b7f6c6e2015499587f3ca00",
+            "messageSort": "reply",
+            "sendEvent": "_3c546e0dd7894a2a84d50c5a",
+            "receiveEvent": "_ac792944cc1149b0a923bded",
+            "connector": null,
+            "signature": null
+        },
+        {
+            "name": "travelResult",
+            "key": "_6adb59f7ae03443394bd0022",
+            "messageSort": "reply",
+            "sendEvent": "_163a76ba48b74451aec0db15",
+            "receiveEvent": "_991ba97d1a254431957b6125",
+            "connector": null,
+            "signature": null
+        },
+        {
+            "name": "travelResult",
+            "key": "_26d9ecb8c4c9455d98c953c8",
+            "messageSort": "reply",
+            "sendEvent": "_43b1727537ad4db0842ce6e7",
+            "receiveEvent": "_a455f694e66b44159404eda9",
+            "connector": null,
+            "signature": null
+        },
+        {
+            "name": "getLeftTicketOfInterval(seat)",
+            "key": "_a6244c0e16f743aea6be86a7",
+            "messageSort": "synchCall",
+            "sendEvent": "_12361411a6ea44a48c62f4e0",
+            "receiveEvent": "_dd3f19b899e641d3bef2f02d",
+            "connector": null,
+            "signature": null
+        },
+        {
+            "name": "getTicketsByDateAndTripId(seat)",
+            "key": "_cab019e91d274aaeac077f41",
+            "messageSort": "synchCall",
+            "sendEvent": "_d0c720c58eea45429558ea1c",
+            "receiveEvent": "_d337e87fe0064356938b5301",
+            "connector": null,
+            "signature": null
+        },
+        {
+            "name": "soldTickets",
+            "key": "_74c998b80b6c4e6c86fdee8a",
+            "messageSort": "reply",
+            "sendEvent": "_8d43b26329f94e34acd5d58d",
+            "receiveEvent": "_0b494d1db12c45108f75929e",
+            "connector": null,
+            "signature": null
+        },
+        {
+            "name": "leftTicketInfo",
+            "key": "_546a05e05c6e4ba2bfc96873",
+            "messageSort": "reply",
+            "sendEvent": "_53513248f39b4039a5b9c934",
+            "receiveEvent": "_63f4e4f7d13c4d0a9379b143",
+            "connector": null,
+            "signature": null
+        },
+        {
+            "name": "queryResult",
+            "key": "_44c71d8633e1438c9ceea2a2",
+            "messageSort": "reply",
+            "sendEvent": "_31662fc7443a4a3a83bd8ab3",
+            "receiveEvent": "_ab492c22c56748ce99a01d89",
+            "connector": null,
+            "signature": null
+        }
+    ],
+    "fragments": [
+        {
+            "key": "_6ae44f47e3604d2da78fdd58",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_62e77973d8384f7798626260",
+            "enclosingInteraction": "ttf-seq-query-tickets",
+            "message": "_4f1bc886a3dc48a1a83be0ab",
+            "execution": null
+        },
+        {
+            "key": "_6b0ac82ead4a40abb5eeabae",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_b0b72c02b82c49ee98013f35",
+            "enclosingInteraction": "ttf-seq-query-tickets",
+            "message": "_4f1bc886a3dc48a1a83be0ab",
+            "execution": null
+        },
+        {
+            "key": "_5e7af43888c2420885ff59ee",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_b0b72c02b82c49ee98013f35",
+            "enclosingInteraction": "ttf-seq-query-tickets",
+            "message": "_ed07135bd80e427888d08943",
+            "execution": null
+        },
+        {
+            "key": "_dac9c2ae04f84b52bb71b55d",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_21e009f923bc4b0ebe7ea149",
+            "enclosingInteraction": "ttf-seq-query-tickets",
+            "message": "_ed07135bd80e427888d08943",
+            "execution": null
+        },
+        {
+            "key": "_6029c78645974256b8d45654",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_21e009f923bc4b0ebe7ea149",
+            "enclosingInteraction": "ttf-seq-query-tickets",
+            "message": "_39e4251d040546f0815f1907",
+            "execution": null
+        },
+        {
+            "key": "_bf35e161a45045779e4303fa",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_29e6cb2721624429a211619a",
+            "enclosingInteraction": "ttf-seq-query-tickets",
+            "message": "_39e4251d040546f0815f1907",
+            "execution": null
+        },
+        {
+            "key": "_5bfba3c91d3b4c20be9aa580",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_29e6cb2721624429a211619a",
+            "enclosingInteraction": "ttf-seq-query-tickets",
+            "message": "_e03a2ebccc5d4d8da1c0a117",
+            "execution": null
+        },
+        {
+            "key": "_b6564bc8a96547e6af7dca2e",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_41637b32b6ca48fea756a54f",
+            "enclosingInteraction": "ttf-seq-query-tickets",
+            "message": "_e03a2ebccc5d4d8da1c0a117",
+            "execution": null
+        },
+        {
+            "key": "_ce8d926f7680489fbf002e34",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_41637b32b6ca48fea756a54f",
+            "enclosingInteraction": "ttf-seq-query-tickets",
+            "message": "_81e01d13a6354291a2803706",
+            "execution": null
+        },
+        {
+            "key": "_0c270fab62b443e0b2cd1bb2",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_29e6cb2721624429a211619a",
+            "enclosingInteraction": "ttf-seq-query-tickets",
+            "message": "_81e01d13a6354291a2803706",
+            "execution": null
+        },
+        {
+            "key": "_994c357e60544b659bf8c301",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_29e6cb2721624429a211619a",
+            "enclosingInteraction": "ttf-seq-query-tickets",
+            "message": "_7290187fa2f34c4e834d17f1",
+            "execution": null
+        },
+        {
+            "key": "_0d4933516d644204b25e8439",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_f6ad3eb8318a4f06aa48ea10",
+            "enclosingInteraction": "ttf-seq-query-tickets",
+            "message": "_7290187fa2f34c4e834d17f1",
+            "execution": null
+        },
+        {
+            "key": "_834aa5c78581446c9c462954",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_f6ad3eb8318a4f06aa48ea10",
+            "enclosingInteraction": "ttf-seq-query-tickets",
+            "message": "_eadaf508d6d24c9ea9a52f60",
+            "execution": null
+        },
+        {
+            "key": "_db4c8e4ae47a46b69401bf8c",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_29e6cb2721624429a211619a",
+            "enclosingInteraction": "ttf-seq-query-tickets",
+            "message": "_eadaf508d6d24c9ea9a52f60",
+            "execution": null
+        },
+        {
+            "key": "_12b9b79e8448425abc30f0f5",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_29e6cb2721624429a211619a",
+            "enclosingInteraction": "ttf-seq-query-tickets",
+            "message": "_e03c292e6229412696080ee2",
+            "execution": null
+        },
+        {
+            "key": "_428d0a10a9644907b2486d6b",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_6343c608cc8c45cc8b130a05",
+            "enclosingInteraction": "ttf-seq-query-tickets",
+            "message": "_e03c292e6229412696080ee2",
+            "execution": null
+        },
+        {
+            "key": "_dd46c0a40193446f9e3a4cdb",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_6343c608cc8c45cc8b130a05",
+            "enclosingInteraction": "ttf-seq-query-tickets",
+            "message": "_cc5da7383a074503bc8080b3",
+            "execution": null
+        },
+        {
+            "key": "_1a2621a8e38e4622aa0afcd9",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_29e6cb2721624429a211619a",
+            "enclosingInteraction": "ttf-seq-query-tickets",
+            "message": "_cc5da7383a074503bc8080b3",
+            "execution": null
+        },
+        {
+            "key": "_1be461e8ef234711bb11e723",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_29e6cb2721624429a211619a",
+            "enclosingInteraction": "ttf-seq-query-tickets",
+            "message": "_ea0b3b949c324cc0b9392382",
+            "execution": null
+        },
+        {
+            "key": "_d01a0fd611fe474897293cb4",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_9b7269d84e7f469a8f3d407a",
+            "enclosingInteraction": "ttf-seq-query-tickets",
+            "message": "_ea0b3b949c324cc0b9392382",
+            "execution": null
+        },
+        {
+            "key": "_3c546e0dd7894a2a84d50c5a",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_9b7269d84e7f469a8f3d407a",
+            "enclosingInteraction": "ttf-seq-query-tickets",
+            "message": "_8b7f6c6e2015499587f3ca00",
+            "execution": null
+        },
+        {
+            "key": "_ac792944cc1149b0a923bded",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_29e6cb2721624429a211619a",
+            "enclosingInteraction": "ttf-seq-query-tickets",
+            "message": "_8b7f6c6e2015499587f3ca00",
+            "execution": null
+        },
+        {
+            "key": "_163a76ba48b74451aec0db15",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_29e6cb2721624429a211619a",
+            "enclosingInteraction": "ttf-seq-query-tickets",
+            "message": "_6adb59f7ae03443394bd0022",
+            "execution": null
+        },
+        {
+            "key": "_991ba97d1a254431957b6125",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_21e009f923bc4b0ebe7ea149",
+            "enclosingInteraction": "ttf-seq-query-tickets",
+            "message": "_6adb59f7ae03443394bd0022",
+            "execution": null
+        },
+        {
+            "key": "_43b1727537ad4db0842ce6e7",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_21e009f923bc4b0ebe7ea149",
+            "enclosingInteraction": "ttf-seq-query-tickets",
+            "message": "_26d9ecb8c4c9455d98c953c8",
+            "execution": null
+        },
+        {
+            "key": "_a455f694e66b44159404eda9",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_b0b72c02b82c49ee98013f35",
+            "enclosingInteraction": "ttf-seq-query-tickets",
+            "message": "_26d9ecb8c4c9455d98c953c8",
+            "execution": null
+        },
+        {
+            "key": "_12361411a6ea44a48c62f4e0",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_b0b72c02b82c49ee98013f35",
+            "enclosingInteraction": "ttf-seq-query-tickets",
+            "message": "_a6244c0e16f743aea6be86a7",
+            "execution": null
+        },
+        {
+            "key": "_dd3f19b899e641d3bef2f02d",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_67aaadb3645549da93f2b6be",
+            "enclosingInteraction": "ttf-seq-query-tickets",
+            "message": "_a6244c0e16f743aea6be86a7",
+            "execution": null
+        },
+        {
+            "key": "_d0c720c58eea45429558ea1c",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_67aaadb3645549da93f2b6be",
+            "enclosingInteraction": "ttf-seq-query-tickets",
+            "message": "_cab019e91d274aaeac077f41",
+            "execution": null
+        },
+        {
+            "key": "_d337e87fe0064356938b5301",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_76db177c62914ce1a220821d",
+            "enclosingInteraction": "ttf-seq-query-tickets",
+            "message": "_cab019e91d274aaeac077f41",
+            "execution": null
+        },
+        {
+            "key": "_8d43b26329f94e34acd5d58d",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_76db177c62914ce1a220821d",
+            "enclosingInteraction": "ttf-seq-query-tickets",
+            "message": "_74c998b80b6c4e6c86fdee8a",
+            "execution": null
+        },
+        {
+            "key": "_0b494d1db12c45108f75929e",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_67aaadb3645549da93f2b6be",
+            "enclosingInteraction": "ttf-seq-query-tickets",
+            "message": "_74c998b80b6c4e6c86fdee8a",
+            "execution": null
+        },
+        {
+            "key": "_53513248f39b4039a5b9c934",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_67aaadb3645549da93f2b6be",
+            "enclosingInteraction": "ttf-seq-query-tickets",
+            "message": "_546a05e05c6e4ba2bfc96873",
+            "execution": null
+        },
+        {
+            "key": "_63f4e4f7d13c4d0a9379b143",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_b0b72c02b82c49ee98013f35",
+            "enclosingInteraction": "ttf-seq-query-tickets",
+            "message": "_546a05e05c6e4ba2bfc96873",
+            "execution": null
+        },
+        {
+            "key": "_31662fc7443a4a3a83bd8ab3",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_b0b72c02b82c49ee98013f35",
+            "enclosingInteraction": "ttf-seq-query-tickets",
+            "message": "_44c71d8633e1438c9ceea2a2",
+            "execution": null
+        },
+        {
+            "key": "_ab492c22c56748ce99a01d89",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_62e77973d8384f7798626260",
+            "enclosingInteraction": "ttf-seq-query-tickets",
+            "message": "_44c71d8633e1438c9ceea2a2",
+            "execution": null
+        }
+    ]
+}

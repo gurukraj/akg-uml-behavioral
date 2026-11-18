@@ -1,0 +1,25 @@
+{
+    "classification": {
+        "categories": [
+            "Class"
+        ],
+        "primary": "Class",
+        "is_class_diagram": true,
+        "is_behavioral": false
+    },
+    "detectedTypes": {
+        "uml:Class": 2,
+        "uml:Interface": 1,
+        "uml:Dependency": 8,
+        "uml:Association": 1
+    },
+    "elementCounts": {
+        "classes": 2,
+        "interfaces": 1,
+        "dependencies": 8,
+        "associations": 1
+    },
+    "totalElements": 12,
+    "diagram_id": "tt-class-basic-service",
+    "source_file": "tt-class-basic-service.json"
+}

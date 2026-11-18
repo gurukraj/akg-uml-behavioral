@@ -1,0 +1,7 @@
+{
+    "name": "ts-voucher-service_depends_on_ts-order-service",
+    "key": "_14420fe959c94caeb3c783f4",
+    "type": "dependency",
+    "source": "_b6c1dd636e224675b079dc13",
+    "target": "_84f6291b257048c19ccf7599"
+}

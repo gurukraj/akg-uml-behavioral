@@ -1,0 +1,89 @@
+{
+    "name": "RouteController",
+    "key": "_25d184b6318f4a498221d035",
+    "type": "class",
+    "hasTypeVariable": false,
+    "position": null,
+    "modifiers": [],
+    "fields": {},
+    "methods": {
+        "createAndModifyRoute": {
+            "name": "createAndModifyRoute",
+            "key": "_f1cc92df43f844d0ab8566a1",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "RouteInfo",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "deleteRoute": {
+            "name": "deleteRoute",
+            "key": "_f26f89fd6de44416b5f4d395",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "String",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "queryById": {
+            "name": "queryById",
+            "key": "_3d8b25a50e8c420297260c1a",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "String",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "queryAll": {
+            "name": "queryAll",
+            "key": "_6cd4f193c19745f5ac8106ae",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "queryByStartAndTerminal": {
+            "name": "queryByStartAndTerminal",
+            "key": "_d6b71d0efa404796a3716831",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "String",
+                    "String",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        }
+    },
+    "file_path": "./RouteController",
+    "anonymous": false,
+    "auxclass": false,
+    "implements_": [],
+    "extends_": [],
+    "definedInClassOrInterfaceTypeKey": null,
+    "innerDefinedClasses": {},
+    "innerDefinedInterfaces": {}
+}

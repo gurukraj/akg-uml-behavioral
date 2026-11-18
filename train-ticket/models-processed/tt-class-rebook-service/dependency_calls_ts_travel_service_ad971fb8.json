@@ -1,0 +1,8 @@
+{
+    "name": "calls_ts_travel_service",
+    "key": "_53665aecf8b748fdad971fb8",
+    "type": "dependency",
+    "source": "tt-class-rebook-service",
+    "target": "ts-travel-service",
+    "endpoint": "POST /api/v1/travelservice/trip_detail"
+}

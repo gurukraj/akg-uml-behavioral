@@ -1,0 +1,8 @@
+{
+    "name": "SetCancelStatus_to_CheckOrderStatus",
+    "key": "_2264eb973e394621bb12a9b5",
+    "type": "uml:ControlFlow",
+    "source": "_ec59b2d831464f4ab50254db",
+    "target": "_df1f3c33c9e44e0887542074",
+    "guard": null
+}

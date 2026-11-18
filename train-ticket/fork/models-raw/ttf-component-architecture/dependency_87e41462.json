@@ -1,0 +1,7 @@
+{
+    "name": "ts-cancel-service_depends_on_ts-inside-payment-service",
+    "key": "_d2d3f85209e344d787e41462",
+    "type": "dependency",
+    "source": "_e0638e12f1db44fa91f70547",
+    "target": "_df74cbf00315420ea2433cd9"
+}

@@ -1,0 +1,8 @@
+{
+    "name": "ReceiveBookingRequest_to_CheckSecurity",
+    "key": "_2165eea450f44925aa93b291",
+    "type": "uml:ControlFlow",
+    "source": "_e2203a42bc3d4697b73121c0",
+    "target": "_9a5fcff8f422445a83c60c3c",
+    "guard": null
+}

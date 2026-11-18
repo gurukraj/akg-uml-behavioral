@@ -1,0 +1,8 @@
+{
+    "name": "InitialNode_to_GetOrder",
+    "key": "_f2218e20384e45bfb9d1cb1e",
+    "type": "uml:ControlFlow",
+    "source": "_846245aa88aa4d5d8c7bf64b",
+    "target": "_adf11e22886e492e8094d01a",
+    "guard": null
+}

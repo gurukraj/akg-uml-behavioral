@@ -1,0 +1,7 @@
+{
+    "name": "OrderController_uses_OrderService",
+    "key": "_43336b91ad6447f0bdee328d",
+    "type": "dependency",
+    "source": "_90d57c0bd931451a986ce813",
+    "target": "_b31a380334b64d88954a8ce3"
+}

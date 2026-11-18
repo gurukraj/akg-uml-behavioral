@@ -1,0 +1,23 @@
+{
+    "classification": {
+        "categories": [
+            "Class"
+        ],
+        "primary": "Class",
+        "is_class_diagram": true,
+        "is_behavioral": false
+    },
+    "detectedTypes": {
+        "uml:Class": 3,
+        "uml:Interface": 2,
+        "uml:Dependency": 2
+    },
+    "elementCounts": {
+        "classes": 3,
+        "interfaces": 2,
+        "dependencies": 2
+    },
+    "totalElements": 7,
+    "diagram_id": "ttf-class-train-service",
+    "source_file": "ttf-class-train-service.json"
+}

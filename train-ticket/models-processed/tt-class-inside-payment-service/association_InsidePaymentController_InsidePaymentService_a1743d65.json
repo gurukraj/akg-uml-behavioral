@@ -1,0 +1,9 @@
+{
+    "name": "InsidePaymentController_uses_InsidePaymentService",
+    "key": "_9574de0463004ce0a1743d65",
+    "type": "association",
+    "source": "_c044a4181f1640ac833997e9",
+    "target": "_d0001bcaf9e8482d9d9d4016",
+    "sourceMultiplicity": "1",
+    "targetMultiplicity": "1"
+}

@@ -1,0 +1,7 @@
+{
+    "name": "ConsignServiceImpl_uses_ConsignRepository",
+    "key": "_faa403df486748f2928e0861",
+    "type": "dependency",
+    "source": "_de8d1489c5ee42aaaab3af62",
+    "target": "_d3cc73cb96ab483687e16b41"
+}

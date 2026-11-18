@@ -1,0 +1,8 @@
+{
+    "name": "calls_ts_notification_service",
+    "key": "_dd9eee657cf74c97b2d1311d",
+    "type": "dependency",
+    "source": "tt-class-cancel-service",
+    "target": "ts-notification-service",
+    "endpoint": "POST /api/v1/notifyservice/notification/order_cancel_success"
+}

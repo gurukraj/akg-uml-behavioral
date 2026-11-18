@@ -1,0 +1,54 @@
+{
+    "name": "Assurance",
+    "key": "_7d179690c2de437e83f46a05",
+    "type": "class",
+    "hasTypeVariable": false,
+    "position": null,
+    "modifiers": [],
+    "fields": {
+        "id": {
+            "name": "id",
+            "key": "_465961c773d341f5a8862704",
+            "type": "UUID",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "orderId": {
+            "name": "orderId",
+            "key": "_95f7c56114a34369893a6260",
+            "type": "UUID",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "typeIndex": {
+            "name": "typeIndex",
+            "key": "_69c37f5311bd4ec3b7cb536b",
+            "type": "int",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "typeName": {
+            "name": "typeName",
+            "key": "_62ec6685115a453aae9f3a1e",
+            "type": "String",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "typePrice": {
+            "name": "typePrice",
+            "key": "_9ee0d3a513364886bc60a625",
+            "type": "double",
+            "visibility": "private",
+            "isStatic": false
+        }
+    },
+    "methods": {},
+    "file_path": "./Assurance",
+    "anonymous": false,
+    "auxclass": false,
+    "implements_": [],
+    "extends_": [],
+    "definedInClassOrInterfaceTypeKey": null,
+    "innerDefinedClasses": {},
+    "innerDefinedInterfaces": {}
+}

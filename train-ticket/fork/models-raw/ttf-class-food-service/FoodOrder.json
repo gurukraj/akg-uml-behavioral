@@ -1,0 +1,68 @@
+{
+    "name": "FoodOrder",
+    "key": "_62ef56ce5568481abf36dc15",
+    "type": "class",
+    "hasTypeVariable": false,
+    "position": null,
+    "modifiers": [],
+    "fields": {
+        "id": {
+            "name": "id",
+            "key": "_b7509dafc279428db74f20b3",
+            "type": "UUID",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "orderId": {
+            "name": "orderId",
+            "key": "_509cab0f344b447990115765",
+            "type": "UUID",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "foodType": {
+            "name": "foodType",
+            "key": "_8178f7566a2a4d868c8ac55a",
+            "type": "int",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "foodName": {
+            "name": "foodName",
+            "key": "_1ffde843ff86495d8bf1c66e",
+            "type": "String",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "price": {
+            "name": "price",
+            "key": "_228d0a6ad3c54f03b2fe838f",
+            "type": "double",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "stationName": {
+            "name": "stationName",
+            "key": "_23e9b24599e3475c9e7ead74",
+            "type": "String",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "storeName": {
+            "name": "storeName",
+            "key": "_05a19ef9983f4fdab53620e3",
+            "type": "String",
+            "visibility": "private",
+            "isStatic": false
+        }
+    },
+    "methods": {},
+    "file_path": "./FoodOrder",
+    "anonymous": false,
+    "auxclass": false,
+    "implements_": [],
+    "extends_": [],
+    "definedInClassOrInterfaceTypeKey": null,
+    "innerDefinedClasses": {},
+    "innerDefinedInterfaces": {}
+}

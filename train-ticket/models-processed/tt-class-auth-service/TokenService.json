@@ -1,0 +1,28 @@
+{
+    "name": "TokenService",
+    "key": "_ec2304c3a2bb484bb65b8e6c",
+    "type": "interface",
+    "hasTypeVariable": false,
+    "position": null,
+    "modifiers": [],
+    "fields": {},
+    "methods": {
+        "getToken": {
+            "name": "getToken",
+            "key": "_360fda2c1d674e92ad6b5729",
+            "returnType": "Response",
+            "parameters": "BasicAuthDto dto, HttpHeaders headers",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": true
+        }
+    },
+    "file_path": "./TokenService",
+    "anonymous": false,
+    "auxclass": false,
+    "implements_": [],
+    "extends_": [],
+    "definedInClassOrInterfaceTypeKey": null,
+    "innerDefinedClasses": {},
+    "innerDefinedInterfaces": {}
+}

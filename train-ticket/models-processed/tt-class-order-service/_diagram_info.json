@@ -1,0 +1,25 @@
+{
+    "classification": {
+        "categories": [
+            "Class"
+        ],
+        "primary": "Class",
+        "is_class_diagram": true,
+        "is_behavioral": false
+    },
+    "detectedTypes": {
+        "uml:Class": 5,
+        "uml:Interface": 2,
+        "uml:Dependency": 1,
+        "uml:Association": 3
+    },
+    "elementCounts": {
+        "classes": 5,
+        "interfaces": 2,
+        "dependencies": 1,
+        "associations": 3
+    },
+    "totalElements": 11,
+    "diagram_id": "tt-class-order-service",
+    "source_file": "tt-class-order-service.json"
+}

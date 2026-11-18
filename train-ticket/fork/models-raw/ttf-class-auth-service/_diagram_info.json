@@ -1,0 +1,23 @@
+{
+    "classification": {
+        "categories": [
+            "Class"
+        ],
+        "primary": "Class",
+        "is_class_diagram": true,
+        "is_behavioral": false
+    },
+    "detectedTypes": {
+        "uml:Class": 4,
+        "uml:Interface": 3,
+        "uml:Dependency": 3
+    },
+    "elementCounts": {
+        "classes": 4,
+        "interfaces": 3,
+        "dependencies": 3
+    },
+    "totalElements": 10,
+    "diagram_id": "ttf-class-auth-service",
+    "source_file": "ttf-class-auth-service.json"
+}

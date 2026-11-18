@@ -1,0 +1,54 @@
+{
+    "name": "PriceConfig",
+    "key": "_481179cb0b834eba8c5f9bdd",
+    "type": "class",
+    "hasTypeVariable": false,
+    "position": null,
+    "modifiers": [],
+    "fields": {
+        "id": {
+            "name": "id",
+            "key": "_4c551167b421426e846afde5",
+            "type": "UUID",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "trainType": {
+            "name": "trainType",
+            "key": "_ab21bde65592454186044bc4",
+            "type": "String",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "routeId": {
+            "name": "routeId",
+            "key": "_87d262603e724aa396d31957",
+            "type": "String",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "basicPriceRate": {
+            "name": "basicPriceRate",
+            "key": "_37e15cdb87ce46ff8d980f56",
+            "type": "double",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "firstClassPriceRate": {
+            "name": "firstClassPriceRate",
+            "key": "_c59e22d341ce4d368fadfc72",
+            "type": "double",
+            "visibility": "private",
+            "isStatic": false
+        }
+    },
+    "methods": {},
+    "file_path": "./PriceConfig",
+    "anonymous": false,
+    "auxclass": false,
+    "implements_": [],
+    "extends_": [],
+    "definedInClassOrInterfaceTypeKey": null,
+    "innerDefinedClasses": {},
+    "innerDefinedInterfaces": {}
+}

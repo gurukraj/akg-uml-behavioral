@@ -1,0 +1,170 @@
+{
+    "name": "PaymentServiceFlow",
+    "key": "_f1f5e866ab684500a8d78455",
+    "type": "interaction",
+    "lifelines": [
+        {
+            "name": "ts-inside-payment-service",
+            "key": "_0d34845014f74f72b5dc3d0b",
+            "represents": "_6e67db9fbe584f698cb4878c",
+            "coveredBy": []
+        },
+        {
+            "name": "ts-order-other-service",
+            "key": "_bc24df1f5dff4c87a84106df",
+            "represents": "_f03c9c1941514f2da8d709c4",
+            "coveredBy": []
+        },
+        {
+            "name": "ts-order-service",
+            "key": "_26eeca11373c41de97b75478",
+            "represents": "_f121e771fe3e494196187f29",
+            "coveredBy": []
+        },
+        {
+            "name": "ts-payment-service",
+            "key": "_3a6860fac62c4af994c51074",
+            "represents": "_84f3ce93f45f4566a86f3b6b",
+            "coveredBy": []
+        }
+    ],
+    "messages": [
+        {
+            "name": "1: getOrder()",
+            "key": "_bebc33d600fb4f3891deea42",
+            "messageSort": "synchCall",
+            "sendEvent": "_5b6494bc73064c61b4138a73",
+            "receiveEvent": "_3e8d981d0fb0482f9d22c862",
+            "connector": null,
+            "signature": null
+        },
+        {
+            "name": "1: getOrder()",
+            "key": "_8e294fabd16d43f09c919711",
+            "messageSort": "synchCall",
+            "sendEvent": "_0e0cbfc866d5495eb6e8ddd2",
+            "receiveEvent": "_5f222e20508441b1bad9bf5f",
+            "connector": null,
+            "signature": null
+        },
+        {
+            "name": "2: pay()",
+            "key": "_e52b90c57a7245e89b31cdbe",
+            "messageSort": "synchCall",
+            "sendEvent": "_2033b2ebd7434fc5ab22fed1",
+            "receiveEvent": "_76c7824200a94455a8b3d648",
+            "connector": null,
+            "signature": null
+        },
+        {
+            "name": "3: setOrderStatus()",
+            "key": "_3bef5ed8be4f4cb2980cff56",
+            "messageSort": "synchCall",
+            "sendEvent": "_f0ec358cd84a4d649f165a24",
+            "receiveEvent": "_4b53af14a36440de80c79f2e",
+            "connector": null,
+            "signature": null
+        },
+        {
+            "name": "3: setOrderStatus()",
+            "key": "_f263f1798b754347aa5da426",
+            "messageSort": "synchCall",
+            "sendEvent": "_1693d7394dcf4a048755a5e4",
+            "receiveEvent": "_59a568bfd05b49b98e6622b4",
+            "connector": null,
+            "signature": null
+        }
+    ],
+    "fragments": [
+        {
+            "key": "_5b6494bc73064c61b4138a73",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_0d34845014f74f72b5dc3d0b",
+            "enclosingInteraction": "tt-comm-payment-flow",
+            "message": "_bebc33d600fb4f3891deea42",
+            "execution": null
+        },
+        {
+            "key": "_3e8d981d0fb0482f9d22c862",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_bc24df1f5dff4c87a84106df",
+            "enclosingInteraction": "tt-comm-payment-flow",
+            "message": "_bebc33d600fb4f3891deea42",
+            "execution": null
+        },
+        {
+            "key": "_0e0cbfc866d5495eb6e8ddd2",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_0d34845014f74f72b5dc3d0b",
+            "enclosingInteraction": "tt-comm-payment-flow",
+            "message": "_8e294fabd16d43f09c919711",
+            "execution": null
+        },
+        {
+            "key": "_5f222e20508441b1bad9bf5f",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_26eeca11373c41de97b75478",
+            "enclosingInteraction": "tt-comm-payment-flow",
+            "message": "_8e294fabd16d43f09c919711",
+            "execution": null
+        },
+        {
+            "key": "_2033b2ebd7434fc5ab22fed1",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_0d34845014f74f72b5dc3d0b",
+            "enclosingInteraction": "tt-comm-payment-flow",
+            "message": "_e52b90c57a7245e89b31cdbe",
+            "execution": null
+        },
+        {
+            "key": "_76c7824200a94455a8b3d648",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_3a6860fac62c4af994c51074",
+            "enclosingInteraction": "tt-comm-payment-flow",
+            "message": "_e52b90c57a7245e89b31cdbe",
+            "execution": null
+        },
+        {
+            "key": "_f0ec358cd84a4d649f165a24",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_0d34845014f74f72b5dc3d0b",
+            "enclosingInteraction": "tt-comm-payment-flow",
+            "message": "_3bef5ed8be4f4cb2980cff56",
+            "execution": null
+        },
+        {
+            "key": "_4b53af14a36440de80c79f2e",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_bc24df1f5dff4c87a84106df",
+            "enclosingInteraction": "tt-comm-payment-flow",
+            "message": "_3bef5ed8be4f4cb2980cff56",
+            "execution": null
+        },
+        {
+            "key": "_1693d7394dcf4a048755a5e4",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_0d34845014f74f72b5dc3d0b",
+            "enclosingInteraction": "tt-comm-payment-flow",
+            "message": "_f263f1798b754347aa5da426",
+            "execution": null
+        },
+        {
+            "key": "_59a568bfd05b49b98e6622b4",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_26eeca11373c41de97b75478",
+            "enclosingInteraction": "tt-comm-payment-flow",
+            "message": "_f263f1798b754347aa5da426",
+            "execution": null
+        }
+    ]
+}

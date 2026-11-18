@@ -1,0 +1,49 @@
+{
+    "name": "NotificationServiceImpl",
+    "key": "_c64b486f98a647abbe639612",
+    "type": "class",
+    "hasTypeVariable": false,
+    "position": null,
+    "modifiers": [],
+    "fields": {},
+    "methods": {
+        "preserveSuccess": {
+            "name": "preserveSuccess",
+            "key": "_1f929bd981d44361a82efcd7",
+            "returnType": "boolean",
+            "parameters": [
+                [
+                    "NotifyInfo",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "orderCancelSuccess": {
+            "name": "orderCancelSuccess",
+            "key": "_0f0d948bc76e4b76b3350c50",
+            "returnType": "boolean",
+            "parameters": [
+                [
+                    "NotifyInfo",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        }
+    },
+    "file_path": "./NotificationServiceImpl",
+    "anonymous": false,
+    "auxclass": false,
+    "implements_": [
+        "_99679d5e21b2457387215700"
+    ],
+    "extends_": [],
+    "definedInClassOrInterfaceTypeKey": null,
+    "innerDefinedClasses": {},
+    "innerDefinedInterfaces": {}
+}

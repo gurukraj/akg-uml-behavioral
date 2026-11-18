@@ -1,0 +1,45 @@
+{
+    "name": "ContactsRepository",
+    "key": "_42de664b1e8f4928ba70b173",
+    "type": "interface",
+    "hasTypeVariable": false,
+    "position": null,
+    "modifiers": [],
+    "fields": {},
+    "methods": {
+        "findByAccountId": {
+            "name": "findByAccountId",
+            "key": "_ebeaa2648464488cb39e88af",
+            "returnType": "List<Contacts>",
+            "parameters": [
+                [
+                    "UUID"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": true
+        },
+        "findById": {
+            "name": "findById",
+            "key": "_f554a07da1ad49129fb6f86e",
+            "returnType": "Contacts",
+            "parameters": [
+                [
+                    "UUID"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": true
+        }
+    },
+    "file_path": "./ContactsRepository",
+    "anonymous": false,
+    "auxclass": false,
+    "implements_": [],
+    "extends_": [],
+    "definedInClassOrInterfaceTypeKey": null,
+    "innerDefinedClasses": {},
+    "innerDefinedInterfaces": {}
+}

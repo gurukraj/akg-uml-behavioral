@@ -1,0 +1,27 @@
+{
+    "classification": {
+        "categories": [
+            "Activity"
+        ],
+        "primary": "Activity",
+        "is_class_diagram": false,
+        "is_behavioral": true
+    },
+    "detectedTypes": {
+        "uml:Activity": 1,
+        "uml:OpaqueAction": 7,
+        "uml:DecisionNode": 1,
+        "uml:ControlFlow": 10,
+        "uml:ActivityPartition": 4
+    },
+    "elementCounts": {
+        "activities": 1,
+        "actions": 7,
+        "decisionNodes": 1,
+        "controlFlows": 10,
+        "activityPartitions": 4
+    },
+    "totalElements": 23,
+    "diagram_id": "ttf-activity-seat-distribution",
+    "source_file": "ttf-activity-seat-distribution.json"
+}

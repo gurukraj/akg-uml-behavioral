@@ -1,0 +1,8 @@
+{
+    "name": "calls_ts_assurance_service",
+    "key": "_e95005358d9049d6a3894cbf",
+    "type": "dependency",
+    "source": "tt-class-preserve-service",
+    "target": "ts-assurance-service",
+    "endpoint": "GET /api/v1/assuranceservice/assurances/{assuranceType}/{orderId}"
+}

@@ -1,0 +1,7 @@
+{
+    "name": "ts-cancel-service_depends_on_ts-order-service",
+    "key": "_3e79d1385e0046159a763044",
+    "type": "dependency",
+    "source": "_bbf6c06250de418699b9fd49",
+    "target": "_59941a9d63334e70a025fbb1"
+}

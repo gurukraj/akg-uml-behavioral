@@ -1,0 +1,25 @@
+{
+    "classification": {
+        "categories": [
+            "Class"
+        ],
+        "primary": "Class",
+        "is_class_diagram": true,
+        "is_behavioral": false
+    },
+    "detectedTypes": {
+        "uml:Class": 2,
+        "uml:Interface": 1,
+        "uml:Dependency": 3,
+        "uml:Association": 1
+    },
+    "elementCounts": {
+        "classes": 2,
+        "interfaces": 1,
+        "dependencies": 3,
+        "associations": 1
+    },
+    "totalElements": 7,
+    "diagram_id": "tt-class-seat-service",
+    "source_file": "tt-class-seat-service.json"
+}

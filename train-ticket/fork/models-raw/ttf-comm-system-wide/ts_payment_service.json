@@ -1,0 +1,6 @@
+{
+    "name": "ts-payment-service",
+    "key": "_304c23a924e64afabdcd2ded",
+    "type": "uml:LifelineOrObject",
+    "role": "ts-payment-service"
+}

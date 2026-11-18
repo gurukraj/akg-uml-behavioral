@@ -1,0 +1,9 @@
+{
+    "name": "Trip_uses_TripId",
+    "key": "_4faab9df52f74afa9e703a8c",
+    "type": "association",
+    "source": "_95e2c3b2efbc4cc4b78f1f73",
+    "target": "_c29a51b1eb1b4439974046a0",
+    "sourceMultiplicity": "1",
+    "targetMultiplicity": "1"
+}

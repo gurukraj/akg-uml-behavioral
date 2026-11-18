@@ -1,0 +1,68 @@
+{
+    "name": "Seat",
+    "key": "_94211d37dffa43b6ab658a24",
+    "type": "class",
+    "hasTypeVariable": false,
+    "position": null,
+    "modifiers": [],
+    "fields": {
+        "travelDate": {
+            "name": "travelDate",
+            "key": "_ec7a2072af5e4d8a9392ec0a",
+            "type": "Date",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "trainNumber": {
+            "name": "trainNumber",
+            "key": "_0516815062704b93a6663a9c",
+            "type": "String",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "startStation": {
+            "name": "startStation",
+            "key": "_4be8949f02bc4bbe8c2d0ea0",
+            "type": "String",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "destStation": {
+            "name": "destStation",
+            "key": "_37328483971c47379150b236",
+            "type": "String",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "seatType": {
+            "name": "seatType",
+            "key": "_cc776938f8e34c8faa1df028",
+            "type": "int",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "totalNum": {
+            "name": "totalNum",
+            "key": "_f8c1c415e31e468f958ba05c",
+            "type": "int",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "stations": {
+            "name": "stations",
+            "key": "_9e0ff57727694f45ba393a5e",
+            "type": "List<String>",
+            "visibility": "private",
+            "isStatic": false
+        }
+    },
+    "methods": {},
+    "file_path": "./Seat",
+    "anonymous": false,
+    "auxclass": false,
+    "implements_": [],
+    "extends_": [],
+    "definedInClassOrInterfaceTypeKey": null,
+    "innerDefinedClasses": {},
+    "innerDefinedInterfaces": {}
+}

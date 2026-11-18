@@ -1,0 +1,8 @@
+{
+    "name": "4: modifyOrder(cancelled)",
+    "key": "_1ecf4f90f3b04097a241dcb8",
+    "type": "uml:Message",
+    "sender": "_a3def8cec555467dace1db88",
+    "receiver": "_79b702a7b2da4691b58a2221",
+    "messageLabel": "4: modifyOrder(cancelled)"
+}

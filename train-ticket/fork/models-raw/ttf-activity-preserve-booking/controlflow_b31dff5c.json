@@ -1,0 +1,8 @@
+{
+    "name": "DistributeSeat_to_DecisionNode_SeatAvailable",
+    "key": "_3c30f140e7e94ef0b31dff5c",
+    "type": "uml:ControlFlow",
+    "source": "_0e42cea6025e4b869bfded59",
+    "target": "_25c464229f524c0b8e103d44",
+    "guard": null
+}

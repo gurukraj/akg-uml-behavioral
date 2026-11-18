@@ -1,0 +1,176 @@
+{
+    "name": "BasicServiceAggregation",
+    "key": "_917c988407c749a3b83f9a3e",
+    "type": "interaction",
+    "lifelines": [
+        {
+            "name": "ts-basic-service",
+            "key": "_e622a5548a444900b78dd112",
+            "represents": "_bea96d6247a84c208f3abbf7",
+            "coveredBy": []
+        },
+        {
+            "name": "ts-price-service",
+            "key": "_3544ada8364b408fa8b28561",
+            "represents": "_7ad0e99b4c4a47a1933c3a70",
+            "coveredBy": []
+        },
+        {
+            "name": "ts-route-service",
+            "key": "_77968584a2504826849d406c",
+            "represents": "_36ad003773ca404a9b59632b",
+            "coveredBy": []
+        },
+        {
+            "name": "ts-station-service",
+            "key": "_4d01d94555fc489896e7a37b",
+            "represents": "_a332f24972494b878afd6dcf",
+            "coveredBy": []
+        },
+        {
+            "name": "ts-train-service",
+            "key": "_ca86501614734048b7d2b06c",
+            "represents": "_b0aa14d07e184cf4975d30f9",
+            "coveredBy": []
+        }
+    ],
+    "messages": [
+        {
+            "name": "1: queryForStationId()",
+            "key": "_19b38549c4ab4ff1bbeeacbf",
+            "messageSort": "synchCall",
+            "sendEvent": "_1a0ff2c6caf84c88a7019fa7",
+            "receiveEvent": "_b7adc2adee1f4ccfb8864dd0",
+            "connector": null,
+            "signature": null
+        },
+        {
+            "name": "2: checkStationsExists()",
+            "key": "_e6ab7c3e7a2748ce85636192",
+            "messageSort": "synchCall",
+            "sendEvent": "_a45e6eb15a6246ddac37fabb",
+            "receiveEvent": "_9c23432bdc4f4bd4876f4c24",
+            "connector": null,
+            "signature": null
+        },
+        {
+            "name": "3: queryTrainTypeByName()",
+            "key": "_4d8d60e2955b47f78a65e892",
+            "messageSort": "synchCall",
+            "sendEvent": "_9a0e2662d2134ffe9c968f26",
+            "receiveEvent": "_5def4f98721b42ca8e2053ae",
+            "connector": null,
+            "signature": null
+        },
+        {
+            "name": "4: getRouteByRouteId()",
+            "key": "_6ad571749d824c9b977d2666",
+            "messageSort": "synchCall",
+            "sendEvent": "_5544e59ccc7c41249475d2bc",
+            "receiveEvent": "_29d7caefa0984c2ba462791c",
+            "connector": null,
+            "signature": null
+        },
+        {
+            "name": "5: queryPriceConfig()",
+            "key": "_a95098a0764641d7a900604a",
+            "messageSort": "synchCall",
+            "sendEvent": "_d4f01ccc57b5491eaf878e1c",
+            "receiveEvent": "_5abdc64d00bc414db68f4fb1",
+            "connector": null,
+            "signature": null
+        }
+    ],
+    "fragments": [
+        {
+            "key": "_1a0ff2c6caf84c88a7019fa7",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_e622a5548a444900b78dd112",
+            "enclosingInteraction": "tt-comm-basic-aggregation",
+            "message": "_19b38549c4ab4ff1bbeeacbf",
+            "execution": null
+        },
+        {
+            "key": "_b7adc2adee1f4ccfb8864dd0",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_4d01d94555fc489896e7a37b",
+            "enclosingInteraction": "tt-comm-basic-aggregation",
+            "message": "_19b38549c4ab4ff1bbeeacbf",
+            "execution": null
+        },
+        {
+            "key": "_a45e6eb15a6246ddac37fabb",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_e622a5548a444900b78dd112",
+            "enclosingInteraction": "tt-comm-basic-aggregation",
+            "message": "_e6ab7c3e7a2748ce85636192",
+            "execution": null
+        },
+        {
+            "key": "_9c23432bdc4f4bd4876f4c24",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_4d01d94555fc489896e7a37b",
+            "enclosingInteraction": "tt-comm-basic-aggregation",
+            "message": "_e6ab7c3e7a2748ce85636192",
+            "execution": null
+        },
+        {
+            "key": "_9a0e2662d2134ffe9c968f26",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_e622a5548a444900b78dd112",
+            "enclosingInteraction": "tt-comm-basic-aggregation",
+            "message": "_4d8d60e2955b47f78a65e892",
+            "execution": null
+        },
+        {
+            "key": "_5def4f98721b42ca8e2053ae",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_ca86501614734048b7d2b06c",
+            "enclosingInteraction": "tt-comm-basic-aggregation",
+            "message": "_4d8d60e2955b47f78a65e892",
+            "execution": null
+        },
+        {
+            "key": "_5544e59ccc7c41249475d2bc",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_e622a5548a444900b78dd112",
+            "enclosingInteraction": "tt-comm-basic-aggregation",
+            "message": "_6ad571749d824c9b977d2666",
+            "execution": null
+        },
+        {
+            "key": "_29d7caefa0984c2ba462791c",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_77968584a2504826849d406c",
+            "enclosingInteraction": "tt-comm-basic-aggregation",
+            "message": "_6ad571749d824c9b977d2666",
+            "execution": null
+        },
+        {
+            "key": "_d4f01ccc57b5491eaf878e1c",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_e622a5548a444900b78dd112",
+            "enclosingInteraction": "tt-comm-basic-aggregation",
+            "message": "_a95098a0764641d7a900604a",
+            "execution": null
+        },
+        {
+            "key": "_5abdc64d00bc414db68f4fb1",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_3544ada8364b408fa8b28561",
+            "enclosingInteraction": "tt-comm-basic-aggregation",
+            "message": "_a95098a0764641d7a900604a",
+            "execution": null
+        }
+    ]
+}

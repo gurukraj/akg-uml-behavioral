@@ -1,0 +1,30 @@
+{
+    "name": "TicketBookingWorkflow",
+    "key": "_8acd65b3023e4f23a08ebf0f",
+    "type": "uml:Activity",
+    "description": "Complete ticket booking workflow from search to payment",
+    "nodes": [
+        "_6cec3760f34e4d9ba64579b9",
+        "_672942190e8c416e903aae5a",
+        "_e1134a818b994b4b9040fa42",
+        "_74d5cbf65aa54f04b039f2a7",
+        "_a6dbd6f9be8f4f78ad816e50",
+        "_1c187f0c8ddd4465a7d8ab39",
+        "_940ef42a0a3e45c2908c01a7",
+        "_c7c93f6e820d407ca69174b2",
+        "_10d6214267914765b2338906",
+        "_ea120bccb6a04219a964b880",
+        "_e0ade4fa91c840b68769b91d",
+        "_aae1884472294a208a74a83d",
+        "_c194c7f13c264a2391ce9e89",
+        "_eadfef27794441de85bff0a5",
+        "_9efd4086cffd4178ac9de2b7",
+        "_1ba6a6fdba224ae0aabab31f",
+        "_1604187ce850486288a72f96",
+        "_b1552cf3ffee42529b5aa39c",
+        "_2fe4bc6737d74fbd93fb169e",
+        "_26caf2652e0a4b558482352b",
+        "_81643e93d2ef44329db1bf65"
+    ],
+    "edges": 22
+}

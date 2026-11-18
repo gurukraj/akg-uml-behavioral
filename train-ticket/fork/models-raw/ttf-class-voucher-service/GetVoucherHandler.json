@@ -1,0 +1,28 @@
+{
+    "name": "GetVoucherHandler",
+    "key": "_18e515e251924489adb73145",
+    "type": "class",
+    "hasTypeVariable": false,
+    "position": null,
+    "modifiers": [],
+    "fields": {},
+    "methods": {
+        "post": {
+            "name": "post",
+            "key": "_4de754ac3f27410a95615d02",
+            "returnType": "void",
+            "parameters": [],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        }
+    },
+    "file_path": "./GetVoucherHandler",
+    "anonymous": false,
+    "auxclass": false,
+    "implements_": [],
+    "extends_": [],
+    "definedInClassOrInterfaceTypeKey": null,
+    "innerDefinedClasses": {},
+    "innerDefinedInterfaces": {}
+}

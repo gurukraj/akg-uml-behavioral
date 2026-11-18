@@ -1,0 +1,23 @@
+{
+    "classification": {
+        "categories": [
+            "Class"
+        ],
+        "primary": "Class",
+        "is_class_diagram": true,
+        "is_behavioral": false
+    },
+    "detectedTypes": {
+        "uml:Class": 4,
+        "uml:Interface": 2,
+        "uml:Association": 2
+    },
+    "elementCounts": {
+        "classes": 4,
+        "interfaces": 2,
+        "associations": 2
+    },
+    "totalElements": 8,
+    "diagram_id": "tt-class-route-service",
+    "source_file": "tt-class-route-service.json"
+}

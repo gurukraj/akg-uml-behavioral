@@ -1,0 +1,8 @@
+{
+    "name": "calls_ts_station_service",
+    "key": "_1f7b2b45c76b4f828a9b4922",
+    "type": "dependency",
+    "source": "tt-class-order-service",
+    "target": "ts-station-service",
+    "endpoint": "POST /api/v1/stationservice/stations/namelist"
+}

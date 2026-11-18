@@ -1,0 +1,7 @@
+{
+    "name": "ts-security-service_depends_on_ts-order-other-service",
+    "key": "_b61ccf122b094b0895ee9d8b",
+    "type": "dependency",
+    "source": "_731e6919db734b8eb8f92a9b",
+    "target": "_17c2c8ee60d546919041d852"
+}

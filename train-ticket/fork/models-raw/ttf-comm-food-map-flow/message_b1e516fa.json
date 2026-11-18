@@ -1,0 +1,8 @@
+{
+    "name": "2: getFoodStoresByStationIds()",
+    "key": "_c19aeb4a9b3c4efeb1e516fa",
+    "type": "uml:Message",
+    "sender": "_4436a2172772463e8b1949c9",
+    "receiver": "_e2fe4376dd7946e086e556b7",
+    "messageLabel": "2: getFoodStoresByStationIds()"
+}

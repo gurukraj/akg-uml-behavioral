@@ -1,0 +1,8 @@
+{
+    "name": "InitialNode_to_ReceiveBookingRequest",
+    "key": "_9097c705c41f45d5b3bbefc2",
+    "type": "uml:ControlFlow",
+    "source": "_1f7e77332cb24e9eb76a765a",
+    "target": "_e2203a42bc3d4697b73121c0",
+    "guard": null
+}

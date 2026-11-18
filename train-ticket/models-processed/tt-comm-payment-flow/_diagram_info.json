@@ -1,0 +1,16 @@
+{
+    "classification": {
+        "categories": [
+            "Communication"
+        ],
+        "primary": "Communication",
+        "is_class_diagram": false,
+        "is_behavioral": true
+    },
+    "detectedTypes": {
+        "uml:Collaboration": 1,
+        "uml:LifelineOrObject": 4,
+        "uml:Message": 5
+    },
+    "diagram_id": "tt-comm-payment-flow"
+}

@@ -1,0 +1,21 @@
+PREFIX akg: <https://w3id.org/akg/behavioral#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+SELECT ?component ?constraint ?bound ?callChainDepth
+WHERE {
+  ?tc rdf:type akg:DurationConstraint ;
+      akg:componentName ?constraint ;
+      akg:involves ?comp ;
+      akg:timingBound ?bound .
+
+  ?msg rdf:type akg:Message ;
+       akg:involves ?comp ;
+       akg:callChainDepth ?callChainDepth .
+
+  ?comp akg:componentName ?component .
+
+  FILTER(?callChainDepth > 3 &&
+         xsd:duration(?bound) < "PT3S"^^xsd:duration)
+}
+ORDER BY DESC(?callChainDepth)

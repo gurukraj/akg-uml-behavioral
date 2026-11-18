@@ -1,0 +1,7 @@
+{
+    "name": "TicketInfoServiceImpl_uses_TicketInfoService",
+    "key": "_60ec8d6e20a5432394ee1aa9",
+    "type": "dependency",
+    "source": "_00ab20a3064a4846a4545b58",
+    "target": "_8ebe5b2c848f47efabe28bec"
+}

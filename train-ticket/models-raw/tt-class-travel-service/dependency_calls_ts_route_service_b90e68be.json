@@ -1,0 +1,8 @@
+{
+    "name": "calls_ts_route_service",
+    "key": "_6d32d13b83f84d1db90e68be",
+    "type": "dependency",
+    "source": "tt-class-travel-service",
+    "target": "ts-route-service",
+    "endpoint": "GET /api/v1/routeservice/routes/{routeId}"
+}

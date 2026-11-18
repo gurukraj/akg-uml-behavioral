@@ -1,0 +1,21 @@
+{
+    "classification": {
+        "categories": [
+            "Class"
+        ],
+        "primary": "Class",
+        "is_class_diagram": true,
+        "is_behavioral": false
+    },
+    "detectedTypes": {
+        "uml:Class": 3,
+        "uml:Dependency": 1
+    },
+    "elementCounts": {
+        "classes": 3,
+        "dependencies": 1
+    },
+    "totalElements": 4,
+    "diagram_id": "ttf-class-preserve-other-service",
+    "source_file": "ttf-class-preserve-other-service.json"
+}

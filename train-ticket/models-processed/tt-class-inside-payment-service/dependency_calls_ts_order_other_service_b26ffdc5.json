@@ -1,0 +1,8 @@
+{
+    "name": "calls_ts_order_other_service",
+    "key": "_b7af9509d93b4fc1b26ffdc5",
+    "type": "dependency",
+    "source": "tt-class-inside-payment-service",
+    "target": "ts-order-other-service",
+    "endpoint": "GET /api/v1/orderOtherService/orderOther/{orderId}"
+}

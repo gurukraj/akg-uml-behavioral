@@ -1,0 +1,732 @@
+services:
+  ts-assurance-mongo:
+    image: mongo:4.4.29
+    command:
+    - --wiredTigerCacheSizeGB
+    - '0.25'
+    mem_limit: 350m
+    networks:
+      tt:
+        aliases:
+        - ts-assurance-mongo
+  ts-auth-mongo:
+    image: mongo:4.4.29
+    command:
+    - --wiredTigerCacheSizeGB
+    - '0.25'
+    mem_limit: 350m
+    networks:
+      tt:
+        aliases:
+        - ts-auth-mongo
+  ts-config-mongo:
+    image: mongo:4.4.29
+    command:
+    - --wiredTigerCacheSizeGB
+    - '0.25'
+    mem_limit: 350m
+    networks:
+      tt:
+        aliases:
+        - ts-config-mongo
+  ts-consign-mongo:
+    image: mongo:4.4.29
+    command:
+    - --wiredTigerCacheSizeGB
+    - '0.25'
+    mem_limit: 350m
+    networks:
+      tt:
+        aliases:
+        - ts-consign-mongo
+  ts-consign-price-mongo:
+    image: mongo:4.4.29
+    command:
+    - --wiredTigerCacheSizeGB
+    - '0.25'
+    mem_limit: 350m
+    networks:
+      tt:
+        aliases:
+        - ts-consign-price-mongo
+  ts-contacts-mongo:
+    image: mongo:4.4.29
+    command:
+    - --wiredTigerCacheSizeGB
+    - '0.25'
+    mem_limit: 350m
+    networks:
+      tt:
+        aliases:
+        - ts-contacts-mongo
+  ts-food-map-mongo:
+    image: mongo:4.4.29
+    command:
+    - --wiredTigerCacheSizeGB
+    - '0.25'
+    mem_limit: 350m
+    networks:
+      tt:
+        aliases:
+        - ts-food-map-mongo
+  ts-food-mongo:
+    image: mongo:4.4.29
+    command:
+    - --wiredTigerCacheSizeGB
+    - '0.25'
+    mem_limit: 350m
+    networks:
+      tt:
+        aliases:
+        - ts-food-mongo
+  ts-inside-payment-mongo:
+    image: mongo:4.4.29
+    command:
+    - --wiredTigerCacheSizeGB
+    - '0.25'
+    mem_limit: 350m
+    networks:
+      tt:
+        aliases:
+        - ts-inside-payment-mongo
+  ts-notification-mongo:
+    image: mongo:4.4.29
+    command:
+    - --wiredTigerCacheSizeGB
+    - '0.25'
+    mem_limit: 350m
+    networks:
+      tt:
+        aliases:
+        - ts-notification-mongo
+  ts-order-mongo:
+    image: mongo:4.4.29
+    command:
+    - --wiredTigerCacheSizeGB
+    - '0.25'
+    mem_limit: 350m
+    networks:
+      tt:
+        aliases:
+        - ts-order-mongo
+  ts-order-other-mongo:
+    image: mongo:4.4.29
+    command:
+    - --wiredTigerCacheSizeGB
+    - '0.25'
+    mem_limit: 350m
+    networks:
+      tt:
+        aliases:
+        - ts-order-other-mongo
+  ts-payment-mongo:
+    image: mongo:4.4.29
+    command:
+    - --wiredTigerCacheSizeGB
+    - '0.25'
+    mem_limit: 350m
+    networks:
+      tt:
+        aliases:
+        - ts-payment-mongo
+  ts-preserve-mongo:
+    image: mongo:4.4.29
+    command:
+    - --wiredTigerCacheSizeGB
+    - '0.25'
+    mem_limit: 350m
+    networks:
+      tt:
+        aliases:
+        - ts-preserve-mongo
+  ts-preserve-other-mongo:
+    image: mongo:4.4.29
+    command:
+    - --wiredTigerCacheSizeGB
+    - '0.25'
+    mem_limit: 350m
+    networks:
+      tt:
+        aliases:
+        - ts-preserve-other-mongo
+  ts-price-mongo:
+    image: mongo:4.4.29
+    command:
+    - --wiredTigerCacheSizeGB
+    - '0.25'
+    mem_limit: 350m
+    networks:
+      tt:
+        aliases:
+        - ts-price-mongo
+  ts-route-mongo:
+    image: mongo:4.4.29
+    command:
+    - --wiredTigerCacheSizeGB
+    - '0.25'
+    mem_limit: 350m
+    networks:
+      tt:
+        aliases:
+        - ts-route-mongo
+  ts-security-mongo:
+    image: mongo:4.4.29
+    command:
+    - --wiredTigerCacheSizeGB
+    - '0.25'
+    mem_limit: 350m
+    networks:
+      tt:
+        aliases:
+        - ts-security-mongo
+  ts-station-mongo:
+    image: mongo:4.4.29
+    command:
+    - --wiredTigerCacheSizeGB
+    - '0.25'
+    mem_limit: 350m
+    networks:
+      tt:
+        aliases:
+        - ts-station-mongo
+  ts-train-mongo:
+    image: mongo:4.4.29
+    command:
+    - --wiredTigerCacheSizeGB
+    - '0.25'
+    mem_limit: 350m
+    networks:
+      tt:
+        aliases:
+        - ts-train-mongo
+  ts-travel-mongo:
+    image: mongo:4.4.29
+    command:
+    - --wiredTigerCacheSizeGB
+    - '0.25'
+    mem_limit: 350m
+    networks:
+      tt:
+        aliases:
+        - ts-travel-mongo
+  ts-travel2-mongo:
+    image: mongo:4.4.29
+    command:
+    - --wiredTigerCacheSizeGB
+    - '0.25'
+    mem_limit: 350m
+    networks:
+      tt:
+        aliases:
+        - ts-travel2-mongo
+  ts-user-mongo:
+    image: mongo:4.4.29
+    command:
+    - --wiredTigerCacheSizeGB
+    - '0.25'
+    mem_limit: 350m
+    networks:
+      tt:
+        aliases:
+        - ts-user-mongo
+  jaeger:
+    image: jaegertracing/all-in-one:1.15
+    ports:
+    - 16686:16686
+    mem_limit: 1500m
+    environment:
+    - MEMORY_MAX_TRACES=200000
+    networks:
+      tt:
+        aliases:
+        - jaeger
+  rabbitmq:
+    image: rabbitmq:3.8.34-management
+    mem_limit: 400m
+    networks:
+      tt:
+        aliases:
+        - rabbitmq
+  ts-admin-basic-info-service:
+    image: codewisdom/ts-admin-basic-info-service-with-jaeger:v1
+    restart: on-failure
+    mem_limit: 420m
+    ports:
+    - 18767:18767
+    depends_on:
+    - jaeger
+    - rabbitmq
+    networks:
+      tt:
+        aliases:
+        - ts-admin-basic-info-service
+  ts-admin-order-service:
+    image: codewisdom/ts-admin-order-service-with-jaeger:v1
+    restart: on-failure
+    mem_limit: 420m
+    ports:
+    - 16112:16112
+    depends_on:
+    - jaeger
+    - rabbitmq
+    networks:
+      tt:
+        aliases:
+        - ts-admin-order-service
+  ts-admin-route-service:
+    image: codewisdom/ts-admin-route-service-with-jaeger:v1
+    restart: on-failure
+    mem_limit: 420m
+    ports:
+    - 16113:16113
+    depends_on:
+    - jaeger
+    - rabbitmq
+    networks:
+      tt:
+        aliases:
+        - ts-admin-route-service
+  ts-admin-travel-service:
+    image: codewisdom/ts-admin-travel-service-with-jaeger:v1
+    restart: on-failure
+    mem_limit: 420m
+    ports:
+    - 16114:16114
+    depends_on:
+    - jaeger
+    - rabbitmq
+    networks:
+      tt:
+        aliases:
+        - ts-admin-travel-service
+  ts-admin-user-service:
+    image: codewisdom/ts-admin-user-service-with-jaeger:v1
+    restart: on-failure
+    mem_limit: 420m
+    ports:
+    - 16115:16115
+    depends_on:
+    - jaeger
+    - rabbitmq
+    networks:
+      tt:
+        aliases:
+        - ts-admin-user-service
+  ts-assurance-service:
+    image: codewisdom/ts-assurance-service-with-jaeger:v1
+    restart: on-failure
+    mem_limit: 420m
+    ports:
+    - 18888:18888
+    depends_on:
+    - jaeger
+    - rabbitmq
+    networks:
+      tt:
+        aliases:
+        - ts-assurance-service
+  ts-auth-service:
+    image: codewisdom/ts-auth-service-with-jaeger:v1
+    restart: on-failure
+    mem_limit: 420m
+    ports:
+    - 12340:12340
+    depends_on:
+    - jaeger
+    - rabbitmq
+    networks:
+      tt:
+        aliases:
+        - ts-auth-service
+  ts-basic-service:
+    image: codewisdom/ts-basic-service-with-jaeger:v1
+    restart: on-failure
+    mem_limit: 420m
+    ports:
+    - 15680:15680
+    depends_on:
+    - jaeger
+    - rabbitmq
+    networks:
+      tt:
+        aliases:
+        - ts-basic-service
+  ts-cancel-service:
+    image: codewisdom/ts-cancel-service-with-jaeger:v1
+    restart: on-failure
+    mem_limit: 420m
+    ports:
+    - 18885:18885
+    depends_on:
+    - jaeger
+    - rabbitmq
+    networks:
+      tt:
+        aliases:
+        - ts-cancel-service
+  ts-config-service:
+    image: codewisdom/ts-config-service-with-jaeger:v1
+    restart: on-failure
+    mem_limit: 420m
+    ports:
+    - 15679:15679
+    depends_on:
+    - jaeger
+    - rabbitmq
+    networks:
+      tt:
+        aliases:
+        - ts-config-service
+  ts-consign-price-service:
+    image: codewisdom/ts-consign-price-service-with-jaeger:v1
+    restart: on-failure
+    mem_limit: 420m
+    ports:
+    - 16110:16110
+    depends_on:
+    - jaeger
+    - rabbitmq
+    networks:
+      tt:
+        aliases:
+        - ts-consign-price-service
+  ts-consign-service:
+    image: codewisdom/ts-consign-service-with-jaeger:v1
+    restart: on-failure
+    mem_limit: 420m
+    ports:
+    - 16111:16111
+    depends_on:
+    - jaeger
+    - rabbitmq
+    networks:
+      tt:
+        aliases:
+        - ts-consign-service
+  ts-contacts-service:
+    image: codewisdom/ts-contacts-service-with-jaeger:v1
+    restart: on-failure
+    mem_limit: 420m
+    ports:
+    - 12347:12347
+    depends_on:
+    - jaeger
+    - rabbitmq
+    networks:
+      tt:
+        aliases:
+        - ts-contacts-service
+  ts-execute-service:
+    image: codewisdom/ts-execute-service-with-jaeger:v1
+    restart: on-failure
+    mem_limit: 420m
+    ports:
+    - 12386:12386
+    depends_on:
+    - jaeger
+    - rabbitmq
+    networks:
+      tt:
+        aliases:
+        - ts-execute-service
+  ts-food-service:
+    image: codewisdom/ts-food-service-with-jaeger:v1
+    restart: on-failure
+    mem_limit: 420m
+    ports:
+    - 18856:18856
+    depends_on:
+    - jaeger
+    - rabbitmq
+    networks:
+      tt:
+        aliases:
+        - ts-food-service
+  ts-inside-payment-service:
+    image: codewisdom/ts-inside-payment-service-with-jaeger:v1
+    restart: on-failure
+    mem_limit: 420m
+    ports:
+    - 18673:18673
+    depends_on:
+    - jaeger
+    - rabbitmq
+    networks:
+      tt:
+        aliases:
+        - ts-inside-payment-service
+  ts-notification-service:
+    image: codewisdom/ts-notification-service-with-jaeger:v1
+    restart: on-failure
+    mem_limit: 420m
+    ports:
+    - 17853:17853
+    depends_on:
+    - jaeger
+    - rabbitmq
+    networks:
+      tt:
+        aliases:
+        - ts-notification-service
+  ts-order-other-service:
+    image: codewisdom/ts-order-other-service-with-jaeger:v1
+    restart: on-failure
+    mem_limit: 420m
+    ports:
+    - 12032:12032
+    depends_on:
+    - jaeger
+    - rabbitmq
+    networks:
+      tt:
+        aliases:
+        - ts-order-other-service
+  ts-order-service:
+    image: codewisdom/ts-order-service-with-jaeger:v1
+    restart: on-failure
+    mem_limit: 420m
+    ports:
+    - 12031:12031
+    depends_on:
+    - jaeger
+    - rabbitmq
+    networks:
+      tt:
+        aliases:
+        - ts-order-service
+  ts-payment-service:
+    image: codewisdom/ts-payment-service-with-jaeger:v1
+    restart: on-failure
+    mem_limit: 420m
+    ports:
+    - 19001:19001
+    depends_on:
+    - jaeger
+    - rabbitmq
+    networks:
+      tt:
+        aliases:
+        - ts-payment-service
+  ts-preserve-other-service:
+    image: codewisdom/ts-preserve-other-service-with-jaeger:v1
+    restart: on-failure
+    mem_limit: 420m
+    ports:
+    - 14569:14569
+    depends_on:
+    - jaeger
+    - rabbitmq
+    networks:
+      tt:
+        aliases:
+        - ts-preserve-other-service
+  ts-preserve-service:
+    image: codewisdom/ts-preserve-service-with-jaeger:v1
+    restart: on-failure
+    mem_limit: 420m
+    ports:
+    - 14568:14568
+    depends_on:
+    - jaeger
+    - rabbitmq
+    networks:
+      tt:
+        aliases:
+        - ts-preserve-service
+  ts-price-service:
+    image: codewisdom/ts-price-service-with-jaeger:v1
+    restart: on-failure
+    mem_limit: 420m
+    ports:
+    - 16579:16579
+    depends_on:
+    - jaeger
+    - rabbitmq
+    networks:
+      tt:
+        aliases:
+        - ts-price-service
+  ts-rebook-service:
+    image: codewisdom/ts-rebook-service-with-jaeger:v1
+    restart: on-failure
+    mem_limit: 420m
+    ports:
+    - 18886:18886
+    depends_on:
+    - jaeger
+    - rabbitmq
+    networks:
+      tt:
+        aliases:
+        - ts-rebook-service
+  ts-route-plan-service:
+    image: codewisdom/ts-route-plan-service-with-jaeger:v1
+    restart: on-failure
+    mem_limit: 420m
+    ports:
+    - 14578:14578
+    depends_on:
+    - jaeger
+    - rabbitmq
+    networks:
+      tt:
+        aliases:
+        - ts-route-plan-service
+  ts-route-service:
+    image: codewisdom/ts-route-service-with-jaeger:v1
+    restart: on-failure
+    mem_limit: 420m
+    ports:
+    - 11178:11178
+    depends_on:
+    - jaeger
+    - rabbitmq
+    networks:
+      tt:
+        aliases:
+        - ts-route-service
+  ts-seat-service:
+    image: codewisdom/ts-seat-service-with-jaeger:v1
+    restart: on-failure
+    mem_limit: 420m
+    ports:
+    - 18898:18898
+    depends_on:
+    - jaeger
+    - rabbitmq
+    networks:
+      tt:
+        aliases:
+        - ts-seat-service
+  ts-security-service:
+    image: codewisdom/ts-security-service-with-jaeger:v1
+    restart: on-failure
+    mem_limit: 420m
+    ports:
+    - 11188:11188
+    depends_on:
+    - jaeger
+    - rabbitmq
+    networks:
+      tt:
+        aliases:
+        - ts-security-service
+  ts-station-service:
+    image: codewisdom/ts-station-service-with-jaeger:v1
+    restart: on-failure
+    mem_limit: 420m
+    ports:
+    - 12345:12345
+    depends_on:
+    - jaeger
+    - rabbitmq
+    networks:
+      tt:
+        aliases:
+        - ts-station-service
+  ts-train-service:
+    image: codewisdom/ts-train-service-with-jaeger:v1
+    restart: on-failure
+    mem_limit: 420m
+    ports:
+    - 14567:14567
+    depends_on:
+    - jaeger
+    - rabbitmq
+    networks:
+      tt:
+        aliases:
+        - ts-train-service
+  ts-travel-plan-service:
+    image: codewisdom/ts-travel-plan-service-with-jaeger:v1
+    restart: on-failure
+    mem_limit: 420m
+    ports:
+    - 14322:14322
+    depends_on:
+    - jaeger
+    - rabbitmq
+    networks:
+      tt:
+        aliases:
+        - ts-travel-plan-service
+  ts-travel-service:
+    image: codewisdom/ts-travel-service-with-jaeger:v1
+    restart: on-failure
+    mem_limit: 420m
+    ports:
+    - 12346:12346
+    depends_on:
+    - jaeger
+    - rabbitmq
+    networks:
+      tt:
+        aliases:
+        - ts-travel-service
+  ts-travel2-service:
+    image: codewisdom/ts-travel2-service-with-jaeger:v1
+    restart: on-failure
+    mem_limit: 420m
+    ports:
+    - 16346:16346
+    depends_on:
+    - jaeger
+    - rabbitmq
+    networks:
+      tt:
+        aliases:
+        - ts-travel2-service
+  ts-user-service:
+    image: codewisdom/ts-user-service-with-jaeger:v1
+    restart: on-failure
+    mem_limit: 420m
+    ports:
+    - 12342:12342
+    depends_on:
+    - jaeger
+    - rabbitmq
+    networks:
+      tt:
+        aliases:
+        - ts-user-service
+  ts-verification-code-service:
+    image: codewisdom/ts-verification-code-service-with-jaeger:v1
+    restart: on-failure
+    mem_limit: 420m
+    ports:
+    - 15678:15678
+    depends_on:
+    - jaeger
+    - rabbitmq
+    networks:
+      tt:
+        aliases:
+        - ts-verification-code-service
+  ts-ticketinfo-service:
+    image: codewisdom/ts-ticketinfo-service-with-jaeger:v1
+    restart: on-failure
+    mem_limit: 420m
+    ports:
+    - 15681:15681
+    depends_on:
+    - jaeger
+    - rabbitmq
+    networks:
+      tt:
+        aliases:
+        - ts-ticketinfo-service
+  ts-food-map-service:
+    image: codewisdom/ts-food-map-service-with-jaeger:v1
+    restart: on-failure
+    mem_limit: 420m
+    ports:
+    - 18855:18855
+    depends_on:
+    - jaeger
+    - rabbitmq
+    networks:
+      tt:
+        aliases:
+        - ts-food-map-service
+networks:
+  tt: {}

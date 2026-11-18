@@ -1,0 +1,7 @@
+{
+    "name": "OrderOtherServiceImpl_uses_OrderOtherRepository",
+    "key": "_e788ccb2d04e4e089ec0c5b2",
+    "type": "dependency",
+    "source": "_5a57589d902140a4b9583111",
+    "target": "_790bcc6c425f48e6a70732d7"
+}

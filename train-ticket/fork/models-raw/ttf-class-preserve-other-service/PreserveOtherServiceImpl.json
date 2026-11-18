@@ -1,0 +1,35 @@
+{
+    "name": "PreserveOtherServiceImpl",
+    "key": "_77a409b2a7be453a91ed5843",
+    "type": "class",
+    "hasTypeVariable": false,
+    "position": null,
+    "modifiers": [],
+    "fields": {},
+    "methods": {
+        "preserve": {
+            "name": "preserve",
+            "key": "_c1b48ed133324226bd645071",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "OrderTicketsInfo",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        }
+    },
+    "file_path": "./PreserveOtherServiceImpl",
+    "anonymous": false,
+    "auxclass": false,
+    "implements_": [
+        "_6a18bd1789d0403386be06b7"
+    ],
+    "extends_": [],
+    "definedInClassOrInterfaceTypeKey": null,
+    "innerDefinedClasses": {},
+    "innerDefinedInterfaces": {}
+}

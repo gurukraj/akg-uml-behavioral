@@ -1,0 +1,47 @@
+{
+    "name": "TokenServiceImpl",
+    "key": "_f147b21adcdc42a1afdd36f4",
+    "type": "class",
+    "hasTypeVariable": false,
+    "position": null,
+    "modifiers": [],
+    "fields": {},
+    "methods": {
+        "createToken": {
+            "name": "createToken",
+            "key": "_63e0ba100f114e1ea73f8a90",
+            "returnType": "String",
+            "parameters": [
+                [
+                    "User"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "verifyToken": {
+            "name": "verifyToken",
+            "key": "_e078f588edb3469baa02c1c9",
+            "returnType": "Boolean",
+            "parameters": [
+                [
+                    "String"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        }
+    },
+    "file_path": "./TokenServiceImpl",
+    "anonymous": false,
+    "auxclass": false,
+    "implements_": [
+        "_c7b22cadedea415d86a7461b"
+    ],
+    "extends_": [],
+    "definedInClassOrInterfaceTypeKey": null,
+    "innerDefinedClasses": {},
+    "innerDefinedInterfaces": {}
+}

@@ -1,0 +1,8 @@
+{
+    "name": "ProcessPayment_to_DecisionNode_PaymentSuccess",
+    "key": "_f67ebdef2cb444c29309d2ad",
+    "type": "uml:ControlFlow",
+    "source": "_9efd4086cffd4178ac9de2b7",
+    "target": "_1ba6a6fdba224ae0aabab31f",
+    "guard": null
+}

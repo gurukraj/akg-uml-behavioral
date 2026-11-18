@@ -1,0 +1,8 @@
+{
+    "name": "calls_ts_price_service",
+    "key": "_1d23bbf76a9e489ba90420b3",
+    "type": "dependency",
+    "source": "tt-class-basic-service",
+    "target": "ts-price-service",
+    "endpoint": "POST /api/v1/priceservice/prices/byRouteIdsAndTrainTypes"
+}

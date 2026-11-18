@@ -1,0 +1,46 @@
+{
+    "name": "TrainFoodController",
+    "key": "_22d64fdb967b49869c9688c5",
+    "type": "class",
+    "hasTypeVariable": false,
+    "position": null,
+    "modifiers": [],
+    "fields": {},
+    "methods": {
+        "getAllTrainFood": {
+            "name": "getAllTrainFood",
+            "key": "_346b5dcde8c54a8990e39e14",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "getTrainFoodByTripId": {
+            "name": "getTrainFoodByTripId",
+            "key": "_0d09a0b5893444308c509716",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "String",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        }
+    },
+    "file_path": "./TrainFoodController",
+    "anonymous": false,
+    "auxclass": false,
+    "implements_": [],
+    "extends_": [],
+    "definedInClassOrInterfaceTypeKey": null,
+    "innerDefinedClasses": {},
+    "innerDefinedInterfaces": {}
+}

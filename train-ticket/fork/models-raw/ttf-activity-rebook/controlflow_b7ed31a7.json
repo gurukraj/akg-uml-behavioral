@@ -1,0 +1,8 @@
+{
+    "name": "DecisionNode_PriceCompare_to_DrawbackDifference",
+    "key": "_d1d52dd127314a23b7ed31a7",
+    "type": "uml:ControlFlow",
+    "source": "_ac1ce763fa2f43b1b6ff7349",
+    "target": "_c5df986b63324ed5b274aa6a",
+    "guard": "new price lower"
+}

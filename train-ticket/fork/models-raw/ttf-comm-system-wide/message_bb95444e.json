@@ -1,0 +1,8 @@
+{
+    "name": "findAllPriceConfig()",
+    "key": "_5adcdbda29c9469ebb95444e",
+    "type": "uml:Message",
+    "sender": "_7d9f649242164485a816cbcf",
+    "receiver": "_97e8d16cb0e2429aa84f2b48",
+    "messageLabel": "findAllPriceConfig()"
+}

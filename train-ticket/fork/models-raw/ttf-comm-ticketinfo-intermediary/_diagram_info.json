@@ -1,0 +1,23 @@
+{
+    "classification": {
+        "categories": [
+            "Communication"
+        ],
+        "primary": "Communication",
+        "is_class_diagram": false,
+        "is_behavioral": true
+    },
+    "detectedTypes": {
+        "uml:Collaboration": 1,
+        "uml:LifelineOrObject": 11,
+        "uml:Message": 12
+    },
+    "elementCounts": {
+        "collaborations": 1,
+        "objects": 11,
+        "messages": 12
+    },
+    "totalElements": 24,
+    "diagram_id": "ttf-comm-ticketinfo-intermediary",
+    "source_file": "ttf-comm-ticketinfo-intermediary.json"
+}

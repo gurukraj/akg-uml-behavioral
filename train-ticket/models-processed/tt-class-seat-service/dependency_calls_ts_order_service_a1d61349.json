@@ -1,0 +1,8 @@
+{
+    "name": "calls_ts_order_service",
+    "key": "_077040ddfaae4021a1d61349",
+    "type": "dependency",
+    "source": "tt-class-seat-service",
+    "target": "ts-order-service",
+    "endpoint": "POST /api/v1/orderservice/order/tickets"
+}

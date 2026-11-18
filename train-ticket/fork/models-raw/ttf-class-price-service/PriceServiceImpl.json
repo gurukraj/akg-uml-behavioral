@@ -1,0 +1,91 @@
+{
+    "name": "PriceServiceImpl",
+    "key": "_e632894634f34faa9cad2fd9",
+    "type": "class",
+    "hasTypeVariable": false,
+    "position": null,
+    "modifiers": [],
+    "fields": {},
+    "methods": {
+        "createNewPriceConfig": {
+            "name": "createNewPriceConfig",
+            "key": "_e278e2e26df04eef958b2ee7",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "PriceConfig",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "findById": {
+            "name": "findById",
+            "key": "_25c50f8407cc4e369548142b",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "String",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "findByRouteIdAndTrainType": {
+            "name": "findByRouteIdAndTrainType",
+            "key": "_fdcfa5dde6064aaf94d3e229",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "String",
+                    "String",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "findAllPriceConfig": {
+            "name": "findAllPriceConfig",
+            "key": "_51094d217cbc406390a8f753",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "deletePriceConfig": {
+            "name": "deletePriceConfig",
+            "key": "_964d52355d2b4b2da8b75b30",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "String",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        }
+    },
+    "file_path": "./PriceServiceImpl",
+    "anonymous": false,
+    "auxclass": false,
+    "implements_": [
+        "_7ba91363adad4499b0c9e00f"
+    ],
+    "extends_": [],
+    "definedInClassOrInterfaceTypeKey": null,
+    "innerDefinedClasses": {},
+    "innerDefinedInterfaces": {}
+}

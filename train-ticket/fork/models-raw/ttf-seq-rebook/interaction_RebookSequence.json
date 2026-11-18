@@ -1,0 +1,431 @@
+{
+    "name": "RebookSequence",
+    "key": "_3f33b8df6b6f49f3a792b3e3",
+    "type": "interaction",
+    "lifelines": [
+        {
+            "name": "Client",
+            "key": "_3c5e6af1331a42d3a959ef50",
+            "represents": "_20b3c5f263d344488439a98a",
+            "coveredBy": []
+        },
+        {
+            "name": "ts-rebook-service",
+            "key": "_32e149f96af04c469519c080",
+            "represents": "_c54192c83439403c8c690bd0",
+            "coveredBy": []
+        },
+        {
+            "name": "ts-order-service",
+            "key": "_74e3f4c4e4ab4903879736ab",
+            "represents": "_d633b2ea580a46669489ccbb",
+            "coveredBy": []
+        },
+        {
+            "name": "ts-station-service",
+            "key": "_88bada7b8fb04912bb62a4f9",
+            "represents": "_66d2dff32d714faabd67e5c2",
+            "coveredBy": []
+        },
+        {
+            "name": "ts-travel-service",
+            "key": "_f28891f7c11f49d68ff735c4",
+            "represents": "_9387a461f6a944838f21d2b9",
+            "coveredBy": []
+        },
+        {
+            "name": "ts-seat-service",
+            "key": "_b3e7e14e5483465187bb2680",
+            "represents": "_5bb18884b2fb42eea6aca08f",
+            "coveredBy": []
+        },
+        {
+            "name": "ts-inside-payment-service",
+            "key": "_314064799c154ceb9a37f918",
+            "represents": "_64b69a8a72924663af3d1ab7",
+            "coveredBy": []
+        }
+    ],
+    "messages": [
+        {
+            "name": "rebook(rebookInfo)",
+            "key": "_2b29429f43d4490db0152404",
+            "messageSort": "synchCall",
+            "sendEvent": "_0d1e6c3d08784cfea9674bbf",
+            "receiveEvent": "_f05f547443194e7a8a33f0e9",
+            "connector": null,
+            "signature": null
+        },
+        {
+            "name": "getOrderById(orderId)",
+            "key": "_c0cb5298b0a54272832c8355",
+            "messageSort": "synchCall",
+            "sendEvent": "_246d164f4c0142acbef42580",
+            "receiveEvent": "_c7f733c13464433983fdca80",
+            "connector": null,
+            "signature": null
+        },
+        {
+            "name": "order",
+            "key": "_31d9f5ae12d1477db0967e9b",
+            "messageSort": "reply",
+            "sendEvent": "_3a022bca07ac4fc89b16e6ec",
+            "receiveEvent": "_de03ed3669c3488786f48a58",
+            "connector": null,
+            "signature": null
+        },
+        {
+            "name": "queryForStationName(stationId)",
+            "key": "_981baa4e99774313a9997a14",
+            "messageSort": "synchCall",
+            "sendEvent": "_8d91e520a4094508a0eeec39",
+            "receiveEvent": "_5b3184bac1be4f249f04a16b",
+            "connector": null,
+            "signature": null
+        },
+        {
+            "name": "stationName",
+            "key": "_e0fc5a0ac6014f3c92c96100",
+            "messageSort": "reply",
+            "sendEvent": "_ba4f86d2a7f24222bc609dc5",
+            "receiveEvent": "_0e8462a88e5749b990181b42",
+            "connector": null,
+            "signature": null
+        },
+        {
+            "name": "getTripAllDetailInfo(tripInfo)",
+            "key": "_03af1e6396804e0a81de2eb9",
+            "messageSort": "synchCall",
+            "sendEvent": "_fcd2d92c54fd4f8185a9c108",
+            "receiveEvent": "_17cad5223f5c47b399e3d392",
+            "connector": null,
+            "signature": null
+        },
+        {
+            "name": "tripAllDetail",
+            "key": "_2488e9698ec84465a8bedf74",
+            "messageSort": "reply",
+            "sendEvent": "_ec25149daa4245ac97af42c7",
+            "receiveEvent": "_5a4f6899f78a4828886d8d14",
+            "connector": null,
+            "signature": null
+        },
+        {
+            "name": "distributeSeat(seat)",
+            "key": "_5b0e9ce793eb45ccb8028191",
+            "messageSort": "synchCall",
+            "sendEvent": "_4e37a007d6e04beb99ce0c7c",
+            "receiveEvent": "_9439032dfae5464d869184ae",
+            "connector": null,
+            "signature": null
+        },
+        {
+            "name": "ticket",
+            "key": "_d6d27a5bd35f475c8ca9efbe",
+            "messageSort": "reply",
+            "sendEvent": "_795f4f168ae74bb3b9a888e1",
+            "receiveEvent": "_bf4933dfc1594e86aa14a9d8",
+            "connector": null,
+            "signature": null
+        },
+        {
+            "name": "saveChanges(newOrder)",
+            "key": "_cf239b8793464ea884fc3479",
+            "messageSort": "synchCall",
+            "sendEvent": "_791363ac8abb4b3ebde628af",
+            "receiveEvent": "_6536c59ce27b4a28babf1a9c",
+            "connector": null,
+            "signature": null
+        },
+        {
+            "name": "saveResult",
+            "key": "_ce9d21f93bd54f4f9791c74e",
+            "messageSort": "reply",
+            "sendEvent": "_c8f1a9d1631e48f5a9677145",
+            "receiveEvent": "_86ac3dd1734e4926aeb34ac2",
+            "connector": null,
+            "signature": null
+        },
+        {
+            "name": "drawBack(userId,priceDiff)",
+            "key": "_ce8f36a773c1483bbad1cd55",
+            "messageSort": "synchCall",
+            "sendEvent": "_0cd9625ad7e647e6a0cd14da",
+            "receiveEvent": "_bdc136077c4a432cbec7f99e",
+            "connector": null,
+            "signature": null
+        },
+        {
+            "name": "paymentResult",
+            "key": "_6a7aef80c92e41cdba8de1f2",
+            "messageSort": "reply",
+            "sendEvent": "_e5ac36b5345b4006a461d8b4",
+            "receiveEvent": "_9c20b9dadc5148ec9e313c5a",
+            "connector": null,
+            "signature": null
+        },
+        {
+            "name": "rebookResult",
+            "key": "_3149d3c7ed3e4be8a51bc6dc",
+            "messageSort": "reply",
+            "sendEvent": "_dde086e8d11d464b90f8be81",
+            "receiveEvent": "_98c1ccf58743446891c4384b",
+            "connector": null,
+            "signature": null
+        }
+    ],
+    "fragments": [
+        {
+            "key": "_0d1e6c3d08784cfea9674bbf",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_3c5e6af1331a42d3a959ef50",
+            "enclosingInteraction": "ttf-seq-rebook",
+            "message": "_2b29429f43d4490db0152404",
+            "execution": null
+        },
+        {
+            "key": "_f05f547443194e7a8a33f0e9",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_32e149f96af04c469519c080",
+            "enclosingInteraction": "ttf-seq-rebook",
+            "message": "_2b29429f43d4490db0152404",
+            "execution": null
+        },
+        {
+            "key": "_246d164f4c0142acbef42580",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_32e149f96af04c469519c080",
+            "enclosingInteraction": "ttf-seq-rebook",
+            "message": "_c0cb5298b0a54272832c8355",
+            "execution": null
+        },
+        {
+            "key": "_c7f733c13464433983fdca80",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_74e3f4c4e4ab4903879736ab",
+            "enclosingInteraction": "ttf-seq-rebook",
+            "message": "_c0cb5298b0a54272832c8355",
+            "execution": null
+        },
+        {
+            "key": "_3a022bca07ac4fc89b16e6ec",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_74e3f4c4e4ab4903879736ab",
+            "enclosingInteraction": "ttf-seq-rebook",
+            "message": "_31d9f5ae12d1477db0967e9b",
+            "execution": null
+        },
+        {
+            "key": "_de03ed3669c3488786f48a58",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_32e149f96af04c469519c080",
+            "enclosingInteraction": "ttf-seq-rebook",
+            "message": "_31d9f5ae12d1477db0967e9b",
+            "execution": null
+        },
+        {
+            "key": "_8d91e520a4094508a0eeec39",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_32e149f96af04c469519c080",
+            "enclosingInteraction": "ttf-seq-rebook",
+            "message": "_981baa4e99774313a9997a14",
+            "execution": null
+        },
+        {
+            "key": "_5b3184bac1be4f249f04a16b",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_88bada7b8fb04912bb62a4f9",
+            "enclosingInteraction": "ttf-seq-rebook",
+            "message": "_981baa4e99774313a9997a14",
+            "execution": null
+        },
+        {
+            "key": "_ba4f86d2a7f24222bc609dc5",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_88bada7b8fb04912bb62a4f9",
+            "enclosingInteraction": "ttf-seq-rebook",
+            "message": "_e0fc5a0ac6014f3c92c96100",
+            "execution": null
+        },
+        {
+            "key": "_0e8462a88e5749b990181b42",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_32e149f96af04c469519c080",
+            "enclosingInteraction": "ttf-seq-rebook",
+            "message": "_e0fc5a0ac6014f3c92c96100",
+            "execution": null
+        },
+        {
+            "key": "_fcd2d92c54fd4f8185a9c108",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_32e149f96af04c469519c080",
+            "enclosingInteraction": "ttf-seq-rebook",
+            "message": "_03af1e6396804e0a81de2eb9",
+            "execution": null
+        },
+        {
+            "key": "_17cad5223f5c47b399e3d392",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_f28891f7c11f49d68ff735c4",
+            "enclosingInteraction": "ttf-seq-rebook",
+            "message": "_03af1e6396804e0a81de2eb9",
+            "execution": null
+        },
+        {
+            "key": "_ec25149daa4245ac97af42c7",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_f28891f7c11f49d68ff735c4",
+            "enclosingInteraction": "ttf-seq-rebook",
+            "message": "_2488e9698ec84465a8bedf74",
+            "execution": null
+        },
+        {
+            "key": "_5a4f6899f78a4828886d8d14",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_32e149f96af04c469519c080",
+            "enclosingInteraction": "ttf-seq-rebook",
+            "message": "_2488e9698ec84465a8bedf74",
+            "execution": null
+        },
+        {
+            "key": "_4e37a007d6e04beb99ce0c7c",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_32e149f96af04c469519c080",
+            "enclosingInteraction": "ttf-seq-rebook",
+            "message": "_5b0e9ce793eb45ccb8028191",
+            "execution": null
+        },
+        {
+            "key": "_9439032dfae5464d869184ae",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_b3e7e14e5483465187bb2680",
+            "enclosingInteraction": "ttf-seq-rebook",
+            "message": "_5b0e9ce793eb45ccb8028191",
+            "execution": null
+        },
+        {
+            "key": "_795f4f168ae74bb3b9a888e1",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_b3e7e14e5483465187bb2680",
+            "enclosingInteraction": "ttf-seq-rebook",
+            "message": "_d6d27a5bd35f475c8ca9efbe",
+            "execution": null
+        },
+        {
+            "key": "_bf4933dfc1594e86aa14a9d8",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_32e149f96af04c469519c080",
+            "enclosingInteraction": "ttf-seq-rebook",
+            "message": "_d6d27a5bd35f475c8ca9efbe",
+            "execution": null
+        },
+        {
+            "key": "_791363ac8abb4b3ebde628af",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_32e149f96af04c469519c080",
+            "enclosingInteraction": "ttf-seq-rebook",
+            "message": "_cf239b8793464ea884fc3479",
+            "execution": null
+        },
+        {
+            "key": "_6536c59ce27b4a28babf1a9c",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_74e3f4c4e4ab4903879736ab",
+            "enclosingInteraction": "ttf-seq-rebook",
+            "message": "_cf239b8793464ea884fc3479",
+            "execution": null
+        },
+        {
+            "key": "_c8f1a9d1631e48f5a9677145",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_74e3f4c4e4ab4903879736ab",
+            "enclosingInteraction": "ttf-seq-rebook",
+            "message": "_ce9d21f93bd54f4f9791c74e",
+            "execution": null
+        },
+        {
+            "key": "_86ac3dd1734e4926aeb34ac2",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_32e149f96af04c469519c080",
+            "enclosingInteraction": "ttf-seq-rebook",
+            "message": "_ce9d21f93bd54f4f9791c74e",
+            "execution": null
+        },
+        {
+            "key": "_0cd9625ad7e647e6a0cd14da",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_32e149f96af04c469519c080",
+            "enclosingInteraction": "ttf-seq-rebook",
+            "message": "_ce8f36a773c1483bbad1cd55",
+            "execution": null
+        },
+        {
+            "key": "_bdc136077c4a432cbec7f99e",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_314064799c154ceb9a37f918",
+            "enclosingInteraction": "ttf-seq-rebook",
+            "message": "_ce8f36a773c1483bbad1cd55",
+            "execution": null
+        },
+        {
+            "key": "_e5ac36b5345b4006a461d8b4",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_314064799c154ceb9a37f918",
+            "enclosingInteraction": "ttf-seq-rebook",
+            "message": "_6a7aef80c92e41cdba8de1f2",
+            "execution": null
+        },
+        {
+            "key": "_9c20b9dadc5148ec9e313c5a",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_32e149f96af04c469519c080",
+            "enclosingInteraction": "ttf-seq-rebook",
+            "message": "_6a7aef80c92e41cdba8de1f2",
+            "execution": null
+        },
+        {
+            "key": "_dde086e8d11d464b90f8be81",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_32e149f96af04c469519c080",
+            "enclosingInteraction": "ttf-seq-rebook",
+            "message": "_3149d3c7ed3e4be8a51bc6dc",
+            "execution": null
+        },
+        {
+            "key": "_98c1ccf58743446891c4384b",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_3c5e6af1331a42d3a959ef50",
+            "enclosingInteraction": "ttf-seq-rebook",
+            "message": "_3149d3c7ed3e4be8a51bc6dc",
+            "execution": null
+        }
+    ]
+}

@@ -1,0 +1,26 @@
+{
+    "project": "Train-Ticket",
+    "source": "models-raw",
+    "total_diagrams": 29,
+    "behavioral_diagrams": 13,
+    "sequence_diagrams": 8,
+    "activity_diagrams": 2,
+    "communication_diagrams": 3,
+    "class_diagrams": 15,
+    "processing_log": [
+        "  OK tt-seq-ticket-reserve: Sequence diagram copied",
+        "  OK tt-seq-order-pay: Sequence diagram copied",
+        "  OK tt-seq-login: Sequence diagram copied",
+        "  OK tt-seq-cancel-order: Sequence diagram copied",
+        "  OK tt-seq-rebook: Sequence diagram copied",
+        "  OK tt-seq-query-left-tickets: Sequence diagram copied",
+        "  OK tt-seq-consign-create: Sequence diagram copied",
+        "  OK tt-seq-enter-station: Sequence diagram copied",
+        "  OK tt-activity-ticket-booking: Activity consolidated (21 nodes, 22 edges, 8 partitions)",
+        "  OK tt-activity-cancel-refund: Activity consolidated (13 nodes, 12 edges, 5 partitions)",
+        "  OK tt-comm-preserve-orchestration: Communication→Interaction (12 lifelines, 13 messages)",
+        "  OK tt-comm-basic-aggregation: Communication→Interaction (5 lifelines, 5 messages)",
+        "  OK tt-comm-payment-flow: Communication→Interaction (4 lifelines, 5 messages)",
+        "  INFO tt-component-architecture: Component diagram copied for reference"
+    ]
+}

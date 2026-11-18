@@ -1,0 +1,8 @@
+{
+    "name": "CreateNewOrder_to_CancelOldOrder",
+    "key": "_6e891b9277254d4dbb85cd22",
+    "type": "uml:ControlFlow",
+    "source": "_27f9f5bd995b4ae7a4040a55",
+    "target": "_2512e855f70948539fc17b6e",
+    "guard": null
+}

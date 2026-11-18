@@ -1,0 +1,1600 @@
+@prefix ns1: <https://w3id.org/akg/behavioral#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<urn:akg:diagram:tt-seq-login> {
+    ns1:tt-seq-login___f012c154c1a041d9ad717181 a ns1:Message ;
+        ns1:callChainDepth 2 ;
+        ns1:causedBy ns1:tt-seq-login___881c2c6752be408ca4f13278 ;
+        ns1:componentName "GET /verifycode/verify/{code}" ;
+        ns1:involves ns1:tt-seq-login___036503229df84ef6a05bdeb8,
+            ns1:tt-seq-login___9b49287e4876437d926c7e1e ;
+        ns1:isSync true ;
+        ns1:precedes ns1:tt-seq-login___fc34fe6accfd4a469cb39ca0 ;
+        ns1:receiver ns1:tt-seq-login___036503229df84ef6a05bdeb8 ;
+        ns1:sender ns1:tt-seq-login___9b49287e4876437d926c7e1e ;
+        ns1:sourceDiagram "tt-seq-login" .
+
+    ns1:tt-seq-login___fe7e690c2dc847e5ab63d991 a ns1:Message ;
+        ns1:callChainDepth 3 ;
+        ns1:causedBy ns1:tt-seq-login___fc34fe6accfd4a469cb39ca0 ;
+        ns1:componentName "createToken(user)" ;
+        ns1:involves ns1:tt-seq-login___9b49287e4876437d926c7e1e ;
+        ns1:isSync true ;
+        ns1:receiver ns1:tt-seq-login___9b49287e4876437d926c7e1e ;
+        ns1:sender ns1:tt-seq-login___9b49287e4876437d926c7e1e ;
+        ns1:sourceDiagram "tt-seq-login" .
+
+    ns1:tt-seq-login___036503229df84ef6a05bdeb8 a ns1:Lifeline ;
+        ns1:componentName "ts-verification-code-service" ;
+        ns1:sourceDiagram "tt-seq-login" .
+
+    ns1:tt-seq-login___59e30c2983d043b2a84168c6 a ns1:Lifeline ;
+        ns1:componentName "Client" ;
+        ns1:sourceDiagram "tt-seq-login" .
+
+    ns1:tt-seq-login___881c2c6752be408ca4f13278 a ns1:Message ;
+        ns1:callChainDepth 1 ;
+        ns1:componentName "POST /users/login" ;
+        ns1:involves ns1:tt-seq-login___59e30c2983d043b2a84168c6,
+            ns1:tt-seq-login___9b49287e4876437d926c7e1e ;
+        ns1:isSync true ;
+        ns1:precedes ns1:tt-seq-login___f012c154c1a041d9ad717181 ;
+        ns1:receiver ns1:tt-seq-login___9b49287e4876437d926c7e1e ;
+        ns1:sender ns1:tt-seq-login___59e30c2983d043b2a84168c6 ;
+        ns1:sourceDiagram "tt-seq-login" .
+
+    ns1:tt-seq-login___fc34fe6accfd4a469cb39ca0 a ns1:Message ;
+        ns1:callChainDepth 2 ;
+        ns1:causedBy ns1:tt-seq-login___881c2c6752be408ca4f13278 ;
+        ns1:componentName "authenticate(username, password)" ;
+        ns1:involves ns1:tt-seq-login___9b49287e4876437d926c7e1e ;
+        ns1:isSync true ;
+        ns1:precedes ns1:tt-seq-login___fe7e690c2dc847e5ab63d991 ;
+        ns1:receiver ns1:tt-seq-login___9b49287e4876437d926c7e1e ;
+        ns1:sender ns1:tt-seq-login___9b49287e4876437d926c7e1e ;
+        ns1:sourceDiagram "tt-seq-login" .
+
+    ns1:tt-seq-login___9b49287e4876437d926c7e1e a ns1:Lifeline ;
+        ns1:componentName "ts-auth-service" ;
+        ns1:sourceDiagram "tt-seq-login" .
+}
+
+<urn:akg:diagram:tt-seq-cancel-order> {
+    ns1:tt-seq-cancel-order___2b1c6bdcaba74acf91b10e00 a ns1:Lifeline ;
+        ns1:componentName "ts-order-other-service" ;
+        ns1:sourceDiagram "tt-seq-cancel-order" .
+
+    ns1:tt-seq-cancel-order___2a8f630f4c264938a11e2d48 a ns1:Message ;
+        ns1:callChainDepth 3 ;
+        ns1:causedBy ns1:tt-seq-cancel-order___44ba7aef100441e0a1d689b3 ;
+        ns1:componentName "PUT /order (status=CANCEL)" ;
+        ns1:involves ns1:tt-seq-cancel-order___1c9155f3604e425ebf301701,
+            ns1:tt-seq-cancel-order___e862afbb34994fae9aa18f14 ;
+        ns1:isSync true ;
+        ns1:precedes ns1:tt-seq-cancel-order___a19c4672f85541c59fb9743b ;
+        ns1:receiver ns1:tt-seq-cancel-order___1c9155f3604e425ebf301701 ;
+        ns1:sender ns1:tt-seq-cancel-order___e862afbb34994fae9aa18f14 ;
+        ns1:sourceDiagram "tt-seq-cancel-order" .
+
+    ns1:tt-seq-cancel-order___89b801de40be4aa1b5dcc9af a ns1:Message ;
+        ns1:callChainDepth 3 ;
+        ns1:causedBy ns1:tt-seq-cancel-order___44ba7aef100441e0a1d689b3 ;
+        ns1:componentName "GET /inside_payment/drawback/{userId}/{money}" ;
+        ns1:involves ns1:tt-seq-cancel-order___e2c3dd60e2ad4742acd4d453,
+            ns1:tt-seq-cancel-order___e862afbb34994fae9aa18f14 ;
+        ns1:isSync true ;
+        ns1:precedes ns1:tt-seq-cancel-order___2a8f630f4c264938a11e2d48 ;
+        ns1:receiver ns1:tt-seq-cancel-order___e2c3dd60e2ad4742acd4d453 ;
+        ns1:sender ns1:tt-seq-cancel-order___e862afbb34994fae9aa18f14 ;
+        ns1:sourceDiagram "tt-seq-cancel-order" .
+
+    ns1:tt-seq-cancel-order___9fbdad4252864d55954f8fe8 a ns1:Message ;
+        ns1:callChainDepth 2 ;
+        ns1:causedBy ns1:tt-seq-cancel-order___00a1a6e3e8214aeaa371942f ;
+        ns1:componentName "GET /users/id/{userId}" ;
+        ns1:involves ns1:tt-seq-cancel-order___e3c5ffe64428472393e0d04d,
+            ns1:tt-seq-cancel-order___e862afbb34994fae9aa18f14 ;
+        ns1:isSync true ;
+        ns1:precedes ns1:tt-seq-cancel-order___44ba7aef100441e0a1d689b3 ;
+        ns1:receiver ns1:tt-seq-cancel-order___e3c5ffe64428472393e0d04d ;
+        ns1:sender ns1:tt-seq-cancel-order___e862afbb34994fae9aa18f14 ;
+        ns1:sourceDiagram "tt-seq-cancel-order" .
+
+    ns1:tt-seq-cancel-order___a19c4672f85541c59fb9743b a ns1:Message ;
+        ns1:callChainDepth 3 ;
+        ns1:causedBy ns1:tt-seq-cancel-order___44ba7aef100441e0a1d689b3 ;
+        ns1:componentName "POST /notification/order_cancel_success" ;
+        ns1:involves ns1:tt-seq-cancel-order___7b7d50fbec7c4417b0ed70b7,
+            ns1:tt-seq-cancel-order___e862afbb34994fae9aa18f14 ;
+        ns1:isSync true ;
+        ns1:receiver ns1:tt-seq-cancel-order___7b7d50fbec7c4417b0ed70b7 ;
+        ns1:sender ns1:tt-seq-cancel-order___e862afbb34994fae9aa18f14 ;
+        ns1:sourceDiagram "tt-seq-cancel-order" .
+
+    ns1:tt-seq-cancel-order___ba2c564624bd41cabda67c56 a ns1:Message ;
+        ns1:callChainDepth 2 ;
+        ns1:causedBy ns1:tt-seq-cancel-order___00a1a6e3e8214aeaa371942f ;
+        ns1:componentName "GET /order/{orderId}" ;
+        ns1:involves ns1:tt-seq-cancel-order___1c9155f3604e425ebf301701,
+            ns1:tt-seq-cancel-order___e862afbb34994fae9aa18f14 ;
+        ns1:isSync true ;
+        ns1:precedes ns1:tt-seq-cancel-order___9fbdad4252864d55954f8fe8 ;
+        ns1:receiver ns1:tt-seq-cancel-order___1c9155f3604e425ebf301701 ;
+        ns1:sender ns1:tt-seq-cancel-order___e862afbb34994fae9aa18f14 ;
+        ns1:sourceDiagram "tt-seq-cancel-order" .
+
+    ns1:tt-seq-cancel-order___7b7d50fbec7c4417b0ed70b7 a ns1:Lifeline ;
+        ns1:componentName "ts-notification-service" ;
+        ns1:sourceDiagram "tt-seq-cancel-order" .
+
+    ns1:tt-seq-cancel-order___8147db9b70de48dcb8a24e6d a ns1:Lifeline ;
+        ns1:componentName "Client" ;
+        ns1:sourceDiagram "tt-seq-cancel-order" .
+
+    ns1:tt-seq-cancel-order___e2c3dd60e2ad4742acd4d453 a ns1:Lifeline ;
+        ns1:componentName "ts-inside-payment-service" ;
+        ns1:sourceDiagram "tt-seq-cancel-order" .
+
+    ns1:tt-seq-cancel-order___e3c5ffe64428472393e0d04d a ns1:Lifeline ;
+        ns1:componentName "ts-user-service" ;
+        ns1:sourceDiagram "tt-seq-cancel-order" .
+
+    ns1:tt-seq-cancel-order___00a1a6e3e8214aeaa371942f a ns1:Message ;
+        ns1:callChainDepth 1 ;
+        ns1:componentName "GET /cancel/{orderId}/{loginId}" ;
+        ns1:involves ns1:tt-seq-cancel-order___8147db9b70de48dcb8a24e6d,
+            ns1:tt-seq-cancel-order___e862afbb34994fae9aa18f14 ;
+        ns1:isSync true ;
+        ns1:precedes ns1:tt-seq-cancel-order___ba2c564624bd41cabda67c56 ;
+        ns1:receiver ns1:tt-seq-cancel-order___e862afbb34994fae9aa18f14 ;
+        ns1:sender ns1:tt-seq-cancel-order___8147db9b70de48dcb8a24e6d ;
+        ns1:sourceDiagram "tt-seq-cancel-order" .
+
+    ns1:tt-seq-cancel-order___1c9155f3604e425ebf301701 a ns1:Lifeline ;
+        ns1:componentName "ts-order-service" ;
+        ns1:sourceDiagram "tt-seq-cancel-order" .
+
+    ns1:tt-seq-cancel-order___44ba7aef100441e0a1d689b3 a ns1:Message ;
+        ns1:callChainDepth 2 ;
+        ns1:causedBy ns1:tt-seq-cancel-order___00a1a6e3e8214aeaa371942f ;
+        ns1:componentName "calculateRefund(order)" ;
+        ns1:involves ns1:tt-seq-cancel-order___e862afbb34994fae9aa18f14 ;
+        ns1:isSync true ;
+        ns1:precedes ns1:tt-seq-cancel-order___89b801de40be4aa1b5dcc9af ;
+        ns1:receiver ns1:tt-seq-cancel-order___e862afbb34994fae9aa18f14 ;
+        ns1:sender ns1:tt-seq-cancel-order___e862afbb34994fae9aa18f14 ;
+        ns1:sourceDiagram "tt-seq-cancel-order" .
+
+    ns1:tt-seq-cancel-order___e862afbb34994fae9aa18f14 a ns1:Lifeline ;
+        ns1:componentName "ts-cancel-service" ;
+        ns1:sourceDiagram "tt-seq-cancel-order" .
+}
+
+<urn:akg:diagram:tt-activity-cancel-refund> {
+    ns1:tt-activity-cancel-refund___1f43def2e9234b8caea78bb4 a ns1:ControlFlow ;
+        ns1:componentName "UpdateOrderStatus_to_SendCancelNotification" ;
+        ns1:sourceDiagram "tt-activity-cancel-refund" .
+
+    ns1:tt-activity-cancel-refund___3e539beed7bc4c4480de2b80 a ns1:ControlFlow ;
+        ns1:componentName "DrawbackMoney_to_UpdateOrderStatus" ;
+        ns1:sourceDiagram "tt-activity-cancel-refund" .
+
+    ns1:tt-activity-cancel-refund___5884e0d792464703b1059403 a ns1:ControlFlow ;
+        ns1:componentName "DecisionNode_Cancellable_to_CalculateRefund" ;
+        ns1:sourceDiagram "tt-activity-cancel-refund" .
+
+    ns1:tt-activity-cancel-refund___606c6eb5849f4418aa63da37 a ns1:ControlFlow ;
+        ns1:componentName "CalculateRefund_to_GetUserAccount" ;
+        ns1:sourceDiagram "tt-activity-cancel-refund" .
+
+    ns1:tt-activity-cancel-refund___70b2ce4e11354687992258e9 a ns1:ControlFlow ;
+        ns1:componentName "DecisionNode_Cancellable_to_FinalNode_NotCancellable" ;
+        ns1:sourceDiagram "tt-activity-cancel-refund" .
+
+    ns1:tt-activity-cancel-refund___8241e5ddf0e54199a9624e36 a ns1:ControlFlow ;
+        ns1:componentName "CheckOrderStatus_to_DecisionNode_Cancellable" ;
+        ns1:sourceDiagram "tt-activity-cancel-refund" .
+
+    ns1:tt-activity-cancel-refund___8d683c9e8b1f4043b7307882 a ns1:ControlFlow ;
+        ns1:componentName "SendCancelNotification_to_FinalNode_Success" ;
+        ns1:sourceDiagram "tt-activity-cancel-refund" .
+
+    ns1:tt-activity-cancel-refund___90717d9d730f4ee2a036c4d5 a ns1:ControlFlow ;
+        ns1:componentName "DecisionNode_OrderFound_to_FinalNode_NotFound" ;
+        ns1:sourceDiagram "tt-activity-cancel-refund" .
+
+    ns1:tt-activity-cancel-refund___c30f7defcac8424aa4355850 a ns1:ControlFlow ;
+        ns1:componentName "GetUserAccount_to_DrawbackMoney" ;
+        ns1:sourceDiagram "tt-activity-cancel-refund" .
+
+    ns1:tt-activity-cancel-refund___d7dcf02bfba84520beb4471f a ns1:ControlFlow ;
+        ns1:componentName "GetOrder_to_DecisionNode_OrderFound" ;
+        ns1:sourceDiagram "tt-activity-cancel-refund" .
+
+    ns1:tt-activity-cancel-refund___e3a08b7894484daf9674e2eb a ns1:ControlFlow ;
+        ns1:componentName "DecisionNode_OrderFound_to_CheckOrderStatus" ;
+        ns1:sourceDiagram "tt-activity-cancel-refund" .
+
+    ns1:tt-activity-cancel-refund___f2218e20384e45bfb9d1cb1e a ns1:ControlFlow ;
+        ns1:componentName "InitialNode_to_GetOrder" ;
+        ns1:sourceDiagram "tt-activity-cancel-refund" .
+
+    ns1:tt-activity-cancel-refund___0cd70d14bd954f83a0a48137 a ns1:BehavioralElement ;
+        ns1:causedBy ns1:tt-activity-cancel-refund___d36acb9837374ba48977371e ;
+        ns1:componentName "FinalNode_NotFound" ;
+        ns1:sourceDiagram "tt-activity-cancel-refund" .
+
+    ns1:tt-activity-cancel-refund___0e935ce0541d4c4e977e5672 a ns1:BehavioralElement ;
+        ns1:causedBy ns1:tt-activity-cancel-refund___d13a0d5cb322492ebbf938ac ;
+        ns1:componentName "FinalNode_NotCancellable" ;
+        ns1:sourceDiagram "tt-activity-cancel-refund" .
+
+    ns1:tt-activity-cancel-refund___4273ae5a772b46d284739a74 a ns1:ActivityPartition ;
+        ns1:componentName "ts-notification-service" ;
+        ns1:sourceDiagram "tt-activity-cancel-refund" .
+
+    ns1:tt-activity-cancel-refund___51c63aa93a2a4e25b04d1e47 a ns1:ActivityPartition ;
+        ns1:componentName "ts-inside-payment-service" ;
+        ns1:sourceDiagram "tt-activity-cancel-refund" .
+
+    ns1:tt-activity-cancel-refund___846245aa88aa4d5d8c7bf64b a ns1:BehavioralElement ;
+        ns1:componentName "InitialNode" ;
+        ns1:precedes ns1:tt-activity-cancel-refund___adf11e22886e492e8094d01a ;
+        ns1:sourceDiagram "tt-activity-cancel-refund" .
+
+    ns1:tt-activity-cancel-refund___8ba2331fedd942079ab5b9f3 a ns1:ActivityPartition ;
+        ns1:componentName "ts-user-service" ;
+        ns1:sourceDiagram "tt-activity-cancel-refund" .
+
+    ns1:tt-activity-cancel-refund___f0eec5959fce4f8f93e58b70 a ns1:BehavioralElement ;
+        ns1:causedBy ns1:tt-activity-cancel-refund___4bb296641dce499b9f3c1ea6 ;
+        ns1:componentName "FinalNode_Success" ;
+        ns1:sourceDiagram "tt-activity-cancel-refund" .
+
+    ns1:tt-activity-cancel-refund___4bb296641dce499b9f3c1ea6 a ns1:Action ;
+        ns1:belongsToPartition ns1:tt-activity-cancel-refund___4273ae5a772b46d284739a74 ;
+        ns1:causedBy ns1:tt-activity-cancel-refund___a73fbd73a6e7487f9818eacc ;
+        ns1:componentName "SendCancelNotification" ;
+        ns1:precedes ns1:tt-activity-cancel-refund___f0eec5959fce4f8f93e58b70 ;
+        ns1:sourceDiagram "tt-activity-cancel-refund" .
+
+    ns1:tt-activity-cancel-refund___640fa1df26184e689115869b a ns1:Action ;
+        ns1:belongsToPartition ns1:tt-activity-cancel-refund___8ba2331fedd942079ab5b9f3 ;
+        ns1:causedBy ns1:tt-activity-cancel-refund___e4262075515b471cb03deb27 ;
+        ns1:componentName "GetUserAccount" ;
+        ns1:precedes ns1:tt-activity-cancel-refund___cbbb8922a9e54e5eac20e4c9 ;
+        ns1:sourceDiagram "tt-activity-cancel-refund" .
+
+    ns1:tt-activity-cancel-refund___807bf610c3f9498c9ac1cfbe a ns1:ActivityPartition ;
+        ns1:componentName "ts-cancel-service" ;
+        ns1:sourceDiagram "tt-activity-cancel-refund" .
+
+    ns1:tt-activity-cancel-refund___a73fbd73a6e7487f9818eacc a ns1:Action ;
+        ns1:belongsToPartition ns1:tt-activity-cancel-refund___f0fefe76ab8f4322800112cc ;
+        ns1:causedBy ns1:tt-activity-cancel-refund___cbbb8922a9e54e5eac20e4c9 ;
+        ns1:componentName "UpdateOrderStatus" ;
+        ns1:precedes ns1:tt-activity-cancel-refund___4bb296641dce499b9f3c1ea6 ;
+        ns1:sourceDiagram "tt-activity-cancel-refund" .
+
+    ns1:tt-activity-cancel-refund___adf11e22886e492e8094d01a a ns1:Action ;
+        ns1:belongsToPartition ns1:tt-activity-cancel-refund___f0fefe76ab8f4322800112cc ;
+        ns1:causedBy ns1:tt-activity-cancel-refund___846245aa88aa4d5d8c7bf64b ;
+        ns1:componentName "GetOrder" ;
+        ns1:precedes ns1:tt-activity-cancel-refund___d36acb9837374ba48977371e ;
+        ns1:sourceDiagram "tt-activity-cancel-refund" .
+
+    ns1:tt-activity-cancel-refund___cbbb8922a9e54e5eac20e4c9 a ns1:Action ;
+        ns1:belongsToPartition ns1:tt-activity-cancel-refund___51c63aa93a2a4e25b04d1e47 ;
+        ns1:causedBy ns1:tt-activity-cancel-refund___640fa1df26184e689115869b ;
+        ns1:componentName "DrawbackMoney" ;
+        ns1:precedes ns1:tt-activity-cancel-refund___a73fbd73a6e7487f9818eacc ;
+        ns1:sourceDiagram "tt-activity-cancel-refund" .
+
+    ns1:tt-activity-cancel-refund___d0a0bcc510dc469a921847ab a ns1:Action ;
+        ns1:belongsToPartition ns1:tt-activity-cancel-refund___807bf610c3f9498c9ac1cfbe ;
+        ns1:causedBy ns1:tt-activity-cancel-refund___d36acb9837374ba48977371e ;
+        ns1:componentName "CheckOrderStatus" ;
+        ns1:precedes ns1:tt-activity-cancel-refund___d13a0d5cb322492ebbf938ac ;
+        ns1:sourceDiagram "tt-activity-cancel-refund" .
+
+    ns1:tt-activity-cancel-refund___e4262075515b471cb03deb27 a ns1:Action ;
+        ns1:belongsToPartition ns1:tt-activity-cancel-refund___807bf610c3f9498c9ac1cfbe ;
+        ns1:causedBy ns1:tt-activity-cancel-refund___d13a0d5cb322492ebbf938ac ;
+        ns1:componentName "CalculateRefund" ;
+        ns1:precedes ns1:tt-activity-cancel-refund___640fa1df26184e689115869b ;
+        ns1:sourceDiagram "tt-activity-cancel-refund" .
+
+    ns1:tt-activity-cancel-refund___f0fefe76ab8f4322800112cc a ns1:ActivityPartition ;
+        ns1:componentName "ts-order-service" ;
+        ns1:sourceDiagram "tt-activity-cancel-refund" .
+
+    ns1:tt-activity-cancel-refund___d13a0d5cb322492ebbf938ac a ns1:DecisionNode ;
+        ns1:causedBy ns1:tt-activity-cancel-refund___d0a0bcc510dc469a921847ab ;
+        ns1:componentName "DecisionNode_Cancellable" ;
+        ns1:precedes ns1:tt-activity-cancel-refund___0e935ce0541d4c4e977e5672,
+            ns1:tt-activity-cancel-refund___e4262075515b471cb03deb27 ;
+        ns1:sourceDiagram "tt-activity-cancel-refund" .
+
+    ns1:tt-activity-cancel-refund___d36acb9837374ba48977371e a ns1:DecisionNode ;
+        ns1:causedBy ns1:tt-activity-cancel-refund___adf11e22886e492e8094d01a ;
+        ns1:componentName "DecisionNode_OrderFound" ;
+        ns1:precedes ns1:tt-activity-cancel-refund___0cd70d14bd954f83a0a48137,
+            ns1:tt-activity-cancel-refund___d0a0bcc510dc469a921847ab ;
+        ns1:sourceDiagram "tt-activity-cancel-refund" .
+}
+
+<urn:akg:diagram:tt-comm-preserve-orchestration> {
+    ns1:tt-comm-preserve-orchestration___84b3ce94156d4a57b871e665 a ns1:CollaborationMessage ;
+        ns1:componentName "1: checkSecurity()" ;
+        ns1:involves ns1:tt-comm-preserve-orchestration___95d06e8184614e48be6a8cd7,
+            ns1:tt-comm-preserve-orchestration___b83cac9fa51a4294857e69af ;
+        ns1:precedes ns1:tt-comm-preserve-orchestration___e85fc785e70849bbb170d3ab ;
+        ns1:receiver ns1:tt-comm-preserve-orchestration___95d06e8184614e48be6a8cd7 ;
+        ns1:sender ns1:tt-comm-preserve-orchestration___b83cac9fa51a4294857e69af ;
+        ns1:sequenceNumber "1" ;
+        ns1:sourceDiagram "tt-comm-preserve-orchestration" .
+
+    ns1:tt-comm-preserve-orchestration___041d6682cdbc4351887b4075 a ns1:CollaborationMessage ;
+        ns1:componentName "6: addAssurance()" ;
+        ns1:involves ns1:tt-comm-preserve-orchestration___154bb5a206084c6d9df7e5a5,
+            ns1:tt-comm-preserve-orchestration___b83cac9fa51a4294857e69af ;
+        ns1:precedes ns1:tt-comm-preserve-orchestration___adb398c698c14c209b43c409 ;
+        ns1:receiver ns1:tt-comm-preserve-orchestration___154bb5a206084c6d9df7e5a5 ;
+        ns1:sender ns1:tt-comm-preserve-orchestration___b83cac9fa51a4294857e69af ;
+        ns1:sequenceNumber "6" ;
+        ns1:sourceDiagram "tt-comm-preserve-orchestration" .
+
+    ns1:tt-comm-preserve-orchestration___07bd563750c94f5f8d78a75b a ns1:CollaborationMessage ;
+        ns1:componentName "8: createOrder()" ;
+        ns1:involves ns1:tt-comm-preserve-orchestration___b83cac9fa51a4294857e69af,
+            ns1:tt-comm-preserve-orchestration___f32c1514a72f456d9b79cd10 ;
+        ns1:precedes ns1:tt-comm-preserve-orchestration___f53bb224842b4cc181f623b8 ;
+        ns1:receiver ns1:tt-comm-preserve-orchestration___f32c1514a72f456d9b79cd10 ;
+        ns1:sender ns1:tt-comm-preserve-orchestration___b83cac9fa51a4294857e69af ;
+        ns1:sequenceNumber "8" ;
+        ns1:sourceDiagram "tt-comm-preserve-orchestration" .
+
+    ns1:tt-comm-preserve-orchestration___45abd90becc0487b921319a6 a ns1:CollaborationMessage ;
+        ns1:causedBy ns1:tt-comm-preserve-orchestration___73c4d011d12145428e13b618 ;
+        ns1:componentName "4.1: getSoldTickets()" ;
+        ns1:involves ns1:tt-comm-preserve-orchestration___41fdbf9a94c142e79873bc3b,
+            ns1:tt-comm-preserve-orchestration___f32c1514a72f456d9b79cd10 ;
+        ns1:precedes ns1:tt-comm-preserve-orchestration___7c82f111d5a649e5896b71c8 ;
+        ns1:receiver ns1:tt-comm-preserve-orchestration___f32c1514a72f456d9b79cd10 ;
+        ns1:sender ns1:tt-comm-preserve-orchestration___41fdbf9a94c142e79873bc3b ;
+        ns1:sequenceNumber "4.1" ;
+        ns1:sourceDiagram "tt-comm-preserve-orchestration" .
+
+    ns1:tt-comm-preserve-orchestration___663162f6528a421c8403d8a4 a ns1:CollaborationMessage ;
+        ns1:componentName "10: createConsign()" ;
+        ns1:involves ns1:tt-comm-preserve-orchestration___a75c072b25e645e79b2fa1da,
+            ns1:tt-comm-preserve-orchestration___b83cac9fa51a4294857e69af ;
+        ns1:receiver ns1:tt-comm-preserve-orchestration___a75c072b25e645e79b2fa1da ;
+        ns1:sender ns1:tt-comm-preserve-orchestration___b83cac9fa51a4294857e69af ;
+        ns1:sequenceNumber "10" ;
+        ns1:sourceDiagram "tt-comm-preserve-orchestration" .
+
+    ns1:tt-comm-preserve-orchestration___75eca0fae84448e1b2e1545f a ns1:CollaborationMessage ;
+        ns1:causedBy ns1:tt-comm-preserve-orchestration___6c9af489fbc74dd8839b10f0 ;
+        ns1:componentName "3.1.1: queryForStationId()" ;
+        ns1:involves ns1:tt-comm-preserve-orchestration___253d7e58917d410c8dfae1ab,
+            ns1:tt-comm-preserve-orchestration___7a978518d12a4644993f7281 ;
+        ns1:precedes ns1:tt-comm-preserve-orchestration___73c4d011d12145428e13b618 ;
+        ns1:receiver ns1:tt-comm-preserve-orchestration___253d7e58917d410c8dfae1ab ;
+        ns1:sender ns1:tt-comm-preserve-orchestration___7a978518d12a4644993f7281 ;
+        ns1:sequenceNumber "3.1.1" ;
+        ns1:sourceDiagram "tt-comm-preserve-orchestration" .
+
+    ns1:tt-comm-preserve-orchestration___7c82f111d5a649e5896b71c8 a ns1:CollaborationMessage ;
+        ns1:componentName "5: getAccount()" ;
+        ns1:involves ns1:tt-comm-preserve-orchestration___535d3311b7e1476d95fb47d4,
+            ns1:tt-comm-preserve-orchestration___b83cac9fa51a4294857e69af ;
+        ns1:precedes ns1:tt-comm-preserve-orchestration___041d6682cdbc4351887b4075 ;
+        ns1:receiver ns1:tt-comm-preserve-orchestration___535d3311b7e1476d95fb47d4 ;
+        ns1:sender ns1:tt-comm-preserve-orchestration___b83cac9fa51a4294857e69af ;
+        ns1:sequenceNumber "5" ;
+        ns1:sourceDiagram "tt-comm-preserve-orchestration" .
+
+    ns1:tt-comm-preserve-orchestration___adb398c698c14c209b43c409 a ns1:CollaborationMessage ;
+        ns1:componentName "7: queryForStationId()" ;
+        ns1:involves ns1:tt-comm-preserve-orchestration___253d7e58917d410c8dfae1ab,
+            ns1:tt-comm-preserve-orchestration___b83cac9fa51a4294857e69af ;
+        ns1:precedes ns1:tt-comm-preserve-orchestration___07bd563750c94f5f8d78a75b ;
+        ns1:receiver ns1:tt-comm-preserve-orchestration___253d7e58917d410c8dfae1ab ;
+        ns1:sender ns1:tt-comm-preserve-orchestration___b83cac9fa51a4294857e69af ;
+        ns1:sequenceNumber "7" ;
+        ns1:sourceDiagram "tt-comm-preserve-orchestration" .
+
+    ns1:tt-comm-preserve-orchestration___e85fc785e70849bbb170d3ab a ns1:CollaborationMessage ;
+        ns1:componentName "2: getContactsById()" ;
+        ns1:involves ns1:tt-comm-preserve-orchestration___3ef611ac72bb4b679896cae6,
+            ns1:tt-comm-preserve-orchestration___b83cac9fa51a4294857e69af ;
+        ns1:precedes ns1:tt-comm-preserve-orchestration___8727e5f2b5ad45918b733275 ;
+        ns1:receiver ns1:tt-comm-preserve-orchestration___3ef611ac72bb4b679896cae6 ;
+        ns1:sender ns1:tt-comm-preserve-orchestration___b83cac9fa51a4294857e69af ;
+        ns1:sequenceNumber "2" ;
+        ns1:sourceDiagram "tt-comm-preserve-orchestration" .
+
+    ns1:tt-comm-preserve-orchestration___f53bb224842b4cc181f623b8 a ns1:CollaborationMessage ;
+        ns1:componentName "9: createFoodOrder()" ;
+        ns1:involves ns1:tt-comm-preserve-orchestration___24719ef99dbb457e9d020a41,
+            ns1:tt-comm-preserve-orchestration___b83cac9fa51a4294857e69af ;
+        ns1:precedes ns1:tt-comm-preserve-orchestration___663162f6528a421c8403d8a4 ;
+        ns1:receiver ns1:tt-comm-preserve-orchestration___24719ef99dbb457e9d020a41 ;
+        ns1:sender ns1:tt-comm-preserve-orchestration___b83cac9fa51a4294857e69af ;
+        ns1:sequenceNumber "9" ;
+        ns1:sourceDiagram "tt-comm-preserve-orchestration" .
+
+    ns1:tt-comm-preserve-orchestration___154bb5a206084c6d9df7e5a5 a ns1:CollaborationObject ;
+        ns1:componentName "ts-assurance-service" ;
+        ns1:fanIn 1 ;
+        ns1:fanOut 0 ;
+        ns1:sourceDiagram "tt-comm-preserve-orchestration" .
+
+    ns1:tt-comm-preserve-orchestration___24719ef99dbb457e9d020a41 a ns1:CollaborationObject ;
+        ns1:componentName "ts-food-service" ;
+        ns1:fanIn 1 ;
+        ns1:fanOut 0 ;
+        ns1:sourceDiagram "tt-comm-preserve-orchestration" .
+
+    ns1:tt-comm-preserve-orchestration___3ef611ac72bb4b679896cae6 a ns1:CollaborationObject ;
+        ns1:componentName "ts-contacts-service" ;
+        ns1:fanIn 1 ;
+        ns1:fanOut 0 ;
+        ns1:sourceDiagram "tt-comm-preserve-orchestration" .
+
+    ns1:tt-comm-preserve-orchestration___535d3311b7e1476d95fb47d4 a ns1:CollaborationObject ;
+        ns1:componentName "ts-user-service" ;
+        ns1:fanIn 1 ;
+        ns1:fanOut 0 ;
+        ns1:sourceDiagram "tt-comm-preserve-orchestration" .
+
+    ns1:tt-comm-preserve-orchestration___6c9af489fbc74dd8839b10f0 a ns1:CollaborationMessage ;
+        ns1:causedBy ns1:tt-comm-preserve-orchestration___8727e5f2b5ad45918b733275 ;
+        ns1:componentName "3.1: queryForTravel()" ;
+        ns1:involves ns1:tt-comm-preserve-orchestration___1a9f4425650b485bb1c49365,
+            ns1:tt-comm-preserve-orchestration___7a978518d12a4644993f7281 ;
+        ns1:precedes ns1:tt-comm-preserve-orchestration___75eca0fae84448e1b2e1545f ;
+        ns1:receiver ns1:tt-comm-preserve-orchestration___7a978518d12a4644993f7281 ;
+        ns1:sender ns1:tt-comm-preserve-orchestration___1a9f4425650b485bb1c49365 ;
+        ns1:sequenceNumber "3.1" ;
+        ns1:sourceDiagram "tt-comm-preserve-orchestration" .
+
+    ns1:tt-comm-preserve-orchestration___73c4d011d12145428e13b618 a ns1:CollaborationMessage ;
+        ns1:componentName "4: distributeSeat()" ;
+        ns1:involves ns1:tt-comm-preserve-orchestration___41fdbf9a94c142e79873bc3b,
+            ns1:tt-comm-preserve-orchestration___b83cac9fa51a4294857e69af ;
+        ns1:precedes ns1:tt-comm-preserve-orchestration___45abd90becc0487b921319a6 ;
+        ns1:receiver ns1:tt-comm-preserve-orchestration___41fdbf9a94c142e79873bc3b ;
+        ns1:sender ns1:tt-comm-preserve-orchestration___b83cac9fa51a4294857e69af ;
+        ns1:sequenceNumber "4" ;
+        ns1:sourceDiagram "tt-comm-preserve-orchestration" .
+
+    ns1:tt-comm-preserve-orchestration___8727e5f2b5ad45918b733275 a ns1:CollaborationMessage ;
+        ns1:componentName "3: getTripAllDetail()" ;
+        ns1:involves ns1:tt-comm-preserve-orchestration___1a9f4425650b485bb1c49365,
+            ns1:tt-comm-preserve-orchestration___b83cac9fa51a4294857e69af ;
+        ns1:precedes ns1:tt-comm-preserve-orchestration___6c9af489fbc74dd8839b10f0 ;
+        ns1:receiver ns1:tt-comm-preserve-orchestration___1a9f4425650b485bb1c49365 ;
+        ns1:sender ns1:tt-comm-preserve-orchestration___b83cac9fa51a4294857e69af ;
+        ns1:sequenceNumber "3" ;
+        ns1:sourceDiagram "tt-comm-preserve-orchestration" .
+
+    ns1:tt-comm-preserve-orchestration___95d06e8184614e48be6a8cd7 a ns1:CollaborationObject ;
+        ns1:componentName "ts-security-service" ;
+        ns1:fanIn 1 ;
+        ns1:fanOut 0 ;
+        ns1:sourceDiagram "tt-comm-preserve-orchestration" .
+
+    ns1:tt-comm-preserve-orchestration___a75c072b25e645e79b2fa1da a ns1:CollaborationObject ;
+        ns1:componentName "ts-consign-service" ;
+        ns1:fanIn 1 ;
+        ns1:fanOut 0 ;
+        ns1:sourceDiagram "tt-comm-preserve-orchestration" .
+
+    ns1:tt-comm-preserve-orchestration___1a9f4425650b485bb1c49365 a ns1:CollaborationObject ;
+        ns1:componentName "ts-travel-service" ;
+        ns1:fanIn 1 ;
+        ns1:fanOut 1 ;
+        ns1:sourceDiagram "tt-comm-preserve-orchestration" .
+
+    ns1:tt-comm-preserve-orchestration___253d7e58917d410c8dfae1ab a ns1:CollaborationObject ;
+        ns1:componentName "ts-station-service" ;
+        ns1:fanIn 2 ;
+        ns1:fanOut 0 ;
+        ns1:sourceDiagram "tt-comm-preserve-orchestration" .
+
+    ns1:tt-comm-preserve-orchestration___41fdbf9a94c142e79873bc3b a ns1:CollaborationObject ;
+        ns1:componentName "ts-seat-service" ;
+        ns1:fanIn 1 ;
+        ns1:fanOut 1 ;
+        ns1:sourceDiagram "tt-comm-preserve-orchestration" .
+
+    ns1:tt-comm-preserve-orchestration___7a978518d12a4644993f7281 a ns1:CollaborationObject ;
+        ns1:componentName "ts-basic-service" ;
+        ns1:fanIn 1 ;
+        ns1:fanOut 1 ;
+        ns1:sourceDiagram "tt-comm-preserve-orchestration" .
+
+    ns1:tt-comm-preserve-orchestration___f32c1514a72f456d9b79cd10 a ns1:CollaborationObject ;
+        ns1:componentName "ts-order-service" ;
+        ns1:fanIn 2 ;
+        ns1:fanOut 0 ;
+        ns1:sourceDiagram "tt-comm-preserve-orchestration" .
+
+    ns1:tt-comm-preserve-orchestration___b83cac9fa51a4294857e69af a ns1:CollaborationObject ;
+        ns1:componentName "ts-preserve-service" ;
+        ns1:fanIn 0 ;
+        ns1:fanOut 10 ;
+        ns1:sourceDiagram "tt-comm-preserve-orchestration" .
+}
+
+<urn:akg:diagram:tt-seq-ticket-reserve> {
+    ns1:tt-seq-ticket-reserve___f4ddf626d6124cd6abd621f1 a ns1:Lifeline ;
+        ns1:componentName "ts-notification-service" ;
+        ns1:sourceDiagram "tt-seq-ticket-reserve" .
+
+    ns1:tt-seq-ticket-reserve___0344a58a5ca0433c8b943964 a ns1:Message ;
+        ns1:callChainDepth 2 ;
+        ns1:causedBy ns1:tt-seq-ticket-reserve___40e5891187514bfcb3e65bdb ;
+        ns1:componentName "GET /securityConfigs/{accountId}" ;
+        ns1:involves ns1:tt-seq-ticket-reserve___5a266b83c1ea40518f9366ce,
+            ns1:tt-seq-ticket-reserve___afbeed51e4124876b960aaf8 ;
+        ns1:isSync true ;
+        ns1:precedes ns1:tt-seq-ticket-reserve___fcb03a6d456a4541a02b3277 ;
+        ns1:receiver ns1:tt-seq-ticket-reserve___afbeed51e4124876b960aaf8 ;
+        ns1:sender ns1:tt-seq-ticket-reserve___5a266b83c1ea40518f9366ce ;
+        ns1:sourceDiagram "tt-seq-ticket-reserve" .
+
+    ns1:tt-seq-ticket-reserve___0714a9f8383b4a569749bb72 a ns1:Message ;
+        ns1:callChainDepth 4 ;
+        ns1:causedBy ns1:tt-seq-ticket-reserve___1f8bc2f76ed3432b95dad9e1 ;
+        ns1:componentName "GET /stations/id/{name}" ;
+        ns1:involves ns1:tt-seq-ticket-reserve___02f0fdde5a934afa8249b69a,
+            ns1:tt-seq-ticket-reserve___0ed16462a811483e9055df25 ;
+        ns1:isSync true ;
+        ns1:precedes ns1:tt-seq-ticket-reserve___f91f2b7e06174b20be3c55ce ;
+        ns1:receiver ns1:tt-seq-ticket-reserve___02f0fdde5a934afa8249b69a ;
+        ns1:sender ns1:tt-seq-ticket-reserve___0ed16462a811483e9055df25 ;
+        ns1:sourceDiagram "tt-seq-ticket-reserve" .
+
+    ns1:tt-seq-ticket-reserve___260b2082384b4cc6a098f8cf a ns1:Message ;
+        ns1:callChainDepth 2 ;
+        ns1:causedBy ns1:tt-seq-ticket-reserve___40e5891187514bfcb3e65bdb ;
+        ns1:componentName "GET /assurances/{type}/{orderId}" ;
+        ns1:involves ns1:tt-seq-ticket-reserve___5a266b83c1ea40518f9366ce,
+            ns1:tt-seq-ticket-reserve___f5b58f3f264a4f83844e6b4e ;
+        ns1:isSync true ;
+        ns1:precedes ns1:tt-seq-ticket-reserve___5fb85db6c537452980c08a4b ;
+        ns1:receiver ns1:tt-seq-ticket-reserve___f5b58f3f264a4f83844e6b4e ;
+        ns1:sender ns1:tt-seq-ticket-reserve___5a266b83c1ea40518f9366ce ;
+        ns1:sourceDiagram "tt-seq-ticket-reserve" .
+
+    ns1:tt-seq-ticket-reserve___362b77fea0ca4b00a798b2aa a ns1:Message ;
+        ns1:callChainDepth 2 ;
+        ns1:causedBy ns1:tt-seq-ticket-reserve___40e5891187514bfcb3e65bdb ;
+        ns1:componentName "POST /consigns" ;
+        ns1:involves ns1:tt-seq-ticket-reserve___5a266b83c1ea40518f9366ce,
+            ns1:tt-seq-ticket-reserve___8608f82e3a4941b48348ea7e ;
+        ns1:isSync true ;
+        ns1:receiver ns1:tt-seq-ticket-reserve___8608f82e3a4941b48348ea7e ;
+        ns1:sender ns1:tt-seq-ticket-reserve___5a266b83c1ea40518f9366ce ;
+        ns1:sourceDiagram "tt-seq-ticket-reserve" .
+
+    ns1:tt-seq-ticket-reserve___460acdd7b29f4e43805c1caa a ns1:Message ;
+        ns1:callChainDepth 2 ;
+        ns1:causedBy ns1:tt-seq-ticket-reserve___40e5891187514bfcb3e65bdb ;
+        ns1:componentName "POST /order" ;
+        ns1:involves ns1:tt-seq-ticket-reserve___336d119c811c4597a9a94694,
+            ns1:tt-seq-ticket-reserve___5a266b83c1ea40518f9366ce ;
+        ns1:isSync true ;
+        ns1:precedes ns1:tt-seq-ticket-reserve___c4046ee32a6e468ebf3da8c1 ;
+        ns1:receiver ns1:tt-seq-ticket-reserve___336d119c811c4597a9a94694 ;
+        ns1:sender ns1:tt-seq-ticket-reserve___5a266b83c1ea40518f9366ce ;
+        ns1:sourceDiagram "tt-seq-ticket-reserve" .
+
+    ns1:tt-seq-ticket-reserve___5fb85db6c537452980c08a4b a ns1:Message ;
+        ns1:callChainDepth 2 ;
+        ns1:causedBy ns1:tt-seq-ticket-reserve___40e5891187514bfcb3e65bdb ;
+        ns1:componentName "GET /stations/id/{name}" ;
+        ns1:involves ns1:tt-seq-ticket-reserve___02f0fdde5a934afa8249b69a,
+            ns1:tt-seq-ticket-reserve___5a266b83c1ea40518f9366ce ;
+        ns1:isSync true ;
+        ns1:precedes ns1:tt-seq-ticket-reserve___460acdd7b29f4e43805c1caa ;
+        ns1:receiver ns1:tt-seq-ticket-reserve___02f0fdde5a934afa8249b69a ;
+        ns1:sender ns1:tt-seq-ticket-reserve___5a266b83c1ea40518f9366ce ;
+        ns1:sourceDiagram "tt-seq-ticket-reserve" .
+
+    ns1:tt-seq-ticket-reserve___a651d9464e5545d08090a343 a ns1:Message ;
+        ns1:callChainDepth 3 ;
+        ns1:causedBy ns1:tt-seq-ticket-reserve___f91f2b7e06174b20be3c55ce ;
+        ns1:componentName "POST /order/tickets" ;
+        ns1:involves ns1:tt-seq-ticket-reserve___009ba120f28b418b948bb9e5,
+            ns1:tt-seq-ticket-reserve___336d119c811c4597a9a94694 ;
+        ns1:isSync true ;
+        ns1:precedes ns1:tt-seq-ticket-reserve___cbf546551a844b6ab9bd919c ;
+        ns1:receiver ns1:tt-seq-ticket-reserve___336d119c811c4597a9a94694 ;
+        ns1:sender ns1:tt-seq-ticket-reserve___009ba120f28b418b948bb9e5 ;
+        ns1:sourceDiagram "tt-seq-ticket-reserve" .
+
+    ns1:tt-seq-ticket-reserve___c4046ee32a6e468ebf3da8c1 a ns1:Message ;
+        ns1:callChainDepth 2 ;
+        ns1:causedBy ns1:tt-seq-ticket-reserve___40e5891187514bfcb3e65bdb ;
+        ns1:componentName "POST /orders" ;
+        ns1:involves ns1:tt-seq-ticket-reserve___5a266b83c1ea40518f9366ce,
+            ns1:tt-seq-ticket-reserve___c2ef9569ed0f47e98678ca2d ;
+        ns1:isSync true ;
+        ns1:precedes ns1:tt-seq-ticket-reserve___362b77fea0ca4b00a798b2aa ;
+        ns1:receiver ns1:tt-seq-ticket-reserve___c2ef9569ed0f47e98678ca2d ;
+        ns1:sender ns1:tt-seq-ticket-reserve___5a266b83c1ea40518f9366ce ;
+        ns1:sourceDiagram "tt-seq-ticket-reserve" .
+
+    ns1:tt-seq-ticket-reserve___cbf546551a844b6ab9bd919c a ns1:Message ;
+        ns1:callChainDepth 2 ;
+        ns1:causedBy ns1:tt-seq-ticket-reserve___40e5891187514bfcb3e65bdb ;
+        ns1:componentName "GET /users/id/{accountId}" ;
+        ns1:involves ns1:tt-seq-ticket-reserve___181a3a426b9a4f6d8d3b1f8b,
+            ns1:tt-seq-ticket-reserve___5a266b83c1ea40518f9366ce ;
+        ns1:isSync true ;
+        ns1:precedes ns1:tt-seq-ticket-reserve___260b2082384b4cc6a098f8cf ;
+        ns1:receiver ns1:tt-seq-ticket-reserve___181a3a426b9a4f6d8d3b1f8b ;
+        ns1:sender ns1:tt-seq-ticket-reserve___5a266b83c1ea40518f9366ce ;
+        ns1:sourceDiagram "tt-seq-ticket-reserve" .
+
+    ns1:tt-seq-ticket-reserve___fcb03a6d456a4541a02b3277 a ns1:Message ;
+        ns1:callChainDepth 2 ;
+        ns1:causedBy ns1:tt-seq-ticket-reserve___40e5891187514bfcb3e65bdb ;
+        ns1:componentName "GET /contacts/{contactsId}" ;
+        ns1:involves ns1:tt-seq-ticket-reserve___59b07c653f2440699236247d,
+            ns1:tt-seq-ticket-reserve___5a266b83c1ea40518f9366ce ;
+        ns1:isSync true ;
+        ns1:precedes ns1:tt-seq-ticket-reserve___203e276593d64d908e7bc8f1 ;
+        ns1:receiver ns1:tt-seq-ticket-reserve___59b07c653f2440699236247d ;
+        ns1:sender ns1:tt-seq-ticket-reserve___5a266b83c1ea40518f9366ce ;
+        ns1:sourceDiagram "tt-seq-ticket-reserve" .
+
+    ns1:tt-seq-ticket-reserve___181a3a426b9a4f6d8d3b1f8b a ns1:Lifeline ;
+        ns1:componentName "ts-user-service" ;
+        ns1:sourceDiagram "tt-seq-ticket-reserve" .
+
+    ns1:tt-seq-ticket-reserve___1f8bc2f76ed3432b95dad9e1 a ns1:Message ;
+        ns1:callChainDepth 3 ;
+        ns1:causedBy ns1:tt-seq-ticket-reserve___203e276593d64d908e7bc8f1 ;
+        ns1:componentName "POST /basic/travel" ;
+        ns1:involves ns1:tt-seq-ticket-reserve___0ed16462a811483e9055df25,
+            ns1:tt-seq-ticket-reserve___e3afc7f8048c4828bf6cca81 ;
+        ns1:isSync true ;
+        ns1:precedes ns1:tt-seq-ticket-reserve___0714a9f8383b4a569749bb72 ;
+        ns1:receiver ns1:tt-seq-ticket-reserve___0ed16462a811483e9055df25 ;
+        ns1:sender ns1:tt-seq-ticket-reserve___e3afc7f8048c4828bf6cca81 ;
+        ns1:sourceDiagram "tt-seq-ticket-reserve" .
+
+    ns1:tt-seq-ticket-reserve___203e276593d64d908e7bc8f1 a ns1:Message ;
+        ns1:callChainDepth 2 ;
+        ns1:causedBy ns1:tt-seq-ticket-reserve___40e5891187514bfcb3e65bdb ;
+        ns1:componentName "POST /trip_detail" ;
+        ns1:involves ns1:tt-seq-ticket-reserve___5a266b83c1ea40518f9366ce,
+            ns1:tt-seq-ticket-reserve___e3afc7f8048c4828bf6cca81 ;
+        ns1:isSync true ;
+        ns1:precedes ns1:tt-seq-ticket-reserve___1f8bc2f76ed3432b95dad9e1 ;
+        ns1:receiver ns1:tt-seq-ticket-reserve___e3afc7f8048c4828bf6cca81 ;
+        ns1:sender ns1:tt-seq-ticket-reserve___5a266b83c1ea40518f9366ce ;
+        ns1:sourceDiagram "tt-seq-ticket-reserve" .
+
+    ns1:tt-seq-ticket-reserve___59b07c653f2440699236247d a ns1:Lifeline ;
+        ns1:componentName "ts-contacts-service" ;
+        ns1:sourceDiagram "tt-seq-ticket-reserve" .
+
+    ns1:tt-seq-ticket-reserve___8608f82e3a4941b48348ea7e a ns1:Lifeline ;
+        ns1:componentName "ts-consign-service" ;
+        ns1:sourceDiagram "tt-seq-ticket-reserve" .
+
+    ns1:tt-seq-ticket-reserve___afbeed51e4124876b960aaf8 a ns1:Lifeline ;
+        ns1:componentName "ts-security-service" ;
+        ns1:sourceDiagram "tt-seq-ticket-reserve" .
+
+    ns1:tt-seq-ticket-reserve___c2ef9569ed0f47e98678ca2d a ns1:Lifeline ;
+        ns1:componentName "ts-food-service" ;
+        ns1:sourceDiagram "tt-seq-ticket-reserve" .
+
+    ns1:tt-seq-ticket-reserve___ca721e26012f452181372e4b a ns1:Lifeline ;
+        ns1:componentName "Client" ;
+        ns1:sourceDiagram "tt-seq-ticket-reserve" .
+
+    ns1:tt-seq-ticket-reserve___f5b58f3f264a4f83844e6b4e a ns1:Lifeline ;
+        ns1:componentName "ts-assurance-service" ;
+        ns1:sourceDiagram "tt-seq-ticket-reserve" .
+
+    ns1:tt-seq-ticket-reserve___f91f2b7e06174b20be3c55ce a ns1:Message ;
+        ns1:callChainDepth 2 ;
+        ns1:causedBy ns1:tt-seq-ticket-reserve___40e5891187514bfcb3e65bdb ;
+        ns1:componentName "POST /seats" ;
+        ns1:involves ns1:tt-seq-ticket-reserve___009ba120f28b418b948bb9e5,
+            ns1:tt-seq-ticket-reserve___5a266b83c1ea40518f9366ce ;
+        ns1:isSync true ;
+        ns1:precedes ns1:tt-seq-ticket-reserve___a651d9464e5545d08090a343 ;
+        ns1:receiver ns1:tt-seq-ticket-reserve___009ba120f28b418b948bb9e5 ;
+        ns1:sender ns1:tt-seq-ticket-reserve___5a266b83c1ea40518f9366ce ;
+        ns1:sourceDiagram "tt-seq-ticket-reserve" .
+
+    ns1:tt-seq-ticket-reserve___009ba120f28b418b948bb9e5 a ns1:Lifeline ;
+        ns1:componentName "ts-seat-service" ;
+        ns1:sourceDiagram "tt-seq-ticket-reserve" .
+
+    ns1:tt-seq-ticket-reserve___02f0fdde5a934afa8249b69a a ns1:Lifeline ;
+        ns1:componentName "ts-station-service" ;
+        ns1:sourceDiagram "tt-seq-ticket-reserve" .
+
+    ns1:tt-seq-ticket-reserve___0ed16462a811483e9055df25 a ns1:Lifeline ;
+        ns1:componentName "ts-basic-service" ;
+        ns1:sourceDiagram "tt-seq-ticket-reserve" .
+
+    ns1:tt-seq-ticket-reserve___336d119c811c4597a9a94694 a ns1:Lifeline ;
+        ns1:componentName "ts-order-service" ;
+        ns1:sourceDiagram "tt-seq-ticket-reserve" .
+
+    ns1:tt-seq-ticket-reserve___e3afc7f8048c4828bf6cca81 a ns1:Lifeline ;
+        ns1:componentName "ts-travel-service" ;
+        ns1:sourceDiagram "tt-seq-ticket-reserve" .
+
+    ns1:tt-seq-ticket-reserve___40e5891187514bfcb3e65bdb a ns1:Message ;
+        ns1:callChainDepth 1 ;
+        ns1:componentName "POST /preserve" ;
+        ns1:involves ns1:tt-seq-ticket-reserve___5a266b83c1ea40518f9366ce,
+            ns1:tt-seq-ticket-reserve___ca721e26012f452181372e4b ;
+        ns1:isSync true ;
+        ns1:precedes ns1:tt-seq-ticket-reserve___0344a58a5ca0433c8b943964 ;
+        ns1:receiver ns1:tt-seq-ticket-reserve___5a266b83c1ea40518f9366ce ;
+        ns1:sender ns1:tt-seq-ticket-reserve___ca721e26012f452181372e4b ;
+        ns1:sourceDiagram "tt-seq-ticket-reserve" .
+
+    ns1:tt-seq-ticket-reserve___5a266b83c1ea40518f9366ce a ns1:Lifeline ;
+        ns1:componentName "ts-preserve-service" ;
+        ns1:sourceDiagram "tt-seq-ticket-reserve" .
+}
+
+<urn:akg:diagram:tt-seq-rebook> {
+    ns1:tt-seq-rebook___0105002d00cd457b802f64f3 a ns1:Message ;
+        ns1:callChainDepth 2 ;
+        ns1:causedBy ns1:tt-seq-rebook___328ee60f2a484f59b45f4e6e ;
+        ns1:componentName "GET /routes/{routeId}" ;
+        ns1:involves ns1:tt-seq-rebook___aa26fad999a14985bd0406a1,
+            ns1:tt-seq-rebook___b7532858389b4cf69847afc2 ;
+        ns1:isSync true ;
+        ns1:precedes ns1:tt-seq-rebook___528accde9f9a4173be59ab0b ;
+        ns1:receiver ns1:tt-seq-rebook___b7532858389b4cf69847afc2 ;
+        ns1:sender ns1:tt-seq-rebook___aa26fad999a14985bd0406a1 ;
+        ns1:sourceDiagram "tt-seq-rebook" .
+
+    ns1:tt-seq-rebook___11fc6bba1e934d99aefb2eba a ns1:Message ;
+        ns1:callChainDepth 2 ;
+        ns1:causedBy ns1:tt-seq-rebook___328ee60f2a484f59b45f4e6e ;
+        ns1:componentName "GET /trains/byName/{name}" ;
+        ns1:involves ns1:tt-seq-rebook___9cea399d34e949f6928ea6fe,
+            ns1:tt-seq-rebook___aa26fad999a14985bd0406a1 ;
+        ns1:isSync true ;
+        ns1:precedes ns1:tt-seq-rebook___0105002d00cd457b802f64f3 ;
+        ns1:receiver ns1:tt-seq-rebook___9cea399d34e949f6928ea6fe ;
+        ns1:sender ns1:tt-seq-rebook___aa26fad999a14985bd0406a1 ;
+        ns1:sourceDiagram "tt-seq-rebook" .
+
+    ns1:tt-seq-rebook___39ee660b35df437789e2da0d a ns1:Message ;
+        ns1:callChainDepth 2 ;
+        ns1:causedBy ns1:tt-seq-rebook___328ee60f2a484f59b45f4e6e ;
+        ns1:componentName "POST /inside_payment/difference" ;
+        ns1:involves ns1:tt-seq-rebook___aa26fad999a14985bd0406a1,
+            ns1:tt-seq-rebook___abe014637319451ca02b6068 ;
+        ns1:isSync true ;
+        ns1:receiver ns1:tt-seq-rebook___abe014637319451ca02b6068 ;
+        ns1:sender ns1:tt-seq-rebook___aa26fad999a14985bd0406a1 ;
+        ns1:sourceDiagram "tt-seq-rebook" .
+
+    ns1:tt-seq-rebook___528accde9f9a4173be59ab0b a ns1:Message ;
+        ns1:callChainDepth 2 ;
+        ns1:causedBy ns1:tt-seq-rebook___328ee60f2a484f59b45f4e6e ;
+        ns1:componentName "POST /seats" ;
+        ns1:involves ns1:tt-seq-rebook___900d0ab2102c4e3589c352d3,
+            ns1:tt-seq-rebook___aa26fad999a14985bd0406a1 ;
+        ns1:isSync true ;
+        ns1:precedes ns1:tt-seq-rebook___737f4aba3d5c4f769ec02460 ;
+        ns1:receiver ns1:tt-seq-rebook___900d0ab2102c4e3589c352d3 ;
+        ns1:sender ns1:tt-seq-rebook___aa26fad999a14985bd0406a1 ;
+        ns1:sourceDiagram "tt-seq-rebook" .
+
+    ns1:tt-seq-rebook___71726a99549a43899b6f43a3 a ns1:Message ;
+        ns1:callChainDepth 2 ;
+        ns1:causedBy ns1:tt-seq-rebook___328ee60f2a484f59b45f4e6e ;
+        ns1:componentName "GET /order/{orderId}" ;
+        ns1:involves ns1:tt-seq-rebook___9b8b83f979234dceb8832126,
+            ns1:tt-seq-rebook___aa26fad999a14985bd0406a1 ;
+        ns1:isSync true ;
+        ns1:precedes ns1:tt-seq-rebook___c416285b2e7b417491ac3876 ;
+        ns1:receiver ns1:tt-seq-rebook___9b8b83f979234dceb8832126 ;
+        ns1:sender ns1:tt-seq-rebook___aa26fad999a14985bd0406a1 ;
+        ns1:sourceDiagram "tt-seq-rebook" .
+
+    ns1:tt-seq-rebook___737f4aba3d5c4f769ec02460 a ns1:Message ;
+        ns1:callChainDepth 2 ;
+        ns1:causedBy ns1:tt-seq-rebook___328ee60f2a484f59b45f4e6e ;
+        ns1:componentName "PUT /order" ;
+        ns1:involves ns1:tt-seq-rebook___9b8b83f979234dceb8832126,
+            ns1:tt-seq-rebook___aa26fad999a14985bd0406a1 ;
+        ns1:isSync true ;
+        ns1:precedes ns1:tt-seq-rebook___39ee660b35df437789e2da0d ;
+        ns1:receiver ns1:tt-seq-rebook___9b8b83f979234dceb8832126 ;
+        ns1:sender ns1:tt-seq-rebook___aa26fad999a14985bd0406a1 ;
+        ns1:sourceDiagram "tt-seq-rebook" .
+
+    ns1:tt-seq-rebook___c416285b2e7b417491ac3876 a ns1:Message ;
+        ns1:callChainDepth 2 ;
+        ns1:causedBy ns1:tt-seq-rebook___328ee60f2a484f59b45f4e6e ;
+        ns1:componentName "POST /trip_detail" ;
+        ns1:involves ns1:tt-seq-rebook___0102da344daa417b8723fd53,
+            ns1:tt-seq-rebook___aa26fad999a14985bd0406a1 ;
+        ns1:isSync true ;
+        ns1:precedes ns1:tt-seq-rebook___11fc6bba1e934d99aefb2eba ;
+        ns1:receiver ns1:tt-seq-rebook___0102da344daa417b8723fd53 ;
+        ns1:sender ns1:tt-seq-rebook___aa26fad999a14985bd0406a1 ;
+        ns1:sourceDiagram "tt-seq-rebook" .
+
+    ns1:tt-seq-rebook___0102da344daa417b8723fd53 a ns1:Lifeline ;
+        ns1:componentName "ts-travel-service" ;
+        ns1:sourceDiagram "tt-seq-rebook" .
+
+    ns1:tt-seq-rebook___900d0ab2102c4e3589c352d3 a ns1:Lifeline ;
+        ns1:componentName "ts-seat-service" ;
+        ns1:sourceDiagram "tt-seq-rebook" .
+
+    ns1:tt-seq-rebook___9cea399d34e949f6928ea6fe a ns1:Lifeline ;
+        ns1:componentName "ts-train-service" ;
+        ns1:sourceDiagram "tt-seq-rebook" .
+
+    ns1:tt-seq-rebook___abe014637319451ca02b6068 a ns1:Lifeline ;
+        ns1:componentName "ts-inside-payment-service" ;
+        ns1:sourceDiagram "tt-seq-rebook" .
+
+    ns1:tt-seq-rebook___b7532858389b4cf69847afc2 a ns1:Lifeline ;
+        ns1:componentName "ts-route-service" ;
+        ns1:sourceDiagram "tt-seq-rebook" .
+
+    ns1:tt-seq-rebook___dd176b4afaa84bdebc005e81 a ns1:Lifeline ;
+        ns1:componentName "Client" ;
+        ns1:sourceDiagram "tt-seq-rebook" .
+
+    ns1:tt-seq-rebook___9b8b83f979234dceb8832126 a ns1:Lifeline ;
+        ns1:componentName "ts-order-service" ;
+        ns1:sourceDiagram "tt-seq-rebook" .
+
+    ns1:tt-seq-rebook___328ee60f2a484f59b45f4e6e a ns1:Message ;
+        ns1:callChainDepth 1 ;
+        ns1:componentName "POST /rebook" ;
+        ns1:involves ns1:tt-seq-rebook___aa26fad999a14985bd0406a1,
+            ns1:tt-seq-rebook___dd176b4afaa84bdebc005e81 ;
+        ns1:isSync true ;
+        ns1:precedes ns1:tt-seq-rebook___71726a99549a43899b6f43a3 ;
+        ns1:receiver ns1:tt-seq-rebook___aa26fad999a14985bd0406a1 ;
+        ns1:sender ns1:tt-seq-rebook___dd176b4afaa84bdebc005e81 ;
+        ns1:sourceDiagram "tt-seq-rebook" .
+
+    ns1:tt-seq-rebook___aa26fad999a14985bd0406a1 a ns1:Lifeline ;
+        ns1:componentName "ts-rebook-service" ;
+        ns1:sourceDiagram "tt-seq-rebook" .
+}
+
+<urn:akg:diagram:tt-comm-basic-aggregation> {
+    ns1:tt-comm-basic-aggregation___19b38549c4ab4ff1bbeeacbf a ns1:CollaborationMessage ;
+        ns1:componentName "1: queryForStationId()" ;
+        ns1:involves ns1:tt-comm-basic-aggregation___4d01d94555fc489896e7a37b,
+            ns1:tt-comm-basic-aggregation___e622a5548a444900b78dd112 ;
+        ns1:precedes ns1:tt-comm-basic-aggregation___e6ab7c3e7a2748ce85636192 ;
+        ns1:receiver ns1:tt-comm-basic-aggregation___4d01d94555fc489896e7a37b ;
+        ns1:sender ns1:tt-comm-basic-aggregation___e622a5548a444900b78dd112 ;
+        ns1:sequenceNumber "1" ;
+        ns1:sourceDiagram "tt-comm-basic-aggregation" .
+
+    ns1:tt-comm-basic-aggregation___4d8d60e2955b47f78a65e892 a ns1:CollaborationMessage ;
+        ns1:componentName "3: queryTrainTypeByName()" ;
+        ns1:involves ns1:tt-comm-basic-aggregation___ca86501614734048b7d2b06c,
+            ns1:tt-comm-basic-aggregation___e622a5548a444900b78dd112 ;
+        ns1:precedes ns1:tt-comm-basic-aggregation___6ad571749d824c9b977d2666 ;
+        ns1:receiver ns1:tt-comm-basic-aggregation___ca86501614734048b7d2b06c ;
+        ns1:sender ns1:tt-comm-basic-aggregation___e622a5548a444900b78dd112 ;
+        ns1:sequenceNumber "3" ;
+        ns1:sourceDiagram "tt-comm-basic-aggregation" .
+
+    ns1:tt-comm-basic-aggregation___6ad571749d824c9b977d2666 a ns1:CollaborationMessage ;
+        ns1:componentName "4: getRouteByRouteId()" ;
+        ns1:involves ns1:tt-comm-basic-aggregation___77968584a2504826849d406c,
+            ns1:tt-comm-basic-aggregation___e622a5548a444900b78dd112 ;
+        ns1:precedes ns1:tt-comm-basic-aggregation___a95098a0764641d7a900604a ;
+        ns1:receiver ns1:tt-comm-basic-aggregation___77968584a2504826849d406c ;
+        ns1:sender ns1:tt-comm-basic-aggregation___e622a5548a444900b78dd112 ;
+        ns1:sequenceNumber "4" ;
+        ns1:sourceDiagram "tt-comm-basic-aggregation" .
+
+    ns1:tt-comm-basic-aggregation___a95098a0764641d7a900604a a ns1:CollaborationMessage ;
+        ns1:componentName "5: queryPriceConfig()" ;
+        ns1:involves ns1:tt-comm-basic-aggregation___3544ada8364b408fa8b28561,
+            ns1:tt-comm-basic-aggregation___e622a5548a444900b78dd112 ;
+        ns1:receiver ns1:tt-comm-basic-aggregation___3544ada8364b408fa8b28561 ;
+        ns1:sender ns1:tt-comm-basic-aggregation___e622a5548a444900b78dd112 ;
+        ns1:sequenceNumber "5" ;
+        ns1:sourceDiagram "tt-comm-basic-aggregation" .
+
+    ns1:tt-comm-basic-aggregation___e6ab7c3e7a2748ce85636192 a ns1:CollaborationMessage ;
+        ns1:componentName "2: checkStationsExists()" ;
+        ns1:involves ns1:tt-comm-basic-aggregation___4d01d94555fc489896e7a37b,
+            ns1:tt-comm-basic-aggregation___e622a5548a444900b78dd112 ;
+        ns1:precedes ns1:tt-comm-basic-aggregation___4d8d60e2955b47f78a65e892 ;
+        ns1:receiver ns1:tt-comm-basic-aggregation___4d01d94555fc489896e7a37b ;
+        ns1:sender ns1:tt-comm-basic-aggregation___e622a5548a444900b78dd112 ;
+        ns1:sequenceNumber "2" ;
+        ns1:sourceDiagram "tt-comm-basic-aggregation" .
+
+    ns1:tt-comm-basic-aggregation___3544ada8364b408fa8b28561 a ns1:CollaborationObject ;
+        ns1:componentName "ts-price-service" ;
+        ns1:fanIn 1 ;
+        ns1:fanOut 0 ;
+        ns1:sourceDiagram "tt-comm-basic-aggregation" .
+
+    ns1:tt-comm-basic-aggregation___77968584a2504826849d406c a ns1:CollaborationObject ;
+        ns1:componentName "ts-route-service" ;
+        ns1:fanIn 1 ;
+        ns1:fanOut 0 ;
+        ns1:sourceDiagram "tt-comm-basic-aggregation" .
+
+    ns1:tt-comm-basic-aggregation___ca86501614734048b7d2b06c a ns1:CollaborationObject ;
+        ns1:componentName "ts-train-service" ;
+        ns1:fanIn 1 ;
+        ns1:fanOut 0 ;
+        ns1:sourceDiagram "tt-comm-basic-aggregation" .
+
+    ns1:tt-comm-basic-aggregation___4d01d94555fc489896e7a37b a ns1:CollaborationObject ;
+        ns1:componentName "ts-station-service" ;
+        ns1:fanIn 1 ;
+        ns1:fanOut 0 ;
+        ns1:sourceDiagram "tt-comm-basic-aggregation" .
+
+    ns1:tt-comm-basic-aggregation___e622a5548a444900b78dd112 a ns1:CollaborationObject ;
+        ns1:componentName "ts-basic-service" ;
+        ns1:fanIn 0 ;
+        ns1:fanOut 4 ;
+        ns1:sourceDiagram "tt-comm-basic-aggregation" .
+}
+
+<urn:akg:diagram:tt-seq-query-left-tickets> {
+    ns1:tt-seq-query-left-tickets___556bc116739a4dc395857cad a ns1:Message ;
+        ns1:callChainDepth 3 ;
+        ns1:causedBy ns1:tt-seq-query-left-tickets___9ee1dcaf21b6418fb7004e92 ;
+        ns1:componentName "POST /routes/byIds" ;
+        ns1:involves ns1:tt-seq-query-left-tickets___55355dee76074c1ea914c9db,
+            ns1:tt-seq-query-left-tickets___ca387d01ee764f228668821d ;
+        ns1:isSync true ;
+        ns1:precedes ns1:tt-seq-query-left-tickets___efddcec5b4d0401aa85a6f1d ;
+        ns1:receiver ns1:tt-seq-query-left-tickets___ca387d01ee764f228668821d ;
+        ns1:sender ns1:tt-seq-query-left-tickets___55355dee76074c1ea914c9db ;
+        ns1:sourceDiagram "tt-seq-query-left-tickets" .
+
+    ns1:tt-seq-query-left-tickets___d320ea0ad5a042afad0de1dd a ns1:Message ;
+        ns1:callChainDepth 3 ;
+        ns1:causedBy ns1:tt-seq-query-left-tickets___9ee1dcaf21b6418fb7004e92 ;
+        ns1:componentName "POST /trains/byNames" ;
+        ns1:involves ns1:tt-seq-query-left-tickets___55355dee76074c1ea914c9db,
+            ns1:tt-seq-query-left-tickets___73a7d137f7a841579147ffad ;
+        ns1:isSync true ;
+        ns1:precedes ns1:tt-seq-query-left-tickets___556bc116739a4dc395857cad ;
+        ns1:receiver ns1:tt-seq-query-left-tickets___73a7d137f7a841579147ffad ;
+        ns1:sender ns1:tt-seq-query-left-tickets___55355dee76074c1ea914c9db ;
+        ns1:sourceDiagram "tt-seq-query-left-tickets" .
+
+    ns1:tt-seq-query-left-tickets___e0bf304ac51f4ed3afd50742 a ns1:Message ;
+        ns1:callChainDepth 3 ;
+        ns1:causedBy ns1:tt-seq-query-left-tickets___9ee1dcaf21b6418fb7004e92 ;
+        ns1:componentName "POST /stations/idlist" ;
+        ns1:involves ns1:tt-seq-query-left-tickets___55355dee76074c1ea914c9db,
+            ns1:tt-seq-query-left-tickets___671342344b2a4d2291b07bfb ;
+        ns1:isSync true ;
+        ns1:precedes ns1:tt-seq-query-left-tickets___d320ea0ad5a042afad0de1dd ;
+        ns1:receiver ns1:tt-seq-query-left-tickets___671342344b2a4d2291b07bfb ;
+        ns1:sender ns1:tt-seq-query-left-tickets___55355dee76074c1ea914c9db ;
+        ns1:sourceDiagram "tt-seq-query-left-tickets" .
+
+    ns1:tt-seq-query-left-tickets___e527402537ed47ecbcf50613 a ns1:Message ;
+        ns1:callChainDepth 3 ;
+        ns1:causedBy ns1:tt-seq-query-left-tickets___557690e37e7542f9a99f859b ;
+        ns1:componentName "POST /order/tickets" ;
+        ns1:involves ns1:tt-seq-query-left-tickets___322040ce9ddf41b1b7c21c28,
+            ns1:tt-seq-query-left-tickets___c089cece43d84935af086b3a ;
+        ns1:isSync true ;
+        ns1:receiver ns1:tt-seq-query-left-tickets___322040ce9ddf41b1b7c21c28 ;
+        ns1:sender ns1:tt-seq-query-left-tickets___c089cece43d84935af086b3a ;
+        ns1:sourceDiagram "tt-seq-query-left-tickets" .
+
+    ns1:tt-seq-query-left-tickets___efddcec5b4d0401aa85a6f1d a ns1:Message ;
+        ns1:callChainDepth 3 ;
+        ns1:causedBy ns1:tt-seq-query-left-tickets___9ee1dcaf21b6418fb7004e92 ;
+        ns1:componentName "POST /prices/byRouteIdsAndTrainTypes" ;
+        ns1:involves ns1:tt-seq-query-left-tickets___55355dee76074c1ea914c9db,
+            ns1:tt-seq-query-left-tickets___9490cdabc0934ea7b5f93f67 ;
+        ns1:isSync true ;
+        ns1:precedes ns1:tt-seq-query-left-tickets___557690e37e7542f9a99f859b ;
+        ns1:receiver ns1:tt-seq-query-left-tickets___9490cdabc0934ea7b5f93f67 ;
+        ns1:sender ns1:tt-seq-query-left-tickets___55355dee76074c1ea914c9db ;
+        ns1:sourceDiagram "tt-seq-query-left-tickets" .
+
+    ns1:tt-seq-query-left-tickets___322040ce9ddf41b1b7c21c28 a ns1:Lifeline ;
+        ns1:componentName "ts-order-service" ;
+        ns1:sourceDiagram "tt-seq-query-left-tickets" .
+
+    ns1:tt-seq-query-left-tickets___557690e37e7542f9a99f859b a ns1:Message ;
+        ns1:callChainDepth 2 ;
+        ns1:causedBy ns1:tt-seq-query-left-tickets___6a3cee475fde48f5bc40477a ;
+        ns1:componentName "POST /seats/left_tickets" ;
+        ns1:involves ns1:tt-seq-query-left-tickets___14eec5c72a4343c595f6e005,
+            ns1:tt-seq-query-left-tickets___c089cece43d84935af086b3a ;
+        ns1:isSync true ;
+        ns1:precedes ns1:tt-seq-query-left-tickets___e527402537ed47ecbcf50613 ;
+        ns1:receiver ns1:tt-seq-query-left-tickets___c089cece43d84935af086b3a ;
+        ns1:sender ns1:tt-seq-query-left-tickets___14eec5c72a4343c595f6e005 ;
+        ns1:sourceDiagram "tt-seq-query-left-tickets" .
+
+    ns1:tt-seq-query-left-tickets___671342344b2a4d2291b07bfb a ns1:Lifeline ;
+        ns1:componentName "ts-station-service" ;
+        ns1:sourceDiagram "tt-seq-query-left-tickets" .
+
+    ns1:tt-seq-query-left-tickets___6a3cee475fde48f5bc40477a a ns1:Message ;
+        ns1:callChainDepth 1 ;
+        ns1:componentName "POST /trips/left" ;
+        ns1:involves ns1:tt-seq-query-left-tickets___14eec5c72a4343c595f6e005,
+            ns1:tt-seq-query-left-tickets___fddb58f067194f61b04ee506 ;
+        ns1:isSync true ;
+        ns1:precedes ns1:tt-seq-query-left-tickets___9ee1dcaf21b6418fb7004e92 ;
+        ns1:receiver ns1:tt-seq-query-left-tickets___14eec5c72a4343c595f6e005 ;
+        ns1:sender ns1:tt-seq-query-left-tickets___fddb58f067194f61b04ee506 ;
+        ns1:sourceDiagram "tt-seq-query-left-tickets" .
+
+    ns1:tt-seq-query-left-tickets___73a7d137f7a841579147ffad a ns1:Lifeline ;
+        ns1:componentName "ts-train-service" ;
+        ns1:sourceDiagram "tt-seq-query-left-tickets" .
+
+    ns1:tt-seq-query-left-tickets___9490cdabc0934ea7b5f93f67 a ns1:Lifeline ;
+        ns1:componentName "ts-price-service" ;
+        ns1:sourceDiagram "tt-seq-query-left-tickets" .
+
+    ns1:tt-seq-query-left-tickets___ca387d01ee764f228668821d a ns1:Lifeline ;
+        ns1:componentName "ts-route-service" ;
+        ns1:sourceDiagram "tt-seq-query-left-tickets" .
+
+    ns1:tt-seq-query-left-tickets___fddb58f067194f61b04ee506 a ns1:Lifeline ;
+        ns1:componentName "Client" ;
+        ns1:sourceDiagram "tt-seq-query-left-tickets" .
+
+    ns1:tt-seq-query-left-tickets___c089cece43d84935af086b3a a ns1:Lifeline ;
+        ns1:componentName "ts-seat-service" ;
+        ns1:sourceDiagram "tt-seq-query-left-tickets" .
+
+    ns1:tt-seq-query-left-tickets___9ee1dcaf21b6418fb7004e92 a ns1:Message ;
+        ns1:callChainDepth 2 ;
+        ns1:causedBy ns1:tt-seq-query-left-tickets___6a3cee475fde48f5bc40477a ;
+        ns1:componentName "POST /basic/travels" ;
+        ns1:involves ns1:tt-seq-query-left-tickets___14eec5c72a4343c595f6e005,
+            ns1:tt-seq-query-left-tickets___55355dee76074c1ea914c9db ;
+        ns1:isSync true ;
+        ns1:precedes ns1:tt-seq-query-left-tickets___e0bf304ac51f4ed3afd50742 ;
+        ns1:receiver ns1:tt-seq-query-left-tickets___55355dee76074c1ea914c9db ;
+        ns1:sender ns1:tt-seq-query-left-tickets___14eec5c72a4343c595f6e005 ;
+        ns1:sourceDiagram "tt-seq-query-left-tickets" .
+
+    ns1:tt-seq-query-left-tickets___14eec5c72a4343c595f6e005 a ns1:Lifeline ;
+        ns1:componentName "ts-travel-service" ;
+        ns1:sourceDiagram "tt-seq-query-left-tickets" .
+
+    ns1:tt-seq-query-left-tickets___55355dee76074c1ea914c9db a ns1:Lifeline ;
+        ns1:componentName "ts-basic-service" ;
+        ns1:sourceDiagram "tt-seq-query-left-tickets" .
+}
+
+<urn:akg:diagram:tt-activity-ticket-booking> {
+    ns1:tt-activity-ticket-booking___07a56af61f4a46938eaf0ca4 a ns1:ControlFlow ;
+        ns1:componentName "DecisionNode_SecurityPass_to_FinalNode_SecurityFail" ;
+        ns1:sourceDiagram "tt-activity-ticket-booking" .
+
+    ns1:tt-activity-ticket-booking___0842e98f475b4cf6a091a566 a ns1:ControlFlow ;
+        ns1:componentName "SecurityCheck_to_DecisionNode_SecurityPass" ;
+        ns1:sourceDiagram "tt-activity-ticket-booking" .
+
+    ns1:tt-activity-ticket-booking___09146912271540b2b286a31e a ns1:ControlFlow ;
+        ns1:componentName "GetContactInfo_to_ForkNode_OptionalServices" ;
+        ns1:sourceDiagram "tt-activity-ticket-booking" .
+
+    ns1:tt-activity-ticket-booking___0adc5cd158164022b3e82a97 a ns1:ControlFlow ;
+        ns1:componentName "AddAssurance_to_JoinNode_OptionalServices" ;
+        ns1:sourceDiagram "tt-activity-ticket-booking" .
+
+    ns1:tt-activity-ticket-booking___10f95d6a82f24ae9b217d5cf a ns1:ControlFlow ;
+        ns1:componentName "ForkNode_OptionalServices_to_AddFoodOrder" ;
+        ns1:sourceDiagram "tt-activity-ticket-booking" .
+
+    ns1:tt-activity-ticket-booking___19f7898adc714ce692d23d07 a ns1:ControlFlow ;
+        ns1:componentName "SelectTrip_to_SelectSeat" ;
+        ns1:sourceDiagram "tt-activity-ticket-booking" .
+
+    ns1:tt-activity-ticket-booking___30469ad3d7ad4deaa73a297c a ns1:ControlFlow ;
+        ns1:componentName "ForkNode_OptionalServices_to_AddConsignment" ;
+        ns1:sourceDiagram "tt-activity-ticket-booking" .
+
+    ns1:tt-activity-ticket-booking___454bfb2766ad48d0859b196a a ns1:ControlFlow ;
+        ns1:componentName "DecisionNode_PaymentSuccess_to_FinalNode_PaymentFail" ;
+        ns1:sourceDiagram "tt-activity-ticket-booking" .
+
+    ns1:tt-activity-ticket-booking___54b27a157aa9490a9e3f7b5c a ns1:ControlFlow ;
+        ns1:componentName "DecisionNode_TripsFound_to_FinalNode_NoTrips" ;
+        ns1:sourceDiagram "tt-activity-ticket-booking" .
+
+    ns1:tt-activity-ticket-booking___5e5337425f84425594513035 a ns1:ControlFlow ;
+        ns1:componentName "AddConsignment_to_JoinNode_OptionalServices" ;
+        ns1:sourceDiagram "tt-activity-ticket-booking" .
+
+    ns1:tt-activity-ticket-booking___61dbf47476d24f03b9a3e841 a ns1:ControlFlow ;
+        ns1:componentName "SelectSeat_to_SecurityCheck" ;
+        ns1:sourceDiagram "tt-activity-ticket-booking" .
+
+    ns1:tt-activity-ticket-booking___6a4d67f95ce7407b97aac9bc a ns1:ControlFlow ;
+        ns1:componentName "AddFoodOrder_to_JoinNode_OptionalServices" ;
+        ns1:sourceDiagram "tt-activity-ticket-booking" .
+
+    ns1:tt-activity-ticket-booking___6a545eeecfa5498b99d902aa a ns1:ControlFlow ;
+        ns1:componentName "SendNotification_to_FinalNode_Success" ;
+        ns1:sourceDiagram "tt-activity-ticket-booking" .
+
+    ns1:tt-activity-ticket-booking___7b45194f0db847ad947e0c98 a ns1:ControlFlow ;
+        ns1:componentName "JoinNode_OptionalServices_to_CreateOrder" ;
+        ns1:sourceDiagram "tt-activity-ticket-booking" .
+
+    ns1:tt-activity-ticket-booking___8558c3ae4f994996ac71b2c4 a ns1:ControlFlow ;
+        ns1:componentName "DecisionNode_PaymentSuccess_to_SendNotification" ;
+        ns1:sourceDiagram "tt-activity-ticket-booking" .
+
+    ns1:tt-activity-ticket-booking___901aef4f1ac34b40bacbf193 a ns1:ControlFlow ;
+        ns1:componentName "InitialNode_to_SearchTrips" ;
+        ns1:sourceDiagram "tt-activity-ticket-booking" .
+
+    ns1:tt-activity-ticket-booking___934f52fb5c064ebd9e93f9a0 a ns1:ControlFlow ;
+        ns1:componentName "ForkNode_OptionalServices_to_AddAssurance" ;
+        ns1:sourceDiagram "tt-activity-ticket-booking" .
+
+    ns1:tt-activity-ticket-booking___9803141e2ae74759a9dc1b01 a ns1:ControlFlow ;
+        ns1:componentName "SearchTrips_to_DecisionNode_TripsFound" ;
+        ns1:sourceDiagram "tt-activity-ticket-booking" .
+
+    ns1:tt-activity-ticket-booking___9aaba0bef2b248feb1d11215 a ns1:ControlFlow ;
+        ns1:componentName "DecisionNode_SecurityPass_to_GetContactInfo" ;
+        ns1:sourceDiagram "tt-activity-ticket-booking" .
+
+    ns1:tt-activity-ticket-booking___ee9f1d065a814c648446e1cf a ns1:ControlFlow ;
+        ns1:componentName "CreateOrder_to_ProcessPayment" ;
+        ns1:sourceDiagram "tt-activity-ticket-booking" .
+
+    ns1:tt-activity-ticket-booking___f67ebdef2cb444c29309d2ad a ns1:ControlFlow ;
+        ns1:componentName "ProcessPayment_to_DecisionNode_PaymentSuccess" ;
+        ns1:sourceDiagram "tt-activity-ticket-booking" .
+
+    ns1:tt-activity-ticket-booking___fa1e0d25cbeb48dfbbda8e06 a ns1:ControlFlow ;
+        ns1:componentName "DecisionNode_TripsFound_to_SelectTrip" ;
+        ns1:sourceDiagram "tt-activity-ticket-booking" .
+
+    ns1:tt-activity-ticket-booking___1e23498bb7fb419793e34755 a ns1:ActivityPartition ;
+        ns1:componentName "ts-notification-service" ;
+        ns1:sourceDiagram "tt-activity-ticket-booking" .
+
+    ns1:tt-activity-ticket-booking___217802efddf74351a213cf9b a ns1:ActivityPartition ;
+        ns1:componentName "ts-assurance-service" ;
+        ns1:sourceDiagram "tt-activity-ticket-booking" .
+
+    ns1:tt-activity-ticket-booking___26caf2652e0a4b558482352b a ns1:BehavioralElement ;
+        ns1:causedBy ns1:tt-activity-ticket-booking___940ef42a0a3e45c2908c01a7 ;
+        ns1:componentName "FinalNode_SecurityFail" ;
+        ns1:sourceDiagram "tt-activity-ticket-booking" .
+
+    ns1:tt-activity-ticket-booking___2c66d6356a8a4c3d9808ab2a a ns1:ActivityPartition ;
+        ns1:componentName "ts-security-service" ;
+        ns1:sourceDiagram "tt-activity-ticket-booking" .
+
+    ns1:tt-activity-ticket-booking___2fe4bc6737d74fbd93fb169e a ns1:BehavioralElement ;
+        ns1:causedBy ns1:tt-activity-ticket-booking___e1134a818b994b4b9040fa42 ;
+        ns1:componentName "FinalNode_NoTrips" ;
+        ns1:sourceDiagram "tt-activity-ticket-booking" .
+
+    ns1:tt-activity-ticket-booking___6cec3760f34e4d9ba64579b9 a ns1:BehavioralElement ;
+        ns1:componentName "InitialNode" ;
+        ns1:precedes ns1:tt-activity-ticket-booking___672942190e8c416e903aae5a ;
+        ns1:sourceDiagram "tt-activity-ticket-booking" .
+
+    ns1:tt-activity-ticket-booking___81643e93d2ef44329db1bf65 a ns1:BehavioralElement ;
+        ns1:causedBy ns1:tt-activity-ticket-booking___1ba6a6fdba224ae0aabab31f ;
+        ns1:componentName "FinalNode_PaymentFail" ;
+        ns1:sourceDiagram "tt-activity-ticket-booking" .
+
+    ns1:tt-activity-ticket-booking___82a3d2a9945f422cbaf5eac9 a ns1:ActivityPartition ;
+        ns1:componentName "ts-inside-payment-service" ;
+        ns1:sourceDiagram "tt-activity-ticket-booking" .
+
+    ns1:tt-activity-ticket-booking___9249840052e74aadaf0321d0 a ns1:ActivityPartition ;
+        ns1:componentName "ts-consign-service" ;
+        ns1:sourceDiagram "tt-activity-ticket-booking" .
+
+    ns1:tt-activity-ticket-booking___b1552cf3ffee42529b5aa39c a ns1:BehavioralElement ;
+        ns1:causedBy ns1:tt-activity-ticket-booking___1604187ce850486288a72f96 ;
+        ns1:componentName "FinalNode_Success" ;
+        ns1:sourceDiagram "tt-activity-ticket-booking" .
+
+    ns1:tt-activity-ticket-booking___e2d6ed923dbb49e18ed8c484 a ns1:ActivityPartition ;
+        ns1:componentName "ts-food-service" ;
+        ns1:sourceDiagram "tt-activity-ticket-booking" .
+
+    ns1:tt-activity-ticket-booking___e6aa4f1add7949f5a182e41d a ns1:ActivityPartition ;
+        ns1:componentName "ts-seat-service" ;
+        ns1:sourceDiagram "tt-activity-ticket-booking" .
+
+    ns1:tt-activity-ticket-booking___1604187ce850486288a72f96 a ns1:Action ;
+        ns1:belongsToPartition ns1:tt-activity-ticket-booking___1e23498bb7fb419793e34755 ;
+        ns1:causedBy ns1:tt-activity-ticket-booking___1ba6a6fdba224ae0aabab31f ;
+        ns1:componentName "SendNotification" ;
+        ns1:precedes ns1:tt-activity-ticket-booking___b1552cf3ffee42529b5aa39c ;
+        ns1:sourceDiagram "tt-activity-ticket-booking" .
+
+    ns1:tt-activity-ticket-booking___1c187f0c8ddd4465a7d8ab39 a ns1:Action ;
+        ns1:belongsToPartition ns1:tt-activity-ticket-booking___2c66d6356a8a4c3d9808ab2a ;
+        ns1:causedBy ns1:tt-activity-ticket-booking___a6dbd6f9be8f4f78ad816e50 ;
+        ns1:componentName "SecurityCheck" ;
+        ns1:precedes ns1:tt-activity-ticket-booking___940ef42a0a3e45c2908c01a7 ;
+        ns1:sourceDiagram "tt-activity-ticket-booking" .
+
+    ns1:tt-activity-ticket-booking___672942190e8c416e903aae5a a ns1:Action ;
+        ns1:belongsToPartition ns1:tt-activity-ticket-booking___605b9f2de81243df88212418 ;
+        ns1:causedBy ns1:tt-activity-ticket-booking___6cec3760f34e4d9ba64579b9 ;
+        ns1:componentName "SearchTrips" ;
+        ns1:precedes ns1:tt-activity-ticket-booking___e1134a818b994b4b9040fa42 ;
+        ns1:sourceDiagram "tt-activity-ticket-booking" .
+
+    ns1:tt-activity-ticket-booking___74d5cbf65aa54f04b039f2a7 a ns1:Action ;
+        ns1:belongsToPartition ns1:tt-activity-ticket-booking___605b9f2de81243df88212418 ;
+        ns1:causedBy ns1:tt-activity-ticket-booking___e1134a818b994b4b9040fa42 ;
+        ns1:componentName "SelectTrip" ;
+        ns1:precedes ns1:tt-activity-ticket-booking___a6dbd6f9be8f4f78ad816e50 ;
+        ns1:sourceDiagram "tt-activity-ticket-booking" .
+
+    ns1:tt-activity-ticket-booking___9efd4086cffd4178ac9de2b7 a ns1:Action ;
+        ns1:belongsToPartition ns1:tt-activity-ticket-booking___82a3d2a9945f422cbaf5eac9 ;
+        ns1:causedBy ns1:tt-activity-ticket-booking___eadfef27794441de85bff0a5 ;
+        ns1:componentName "ProcessPayment" ;
+        ns1:precedes ns1:tt-activity-ticket-booking___1ba6a6fdba224ae0aabab31f ;
+        ns1:sourceDiagram "tt-activity-ticket-booking" .
+
+    ns1:tt-activity-ticket-booking___a6dbd6f9be8f4f78ad816e50 a ns1:Action ;
+        ns1:belongsToPartition ns1:tt-activity-ticket-booking___e6aa4f1add7949f5a182e41d ;
+        ns1:causedBy ns1:tt-activity-ticket-booking___74d5cbf65aa54f04b039f2a7 ;
+        ns1:componentName "SelectSeat" ;
+        ns1:precedes ns1:tt-activity-ticket-booking___1c187f0c8ddd4465a7d8ab39 ;
+        ns1:sourceDiagram "tt-activity-ticket-booking" .
+
+    ns1:tt-activity-ticket-booking___aae1884472294a208a74a83d a ns1:Action ;
+        ns1:belongsToPartition ns1:tt-activity-ticket-booking___9249840052e74aadaf0321d0 ;
+        ns1:causedBy ns1:tt-activity-ticket-booking___10d6214267914765b2338906 ;
+        ns1:componentName "AddConsignment" ;
+        ns1:precedes ns1:tt-activity-ticket-booking___c194c7f13c264a2391ce9e89 ;
+        ns1:sourceDiagram "tt-activity-ticket-booking" .
+
+    ns1:tt-activity-ticket-booking___c7c93f6e820d407ca69174b2 a ns1:Action ;
+        ns1:belongsToPartition ns1:tt-activity-ticket-booking___605b9f2de81243df88212418 ;
+        ns1:causedBy ns1:tt-activity-ticket-booking___940ef42a0a3e45c2908c01a7 ;
+        ns1:componentName "GetContactInfo" ;
+        ns1:precedes ns1:tt-activity-ticket-booking___10d6214267914765b2338906 ;
+        ns1:sourceDiagram "tt-activity-ticket-booking" .
+
+    ns1:tt-activity-ticket-booking___e0ade4fa91c840b68769b91d a ns1:Action ;
+        ns1:belongsToPartition ns1:tt-activity-ticket-booking___e2d6ed923dbb49e18ed8c484 ;
+        ns1:causedBy ns1:tt-activity-ticket-booking___10d6214267914765b2338906 ;
+        ns1:componentName "AddFoodOrder" ;
+        ns1:precedes ns1:tt-activity-ticket-booking___c194c7f13c264a2391ce9e89 ;
+        ns1:sourceDiagram "tt-activity-ticket-booking" .
+
+    ns1:tt-activity-ticket-booking___ea120bccb6a04219a964b880 a ns1:Action ;
+        ns1:belongsToPartition ns1:tt-activity-ticket-booking___217802efddf74351a213cf9b ;
+        ns1:causedBy ns1:tt-activity-ticket-booking___10d6214267914765b2338906 ;
+        ns1:componentName "AddAssurance" ;
+        ns1:precedes ns1:tt-activity-ticket-booking___c194c7f13c264a2391ce9e89 ;
+        ns1:sourceDiagram "tt-activity-ticket-booking" .
+
+    ns1:tt-activity-ticket-booking___eadfef27794441de85bff0a5 a ns1:Action ;
+        ns1:belongsToPartition ns1:tt-activity-ticket-booking___605b9f2de81243df88212418 ;
+        ns1:causedBy ns1:tt-activity-ticket-booking___c194c7f13c264a2391ce9e89 ;
+        ns1:componentName "CreateOrder" ;
+        ns1:precedes ns1:tt-activity-ticket-booking___9efd4086cffd4178ac9de2b7 ;
+        ns1:sourceDiagram "tt-activity-ticket-booking" .
+
+    ns1:tt-activity-ticket-booking___1ba6a6fdba224ae0aabab31f a ns1:DecisionNode ;
+        ns1:causedBy ns1:tt-activity-ticket-booking___9efd4086cffd4178ac9de2b7 ;
+        ns1:componentName "DecisionNode_PaymentSuccess" ;
+        ns1:precedes ns1:tt-activity-ticket-booking___1604187ce850486288a72f96,
+            ns1:tt-activity-ticket-booking___81643e93d2ef44329db1bf65 ;
+        ns1:sourceDiagram "tt-activity-ticket-booking" .
+
+    ns1:tt-activity-ticket-booking___940ef42a0a3e45c2908c01a7 a ns1:DecisionNode ;
+        ns1:causedBy ns1:tt-activity-ticket-booking___1c187f0c8ddd4465a7d8ab39 ;
+        ns1:componentName "DecisionNode_SecurityPass" ;
+        ns1:precedes ns1:tt-activity-ticket-booking___26caf2652e0a4b558482352b,
+            ns1:tt-activity-ticket-booking___c7c93f6e820d407ca69174b2 ;
+        ns1:sourceDiagram "tt-activity-ticket-booking" .
+
+    ns1:tt-activity-ticket-booking___e1134a818b994b4b9040fa42 a ns1:DecisionNode ;
+        ns1:causedBy ns1:tt-activity-ticket-booking___672942190e8c416e903aae5a ;
+        ns1:componentName "DecisionNode_TripsFound" ;
+        ns1:precedes ns1:tt-activity-ticket-booking___2fe4bc6737d74fbd93fb169e,
+            ns1:tt-activity-ticket-booking___74d5cbf65aa54f04b039f2a7 ;
+        ns1:sourceDiagram "tt-activity-ticket-booking" .
+
+    ns1:tt-activity-ticket-booking___10d6214267914765b2338906 a ns1:ForkNode ;
+        ns1:causedBy ns1:tt-activity-ticket-booking___c7c93f6e820d407ca69174b2 ;
+        ns1:componentName "ForkNode_OptionalServices" ;
+        ns1:fanOut 3 ;
+        ns1:precedes ns1:tt-activity-ticket-booking___aae1884472294a208a74a83d,
+            ns1:tt-activity-ticket-booking___e0ade4fa91c840b68769b91d,
+            ns1:tt-activity-ticket-booking___ea120bccb6a04219a964b880 ;
+        ns1:sourceDiagram "tt-activity-ticket-booking" .
+
+    ns1:tt-activity-ticket-booking___605b9f2de81243df88212418 a ns1:ActivityPartition ;
+        ns1:componentName "ts-preserve-service" ;
+        ns1:sourceDiagram "tt-activity-ticket-booking" .
+
+    ns1:tt-activity-ticket-booking___c194c7f13c264a2391ce9e89 a ns1:JoinNode ;
+        ns1:causedBy ns1:tt-activity-ticket-booking___aae1884472294a208a74a83d,
+            ns1:tt-activity-ticket-booking___e0ade4fa91c840b68769b91d,
+            ns1:tt-activity-ticket-booking___ea120bccb6a04219a964b880 ;
+        ns1:componentName "JoinNode_OptionalServices" ;
+        ns1:precedes ns1:tt-activity-ticket-booking___eadfef27794441de85bff0a5 ;
+        ns1:sourceDiagram "tt-activity-ticket-booking" .
+}
+
+<urn:akg:diagram:tt-seq-order-pay> {
+    ns1:tt-seq-order-pay___6018a3a77450423ca53ee668 a ns1:Lifeline ;
+        ns1:componentName "ts-order-other-service" ;
+        ns1:sourceDiagram "tt-seq-order-pay" .
+
+    ns1:tt-seq-order-pay___91f20cd3ce51424f8d446ba9 a ns1:Message ;
+        ns1:callChainDepth 2 ;
+        ns1:causedBy ns1:tt-seq-order-pay___0290526af42c4a9a9a104844 ;
+        ns1:componentName "GET /order/status/{orderId}/{status}" ;
+        ns1:involves ns1:tt-seq-order-pay___440cbf3f54494a37b6aabc4f,
+            ns1:tt-seq-order-pay___608d36e9b16a4f8f8f6fa193 ;
+        ns1:isSync true ;
+        ns1:receiver ns1:tt-seq-order-pay___608d36e9b16a4f8f8f6fa193 ;
+        ns1:sender ns1:tt-seq-order-pay___440cbf3f54494a37b6aabc4f ;
+        ns1:sourceDiagram "tt-seq-order-pay" .
+
+    ns1:tt-seq-order-pay___b40c76fb45184034a7df8cd6 a ns1:Message ;
+        ns1:callChainDepth 2 ;
+        ns1:causedBy ns1:tt-seq-order-pay___0290526af42c4a9a9a104844 ;
+        ns1:componentName "GET /order/{orderId}" ;
+        ns1:involves ns1:tt-seq-order-pay___440cbf3f54494a37b6aabc4f,
+            ns1:tt-seq-order-pay___608d36e9b16a4f8f8f6fa193 ;
+        ns1:isSync true ;
+        ns1:precedes ns1:tt-seq-order-pay___b580b19cd7b8455eb71a8b21 ;
+        ns1:receiver ns1:tt-seq-order-pay___608d36e9b16a4f8f8f6fa193 ;
+        ns1:sender ns1:tt-seq-order-pay___440cbf3f54494a37b6aabc4f ;
+        ns1:sourceDiagram "tt-seq-order-pay" .
+
+    ns1:tt-seq-order-pay___b580b19cd7b8455eb71a8b21 a ns1:Message ;
+        ns1:callChainDepth 2 ;
+        ns1:causedBy ns1:tt-seq-order-pay___0290526af42c4a9a9a104844 ;
+        ns1:componentName "POST /payment" ;
+        ns1:involves ns1:tt-seq-order-pay___440cbf3f54494a37b6aabc4f,
+            ns1:tt-seq-order-pay___ee4b8dc6d4514e9a9838ddc0 ;
+        ns1:isSync true ;
+        ns1:precedes ns1:tt-seq-order-pay___91f20cd3ce51424f8d446ba9 ;
+        ns1:receiver ns1:tt-seq-order-pay___ee4b8dc6d4514e9a9838ddc0 ;
+        ns1:sender ns1:tt-seq-order-pay___440cbf3f54494a37b6aabc4f ;
+        ns1:sourceDiagram "tt-seq-order-pay" .
+
+    ns1:tt-seq-order-pay___a1b629d507be475d9e91fe89 a ns1:Lifeline ;
+        ns1:componentName "Client" ;
+        ns1:sourceDiagram "tt-seq-order-pay" .
+
+    ns1:tt-seq-order-pay___ee4b8dc6d4514e9a9838ddc0 a ns1:Lifeline ;
+        ns1:componentName "ts-payment-service" ;
+        ns1:sourceDiagram "tt-seq-order-pay" .
+
+    ns1:tt-seq-order-pay___0290526af42c4a9a9a104844 a ns1:Message ;
+        ns1:callChainDepth 1 ;
+        ns1:componentName "POST /inside_payment" ;
+        ns1:involves ns1:tt-seq-order-pay___440cbf3f54494a37b6aabc4f,
+            ns1:tt-seq-order-pay___a1b629d507be475d9e91fe89 ;
+        ns1:isSync true ;
+        ns1:precedes ns1:tt-seq-order-pay___b40c76fb45184034a7df8cd6 ;
+        ns1:receiver ns1:tt-seq-order-pay___440cbf3f54494a37b6aabc4f ;
+        ns1:sender ns1:tt-seq-order-pay___a1b629d507be475d9e91fe89 ;
+        ns1:sourceDiagram "tt-seq-order-pay" .
+
+    ns1:tt-seq-order-pay___608d36e9b16a4f8f8f6fa193 a ns1:Lifeline ;
+        ns1:componentName "ts-order-service" ;
+        ns1:sourceDiagram "tt-seq-order-pay" .
+
+    ns1:tt-seq-order-pay___440cbf3f54494a37b6aabc4f a ns1:Lifeline ;
+        ns1:componentName "ts-inside-payment-service" ;
+        ns1:sourceDiagram "tt-seq-order-pay" .
+}
+
+<urn:akg:diagram:tt-comm-payment-flow> {
+    ns1:tt-comm-payment-flow___bebc33d600fb4f3891deea42 a ns1:CollaborationMessage ;
+        ns1:componentName "1: getOrder()" ;
+        ns1:involves ns1:tt-comm-payment-flow___0d34845014f74f72b5dc3d0b,
+            ns1:tt-comm-payment-flow___bc24df1f5dff4c87a84106df ;
+        ns1:precedes ns1:tt-comm-payment-flow___8e294fabd16d43f09c919711 ;
+        ns1:receiver ns1:tt-comm-payment-flow___bc24df1f5dff4c87a84106df ;
+        ns1:sender ns1:tt-comm-payment-flow___0d34845014f74f72b5dc3d0b ;
+        ns1:sequenceNumber "1" ;
+        ns1:sourceDiagram "tt-comm-payment-flow" .
+
+    ns1:tt-comm-payment-flow___3bef5ed8be4f4cb2980cff56 a ns1:CollaborationMessage ;
+        ns1:componentName "3: setOrderStatus()" ;
+        ns1:involves ns1:tt-comm-payment-flow___0d34845014f74f72b5dc3d0b,
+            ns1:tt-comm-payment-flow___bc24df1f5dff4c87a84106df ;
+        ns1:precedes ns1:tt-comm-payment-flow___f263f1798b754347aa5da426 ;
+        ns1:receiver ns1:tt-comm-payment-flow___bc24df1f5dff4c87a84106df ;
+        ns1:sender ns1:tt-comm-payment-flow___0d34845014f74f72b5dc3d0b ;
+        ns1:sequenceNumber "3" ;
+        ns1:sourceDiagram "tt-comm-payment-flow" .
+
+    ns1:tt-comm-payment-flow___8e294fabd16d43f09c919711 a ns1:CollaborationMessage ;
+        ns1:componentName "1: getOrder()" ;
+        ns1:involves ns1:tt-comm-payment-flow___0d34845014f74f72b5dc3d0b,
+            ns1:tt-comm-payment-flow___26eeca11373c41de97b75478 ;
+        ns1:precedes ns1:tt-comm-payment-flow___e52b90c57a7245e89b31cdbe ;
+        ns1:receiver ns1:tt-comm-payment-flow___26eeca11373c41de97b75478 ;
+        ns1:sender ns1:tt-comm-payment-flow___0d34845014f74f72b5dc3d0b ;
+        ns1:sequenceNumber "1" ;
+        ns1:sourceDiagram "tt-comm-payment-flow" .
+
+    ns1:tt-comm-payment-flow___e52b90c57a7245e89b31cdbe a ns1:CollaborationMessage ;
+        ns1:componentName "2: pay()" ;
+        ns1:involves ns1:tt-comm-payment-flow___0d34845014f74f72b5dc3d0b,
+            ns1:tt-comm-payment-flow___3a6860fac62c4af994c51074 ;
+        ns1:precedes ns1:tt-comm-payment-flow___3bef5ed8be4f4cb2980cff56 ;
+        ns1:receiver ns1:tt-comm-payment-flow___3a6860fac62c4af994c51074 ;
+        ns1:sender ns1:tt-comm-payment-flow___0d34845014f74f72b5dc3d0b ;
+        ns1:sequenceNumber "2" ;
+        ns1:sourceDiagram "tt-comm-payment-flow" .
+
+    ns1:tt-comm-payment-flow___f263f1798b754347aa5da426 a ns1:CollaborationMessage ;
+        ns1:componentName "3: setOrderStatus()" ;
+        ns1:involves ns1:tt-comm-payment-flow___0d34845014f74f72b5dc3d0b,
+            ns1:tt-comm-payment-flow___26eeca11373c41de97b75478 ;
+        ns1:receiver ns1:tt-comm-payment-flow___26eeca11373c41de97b75478 ;
+        ns1:sender ns1:tt-comm-payment-flow___0d34845014f74f72b5dc3d0b ;
+        ns1:sequenceNumber "3" ;
+        ns1:sourceDiagram "tt-comm-payment-flow" .
+
+    ns1:tt-comm-payment-flow___3a6860fac62c4af994c51074 a ns1:CollaborationObject ;
+        ns1:componentName "ts-payment-service" ;
+        ns1:fanIn 1 ;
+        ns1:fanOut 0 ;
+        ns1:sourceDiagram "tt-comm-payment-flow" .
+
+    ns1:tt-comm-payment-flow___26eeca11373c41de97b75478 a ns1:CollaborationObject ;
+        ns1:componentName "ts-order-service" ;
+        ns1:fanIn 1 ;
+        ns1:fanOut 0 ;
+        ns1:sourceDiagram "tt-comm-payment-flow" .
+
+    ns1:tt-comm-payment-flow___bc24df1f5dff4c87a84106df a ns1:CollaborationObject ;
+        ns1:componentName "ts-order-other-service" ;
+        ns1:fanIn 1 ;
+        ns1:fanOut 0 ;
+        ns1:sourceDiagram "tt-comm-payment-flow" .
+
+    ns1:tt-comm-payment-flow___0d34845014f74f72b5dc3d0b a ns1:CollaborationObject ;
+        ns1:componentName "ts-inside-payment-service" ;
+        ns1:fanIn 0 ;
+        ns1:fanOut 3 ;
+        ns1:sourceDiagram "tt-comm-payment-flow" .
+}
+
+<urn:akg:diagram:tt-seq-enter-station> {
+    ns1:tt-seq-enter-station___ba71a878f6024b9f8148638c a ns1:Lifeline ;
+        ns1:componentName "ts-order-other-service" ;
+        ns1:sourceDiagram "tt-seq-enter-station" .
+
+    ns1:tt-seq-enter-station___80c61b0ad2484e9ea7ce1839 a ns1:Message ;
+        ns1:callChainDepth 2 ;
+        ns1:causedBy ns1:tt-seq-enter-station___6faec361e1bb44e7b6dc53e5 ;
+        ns1:componentName "GET /order/status/{orderId}/6" ;
+        ns1:involves ns1:tt-seq-enter-station___76f56bbd2ffd4217bb4acc3e,
+            ns1:tt-seq-enter-station___e1dff93bbfee42719229c4a5 ;
+        ns1:isSync true ;
+        ns1:receiver ns1:tt-seq-enter-station___e1dff93bbfee42719229c4a5 ;
+        ns1:sender ns1:tt-seq-enter-station___76f56bbd2ffd4217bb4acc3e ;
+        ns1:sourceDiagram "tt-seq-enter-station" .
+
+    ns1:tt-seq-enter-station___9597851a1e774229848e3eb0 a ns1:Message ;
+        ns1:callChainDepth 2 ;
+        ns1:causedBy ns1:tt-seq-enter-station___6faec361e1bb44e7b6dc53e5 ;
+        ns1:componentName "GET /order/{orderId}" ;
+        ns1:involves ns1:tt-seq-enter-station___76f56bbd2ffd4217bb4acc3e,
+            ns1:tt-seq-enter-station___e1dff93bbfee42719229c4a5 ;
+        ns1:isSync true ;
+        ns1:precedes ns1:tt-seq-enter-station___80c61b0ad2484e9ea7ce1839 ;
+        ns1:receiver ns1:tt-seq-enter-station___e1dff93bbfee42719229c4a5 ;
+        ns1:sender ns1:tt-seq-enter-station___76f56bbd2ffd4217bb4acc3e ;
+        ns1:sourceDiagram "tt-seq-enter-station" .
+
+    ns1:tt-seq-enter-station___6faec361e1bb44e7b6dc53e5 a ns1:Message ;
+        ns1:callChainDepth 1 ;
+        ns1:componentName "GET /execute/execute/{orderId}" ;
+        ns1:involves ns1:tt-seq-enter-station___76f56bbd2ffd4217bb4acc3e,
+            ns1:tt-seq-enter-station___e0034b72d1104eeebb6a84ff ;
+        ns1:isSync true ;
+        ns1:precedes ns1:tt-seq-enter-station___9597851a1e774229848e3eb0 ;
+        ns1:receiver ns1:tt-seq-enter-station___76f56bbd2ffd4217bb4acc3e ;
+        ns1:sender ns1:tt-seq-enter-station___e0034b72d1104eeebb6a84ff ;
+        ns1:sourceDiagram "tt-seq-enter-station" .
+
+    ns1:tt-seq-enter-station___e0034b72d1104eeebb6a84ff a ns1:Lifeline ;
+        ns1:componentName "Client" ;
+        ns1:sourceDiagram "tt-seq-enter-station" .
+
+    ns1:tt-seq-enter-station___e1dff93bbfee42719229c4a5 a ns1:Lifeline ;
+        ns1:componentName "ts-order-service" ;
+        ns1:sourceDiagram "tt-seq-enter-station" .
+
+    ns1:tt-seq-enter-station___76f56bbd2ffd4217bb4acc3e a ns1:Lifeline ;
+        ns1:componentName "ts-execute-service" ;
+        ns1:sourceDiagram "tt-seq-enter-station" .
+}
+
+<urn:akg:diagram:tt-seq-consign-create> {
+    ns1:tt-seq-consign-create___80b33808fdc946f2a2f7b54a a ns1:Message ;
+        ns1:callChainDepth 2 ;
+        ns1:causedBy ns1:tt-seq-consign-create___88534df115a64f0d85661a3d ;
+        ns1:componentName "GET /consignprice/{weight}/{isWithin}" ;
+        ns1:involves ns1:tt-seq-consign-create___a28577ec54a24e588992e34e,
+            ns1:tt-seq-consign-create___c7dd5fc855f54e698527cbd2 ;
+        ns1:isSync true ;
+        ns1:precedes ns1:tt-seq-consign-create___ce220c5d714843aeb405334e ;
+        ns1:receiver ns1:tt-seq-consign-create___c7dd5fc855f54e698527cbd2 ;
+        ns1:sender ns1:tt-seq-consign-create___a28577ec54a24e588992e34e ;
+        ns1:sourceDiagram "tt-seq-consign-create" .
+
+    ns1:tt-seq-consign-create___ce220c5d714843aeb405334e a ns1:Message ;
+        ns1:callChainDepth 2 ;
+        ns1:causedBy ns1:tt-seq-consign-create___88534df115a64f0d85661a3d ;
+        ns1:componentName "saveConsignRecord()" ;
+        ns1:involves ns1:tt-seq-consign-create___a28577ec54a24e588992e34e ;
+        ns1:isSync true ;
+        ns1:receiver ns1:tt-seq-consign-create___a28577ec54a24e588992e34e ;
+        ns1:sender ns1:tt-seq-consign-create___a28577ec54a24e588992e34e ;
+        ns1:sourceDiagram "tt-seq-consign-create" .
+
+    ns1:tt-seq-consign-create___88534df115a64f0d85661a3d a ns1:Message ;
+        ns1:callChainDepth 1 ;
+        ns1:componentName "POST /consigns" ;
+        ns1:involves ns1:tt-seq-consign-create___a28577ec54a24e588992e34e,
+            ns1:tt-seq-consign-create___bf538f1248644b10b307af41 ;
+        ns1:isSync true ;
+        ns1:precedes ns1:tt-seq-consign-create___80b33808fdc946f2a2f7b54a ;
+        ns1:receiver ns1:tt-seq-consign-create___a28577ec54a24e588992e34e ;
+        ns1:sender ns1:tt-seq-consign-create___bf538f1248644b10b307af41 ;
+        ns1:sourceDiagram "tt-seq-consign-create" .
+
+    ns1:tt-seq-consign-create___bf538f1248644b10b307af41 a ns1:Lifeline ;
+        ns1:componentName "Client" ;
+        ns1:sourceDiagram "tt-seq-consign-create" .
+
+    ns1:tt-seq-consign-create___c7dd5fc855f54e698527cbd2 a ns1:Lifeline ;
+        ns1:componentName "ts-consign-price-service" ;
+        ns1:sourceDiagram "tt-seq-consign-create" .
+
+    ns1:tt-seq-consign-create___a28577ec54a24e588992e34e a ns1:Lifeline ;
+        ns1:componentName "ts-consign-service" ;
+        ns1:sourceDiagram "tt-seq-consign-create" .
+}
+

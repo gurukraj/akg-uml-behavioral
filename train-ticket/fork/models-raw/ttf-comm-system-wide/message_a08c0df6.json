@@ -1,0 +1,8 @@
+{
+    "name": "getLeftTicketOfInterval()",
+    "key": "_9a8ffcb3d6fd4c5ba08c0df6",
+    "type": "uml:Message",
+    "sender": "_785c3add12964bbcbd0d85b1",
+    "receiver": "_cdcb894e2ffb48e38e4dcc62",
+    "messageLabel": "getLeftTicketOfInterval()"
+}

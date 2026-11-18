@@ -1,0 +1,23 @@
+{
+    "classification": {
+        "categories": [
+            "Communication"
+        ],
+        "primary": "Communication",
+        "is_class_diagram": false,
+        "is_behavioral": true
+    },
+    "detectedTypes": {
+        "uml:Collaboration": 1,
+        "uml:LifelineOrObject": 4,
+        "uml:Message": 4
+    },
+    "elementCounts": {
+        "collaborations": 1,
+        "objects": 4,
+        "messages": 4
+    },
+    "totalElements": 9,
+    "diagram_id": "ttf-comm-food-map-flow",
+    "source_file": "ttf-comm-food-map-flow.json"
+}

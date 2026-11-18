@@ -1,0 +1,8 @@
+{
+    "name": "getTripAllDetailInfo()",
+    "key": "_1eb107592a734369bed65f0c",
+    "type": "uml:Message",
+    "sender": "_8d1fd695c7024f2083f3724d",
+    "receiver": "_6801a52e9d3d4175a2d53b0f",
+    "messageLabel": "getTripAllDetailInfo()"
+}

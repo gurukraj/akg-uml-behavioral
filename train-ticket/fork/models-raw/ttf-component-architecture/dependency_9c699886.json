@@ -1,0 +1,7 @@
+{
+    "name": "ts-user-service_depends_on_ts-auth-service",
+    "key": "_76addde8cef948b19c699886",
+    "type": "dependency",
+    "source": "_95efdc96292e4243861bf9b8",
+    "target": "_ce1b89c6fc5a4aa0b113e196"
+}

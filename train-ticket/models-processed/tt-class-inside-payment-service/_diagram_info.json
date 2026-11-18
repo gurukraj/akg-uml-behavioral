@@ -1,0 +1,25 @@
+{
+    "classification": {
+        "categories": [
+            "Class"
+        ],
+        "primary": "Class",
+        "is_class_diagram": true,
+        "is_behavioral": false
+    },
+    "detectedTypes": {
+        "uml:Class": 5,
+        "uml:Interface": 1,
+        "uml:Dependency": 5,
+        "uml:Association": 1
+    },
+    "elementCounts": {
+        "classes": 5,
+        "interfaces": 1,
+        "dependencies": 5,
+        "associations": 1
+    },
+    "totalElements": 12,
+    "diagram_id": "tt-class-inside-payment-service",
+    "source_file": "tt-class-inside-payment-service.json"
+}

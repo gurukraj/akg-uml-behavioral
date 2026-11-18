@@ -1,0 +1,21 @@
+{
+    "classification": {
+        "categories": [
+            "Component"
+        ],
+        "primary": "Component",
+        "is_class_diagram": false,
+        "is_behavioral": false
+    },
+    "detectedTypes": {
+        "uml:Component": 41,
+        "uml:Dependency": 82
+    },
+    "elementCounts": {
+        "components": 41,
+        "dependencies": 82
+    },
+    "totalElements": 123,
+    "diagram_id": "ttf-component-architecture",
+    "source_file": "ttf-component-architecture.json"
+}

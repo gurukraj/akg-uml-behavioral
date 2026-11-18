@@ -1,0 +1,6 @@
+{
+    "name": "ts-payment-service",
+    "key": "_d5dfe8a645be41548380e235",
+    "type": "uml:Component",
+    "layer": "Payment"
+}

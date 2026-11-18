@@ -1,0 +1,7 @@
+{
+    "name": "ts-basic-service_depends_on_ts-train-service",
+    "key": "_17dd388e1a2a465ba0ea0f9c",
+    "type": "dependency",
+    "source": "_345dfecb7cb4471ab8788b9e",
+    "target": "_670d2b41f6e849b29b81d255"
+}

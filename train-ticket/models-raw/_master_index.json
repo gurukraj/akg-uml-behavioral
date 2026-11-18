@@ -1,0 +1,182 @@
+{
+    "project": "Train-Ticket Microservice Benchmark",
+    "source": "https://github.com/FudanSELab/train-ticket",
+    "total_diagrams": 29,
+    "generation_method": "Automated extraction from source code analysis",
+    "diagrams": [
+        {
+            "diagram_id": "tt-class-order-service",
+            "primary_type": "Class",
+            "is_behavioral": false,
+            "total_elements": 11
+        },
+        {
+            "diagram_id": "tt-class-travel-service",
+            "primary_type": "Class",
+            "is_behavioral": false,
+            "total_elements": 20
+        },
+        {
+            "diagram_id": "tt-class-preserve-service",
+            "primary_type": "Class",
+            "is_behavioral": false,
+            "total_elements": 15
+        },
+        {
+            "diagram_id": "tt-class-basic-service",
+            "primary_type": "Class",
+            "is_behavioral": false,
+            "total_elements": 12
+        },
+        {
+            "diagram_id": "tt-class-seat-service",
+            "primary_type": "Class",
+            "is_behavioral": false,
+            "total_elements": 7
+        },
+        {
+            "diagram_id": "tt-class-cancel-service",
+            "primary_type": "Class",
+            "is_behavioral": false,
+            "total_elements": 11
+        },
+        {
+            "diagram_id": "tt-class-rebook-service",
+            "primary_type": "Class",
+            "is_behavioral": false,
+            "total_elements": 18
+        },
+        {
+            "diagram_id": "tt-class-inside-payment-service",
+            "primary_type": "Class",
+            "is_behavioral": false,
+            "total_elements": 12
+        },
+        {
+            "diagram_id": "tt-class-station-service",
+            "primary_type": "Class",
+            "is_behavioral": false,
+            "total_elements": 7
+        },
+        {
+            "diagram_id": "tt-class-route-service",
+            "primary_type": "Class",
+            "is_behavioral": false,
+            "total_elements": 8
+        },
+        {
+            "diagram_id": "tt-class-train-service",
+            "primary_type": "Class",
+            "is_behavioral": false,
+            "total_elements": 7
+        },
+        {
+            "diagram_id": "tt-class-price-service",
+            "primary_type": "Class",
+            "is_behavioral": false,
+            "total_elements": 7
+        },
+        {
+            "diagram_id": "tt-class-contacts-service",
+            "primary_type": "Class",
+            "is_behavioral": false,
+            "total_elements": 7
+        },
+        {
+            "diagram_id": "tt-class-config-service",
+            "primary_type": "Class",
+            "is_behavioral": false,
+            "total_elements": 7
+        },
+        {
+            "diagram_id": "tt-class-auth-service",
+            "primary_type": "Class",
+            "is_behavioral": false,
+            "total_elements": 12
+        },
+        {
+            "diagram_id": "tt-seq-ticket-reserve",
+            "primary_type": "Sequence",
+            "is_behavioral": true,
+            "total_elements": 15
+        },
+        {
+            "diagram_id": "tt-seq-order-pay",
+            "primary_type": "Sequence",
+            "is_behavioral": true,
+            "total_elements": 6
+        },
+        {
+            "diagram_id": "tt-seq-login",
+            "primary_type": "Sequence",
+            "is_behavioral": true,
+            "total_elements": 4
+        },
+        {
+            "diagram_id": "tt-seq-cancel-order",
+            "primary_type": "Sequence",
+            "is_behavioral": true,
+            "total_elements": 8
+        },
+        {
+            "diagram_id": "tt-seq-rebook",
+            "primary_type": "Sequence",
+            "is_behavioral": true,
+            "total_elements": 9
+        },
+        {
+            "diagram_id": "tt-seq-query-left-tickets",
+            "primary_type": "Sequence",
+            "is_behavioral": true,
+            "total_elements": 10
+        },
+        {
+            "diagram_id": "tt-seq-consign-create",
+            "primary_type": "Sequence",
+            "is_behavioral": true,
+            "total_elements": 4
+        },
+        {
+            "diagram_id": "tt-seq-enter-station",
+            "primary_type": "Sequence",
+            "is_behavioral": true,
+            "total_elements": 5
+        },
+        {
+            "diagram_id": "tt-activity-ticket-booking",
+            "primary_type": "Activity",
+            "is_behavioral": true,
+            "total_elements": 47
+        },
+        {
+            "diagram_id": "tt-activity-cancel-refund",
+            "primary_type": "Activity",
+            "is_behavioral": true,
+            "total_elements": 27
+        },
+        {
+            "diagram_id": "tt-comm-preserve-orchestration",
+            "primary_type": "Communication",
+            "is_behavioral": true,
+            "total_elements": 26
+        },
+        {
+            "diagram_id": "tt-comm-basic-aggregation",
+            "primary_type": "Communication",
+            "is_behavioral": true,
+            "total_elements": 11
+        },
+        {
+            "diagram_id": "tt-comm-payment-flow",
+            "primary_type": "Communication",
+            "is_behavioral": true,
+            "total_elements": 10
+        },
+        {
+            "diagram_id": "tt-component-architecture",
+            "primary_type": "Component",
+            "is_behavioral": false,
+            "total_elements": 123
+        }
+    ]
+}

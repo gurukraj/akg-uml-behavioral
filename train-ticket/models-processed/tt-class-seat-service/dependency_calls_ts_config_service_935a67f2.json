@@ -1,0 +1,8 @@
+{
+    "name": "calls_ts_config_service",
+    "key": "_959e800a527c4f75935a67f2",
+    "type": "dependency",
+    "source": "tt-class-seat-service",
+    "target": "ts-config-service",
+    "endpoint": "GET /api/v1/configservice/configs/{configName}"
+}

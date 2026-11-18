@@ -1,0 +1,7 @@
+{
+    "name": "ts-admin-basic-info-service_depends_on_ts-contacts-service",
+    "key": "_5cdc1ae1676c4cf6955c2b51",
+    "type": "dependency",
+    "source": "_4a86440a832b401190fcb2b4",
+    "target": "_9882e81d64674fbb8a97f11a"
+}

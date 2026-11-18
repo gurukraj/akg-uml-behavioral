@@ -1,0 +1,32 @@
+{
+    "name": "ConsignPriceConfigRepository",
+    "key": "_76f74f9928b64eb0927ee5ce",
+    "type": "interface",
+    "hasTypeVariable": false,
+    "position": null,
+    "modifiers": [],
+    "fields": {},
+    "methods": {
+        "findByIndex": {
+            "name": "findByIndex",
+            "key": "_017da850b06347959c326113",
+            "returnType": "ConsignPrice",
+            "parameters": [
+                [
+                    "int"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": true
+        }
+    },
+    "file_path": "./ConsignPriceConfigRepository",
+    "anonymous": false,
+    "auxclass": false,
+    "implements_": [],
+    "extends_": [],
+    "definedInClassOrInterfaceTypeKey": null,
+    "innerDefinedClasses": {},
+    "innerDefinedInterfaces": {}
+}

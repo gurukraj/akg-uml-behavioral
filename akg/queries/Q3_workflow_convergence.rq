@@ -1,0 +1,18 @@
+PREFIX akg: <https://w3id.org/akg/behavioral#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+SELECT ?forkNode ?joinNode ?parallelBranchCount
+WHERE {
+  ?fork rdf:type akg:ForkNode ;
+        akg:fanOut ?parallelBranchCount .
+
+  ?join rdf:type akg:JoinNode .
+
+  ?join akg:causedBy+ ?fork .
+
+  BIND(STR(?fork) AS ?forkNode)
+  BIND(STR(?join) AS ?joinNode)
+
+  FILTER(?parallelBranchCount > 3)
+}
+ORDER BY DESC(?parallelBranchCount)

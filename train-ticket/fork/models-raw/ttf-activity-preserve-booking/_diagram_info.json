@@ -1,0 +1,31 @@
+{
+    "classification": {
+        "categories": [
+            "Activity"
+        ],
+        "primary": "Activity",
+        "is_class_diagram": false,
+        "is_behavioral": true
+    },
+    "detectedTypes": {
+        "uml:Activity": 1,
+        "uml:OpaqueAction": 13,
+        "uml:DecisionNode": 2,
+        "uml:ForkNode": 1,
+        "uml:JoinNode": 1,
+        "uml:ControlFlow": 23,
+        "uml:ActivityPartition": 10
+    },
+    "elementCounts": {
+        "activities": 1,
+        "actions": 13,
+        "decisionNodes": 2,
+        "forkNodes": 1,
+        "joinNodes": 1,
+        "controlFlows": 23,
+        "activityPartitions": 10
+    },
+    "totalElements": 51,
+    "diagram_id": "ttf-activity-preserve-booking",
+    "source_file": "ttf-activity-preserve-booking.json"
+}

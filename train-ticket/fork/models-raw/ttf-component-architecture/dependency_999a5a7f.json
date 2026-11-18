@@ -1,0 +1,7 @@
+{
+    "name": "ts-food-service_depends_on_ts-travel-service",
+    "key": "_4805c3211af24fc0999a5a7f",
+    "type": "dependency",
+    "source": "_68155404e040496c8531e1cd",
+    "target": "_0671269c3d644026899a6187"
+}

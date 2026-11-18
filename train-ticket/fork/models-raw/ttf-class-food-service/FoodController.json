@@ -1,0 +1,103 @@
+{
+    "name": "FoodController",
+    "key": "_b1cc8a57fad34bb1967545b0",
+    "type": "class",
+    "hasTypeVariable": false,
+    "position": null,
+    "modifiers": [],
+    "fields": {},
+    "methods": {
+        "createFoodOrder": {
+            "name": "createFoodOrder",
+            "key": "_58849f2f9e4a44569ef992b1",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "FoodOrder",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "deleteFoodOrder": {
+            "name": "deleteFoodOrder",
+            "key": "_d7810a5408254d669760281b",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "String",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "updateFoodOrder": {
+            "name": "updateFoodOrder",
+            "key": "_2f92eec5f34c4e81bcc9cc13",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "FoodOrder",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "findByOrderId": {
+            "name": "findByOrderId",
+            "key": "_3ade21d8de544173b6db35b4",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "String",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "findAllFoodOrder": {
+            "name": "findAllFoodOrder",
+            "key": "_4b40d199478e490790eaa583",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "getAllFood": {
+            "name": "getAllFood",
+            "key": "_f7a0a6df99b449df9d69e865",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "String",
+                    "String",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        }
+    },
+    "file_path": "./FoodController",
+    "anonymous": false,
+    "auxclass": false,
+    "implements_": [],
+    "extends_": [],
+    "definedInClassOrInterfaceTypeKey": null,
+    "innerDefinedClasses": {},
+    "innerDefinedInterfaces": {}
+}

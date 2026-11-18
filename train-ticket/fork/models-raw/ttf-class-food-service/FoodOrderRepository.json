@@ -1,0 +1,41 @@
+{
+    "name": "FoodOrderRepository",
+    "key": "_f510e8ae999f41f18c50770f",
+    "type": "interface",
+    "hasTypeVariable": false,
+    "position": null,
+    "modifiers": [],
+    "fields": {},
+    "methods": {
+        "findByOrderId": {
+            "name": "findByOrderId",
+            "key": "_be1c2e15848942fb849f7469",
+            "returnType": "FoodOrder",
+            "parameters": [
+                [
+                    "UUID"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": true
+        },
+        "findAll": {
+            "name": "findAll",
+            "key": "_bba814b259ec409c8e9b46bb",
+            "returnType": "List<FoodOrder>",
+            "parameters": [],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": true
+        }
+    },
+    "file_path": "./FoodOrderRepository",
+    "anonymous": false,
+    "auxclass": false,
+    "implements_": [],
+    "extends_": [],
+    "definedInClassOrInterfaceTypeKey": null,
+    "innerDefinedClasses": {},
+    "innerDefinedInterfaces": {}
+}

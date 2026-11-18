@@ -1,0 +1,131 @@
+{
+    "name": "Order",
+    "key": "_6ce36adf91f142d1897ffc46",
+    "type": "class",
+    "hasTypeVariable": false,
+    "position": null,
+    "modifiers": [],
+    "fields": {
+        "id": {
+            "name": "id",
+            "key": "_7104461a64ce4dd99db57228",
+            "type": "UUID",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "boughtDate": {
+            "name": "boughtDate",
+            "key": "_e9428fefa0f24a218ee438f4",
+            "type": "Date",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "travelDate": {
+            "name": "travelDate",
+            "key": "_9ccfd3ce3f8b4cb49a8989ac",
+            "type": "Date",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "travelTime": {
+            "name": "travelTime",
+            "key": "_34b57acd04794b58b5b03e87",
+            "type": "Date",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "accountId": {
+            "name": "accountId",
+            "key": "_a6a183aa09984ddba6faeb8f",
+            "type": "UUID",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "contactsName": {
+            "name": "contactsName",
+            "key": "_1230ec7436454627bb808bb7",
+            "type": "String",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "documentType": {
+            "name": "documentType",
+            "key": "_2a620e03e9ac4a4abfae8dd0",
+            "type": "int",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "contactsDocumentNumber": {
+            "name": "contactsDocumentNumber",
+            "key": "_d6b681d44cfd4415a4838947",
+            "type": "String",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "trainNumber": {
+            "name": "trainNumber",
+            "key": "_3f8ef6158f2b4a3f97031749",
+            "type": "String",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "coachNumber": {
+            "name": "coachNumber",
+            "key": "_849b0a332942448f86593015",
+            "type": "int",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "seatClass": {
+            "name": "seatClass",
+            "key": "_36a90f19d04a49a98b0a9abb",
+            "type": "int",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "seatNumber": {
+            "name": "seatNumber",
+            "key": "_756da15600c549668e786dbb",
+            "type": "String",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "from": {
+            "name": "from",
+            "key": "_dd933df9e3df4d0c8f7a0283",
+            "type": "String",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "to": {
+            "name": "to",
+            "key": "_df6f0660ed234066b662f2cf",
+            "type": "String",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "status": {
+            "name": "status",
+            "key": "_858e4804f4584966aebfca37",
+            "type": "int",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "price": {
+            "name": "price",
+            "key": "_f471a3fc0c7e481d9eb0cfae",
+            "type": "String",
+            "visibility": "private",
+            "isStatic": false
+        }
+    },
+    "methods": {},
+    "file_path": "./Order",
+    "anonymous": false,
+    "auxclass": false,
+    "implements_": [],
+    "extends_": [],
+    "definedInClassOrInterfaceTypeKey": null,
+    "innerDefinedClasses": {},
+    "innerDefinedInterfaces": {}
+}

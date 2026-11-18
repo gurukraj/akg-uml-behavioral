@@ -1,0 +1,8 @@
+{
+    "name": "getAccount()",
+    "key": "_48cd6bf00a164c8a836c357d",
+    "type": "uml:Message",
+    "sender": "_d9d5a5caa3984328ae337519",
+    "receiver": "_34c701898e064e9e8d382d6d",
+    "messageLabel": "getAccount()"
+}

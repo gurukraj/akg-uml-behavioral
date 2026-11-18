@@ -1,0 +1,8 @@
+{
+    "name": "1: queryForStationId()",
+    "key": "_19b38549c4ab4ff1bbeeacbf",
+    "type": "uml:Message",
+    "sender": "_e622a5548a444900b78dd112",
+    "receiver": "_4d01d94555fc489896e7a37b",
+    "messageLabel": "1: queryForStationId()"
+}

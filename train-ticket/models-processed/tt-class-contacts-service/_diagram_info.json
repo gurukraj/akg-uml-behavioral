@@ -1,0 +1,23 @@
+{
+    "classification": {
+        "categories": [
+            "Class"
+        ],
+        "primary": "Class",
+        "is_class_diagram": true,
+        "is_behavioral": false
+    },
+    "detectedTypes": {
+        "uml:Class": 3,
+        "uml:Interface": 2,
+        "uml:Association": 2
+    },
+    "elementCounts": {
+        "classes": 3,
+        "interfaces": 2,
+        "associations": 2
+    },
+    "totalElements": 7,
+    "diagram_id": "tt-class-contacts-service",
+    "source_file": "tt-class-contacts-service.json"
+}

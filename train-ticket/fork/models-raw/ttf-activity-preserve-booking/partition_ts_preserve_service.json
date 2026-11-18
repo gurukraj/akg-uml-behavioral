@@ -1,0 +1,13 @@
+{
+    "name": "ts-preserve-service",
+    "key": "_51bfc21459b74099bc69d73b",
+    "type": "uml:ActivityPartition",
+    "nodes": [
+        "_e2203a42bc3d4697b73121c0",
+        "_9a5fcff8f422445a83c60c3c",
+        "_375c46ed38fe48a7b4e60879",
+        "_39da83bdd07342e8b2c0aaf4",
+        "_6e74ca4652a54fbb93059771",
+        "_8fa9717ec97844ab9ee506cd"
+    ]
+}

@@ -1,0 +1,60 @@
+{
+    "name": "AdminRouteController",
+    "key": "_e5c449bd3baa4024bea89917",
+    "type": "class",
+    "hasTypeVariable": false,
+    "position": null,
+    "modifiers": [],
+    "fields": {},
+    "methods": {
+        "getAllRoutes": {
+            "name": "getAllRoutes",
+            "key": "_d47fd1ef72ad4df0b41707aa",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "addRoute": {
+            "name": "addRoute",
+            "key": "_575a0e68b4c048b0887f910a",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "RouteInfo",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "deleteRoute": {
+            "name": "deleteRoute",
+            "key": "_bdefe2d41b4c438e85e45e96",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "String",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        }
+    },
+    "file_path": "./AdminRouteController",
+    "anonymous": false,
+    "auxclass": false,
+    "implements_": [],
+    "extends_": [],
+    "definedInClassOrInterfaceTypeKey": null,
+    "innerDefinedClasses": {},
+    "innerDefinedInterfaces": {}
+}

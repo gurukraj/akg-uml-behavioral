@@ -1,0 +1,257 @@
+{
+    "name": "OrderPayment",
+    "key": "_9d3ec7778b2641e183be98b9",
+    "type": "interaction",
+    "lifelines": [
+        {
+            "name": "Client",
+            "key": "_a1b629d507be475d9e91fe89",
+            "represents": "_617bb9ebc2de40acb48bfe26",
+            "coveredBy": []
+        },
+        {
+            "name": "ts-inside-payment-service",
+            "key": "_440cbf3f54494a37b6aabc4f",
+            "represents": "_154676f85ba14c7088e3583b",
+            "coveredBy": []
+        },
+        {
+            "name": "ts-order-service",
+            "key": "_608d36e9b16a4f8f8f6fa193",
+            "represents": "_5d6a73da1c2b49d4a36ff824",
+            "coveredBy": []
+        },
+        {
+            "name": "ts-order-other-service",
+            "key": "_6018a3a77450423ca53ee668",
+            "represents": "_2882c0806ebf4359b5155501",
+            "coveredBy": []
+        },
+        {
+            "name": "ts-payment-service",
+            "key": "_ee4b8dc6d4514e9a9838ddc0",
+            "represents": "_b2a033b19e374b1193d9a5e8",
+            "coveredBy": []
+        }
+    ],
+    "messages": [
+        {
+            "name": "POST /inside_payment",
+            "key": "_0290526af42c4a9a9a104844",
+            "messageSort": "synchCall",
+            "sendEvent": "_1e79b0a6d3ac4ae68033ca0f",
+            "receiveEvent": "_da101c4af9ca46dba310de8f",
+            "connector": null,
+            "signature": null
+        },
+        {
+            "name": "GET /order/{orderId}",
+            "key": "_b40c76fb45184034a7df8cd6",
+            "messageSort": "synchCall",
+            "sendEvent": "_239635289fdd49d4a55c8dbc",
+            "receiveEvent": "_0f868a2de1d2471382b30edf",
+            "connector": null,
+            "signature": null
+        },
+        {
+            "name": "orderInfo",
+            "key": "_49d8bcad33e94bc7ba1da59a",
+            "messageSort": "reply",
+            "sendEvent": "_a6f52b81eb14444faf74300b",
+            "receiveEvent": "_94d435f790e64b428b7f1ea6",
+            "connector": null,
+            "signature": null
+        },
+        {
+            "name": "POST /payment",
+            "key": "_b580b19cd7b8455eb71a8b21",
+            "messageSort": "synchCall",
+            "sendEvent": "_06cc5159017142f8be9debb8",
+            "receiveEvent": "_a0ffaf60eecb4e6c99275f1c",
+            "connector": null,
+            "signature": null
+        },
+        {
+            "name": "paymentResult",
+            "key": "_9d004f6338ad4f70976f3049",
+            "messageSort": "reply",
+            "sendEvent": "_cd8b31f7cece4f44ba2c1284",
+            "receiveEvent": "_16faef67343f4c0093ea4bb0",
+            "connector": null,
+            "signature": null
+        },
+        {
+            "name": "GET /order/status/{orderId}/{status}",
+            "key": "_91f20cd3ce51424f8d446ba9",
+            "messageSort": "synchCall",
+            "sendEvent": "_6f3776137c3b4189baacda70",
+            "receiveEvent": "_d6d8aa912456467e8630a19c",
+            "connector": null,
+            "signature": null
+        },
+        {
+            "name": "statusUpdateResult",
+            "key": "_ada14e252f724fbeb43dfdde",
+            "messageSort": "reply",
+            "sendEvent": "_35086cc6520f432c91fca405",
+            "receiveEvent": "_1f2bf50a90ee40538e7a9bfe",
+            "connector": null,
+            "signature": null
+        },
+        {
+            "name": "paymentSuccess",
+            "key": "_6ab71013ca3e4083a9df7aa3",
+            "messageSort": "reply",
+            "sendEvent": "_43585304865f4f0186ec8e53",
+            "receiveEvent": "_4c371220890d4640a119ca73",
+            "connector": null,
+            "signature": null
+        }
+    ],
+    "fragments": [
+        {
+            "key": "_1e79b0a6d3ac4ae68033ca0f",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_a1b629d507be475d9e91fe89",
+            "enclosingInteraction": "tt-seq-order-pay",
+            "message": "_0290526af42c4a9a9a104844",
+            "execution": null
+        },
+        {
+            "key": "_da101c4af9ca46dba310de8f",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_440cbf3f54494a37b6aabc4f",
+            "enclosingInteraction": "tt-seq-order-pay",
+            "message": "_0290526af42c4a9a9a104844",
+            "execution": null
+        },
+        {
+            "key": "_239635289fdd49d4a55c8dbc",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_440cbf3f54494a37b6aabc4f",
+            "enclosingInteraction": "tt-seq-order-pay",
+            "message": "_b40c76fb45184034a7df8cd6",
+            "execution": null
+        },
+        {
+            "key": "_0f868a2de1d2471382b30edf",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_608d36e9b16a4f8f8f6fa193",
+            "enclosingInteraction": "tt-seq-order-pay",
+            "message": "_b40c76fb45184034a7df8cd6",
+            "execution": null
+        },
+        {
+            "key": "_a6f52b81eb14444faf74300b",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_608d36e9b16a4f8f8f6fa193",
+            "enclosingInteraction": "tt-seq-order-pay",
+            "message": "_49d8bcad33e94bc7ba1da59a",
+            "execution": null
+        },
+        {
+            "key": "_94d435f790e64b428b7f1ea6",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_440cbf3f54494a37b6aabc4f",
+            "enclosingInteraction": "tt-seq-order-pay",
+            "message": "_49d8bcad33e94bc7ba1da59a",
+            "execution": null
+        },
+        {
+            "key": "_06cc5159017142f8be9debb8",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_440cbf3f54494a37b6aabc4f",
+            "enclosingInteraction": "tt-seq-order-pay",
+            "message": "_b580b19cd7b8455eb71a8b21",
+            "execution": null
+        },
+        {
+            "key": "_a0ffaf60eecb4e6c99275f1c",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_ee4b8dc6d4514e9a9838ddc0",
+            "enclosingInteraction": "tt-seq-order-pay",
+            "message": "_b580b19cd7b8455eb71a8b21",
+            "execution": null
+        },
+        {
+            "key": "_cd8b31f7cece4f44ba2c1284",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_ee4b8dc6d4514e9a9838ddc0",
+            "enclosingInteraction": "tt-seq-order-pay",
+            "message": "_9d004f6338ad4f70976f3049",
+            "execution": null
+        },
+        {
+            "key": "_16faef67343f4c0093ea4bb0",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_440cbf3f54494a37b6aabc4f",
+            "enclosingInteraction": "tt-seq-order-pay",
+            "message": "_9d004f6338ad4f70976f3049",
+            "execution": null
+        },
+        {
+            "key": "_6f3776137c3b4189baacda70",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_440cbf3f54494a37b6aabc4f",
+            "enclosingInteraction": "tt-seq-order-pay",
+            "message": "_91f20cd3ce51424f8d446ba9",
+            "execution": null
+        },
+        {
+            "key": "_d6d8aa912456467e8630a19c",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_608d36e9b16a4f8f8f6fa193",
+            "enclosingInteraction": "tt-seq-order-pay",
+            "message": "_91f20cd3ce51424f8d446ba9",
+            "execution": null
+        },
+        {
+            "key": "_35086cc6520f432c91fca405",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_608d36e9b16a4f8f8f6fa193",
+            "enclosingInteraction": "tt-seq-order-pay",
+            "message": "_ada14e252f724fbeb43dfdde",
+            "execution": null
+        },
+        {
+            "key": "_1f2bf50a90ee40538e7a9bfe",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_440cbf3f54494a37b6aabc4f",
+            "enclosingInteraction": "tt-seq-order-pay",
+            "message": "_ada14e252f724fbeb43dfdde",
+            "execution": null
+        },
+        {
+            "key": "_43585304865f4f0186ec8e53",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_440cbf3f54494a37b6aabc4f",
+            "enclosingInteraction": "tt-seq-order-pay",
+            "message": "_6ab71013ca3e4083a9df7aa3",
+            "execution": null
+        },
+        {
+            "key": "_4c371220890d4640a119ca73",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_a1b629d507be475d9e91fe89",
+            "enclosingInteraction": "tt-seq-order-pay",
+            "message": "_6ab71013ca3e4083a9df7aa3",
+            "execution": null
+        }
+    ]
+}

@@ -1,0 +1,7 @@
+{
+    "name": "ts-preserve-service_depends_on_ts-consign-service",
+    "key": "_b3e79d050e654b308e5590ca",
+    "type": "dependency",
+    "source": "_7b342fb86d1e4256a0f3061e",
+    "target": "_db356428dae448acbef99258"
+}

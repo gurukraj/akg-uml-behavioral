@@ -1,0 +1,8 @@
+{
+    "name": "DistributeSeat_to_CreateNewOrder",
+    "key": "_4a1d168c277747d99c8ada07",
+    "type": "uml:ControlFlow",
+    "source": "_4ded5cbaa284402788f8eb99",
+    "target": "_27f9f5bd995b4ae7a4040a55",
+    "guard": null
+}

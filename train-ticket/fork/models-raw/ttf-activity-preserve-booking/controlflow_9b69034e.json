@@ -1,0 +1,8 @@
+{
+    "name": "DelegateToBasicService_to_GetTripDetail",
+    "key": "_9f990d0661ee4c399b69034e",
+    "type": "uml:ControlFlow",
+    "source": "_2c197436259f4d939ab78337",
+    "target": "_39da83bdd07342e8b2c0aaf4",
+    "guard": null
+}

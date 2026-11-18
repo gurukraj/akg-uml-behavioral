@@ -1,0 +1,509 @@
+{
+    "name": "TicketBookingWorkflow",
+    "key": "_8acd65b3023e4f23a08ebf0f",
+    "type": "uml:Activity",
+    "nodes": [
+        {
+            "name": "AddAssurance",
+            "key": "_ea120bccb6a04219a964b880",
+            "nodeType": "uml:OpaqueAction",
+            "inPartition": "_217802efddf74351a213cf9b",
+            "incoming": [
+                "_934f52fb5c064ebd9e93f9a0"
+            ],
+            "outgoing": [
+                "_0adc5cd158164022b3e82a97"
+            ]
+        },
+        {
+            "name": "AddConsignment",
+            "key": "_aae1884472294a208a74a83d",
+            "nodeType": "uml:OpaqueAction",
+            "inPartition": "_9249840052e74aadaf0321d0",
+            "incoming": [
+                "_30469ad3d7ad4deaa73a297c"
+            ],
+            "outgoing": [
+                "_5e5337425f84425594513035"
+            ]
+        },
+        {
+            "name": "AddFoodOrder",
+            "key": "_e0ade4fa91c840b68769b91d",
+            "nodeType": "uml:OpaqueAction",
+            "inPartition": "_e2d6ed923dbb49e18ed8c484",
+            "incoming": [
+                "_10f95d6a82f24ae9b217d5cf"
+            ],
+            "outgoing": [
+                "_6a4d67f95ce7407b97aac9bc"
+            ]
+        },
+        {
+            "name": "CreateOrder",
+            "key": "_eadfef27794441de85bff0a5",
+            "nodeType": "uml:OpaqueAction",
+            "inPartition": "_605b9f2de81243df88212418",
+            "incoming": [
+                "_7b45194f0db847ad947e0c98"
+            ],
+            "outgoing": [
+                "_ee9f1d065a814c648446e1cf"
+            ]
+        },
+        {
+            "name": "DecisionNode_PaymentSuccess",
+            "key": "_1ba6a6fdba224ae0aabab31f",
+            "nodeType": "uml:DecisionNode",
+            "inPartition": null,
+            "incoming": [
+                "_f67ebdef2cb444c29309d2ad"
+            ],
+            "outgoing": [
+                "_454bfb2766ad48d0859b196a",
+                "_8558c3ae4f994996ac71b2c4"
+            ]
+        },
+        {
+            "name": "DecisionNode_SecurityPass",
+            "key": "_940ef42a0a3e45c2908c01a7",
+            "nodeType": "uml:DecisionNode",
+            "inPartition": null,
+            "incoming": [
+                "_0842e98f475b4cf6a091a566"
+            ],
+            "outgoing": [
+                "_07a56af61f4a46938eaf0ca4",
+                "_9aaba0bef2b248feb1d11215"
+            ]
+        },
+        {
+            "name": "DecisionNode_TripsFound",
+            "key": "_e1134a818b994b4b9040fa42",
+            "nodeType": "uml:DecisionNode",
+            "inPartition": null,
+            "incoming": [
+                "_9803141e2ae74759a9dc1b01"
+            ],
+            "outgoing": [
+                "_54b27a157aa9490a9e3f7b5c",
+                "_fa1e0d25cbeb48dfbbda8e06"
+            ]
+        },
+        {
+            "name": "FinalNode_NoTrips",
+            "key": "_2fe4bc6737d74fbd93fb169e",
+            "nodeType": "uml:ActivityFinalNode",
+            "inPartition": null,
+            "incoming": [
+                "_54b27a157aa9490a9e3f7b5c"
+            ],
+            "outgoing": []
+        },
+        {
+            "name": "FinalNode_PaymentFail",
+            "key": "_81643e93d2ef44329db1bf65",
+            "nodeType": "uml:ActivityFinalNode",
+            "inPartition": null,
+            "incoming": [
+                "_454bfb2766ad48d0859b196a"
+            ],
+            "outgoing": []
+        },
+        {
+            "name": "FinalNode_SecurityFail",
+            "key": "_26caf2652e0a4b558482352b",
+            "nodeType": "uml:ActivityFinalNode",
+            "inPartition": null,
+            "incoming": [
+                "_07a56af61f4a46938eaf0ca4"
+            ],
+            "outgoing": []
+        },
+        {
+            "name": "FinalNode_Success",
+            "key": "_b1552cf3ffee42529b5aa39c",
+            "nodeType": "uml:ActivityFinalNode",
+            "inPartition": null,
+            "incoming": [
+                "_6a545eeecfa5498b99d902aa"
+            ],
+            "outgoing": []
+        },
+        {
+            "name": "ForkNode_OptionalServices",
+            "key": "_10d6214267914765b2338906",
+            "nodeType": "uml:ForkNode",
+            "inPartition": null,
+            "incoming": [
+                "_09146912271540b2b286a31e"
+            ],
+            "outgoing": [
+                "_934f52fb5c064ebd9e93f9a0",
+                "_30469ad3d7ad4deaa73a297c",
+                "_10f95d6a82f24ae9b217d5cf"
+            ]
+        },
+        {
+            "name": "GetContactInfo",
+            "key": "_c7c93f6e820d407ca69174b2",
+            "nodeType": "uml:OpaqueAction",
+            "inPartition": "_605b9f2de81243df88212418",
+            "incoming": [
+                "_9aaba0bef2b248feb1d11215"
+            ],
+            "outgoing": [
+                "_09146912271540b2b286a31e"
+            ]
+        },
+        {
+            "name": "InitialNode",
+            "key": "_6cec3760f34e4d9ba64579b9",
+            "nodeType": "uml:InitialNode",
+            "inPartition": null,
+            "incoming": [],
+            "outgoing": [
+                "_901aef4f1ac34b40bacbf193"
+            ]
+        },
+        {
+            "name": "JoinNode_OptionalServices",
+            "key": "_c194c7f13c264a2391ce9e89",
+            "nodeType": "uml:JoinNode",
+            "inPartition": null,
+            "incoming": [
+                "_5e5337425f84425594513035",
+                "_6a4d67f95ce7407b97aac9bc",
+                "_0adc5cd158164022b3e82a97"
+            ],
+            "outgoing": [
+                "_7b45194f0db847ad947e0c98"
+            ]
+        },
+        {
+            "name": "ProcessPayment",
+            "key": "_9efd4086cffd4178ac9de2b7",
+            "nodeType": "uml:OpaqueAction",
+            "inPartition": "_82a3d2a9945f422cbaf5eac9",
+            "incoming": [
+                "_ee9f1d065a814c648446e1cf"
+            ],
+            "outgoing": [
+                "_f67ebdef2cb444c29309d2ad"
+            ]
+        },
+        {
+            "name": "SearchTrips",
+            "key": "_672942190e8c416e903aae5a",
+            "nodeType": "uml:OpaqueAction",
+            "inPartition": "_605b9f2de81243df88212418",
+            "incoming": [
+                "_901aef4f1ac34b40bacbf193"
+            ],
+            "outgoing": [
+                "_9803141e2ae74759a9dc1b01"
+            ]
+        },
+        {
+            "name": "SecurityCheck",
+            "key": "_1c187f0c8ddd4465a7d8ab39",
+            "nodeType": "uml:OpaqueAction",
+            "inPartition": "_2c66d6356a8a4c3d9808ab2a",
+            "incoming": [
+                "_61dbf47476d24f03b9a3e841"
+            ],
+            "outgoing": [
+                "_0842e98f475b4cf6a091a566"
+            ]
+        },
+        {
+            "name": "SelectSeat",
+            "key": "_a6dbd6f9be8f4f78ad816e50",
+            "nodeType": "uml:OpaqueAction",
+            "inPartition": "_e6aa4f1add7949f5a182e41d",
+            "incoming": [
+                "_19f7898adc714ce692d23d07"
+            ],
+            "outgoing": [
+                "_61dbf47476d24f03b9a3e841"
+            ]
+        },
+        {
+            "name": "SelectTrip",
+            "key": "_74d5cbf65aa54f04b039f2a7",
+            "nodeType": "uml:OpaqueAction",
+            "inPartition": "_605b9f2de81243df88212418",
+            "incoming": [
+                "_fa1e0d25cbeb48dfbbda8e06"
+            ],
+            "outgoing": [
+                "_19f7898adc714ce692d23d07"
+            ]
+        },
+        {
+            "name": "SendNotification",
+            "key": "_1604187ce850486288a72f96",
+            "nodeType": "uml:OpaqueAction",
+            "inPartition": "_1e23498bb7fb419793e34755",
+            "incoming": [
+                "_8558c3ae4f994996ac71b2c4"
+            ],
+            "outgoing": [
+                "_6a545eeecfa5498b99d902aa"
+            ]
+        }
+    ],
+    "edges": [
+        {
+            "name": "CreateOrder_to_ProcessPayment",
+            "key": "_ee9f1d065a814c648446e1cf",
+            "edgeType": "uml:ControlFlow",
+            "source": "_eadfef27794441de85bff0a5",
+            "target": "_9efd4086cffd4178ac9de2b7",
+            "guard": null
+        },
+        {
+            "name": "DecisionNode_PaymentSuccess_to_FinalNode_PaymentFail",
+            "key": "_454bfb2766ad48d0859b196a",
+            "edgeType": "uml:ControlFlow",
+            "source": "_1ba6a6fdba224ae0aabab31f",
+            "target": "_81643e93d2ef44329db1bf65",
+            "guard": "fail"
+        },
+        {
+            "name": "DecisionNode_SecurityPass_to_FinalNode_SecurityFail",
+            "key": "_07a56af61f4a46938eaf0ca4",
+            "edgeType": "uml:ControlFlow",
+            "source": "_940ef42a0a3e45c2908c01a7",
+            "target": "_26caf2652e0a4b558482352b",
+            "guard": "fail"
+        },
+        {
+            "name": "SelectTrip_to_SelectSeat",
+            "key": "_19f7898adc714ce692d23d07",
+            "edgeType": "uml:ControlFlow",
+            "source": "_74d5cbf65aa54f04b039f2a7",
+            "target": "_a6dbd6f9be8f4f78ad816e50",
+            "guard": null
+        },
+        {
+            "name": "ProcessPayment_to_DecisionNode_PaymentSuccess",
+            "key": "_f67ebdef2cb444c29309d2ad",
+            "edgeType": "uml:ControlFlow",
+            "source": "_9efd4086cffd4178ac9de2b7",
+            "target": "_1ba6a6fdba224ae0aabab31f",
+            "guard": null
+        },
+        {
+            "name": "AddConsignment_to_JoinNode_OptionalServices",
+            "key": "_5e5337425f84425594513035",
+            "edgeType": "uml:ControlFlow",
+            "source": "_aae1884472294a208a74a83d",
+            "target": "_c194c7f13c264a2391ce9e89",
+            "guard": null
+        },
+        {
+            "name": "JoinNode_OptionalServices_to_CreateOrder",
+            "key": "_7b45194f0db847ad947e0c98",
+            "edgeType": "uml:ControlFlow",
+            "source": "_c194c7f13c264a2391ce9e89",
+            "target": "_eadfef27794441de85bff0a5",
+            "guard": null
+        },
+        {
+            "name": "AddFoodOrder_to_JoinNode_OptionalServices",
+            "key": "_6a4d67f95ce7407b97aac9bc",
+            "edgeType": "uml:ControlFlow",
+            "source": "_e0ade4fa91c840b68769b91d",
+            "target": "_c194c7f13c264a2391ce9e89",
+            "guard": null
+        },
+        {
+            "name": "SendNotification_to_FinalNode_Success",
+            "key": "_6a545eeecfa5498b99d902aa",
+            "edgeType": "uml:ControlFlow",
+            "source": "_1604187ce850486288a72f96",
+            "target": "_b1552cf3ffee42529b5aa39c",
+            "guard": null
+        },
+        {
+            "name": "DecisionNode_TripsFound_to_FinalNode_NoTrips",
+            "key": "_54b27a157aa9490a9e3f7b5c",
+            "edgeType": "uml:ControlFlow",
+            "source": "_e1134a818b994b4b9040fa42",
+            "target": "_2fe4bc6737d74fbd93fb169e",
+            "guard": "no trips"
+        },
+        {
+            "name": "ForkNode_OptionalServices_to_AddAssurance",
+            "key": "_934f52fb5c064ebd9e93f9a0",
+            "edgeType": "uml:ControlFlow",
+            "source": "_10d6214267914765b2338906",
+            "target": "_ea120bccb6a04219a964b880",
+            "guard": null
+        },
+        {
+            "name": "SecurityCheck_to_DecisionNode_SecurityPass",
+            "key": "_0842e98f475b4cf6a091a566",
+            "edgeType": "uml:ControlFlow",
+            "source": "_1c187f0c8ddd4465a7d8ab39",
+            "target": "_940ef42a0a3e45c2908c01a7",
+            "guard": null
+        },
+        {
+            "name": "ForkNode_OptionalServices_to_AddConsignment",
+            "key": "_30469ad3d7ad4deaa73a297c",
+            "edgeType": "uml:ControlFlow",
+            "source": "_10d6214267914765b2338906",
+            "target": "_aae1884472294a208a74a83d",
+            "guard": null
+        },
+        {
+            "name": "SearchTrips_to_DecisionNode_TripsFound",
+            "key": "_9803141e2ae74759a9dc1b01",
+            "edgeType": "uml:ControlFlow",
+            "source": "_672942190e8c416e903aae5a",
+            "target": "_e1134a818b994b4b9040fa42",
+            "guard": null
+        },
+        {
+            "name": "DecisionNode_PaymentSuccess_to_SendNotification",
+            "key": "_8558c3ae4f994996ac71b2c4",
+            "edgeType": "uml:ControlFlow",
+            "source": "_1ba6a6fdba224ae0aabab31f",
+            "target": "_1604187ce850486288a72f96",
+            "guard": "success"
+        },
+        {
+            "name": "DecisionNode_SecurityPass_to_GetContactInfo",
+            "key": "_9aaba0bef2b248feb1d11215",
+            "edgeType": "uml:ControlFlow",
+            "source": "_940ef42a0a3e45c2908c01a7",
+            "target": "_c7c93f6e820d407ca69174b2",
+            "guard": "pass"
+        },
+        {
+            "name": "ForkNode_OptionalServices_to_AddFoodOrder",
+            "key": "_10f95d6a82f24ae9b217d5cf",
+            "edgeType": "uml:ControlFlow",
+            "source": "_10d6214267914765b2338906",
+            "target": "_e0ade4fa91c840b68769b91d",
+            "guard": null
+        },
+        {
+            "name": "GetContactInfo_to_ForkNode_OptionalServices",
+            "key": "_09146912271540b2b286a31e",
+            "edgeType": "uml:ControlFlow",
+            "source": "_c7c93f6e820d407ca69174b2",
+            "target": "_10d6214267914765b2338906",
+            "guard": null
+        },
+        {
+            "name": "AddAssurance_to_JoinNode_OptionalServices",
+            "key": "_0adc5cd158164022b3e82a97",
+            "edgeType": "uml:ControlFlow",
+            "source": "_ea120bccb6a04219a964b880",
+            "target": "_c194c7f13c264a2391ce9e89",
+            "guard": null
+        },
+        {
+            "name": "SelectSeat_to_SecurityCheck",
+            "key": "_61dbf47476d24f03b9a3e841",
+            "edgeType": "uml:ControlFlow",
+            "source": "_a6dbd6f9be8f4f78ad816e50",
+            "target": "_1c187f0c8ddd4465a7d8ab39",
+            "guard": null
+        },
+        {
+            "name": "InitialNode_to_SearchTrips",
+            "key": "_901aef4f1ac34b40bacbf193",
+            "edgeType": "uml:ControlFlow",
+            "source": "_6cec3760f34e4d9ba64579b9",
+            "target": "_672942190e8c416e903aae5a",
+            "guard": null
+        },
+        {
+            "name": "DecisionNode_TripsFound_to_SelectTrip",
+            "key": "_fa1e0d25cbeb48dfbbda8e06",
+            "edgeType": "uml:ControlFlow",
+            "source": "_e1134a818b994b4b9040fa42",
+            "target": "_74d5cbf65aa54f04b039f2a7",
+            "guard": "trips found"
+        }
+    ],
+    "partitions": [
+        {
+            "name": "ts-assurance-service",
+            "key": "_217802efddf74351a213cf9b",
+            "nodes": [
+                "_ea120bccb6a04219a964b880"
+            ]
+        },
+        {
+            "name": "ts-consign-service",
+            "key": "_9249840052e74aadaf0321d0",
+            "nodes": [
+                "_aae1884472294a208a74a83d"
+            ]
+        },
+        {
+            "name": "ts-food-service",
+            "key": "_e2d6ed923dbb49e18ed8c484",
+            "nodes": [
+                "_e0ade4fa91c840b68769b91d"
+            ]
+        },
+        {
+            "name": "ts-inside-payment-service",
+            "key": "_82a3d2a9945f422cbaf5eac9",
+            "nodes": [
+                "_9efd4086cffd4178ac9de2b7"
+            ]
+        },
+        {
+            "name": "ts-notification-service",
+            "key": "_1e23498bb7fb419793e34755",
+            "nodes": [
+                "_1604187ce850486288a72f96"
+            ]
+        },
+        {
+            "name": "ts-preserve-service",
+            "key": "_605b9f2de81243df88212418",
+            "nodes": [
+                "_672942190e8c416e903aae5a",
+                "_74d5cbf65aa54f04b039f2a7",
+                "_a6dbd6f9be8f4f78ad816e50",
+                "_1c187f0c8ddd4465a7d8ab39",
+                "_c7c93f6e820d407ca69174b2",
+                "_eadfef27794441de85bff0a5"
+            ]
+        },
+        {
+            "name": "ts-seat-service",
+            "key": "_e6aa4f1add7949f5a182e41d",
+            "nodes": [
+                "_a6dbd6f9be8f4f78ad816e50"
+            ]
+        },
+        {
+            "name": "ts-security-service",
+            "key": "_2c66d6356a8a4c3d9808ab2a",
+            "nodes": [
+                "_1c187f0c8ddd4465a7d8ab39"
+            ]
+        }
+    ],
+    "nodeCount": 21,
+    "edgeCount": 22,
+    "partitionCount": 8,
+    "nodeTypeCounts": {
+        "uml:OpaqueAction": 11,
+        "uml:DecisionNode": 3,
+        "uml:ActivityFinalNode": 4,
+        "uml:ForkNode": 1,
+        "uml:InitialNode": 1,
+        "uml:JoinNode": 1
+    },
+    "file_path": "tt-activity-ticket-booking"
+}

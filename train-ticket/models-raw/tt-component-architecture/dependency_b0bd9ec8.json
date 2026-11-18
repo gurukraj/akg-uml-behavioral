@@ -1,0 +1,7 @@
+{
+    "name": "ts-food-service_depends_on_ts-train-food-service",
+    "key": "_e769a7718ee04225b0bd9ec8",
+    "type": "dependency",
+    "source": "_20f56b5b1fa04fa0ad79c6dc",
+    "target": "_0f098ac8ec0e40c9911fd435"
+}

@@ -1,0 +1,8 @@
+{
+    "name": "GetContacts_to_QueryTicketInfo",
+    "key": "_f7a14b47a35a4815b2a956f9",
+    "type": "uml:ControlFlow",
+    "source": "_375c46ed38fe48a7b4e60879",
+    "target": "_c8dbcc0a7d1b4a77acab5e00",
+    "guard": null
+}

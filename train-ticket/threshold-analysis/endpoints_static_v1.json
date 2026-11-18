@@ -1,0 +1,1423 @@
+[
+ {
+  "service": "ts-admin-basic-info-service",
+  "verb": "GET",
+  "path": "/api/v1/adminbasicservice/adminbasic/contacts",
+  "static_depth": 2,
+  "static_calls": 2
+ },
+ {
+  "service": "ts-admin-basic-info-service",
+  "verb": "DELETE",
+  "path": "/api/v1/adminbasicservice/adminbasic/contacts/{contactsId}",
+  "static_depth": 2,
+  "static_calls": 2
+ },
+ {
+  "service": "ts-admin-basic-info-service",
+  "verb": "PUT",
+  "path": "/api/v1/adminbasicservice/adminbasic/contacts",
+  "static_depth": 2,
+  "static_calls": 2
+ },
+ {
+  "service": "ts-admin-basic-info-service",
+  "verb": "POST",
+  "path": "/api/v1/adminbasicservice/adminbasic/contacts",
+  "static_depth": 2,
+  "static_calls": 2
+ },
+ {
+  "service": "ts-admin-basic-info-service",
+  "verb": "GET",
+  "path": "/api/v1/adminbasicservice/adminbasic/stations",
+  "static_depth": 1,
+  "static_calls": 1
+ },
+ {
+  "service": "ts-admin-basic-info-service",
+  "verb": "DELETE",
+  "path": "/api/v1/adminbasicservice/adminbasic/stations",
+  "static_depth": 1,
+  "static_calls": 1
+ },
+ {
+  "service": "ts-admin-basic-info-service",
+  "verb": "PUT",
+  "path": "/api/v1/adminbasicservice/adminbasic/stations",
+  "static_depth": 1,
+  "static_calls": 1
+ },
+ {
+  "service": "ts-admin-basic-info-service",
+  "verb": "POST",
+  "path": "/api/v1/adminbasicservice/adminbasic/stations",
+  "static_depth": 1,
+  "static_calls": 1
+ },
+ {
+  "service": "ts-admin-basic-info-service",
+  "verb": "GET",
+  "path": "/api/v1/adminbasicservice/adminbasic/trains",
+  "static_depth": 1,
+  "static_calls": 1
+ },
+ {
+  "service": "ts-admin-basic-info-service",
+  "verb": "DELETE",
+  "path": "/api/v1/adminbasicservice/adminbasic/trains/{id}",
+  "static_depth": 2,
+  "static_calls": 2
+ },
+ {
+  "service": "ts-admin-basic-info-service",
+  "verb": "PUT",
+  "path": "/api/v1/adminbasicservice/adminbasic/trains",
+  "static_depth": 1,
+  "static_calls": 1
+ },
+ {
+  "service": "ts-admin-basic-info-service",
+  "verb": "POST",
+  "path": "/api/v1/adminbasicservice/adminbasic/trains",
+  "static_depth": 1,
+  "static_calls": 1
+ },
+ {
+  "service": "ts-admin-basic-info-service",
+  "verb": "GET",
+  "path": "/api/v1/adminbasicservice/adminbasic/configs",
+  "static_depth": 1,
+  "static_calls": 1
+ },
+ {
+  "service": "ts-admin-basic-info-service",
+  "verb": "DELETE",
+  "path": "/api/v1/adminbasicservice/adminbasic/configs/{name}",
+  "static_depth": 2,
+  "static_calls": 2
+ },
+ {
+  "service": "ts-admin-basic-info-service",
+  "verb": "PUT",
+  "path": "/api/v1/adminbasicservice/adminbasic/configs",
+  "static_depth": 1,
+  "static_calls": 1
+ },
+ {
+  "service": "ts-admin-basic-info-service",
+  "verb": "POST",
+  "path": "/api/v1/adminbasicservice/adminbasic/configs",
+  "static_depth": 1,
+  "static_calls": 1
+ },
+ {
+  "service": "ts-admin-basic-info-service",
+  "verb": "GET",
+  "path": "/api/v1/adminbasicservice/adminbasic/prices",
+  "static_depth": 1,
+  "static_calls": 1
+ },
+ {
+  "service": "ts-admin-basic-info-service",
+  "verb": "DELETE",
+  "path": "/api/v1/adminbasicservice/adminbasic/prices",
+  "static_depth": 1,
+  "static_calls": 1
+ },
+ {
+  "service": "ts-admin-basic-info-service",
+  "verb": "PUT",
+  "path": "/api/v1/adminbasicservice/adminbasic/prices",
+  "static_depth": 1,
+  "static_calls": 1
+ },
+ {
+  "service": "ts-admin-basic-info-service",
+  "verb": "POST",
+  "path": "/api/v1/adminbasicservice/adminbasic/prices",
+  "static_depth": 1,
+  "static_calls": 1
+ },
+ {
+  "service": "ts-admin-order-service",
+  "verb": "GET",
+  "path": "/api/v1/adminorderservice/adminorder",
+  "static_depth": 2,
+  "static_calls": 3
+ },
+ {
+  "service": "ts-admin-order-service",
+  "verb": "POST",
+  "path": "/api/v1/adminorderservice/adminorder",
+  "static_depth": 2,
+  "static_calls": 3
+ },
+ {
+  "service": "ts-admin-order-service",
+  "verb": "PUT",
+  "path": "/api/v1/adminorderservice/adminorder",
+  "static_depth": 2,
+  "static_calls": 3
+ },
+ {
+  "service": "ts-admin-order-service",
+  "verb": "DELETE",
+  "path": "/api/v1/adminorderservice/adminorder/{orderId}/{trainNumber}",
+  "static_depth": 2,
+  "static_calls": 3
+ },
+ {
+  "service": "ts-admin-route-service",
+  "verb": "GET",
+  "path": "/api/v1/adminrouteservice/adminroute",
+  "static_depth": 2,
+  "static_calls": 2
+ },
+ {
+  "service": "ts-admin-route-service",
+  "verb": "POST",
+  "path": "/api/v1/adminrouteservice/adminroute",
+  "static_depth": 2,
+  "static_calls": 2
+ },
+ {
+  "service": "ts-admin-route-service",
+  "verb": "DELETE",
+  "path": "/api/v1/adminrouteservice/adminroute/{routeId}",
+  "static_depth": 2,
+  "static_calls": 2
+ },
+ {
+  "service": "ts-admin-travel-service",
+  "verb": "GET",
+  "path": "/api/v1/admintravelservice/admintravel",
+  "static_depth": 3,
+  "static_calls": 7
+ },
+ {
+  "service": "ts-admin-travel-service",
+  "verb": "POST",
+  "path": "/api/v1/admintravelservice/admintravel",
+  "static_depth": 1,
+  "static_calls": 1
+ },
+ {
+  "service": "ts-admin-travel-service",
+  "verb": "PUT",
+  "path": "/api/v1/admintravelservice/admintravel",
+  "static_depth": 1,
+  "static_calls": 1
+ },
+ {
+  "service": "ts-admin-travel-service",
+  "verb": "DELETE",
+  "path": "/api/v1/admintravelservice/admintravel/{tripId}",
+  "static_depth": 1,
+  "static_calls": 1
+ },
+ {
+  "service": "ts-admin-user-service",
+  "verb": "GET",
+  "path": "/api/v1/adminuserservice/users",
+  "static_depth": 1,
+  "static_calls": 1
+ },
+ {
+  "service": "ts-admin-user-service",
+  "verb": "PUT",
+  "path": "/api/v1/adminuserservice/users",
+  "static_depth": 1,
+  "static_calls": 1
+ },
+ {
+  "service": "ts-admin-user-service",
+  "verb": "POST",
+  "path": "/api/v1/adminuserservice/users",
+  "static_depth": 1,
+  "static_calls": 1
+ },
+ {
+  "service": "ts-admin-user-service",
+  "verb": "DELETE",
+  "path": "/api/v1/adminuserservice/users/{userId}",
+  "static_depth": 1,
+  "static_calls": 1
+ },
+ {
+  "service": "ts-assurance-service",
+  "verb": "GET",
+  "path": "/api/v1/assuranceservice/assurances",
+  "static_depth": 1,
+  "static_calls": 1
+ },
+ {
+  "service": "ts-assurance-service",
+  "verb": "GET",
+  "path": "/api/v1/assuranceservice/assurances/types",
+  "static_depth": 1,
+  "static_calls": 1
+ },
+ {
+  "service": "ts-assurance-service",
+  "verb": "DELETE",
+  "path": "/api/v1/assuranceservice/assurances/assuranceid/{assuranceId}",
+  "static_depth": 1,
+  "static_calls": 1
+ },
+ {
+  "service": "ts-assurance-service",
+  "verb": "DELETE",
+  "path": "/api/v1/assuranceservice/assurances/orderid/{orderId}",
+  "static_depth": 1,
+  "static_calls": 1
+ },
+ {
+  "service": "ts-assurance-service",
+  "verb": "PATCH",
+  "path": "/api/v1/assuranceservice/assurances/{assuranceId}/{orderId}/{typeIndex}",
+  "static_depth": 1,
+  "static_calls": 1
+ },
+ {
+  "service": "ts-assurance-service",
+  "verb": "GET",
+  "path": "/api/v1/assuranceservice/assurances/{typeIndex}/{orderId}",
+  "static_depth": 1,
+  "static_calls": 1
+ },
+ {
+  "service": "ts-assurance-service",
+  "verb": "GET",
+  "path": "/api/v1/assuranceservice/assurances/assuranceid/{assuranceId}",
+  "static_depth": 1,
+  "static_calls": 1
+ },
+ {
+  "service": "ts-assurance-service",
+  "verb": "GET",
+  "path": "/api/v1/assuranceservice/assurance/orderid/{orderId}",
+  "static_depth": 1,
+  "static_calls": 1
+ },
+ {
+  "service": "ts-auth-service",
+  "verb": "POST",
+  "path": "/api/v1/auth",
+  "static_depth": 1,
+  "static_calls": 1
+ },
+ {
+  "service": "ts-auth-service",
+  "verb": "POST",
+  "path": "/api/v1/users/login",
+  "static_depth": 2,
+  "static_calls": 2
+ },
+ {
+  "service": "ts-auth-service",
+  "verb": "GET",
+  "path": "/api/v1/users",
+  "static_depth": 1,
+  "static_calls": 1
+ },
+ {
+  "service": "ts-auth-service",
+  "verb": "DELETE",
+  "path": "/api/v1/users/{userId}",
+  "static_depth": 1,
+  "static_calls": 1
+ },
+ {
+  "service": "ts-basic-service",
+  "verb": "POST",
+  "path": "/api/v1/basicservice/basic/travel",
+  "static_depth": 2,
+  "static_calls": 5
+ },
+ {
+  "service": "ts-basic-service",
+  "verb": "GET",
+  "path": "/api/v1/basicservice/basic/{stationName}",
+  "static_depth": 2,
+  "static_calls": 2
+ },
+ {
+  "service": "ts-cancel-service",
+  "verb": "GET",
+  "path": "/api/v1/cancelservice/cancel/refound/{orderId}",
+  "static_depth": 2,
+  "static_calls": 8
+ },
+ {
+  "service": "ts-cancel-service",
+  "verb": "GET",
+  "path": "/api/v1/cancelservice/cancel/{orderId}/{loginId}",
+  "static_depth": 2,
+  "static_calls": 8
+ },
+ {
+  "service": "ts-config-service",
+  "verb": "GET",
+  "path": "/api/v1/configservice/configs",
+  "static_depth": 1,
+  "static_calls": 1
+ },
+ {
+  "service": "ts-config-service",
+  "verb": "POST",
+  "path": "/api/v1/configservice/configs",
+  "static_depth": 1,
+  "static_calls": 1
+ },
+ {
+  "service": "ts-config-service",
+  "verb": "PUT",
+  "path": "/api/v1/configservice/configs",
+  "static_depth": 1,
+  "static_calls": 1
+ },
+ {
+  "service": "ts-config-service",
+  "verb": "DELETE",
+  "path": "/api/v1/configservice/configs/{configName}",
+  "static_depth": 1,
+  "static_calls": 1
+ },
+ {
+  "service": "ts-config-service",
+  "verb": "GET",
+  "path": "/api/v1/configservice/configs/{configName}",
+  "static_depth": 1,
+  "static_calls": 1
+ },
+ {
+  "service": "ts-consign-price-service",
+  "verb": "GET",
+  "path": "/api/v1/consignpriceservice/consignprice/{weight}/{isWithinRegion}",
+  "static_depth": 1,
+  "static_calls": 1
+ },
+ {
+  "service": "ts-consign-price-service",
+  "verb": "GET",
+  "path": "/api/v1/consignpriceservice/consignprice/price",
+  "static_depth": 1,
+  "static_calls": 1
+ },
+ {
+  "service": "ts-consign-price-service",
+  "verb": "GET",
+  "path": "/api/v1/consignpriceservice/consignprice/config",
+  "static_depth": 1,
+  "static_calls": 1
+ },
+ {
+  "service": "ts-consign-price-service",
+  "verb": "POST",
+  "path": "/api/v1/consignpriceservice/consignprice",
+  "static_depth": 1,
+  "static_calls": 1
+ },
+ {
+  "service": "ts-consign-service",
+  "verb": "POST",
+  "path": "/api/v1/consignservice/consigns",
+  "static_depth": 2,
+  "static_calls": 2
+ },
+ {
+  "service": "ts-consign-service",
+  "verb": "PUT",
+  "path": "/api/v1/consignservice/consigns",
+  "static_depth": 2,
+  "static_calls": 2
+ },
+ {
+  "service": "ts-consign-service",
+  "verb": "GET",
+  "path": "/api/v1/consignservice/consigns/account/{id}",
+  "static_depth": 1,
+  "static_calls": 1
+ },
+ {
+  "service": "ts-consign-service",
+  "verb": "GET",
+  "path": "/api/v1/consignservice/consigns/order/{id}",
+  "static_depth": 1,
+  "static_calls": 1
+ },
+ {
+  "service": "ts-consign-service",
+  "verb": "GET",
+  "path": "/api/v1/consignservice/consigns/{consignee}",
+  "static_depth": 1,
+  "static_calls": 1
+ },
+ {
+  "service": "ts-contacts-service",
+  "verb": "GET",
+  "path": "/api/v1/contactservice/contacts",
+  "static_depth": 1,
+  "static_calls": 1
+ },
+ {
+  "service": "ts-contacts-service",
+  "verb": "POST",
+  "path": "/api/v1/contactservice/contacts",
+  "static_depth": 1,
+  "static_calls": 1
+ },
+ {
+  "service": "ts-contacts-service",
+  "verb": "POST",
+  "path": "/api/v1/contactservice/contacts/admin",
+  "static_depth": 1,
+  "static_calls": 1
+ },
+ {
+  "service": "ts-contacts-service",
+  "verb": "DELETE",
+  "path": "/api/v1/contactservice/contacts/{contactsId}",
+  "static_depth": 1,
+  "static_calls": 1
+ },
+ {
+  "service": "ts-contacts-service",
+  "verb": "PUT",
+  "path": "/api/v1/contactservice/contacts",
+  "static_depth": 1,
+  "static_calls": 1
+ },
+ {
+  "service": "ts-contacts-service",
+  "verb": "GET",
+  "path": "/api/v1/contactservice/contacts/account/{accountId}",
+  "static_depth": 1,
+  "static_calls": 1
+ },
+ {
+  "service": "ts-contacts-service",
+  "verb": "GET",
+  "path": "/api/v1/contactservice/contacts/{id}",
+  "static_depth": 1,
+  "static_calls": 1
+ },
+ {
+  "service": "ts-execute-service",
+  "verb": "GET",
+  "path": "/api/v1/executeservice/execute/execute/{orderId}",
+  "static_depth": 2,
+  "static_calls": 5
+ },
+ {
+  "service": "ts-execute-service",
+  "verb": "GET",
+  "path": "/api/v1/executeservice/execute/collected/{orderId}",
+  "static_depth": 2,
+  "static_calls": 5
+ },
+ {
+  "service": "ts-food-map-service",
+  "verb": "GET",
+  "path": "/api/v1/foodmapservice/foodstores",
+  "static_depth": 1,
+  "static_calls": 1
+ },
+ {
+  "service": "ts-food-map-service",
+  "verb": "GET",
+  "path": "/api/v1/foodmapservice/foodstores/{stationId}",
+  "static_depth": 1,
+  "static_calls": 1
+ },
+ {
+  "service": "ts-food-map-service",
+  "verb": "POST",
+  "path": "/api/v1/foodmapservice/foodstores",
+  "static_depth": 1,
+  "static_calls": 1
+ },
+ {
+  "service": "ts-food-map-service",
+  "verb": "GET",
+  "path": "/api/v1/foodmapservice/trainfoods",
+  "static_depth": 1,
+  "static_calls": 1
+ },
+ {
+  "service": "ts-food-map-service",
+  "verb": "GET",
+  "path": "/api/v1/foodmapservice/trainfoods/{tripId}",
+  "static_depth": 1,
+  "static_calls": 1
+ },
+ {
+  "service": "ts-food-service",
+  "verb": "GET",
+  "path": "/api/v1/foodservice/orders",
+  "static_depth": 1,
+  "static_calls": 1
+ },
+ {
+  "service": "ts-food-service",
+  "verb": "POST",
+  "path": "/api/v1/foodservice/orders",
+  "static_depth": 1,
+  "static_calls": 1
+ },
+ {
+  "service": "ts-food-service",
+  "verb": "PUT",
+  "path": "/api/v1/foodservice/orders",
+  "static_depth": 1,
+  "static_calls": 1
+ },
+ {
+  "service": "ts-food-service",
+  "verb": "DELETE",
+  "path": "/api/v1/foodservice/orders/{orderId}",
+  "static_depth": 1,
+  "static_calls": 1
+ },
+ {
+  "service": "ts-food-service",
+  "verb": "GET",
+  "path": "/api/v1/foodservice/orders/{orderId}",
+  "static_depth": 1,
+  "static_calls": 1
+ },
+ {
+  "service": "ts-food-service",
+  "verb": "GET",
+  "path": "/api/v1/foodservice/foods/{date}/{startStation}/{endStation}/{tripId}",
+  "static_depth": 3,
+  "static_calls": 6
+ },
+ {
+  "service": "ts-inside-payment-service",
+  "verb": "POST",
+  "path": "/api/v1/inside_pay_service/inside_payment",
+  "static_depth": 2,
+  "static_calls": 4
+ },
+ {
+  "service": "ts-inside-payment-service",
+  "verb": "POST",
+  "path": "/api/v1/inside_pay_service/inside_payment/account",
+  "static_depth": 1,
+  "static_calls": 1
+ },
+ {
+  "service": "ts-inside-payment-service",
+  "verb": "GET",
+  "path": "/api/v1/inside_pay_service/inside_payment/{userId}/{money}",
+  "static_depth": 1,
+  "static_calls": 1
+ },
+ {
+  "service": "ts-inside-payment-service",
+  "verb": "GET",
+  "path": "/api/v1/inside_pay_service/inside_payment/payment",
+  "static_depth": 1,
+  "static_calls": 1
+ },
+ {
+  "service": "ts-inside-payment-service",
+  "verb": "GET",
+  "path": "/api/v1/inside_pay_service/inside_payment/account",
+  "static_depth": 1,
+  "static_calls": 1
+ },
+ {
+  "service": "ts-inside-payment-service",
+  "verb": "GET",
+  "path": "/api/v1/inside_pay_service/inside_payment/drawback/{userId}/{money}",
+  "static_depth": 1,
+  "static_calls": 1
+ },
+ {
+  "service": "ts-inside-payment-service",
+  "verb": "POST",
+  "path": "/api/v1/inside_pay_service/inside_payment/difference",
+  "static_depth": 2,
+  "static_calls": 2
+ },
+ {
+  "service": "ts-inside-payment-service",
+  "verb": "GET",
+  "path": "/api/v1/inside_pay_service/inside_payment/money",
+  "static_depth": 1,
+  "static_calls": 1
+ },
+ {
+  "service": "ts-notification-service",
+  "verb": "POST",
+  "path": "/api/v1/notifyservice/notification/preserve_success",
+  "static_depth": 1,
+  "static_calls": 1
+ },
+ {
+  "service": "ts-notification-service",
+  "verb": "POST",
+  "path": "/api/v1/notifyservice/notification/order_create_success",
+  "static_depth": 1,
+  "static_calls": 1
+ },
+ {
+  "service": "ts-notification-service",
+  "verb": "POST",
+  "path": "/api/v1/notifyservice/notification/order_changed_success",
+  "static_depth": 1,
+  "static_calls": 1
+ },
+ {
+  "service": "ts-notification-service",
+  "verb": "POST",
+  "path": "/api/v1/notifyservice/notification/order_cancel_success",
+  "static_depth": 1,
+  "static_calls": 1
+ },
+ {
+  "service": "ts-order-other-service",
+  "verb": "POST",
+  "path": "/api/v1/orderOtherService/orderOther/tickets",
+  "static_depth": 1,
+  "static_calls": 1
+ },
+ {
+  "service": "ts-order-other-service",
+  "verb": "POST",
+  "path": "/api/v1/orderOtherService/orderOther",
+  "static_depth": 1,
+  "static_calls": 1
+ },
+ {
+  "service": "ts-order-other-service",
+  "verb": "POST",
+  "path": "/api/v1/orderOtherService/orderOther/admin",
+  "static_depth": 1,
+  "static_calls": 1
+ },
+ {
+  "service": "ts-order-other-service",
+  "verb": "POST",
+  "path": "/api/v1/orderOtherService/orderOther/query",
+  "static_depth": 1,
+  "static_calls": 1
+ },
+ {
+  "service": "ts-order-other-service",
+  "verb": "POST",
+  "path": "/api/v1/orderOtherService/orderOther/refresh",
+  "static_depth": 2,
+  "static_calls": 2
+ },
+ {
+  "service": "ts-order-other-service",
+  "verb": "GET",
+  "path": "/api/v1/orderOtherService/orderOther/{travelDate}/{trainNumber}",
+  "static_depth": 1,
+  "static_calls": 1
+ },
+ {
+  "service": "ts-order-other-service",
+  "verb": "GET",
+  "path": "/api/v1/orderOtherService/orderOther/price/{orderId}",
+  "static_depth": 1,
+  "static_calls": 1
+ },
+ {
+  "service": "ts-order-other-service",
+  "verb": "GET",
+  "path": "/api/v1/orderOtherService/orderOther/orderPay/{orderId}",
+  "static_depth": 1,
+  "static_calls": 1
+ },
+ {
+  "service": "ts-order-other-service",
+  "verb": "GET",
+  "path": "/api/v1/orderOtherService/orderOther/{orderId}",
+  "static_depth": 1,
+  "static_calls": 1
+ },
+ {
+  "service": "ts-order-other-service",
+  "verb": "GET",
+  "path": "/api/v1/orderOtherService/orderOther/status/{orderId}/{status}",
+  "static_depth": 1,
+  "static_calls": 1
+ },
+ {
+  "service": "ts-order-other-service",
+  "verb": "GET",
+  "path": "/api/v1/orderOtherService/orderOther/security/{checkDate}/{accountId}",
+  "static_depth": 1,
+  "static_calls": 1
+ },
+ {
+  "service": "ts-order-other-service",
+  "verb": "PUT",
+  "path": "/api/v1/orderOtherService/orderOther",
+  "static_depth": 1,
+  "static_calls": 1
+ },
+ {
+  "service": "ts-order-other-service",
+  "verb": "PUT",
+  "path": "/api/v1/orderOtherService/orderOther/admin",
+  "static_depth": 1,
+  "static_calls": 1
+ },
+ {
+  "service": "ts-order-other-service",
+  "verb": "DELETE",
+  "path": "/api/v1/orderOtherService/orderOther/{orderId}",
+  "static_depth": 1,
+  "static_calls": 1
+ },
+ {
+  "service": "ts-order-other-service",
+  "verb": "GET",
+  "path": "/api/v1/orderOtherService/orderOther",
+  "static_depth": 1,
+  "static_calls": 1
+ },
+ {
+  "service": "ts-order-service",
+  "verb": "POST",
+  "path": "/api/v1/orderservice/order/tickets",
+  "static_depth": 1,
+  "static_calls": 1
+ },
+ {
+  "service": "ts-order-service",
+  "verb": "POST",
+  "path": "/api/v1/orderservice/order",
+  "static_depth": 1,
+  "static_calls": 1
+ },
+ {
+  "service": "ts-order-service",
+  "verb": "POST",
+  "path": "/api/v1/orderservice/order/admin",
+  "static_depth": 1,
+  "static_calls": 1
+ },
+ {
+  "service": "ts-order-service",
+  "verb": "POST",
+  "path": "/api/v1/orderservice/order/query",
+  "static_depth": 1,
+  "static_calls": 1
+ },
+ {
+  "service": "ts-order-service",
+  "verb": "POST",
+  "path": "/api/v1/orderservice/order/refresh",
+  "static_depth": 2,
+  "static_calls": 2
+ },
+ {
+  "service": "ts-order-service",
+  "verb": "GET",
+  "path": "/api/v1/orderservice/order/{travelDate}/{trainNumber}",
+  "static_depth": 1,
+  "static_calls": 1
+ },
+ {
+  "service": "ts-order-service",
+  "verb": "GET",
+  "path": "/api/v1/orderservice/order/price/{orderId}",
+  "static_depth": 1,
+  "static_calls": 1
+ },
+ {
+  "service": "ts-order-service",
+  "verb": "GET",
+  "path": "/api/v1/orderservice/order/orderPay/{orderId}",
+  "static_depth": 1,
+  "static_calls": 1
+ },
+ {
+  "service": "ts-order-service",
+  "verb": "GET",
+  "path": "/api/v1/orderservice/order/{orderId}",
+  "static_depth": 1,
+  "static_calls": 1
+ },
+ {
+  "service": "ts-order-service",
+  "verb": "GET",
+  "path": "/api/v1/orderservice/order/status/{orderId}/{status}",
+  "static_depth": 1,
+  "static_calls": 1
+ },
+ {
+  "service": "ts-order-service",
+  "verb": "GET",
+  "path": "/api/v1/orderservice/order/security/{checkDate}/{accountId}",
+  "static_depth": 1,
+  "static_calls": 1
+ },
+ {
+  "service": "ts-order-service",
+  "verb": "PUT",
+  "path": "/api/v1/orderservice/order",
+  "static_depth": 1,
+  "static_calls": 1
+ },
+ {
+  "service": "ts-order-service",
+  "verb": "PUT",
+  "path": "/api/v1/orderservice/order/admin",
+  "static_depth": 1,
+  "static_calls": 1
+ },
+ {
+  "service": "ts-order-service",
+  "verb": "DELETE",
+  "path": "/api/v1/orderservice/order/{orderId}",
+  "static_depth": 1,
+  "static_calls": 1
+ },
+ {
+  "service": "ts-order-service",
+  "verb": "GET",
+  "path": "/api/v1/orderservice/order",
+  "static_depth": 1,
+  "static_calls": 1
+ },
+ {
+  "service": "ts-payment-service",
+  "verb": "POST",
+  "path": "/api/v1/paymentservice/payment",
+  "static_depth": 1,
+  "static_calls": 1
+ },
+ {
+  "service": "ts-payment-service",
+  "verb": "POST",
+  "path": "/api/v1/paymentservice/payment/money",
+  "static_depth": 1,
+  "static_calls": 1
+ },
+ {
+  "service": "ts-payment-service",
+  "verb": "GET",
+  "path": "/api/v1/paymentservice/payment",
+  "static_depth": 1,
+  "static_calls": 1
+ },
+ {
+  "service": "ts-preserve-other-service",
+  "verb": "POST",
+  "path": "/api/v1/preserveotherservice/preserveOther",
+  "static_depth": 5,
+  "static_calls": 55
+ },
+ {
+  "service": "ts-preserve-service",
+  "verb": "POST",
+  "path": "/api/v1/preserveservice/preserve",
+  "static_depth": 5,
+  "static_calls": 55
+ },
+ {
+  "service": "ts-price-service",
+  "verb": "GET",
+  "path": "/api/v1/priceservice/prices/{routeId}/{trainType}",
+  "static_depth": 1,
+  "static_calls": 1
+ },
+ {
+  "service": "ts-price-service",
+  "verb": "GET",
+  "path": "/api/v1/priceservice/prices",
+  "static_depth": 1,
+  "static_calls": 1
+ },
+ {
+  "service": "ts-price-service",
+  "verb": "POST",
+  "path": "/api/v1/priceservice/prices",
+  "static_depth": 1,
+  "static_calls": 1
+ },
+ {
+  "service": "ts-price-service",
+  "verb": "DELETE",
+  "path": "/api/v1/priceservice/prices",
+  "static_depth": 1,
+  "static_calls": 1
+ },
+ {
+  "service": "ts-price-service",
+  "verb": "PUT",
+  "path": "/api/v1/priceservice/prices",
+  "static_depth": 1,
+  "static_calls": 1
+ },
+ {
+  "service": "ts-rebook-service",
+  "verb": "POST",
+  "path": "/api/v1/rebookservice/rebook/difference",
+  "static_depth": 4,
+  "static_calls": 15
+ },
+ {
+  "service": "ts-rebook-service",
+  "verb": "POST",
+  "path": "/api/v1/rebookservice/rebook",
+  "static_depth": 4,
+  "static_calls": 14
+ },
+ {
+  "service": "ts-route-plan-service",
+  "verb": "POST",
+  "path": "/api/v1/routeplanservice/routePlan/cheapestRoute",
+  "static_depth": 5,
+  "static_calls": 51
+ },
+ {
+  "service": "ts-route-plan-service",
+  "verb": "POST",
+  "path": "/api/v1/routeplanservice/routePlan/quickestRoute",
+  "static_depth": 5,
+  "static_calls": 51
+ },
+ {
+  "service": "ts-route-plan-service",
+  "verb": "POST",
+  "path": "/api/v1/routeplanservice/routePlan/minStopStations",
+  "static_depth": 2,
+  "static_calls": 5
+ },
+ {
+  "service": "ts-route-service",
+  "verb": "POST",
+  "path": "/api/v1/routeservice/routes",
+  "static_depth": 1,
+  "static_calls": 1
+ },
+ {
+  "service": "ts-route-service",
+  "verb": "DELETE",
+  "path": "/api/v1/routeservice/routes/{routeId}",
+  "static_depth": 1,
+  "static_calls": 1
+ },
+ {
+  "service": "ts-route-service",
+  "verb": "GET",
+  "path": "/api/v1/routeservice/routes/{routeId}",
+  "static_depth": 1,
+  "static_calls": 1
+ },
+ {
+  "service": "ts-route-service",
+  "verb": "GET",
+  "path": "/api/v1/routeservice/routes",
+  "static_depth": 1,
+  "static_calls": 1
+ },
+ {
+  "service": "ts-route-service",
+  "verb": "GET",
+  "path": "/api/v1/routeservice/routes/{startId}/{terminalId}",
+  "static_depth": 1,
+  "static_calls": 1
+ },
+ {
+  "service": "ts-seat-service",
+  "verb": "POST",
+  "path": "/api/v1/seatservice/seats",
+  "static_depth": 3,
+  "static_calls": 11
+ },
+ {
+  "service": "ts-seat-service",
+  "verb": "POST",
+  "path": "/api/v1/seatservice/seats/left_tickets",
+  "static_depth": 3,
+  "static_calls": 12
+ },
+ {
+  "service": "ts-security-service",
+  "verb": "GET",
+  "path": "/api/v1/securityservice/securityConfigs",
+  "static_depth": 1,
+  "static_calls": 1
+ },
+ {
+  "service": "ts-security-service",
+  "verb": "POST",
+  "path": "/api/v1/securityservice/securityConfigs",
+  "static_depth": 1,
+  "static_calls": 1
+ },
+ {
+  "service": "ts-security-service",
+  "verb": "PUT",
+  "path": "/api/v1/securityservice/securityConfigs",
+  "static_depth": 1,
+  "static_calls": 1
+ },
+ {
+  "service": "ts-security-service",
+  "verb": "DELETE",
+  "path": "/api/v1/securityservice/securityConfigs/{id}",
+  "static_depth": 1,
+  "static_calls": 1
+ },
+ {
+  "service": "ts-security-service",
+  "verb": "GET",
+  "path": "/api/v1/securityservice/securityConfigs/{accountId}",
+  "static_depth": 2,
+  "static_calls": 3
+ },
+ {
+  "service": "ts-station-service",
+  "verb": "GET",
+  "path": "/api/v1/stationservice/stations",
+  "static_depth": 1,
+  "static_calls": 1
+ },
+ {
+  "service": "ts-station-service",
+  "verb": "POST",
+  "path": "/api/v1/stationservice/stations",
+  "static_depth": 1,
+  "static_calls": 1
+ },
+ {
+  "service": "ts-station-service",
+  "verb": "PUT",
+  "path": "/api/v1/stationservice/stations",
+  "static_depth": 1,
+  "static_calls": 1
+ },
+ {
+  "service": "ts-station-service",
+  "verb": "DELETE",
+  "path": "/api/v1/stationservice/stations",
+  "static_depth": 1,
+  "static_calls": 1
+ },
+ {
+  "service": "ts-station-service",
+  "verb": "GET",
+  "path": "/api/v1/stationservice/stations/id/{stationNameForId}",
+  "static_depth": 1,
+  "static_calls": 1
+ },
+ {
+  "service": "ts-station-service",
+  "verb": "POST",
+  "path": "/api/v1/stationservice/stations/idlist",
+  "static_depth": 1,
+  "static_calls": 1
+ },
+ {
+  "service": "ts-station-service",
+  "verb": "GET",
+  "path": "/api/v1/stationservice/stations/name/{stationIdForName}",
+  "static_depth": 1,
+  "static_calls": 1
+ },
+ {
+  "service": "ts-station-service",
+  "verb": "POST",
+  "path": "/api/v1/stationservice/stations/namelist",
+  "static_depth": 1,
+  "static_calls": 1
+ },
+ {
+  "service": "ts-ticketinfo-service",
+  "verb": "POST",
+  "path": "/api/v1/ticketinfoservice/ticketinfo",
+  "static_depth": 3,
+  "static_calls": 6
+ },
+ {
+  "service": "ts-ticketinfo-service",
+  "verb": "GET",
+  "path": "/api/v1/ticketinfoservice/ticketinfo/{name}",
+  "static_depth": 3,
+  "static_calls": 3
+ },
+ {
+  "service": "ts-train-service",
+  "verb": "POST",
+  "path": "/api/v1/trainservice/trains",
+  "static_depth": 1,
+  "static_calls": 1
+ },
+ {
+  "service": "ts-train-service",
+  "verb": "GET",
+  "path": "/api/v1/trainservice/trains/{id}",
+  "static_depth": 1,
+  "static_calls": 1
+ },
+ {
+  "service": "ts-train-service",
+  "verb": "PUT",
+  "path": "/api/v1/trainservice/trains",
+  "static_depth": 1,
+  "static_calls": 1
+ },
+ {
+  "service": "ts-train-service",
+  "verb": "DELETE",
+  "path": "/api/v1/trainservice/trains/{id}",
+  "static_depth": 1,
+  "static_calls": 1
+ },
+ {
+  "service": "ts-train-service",
+  "verb": "GET",
+  "path": "/api/v1/trainservice/trains",
+  "static_depth": 1,
+  "static_calls": 1
+ },
+ {
+  "service": "ts-travel-plan-service",
+  "verb": "POST",
+  "path": "/api/v1/travelplanservice/travelPlan/transferResult",
+  "static_depth": 5,
+  "static_calls": 51
+ },
+ {
+  "service": "ts-travel-plan-service",
+  "verb": "POST",
+  "path": "/api/v1/travelplanservice/travelPlan/cheapest",
+  "static_depth": 6,
+  "static_calls": 68
+ },
+ {
+  "service": "ts-travel-plan-service",
+  "verb": "POST",
+  "path": "/api/v1/travelplanservice/travelPlan/quickest",
+  "static_depth": 6,
+  "static_calls": 68
+ },
+ {
+  "service": "ts-travel-plan-service",
+  "verb": "POST",
+  "path": "/api/v1/travelplanservice/travelPlan/minStation",
+  "static_depth": 4,
+  "static_calls": 22
+ },
+ {
+  "service": "ts-travel-service",
+  "verb": "GET",
+  "path": "/api/v1/travelservice/train_types/{tripId}",
+  "static_depth": 2,
+  "static_calls": 2
+ },
+ {
+  "service": "ts-travel-service",
+  "verb": "GET",
+  "path": "/api/v1/travelservice/routes/{tripId}",
+  "static_depth": 2,
+  "static_calls": 2
+ },
+ {
+  "service": "ts-travel-service",
+  "verb": "POST",
+  "path": "/api/v1/travelservice/trips/routes",
+  "static_depth": 1,
+  "static_calls": 1
+ },
+ {
+  "service": "ts-travel-service",
+  "verb": "POST",
+  "path": "/api/v1/travelservice/trips",
+  "static_depth": 1,
+  "static_calls": 1
+ },
+ {
+  "service": "ts-travel-service",
+  "verb": "GET",
+  "path": "/api/v1/travelservice/trips/{tripId}",
+  "static_depth": 1,
+  "static_calls": 1
+ },
+ {
+  "service": "ts-travel-service",
+  "verb": "PUT",
+  "path": "/api/v1/travelservice/trips",
+  "static_depth": 1,
+  "static_calls": 1
+ },
+ {
+  "service": "ts-travel-service",
+  "verb": "DELETE",
+  "path": "/api/v1/travelservice/trips/{tripId}",
+  "static_depth": 1,
+  "static_calls": 1
+ },
+ {
+  "service": "ts-travel-service",
+  "verb": "POST",
+  "path": "/api/v1/travelservice/trips/left",
+  "static_depth": 4,
+  "static_calls": 25
+ },
+ {
+  "service": "ts-travel-service",
+  "verb": "POST",
+  "path": "/api/v1/travelservice/trip_detail",
+  "static_depth": 4,
+  "static_calls": 25
+ },
+ {
+  "service": "ts-travel-service",
+  "verb": "GET",
+  "path": "/api/v1/travelservice/trips",
+  "static_depth": 1,
+  "static_calls": 1
+ },
+ {
+  "service": "ts-travel-service",
+  "verb": "GET",
+  "path": "/api/v1/travelservice/admin_trip",
+  "static_depth": 2,
+  "static_calls": 3
+ },
+ {
+  "service": "ts-travel2-service",
+  "verb": "GET",
+  "path": "/api/v1/travel2service/train_types/{tripId}",
+  "static_depth": 2,
+  "static_calls": 2
+ },
+ {
+  "service": "ts-travel2-service",
+  "verb": "GET",
+  "path": "/api/v1/travel2service/routes/{tripId}",
+  "static_depth": 2,
+  "static_calls": 2
+ },
+ {
+  "service": "ts-travel2-service",
+  "verb": "POST",
+  "path": "/api/v1/travel2service/trips/routes",
+  "static_depth": 1,
+  "static_calls": 1
+ },
+ {
+  "service": "ts-travel2-service",
+  "verb": "POST",
+  "path": "/api/v1/travel2service/trips",
+  "static_depth": 1,
+  "static_calls": 1
+ },
+ {
+  "service": "ts-travel2-service",
+  "verb": "GET",
+  "path": "/api/v1/travel2service/trips/{tripId}",
+  "static_depth": 1,
+  "static_calls": 1
+ },
+ {
+  "service": "ts-travel2-service",
+  "verb": "PUT",
+  "path": "/api/v1/travel2service/trips",
+  "static_depth": 1,
+  "static_calls": 1
+ },
+ {
+  "service": "ts-travel2-service",
+  "verb": "DELETE",
+  "path": "/api/v1/travel2service/trips/{tripId}",
+  "static_depth": 1,
+  "static_calls": 1
+ },
+ {
+  "service": "ts-travel2-service",
+  "verb": "POST",
+  "path": "/api/v1/travel2service/trips/left",
+  "static_depth": 4,
+  "static_calls": 25
+ },
+ {
+  "service": "ts-travel2-service",
+  "verb": "POST",
+  "path": "/api/v1/travel2service/trip_detail",
+  "static_depth": 4,
+  "static_calls": 25
+ },
+ {
+  "service": "ts-travel2-service",
+  "verb": "GET",
+  "path": "/api/v1/travel2service/trips",
+  "static_depth": 1,
+  "static_calls": 1
+ },
+ {
+  "service": "ts-travel2-service",
+  "verb": "GET",
+  "path": "/api/v1/travel2service/admin_trip",
+  "static_depth": 2,
+  "static_calls": 3
+ },
+ {
+  "service": "ts-user-service",
+  "verb": "GET",
+  "path": "/api/v1/userservice/users",
+  "static_depth": 1,
+  "static_calls": 1
+ },
+ {
+  "service": "ts-user-service",
+  "verb": "GET",
+  "path": "/api/v1/userservice/users/{userName}",
+  "static_depth": 1,
+  "static_calls": 1
+ },
+ {
+  "service": "ts-user-service",
+  "verb": "GET",
+  "path": "/api/v1/userservice/users/id/{userId}",
+  "static_depth": 1,
+  "static_calls": 1
+ },
+ {
+  "service": "ts-user-service",
+  "verb": "POST",
+  "path": "/api/v1/userservice/users/register",
+  "static_depth": 2,
+  "static_calls": 2
+ },
+ {
+  "service": "ts-user-service",
+  "verb": "DELETE",
+  "path": "/api/v1/userservice/users/{userId}",
+  "static_depth": 1,
+  "static_calls": 1
+ },
+ {
+  "service": "ts-user-service",
+  "verb": "PUT",
+  "path": "/api/v1/userservice/users",
+  "static_depth": 1,
+  "static_calls": 1
+ },
+ {
+  "service": "ts-verification-code-service",
+  "verb": "GET",
+  "path": "/api/v1/verifycode/generate",
+  "static_depth": 1,
+  "static_calls": 1
+ },
+ {
+  "service": "ts-verification-code-service",
+  "verb": "GET",
+  "path": "/api/v1/verifycode/verify/{verifyCode}",
+  "static_depth": 1,
+  "static_calls": 1
+ }
+]

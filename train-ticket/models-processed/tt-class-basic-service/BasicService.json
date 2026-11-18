@@ -1,0 +1,46 @@
+{
+    "name": "BasicService",
+    "key": "_70d5cc65a06849ec97995ec5",
+    "type": "interface",
+    "hasTypeVariable": false,
+    "position": null,
+    "modifiers": [],
+    "fields": {},
+    "methods": {
+        "queryForTravel": {
+            "name": "queryForTravel",
+            "key": "_6bdf7bab7b7c4f73b0212f3b",
+            "returnType": "Response",
+            "parameters": "Travel info, HttpHeaders headers",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": true
+        },
+        "queryForTravels": {
+            "name": "queryForTravels",
+            "key": "_5aea6b0905674c3eb9aec3d1",
+            "returnType": "Response",
+            "parameters": "List<Travel> infos, HttpHeaders headers",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": true
+        },
+        "queryForStationId": {
+            "name": "queryForStationId",
+            "key": "_d216144d81ea4f779918c85f",
+            "returnType": "Response",
+            "parameters": "String stationName, HttpHeaders headers",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": true
+        }
+    },
+    "file_path": "./BasicService",
+    "anonymous": false,
+    "auxclass": false,
+    "implements_": [],
+    "extends_": [],
+    "definedInClassOrInterfaceTypeKey": null,
+    "innerDefinedClasses": {},
+    "innerDefinedInterfaces": {}
+}

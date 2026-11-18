@@ -1,0 +1,22 @@
+{
+    "classification": {
+        "categories": [
+            "Sequence"
+        ],
+        "primary": "Sequence",
+        "is_class_diagram": false,
+        "is_behavioral": true
+    },
+    "detectedTypes": {
+        "uml:Class": 4,
+        "uml:Interaction": 1,
+        "uml:MessageOccurrenceSpecification": 16
+    },
+    "elementCounts": {
+        "classes": 4,
+        "interactions": 1
+    },
+    "totalElements": 5,
+    "diagram_id": "ttf-seq-payment",
+    "source_file": "ttf-seq-payment.json"
+}

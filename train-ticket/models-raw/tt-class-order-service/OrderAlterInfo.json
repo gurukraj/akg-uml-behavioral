@@ -1,0 +1,47 @@
+{
+    "name": "OrderAlterInfo",
+    "key": "_00998d0da4e2417d9e9604b3",
+    "type": "class",
+    "hasTypeVariable": false,
+    "position": null,
+    "modifiers": [],
+    "fields": {
+        "accountId": {
+            "name": "accountId",
+            "key": "_75830015ed3544828ad3cb03",
+            "type": "String",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "previousOrderId": {
+            "name": "previousOrderId",
+            "key": "_11c20af293b147b7b77d1728",
+            "type": "String",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "loginToken": {
+            "name": "loginToken",
+            "key": "_5027ff54eaf844e7bfadee4a",
+            "type": "String",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "newOrderInfo": {
+            "name": "newOrderInfo",
+            "key": "_4914a6e04f8144d4b6af9314",
+            "type": "Order",
+            "visibility": "private",
+            "isStatic": false
+        }
+    },
+    "methods": {},
+    "file_path": "./OrderAlterInfo",
+    "anonymous": false,
+    "auxclass": false,
+    "implements_": [],
+    "extends_": [],
+    "definedInClassOrInterfaceTypeKey": null,
+    "innerDefinedClasses": {},
+    "innerDefinedInterfaces": {}
+}

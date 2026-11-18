@@ -1,0 +1,40 @@
+{
+    "name": "AllTripFood",
+    "key": "_24dfe3b3398149588e778f57",
+    "type": "class",
+    "hasTypeVariable": false,
+    "position": null,
+    "modifiers": [],
+    "fields": {
+        "tripId": {
+            "name": "tripId",
+            "key": "_3b8c13c84d3644f595bed69a",
+            "type": "String",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "foodStoreListMap": {
+            "name": "foodStoreListMap",
+            "key": "_acdcdc65c73b4c5ea26c66ee",
+            "type": "Map<String,List<FoodStore>>",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "trainFoodList": {
+            "name": "trainFoodList",
+            "key": "_25be6555fcbe44098f03100d",
+            "type": "List<TrainFood>",
+            "visibility": "private",
+            "isStatic": false
+        }
+    },
+    "methods": {},
+    "file_path": "./AllTripFood",
+    "anonymous": false,
+    "auxclass": false,
+    "implements_": [],
+    "extends_": [],
+    "definedInClassOrInterfaceTypeKey": null,
+    "innerDefinedClasses": {},
+    "innerDefinedInterfaces": {}
+}

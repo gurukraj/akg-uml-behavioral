@@ -1,0 +1,76 @@
+{
+    "name": "AdminUserServiceImpl",
+    "key": "_2b731f9b111c4a12ab9bd997",
+    "type": "class",
+    "hasTypeVariable": false,
+    "position": null,
+    "modifiers": [],
+    "fields": {},
+    "methods": {
+        "getAllUsers": {
+            "name": "getAllUsers",
+            "key": "_197a277be00f4f348566dc11",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "addUser": {
+            "name": "addUser",
+            "key": "_81b79d85e4804bd3ba61d454",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "UserDto",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "deleteUser": {
+            "name": "deleteUser",
+            "key": "_7ded45e709214d629cd1126c",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "String",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "updateUser": {
+            "name": "updateUser",
+            "key": "_a4e740fc2a2b4d80a006fa85",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "UserDto",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        }
+    },
+    "file_path": "./AdminUserServiceImpl",
+    "anonymous": false,
+    "auxclass": false,
+    "implements_": [
+        "_b680070ffcf9457d92f2a997"
+    ],
+    "extends_": [],
+    "definedInClassOrInterfaceTypeKey": null,
+    "innerDefinedClasses": {},
+    "innerDefinedInterfaces": {}
+}

@@ -1,0 +1,7 @@
+{
+    "name": "FoodServiceImpl_uses_FoodOrderRepository",
+    "key": "_a856219b59b94b36b626a100",
+    "type": "dependency",
+    "source": "_97203e1806974117a8dd5bb1",
+    "target": "_f510e8ae999f41f18c50770f"
+}

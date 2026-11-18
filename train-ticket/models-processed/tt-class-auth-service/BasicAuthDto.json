@@ -1,0 +1,40 @@
+{
+    "name": "BasicAuthDto",
+    "key": "_4823d8bfb3f346968dd6ff9f",
+    "type": "class",
+    "hasTypeVariable": false,
+    "position": null,
+    "modifiers": [],
+    "fields": {
+        "username": {
+            "name": "username",
+            "key": "_f37251448c764269946be114",
+            "type": "String",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "password": {
+            "name": "password",
+            "key": "_29e857d972fd47efba75944b",
+            "type": "String",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "verificationCode": {
+            "name": "verificationCode",
+            "key": "_327d9c8336014454a45c6fad",
+            "type": "String",
+            "visibility": "private",
+            "isStatic": false
+        }
+    },
+    "methods": {},
+    "file_path": "./BasicAuthDto",
+    "anonymous": false,
+    "auxclass": false,
+    "implements_": [],
+    "extends_": [],
+    "definedInClassOrInterfaceTypeKey": null,
+    "innerDefinedClasses": {},
+    "innerDefinedInterfaces": {}
+}

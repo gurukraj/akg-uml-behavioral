@@ -1,0 +1,8 @@
+{
+    "name": "ForkNode_OptionalServices_to_AddConsignment",
+    "key": "_30469ad3d7ad4deaa73a297c",
+    "type": "uml:ControlFlow",
+    "source": "_10d6214267914765b2338906",
+    "target": "_aae1884472294a208a74a83d",
+    "guard": null
+}

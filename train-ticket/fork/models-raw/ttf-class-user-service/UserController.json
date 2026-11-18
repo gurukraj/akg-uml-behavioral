@@ -1,0 +1,102 @@
+{
+    "name": "UserController",
+    "key": "_80805b47dcb84014b9b286dd",
+    "type": "class",
+    "hasTypeVariable": false,
+    "position": null,
+    "modifiers": [],
+    "fields": {},
+    "methods": {
+        "getAllUser": {
+            "name": "getAllUser",
+            "key": "_3c7f9bde591e445aa1806bbd",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "getUserByUserName": {
+            "name": "getUserByUserName",
+            "key": "_2f83c7ec2c5147d0b752e4c5",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "String",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "getUserByUserId": {
+            "name": "getUserByUserId",
+            "key": "_7676c6828bd240b19352ad1a",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "String",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "registerUser": {
+            "name": "registerUser",
+            "key": "_8fb87506496f47c58cbdb3d6",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "UserDto",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "deleteUserById": {
+            "name": "deleteUserById",
+            "key": "_4ef8fb96dbe84644af13bbc8",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "String",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "updateUser": {
+            "name": "updateUser",
+            "key": "_b74c182aa8b848ab95b22d60",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "UserDto",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        }
+    },
+    "file_path": "./UserController",
+    "anonymous": false,
+    "auxclass": false,
+    "implements_": [],
+    "extends_": [],
+    "definedInClassOrInterfaceTypeKey": null,
+    "innerDefinedClasses": {},
+    "innerDefinedInterfaces": {}
+}

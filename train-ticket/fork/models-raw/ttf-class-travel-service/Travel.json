@@ -1,0 +1,47 @@
+{
+    "name": "Travel",
+    "key": "_7a2bcd6737aa40a996bc2721",
+    "type": "class",
+    "hasTypeVariable": false,
+    "position": null,
+    "modifiers": [],
+    "fields": {
+        "trip": {
+            "name": "trip",
+            "key": "_db9b000dca5a494da80bf80b",
+            "type": "Trip",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "startingPlace": {
+            "name": "startingPlace",
+            "key": "_b3ac13bf5f194412afe643cb",
+            "type": "String",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "endPlace": {
+            "name": "endPlace",
+            "key": "_b1b2fa80d6e548b496e45fbb",
+            "type": "String",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "departureTime": {
+            "name": "departureTime",
+            "key": "_5f2719e521ee4ffcaaf14b05",
+            "type": "Date",
+            "visibility": "private",
+            "isStatic": false
+        }
+    },
+    "methods": {},
+    "file_path": "./Travel",
+    "anonymous": false,
+    "auxclass": false,
+    "implements_": [],
+    "extends_": [],
+    "definedInClassOrInterfaceTypeKey": null,
+    "innerDefinedClasses": {},
+    "innerDefinedInterfaces": {}
+}

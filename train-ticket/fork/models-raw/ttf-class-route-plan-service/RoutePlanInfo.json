@@ -1,0 +1,47 @@
+{
+    "name": "RoutePlanInfo",
+    "key": "_bceb61b6d99140758581ea58",
+    "type": "class",
+    "hasTypeVariable": false,
+    "position": null,
+    "modifiers": [],
+    "fields": {
+        "fromStationName": {
+            "name": "fromStationName",
+            "key": "_494c608356c140988ef14fa1",
+            "type": "String",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "toStationName": {
+            "name": "toStationName",
+            "key": "_93264f09a3f34b9bb342e24e",
+            "type": "String",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "travelDate": {
+            "name": "travelDate",
+            "key": "_01db161d7cf14cd29d623e3f",
+            "type": "Date",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "num": {
+            "name": "num",
+            "key": "_c9195aa4c05644dd9c6ae244",
+            "type": "int",
+            "visibility": "private",
+            "isStatic": false
+        }
+    },
+    "methods": {},
+    "file_path": "./RoutePlanInfo",
+    "anonymous": false,
+    "auxclass": false,
+    "implements_": [],
+    "extends_": [],
+    "definedInClassOrInterfaceTypeKey": null,
+    "innerDefinedClasses": {},
+    "innerDefinedInterfaces": {}
+}

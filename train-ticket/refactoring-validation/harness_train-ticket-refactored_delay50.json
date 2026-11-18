@@ -1,0 +1,33 @@
+{
+  "tree" : "train-ticket-refactored",
+  "delay_ms_per_sync_call" : 50,
+  "preserve" : {
+    "event_publisher_present" : true,
+    "response_status" : 1,
+    "response_message" : "Success.",
+    "sync_calls_total" : 7,
+    "sync_calls" : [ "ts-security-service GET /api/v1/securityservice/securityConfigs/4d2a46c7-71cb-4cf1-b5bb-b68406d9da6f", "ts-contacts-service GET /api/v1/contactservice/contacts/a3f1f9a4-27a5-4b16-9e2c-4b8a8b0f3d10", "ts-travel-service POST /api/v1/travelservice/trip_detail", "ts-basic-service POST /api/v1/basicservice/basic/travel", "ts-seat-service POST /api/v1/seatservice/seats", "ts-order-service POST /api/v1/orderservice/order", "ts-user-service GET /api/v1/userservice/users/id/4d2a46c7-71cb-4cf1-b5bb-b68406d9da6f" ],
+    "distinct_services_called" : [ "ts-basic-service", "ts-contacts-service", "ts-order-service", "ts-seat-service", "ts-security-service", "ts-travel-service", "ts-user-service" ],
+    "async_messages" : [ "exchange=order-events routingKey=''" ],
+    "blocking_time_ms" : 456
+  },
+  "basic_queryForTravel" : {
+    "local_station_data_present" : true,
+    "first_request_calls" : [ "ts-station-service GET /api/v1/stationservice/stations", "ts-train-service GET /api/v1/trainservice/trains/byName/GaoTieOne", "ts-route-service GET /api/v1/routeservice/routes/r1", "ts-price-service GET /api/v1/priceservice/prices/r1/GaoTieOne" ],
+    "steady_state_calls" : [ "ts-train-service GET /api/v1/trainservice/trains/byName/GaoTieOne", "ts-route-service GET /api/v1/routeservice/routes/r1", "ts-price-service GET /api/v1/priceservice/prices/r1/GaoTieOne" ],
+    "steady_state_calls_to_station_service" : 0,
+    "steady_state_response_status" : 1,
+    "steady_state_response_message" : "Success",
+    "event_update_checks" : {
+      "create_visible" : true,
+      "rename_removes_old_name" : true,
+      "rename_adds_new_name" : true,
+      "delete_removes_station" : true
+    }
+  },
+  "async_listeners" : {
+    "assurance.mq.OrderCreatedListener" : [ "create [1, 5ad7750b-a68b-49c0-a8c0-32776b067703, headers(Bearer test-token)]" ],
+    "foodsearch.mq.OrderCreatedListener" : [ "createFoodOrder [FoodOrder(id=null, orderId=5ad7750b-a68b-49c0-a8c0-32776b067703, foodType=1, stationName=null, storeName=null, foodName=Bone Soup, price=2.5), headers(Bearer test-token)]" ],
+    "consign.mq.OrderCreatedListener" : [ "insertConsignRecord [Consign(id=null, orderId=5ad7750b-a68b-49c0-a8c0-32776b067703, accountId=4d2a46c7-71cb-4cf1-b5bb-b68406d9da6f, handleDate=null, targetDate=null, from=null, to=null, consignee=Alice, phone=123456, weight=5.0, isWithin=false), headers(Bearer test-token)]" ]
+  }
+}

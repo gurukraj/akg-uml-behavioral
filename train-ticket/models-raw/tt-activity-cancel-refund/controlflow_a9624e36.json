@@ -1,0 +1,8 @@
+{
+    "name": "CheckOrderStatus_to_DecisionNode_Cancellable",
+    "key": "_8241e5ddf0e54199a9624e36",
+    "type": "uml:ControlFlow",
+    "source": "_d0a0bcc510dc469a921847ab",
+    "target": "_d13a0d5cb322492ebbf938ac",
+    "guard": null
+}

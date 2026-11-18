@@ -1,0 +1,8 @@
+{
+    "name": "ForkNode_ParallelCreate_to_AddAssurance",
+    "key": "_5febbdd9111f4d4a8e505da3",
+    "type": "uml:ControlFlow",
+    "source": "_51071bb4709b46d3bcafff7d",
+    "target": "_b63ff193ee6747f78b60780c",
+    "guard": null
+}

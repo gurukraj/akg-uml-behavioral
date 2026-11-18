@@ -1,0 +1,8 @@
+{
+    "name": "ForkNode_FoodQuery_to_QueryTrainFood",
+    "key": "_695f5089cb4d40e285fe4464",
+    "type": "uml:ControlFlow",
+    "source": "_3e3dd5581fc544909c56cd63",
+    "target": "_b41f17bf8d88459a8a4860b2",
+    "guard": null
+}

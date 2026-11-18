@@ -1,0 +1,55 @@
+{
+    "name": "StationRepository",
+    "key": "_3cc0502336024d40b077eafa",
+    "type": "interface",
+    "hasTypeVariable": false,
+    "position": null,
+    "modifiers": [],
+    "fields": {},
+    "methods": {
+        "findByName": {
+            "name": "findByName",
+            "key": "_179a667339d24c3cbe71906f",
+            "returnType": "Station",
+            "parameters": "String name",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": true
+        },
+        "findByNames": {
+            "name": "findByNames",
+            "key": "_16304c3d10f144b98c336347",
+            "returnType": "List<Station>",
+            "parameters": "List<String> names",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": true
+        },
+        "findById": {
+            "name": "findById",
+            "key": "_edac2e68794e4f5c95214e5a",
+            "returnType": "Optional<Station>",
+            "parameters": "String id",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": true
+        },
+        "findAll": {
+            "name": "findAll",
+            "key": "_eacf7d6b9af5466da91de47c",
+            "returnType": "List<Station>",
+            "parameters": "",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": true
+        }
+    },
+    "file_path": "./StationRepository",
+    "anonymous": false,
+    "auxclass": false,
+    "implements_": [],
+    "extends_": [],
+    "definedInClassOrInterfaceTypeKey": null,
+    "innerDefinedClasses": {},
+    "innerDefinedInterfaces": {}
+}

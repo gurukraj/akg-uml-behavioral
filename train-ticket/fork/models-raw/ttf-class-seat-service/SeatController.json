@@ -1,0 +1,47 @@
+{
+    "name": "SeatController",
+    "key": "_11a11f4b70f541a4857f84a5",
+    "type": "class",
+    "hasTypeVariable": false,
+    "position": null,
+    "modifiers": [],
+    "fields": {},
+    "methods": {
+        "distributeSeat": {
+            "name": "distributeSeat",
+            "key": "_3859bc7179f5452fb0e5a0d6",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "Seat",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "getLeftTicketOfInterval": {
+            "name": "getLeftTicketOfInterval",
+            "key": "_b8f7ecd91b5d4f99b558e313",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "Seat",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        }
+    },
+    "file_path": "./SeatController",
+    "anonymous": false,
+    "auxclass": false,
+    "implements_": [],
+    "extends_": [],
+    "definedInClassOrInterfaceTypeKey": null,
+    "innerDefinedClasses": {},
+    "innerDefinedInterfaces": {}
+}

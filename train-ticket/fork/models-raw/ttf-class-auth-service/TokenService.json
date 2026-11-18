@@ -1,0 +1,45 @@
+{
+    "name": "TokenService",
+    "key": "_c7b22cadedea415d86a7461b",
+    "type": "interface",
+    "hasTypeVariable": false,
+    "position": null,
+    "modifiers": [],
+    "fields": {},
+    "methods": {
+        "createToken": {
+            "name": "createToken",
+            "key": "_7f752805884b4622ac4cf2a1",
+            "returnType": "String",
+            "parameters": [
+                [
+                    "User"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": true
+        },
+        "verifyToken": {
+            "name": "verifyToken",
+            "key": "_ecc342816162473083bfb165",
+            "returnType": "Boolean",
+            "parameters": [
+                [
+                    "String"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": true
+        }
+    },
+    "file_path": "./TokenService",
+    "anonymous": false,
+    "auxclass": false,
+    "implements_": [],
+    "extends_": [],
+    "definedInClassOrInterfaceTypeKey": null,
+    "innerDefinedClasses": {},
+    "innerDefinedInterfaces": {}
+}

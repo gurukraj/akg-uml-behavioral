@@ -1,0 +1,7 @@
+{
+    "name": "ts-basic-service_depends_on_ts-route-service",
+    "key": "_f82c431038984fd79fa8aae1",
+    "type": "dependency",
+    "source": "_1363abce517147298b50e305",
+    "target": "_f9867068cb0b48cf8fe0740f"
+}

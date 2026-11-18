@@ -1,0 +1,64 @@
+{
+    "name": "ConfigService",
+    "key": "_312f8dc9543949e8993abd43",
+    "type": "interface",
+    "hasTypeVariable": false,
+    "position": null,
+    "modifiers": [],
+    "fields": {},
+    "methods": {
+        "create": {
+            "name": "create",
+            "key": "_74a83bdde17a4708b3c19c41",
+            "returnType": "Response",
+            "parameters": "Config info, HttpHeaders headers",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": true
+        },
+        "update": {
+            "name": "update",
+            "key": "_0a191c0a25104be1bccd706f",
+            "returnType": "Response",
+            "parameters": "Config info, HttpHeaders headers",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": true
+        },
+        "query": {
+            "name": "query",
+            "key": "_b41ea023faaa44d497d67a3c",
+            "returnType": "Response",
+            "parameters": "String name, HttpHeaders headers",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": true
+        },
+        "delete": {
+            "name": "delete",
+            "key": "_7b4676b6cd0b4cc8a4dc67fa",
+            "returnType": "Response",
+            "parameters": "String name, HttpHeaders headers",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": true
+        },
+        "queryAll": {
+            "name": "queryAll",
+            "key": "_bca1e7138c8042f88c99429a",
+            "returnType": "Response",
+            "parameters": "HttpHeaders headers",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": true
+        }
+    },
+    "file_path": "./ConfigService",
+    "anonymous": false,
+    "auxclass": false,
+    "implements_": [],
+    "extends_": [],
+    "definedInClassOrInterfaceTypeKey": null,
+    "innerDefinedClasses": {},
+    "innerDefinedInterfaces": {}
+}

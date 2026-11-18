@@ -1,0 +1,21 @@
+{
+    "classification": {
+        "categories": [
+            "Class"
+        ],
+        "primary": "Class",
+        "is_class_diagram": true,
+        "is_behavioral": false
+    },
+    "detectedTypes": {
+        "uml:Class": 2,
+        "uml:Dependency": 1
+    },
+    "elementCounts": {
+        "classes": 2,
+        "dependencies": 1
+    },
+    "totalElements": 3,
+    "diagram_id": "ttf-class-execute-service",
+    "source_file": "ttf-class-execute-service.json"
+}

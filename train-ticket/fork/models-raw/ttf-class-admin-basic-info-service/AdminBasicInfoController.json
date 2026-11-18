@@ -1,0 +1,126 @@
+{
+    "name": "AdminBasicInfoController",
+    "key": "_81157d4a91124107ba32097e",
+    "type": "class",
+    "hasTypeVariable": false,
+    "position": null,
+    "modifiers": [],
+    "fields": {},
+    "methods": {
+        "getAllContacts": {
+            "name": "getAllContacts",
+            "key": "_407b0132a07f4029b0ed1ffd",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "getAllStations": {
+            "name": "getAllStations",
+            "key": "_9bb327573af54ce1988af70b",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "getAllTrains": {
+            "name": "getAllTrains",
+            "key": "_97880bfe1e724654b6cefe7a",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "getAllRoutes": {
+            "name": "getAllRoutes",
+            "key": "_6b359c9d6b7d4ff49c85191c",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "getAllPrices": {
+            "name": "getAllPrices",
+            "key": "_62dbe29e89d0402c9529aba2",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "addContact": {
+            "name": "addContact",
+            "key": "_af8fdf1837c84a7fa91e4822",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "Contacts",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "deleteContact": {
+            "name": "deleteContact",
+            "key": "_c590723daa0f412c8bcd453b",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "String",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "modifyContact": {
+            "name": "modifyContact",
+            "key": "_5f4a9a5a68654fd1b99e3fb8",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "Contacts",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        }
+    },
+    "file_path": "./AdminBasicInfoController",
+    "anonymous": false,
+    "auxclass": false,
+    "implements_": [],
+    "extends_": [],
+    "definedInClassOrInterfaceTypeKey": null,
+    "innerDefinedClasses": {},
+    "innerDefinedInterfaces": {}
+}

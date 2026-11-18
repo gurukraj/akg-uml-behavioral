@@ -1,0 +1,8 @@
+{
+    "name": "calls_ts_basic_service",
+    "key": "_d9e5bc313e6a4f128d79bfb7",
+    "type": "dependency",
+    "source": "tt-class-travel-service",
+    "target": "ts-basic-service",
+    "endpoint": "POST /api/v1/basicservice/basic/travel"
+}

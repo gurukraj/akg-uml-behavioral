@@ -1,0 +1,25 @@
+{
+    "classification": {
+        "categories": [
+            "Class"
+        ],
+        "primary": "Class",
+        "is_class_diagram": true,
+        "is_behavioral": false
+    },
+    "detectedTypes": {
+        "uml:Class": 2,
+        "uml:Interface": 1,
+        "uml:Dependency": 7,
+        "uml:Association": 1
+    },
+    "elementCounts": {
+        "classes": 2,
+        "interfaces": 1,
+        "dependencies": 7,
+        "associations": 1
+    },
+    "totalElements": 11,
+    "diagram_id": "tt-class-cancel-service",
+    "source_file": "tt-class-cancel-service.json"
+}

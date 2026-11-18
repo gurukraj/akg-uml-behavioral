@@ -1,0 +1,8 @@
+{
+    "name": "JoinNode_OptionalServices_to_CreateOrder",
+    "key": "_7b45194f0db847ad947e0c98",
+    "type": "uml:ControlFlow",
+    "source": "_c194c7f13c264a2391ce9e89",
+    "target": "_eadfef27794441de85bff0a5",
+    "guard": null
+}

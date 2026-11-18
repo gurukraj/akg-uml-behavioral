@@ -1,0 +1,23 @@
+{
+    "classification": {
+        "categories": [
+            "Communication"
+        ],
+        "primary": "Communication",
+        "is_class_diagram": false,
+        "is_behavioral": true
+    },
+    "detectedTypes": {
+        "uml:Collaboration": 1,
+        "uml:LifelineOrObject": 6,
+        "uml:Message": 6
+    },
+    "elementCounts": {
+        "collaborations": 1,
+        "objects": 6,
+        "messages": 6
+    },
+    "totalElements": 13,
+    "diagram_id": "ttf-comm-cancel-flow",
+    "source_file": "ttf-comm-cancel-flow.json"
+}

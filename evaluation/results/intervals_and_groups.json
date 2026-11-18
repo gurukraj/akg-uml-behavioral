@@ -1,0 +1,448 @@
+{
+ "composition": {
+  "Activity": {
+   "score": 78,
+   "primary": 22
+  },
+  "Sequence": {
+   "primary": 56,
+   "score": 44
+  },
+  "StateMachine": {
+   "score": 97,
+   "primary": 3
+  },
+  "Communication": {
+   "score": 100
+  },
+  "Timing": {
+   "score": 28
+  }
+ },
+ "detectors": {
+  "Synchronous call chain": {
+   "all": {
+    "TP": 49,
+    "FP": 0,
+    "FN": 0,
+    "TN": 51,
+    "accuracy": 100.0,
+    "accuracy_ci": [
+     96.3,
+     100.0
+    ],
+    "precision": 100.0,
+    "precision_ci": [
+     92.7,
+     100.0
+    ],
+    "recall": 100.0,
+    "recall_ci": [
+     92.7,
+     100.0
+    ]
+   },
+   "primary": {
+    "TP": 46,
+    "FP": 0,
+    "FN": 0,
+    "TN": 10,
+    "accuracy": 100.0,
+    "accuracy_ci": [
+     93.6,
+     100.0
+    ],
+    "precision": 100.0,
+    "precision_ci": [
+     92.3,
+     100.0
+    ],
+    "recall": 100.0,
+    "recall_ci": [
+     92.3,
+     100.0
+    ]
+   },
+   "score": {
+    "TP": 3,
+    "FP": 0,
+    "FN": 0,
+    "TN": 41,
+    "accuracy": 100.0,
+    "accuracy_ci": [
+     92.0,
+     100.0
+    ],
+    "precision": 100.0,
+    "precision_ci": [
+     43.9,
+     100.0
+    ],
+    "recall": 100.0,
+    "recall_ci": [
+     43.9,
+     100.0
+    ]
+   }
+  },
+  "Hub component": {
+   "all": {
+    "TP": 0,
+    "FP": 50,
+    "FN": 0,
+    "TN": 50,
+    "accuracy": 50.0,
+    "accuracy_ci": [
+     40.4,
+     59.6
+    ],
+    "precision": 0.0,
+    "precision_ci": [
+     0.0,
+     7.1
+    ],
+    "recall": null,
+    "recall_ci": null
+   },
+   "primary": null,
+   "score": {
+    "TP": 0,
+    "FP": 50,
+    "FN": 0,
+    "TN": 50,
+    "accuracy": 50.0,
+    "accuracy_ci": [
+     40.4,
+     59.6
+    ],
+    "precision": 0.0,
+    "precision_ci": [
+     0.0,
+     7.1
+    ],
+    "recall": null,
+    "recall_ci": null
+   }
+  },
+  "Workflow convergence": {
+   "all": {
+    "TP": 1,
+    "FP": 0,
+    "FN": 0,
+    "TN": 99,
+    "accuracy": 100.0,
+    "accuracy_ci": [
+     96.3,
+     100.0
+    ],
+    "precision": 100.0,
+    "precision_ci": [
+     20.7,
+     100.0
+    ],
+    "recall": 100.0,
+    "recall_ci": [
+     20.7,
+     100.0
+    ]
+   },
+   "primary": {
+    "TP": 1,
+    "FP": 0,
+    "FN": 0,
+    "TN": 21,
+    "accuracy": 100.0,
+    "accuracy_ci": [
+     85.1,
+     100.0
+    ],
+    "precision": 100.0,
+    "precision_ci": [
+     20.7,
+     100.0
+    ],
+    "recall": 100.0,
+    "recall_ci": [
+     20.7,
+     100.0
+    ]
+   },
+   "score": {
+    "TP": 0,
+    "FP": 0,
+    "FN": 0,
+    "TN": 78,
+    "accuracy": 100.0,
+    "accuracy_ci": [
+     95.3,
+     100.0
+    ],
+    "precision": null,
+    "precision_ci": null,
+    "recall": null,
+    "recall_ci": null
+   }
+  },
+  "Chatty interface": {
+   "all": {
+    "TP": 47,
+    "FP": 0,
+    "FN": 0,
+    "TN": 53,
+    "accuracy": 100.0,
+    "accuracy_ci": [
+     96.3,
+     100.0
+    ],
+    "precision": 100.0,
+    "precision_ci": [
+     92.4,
+     100.0
+    ],
+    "recall": 100.0,
+    "recall_ci": [
+     92.4,
+     100.0
+    ]
+   },
+   "primary": {
+    "TP": 43,
+    "FP": 0,
+    "FN": 0,
+    "TN": 13,
+    "accuracy": 100.0,
+    "accuracy_ci": [
+     93.6,
+     100.0
+    ],
+    "precision": 100.0,
+    "precision_ci": [
+     91.8,
+     100.0
+    ],
+    "recall": 100.0,
+    "recall_ci": [
+     91.8,
+     100.0
+    ]
+   },
+   "score": {
+    "TP": 4,
+    "FP": 0,
+    "FN": 0,
+    "TN": 40,
+    "accuracy": 100.0,
+    "accuracy_ci": [
+     92.0,
+     100.0
+    ],
+    "precision": 100.0,
+    "precision_ci": [
+     51.0,
+     100.0
+    ],
+    "recall": 100.0,
+    "recall_ci": [
+     51.0,
+     100.0
+    ]
+   }
+  },
+  "State explosion": {
+   "all": {
+    "TP": 0,
+    "FP": 0,
+    "FN": 0,
+    "TN": 100,
+    "accuracy": 100.0,
+    "accuracy_ci": [
+     96.3,
+     100.0
+    ],
+    "precision": null,
+    "precision_ci": null,
+    "recall": null,
+    "recall_ci": null
+   },
+   "primary": {
+    "TP": 0,
+    "FP": 0,
+    "FN": 0,
+    "TN": 3,
+    "accuracy": 100.0,
+    "accuracy_ci": [
+     43.9,
+     100.0
+    ],
+    "precision": null,
+    "precision_ci": null,
+    "recall": null,
+    "recall_ci": null
+   },
+   "score": {
+    "TP": 0,
+    "FP": 0,
+    "FN": 0,
+    "TN": 97,
+    "accuracy": 100.0,
+    "accuracy_ci": [
+     96.2,
+     100.0
+    ],
+    "precision": null,
+    "precision_ci": null,
+    "recall": null,
+    "recall_ci": null
+   }
+  },
+  "Cyclic collaboration": {
+   "all": {
+    "TP": 0,
+    "FP": 68,
+    "FN": 0,
+    "TN": 32,
+    "accuracy": 32.0,
+    "accuracy_ci": [
+     23.7,
+     41.7
+    ],
+    "precision": 0.0,
+    "precision_ci": [
+     0.0,
+     5.3
+    ],
+    "recall": null,
+    "recall_ci": null
+   },
+   "primary": null,
+   "score": {
+    "TP": 0,
+    "FP": 68,
+    "FN": 0,
+    "TN": 32,
+    "accuracy": 32.0,
+    "accuracy_ci": [
+     23.7,
+     41.7
+    ],
+    "precision": 0.0,
+    "precision_ci": [
+     0.0,
+     5.3
+    ],
+    "recall": null,
+    "recall_ci": null
+   }
+  },
+  "God activity": {
+   "all": {
+    "TP": 0,
+    "FP": 0,
+    "FN": 0,
+    "TN": 100,
+    "accuracy": 100.0,
+    "accuracy_ci": [
+     96.3,
+     100.0
+    ],
+    "precision": null,
+    "precision_ci": null,
+    "recall": null,
+    "recall_ci": null
+   },
+   "primary": {
+    "TP": 0,
+    "FP": 0,
+    "FN": 0,
+    "TN": 22,
+    "accuracy": 100.0,
+    "accuracy_ci": [
+     85.1,
+     100.0
+    ],
+    "precision": null,
+    "precision_ci": null,
+    "recall": null,
+    "recall_ci": null
+   },
+   "score": {
+    "TP": 0,
+    "FP": 0,
+    "FN": 0,
+    "TN": 78,
+    "accuracy": 100.0,
+    "accuracy_ci": [
+     95.3,
+     100.0
+    ],
+    "precision": null,
+    "precision_ci": null,
+    "recall": null,
+    "recall_ci": null
+   }
+  }
+ },
+ "timing": {
+  "n": 28,
+  "flagged": 28,
+  "max_confidence": 0.167
+ },
+ "validation_by_group": {
+  "primary/Activity": {
+   "n": 22,
+   "structural": 22,
+   "completeness": 14,
+   "semantic": 22,
+   "compatibility": 22
+  },
+  "primary/Sequence": {
+   "n": 56,
+   "structural": 56,
+   "completeness": 33,
+   "semantic": 51,
+   "compatibility": 56
+  },
+  "primary/StateMachine": {
+   "n": 3,
+   "structural": 3,
+   "completeness": 3,
+   "semantic": 2,
+   "compatibility": 3
+  },
+  "score/Activity": {
+   "n": 78,
+   "structural": 78,
+   "completeness": 38,
+   "semantic": 17,
+   "compatibility": 78
+  },
+  "score/Sequence": {
+   "n": 44,
+   "structural": 44,
+   "completeness": 20,
+   "semantic": 1,
+   "compatibility": 44
+  },
+  "score/StateMachine": {
+   "n": 97,
+   "structural": 97,
+   "completeness": 1,
+   "semantic": 2,
+   "compatibility": 97
+  },
+  "score/Communication": {
+   "n": 100,
+   "structural": 100,
+   "completeness": 90,
+   "semantic": 10,
+   "compatibility": 100
+  },
+  "score/Timing": {
+   "n": 28,
+   "structural": 28,
+   "completeness": 28,
+   "semantic": 0,
+   "compatibility": 28
+  }
+ }
+}

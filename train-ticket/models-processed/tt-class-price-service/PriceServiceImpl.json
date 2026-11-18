@@ -1,0 +1,74 @@
+{
+    "name": "PriceServiceImpl",
+    "key": "_fc12f63a94b94c14aec984f0",
+    "type": "class",
+    "hasTypeVariable": false,
+    "position": null,
+    "modifiers": [],
+    "fields": {
+        "priceConfigRepository": {
+            "name": "priceConfigRepository",
+            "key": "_c3bdc53eef5f40f495a4cee8",
+            "type": "PriceConfigRepository",
+            "visibility": "private",
+            "isStatic": false
+        }
+    },
+    "methods": {
+        "createNewPriceConfig": {
+            "name": "createNewPriceConfig",
+            "key": "_cfbf80ef2eec4f5da91f4d37",
+            "returnType": "Response",
+            "parameters": "PriceConfig createAndModifyPriceConfig, HttpHeaders headers",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "findByRouteIdAndTrainType": {
+            "name": "findByRouteIdAndTrainType",
+            "key": "_0f8a895af8204920936c0040",
+            "returnType": "Response",
+            "parameters": "String routeId, String trainType, HttpHeaders headers",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "findAllPriceConfig": {
+            "name": "findAllPriceConfig",
+            "key": "_8f899fab82e8459da460859c",
+            "returnType": "Response",
+            "parameters": "HttpHeaders headers",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "deletePriceConfig": {
+            "name": "deletePriceConfig",
+            "key": "_ec97ea23882c49fdb5d1e0df",
+            "returnType": "Response",
+            "parameters": "String pcId, HttpHeaders headers",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "updatePriceConfig": {
+            "name": "updatePriceConfig",
+            "key": "_74ec77d77e3145099ba73de1",
+            "returnType": "Response",
+            "parameters": "PriceConfig c, HttpHeaders headers",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        }
+    },
+    "file_path": "./PriceServiceImpl",
+    "anonymous": false,
+    "auxclass": false,
+    "implements_": [
+        "_ed656923b3154645a2163ce2"
+    ],
+    "extends_": [],
+    "definedInClassOrInterfaceTypeKey": null,
+    "innerDefinedClasses": {},
+    "innerDefinedInterfaces": {}
+}

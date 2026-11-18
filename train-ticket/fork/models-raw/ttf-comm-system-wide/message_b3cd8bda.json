@@ -1,0 +1,8 @@
+{
+    "name": "createOrder()",
+    "key": "_f2a8dc2a1f02444bb3cd8bda",
+    "type": "uml:Message",
+    "sender": "_46f6dd8bb41c429db0a42943",
+    "receiver": "_6b697b8ca63b4911ae84df70",
+    "messageLabel": "createOrder()"
+}

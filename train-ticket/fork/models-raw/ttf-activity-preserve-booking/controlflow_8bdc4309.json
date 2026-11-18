@@ -1,0 +1,8 @@
+{
+    "name": "DecisionNode_SeatAvailable_to_FinalNode_NoSeat",
+    "key": "_0f4baa9f7b184b358bdc4309",
+    "type": "uml:ControlFlow",
+    "source": "_25c464229f524c0b8e103d44",
+    "target": "_6b62b8f75d894e7b91bf1f57",
+    "guard": "unavailable"
+}

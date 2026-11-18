@@ -1,0 +1,41 @@
+{
+    "name": "RouteRepository",
+    "key": "_8fbfca17347a4acdb7df6cd5",
+    "type": "interface",
+    "hasTypeVariable": false,
+    "position": null,
+    "modifiers": [],
+    "fields": {},
+    "methods": {
+        "findById": {
+            "name": "findById",
+            "key": "_513d69234c074f13954623d7",
+            "returnType": "Route",
+            "parameters": [
+                [
+                    "String"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": true
+        },
+        "findAll": {
+            "name": "findAll",
+            "key": "_c02c0be9c01f4c48ae97e605",
+            "returnType": "List<Route>",
+            "parameters": [],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": true
+        }
+    },
+    "file_path": "./RouteRepository",
+    "anonymous": false,
+    "auxclass": false,
+    "implements_": [],
+    "extends_": [],
+    "definedInClassOrInterfaceTypeKey": null,
+    "innerDefinedClasses": {},
+    "innerDefinedInterfaces": {}
+}

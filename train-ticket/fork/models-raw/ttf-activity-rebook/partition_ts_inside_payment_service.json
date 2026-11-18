@@ -1,0 +1,9 @@
+{
+    "name": "ts-inside-payment-service",
+    "key": "_f9d8a38e8b94418caba68d61",
+    "type": "uml:ActivityPartition",
+    "nodes": [
+        "_788ed9e4b8be4330bb29d39e",
+        "_c5df986b63324ed5b274aa6a"
+    ]
+}

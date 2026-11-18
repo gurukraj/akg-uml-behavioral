@@ -1,0 +1,9 @@
+{
+    "name": "BasicController_uses_BasicService",
+    "key": "_a6b668097bcc425d871d45a4",
+    "type": "association",
+    "source": "_ce90f52b7cc94234b13aa749",
+    "target": "_70d5cc65a06849ec97995ec5",
+    "sourceMultiplicity": "1",
+    "targetMultiplicity": "1"
+}

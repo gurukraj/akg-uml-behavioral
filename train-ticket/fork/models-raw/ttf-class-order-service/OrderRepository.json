@@ -1,0 +1,72 @@
+{
+    "name": "OrderRepository",
+    "key": "_f64adfabc74f48f686712548",
+    "type": "interface",
+    "hasTypeVariable": false,
+    "position": null,
+    "modifiers": [],
+    "fields": {},
+    "methods": {
+        "findByAccountId": {
+            "name": "findByAccountId",
+            "key": "_9aa3ccd32b844b16a63df1bc",
+            "returnType": "List<Order>",
+            "parameters": [
+                [
+                    "UUID"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": true
+        },
+        "findByTravelDateAndTrainNumber": {
+            "name": "findByTravelDateAndTrainNumber",
+            "key": "_e8e9d70ee99042e89a91ba49",
+            "returnType": "List<Order>",
+            "parameters": [
+                [
+                    "Date",
+                    "String"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": true
+        },
+        "findById": {
+            "name": "findById",
+            "key": "_79c598328c6649e7a3bef846",
+            "returnType": "Order",
+            "parameters": [
+                [
+                    "UUID"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": true
+        },
+        "deleteById": {
+            "name": "deleteById",
+            "key": "_73cffdd784c34602bf0cf0ea",
+            "returnType": "void",
+            "parameters": [
+                [
+                    "UUID"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": true
+        }
+    },
+    "file_path": "./OrderRepository",
+    "anonymous": false,
+    "auxclass": false,
+    "implements_": [],
+    "extends_": [],
+    "definedInClassOrInterfaceTypeKey": null,
+    "innerDefinedClasses": {},
+    "innerDefinedInterfaces": {}
+}

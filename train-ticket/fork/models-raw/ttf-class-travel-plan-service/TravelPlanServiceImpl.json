@@ -1,0 +1,77 @@
+{
+    "name": "TravelPlanServiceImpl",
+    "key": "_80494660e3994afb96b98f06",
+    "type": "class",
+    "hasTypeVariable": false,
+    "position": null,
+    "modifiers": [],
+    "fields": {},
+    "methods": {
+        "getTransferSearch": {
+            "name": "getTransferSearch",
+            "key": "_79d4c5677eee43c9890a7372",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "TransferTravelInfo",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "getCheapest": {
+            "name": "getCheapest",
+            "key": "_778714b9a1e34e799e18d7a6",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "TripInfo",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "getQuickest": {
+            "name": "getQuickest",
+            "key": "_34ee73c7e99a4379b302128f",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "TripInfo",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "getMinStation": {
+            "name": "getMinStation",
+            "key": "_7c5eda3d1fcb4dd3a0bc88b4",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "TripInfo",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        }
+    },
+    "file_path": "./TravelPlanServiceImpl",
+    "anonymous": false,
+    "auxclass": false,
+    "implements_": [
+        "_1fecde2251dc4bdba04a6a40"
+    ],
+    "extends_": [],
+    "definedInClassOrInterfaceTypeKey": null,
+    "innerDefinedClasses": {},
+    "innerDefinedInterfaces": {}
+}

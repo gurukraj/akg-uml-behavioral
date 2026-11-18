@@ -1,0 +1,40 @@
+{
+    "name": "TrainFood",
+    "key": "_6bb72e1bbe334c9995da3fb7",
+    "type": "class",
+    "hasTypeVariable": false,
+    "position": null,
+    "modifiers": [],
+    "fields": {
+        "id": {
+            "name": "id",
+            "key": "_16476064c68149f38c69a743",
+            "type": "UUID",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "tripId": {
+            "name": "tripId",
+            "key": "_44e8963913c14ca991088636",
+            "type": "String",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "foodList": {
+            "name": "foodList",
+            "key": "_f4aa8c7e015445f0b2b1ac18",
+            "type": "List<Food>",
+            "visibility": "private",
+            "isStatic": false
+        }
+    },
+    "methods": {},
+    "file_path": "./TrainFood",
+    "anonymous": false,
+    "auxclass": false,
+    "implements_": [],
+    "extends_": [],
+    "definedInClassOrInterfaceTypeKey": null,
+    "innerDefinedClasses": {},
+    "innerDefinedInterfaces": {}
+}

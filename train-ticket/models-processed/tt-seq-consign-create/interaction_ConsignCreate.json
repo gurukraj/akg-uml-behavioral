@@ -1,0 +1,197 @@
+{
+    "name": "ConsignCreate",
+    "key": "_01c56eb026a444feac3de59f",
+    "type": "interaction",
+    "lifelines": [
+        {
+            "name": "Client",
+            "key": "_bf538f1248644b10b307af41",
+            "represents": "_d5aacf01b0374b3cabacb0c4",
+            "coveredBy": []
+        },
+        {
+            "name": "ts-consign-service",
+            "key": "_a28577ec54a24e588992e34e",
+            "represents": "_29c5521eadfa416badd9bc2a",
+            "coveredBy": []
+        },
+        {
+            "name": "ts-consign-price-service",
+            "key": "_c7dd5fc855f54e698527cbd2",
+            "represents": "_3c66b2c10d0f4f629dc08364",
+            "coveredBy": []
+        }
+    ],
+    "messages": [
+        {
+            "name": "POST /consigns",
+            "key": "_88534df115a64f0d85661a3d",
+            "messageSort": "synchCall",
+            "sendEvent": "_acfaaceac67a4d11be62334e",
+            "receiveEvent": "_47953dd8882549ca8e7847a8",
+            "connector": null,
+            "signature": null
+        },
+        {
+            "name": "GET /consignprice/{weight}/{isWithin}",
+            "key": "_80b33808fdc946f2a2f7b54a",
+            "messageSort": "synchCall",
+            "sendEvent": "_02c11dfbe19b448cbab28642",
+            "receiveEvent": "_d9fee789b6214857993acfcd",
+            "connector": null,
+            "signature": null
+        },
+        {
+            "name": "calculatedPrice",
+            "key": "_66f4149ea51f4c63a2a852d5",
+            "messageSort": "reply",
+            "sendEvent": "_9d06d760178f4b81b4d62628",
+            "receiveEvent": "_d276426d5f444a6ea9ad5959",
+            "connector": null,
+            "signature": null
+        },
+        {
+            "name": "saveConsignRecord()",
+            "key": "_ce220c5d714843aeb405334e",
+            "messageSort": "synchCall",
+            "sendEvent": "_843e30f259634ae9b856adf5",
+            "receiveEvent": "_c782cf49043f4b689377c3cc",
+            "connector": null,
+            "signature": null
+        },
+        {
+            "name": "consignResult",
+            "key": "_7de4bbc1c4654a2f8372859d",
+            "messageSort": "reply",
+            "sendEvent": "_78572d3a8e1749feaacebea3",
+            "receiveEvent": "_937f1113b68943b3a7243b3a",
+            "connector": null,
+            "signature": null
+        }
+    ],
+    "fragments": [
+        {
+            "key": "_acfaaceac67a4d11be62334e",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_bf538f1248644b10b307af41",
+            "enclosingInteraction": "tt-seq-consign-create",
+            "message": "_88534df115a64f0d85661a3d",
+            "execution": null
+        },
+        {
+            "key": "_47953dd8882549ca8e7847a8",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_a28577ec54a24e588992e34e",
+            "enclosingInteraction": "tt-seq-consign-create",
+            "message": "_88534df115a64f0d85661a3d",
+            "execution": null
+        },
+        {
+            "key": "_02c11dfbe19b448cbab28642",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_a28577ec54a24e588992e34e",
+            "enclosingInteraction": "tt-seq-consign-create",
+            "message": "_80b33808fdc946f2a2f7b54a",
+            "execution": null
+        },
+        {
+            "key": "_d9fee789b6214857993acfcd",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_c7dd5fc855f54e698527cbd2",
+            "enclosingInteraction": "tt-seq-consign-create",
+            "message": "_80b33808fdc946f2a2f7b54a",
+            "execution": null
+        },
+        {
+            "key": "_9d06d760178f4b81b4d62628",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_c7dd5fc855f54e698527cbd2",
+            "enclosingInteraction": "tt-seq-consign-create",
+            "message": "_66f4149ea51f4c63a2a852d5",
+            "execution": null
+        },
+        {
+            "key": "_d276426d5f444a6ea9ad5959",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_a28577ec54a24e588992e34e",
+            "enclosingInteraction": "tt-seq-consign-create",
+            "message": "_66f4149ea51f4c63a2a852d5",
+            "execution": null
+        },
+        {
+            "key": "_843e30f259634ae9b856adf5",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_a28577ec54a24e588992e34e",
+            "enclosingInteraction": "tt-seq-consign-create",
+            "message": "_ce220c5d714843aeb405334e",
+            "execution": null
+        },
+        {
+            "key": "_c782cf49043f4b689377c3cc",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_a28577ec54a24e588992e34e",
+            "enclosingInteraction": "tt-seq-consign-create",
+            "message": "_ce220c5d714843aeb405334e",
+            "execution": null
+        },
+        {
+            "key": "_78572d3a8e1749feaacebea3",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_a28577ec54a24e588992e34e",
+            "enclosingInteraction": "tt-seq-consign-create",
+            "message": "_7de4bbc1c4654a2f8372859d",
+            "execution": null
+        },
+        {
+            "key": "_937f1113b68943b3a7243b3a",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_bf538f1248644b10b307af41",
+            "enclosingInteraction": "tt-seq-consign-create",
+            "message": "_7de4bbc1c4654a2f8372859d",
+            "execution": null
+        },
+        {
+            "key": "_27415ebce0a04fdaaecfe3a2",
+            "type": "uml:BehaviorExecutionSpecification",
+            "name": null,
+            "covered": "_a28577ec54a24e588992e34e",
+            "enclosingInteraction": "ConsignCreate",
+            "message": null,
+            "execution": null,
+            "start": "_47953dd8882549ca8e7847a8",
+            "finish": "_78572d3a8e1749feaacebea3"
+        },
+        {
+            "key": "_7188a7ae84b847b8b4e2cf53",
+            "type": "uml:BehaviorExecutionSpecification",
+            "name": null,
+            "covered": "_c7dd5fc855f54e698527cbd2",
+            "enclosingInteraction": "ConsignCreate",
+            "message": null,
+            "execution": null,
+            "start": "_d9fee789b6214857993acfcd",
+            "finish": "_9d06d760178f4b81b4d62628"
+        },
+        {
+            "key": "_6b99d402452c4667a5a57c42",
+            "type": "uml:BehaviorExecutionSpecification",
+            "name": null,
+            "covered": "_a28577ec54a24e588992e34e",
+            "enclosingInteraction": "ConsignCreate",
+            "message": null,
+            "execution": null,
+            "start": "_c782cf49043f4b689377c3cc",
+            "finish": "_78572d3a8e1749feaacebea3"
+        }
+    ]
+}

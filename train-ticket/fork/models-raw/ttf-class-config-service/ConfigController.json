@@ -1,0 +1,88 @@
+{
+    "name": "ConfigController",
+    "key": "_7abbd4f440bb45ea9802fad0",
+    "type": "class",
+    "hasTypeVariable": false,
+    "position": null,
+    "modifiers": [],
+    "fields": {},
+    "methods": {
+        "create": {
+            "name": "create",
+            "key": "_4ee7ef6af6c64424b01947de",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "Config",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "update": {
+            "name": "update",
+            "key": "_c9dea2f1a3234d6194b13f96",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "Config",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "query": {
+            "name": "query",
+            "key": "_90579ba8ffb54044910a103b",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "String",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "delete": {
+            "name": "delete",
+            "key": "_892fc754134e4a6b863ea0f9",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "String",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "queryAll": {
+            "name": "queryAll",
+            "key": "_efc06f6a414b4c6484096781",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        }
+    },
+    "file_path": "./ConfigController",
+    "anonymous": false,
+    "auxclass": false,
+    "implements_": [],
+    "extends_": [],
+    "definedInClassOrInterfaceTypeKey": null,
+    "innerDefinedClasses": {},
+    "innerDefinedInterfaces": {}
+}

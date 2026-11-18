@@ -1,0 +1,8 @@
+{
+    "name": "GetUserAccount_to_DrawbackMoney",
+    "key": "_9f46009c22af4baaa143dbac",
+    "type": "uml:ControlFlow",
+    "source": "_e7023b6320bb495f96d8a03f",
+    "target": "_2db4f0e1d3aa4ef188ac322d",
+    "guard": null
+}

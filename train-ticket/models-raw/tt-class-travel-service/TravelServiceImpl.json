@@ -1,0 +1,97 @@
+{
+    "name": "TravelServiceImpl",
+    "key": "_bc76f2c1fe8548048f1d17ed",
+    "type": "class",
+    "hasTypeVariable": false,
+    "position": null,
+    "modifiers": [],
+    "fields": {
+        "repository": {
+            "name": "repository",
+            "key": "_03302448aa174d878d4f94a9",
+            "type": "TripRepository",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "restTemplate": {
+            "name": "restTemplate",
+            "key": "_47517d4c72714f27a3e35538",
+            "type": "RestTemplate",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "discoveryClient": {
+            "name": "discoveryClient",
+            "key": "_a61c703b5a6e4f619b34b92e",
+            "type": "DiscoveryClient",
+            "visibility": "private",
+            "isStatic": false
+        }
+    },
+    "methods": {
+        "create": {
+            "name": "create",
+            "key": "_2e93da82566743588ae2c0a5",
+            "returnType": "Response",
+            "parameters": "TravelInfo info, HttpHeaders headers",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "query": {
+            "name": "query",
+            "key": "_93f7455a9ff84c2399fda32e",
+            "returnType": "Response",
+            "parameters": "TripInfo info, HttpHeaders headers",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "getTripAllDetailInfo": {
+            "name": "getTripAllDetailInfo",
+            "key": "_8294c82bc4f5429d834d63bd",
+            "returnType": "Response",
+            "parameters": "TripAllDetailInfo gtdi, HttpHeaders headers",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "getTrainTypeByName": {
+            "name": "getTrainTypeByName",
+            "key": "_40f2e091a9684339bc2c855f",
+            "returnType": "TrainType",
+            "parameters": "String trainTypeName, HttpHeaders headers",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "getRouteByRouteId": {
+            "name": "getRouteByRouteId",
+            "key": "_589decd3884d45868bae8a33",
+            "returnType": "Route",
+            "parameters": "String routeId, HttpHeaders headers",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "getRestTicketNumber": {
+            "name": "getRestTicketNumber",
+            "key": "_e6926ed001f845ae8c573b19",
+            "returnType": "Response",
+            "parameters": "String travelDate, String trainNumber, String startStationName, String endStationName, int seatType, int totalNum, List<String> stationList, HttpHeaders headers",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        }
+    },
+    "file_path": "./TravelServiceImpl",
+    "anonymous": false,
+    "auxclass": false,
+    "implements_": [
+        "_4ca233b64f5d4ba6beeb51b6"
+    ],
+    "extends_": [],
+    "definedInClassOrInterfaceTypeKey": null,
+    "innerDefinedClasses": {},
+    "innerDefinedInterfaces": {}
+}

@@ -1,0 +1,142 @@
+{
+    "name": "PreserveServiceImpl",
+    "key": "_d31c7d065cc849b8928e18b3",
+    "type": "class",
+    "hasTypeVariable": false,
+    "position": null,
+    "modifiers": [],
+    "fields": {
+        "restTemplate": {
+            "name": "restTemplate",
+            "key": "_519c669f5bde45ffa4d62428",
+            "type": "RestTemplate",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "sendService": {
+            "name": "sendService",
+            "key": "_dffb5156388a452fb89fe986",
+            "type": "RabbitSend",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "discoveryClient": {
+            "name": "discoveryClient",
+            "key": "_93f9abd2d1d8449f8a45f1d1",
+            "type": "DiscoveryClient",
+            "visibility": "private",
+            "isStatic": false
+        }
+    },
+    "methods": {
+        "preserve": {
+            "name": "preserve",
+            "key": "_638f0fb4a00d4c39a646b5b0",
+            "returnType": "Response",
+            "parameters": "OrderTicketsInfo oti, HttpHeaders headers",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "checkSecurity": {
+            "name": "checkSecurity",
+            "key": "_bf6dc4cef23448b1b7308e4c",
+            "returnType": "Response",
+            "parameters": "String accountId, HttpHeaders headers",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "getContactsById": {
+            "name": "getContactsById",
+            "key": "_3db199ed83ab430681e9811b",
+            "returnType": "Response",
+            "parameters": "String contactsId, HttpHeaders headers",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "getTripAllDetailInformation": {
+            "name": "getTripAllDetailInformation",
+            "key": "_7cf0b33d3b7349fa8ce296f2",
+            "returnType": "Response",
+            "parameters": "TripAllDetailInfo gtdi, HttpHeaders headers",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "dipatchSeat": {
+            "name": "dipatchSeat",
+            "key": "_62bb05c1fe714f2f818b0c19",
+            "returnType": "Response",
+            "parameters": "String date, String tripId, String startStation, String endStation, int seatType, int totalNum, List<String> stationList, HttpHeaders headers",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "getAccount": {
+            "name": "getAccount",
+            "key": "_5e10facdc682451c8ad744f1",
+            "returnType": "Response",
+            "parameters": "String accountId, HttpHeaders headers",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "addAssuranceForOrder": {
+            "name": "addAssuranceForOrder",
+            "key": "_dc1ade452b494e5597695379",
+            "returnType": "Response",
+            "parameters": "int assuranceType, String orderId, HttpHeaders headers",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "queryForStationId": {
+            "name": "queryForStationId",
+            "key": "_9607ce131d904947a8f06778",
+            "returnType": "Response",
+            "parameters": "String stationName, HttpHeaders headers",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "createOrder": {
+            "name": "createOrder",
+            "key": "_4082930dfc41482e99b6ee5d",
+            "returnType": "Response",
+            "parameters": "Order coi, HttpHeaders headers",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "createFoodOrder": {
+            "name": "createFoodOrder",
+            "key": "_f37f6f7e20d44674bf4d9fab",
+            "returnType": "Response",
+            "parameters": "FoodOrder afi, HttpHeaders headers",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "createConsign": {
+            "name": "createConsign",
+            "key": "_6ad2f4f748274cf8a20f3aec",
+            "returnType": "Response",
+            "parameters": "Consign cr, HttpHeaders headers",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        }
+    },
+    "file_path": "./PreserveServiceImpl",
+    "anonymous": false,
+    "auxclass": false,
+    "implements_": [
+        "_d9f4687e16114cf7adfd77d0"
+    ],
+    "extends_": [],
+    "definedInClassOrInterfaceTypeKey": null,
+    "innerDefinedClasses": {},
+    "innerDefinedInterfaces": {}
+}

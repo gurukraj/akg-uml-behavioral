@@ -1,0 +1,7 @@
+{
+    "name": "ts-seat-service_depends_on_ts-config-service",
+    "key": "_165e8a9388b64002a70d21fd",
+    "type": "dependency",
+    "source": "_e8244018e61a40798562a594",
+    "target": "_5f69856c4bf6471b9f979461"
+}

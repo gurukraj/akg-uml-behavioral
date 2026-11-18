@@ -1,0 +1,75 @@
+{
+    "name": "ConsignController",
+    "key": "_7990a8b92af54f5c8c8ff968",
+    "type": "class",
+    "hasTypeVariable": false,
+    "position": null,
+    "modifiers": [],
+    "fields": {},
+    "methods": {
+        "insertConsignRecord": {
+            "name": "insertConsignRecord",
+            "key": "_1d92eaf65ca04245b72dbca6",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "ConsignRecord",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "updateConsignRecord": {
+            "name": "updateConsignRecord",
+            "key": "_d72b2ff63a5b4d089578ce95",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "ConsignRecord",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "queryByAccountId": {
+            "name": "queryByAccountId",
+            "key": "_024a5d4d84664c28a5b27e85",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "String",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "queryByOrderId": {
+            "name": "queryByOrderId",
+            "key": "_3c84758f18aa489db979ab34",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "String",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        }
+    },
+    "file_path": "./ConsignController",
+    "anonymous": false,
+    "auxclass": false,
+    "implements_": [],
+    "extends_": [],
+    "definedInClassOrInterfaceTypeKey": null,
+    "innerDefinedClasses": {},
+    "innerDefinedInterfaces": {}
+}

@@ -1,0 +1,8 @@
+{
+    "name": "calls_ts_order_other_service",
+    "key": "_3b06f9d6de25419bb438b58d",
+    "type": "dependency",
+    "source": "tt-class-rebook-service",
+    "target": "ts-order-other-service",
+    "endpoint": "PUT /api/v1/orderOtherService/orderOther"
+}

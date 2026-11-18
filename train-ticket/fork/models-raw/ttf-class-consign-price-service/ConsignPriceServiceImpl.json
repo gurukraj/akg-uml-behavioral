@@ -1,0 +1,63 @@
+{
+    "name": "ConsignPriceServiceImpl",
+    "key": "_2b39769a230f49fea71bd9c1",
+    "type": "class",
+    "hasTypeVariable": false,
+    "position": null,
+    "modifiers": [],
+    "fields": {},
+    "methods": {
+        "getPriceByWeightAndRegion": {
+            "name": "getPriceByWeightAndRegion",
+            "key": "_4da710d2caa143b2b90d9ee4",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "double",
+                    "boolean",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "queryPriceInformation": {
+            "name": "queryPriceInformation",
+            "key": "_efaf470c29d54bfabfb54a41",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "createAndModifyPrice": {
+            "name": "createAndModifyPrice",
+            "key": "_daddb5c1cabc4943919476da",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "ConsignPrice",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        }
+    },
+    "file_path": "./ConsignPriceServiceImpl",
+    "anonymous": false,
+    "auxclass": false,
+    "implements_": [
+        "_af4ae6806a3e4b82868a8946"
+    ],
+    "extends_": [],
+    "definedInClassOrInterfaceTypeKey": null,
+    "innerDefinedClasses": {},
+    "innerDefinedInterfaces": {}
+}

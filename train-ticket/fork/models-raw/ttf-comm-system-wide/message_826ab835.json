@@ -1,0 +1,8 @@
+{
+    "name": "retrieve()",
+    "key": "_fb21b9007a7142fe826ab835",
+    "type": "uml:Message",
+    "sender": "_6801a52e9d3d4175a2d53b0f",
+    "receiver": "_7cbe95c3f15a4c259a6bdd6d",
+    "messageLabel": "retrieve()"
+}

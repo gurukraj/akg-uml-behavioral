@@ -1,0 +1,455 @@
+{
+  "metadata": {
+    "validation_date": "2026-03-29",
+    "random_seed": 42,
+    "sample_size_per_type": 100,
+    "dataset_source": "behavioral_index_39220.json.gz",
+    "thresholds": {
+      "sync_call_chain_depth": 3,
+      "hub_total_connections": 8,
+      "workflow_convergence_branches": 3,
+      "timing_chain_depth": 3,
+      "timing_bound_seconds": 3,
+      "chatty_message_count": 6,
+      "state_explosion_count": 15,
+      "god_activity_percentage": 40
+    }
+  },
+  "sampling": {
+    "Activity": 100,
+    "Sequence": 100,
+    "StateMachine": 100,
+    "Communication": 100,
+    "Timing": 28
+  },
+  "pipeline_validation": {
+    "Activity": {
+      "sample_size": 100,
+      "ingestion_pass_rate": 100.0,
+      "completeness_pass_rate": 52.0,
+      "semantic_pass_rate": 39.0,
+      "compatibility_pass_rate": 100.0,
+      "overall_pass_rate": 15.0,
+      "L1_structural": {
+        "accuracy": 84.0,
+        "precision": 84.0,
+        "recall": 100.0,
+        "f1": 91.3
+      },
+      "L2_completeness": {
+        "accuracy": 96.0,
+        "precision": 92.3,
+        "recall": 100.0,
+        "f1": 96.0
+      },
+      "L3_semantic": {
+        "accuracy": 41.0,
+        "precision": 35.9,
+        "recall": 29.2,
+        "f1": 32.2
+      },
+      "L4_compatibility": {
+        "accuracy": 100.0,
+        "precision": 100.0,
+        "recall": 100.0,
+        "f1": 100.0
+      },
+      "temporal_extraction": {
+        "accuracy": 99.0,
+        "precision": 100.0,
+        "recall": 97.9,
+        "f1": 98.9
+      },
+      "causal_extraction": {
+        "accuracy": 100.0,
+        "precision": 100.0,
+        "recall": 100.0,
+        "f1": 100.0
+      }
+    },
+    "Sequence": {
+      "sample_size": 100,
+      "ingestion_pass_rate": 100.0,
+      "completeness_pass_rate": 53.0,
+      "semantic_pass_rate": 52.0,
+      "compatibility_pass_rate": 100.0,
+      "overall_pass_rate": 32.0,
+      "L1_structural": {
+        "accuracy": 80.0,
+        "precision": 80.0,
+        "recall": 100.0,
+        "f1": 88.9
+      },
+      "L2_completeness": {
+        "accuracy": 91.0,
+        "precision": 96.2,
+        "recall": 87.9,
+        "f1": 91.9
+      },
+      "L3_semantic": {
+        "accuracy": 56.0,
+        "precision": 100.0,
+        "recall": 54.2,
+        "f1": 70.3
+      },
+      "L4_compatibility": {
+        "accuracy": 100.0,
+        "precision": 100.0,
+        "recall": 100.0,
+        "f1": 100.0
+      },
+      "temporal_extraction": {
+        "accuracy": 97.0,
+        "precision": 100.0,
+        "recall": 95.4,
+        "f1": 97.6
+      },
+      "causal_extraction": {
+        "accuracy": 93.0,
+        "precision": 100.0,
+        "recall": 89.2,
+        "f1": 94.3
+      }
+    },
+    "StateMachine": {
+      "sample_size": 100,
+      "ingestion_pass_rate": 100.0,
+      "completeness_pass_rate": 4.0,
+      "semantic_pass_rate": 4.0,
+      "compatibility_pass_rate": 100.0,
+      "overall_pass_rate": 2.0,
+      "L1_structural": {
+        "accuracy": 20.0,
+        "precision": 20.0,
+        "recall": 100.0,
+        "f1": 33.3
+      },
+      "L2_completeness": {
+        "accuracy": 98.0,
+        "precision": 50.0,
+        "recall": 100.0,
+        "f1": 66.7
+      },
+      "L3_semantic": {
+        "accuracy": 98.0,
+        "precision": 50.0,
+        "recall": 100.0,
+        "f1": 66.7
+      },
+      "L4_compatibility": {
+        "accuracy": 100.0,
+        "precision": 100.0,
+        "recall": 100.0,
+        "f1": 100.0
+      },
+      "temporal_extraction": {
+        "accuracy": 100.0,
+        "precision": 100.0,
+        "recall": 100.0,
+        "f1": 100.0
+      },
+      "causal_extraction": {
+        "accuracy": 99.0,
+        "precision": 100.0,
+        "recall": 50.0,
+        "f1": 66.7
+      }
+    },
+    "Communication": {
+      "sample_size": 100,
+      "ingestion_pass_rate": 100.0,
+      "completeness_pass_rate": 90.0,
+      "semantic_pass_rate": 10.0,
+      "compatibility_pass_rate": 100.0,
+      "overall_pass_rate": 10.0,
+      "L1_structural": {
+        "accuracy": 26.0,
+        "precision": 26.0,
+        "recall": 100.0,
+        "f1": 41.3
+      },
+      "L2_completeness": {
+        "accuracy": 18.0,
+        "precision": 8.9,
+        "recall": 100.0,
+        "f1": 16.3
+      },
+      "L3_semantic": {
+        "accuracy": 17.0,
+        "precision": 100.0,
+        "recall": 10.8,
+        "f1": 19.4
+      },
+      "L4_compatibility": {
+        "accuracy": 100.0,
+        "precision": 100.0,
+        "recall": 100.0,
+        "f1": 100.0
+      },
+      "temporal_extraction": {
+        "accuracy": 83.0,
+        "precision": 100.0,
+        "recall": 83.0,
+        "f1": 90.7
+      },
+      "causal_extraction": {
+        "accuracy": 72.0,
+        "precision": 100.0,
+        "recall": 72.0,
+        "f1": 83.7
+      }
+    },
+    "Timing": {
+      "sample_size": 28,
+      "ingestion_pass_rate": 100.0,
+      "completeness_pass_rate": 100.0,
+      "semantic_pass_rate": 0.0,
+      "compatibility_pass_rate": 100.0,
+      "overall_pass_rate": 0.0,
+      "L1_structural": {
+        "accuracy": 82.1,
+        "precision": 82.1,
+        "recall": 100.0,
+        "f1": 90.2
+      },
+      "L2_completeness": {
+        "accuracy": 100.0,
+        "precision": 100.0,
+        "recall": 100.0,
+        "f1": 100.0
+      },
+      "L3_semantic": {
+        "accuracy": 0.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "L4_compatibility": {
+        "accuracy": 100.0,
+        "precision": 100.0,
+        "recall": 100.0,
+        "f1": 100.0
+      },
+      "temporal_extraction": {
+        "accuracy": 100.0,
+        "precision": 100.0,
+        "recall": 100.0,
+        "f1": 100.0
+      },
+      "causal_extraction": {
+        "accuracy": 0.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      }
+    }
+  },
+  "extraction_statistics": {
+    "Activity": {
+      "total_diagrams": 100,
+      "temporal_extraction_rate": 46.0,
+      "causal_extraction_rate": 42.0,
+      "avg_use_elements": 17.2,
+      "avg_triples": 76.4,
+      "diagrams_with_elements_rate": 47.0
+    },
+    "Sequence": {
+      "total_diagrams": 100,
+      "temporal_extraction_rate": 62.0,
+      "causal_extraction_rate": 58.0,
+      "avg_use_elements": 27.6,
+      "avg_triples": 108.5,
+      "diagrams_with_elements_rate": 66.0
+    },
+    "StateMachine": {
+      "total_diagrams": 100,
+      "temporal_extraction_rate": 2.0,
+      "causal_extraction_rate": 1.0,
+      "avg_use_elements": 0.3,
+      "avg_triples": 1.6,
+      "diagrams_with_elements_rate": 2.0
+    },
+    "Communication": {
+      "total_diagrams": 100,
+      "temporal_extraction_rate": 83.0,
+      "causal_extraction_rate": 72.0,
+      "avg_use_elements": 58.2,
+      "avg_triples": 126.7,
+      "diagrams_with_elements_rate": 100.0
+    },
+    "Timing": {
+      "total_diagrams": 28,
+      "temporal_extraction_rate": 100.0,
+      "causal_extraction_rate": 100.0,
+      "avg_use_elements": 41.6,
+      "avg_triples": 166.6,
+      "diagrams_with_elements_rate": 100.0
+    }
+  },
+  "bottleneck_detection": {
+    "Q1_sync_call_chain": {
+      "accuracy": 100.0,
+      "precision": 100.0,
+      "recall": 100.0,
+      "f1": 100.0,
+      "tp": 49,
+      "fp": 0,
+      "fn": 0,
+      "tn": 51
+    },
+    "Q2_hub_component": {
+      "accuracy": 50.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 50,
+      "fn": 0,
+      "tn": 50
+    },
+    "Q3_workflow_convergence": {
+      "accuracy": 100.0,
+      "precision": 100.0,
+      "recall": 100.0,
+      "f1": 100.0,
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "tn": 99
+    },
+    "Q4_timing_violation": {
+      "accuracy": 100.0,
+      "precision": 100.0,
+      "recall": 100.0,
+      "f1": 100.0,
+      "tp": 28,
+      "fp": 0,
+      "fn": 0,
+      "tn": 0
+    },
+    "Overall": {
+      "accuracy": 84.8,
+      "precision": 60.9,
+      "recall": 100.0,
+      "f1": 75.7,
+      "tp": 78,
+      "fp": 50,
+      "fn": 0,
+      "tn": 200
+    }
+  },
+  "smell_detection": {
+    "Q5_chatty_interface": {
+      "accuracy": 100.0,
+      "precision": 100.0,
+      "recall": 100.0,
+      "f1": 100.0,
+      "tp": 47,
+      "fp": 0,
+      "fn": 0,
+      "tn": 53
+    },
+    "Q6_state_explosion": {
+      "accuracy": 100.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "tn": 100
+    },
+    "Q7_cyclic_collaboration": {
+      "accuracy": 32.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 68,
+      "fn": 0,
+      "tn": 32
+    },
+    "Q8_god_activity": {
+      "accuracy": 100.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "tn": 100
+    },
+    "Overall": {
+      "accuracy": 83.0,
+      "precision": 40.9,
+      "recall": 100.0,
+      "f1": 58.0,
+      "tp": 47,
+      "fp": 68,
+      "fn": 0,
+      "tn": 285
+    }
+  },
+  "principles_evaluation": {
+    "DDD_bounded_context": {
+      "accuracy": 100.0,
+      "precision": 100.0,
+      "recall": 100.0,
+      "f1": 100.0,
+      "tp": 2,
+      "fp": 0,
+      "fn": 0,
+      "tn": 185
+    },
+    "DDD_ubiquitous_language": {
+      "accuracy": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "tn": 0
+    },
+    "DDD_aggregate_boundary": {
+      "accuracy": 100.0,
+      "precision": 100.0,
+      "recall": 100.0,
+      "f1": 100.0,
+      "tp": 2,
+      "fp": 0,
+      "fn": 0,
+      "tn": 0
+    },
+    "CA_dependency_rule": {
+      "accuracy": 16.8,
+      "precision": 100.0,
+      "recall": 16.8,
+      "f1": 28.8,
+      "tp": 372,
+      "fp": 0,
+      "fn": 1839,
+      "tn": 0
+    },
+    "CA_bl_isolation": {
+      "accuracy": 100.0,
+      "precision": 100.0,
+      "recall": 100.0,
+      "f1": 100.0,
+      "tp": 575,
+      "fp": 0,
+      "fn": 0,
+      "tn": 0
+    },
+    "Overall": {
+      "accuracy": 38.2,
+      "precision": 100.0,
+      "recall": 34.1,
+      "f1": 50.8,
+      "tp": 951,
+      "fp": 0,
+      "fn": 1839,
+      "tn": 185
+    }
+  }
+}

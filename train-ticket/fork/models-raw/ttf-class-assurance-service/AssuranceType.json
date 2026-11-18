@@ -1,0 +1,40 @@
+{
+    "name": "AssuranceType",
+    "key": "_a7be9f7072c84ceab55a2193",
+    "type": "class",
+    "hasTypeVariable": false,
+    "position": null,
+    "modifiers": [],
+    "fields": {
+        "index": {
+            "name": "index",
+            "key": "_f7c2dbcd181b47d3a74337f4",
+            "type": "int",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "name": {
+            "name": "name",
+            "key": "_b7b7ecf2f79840ce9f3ea3c8",
+            "type": "String",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "price": {
+            "name": "price",
+            "key": "_8a42e0462f0646cda93d717b",
+            "type": "double",
+            "visibility": "private",
+            "isStatic": false
+        }
+    },
+    "methods": {},
+    "file_path": "./AssuranceType",
+    "anonymous": false,
+    "auxclass": false,
+    "implements_": [],
+    "extends_": [],
+    "definedInClassOrInterfaceTypeKey": null,
+    "innerDefinedClasses": {},
+    "innerDefinedInterfaces": {}
+}

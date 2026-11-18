@@ -1,0 +1,8 @@
+{
+    "name": "getTicketsByDateAndTripId()",
+    "key": "_6215668f7bf34ae8be633587",
+    "type": "uml:Message",
+    "sender": "_cdcb894e2ffb48e38e4dcc62",
+    "receiver": "_51e89aa45dce45cc8c20f5ca",
+    "messageLabel": "getTicketsByDateAndTripId()"
+}

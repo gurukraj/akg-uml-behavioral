@@ -1,0 +1,7 @@
+{
+    "name": "ConsignPriceServiceImpl_uses_ConsignPriceConfigRepository",
+    "key": "_f235aae726f34be8acceeda2",
+    "type": "dependency",
+    "source": "_2b39769a230f49fea71bd9c1",
+    "target": "_76f74f9928b64eb0927ee5ce"
+}

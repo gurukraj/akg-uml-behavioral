@@ -1,0 +1,12 @@
+PREFIX akg: <https://w3id.org/akg/behavioral#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+SELECT ?stateMachine ?stateCount
+WHERE {
+  ?sm rdf:type akg:BehavioralElement ;
+      akg:componentName ?stateMachine ;
+      akg:stateCount ?stateCount .
+
+  FILTER(?stateCount > 15)
+}
+ORDER BY DESC(?stateCount)

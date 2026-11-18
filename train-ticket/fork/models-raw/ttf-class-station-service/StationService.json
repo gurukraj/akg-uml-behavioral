@@ -1,0 +1,102 @@
+{
+    "name": "StationService",
+    "key": "_6e944e5ea6d04b6295261623",
+    "type": "interface",
+    "hasTypeVariable": false,
+    "position": null,
+    "modifiers": [],
+    "fields": {},
+    "methods": {
+        "create": {
+            "name": "create",
+            "key": "_8248586f134a426fb32d6ff8",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "Station",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": true
+        },
+        "update": {
+            "name": "update",
+            "key": "_5fa194c1aa934868a2d844aa",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "Station",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": true
+        },
+        "delete": {
+            "name": "delete",
+            "key": "_9032e2a9a42f46e69b485f49",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "String",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": true
+        },
+        "query": {
+            "name": "query",
+            "key": "_b01ab54384124a1ab1441fc8",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": true
+        },
+        "queryById": {
+            "name": "queryById",
+            "key": "_2f9b14f0cfd6411ba2f76a68",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "String",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": true
+        },
+        "queryByName": {
+            "name": "queryByName",
+            "key": "_5936a94213ff4ebe9e281555",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "String",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": true
+        }
+    },
+    "file_path": "./StationService",
+    "anonymous": false,
+    "auxclass": false,
+    "implements_": [],
+    "extends_": [],
+    "definedInClassOrInterfaceTypeKey": null,
+    "innerDefinedClasses": {},
+    "innerDefinedInterfaces": {}
+}

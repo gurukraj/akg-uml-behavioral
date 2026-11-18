@@ -1,0 +1,41 @@
+{
+    "name": "TrainTypeRepository",
+    "key": "_547f81903db342198fdaae81",
+    "type": "interface",
+    "hasTypeVariable": false,
+    "position": null,
+    "modifiers": [],
+    "fields": {},
+    "methods": {
+        "findById": {
+            "name": "findById",
+            "key": "_c062e0c3a48c4d77b963e34a",
+            "returnType": "TrainType",
+            "parameters": [
+                [
+                    "String"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": true
+        },
+        "findAll": {
+            "name": "findAll",
+            "key": "_e2879c560bf04d098bf0e3bb",
+            "returnType": "List<TrainType>",
+            "parameters": [],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": true
+        }
+    },
+    "file_path": "./TrainTypeRepository",
+    "anonymous": false,
+    "auxclass": false,
+    "implements_": [],
+    "extends_": [],
+    "definedInClassOrInterfaceTypeKey": null,
+    "innerDefinedClasses": {},
+    "innerDefinedInterfaces": {}
+}

@@ -1,0 +1,443 @@
+{
+    "name": "TravelPlanSequence",
+    "key": "_409372d6cd3d4a15be2f4a19",
+    "type": "interaction",
+    "lifelines": [
+        {
+            "name": "Client",
+            "key": "_94552bfa99b34bedafeaf385",
+            "represents": "_68c50975b78b4035a346e2c8",
+            "coveredBy": []
+        },
+        {
+            "name": "ts-travel-plan-service",
+            "key": "_8ba7b33800624795a4e82052",
+            "represents": "_33a5eb50ca824ae38f97b63c",
+            "coveredBy": []
+        },
+        {
+            "name": "ts-route-plan-service",
+            "key": "_be453ae059034a448e648586",
+            "represents": "_26083a0090a14680a3cf887b",
+            "coveredBy": []
+        },
+        {
+            "name": "ts-route-service",
+            "key": "_6d0b542ed2934945a429b45a",
+            "represents": "_1be90d88b4c341cbbc9ce3f4",
+            "coveredBy": []
+        },
+        {
+            "name": "ts-travel-service",
+            "key": "_2fa901996921413c9dd3f822",
+            "represents": "_938abe59b3a64fcc9e8be275",
+            "coveredBy": []
+        },
+        {
+            "name": "ts-travel2-service",
+            "key": "_a7f8b04b9072442e92c1a7a5",
+            "represents": "_c094a5dc929f40408af70c9b",
+            "coveredBy": []
+        },
+        {
+            "name": "ts-station-service",
+            "key": "_cc95afda8a4c46d895304e8f",
+            "represents": "_f24cadf761204ecb8aaf72ff",
+            "coveredBy": []
+        },
+        {
+            "name": "ts-seat-service",
+            "key": "_ae60579ae77848638e50fe96",
+            "represents": "_7727c3a516434aa283ceaab4",
+            "coveredBy": []
+        },
+        {
+            "name": "ts-ticketinfo-service",
+            "key": "_bca4bd59e5e548f3a3fdc780",
+            "represents": "_82375f484e814a809df03425",
+            "coveredBy": []
+        }
+    ],
+    "messages": [
+        {
+            "name": "getCheapest(tripInfo)",
+            "key": "_ed48431829d64c9c99e35ff3",
+            "messageSort": "synchCall",
+            "sendEvent": "_a98499adcc0a46e6b8a9973c",
+            "receiveEvent": "_49632953a3d14a84a4f1bbdf",
+            "connector": null,
+            "signature": null
+        },
+        {
+            "name": "searchCheapestResult(routePlanInfo)",
+            "key": "_a4939e9fb3d846df97c12e84",
+            "messageSort": "synchCall",
+            "sendEvent": "_c57b263596c848b89dca78bb",
+            "receiveEvent": "_79a4af0181a84b238f83ecea",
+            "connector": null,
+            "signature": null
+        },
+        {
+            "name": "queryForStationId(stationName)",
+            "key": "_447e017cc7d443558b0418e2",
+            "messageSort": "synchCall",
+            "sendEvent": "_b2cb079dd40445259f9f1773",
+            "receiveEvent": "_71f800f49f404ad79ed26fc0",
+            "connector": null,
+            "signature": null
+        },
+        {
+            "name": "stationId",
+            "key": "_13f292efed6449908922c114",
+            "messageSort": "reply",
+            "sendEvent": "_35ea2854a9df4551bd838117",
+            "receiveEvent": "_77e59a21dd194edc908ff226",
+            "connector": null,
+            "signature": null
+        },
+        {
+            "name": "queryByStartAndTerminal(startId,terminalId)",
+            "key": "_c9c6aee8bb2a45489455559a",
+            "messageSort": "synchCall",
+            "sendEvent": "_e66fdd386e0d43f3b22dfd36",
+            "receiveEvent": "_93646d6fc8714474ad309fdc",
+            "connector": null,
+            "signature": null
+        },
+        {
+            "name": "routes",
+            "key": "_6f84bad568804888936adf9e",
+            "messageSort": "reply",
+            "sendEvent": "_db8117db58194fa6b48b3718",
+            "receiveEvent": "_ed833214e7c64d0897fbc821",
+            "connector": null,
+            "signature": null
+        },
+        {
+            "name": "getTripsByRouteId(routeIds)",
+            "key": "_9845ca8e44cf49d69f8dc070",
+            "messageSort": "synchCall",
+            "sendEvent": "_3f92cdd88413489fa4f3a19f",
+            "receiveEvent": "_b61b9f653b9c4a60b87b9066",
+            "connector": null,
+            "signature": null
+        },
+        {
+            "name": "trips",
+            "key": "_aaf3e320b2fc46a5a5fcd4ab",
+            "messageSort": "reply",
+            "sendEvent": "_65ccd9569648479dbb3ba1bc",
+            "receiveEvent": "_c3997318681f42818f1544d8",
+            "connector": null,
+            "signature": null
+        },
+        {
+            "name": "getTripsByRouteId(routeIds)",
+            "key": "_81eed9ab705246cdbaf75fcf",
+            "messageSort": "synchCall",
+            "sendEvent": "_5ed28d4d9c6c4df5ae50d7a3",
+            "receiveEvent": "_bf6ede19035340ddba9bc447",
+            "connector": null,
+            "signature": null
+        },
+        {
+            "name": "trips",
+            "key": "_c1b32bef30be4ad9851d023b",
+            "messageSort": "reply",
+            "sendEvent": "_01aa2d0dc57e4f5cabd59fdc",
+            "receiveEvent": "_c55ccd50c7364fb6a13b4281",
+            "connector": null,
+            "signature": null
+        },
+        {
+            "name": "cheapestResult",
+            "key": "_7f57b6bfd924456da2e8bd5d",
+            "messageSort": "reply",
+            "sendEvent": "_f175485eb1294d2993782273",
+            "receiveEvent": "_f884ffe45b054980852eea02",
+            "connector": null,
+            "signature": null
+        },
+        {
+            "name": "getLeftTicketOfInterval(seat)",
+            "key": "_40948eb03891470f842f0282",
+            "messageSort": "synchCall",
+            "sendEvent": "_b56163209654452294844ca2",
+            "receiveEvent": "_643a42132f354edcad74b430",
+            "connector": null,
+            "signature": null
+        },
+        {
+            "name": "leftTickets",
+            "key": "_8a67884f7490474d8fd2852b",
+            "messageSort": "reply",
+            "sendEvent": "_0b4300d2dcd342ec8c6b1458",
+            "receiveEvent": "_ba0ca49ee7cf418b94b43b4d",
+            "connector": null,
+            "signature": null
+        },
+        {
+            "name": "travelPlanResult",
+            "key": "_036edfd2dde242c38db14e82",
+            "messageSort": "reply",
+            "sendEvent": "_c3227d53f01c4f1488d47769",
+            "receiveEvent": "_00e534c42c8a450a83e1827f",
+            "connector": null,
+            "signature": null
+        }
+    ],
+    "fragments": [
+        {
+            "key": "_a98499adcc0a46e6b8a9973c",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_94552bfa99b34bedafeaf385",
+            "enclosingInteraction": "ttf-seq-travel-plan",
+            "message": "_ed48431829d64c9c99e35ff3",
+            "execution": null
+        },
+        {
+            "key": "_49632953a3d14a84a4f1bbdf",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_8ba7b33800624795a4e82052",
+            "enclosingInteraction": "ttf-seq-travel-plan",
+            "message": "_ed48431829d64c9c99e35ff3",
+            "execution": null
+        },
+        {
+            "key": "_c57b263596c848b89dca78bb",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_8ba7b33800624795a4e82052",
+            "enclosingInteraction": "ttf-seq-travel-plan",
+            "message": "_a4939e9fb3d846df97c12e84",
+            "execution": null
+        },
+        {
+            "key": "_79a4af0181a84b238f83ecea",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_be453ae059034a448e648586",
+            "enclosingInteraction": "ttf-seq-travel-plan",
+            "message": "_a4939e9fb3d846df97c12e84",
+            "execution": null
+        },
+        {
+            "key": "_b2cb079dd40445259f9f1773",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_be453ae059034a448e648586",
+            "enclosingInteraction": "ttf-seq-travel-plan",
+            "message": "_447e017cc7d443558b0418e2",
+            "execution": null
+        },
+        {
+            "key": "_71f800f49f404ad79ed26fc0",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_cc95afda8a4c46d895304e8f",
+            "enclosingInteraction": "ttf-seq-travel-plan",
+            "message": "_447e017cc7d443558b0418e2",
+            "execution": null
+        },
+        {
+            "key": "_35ea2854a9df4551bd838117",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_cc95afda8a4c46d895304e8f",
+            "enclosingInteraction": "ttf-seq-travel-plan",
+            "message": "_13f292efed6449908922c114",
+            "execution": null
+        },
+        {
+            "key": "_77e59a21dd194edc908ff226",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_be453ae059034a448e648586",
+            "enclosingInteraction": "ttf-seq-travel-plan",
+            "message": "_13f292efed6449908922c114",
+            "execution": null
+        },
+        {
+            "key": "_e66fdd386e0d43f3b22dfd36",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_be453ae059034a448e648586",
+            "enclosingInteraction": "ttf-seq-travel-plan",
+            "message": "_c9c6aee8bb2a45489455559a",
+            "execution": null
+        },
+        {
+            "key": "_93646d6fc8714474ad309fdc",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_6d0b542ed2934945a429b45a",
+            "enclosingInteraction": "ttf-seq-travel-plan",
+            "message": "_c9c6aee8bb2a45489455559a",
+            "execution": null
+        },
+        {
+            "key": "_db8117db58194fa6b48b3718",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_6d0b542ed2934945a429b45a",
+            "enclosingInteraction": "ttf-seq-travel-plan",
+            "message": "_6f84bad568804888936adf9e",
+            "execution": null
+        },
+        {
+            "key": "_ed833214e7c64d0897fbc821",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_be453ae059034a448e648586",
+            "enclosingInteraction": "ttf-seq-travel-plan",
+            "message": "_6f84bad568804888936adf9e",
+            "execution": null
+        },
+        {
+            "key": "_3f92cdd88413489fa4f3a19f",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_be453ae059034a448e648586",
+            "enclosingInteraction": "ttf-seq-travel-plan",
+            "message": "_9845ca8e44cf49d69f8dc070",
+            "execution": null
+        },
+        {
+            "key": "_b61b9f653b9c4a60b87b9066",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_2fa901996921413c9dd3f822",
+            "enclosingInteraction": "ttf-seq-travel-plan",
+            "message": "_9845ca8e44cf49d69f8dc070",
+            "execution": null
+        },
+        {
+            "key": "_65ccd9569648479dbb3ba1bc",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_2fa901996921413c9dd3f822",
+            "enclosingInteraction": "ttf-seq-travel-plan",
+            "message": "_aaf3e320b2fc46a5a5fcd4ab",
+            "execution": null
+        },
+        {
+            "key": "_c3997318681f42818f1544d8",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_be453ae059034a448e648586",
+            "enclosingInteraction": "ttf-seq-travel-plan",
+            "message": "_aaf3e320b2fc46a5a5fcd4ab",
+            "execution": null
+        },
+        {
+            "key": "_5ed28d4d9c6c4df5ae50d7a3",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_be453ae059034a448e648586",
+            "enclosingInteraction": "ttf-seq-travel-plan",
+            "message": "_81eed9ab705246cdbaf75fcf",
+            "execution": null
+        },
+        {
+            "key": "_bf6ede19035340ddba9bc447",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_a7f8b04b9072442e92c1a7a5",
+            "enclosingInteraction": "ttf-seq-travel-plan",
+            "message": "_81eed9ab705246cdbaf75fcf",
+            "execution": null
+        },
+        {
+            "key": "_01aa2d0dc57e4f5cabd59fdc",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_a7f8b04b9072442e92c1a7a5",
+            "enclosingInteraction": "ttf-seq-travel-plan",
+            "message": "_c1b32bef30be4ad9851d023b",
+            "execution": null
+        },
+        {
+            "key": "_c55ccd50c7364fb6a13b4281",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_be453ae059034a448e648586",
+            "enclosingInteraction": "ttf-seq-travel-plan",
+            "message": "_c1b32bef30be4ad9851d023b",
+            "execution": null
+        },
+        {
+            "key": "_f175485eb1294d2993782273",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_be453ae059034a448e648586",
+            "enclosingInteraction": "ttf-seq-travel-plan",
+            "message": "_7f57b6bfd924456da2e8bd5d",
+            "execution": null
+        },
+        {
+            "key": "_f884ffe45b054980852eea02",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_8ba7b33800624795a4e82052",
+            "enclosingInteraction": "ttf-seq-travel-plan",
+            "message": "_7f57b6bfd924456da2e8bd5d",
+            "execution": null
+        },
+        {
+            "key": "_b56163209654452294844ca2",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_8ba7b33800624795a4e82052",
+            "enclosingInteraction": "ttf-seq-travel-plan",
+            "message": "_40948eb03891470f842f0282",
+            "execution": null
+        },
+        {
+            "key": "_643a42132f354edcad74b430",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_ae60579ae77848638e50fe96",
+            "enclosingInteraction": "ttf-seq-travel-plan",
+            "message": "_40948eb03891470f842f0282",
+            "execution": null
+        },
+        {
+            "key": "_0b4300d2dcd342ec8c6b1458",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_ae60579ae77848638e50fe96",
+            "enclosingInteraction": "ttf-seq-travel-plan",
+            "message": "_8a67884f7490474d8fd2852b",
+            "execution": null
+        },
+        {
+            "key": "_ba0ca49ee7cf418b94b43b4d",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_8ba7b33800624795a4e82052",
+            "enclosingInteraction": "ttf-seq-travel-plan",
+            "message": "_8a67884f7490474d8fd2852b",
+            "execution": null
+        },
+        {
+            "key": "_c3227d53f01c4f1488d47769",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_8ba7b33800624795a4e82052",
+            "enclosingInteraction": "ttf-seq-travel-plan",
+            "message": "_036edfd2dde242c38db14e82",
+            "execution": null
+        },
+        {
+            "key": "_00e534c42c8a450a83e1827f",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_94552bfa99b34bedafeaf385",
+            "enclosingInteraction": "ttf-seq-travel-plan",
+            "message": "_036edfd2dde242c38db14e82",
+            "execution": null
+        }
+    ]
+}

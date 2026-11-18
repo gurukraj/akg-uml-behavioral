@@ -1,0 +1,231 @@
+{
+    "name": "OrderController",
+    "key": "_90d57c0bd931451a986ce813",
+    "type": "class",
+    "hasTypeVariable": false,
+    "position": null,
+    "modifiers": [],
+    "fields": {},
+    "methods": {
+        "getTicketListByDateAndTripId": {
+            "name": "getTicketListByDateAndTripId",
+            "key": "_555ed23ae15048ffa20255dd",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "Seat",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "createNewOrder": {
+            "name": "createNewOrder",
+            "key": "_09fa8caa02f7427e8ea7a169",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "Order",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "addcreateNewOrder": {
+            "name": "addcreateNewOrder",
+            "key": "_8ffb6158c7164b7aa69136b1",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "Order",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "queryOrders": {
+            "name": "queryOrders",
+            "key": "_f7975a66e24c427ab709da16",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "OrderInfo",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "queryOrdersForRefresh": {
+            "name": "queryOrdersForRefresh",
+            "key": "_5c7e2ae52d0a4259883f1226",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "OrderInfo",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "calculateSoldTicket": {
+            "name": "calculateSoldTicket",
+            "key": "_8d5545d0c18947b8be55bc6f",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "String",
+                    "String",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "getOrderPrice": {
+            "name": "getOrderPrice",
+            "key": "_000f522b771949328b9e09e7",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "String",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "payOrder": {
+            "name": "payOrder",
+            "key": "_94abb7048cc74682bf0acbd7",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "String",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "getOrderById": {
+            "name": "getOrderById",
+            "key": "_bf38ee08a8924b3393a5efe5",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "String",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "modifyOrder": {
+            "name": "modifyOrder",
+            "key": "_fbbd2883f85a468bba5dede3",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "String",
+                    "int",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "securityInfoCheck": {
+            "name": "securityInfoCheck",
+            "key": "_7567fa59315b4a4297b5b2c3",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "String",
+                    "String",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "saveOrderInfo": {
+            "name": "saveOrderInfo",
+            "key": "_eb71fe8c05b04d49a302dacd",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "Order",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "updateOrder": {
+            "name": "updateOrder",
+            "key": "_c77e053143814ef89595d474",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "Order",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "deleteOrder": {
+            "name": "deleteOrder",
+            "key": "_57d4efcaf72c4ce7b0282a32",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "String",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "findAllOrder": {
+            "name": "findAllOrder",
+            "key": "_ca21d24fd7e1469b9a436fa0",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        }
+    },
+    "file_path": "./OrderController",
+    "anonymous": false,
+    "auxclass": false,
+    "implements_": [],
+    "extends_": [],
+    "definedInClassOrInterfaceTypeKey": null,
+    "innerDefinedClasses": {},
+    "innerDefinedInterfaces": {}
+}

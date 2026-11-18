@@ -1,0 +1,37 @@
+{
+    "name": "CancelService",
+    "key": "_4f37f28a51cd4281af8669c8",
+    "type": "interface",
+    "hasTypeVariable": false,
+    "position": null,
+    "modifiers": [],
+    "fields": {},
+    "methods": {
+        "cancelOrder": {
+            "name": "cancelOrder",
+            "key": "_0fca76430d654040bdc41822",
+            "returnType": "Response",
+            "parameters": "String orderId, String loginId, HttpHeaders headers",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": true
+        },
+        "calculateRefund": {
+            "name": "calculateRefund",
+            "key": "_c0ace4714a4d4e179540e4db",
+            "returnType": "Response",
+            "parameters": "String orderId, HttpHeaders headers",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": true
+        }
+    },
+    "file_path": "./CancelService",
+    "anonymous": false,
+    "auxclass": false,
+    "implements_": [],
+    "extends_": [],
+    "definedInClassOrInterfaceTypeKey": null,
+    "innerDefinedClasses": {},
+    "innerDefinedInterfaces": {}
+}

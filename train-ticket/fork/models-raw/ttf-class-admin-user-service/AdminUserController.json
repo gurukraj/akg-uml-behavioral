@@ -1,0 +1,74 @@
+{
+    "name": "AdminUserController",
+    "key": "_3561ad57d4e44afda2c3a7bc",
+    "type": "class",
+    "hasTypeVariable": false,
+    "position": null,
+    "modifiers": [],
+    "fields": {},
+    "methods": {
+        "getAllUsers": {
+            "name": "getAllUsers",
+            "key": "_8de29909da45457aa9803bc2",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "addUser": {
+            "name": "addUser",
+            "key": "_7e86b164e3414cd8ae486ff7",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "UserDto",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "updateUser": {
+            "name": "updateUser",
+            "key": "_d63774ffc0a443be88bc659c",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "UserDto",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "deleteUser": {
+            "name": "deleteUser",
+            "key": "_bda2131b0a8b44a196923cf6",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "String",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        }
+    },
+    "file_path": "./AdminUserController",
+    "anonymous": false,
+    "auxclass": false,
+    "implements_": [],
+    "extends_": [],
+    "definedInClassOrInterfaceTypeKey": null,
+    "innerDefinedClasses": {},
+    "innerDefinedInterfaces": {}
+}

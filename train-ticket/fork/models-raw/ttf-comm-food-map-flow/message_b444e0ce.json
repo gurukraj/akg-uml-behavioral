@@ -1,0 +1,8 @@
+{
+    "name": "3: getTrainFoodByTripId()",
+    "key": "_0d522d3d8a174d8eb444e0ce",
+    "type": "uml:Message",
+    "sender": "_4436a2172772463e8b1949c9",
+    "receiver": "_e2fe4376dd7946e086e556b7",
+    "messageLabel": "3: getTrainFoodByTripId()"
+}

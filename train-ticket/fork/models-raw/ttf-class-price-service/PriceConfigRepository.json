@@ -1,0 +1,46 @@
+{
+    "name": "PriceConfigRepository",
+    "key": "_b7636f691ef042d8bd4aefde",
+    "type": "interface",
+    "hasTypeVariable": false,
+    "position": null,
+    "modifiers": [],
+    "fields": {},
+    "methods": {
+        "findById": {
+            "name": "findById",
+            "key": "_3a4ed6d8d5d44a67a0966b6a",
+            "returnType": "PriceConfig",
+            "parameters": [
+                [
+                    "UUID"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": true
+        },
+        "findByRouteIdAndTrainType": {
+            "name": "findByRouteIdAndTrainType",
+            "key": "_b1b0ac60ea204c208e66da73",
+            "returnType": "PriceConfig",
+            "parameters": [
+                [
+                    "String",
+                    "String"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": true
+        }
+    },
+    "file_path": "./PriceConfigRepository",
+    "anonymous": false,
+    "auxclass": false,
+    "implements_": [],
+    "extends_": [],
+    "definedInClassOrInterfaceTypeKey": null,
+    "innerDefinedClasses": {},
+    "innerDefinedInterfaces": {}
+}

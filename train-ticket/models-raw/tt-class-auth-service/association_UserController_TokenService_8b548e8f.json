@@ -1,0 +1,9 @@
+{
+    "name": "UserController_uses_TokenService",
+    "key": "_00eed14581b847648b548e8f",
+    "type": "association",
+    "source": "_df2afd44b26049daa7ac25ca",
+    "target": "_ec2304c3a2bb484bb65b8e6c",
+    "sourceMultiplicity": "1",
+    "targetMultiplicity": "1"
+}

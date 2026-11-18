@@ -1,0 +1,41 @@
+{
+    "name": "TrainFoodRepository",
+    "key": "_d0163bd593f3408db7419e81",
+    "type": "interface",
+    "hasTypeVariable": false,
+    "position": null,
+    "modifiers": [],
+    "fields": {},
+    "methods": {
+        "findByTripId": {
+            "name": "findByTripId",
+            "key": "_aca369683f724df4b3dc4388",
+            "returnType": "List<TrainFood>",
+            "parameters": [
+                [
+                    "String"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": true
+        },
+        "findAll": {
+            "name": "findAll",
+            "key": "_bedf3d8725974ba0a6776dc1",
+            "returnType": "List<TrainFood>",
+            "parameters": [],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": true
+        }
+    },
+    "file_path": "./TrainFoodRepository",
+    "anonymous": false,
+    "auxclass": false,
+    "implements_": [],
+    "extends_": [],
+    "definedInClassOrInterfaceTypeKey": null,
+    "innerDefinedClasses": {},
+    "innerDefinedInterfaces": {}
+}

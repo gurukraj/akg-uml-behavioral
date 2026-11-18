@@ -1,0 +1,8 @@
+{
+    "name": "DrawbackDifference_to_DistributeSeat",
+    "key": "_a7bfa7c676a14badba8ca7f4",
+    "type": "uml:ControlFlow",
+    "source": "_c5df986b63324ed5b274aa6a",
+    "target": "_4ded5cbaa284402788f8eb99",
+    "guard": null
+}

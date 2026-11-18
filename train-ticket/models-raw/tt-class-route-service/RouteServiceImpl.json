@@ -1,0 +1,83 @@
+{
+    "name": "RouteServiceImpl",
+    "key": "_1a3a8b76b1ad454dbb9f44d8",
+    "type": "class",
+    "hasTypeVariable": false,
+    "position": null,
+    "modifiers": [],
+    "fields": {
+        "routeRepository": {
+            "name": "routeRepository",
+            "key": "_530a687b60954faf987b3618",
+            "type": "RouteRepository",
+            "visibility": "private",
+            "isStatic": false
+        }
+    },
+    "methods": {
+        "createAndModify": {
+            "name": "createAndModify",
+            "key": "_e5123c91a21a447f9adb279c",
+            "returnType": "Response",
+            "parameters": "RouteInfo info, HttpHeaders headers",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "deleteRoute": {
+            "name": "deleteRoute",
+            "key": "_0daf8185882b48c296f138f5",
+            "returnType": "Response",
+            "parameters": "String routeId, HttpHeaders headers",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "getRouteById": {
+            "name": "getRouteById",
+            "key": "_0f660ad2fe1e4929b19b42df",
+            "returnType": "Response",
+            "parameters": "String routeId, HttpHeaders headers",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "getRouteByIds": {
+            "name": "getRouteByIds",
+            "key": "_ab54a062bd8f4401a0fc38b5",
+            "returnType": "Response",
+            "parameters": "List<String> routeIds, HttpHeaders headers",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "getRouteByStartAndEnd": {
+            "name": "getRouteByStartAndEnd",
+            "key": "_2e722ecacb9f4bc696bfcad5",
+            "returnType": "Response",
+            "parameters": "String startId, String terminalId, HttpHeaders headers",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "getAllRoutes": {
+            "name": "getAllRoutes",
+            "key": "_11496bf65c4a44f8aa9288d6",
+            "returnType": "Response",
+            "parameters": "HttpHeaders headers",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        }
+    },
+    "file_path": "./RouteServiceImpl",
+    "anonymous": false,
+    "auxclass": false,
+    "implements_": [
+        "_8666064482dd42f9946b0be2"
+    ],
+    "extends_": [],
+    "definedInClassOrInterfaceTypeKey": null,
+    "innerDefinedClasses": {},
+    "innerDefinedInterfaces": {}
+}

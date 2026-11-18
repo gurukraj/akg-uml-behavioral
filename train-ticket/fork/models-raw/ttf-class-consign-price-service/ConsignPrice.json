@@ -1,0 +1,61 @@
+{
+    "name": "ConsignPrice",
+    "key": "_972a5e11dc3f4f10a772eac9",
+    "type": "class",
+    "hasTypeVariable": false,
+    "position": null,
+    "modifiers": [],
+    "fields": {
+        "id": {
+            "name": "id",
+            "key": "_e2cd24f7e14e413ca1f5d29f",
+            "type": "UUID",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "index": {
+            "name": "index",
+            "key": "_286035de6bc74a21bcbcec48",
+            "type": "int",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "initialWeight": {
+            "name": "initialWeight",
+            "key": "_6a244a5d1e1a4c658a76ffbd",
+            "type": "double",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "initialPrice": {
+            "name": "initialPrice",
+            "key": "_ea32d1b59b034fd18df40985",
+            "type": "double",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "withinPrice": {
+            "name": "withinPrice",
+            "key": "_4a47a7af20c7407e8dcfc995",
+            "type": "double",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "beyondPrice": {
+            "name": "beyondPrice",
+            "key": "_87a950cf976447adb15fd2f2",
+            "type": "double",
+            "visibility": "private",
+            "isStatic": false
+        }
+    },
+    "methods": {},
+    "file_path": "./ConsignPrice",
+    "anonymous": false,
+    "auxclass": false,
+    "implements_": [],
+    "extends_": [],
+    "definedInClassOrInterfaceTypeKey": null,
+    "innerDefinedClasses": {},
+    "innerDefinedInterfaces": {}
+}

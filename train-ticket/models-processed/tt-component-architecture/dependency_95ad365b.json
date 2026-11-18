@@ -1,0 +1,7 @@
+{
+    "name": "ts-admin-basic-info-service_depends_on_ts-config-service",
+    "key": "_5a9d37a698cd438195ad365b",
+    "type": "dependency",
+    "source": "_4a86440a832b401190fcb2b4",
+    "target": "_8c056b1af7f74713bbb2ee50"
+}

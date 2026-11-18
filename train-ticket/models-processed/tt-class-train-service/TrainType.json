@@ -1,0 +1,54 @@
+{
+    "name": "TrainType",
+    "key": "_2afc08491b164a4b9c5e14f7",
+    "type": "class",
+    "hasTypeVariable": false,
+    "position": null,
+    "modifiers": [],
+    "fields": {
+        "id": {
+            "name": "id",
+            "key": "_6a3e9a23e69443f484db5c5f",
+            "type": "String",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "name": {
+            "name": "name",
+            "key": "_76a638719eb04454b7758c36",
+            "type": "String",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "economyClass": {
+            "name": "economyClass",
+            "key": "_33064bb2ced243a9b41a0b3b",
+            "type": "int",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "confortClass": {
+            "name": "confortClass",
+            "key": "_4eac693e90394031884287b5",
+            "type": "int",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "averageSpeed": {
+            "name": "averageSpeed",
+            "key": "_6dad5efcd0b94bdcb0eca879",
+            "type": "int",
+            "visibility": "private",
+            "isStatic": false
+        }
+    },
+    "methods": {},
+    "file_path": "./TrainType",
+    "anonymous": false,
+    "auxclass": false,
+    "implements_": [],
+    "extends_": [],
+    "definedInClassOrInterfaceTypeKey": null,
+    "innerDefinedClasses": {},
+    "innerDefinedInterfaces": {}
+}

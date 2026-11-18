@@ -1,0 +1,20 @@
+{
+    "name": "TicketInfoIntermediaryTopology",
+    "key": "_7fafe4d6bed04cdd82d34454",
+    "type": "uml:Collaboration",
+    "description": "Communication topology showing ts-ticketinfo-service as intermediary (fork-specific)",
+    "objects": [
+        "_b527c75fdbf24d008ed8d23c",
+        "_d95b6453ba8a4fe592d80853",
+        "_6dcf3db1d8c849b28c3dd8a8",
+        "_152e2675a58441e8bee8bc3a",
+        "_8cad3a6aed674128bf4da7eb",
+        "_ec656d58c1414087bda6843d",
+        "_80bf1c9f957f400d8436abda",
+        "_dcab0b99d24e4208b3d6bd64",
+        "_df9c6e7aa36b47848f0c6559",
+        "_995e7563c00545908af9e891",
+        "_6556e038cbf948b2b12f8f62"
+    ],
+    "links": 12
+}

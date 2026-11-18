@@ -1,0 +1,8 @@
+{
+    "name": "searchCheapestResult()",
+    "key": "_6bd462e1a72a47559d0da702",
+    "type": "uml:Message",
+    "sender": "_785c3add12964bbcbd0d85b1",
+    "receiver": "_942c29b0e40e4ff58df23e97",
+    "messageLabel": "searchCheapestResult()"
+}

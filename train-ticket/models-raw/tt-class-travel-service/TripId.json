@@ -1,0 +1,43 @@
+{
+    "name": "TripId",
+    "key": "_c29a51b1eb1b4439974046a0",
+    "type": "class",
+    "hasTypeVariable": false,
+    "position": null,
+    "modifiers": [],
+    "fields": {
+        "type": {
+            "name": "type",
+            "key": "_90fecaa2ca374da4bba32038",
+            "type": "Type",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "number": {
+            "name": "number",
+            "key": "_afa07ac595014649b161d832",
+            "type": "String",
+            "visibility": "private",
+            "isStatic": false
+        }
+    },
+    "methods": {
+        "toString": {
+            "name": "toString",
+            "key": "_8aa8ac2ec739430983101077",
+            "returnType": "String",
+            "parameters": "",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        }
+    },
+    "file_path": "./TripId",
+    "anonymous": false,
+    "auxclass": false,
+    "implements_": [],
+    "extends_": [],
+    "definedInClassOrInterfaceTypeKey": null,
+    "innerDefinedClasses": {},
+    "innerDefinedInterfaces": {}
+}

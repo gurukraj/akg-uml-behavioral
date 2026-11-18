@@ -1,0 +1,22 @@
+{
+    "classification": {
+        "categories": [
+            "Sequence"
+        ],
+        "primary": "Sequence",
+        "is_class_diagram": false,
+        "is_behavioral": true
+    },
+    "detectedTypes": {
+        "uml:Class": 15,
+        "uml:Interaction": 1,
+        "uml:MessageOccurrenceSpecification": 68
+    },
+    "elementCounts": {
+        "classes": 15,
+        "interactions": 1
+    },
+    "totalElements": 16,
+    "diagram_id": "ttf-seq-preserve-booking",
+    "source_file": "ttf-seq-preserve-booking.json"
+}

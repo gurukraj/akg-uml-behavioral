@@ -1,0 +1,47 @@
+{
+    "name": "NotificationController",
+    "key": "_c93b29c1968548f993054745",
+    "type": "class",
+    "hasTypeVariable": false,
+    "position": null,
+    "modifiers": [],
+    "fields": {},
+    "methods": {
+        "preserve_success": {
+            "name": "preserve_success",
+            "key": "_2c23a74b1d3041ca90a5f0d1",
+            "returnType": "boolean",
+            "parameters": [
+                [
+                    "NotifyInfo",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "order_cancel_success": {
+            "name": "order_cancel_success",
+            "key": "_7e02749a0f64409a91cc0007",
+            "returnType": "boolean",
+            "parameters": [
+                [
+                    "NotifyInfo",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        }
+    },
+    "file_path": "./NotificationController",
+    "anonymous": false,
+    "auxclass": false,
+    "implements_": [],
+    "extends_": [],
+    "definedInClassOrInterfaceTypeKey": null,
+    "innerDefinedClasses": {},
+    "innerDefinedInterfaces": {}
+}

@@ -1,0 +1,8 @@
+{
+    "name": "CheckSecurity_to_DecisionNode_SecurityPass",
+    "key": "_f4081c8da2614bc7aaea0b8c",
+    "type": "uml:ControlFlow",
+    "source": "_9a5fcff8f422445a83c60c3c",
+    "target": "_db1f3a85aac74672bd8e084e",
+    "guard": null
+}

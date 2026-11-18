@@ -1,0 +1,8 @@
+{
+    "name": "calls_ts_verification_code_service",
+    "key": "_2e9319fa6cfa4212add78d3d",
+    "type": "dependency",
+    "source": "tt-class-auth-service",
+    "target": "ts-verification-code-service",
+    "endpoint": "GET /api/v1/verifycode/verify/{verifyCode}"
+}

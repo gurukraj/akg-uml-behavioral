@@ -1,0 +1,63 @@
+{
+    "name": "Travel2ServiceImpl",
+    "key": "_0f77c35ea6d740fcbcda609f",
+    "type": "class",
+    "hasTypeVariable": false,
+    "position": null,
+    "modifiers": [],
+    "fields": {},
+    "methods": {
+        "create": {
+            "name": "create",
+            "key": "_d70884049aa64d388d3a8285",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "TravelInfo",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "query": {
+            "name": "query",
+            "key": "_ff24119b35844c61abf6e7d1",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "TripInfo",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "getTripAllDetailInfo": {
+            "name": "getTripAllDetailInfo",
+            "key": "_2595f04da5da4782b9b24a91",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "TripAllDetailInfo",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        }
+    },
+    "file_path": "./Travel2ServiceImpl",
+    "anonymous": false,
+    "auxclass": false,
+    "implements_": [
+        "_144ab601af9b4a10b0e000ea"
+    ],
+    "extends_": [],
+    "definedInClassOrInterfaceTypeKey": null,
+    "innerDefinedClasses": {},
+    "innerDefinedInterfaces": {}
+}

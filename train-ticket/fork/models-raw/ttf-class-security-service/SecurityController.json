@@ -1,0 +1,88 @@
+{
+    "name": "SecurityController",
+    "key": "_23210ac7e94b4c6e864bafaf",
+    "type": "class",
+    "hasTypeVariable": false,
+    "position": null,
+    "modifiers": [],
+    "fields": {},
+    "methods": {
+        "create": {
+            "name": "create",
+            "key": "_857170642e43471e9856cf5b",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "SecurityConfig",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "update": {
+            "name": "update",
+            "key": "_afb5ffe3b2bd4ab996e60f84",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "SecurityConfig",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "delete": {
+            "name": "delete",
+            "key": "_a3135d7ed8eb4602b6450301",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "String",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "findAll": {
+            "name": "findAll",
+            "key": "_203ab2b1a53647c2bda29b18",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "check": {
+            "name": "check",
+            "key": "_aa816349267843eeb350113a",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "String",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        }
+    },
+    "file_path": "./SecurityController",
+    "anonymous": false,
+    "auxclass": false,
+    "implements_": [],
+    "extends_": [],
+    "definedInClassOrInterfaceTypeKey": null,
+    "innerDefinedClasses": {},
+    "innerDefinedInterfaces": {}
+}

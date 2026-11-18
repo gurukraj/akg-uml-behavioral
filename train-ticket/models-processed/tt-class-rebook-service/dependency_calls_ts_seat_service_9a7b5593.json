@@ -1,0 +1,8 @@
+{
+    "name": "calls_ts_seat_service",
+    "key": "_831fff4126ce46559a7b5593",
+    "type": "dependency",
+    "source": "tt-class-rebook-service",
+    "target": "ts-seat-service",
+    "endpoint": "POST /api/v1/seatservice/seats"
+}

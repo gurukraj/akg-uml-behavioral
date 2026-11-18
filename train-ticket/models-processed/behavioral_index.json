@@ -1,0 +1,185 @@
+{
+    "metadata": {
+        "description": "AKG behavioral index for Train-Ticket",
+        "source_dataset": "Train-Ticket",
+        "source_directory": "models-raw",
+        "target_diagram_types": [
+            "Sequence",
+            "Activity",
+            "Communication",
+            "StateMachine"
+        ]
+    },
+    "primary_behavioral_diagrams": [
+        {
+            "diagram_dir": "tt-seq-ticket-reserve",
+            "uml": {
+                "type": "Sequence"
+            }
+        },
+        {
+            "diagram_dir": "tt-seq-order-pay",
+            "uml": {
+                "type": "Sequence"
+            }
+        },
+        {
+            "diagram_dir": "tt-seq-login",
+            "uml": {
+                "type": "Sequence"
+            }
+        },
+        {
+            "diagram_dir": "tt-seq-cancel-order",
+            "uml": {
+                "type": "Sequence"
+            }
+        },
+        {
+            "diagram_dir": "tt-seq-rebook",
+            "uml": {
+                "type": "Sequence"
+            }
+        },
+        {
+            "diagram_dir": "tt-seq-query-left-tickets",
+            "uml": {
+                "type": "Sequence"
+            }
+        },
+        {
+            "diagram_dir": "tt-seq-consign-create",
+            "uml": {
+                "type": "Sequence"
+            }
+        },
+        {
+            "diagram_dir": "tt-seq-enter-station",
+            "uml": {
+                "type": "Sequence"
+            }
+        },
+        {
+            "diagram_dir": "tt-activity-ticket-booking",
+            "uml": {
+                "type": "Activity"
+            }
+        },
+        {
+            "diagram_dir": "tt-activity-cancel-refund",
+            "uml": {
+                "type": "Activity"
+            }
+        },
+        {
+            "diagram_dir": "tt-comm-preserve-orchestration",
+            "uml": {
+                "type": "Communication"
+            }
+        },
+        {
+            "diagram_dir": "tt-comm-basic-aggregation",
+            "uml": {
+                "type": "Communication"
+            }
+        },
+        {
+            "diagram_dir": "tt-comm-payment-flow",
+            "uml": {
+                "type": "Communication"
+            }
+        }
+    ],
+    "score_signal_behavioral_diagrams": [
+        {
+            "diagram_dir": "tt-class-order-service",
+            "uml": {
+                "type": "Class"
+            }
+        },
+        {
+            "diagram_dir": "tt-class-travel-service",
+            "uml": {
+                "type": "Class"
+            }
+        },
+        {
+            "diagram_dir": "tt-class-preserve-service",
+            "uml": {
+                "type": "Class"
+            }
+        },
+        {
+            "diagram_dir": "tt-class-basic-service",
+            "uml": {
+                "type": "Class"
+            }
+        },
+        {
+            "diagram_dir": "tt-class-seat-service",
+            "uml": {
+                "type": "Class"
+            }
+        },
+        {
+            "diagram_dir": "tt-class-cancel-service",
+            "uml": {
+                "type": "Class"
+            }
+        },
+        {
+            "diagram_dir": "tt-class-rebook-service",
+            "uml": {
+                "type": "Class"
+            }
+        },
+        {
+            "diagram_dir": "tt-class-inside-payment-service",
+            "uml": {
+                "type": "Class"
+            }
+        },
+        {
+            "diagram_dir": "tt-class-station-service",
+            "uml": {
+                "type": "Class"
+            }
+        },
+        {
+            "diagram_dir": "tt-class-route-service",
+            "uml": {
+                "type": "Class"
+            }
+        },
+        {
+            "diagram_dir": "tt-class-train-service",
+            "uml": {
+                "type": "Class"
+            }
+        },
+        {
+            "diagram_dir": "tt-class-price-service",
+            "uml": {
+                "type": "Class"
+            }
+        },
+        {
+            "diagram_dir": "tt-class-contacts-service",
+            "uml": {
+                "type": "Class"
+            }
+        },
+        {
+            "diagram_dir": "tt-class-config-service",
+            "uml": {
+                "type": "Class"
+            }
+        },
+        {
+            "diagram_dir": "tt-class-auth-service",
+            "uml": {
+                "type": "Class"
+            }
+        }
+    ]
+}

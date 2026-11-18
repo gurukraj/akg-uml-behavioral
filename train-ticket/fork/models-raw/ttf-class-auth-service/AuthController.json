@@ -1,0 +1,33 @@
+{
+    "name": "AuthController",
+    "key": "_e7a92e7f8cbf41c687835257",
+    "type": "class",
+    "hasTypeVariable": false,
+    "position": null,
+    "modifiers": [],
+    "fields": {},
+    "methods": {
+        "createDefaultUser": {
+            "name": "createDefaultUser",
+            "key": "_336eeddf95db4407bf640448",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "CreateUserInput",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        }
+    },
+    "file_path": "./AuthController",
+    "anonymous": false,
+    "auxclass": false,
+    "implements_": [],
+    "extends_": [],
+    "definedInClassOrInterfaceTypeKey": null,
+    "innerDefinedClasses": {},
+    "innerDefinedInterfaces": {}
+}

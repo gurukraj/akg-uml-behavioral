@@ -1,0 +1,89 @@
+{
+    "name": "TripResponse",
+    "key": "_1db284f90ec24c82bc277bfa",
+    "type": "class",
+    "hasTypeVariable": false,
+    "position": null,
+    "modifiers": [],
+    "fields": {
+        "tripId": {
+            "name": "tripId",
+            "key": "_05ab9d188aa74c5484213757",
+            "type": "TripId",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "trainTypeId": {
+            "name": "trainTypeId",
+            "key": "_81473978bec643189fe63734",
+            "type": "String",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "startingStation": {
+            "name": "startingStation",
+            "key": "_95ed76998687441e9cf31bce",
+            "type": "String",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "terminalStation": {
+            "name": "terminalStation",
+            "key": "_a34f178df3ad4eeab4f58d65",
+            "type": "String",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "startingTime": {
+            "name": "startingTime",
+            "key": "_3447901cd62342738e3da4f6",
+            "type": "Date",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "endTime": {
+            "name": "endTime",
+            "key": "_5e52f9c2ae5944db8ddb1d3e",
+            "type": "Date",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "economyClass": {
+            "name": "economyClass",
+            "key": "_c5e007f231874192aa8e66f4",
+            "type": "int",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "confortClass": {
+            "name": "confortClass",
+            "key": "_f39a57cfb3fd41ca9c111698",
+            "type": "int",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "priceForEconomyClass": {
+            "name": "priceForEconomyClass",
+            "key": "_7bf71a5ba2784ded8904f62c",
+            "type": "String",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "priceForConfortClass": {
+            "name": "priceForConfortClass",
+            "key": "_4c8e7f862ded4704a040d385",
+            "type": "String",
+            "visibility": "private",
+            "isStatic": false
+        }
+    },
+    "methods": {},
+    "file_path": "./TripResponse",
+    "anonymous": false,
+    "auxclass": false,
+    "implements_": [],
+    "extends_": [],
+    "definedInClassOrInterfaceTypeKey": null,
+    "innerDefinedClasses": {},
+    "innerDefinedInterfaces": {}
+}

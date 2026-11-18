@@ -1,0 +1,9 @@
+{
+    "name": "StationController_uses_StationService",
+    "key": "_68988788c3be4dd2a3b87d76",
+    "type": "association",
+    "source": "_61848847992a495fb80371a5",
+    "target": "_0ecaa43f3ffa468da2f46d87",
+    "sourceMultiplicity": "1",
+    "targetMultiplicity": "1"
+}

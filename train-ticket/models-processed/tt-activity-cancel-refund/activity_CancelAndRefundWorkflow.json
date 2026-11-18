@@ -1,0 +1,305 @@
+{
+    "name": "CancelAndRefundWorkflow",
+    "key": "_53896fcde8aa4f9a96112dcf",
+    "type": "uml:Activity",
+    "nodes": [
+        {
+            "name": "CalculateRefund",
+            "key": "_e4262075515b471cb03deb27",
+            "nodeType": "uml:OpaqueAction",
+            "inPartition": "_807bf610c3f9498c9ac1cfbe",
+            "incoming": [
+                "_5884e0d792464703b1059403"
+            ],
+            "outgoing": [
+                "_606c6eb5849f4418aa63da37"
+            ]
+        },
+        {
+            "name": "CheckOrderStatus",
+            "key": "_d0a0bcc510dc469a921847ab",
+            "nodeType": "uml:OpaqueAction",
+            "inPartition": "_807bf610c3f9498c9ac1cfbe",
+            "incoming": [
+                "_e3a08b7894484daf9674e2eb"
+            ],
+            "outgoing": [
+                "_8241e5ddf0e54199a9624e36"
+            ]
+        },
+        {
+            "name": "DecisionNode_Cancellable",
+            "key": "_d13a0d5cb322492ebbf938ac",
+            "nodeType": "uml:DecisionNode",
+            "inPartition": null,
+            "incoming": [
+                "_8241e5ddf0e54199a9624e36"
+            ],
+            "outgoing": [
+                "_70b2ce4e11354687992258e9",
+                "_5884e0d792464703b1059403"
+            ]
+        },
+        {
+            "name": "DecisionNode_OrderFound",
+            "key": "_d36acb9837374ba48977371e",
+            "nodeType": "uml:DecisionNode",
+            "inPartition": null,
+            "incoming": [
+                "_d7dcf02bfba84520beb4471f"
+            ],
+            "outgoing": [
+                "_e3a08b7894484daf9674e2eb",
+                "_90717d9d730f4ee2a036c4d5"
+            ]
+        },
+        {
+            "name": "DrawbackMoney",
+            "key": "_cbbb8922a9e54e5eac20e4c9",
+            "nodeType": "uml:OpaqueAction",
+            "inPartition": "_51c63aa93a2a4e25b04d1e47",
+            "incoming": [
+                "_c30f7defcac8424aa4355850"
+            ],
+            "outgoing": [
+                "_3e539beed7bc4c4480de2b80"
+            ]
+        },
+        {
+            "name": "FinalNode_NotCancellable",
+            "key": "_0e935ce0541d4c4e977e5672",
+            "nodeType": "uml:ActivityFinalNode",
+            "inPartition": null,
+            "incoming": [
+                "_70b2ce4e11354687992258e9"
+            ],
+            "outgoing": []
+        },
+        {
+            "name": "FinalNode_NotFound",
+            "key": "_0cd70d14bd954f83a0a48137",
+            "nodeType": "uml:ActivityFinalNode",
+            "inPartition": null,
+            "incoming": [
+                "_90717d9d730f4ee2a036c4d5"
+            ],
+            "outgoing": []
+        },
+        {
+            "name": "FinalNode_Success",
+            "key": "_f0eec5959fce4f8f93e58b70",
+            "nodeType": "uml:ActivityFinalNode",
+            "inPartition": null,
+            "incoming": [
+                "_8d683c9e8b1f4043b7307882"
+            ],
+            "outgoing": []
+        },
+        {
+            "name": "GetOrder",
+            "key": "_adf11e22886e492e8094d01a",
+            "nodeType": "uml:OpaqueAction",
+            "inPartition": "_f0fefe76ab8f4322800112cc",
+            "incoming": [
+                "_f2218e20384e45bfb9d1cb1e"
+            ],
+            "outgoing": [
+                "_d7dcf02bfba84520beb4471f"
+            ]
+        },
+        {
+            "name": "GetUserAccount",
+            "key": "_640fa1df26184e689115869b",
+            "nodeType": "uml:OpaqueAction",
+            "inPartition": "_8ba2331fedd942079ab5b9f3",
+            "incoming": [
+                "_606c6eb5849f4418aa63da37"
+            ],
+            "outgoing": [
+                "_c30f7defcac8424aa4355850"
+            ]
+        },
+        {
+            "name": "InitialNode",
+            "key": "_846245aa88aa4d5d8c7bf64b",
+            "nodeType": "uml:InitialNode",
+            "inPartition": null,
+            "incoming": [],
+            "outgoing": [
+                "_f2218e20384e45bfb9d1cb1e"
+            ]
+        },
+        {
+            "name": "SendCancelNotification",
+            "key": "_4bb296641dce499b9f3c1ea6",
+            "nodeType": "uml:OpaqueAction",
+            "inPartition": "_4273ae5a772b46d284739a74",
+            "incoming": [
+                "_1f43def2e9234b8caea78bb4"
+            ],
+            "outgoing": [
+                "_8d683c9e8b1f4043b7307882"
+            ]
+        },
+        {
+            "name": "UpdateOrderStatus",
+            "key": "_a73fbd73a6e7487f9818eacc",
+            "nodeType": "uml:OpaqueAction",
+            "inPartition": "_f0fefe76ab8f4322800112cc",
+            "incoming": [
+                "_3e539beed7bc4c4480de2b80"
+            ],
+            "outgoing": [
+                "_1f43def2e9234b8caea78bb4"
+            ]
+        }
+    ],
+    "edges": [
+        {
+            "name": "DrawbackMoney_to_UpdateOrderStatus",
+            "key": "_3e539beed7bc4c4480de2b80",
+            "edgeType": "uml:ControlFlow",
+            "source": "_cbbb8922a9e54e5eac20e4c9",
+            "target": "_a73fbd73a6e7487f9818eacc",
+            "guard": null
+        },
+        {
+            "name": "DecisionNode_OrderFound_to_CheckOrderStatus",
+            "key": "_e3a08b7894484daf9674e2eb",
+            "edgeType": "uml:ControlFlow",
+            "source": "_d36acb9837374ba48977371e",
+            "target": "_d0a0bcc510dc469a921847ab",
+            "guard": "found"
+        },
+        {
+            "name": "DecisionNode_Cancellable_to_FinalNode_NotCancellable",
+            "key": "_70b2ce4e11354687992258e9",
+            "edgeType": "uml:ControlFlow",
+            "source": "_d13a0d5cb322492ebbf938ac",
+            "target": "_0e935ce0541d4c4e977e5672",
+            "guard": "not cancellable"
+        },
+        {
+            "name": "DecisionNode_OrderFound_to_FinalNode_NotFound",
+            "key": "_90717d9d730f4ee2a036c4d5",
+            "edgeType": "uml:ControlFlow",
+            "source": "_d36acb9837374ba48977371e",
+            "target": "_0cd70d14bd954f83a0a48137",
+            "guard": "not found"
+        },
+        {
+            "name": "GetUserAccount_to_DrawbackMoney",
+            "key": "_c30f7defcac8424aa4355850",
+            "edgeType": "uml:ControlFlow",
+            "source": "_640fa1df26184e689115869b",
+            "target": "_cbbb8922a9e54e5eac20e4c9",
+            "guard": null
+        },
+        {
+            "name": "CheckOrderStatus_to_DecisionNode_Cancellable",
+            "key": "_8241e5ddf0e54199a9624e36",
+            "edgeType": "uml:ControlFlow",
+            "source": "_d0a0bcc510dc469a921847ab",
+            "target": "_d13a0d5cb322492ebbf938ac",
+            "guard": null
+        },
+        {
+            "name": "CalculateRefund_to_GetUserAccount",
+            "key": "_606c6eb5849f4418aa63da37",
+            "edgeType": "uml:ControlFlow",
+            "source": "_e4262075515b471cb03deb27",
+            "target": "_640fa1df26184e689115869b",
+            "guard": null
+        },
+        {
+            "name": "UpdateOrderStatus_to_SendCancelNotification",
+            "key": "_1f43def2e9234b8caea78bb4",
+            "edgeType": "uml:ControlFlow",
+            "source": "_a73fbd73a6e7487f9818eacc",
+            "target": "_4bb296641dce499b9f3c1ea6",
+            "guard": null
+        },
+        {
+            "name": "DecisionNode_Cancellable_to_CalculateRefund",
+            "key": "_5884e0d792464703b1059403",
+            "edgeType": "uml:ControlFlow",
+            "source": "_d13a0d5cb322492ebbf938ac",
+            "target": "_e4262075515b471cb03deb27",
+            "guard": "cancellable"
+        },
+        {
+            "name": "SendCancelNotification_to_FinalNode_Success",
+            "key": "_8d683c9e8b1f4043b7307882",
+            "edgeType": "uml:ControlFlow",
+            "source": "_4bb296641dce499b9f3c1ea6",
+            "target": "_f0eec5959fce4f8f93e58b70",
+            "guard": null
+        },
+        {
+            "name": "InitialNode_to_GetOrder",
+            "key": "_f2218e20384e45bfb9d1cb1e",
+            "edgeType": "uml:ControlFlow",
+            "source": "_846245aa88aa4d5d8c7bf64b",
+            "target": "_adf11e22886e492e8094d01a",
+            "guard": null
+        },
+        {
+            "name": "GetOrder_to_DecisionNode_OrderFound",
+            "key": "_d7dcf02bfba84520beb4471f",
+            "edgeType": "uml:ControlFlow",
+            "source": "_adf11e22886e492e8094d01a",
+            "target": "_d36acb9837374ba48977371e",
+            "guard": null
+        }
+    ],
+    "partitions": [
+        {
+            "name": "ts-cancel-service",
+            "key": "_807bf610c3f9498c9ac1cfbe",
+            "nodes": [
+                "_adf11e22886e492e8094d01a",
+                "_d0a0bcc510dc469a921847ab",
+                "_e4262075515b471cb03deb27"
+            ]
+        },
+        {
+            "name": "ts-inside-payment-service",
+            "key": "_51c63aa93a2a4e25b04d1e47",
+            "nodes": [
+                "_cbbb8922a9e54e5eac20e4c9"
+            ]
+        },
+        {
+            "name": "ts-notification-service",
+            "key": "_4273ae5a772b46d284739a74",
+            "nodes": [
+                "_4bb296641dce499b9f3c1ea6"
+            ]
+        },
+        {
+            "name": "ts-order-service",
+            "key": "_f0fefe76ab8f4322800112cc",
+            "nodes": [
+                "_adf11e22886e492e8094d01a",
+                "_a73fbd73a6e7487f9818eacc"
+            ]
+        },
+        {
+            "name": "ts-user-service",
+            "key": "_8ba2331fedd942079ab5b9f3",
+            "nodes": [
+                "_640fa1df26184e689115869b"
+            ]
+        }
+    ],
+    "nodeCount": 13,
+    "edgeCount": 12,
+    "partitionCount": 5,
+    "nodeTypeCounts": {
+        "uml:OpaqueAction": 7,
+        "uml:DecisionNode": 2,
+        "uml:ActivityFinalNode": 3,
+        "uml:InitialNode": 1
+    },
+    "file_path": "tt-activity-cancel-refund"
+}

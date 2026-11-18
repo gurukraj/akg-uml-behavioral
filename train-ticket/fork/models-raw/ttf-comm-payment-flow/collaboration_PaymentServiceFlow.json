@@ -1,0 +1,13 @@
+{
+    "name": "PaymentServiceFlow",
+    "key": "_24f3f5dad39f44cea921f432",
+    "type": "uml:Collaboration",
+    "description": "Communication topology for payment processing",
+    "objects": [
+        "_67b44b67e5b74b89afe92741",
+        "_9134531a12d84494919a0dd4",
+        "_239f890a56994598bdc57196",
+        "_488731e6a2574b0b819a3bcc"
+    ],
+    "links": 5
+}

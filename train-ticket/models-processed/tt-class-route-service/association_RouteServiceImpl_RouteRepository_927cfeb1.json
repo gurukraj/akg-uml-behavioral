@@ -1,0 +1,9 @@
+{
+    "name": "RouteServiceImpl_uses_RouteRepository",
+    "key": "_a77737cf677c44bd927cfeb1",
+    "type": "association",
+    "source": "_1a3a8b76b1ad454dbb9f44d8",
+    "target": "_8ef0632a8f174783aefd945b",
+    "sourceMultiplicity": "1",
+    "targetMultiplicity": "1"
+}

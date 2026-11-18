@@ -1,0 +1,118 @@
+{
+    "name": "TravelService",
+    "key": "_4ca233b64f5d4ba6beeb51b6",
+    "type": "interface",
+    "hasTypeVariable": false,
+    "position": null,
+    "modifiers": [],
+    "fields": {},
+    "methods": {
+        "create": {
+            "name": "create",
+            "key": "_e1bc841e794b438aa232910e",
+            "returnType": "Response",
+            "parameters": "TravelInfo info, HttpHeaders headers",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": true
+        },
+        "retrieve": {
+            "name": "retrieve",
+            "key": "_b444d9692c5541a4beef450b",
+            "returnType": "Response",
+            "parameters": "String tripId, HttpHeaders headers",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": true
+        },
+        "update": {
+            "name": "update",
+            "key": "_d1551ddf15af43fc9be5308f",
+            "returnType": "Response",
+            "parameters": "TravelInfo info, HttpHeaders headers",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": true
+        },
+        "delete": {
+            "name": "delete",
+            "key": "_5b7c25d758d849bfba52f451",
+            "returnType": "Response",
+            "parameters": "String tripId, HttpHeaders headers",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": true
+        },
+        "query": {
+            "name": "query",
+            "key": "_c1cda53e57f3407d84077384",
+            "returnType": "Response",
+            "parameters": "TripInfo info, HttpHeaders headers",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": true
+        },
+        "getTripAllDetailInfo": {
+            "name": "getTripAllDetailInfo",
+            "key": "_c55da5ee3c8d4d06a948ac43",
+            "returnType": "Response",
+            "parameters": "TripAllDetailInfo gtdi, HttpHeaders headers",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": true
+        },
+        "getRouteByTripId": {
+            "name": "getRouteByTripId",
+            "key": "_f0e274cfbbbb4f3094543ef1",
+            "returnType": "Response",
+            "parameters": "String tripId, HttpHeaders headers",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": true
+        },
+        "getTrainTypeByTripId": {
+            "name": "getTrainTypeByTripId",
+            "key": "_a6c9c4733e7a4c6f97407d6a",
+            "returnType": "Response",
+            "parameters": "String tripId, HttpHeaders headers",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": true
+        },
+        "queryAll": {
+            "name": "queryAll",
+            "key": "_969b872f243241ccb50a97db",
+            "returnType": "Response",
+            "parameters": "HttpHeaders headers",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": true
+        },
+        "getTripByRoute": {
+            "name": "getTripByRoute",
+            "key": "_914d2ff81b5743838ee58041",
+            "returnType": "Response",
+            "parameters": "ArrayList<String> routeIds, HttpHeaders headers",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": true
+        },
+        "adminQueryAll": {
+            "name": "adminQueryAll",
+            "key": "_2850344150bb401192451d32",
+            "returnType": "Response",
+            "parameters": "HttpHeaders headers",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": true
+        }
+    },
+    "file_path": "./TravelService",
+    "anonymous": false,
+    "auxclass": false,
+    "implements_": [],
+    "extends_": [],
+    "definedInClassOrInterfaceTypeKey": null,
+    "innerDefinedClasses": {},
+    "innerDefinedInterfaces": {}
+}

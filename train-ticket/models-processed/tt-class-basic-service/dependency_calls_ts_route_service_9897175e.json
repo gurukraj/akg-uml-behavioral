@@ -1,0 +1,8 @@
+{
+    "name": "calls_ts_route_service",
+    "key": "_9db03e993d4949029897175e",
+    "type": "dependency",
+    "source": "tt-class-basic-service",
+    "target": "ts-route-service",
+    "endpoint": "POST /api/v1/routeservice/routes/byIds"
+}

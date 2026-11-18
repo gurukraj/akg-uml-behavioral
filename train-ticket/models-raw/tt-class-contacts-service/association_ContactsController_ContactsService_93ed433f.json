@@ -1,0 +1,9 @@
+{
+    "name": "ContactsController_uses_ContactsService",
+    "key": "_1c05384c5aa24dbe93ed433f",
+    "type": "association",
+    "source": "_23a27ab6fb19425d80311c41",
+    "target": "_2cabe087de6f4e78906d84f7",
+    "sourceMultiplicity": "1",
+    "targetMultiplicity": "1"
+}

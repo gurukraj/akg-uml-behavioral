@@ -1,0 +1,8 @@
+{
+    "name": "DecisionNode_Cancellable_to_FinalNode_NotCancellable",
+    "key": "_70b2ce4e11354687992258e9",
+    "type": "uml:ControlFlow",
+    "source": "_d13a0d5cb322492ebbf938ac",
+    "target": "_0e935ce0541d4c4e977e5672",
+    "guard": "not cancellable"
+}

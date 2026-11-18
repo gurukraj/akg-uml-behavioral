@@ -1,0 +1,8 @@
+{
+    "name": "JoinNode_FoodResult_to_CombineResults",
+    "key": "_7461e13071774df6b4834913",
+    "type": "uml:ControlFlow",
+    "source": "_2ffa007f58064dc5bf930698",
+    "target": "_938d3c811b4e46bfa7615cea",
+    "guard": null
+}

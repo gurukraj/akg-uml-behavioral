@@ -1,0 +1,144 @@
+{
+    "name": "RebookServiceImpl",
+    "key": "_598c4f142fc8440ea112d11e",
+    "type": "class",
+    "hasTypeVariable": false,
+    "position": null,
+    "modifiers": [],
+    "fields": {
+        "restTemplate": {
+            "name": "restTemplate",
+            "key": "_15a029a0b9194201948bb4bc",
+            "type": "RestTemplate",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "discoveryClient": {
+            "name": "discoveryClient",
+            "key": "_42dbdc13537348bca9969345",
+            "type": "DiscoveryClient",
+            "visibility": "private",
+            "isStatic": false
+        }
+    },
+    "methods": {
+        "rebook": {
+            "name": "rebook",
+            "key": "_12cb385ef36a47e299a3d955",
+            "returnType": "Response",
+            "parameters": "RebookInfo info, HttpHeaders headers",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "payDifference": {
+            "name": "payDifference",
+            "key": "_968922ebd54c473a9d33b40e",
+            "returnType": "Response",
+            "parameters": "RebookInfo info, HttpHeaders headers",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "dipatchSeat": {
+            "name": "dipatchSeat",
+            "key": "_7bf836ba4d0d481b8bb732f4",
+            "returnType": "Ticket",
+            "parameters": "String date, String tripId, String startStationId, String endStationId, int seatType, int totalNum, List<String> stations, HttpHeaders headers",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "getTripAllDetailInformation": {
+            "name": "getTripAllDetailInformation",
+            "key": "_1d24eaa49b0a40c381ec153b",
+            "returnType": "Response",
+            "parameters": "TripAllDetailInfo gtdi, String tripId, HttpHeaders headers",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "createOrder": {
+            "name": "createOrder",
+            "key": "_db2227af6a3d4cfca78f8f2c",
+            "returnType": "Response",
+            "parameters": "Order order, String tripId, HttpHeaders headers",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "updateOrder": {
+            "name": "updateOrder",
+            "key": "_2c507e5bcc7f482296f0c38e",
+            "returnType": "Response",
+            "parameters": "Order info, String tripId, HttpHeaders headers",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "deleteOrder": {
+            "name": "deleteOrder",
+            "key": "_b8e246d7dcc24a07b60bafc8",
+            "returnType": "Response",
+            "parameters": "String orderId, String tripId, HttpHeaders headers",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "getOrderByRebookInfo": {
+            "name": "getOrderByRebookInfo",
+            "key": "_7537100cde2f4d83bc0fbf6d",
+            "returnType": "Response",
+            "parameters": "RebookInfo info, HttpHeaders headers",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "queryTrainTypeByName": {
+            "name": "queryTrainTypeByName",
+            "key": "_d1510bb934e340ff8e8c38a1",
+            "returnType": "TrainType",
+            "parameters": "String trainTypeName, HttpHeaders headers",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "getRouteByRouteId": {
+            "name": "getRouteByRouteId",
+            "key": "_e4cc4e0cc64e4d8c96d0ebe6",
+            "returnType": "Route",
+            "parameters": "String routeId, HttpHeaders headers",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "payDifferentMoney": {
+            "name": "payDifferentMoney",
+            "key": "_2002682d3fb542839b3aba13",
+            "returnType": "boolean",
+            "parameters": "String orderId, String tripId, String userId, String money, HttpHeaders headers",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "drawBackMoney": {
+            "name": "drawBackMoney",
+            "key": "_7a3fc0971f2745419aeb90f7",
+            "returnType": "boolean",
+            "parameters": "String userId, String money, HttpHeaders headers",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        }
+    },
+    "file_path": "./RebookServiceImpl",
+    "anonymous": false,
+    "auxclass": false,
+    "implements_": [
+        "_1ead2eff04d64ef0a0afa592"
+    ],
+    "extends_": [],
+    "definedInClassOrInterfaceTypeKey": null,
+    "innerDefinedClasses": {},
+    "innerDefinedInterfaces": {}
+}

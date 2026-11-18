@@ -1,0 +1,7 @@
+{
+    "name": "ts-preserve-service_depends_on_ts-notification-service",
+    "key": "_a358b904eab14c7f89787cf3",
+    "type": "dependency",
+    "source": "_c7757c4dc8124dfb8243ddd0",
+    "target": "_1a201369e2bc45a4bc0774b4"
+}

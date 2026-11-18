@@ -1,0 +1,8 @@
+{
+    "name": "check()",
+    "key": "_6ea29232d8314059a5bb34f4",
+    "type": "uml:Message",
+    "sender": "_d9d5a5caa3984328ae337519",
+    "receiver": "_c77f2401058c4e98828dfaad",
+    "messageLabel": "check()"
+}

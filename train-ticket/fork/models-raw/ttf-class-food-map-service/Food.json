@@ -1,0 +1,33 @@
+{
+    "name": "Food",
+    "key": "_1c31301789e54fb2b79b22ed",
+    "type": "class",
+    "hasTypeVariable": false,
+    "position": null,
+    "modifiers": [],
+    "fields": {
+        "foodName": {
+            "name": "foodName",
+            "key": "_b4553a58cc1f4849ba9c9875",
+            "type": "String",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "price": {
+            "name": "price",
+            "key": "_616a9894bd784659be4b9d7d",
+            "type": "double",
+            "visibility": "private",
+            "isStatic": false
+        }
+    },
+    "methods": {},
+    "file_path": "./Food",
+    "anonymous": false,
+    "auxclass": false,
+    "implements_": [],
+    "extends_": [],
+    "definedInClassOrInterfaceTypeKey": null,
+    "innerDefinedClasses": {},
+    "innerDefinedInterfaces": {}
+}

@@ -1,0 +1,32 @@
+{
+    "name": "AvatarHandler",
+    "key": "_9d6d0d7493274035ae077f1c",
+    "type": "class",
+    "hasTypeVariable": false,
+    "position": null,
+    "modifiers": [],
+    "fields": {},
+    "methods": {
+        "post": {
+            "name": "post",
+            "key": "_12440887bf4b45e2bb780acc",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "image"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        }
+    },
+    "file_path": "./AvatarHandler",
+    "anonymous": false,
+    "auxclass": false,
+    "implements_": [],
+    "extends_": [],
+    "definedInClassOrInterfaceTypeKey": null,
+    "innerDefinedClasses": {},
+    "innerDefinedInterfaces": {}
+}

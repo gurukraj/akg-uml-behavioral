@@ -1,0 +1,58 @@
+{
+    "name": "UserRepository",
+    "key": "_e47e18860987404e8fbe60b5",
+    "type": "interface",
+    "hasTypeVariable": false,
+    "position": null,
+    "modifiers": [],
+    "fields": {},
+    "methods": {
+        "findByUserName": {
+            "name": "findByUserName",
+            "key": "_6b539793610f4685948afa9f",
+            "returnType": "User",
+            "parameters": [
+                [
+                    "String"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": true
+        },
+        "findByUserId": {
+            "name": "findByUserId",
+            "key": "_2e477fed8eb742c9822b3730",
+            "returnType": "User",
+            "parameters": [
+                [
+                    "UUID"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": true
+        },
+        "deleteByUserId": {
+            "name": "deleteByUserId",
+            "key": "_5ad31b2d458a4d269064798a",
+            "returnType": "void",
+            "parameters": [
+                [
+                    "UUID"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": true
+        }
+    },
+    "file_path": "./UserRepository",
+    "anonymous": false,
+    "auxclass": false,
+    "implements_": [],
+    "extends_": [],
+    "definedInClassOrInterfaceTypeKey": null,
+    "innerDefinedClasses": {},
+    "innerDefinedInterfaces": {}
+}

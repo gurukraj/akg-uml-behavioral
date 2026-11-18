@@ -1,0 +1,8 @@
+{
+    "name": "GetTripDetail_to_CheckPriceDifference",
+    "key": "_51440289934847848eb89f20",
+    "type": "uml:ControlFlow",
+    "source": "_4e9bf7926c7848478ac243a9",
+    "target": "_24cf43b23dae4280baf0f75b",
+    "guard": null
+}

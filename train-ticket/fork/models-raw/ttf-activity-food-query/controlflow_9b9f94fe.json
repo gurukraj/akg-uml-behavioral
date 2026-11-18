@@ -1,0 +1,8 @@
+{
+    "name": "ExtractStationIds_to_ForkNode_FoodQuery",
+    "key": "_43830384f30a41a99b9f94fe",
+    "type": "uml:ControlFlow",
+    "source": "_158bdb2c4b16484b843c5330",
+    "target": "_3e3dd5581fc544909c56cd63",
+    "guard": null
+}

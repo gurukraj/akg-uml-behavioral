@@ -1,0 +1,55 @@
+{
+    "name": "ContactsRepository",
+    "key": "_758d51af258146d680eb23dd",
+    "type": "interface",
+    "hasTypeVariable": false,
+    "position": null,
+    "modifiers": [],
+    "fields": {},
+    "methods": {
+        "findById": {
+            "name": "findById",
+            "key": "_d19cb36c8f2e4bfb8ec98686",
+            "returnType": "Optional<Contacts>",
+            "parameters": "String id",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": true
+        },
+        "findByAccountId": {
+            "name": "findByAccountId",
+            "key": "_52098a868461452f956b6a30",
+            "returnType": "ArrayList<Contacts>",
+            "parameters": "String accountId",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": true
+        },
+        "deleteById": {
+            "name": "deleteById",
+            "key": "_74d12f877569445ab49562c7",
+            "returnType": "void",
+            "parameters": "String id",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": true
+        },
+        "findAll": {
+            "name": "findAll",
+            "key": "_d56085efd66c4c0c8475feef",
+            "returnType": "ArrayList<Contacts>",
+            "parameters": "",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": true
+        }
+    },
+    "file_path": "./ContactsRepository",
+    "anonymous": false,
+    "auxclass": false,
+    "implements_": [],
+    "extends_": [],
+    "definedInClassOrInterfaceTypeKey": null,
+    "innerDefinedClasses": {},
+    "innerDefinedInterfaces": {}
+}

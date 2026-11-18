@@ -1,0 +1,8 @@
+{
+    "name": "getUserById()",
+    "key": "_2e6bc10e63e54df1b18c503e",
+    "type": "uml:Message",
+    "sender": "_677504f8827d4c729343f1ac",
+    "receiver": "_34c701898e064e9e8d382d6d",
+    "messageLabel": "getUserById()"
+}

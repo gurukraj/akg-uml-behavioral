@@ -1,0 +1,29 @@
+{
+    "classification": {
+        "categories": [
+            "Activity"
+        ],
+        "primary": "Activity",
+        "is_class_diagram": false,
+        "is_behavioral": true
+    },
+    "detectedTypes": {
+        "uml:Activity": 1,
+        "uml:OpaqueAction": 5,
+        "uml:ForkNode": 1,
+        "uml:JoinNode": 1,
+        "uml:ControlFlow": 9,
+        "uml:ActivityPartition": 3
+    },
+    "elementCounts": {
+        "activities": 1,
+        "actions": 5,
+        "forkNodes": 1,
+        "joinNodes": 1,
+        "controlFlows": 9,
+        "activityPartitions": 3
+    },
+    "totalElements": 20,
+    "diagram_id": "ttf-activity-food-query",
+    "source_file": "ttf-activity-food-query.json"
+}

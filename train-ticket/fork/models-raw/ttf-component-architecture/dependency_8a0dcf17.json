@@ -1,0 +1,7 @@
+{
+    "name": "ts-preserve-other-service_depends_on_ts-order-other-service",
+    "key": "_92f120daee7a4fc38a0dcf17",
+    "type": "dependency",
+    "source": "_a3e74bff251744d2ac9fb8f0",
+    "target": "_17c2c8ee60d546919041d852"
+}

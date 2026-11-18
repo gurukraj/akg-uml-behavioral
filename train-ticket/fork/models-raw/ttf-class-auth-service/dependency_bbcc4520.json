@@ -1,0 +1,7 @@
+{
+    "name": "TokenServiceImpl_uses_UserRepository",
+    "key": "_aa22e57ebc554ee0bbcc4520",
+    "type": "dependency",
+    "source": "_f147b21adcdc42a1afdd36f4",
+    "target": "_d251c3ecffdb4b93a04a5307"
+}

@@ -1,0 +1,40 @@
+{
+    "name": "AdminTrip",
+    "key": "_1b2073e593434c5d911285a4",
+    "type": "class",
+    "hasTypeVariable": false,
+    "position": null,
+    "modifiers": [],
+    "fields": {
+        "trip": {
+            "name": "trip",
+            "key": "_299028b01f574e6a9ae6aae1",
+            "type": "Trip",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "trainType": {
+            "name": "trainType",
+            "key": "_f37f7baec7684d0cbcee9f1a",
+            "type": "TrainType",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "route": {
+            "name": "route",
+            "key": "_6932b104d3394b54b45a5d5e",
+            "type": "Route",
+            "visibility": "private",
+            "isStatic": false
+        }
+    },
+    "methods": {},
+    "file_path": "./AdminTrip",
+    "anonymous": false,
+    "auxclass": false,
+    "implements_": [],
+    "extends_": [],
+    "definedInClassOrInterfaceTypeKey": null,
+    "innerDefinedClasses": {},
+    "innerDefinedInterfaces": {}
+}

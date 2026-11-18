@@ -1,0 +1,579 @@
+{
+    "name": "Rebook",
+    "key": "_1f0902e8f2324582b6bef790",
+    "type": "interaction",
+    "lifelines": [
+        {
+            "name": "Client",
+            "key": "_dd176b4afaa84bdebc005e81",
+            "represents": "_4f3d3e4b7031462aaa0d8ab8",
+            "coveredBy": []
+        },
+        {
+            "name": "ts-rebook-service",
+            "key": "_aa26fad999a14985bd0406a1",
+            "represents": "_fe55fdb36b2643779ed6a377",
+            "coveredBy": []
+        },
+        {
+            "name": "ts-order-service",
+            "key": "_9b8b83f979234dceb8832126",
+            "represents": "_e18fea2ed4764013926d7377",
+            "coveredBy": []
+        },
+        {
+            "name": "ts-travel-service",
+            "key": "_0102da344daa417b8723fd53",
+            "represents": "_c562dfe877f447d583bf6377",
+            "coveredBy": []
+        },
+        {
+            "name": "ts-seat-service",
+            "key": "_900d0ab2102c4e3589c352d3",
+            "represents": "_e14ffc20ed0f45eda960768b",
+            "coveredBy": []
+        },
+        {
+            "name": "ts-train-service",
+            "key": "_9cea399d34e949f6928ea6fe",
+            "represents": "_1988e23d6632464fbb2f900a",
+            "coveredBy": []
+        },
+        {
+            "name": "ts-route-service",
+            "key": "_b7532858389b4cf69847afc2",
+            "represents": "_9984d8ecbdb244c3bbe5c772",
+            "coveredBy": []
+        },
+        {
+            "name": "ts-inside-payment-service",
+            "key": "_abe014637319451ca02b6068",
+            "represents": "_fe1782ff361b4cf5966a4f8f",
+            "coveredBy": []
+        }
+    ],
+    "messages": [
+        {
+            "name": "POST /rebook",
+            "key": "_328ee60f2a484f59b45f4e6e",
+            "messageSort": "synchCall",
+            "sendEvent": "_aba2ae22e92d4097be46c66d",
+            "receiveEvent": "_a3dbe60a9bb24c0aa37e3d17",
+            "connector": null,
+            "signature": null
+        },
+        {
+            "name": "GET /order/{orderId}",
+            "key": "_71726a99549a43899b6f43a3",
+            "messageSort": "synchCall",
+            "sendEvent": "_b99dbefa878c4f2398431443",
+            "receiveEvent": "_c181414f10ac4a6bb46604f9",
+            "connector": null,
+            "signature": null
+        },
+        {
+            "name": "oldOrderInfo",
+            "key": "_200cce1407954af098f11520",
+            "messageSort": "reply",
+            "sendEvent": "_4e35e10f1c994ebfa15c8d4d",
+            "receiveEvent": "_64f50c10b19d476e9aa78301",
+            "connector": null,
+            "signature": null
+        },
+        {
+            "name": "POST /trip_detail",
+            "key": "_c416285b2e7b417491ac3876",
+            "messageSort": "synchCall",
+            "sendEvent": "_d7fd77c1b88b4f2b8189af68",
+            "receiveEvent": "_c48293b9a7b6436a9f3c7052",
+            "connector": null,
+            "signature": null
+        },
+        {
+            "name": "tripDetail",
+            "key": "_d9075d412bf74ffebd84271e",
+            "messageSort": "reply",
+            "sendEvent": "_a80a7146a8924257a5fe062b",
+            "receiveEvent": "_80ed78b3b2184a72ba32f748",
+            "connector": null,
+            "signature": null
+        },
+        {
+            "name": "GET /trains/byName/{name}",
+            "key": "_11fc6bba1e934d99aefb2eba",
+            "messageSort": "synchCall",
+            "sendEvent": "_4804f0017b914a78b7fc9658",
+            "receiveEvent": "_f90e640073f3459fbe99d73e",
+            "connector": null,
+            "signature": null
+        },
+        {
+            "name": "trainType",
+            "key": "_3b490891212f4ae385633a8b",
+            "messageSort": "reply",
+            "sendEvent": "_84b7f7addb8d4bcdbc2dc04c",
+            "receiveEvent": "_bef32144a5f44c49927dc3a6",
+            "connector": null,
+            "signature": null
+        },
+        {
+            "name": "GET /routes/{routeId}",
+            "key": "_0105002d00cd457b802f64f3",
+            "messageSort": "synchCall",
+            "sendEvent": "_2c9cbfac7c4842c3986055ad",
+            "receiveEvent": "_3292eee8e18e4621b635e2be",
+            "connector": null,
+            "signature": null
+        },
+        {
+            "name": "routeInfo",
+            "key": "_8bd66d464d6e4d09bd835966",
+            "messageSort": "reply",
+            "sendEvent": "_ec90079bc4284e3f94104b46",
+            "receiveEvent": "_2d72ead13bb64e0c92e67d94",
+            "connector": null,
+            "signature": null
+        },
+        {
+            "name": "POST /seats",
+            "key": "_528accde9f9a4173be59ab0b",
+            "messageSort": "synchCall",
+            "sendEvent": "_18c2bc6d63c04a8681f9447a",
+            "receiveEvent": "_bd6bba10e11b4b7fb54dc3bd",
+            "connector": null,
+            "signature": null
+        },
+        {
+            "name": "newSeat",
+            "key": "_bb0c3e4ab6674b3fb596b1e6",
+            "messageSort": "reply",
+            "sendEvent": "_66007b4df1ab4e54be5e962d",
+            "receiveEvent": "_6eba69e53ebc4c08b588a5b0",
+            "connector": null,
+            "signature": null
+        },
+        {
+            "name": "PUT /order",
+            "key": "_737f4aba3d5c4f769ec02460",
+            "messageSort": "synchCall",
+            "sendEvent": "_aff44461ee864b81801f883d",
+            "receiveEvent": "_04067dfe7d864b6c8e751d84",
+            "connector": null,
+            "signature": null
+        },
+        {
+            "name": "updatedOrder",
+            "key": "_a33650ee59e34321b88dbe17",
+            "messageSort": "reply",
+            "sendEvent": "_60853b373f544231bae7c95e",
+            "receiveEvent": "_467e3386926e43278ccf5b19",
+            "connector": null,
+            "signature": null
+        },
+        {
+            "name": "POST /inside_payment/difference",
+            "key": "_39ee660b35df437789e2da0d",
+            "messageSort": "synchCall",
+            "sendEvent": "_7bdc6857d66546caa4e6a96b",
+            "receiveEvent": "_7f2e06735b1d435ea2aa187b",
+            "connector": null,
+            "signature": null
+        },
+        {
+            "name": "payDiffResult",
+            "key": "_ae0095268fc6483faaa79b0a",
+            "messageSort": "reply",
+            "sendEvent": "_144f60d8e98d4a8ba264d9be",
+            "receiveEvent": "_0138d628cfa9460a96211681",
+            "connector": null,
+            "signature": null
+        },
+        {
+            "name": "rebookResult",
+            "key": "_81cfbe51096344f6859f1943",
+            "messageSort": "reply",
+            "sendEvent": "_71bf0cf7ab644d6eaad6e90a",
+            "receiveEvent": "_cf55917f26ce4935b833bc13",
+            "connector": null,
+            "signature": null
+        }
+    ],
+    "fragments": [
+        {
+            "key": "_aba2ae22e92d4097be46c66d",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_dd176b4afaa84bdebc005e81",
+            "enclosingInteraction": "tt-seq-rebook",
+            "message": "_328ee60f2a484f59b45f4e6e",
+            "execution": null
+        },
+        {
+            "key": "_a3dbe60a9bb24c0aa37e3d17",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_aa26fad999a14985bd0406a1",
+            "enclosingInteraction": "tt-seq-rebook",
+            "message": "_328ee60f2a484f59b45f4e6e",
+            "execution": null
+        },
+        {
+            "key": "_b99dbefa878c4f2398431443",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_aa26fad999a14985bd0406a1",
+            "enclosingInteraction": "tt-seq-rebook",
+            "message": "_71726a99549a43899b6f43a3",
+            "execution": null
+        },
+        {
+            "key": "_c181414f10ac4a6bb46604f9",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_9b8b83f979234dceb8832126",
+            "enclosingInteraction": "tt-seq-rebook",
+            "message": "_71726a99549a43899b6f43a3",
+            "execution": null
+        },
+        {
+            "key": "_4e35e10f1c994ebfa15c8d4d",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_9b8b83f979234dceb8832126",
+            "enclosingInteraction": "tt-seq-rebook",
+            "message": "_200cce1407954af098f11520",
+            "execution": null
+        },
+        {
+            "key": "_64f50c10b19d476e9aa78301",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_aa26fad999a14985bd0406a1",
+            "enclosingInteraction": "tt-seq-rebook",
+            "message": "_200cce1407954af098f11520",
+            "execution": null
+        },
+        {
+            "key": "_d7fd77c1b88b4f2b8189af68",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_aa26fad999a14985bd0406a1",
+            "enclosingInteraction": "tt-seq-rebook",
+            "message": "_c416285b2e7b417491ac3876",
+            "execution": null
+        },
+        {
+            "key": "_c48293b9a7b6436a9f3c7052",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_0102da344daa417b8723fd53",
+            "enclosingInteraction": "tt-seq-rebook",
+            "message": "_c416285b2e7b417491ac3876",
+            "execution": null
+        },
+        {
+            "key": "_a80a7146a8924257a5fe062b",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_0102da344daa417b8723fd53",
+            "enclosingInteraction": "tt-seq-rebook",
+            "message": "_d9075d412bf74ffebd84271e",
+            "execution": null
+        },
+        {
+            "key": "_80ed78b3b2184a72ba32f748",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_aa26fad999a14985bd0406a1",
+            "enclosingInteraction": "tt-seq-rebook",
+            "message": "_d9075d412bf74ffebd84271e",
+            "execution": null
+        },
+        {
+            "key": "_4804f0017b914a78b7fc9658",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_aa26fad999a14985bd0406a1",
+            "enclosingInteraction": "tt-seq-rebook",
+            "message": "_11fc6bba1e934d99aefb2eba",
+            "execution": null
+        },
+        {
+            "key": "_f90e640073f3459fbe99d73e",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_9cea399d34e949f6928ea6fe",
+            "enclosingInteraction": "tt-seq-rebook",
+            "message": "_11fc6bba1e934d99aefb2eba",
+            "execution": null
+        },
+        {
+            "key": "_84b7f7addb8d4bcdbc2dc04c",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_9cea399d34e949f6928ea6fe",
+            "enclosingInteraction": "tt-seq-rebook",
+            "message": "_3b490891212f4ae385633a8b",
+            "execution": null
+        },
+        {
+            "key": "_bef32144a5f44c49927dc3a6",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_aa26fad999a14985bd0406a1",
+            "enclosingInteraction": "tt-seq-rebook",
+            "message": "_3b490891212f4ae385633a8b",
+            "execution": null
+        },
+        {
+            "key": "_2c9cbfac7c4842c3986055ad",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_aa26fad999a14985bd0406a1",
+            "enclosingInteraction": "tt-seq-rebook",
+            "message": "_0105002d00cd457b802f64f3",
+            "execution": null
+        },
+        {
+            "key": "_3292eee8e18e4621b635e2be",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_b7532858389b4cf69847afc2",
+            "enclosingInteraction": "tt-seq-rebook",
+            "message": "_0105002d00cd457b802f64f3",
+            "execution": null
+        },
+        {
+            "key": "_ec90079bc4284e3f94104b46",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_b7532858389b4cf69847afc2",
+            "enclosingInteraction": "tt-seq-rebook",
+            "message": "_8bd66d464d6e4d09bd835966",
+            "execution": null
+        },
+        {
+            "key": "_2d72ead13bb64e0c92e67d94",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_aa26fad999a14985bd0406a1",
+            "enclosingInteraction": "tt-seq-rebook",
+            "message": "_8bd66d464d6e4d09bd835966",
+            "execution": null
+        },
+        {
+            "key": "_18c2bc6d63c04a8681f9447a",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_aa26fad999a14985bd0406a1",
+            "enclosingInteraction": "tt-seq-rebook",
+            "message": "_528accde9f9a4173be59ab0b",
+            "execution": null
+        },
+        {
+            "key": "_bd6bba10e11b4b7fb54dc3bd",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_900d0ab2102c4e3589c352d3",
+            "enclosingInteraction": "tt-seq-rebook",
+            "message": "_528accde9f9a4173be59ab0b",
+            "execution": null
+        },
+        {
+            "key": "_66007b4df1ab4e54be5e962d",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_900d0ab2102c4e3589c352d3",
+            "enclosingInteraction": "tt-seq-rebook",
+            "message": "_bb0c3e4ab6674b3fb596b1e6",
+            "execution": null
+        },
+        {
+            "key": "_6eba69e53ebc4c08b588a5b0",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_aa26fad999a14985bd0406a1",
+            "enclosingInteraction": "tt-seq-rebook",
+            "message": "_bb0c3e4ab6674b3fb596b1e6",
+            "execution": null
+        },
+        {
+            "key": "_aff44461ee864b81801f883d",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_aa26fad999a14985bd0406a1",
+            "enclosingInteraction": "tt-seq-rebook",
+            "message": "_737f4aba3d5c4f769ec02460",
+            "execution": null
+        },
+        {
+            "key": "_04067dfe7d864b6c8e751d84",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_9b8b83f979234dceb8832126",
+            "enclosingInteraction": "tt-seq-rebook",
+            "message": "_737f4aba3d5c4f769ec02460",
+            "execution": null
+        },
+        {
+            "key": "_60853b373f544231bae7c95e",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_9b8b83f979234dceb8832126",
+            "enclosingInteraction": "tt-seq-rebook",
+            "message": "_a33650ee59e34321b88dbe17",
+            "execution": null
+        },
+        {
+            "key": "_467e3386926e43278ccf5b19",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_aa26fad999a14985bd0406a1",
+            "enclosingInteraction": "tt-seq-rebook",
+            "message": "_a33650ee59e34321b88dbe17",
+            "execution": null
+        },
+        {
+            "key": "_7bdc6857d66546caa4e6a96b",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_aa26fad999a14985bd0406a1",
+            "enclosingInteraction": "tt-seq-rebook",
+            "message": "_39ee660b35df437789e2da0d",
+            "execution": null
+        },
+        {
+            "key": "_7f2e06735b1d435ea2aa187b",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_abe014637319451ca02b6068",
+            "enclosingInteraction": "tt-seq-rebook",
+            "message": "_39ee660b35df437789e2da0d",
+            "execution": null
+        },
+        {
+            "key": "_144f60d8e98d4a8ba264d9be",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_abe014637319451ca02b6068",
+            "enclosingInteraction": "tt-seq-rebook",
+            "message": "_ae0095268fc6483faaa79b0a",
+            "execution": null
+        },
+        {
+            "key": "_0138d628cfa9460a96211681",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_aa26fad999a14985bd0406a1",
+            "enclosingInteraction": "tt-seq-rebook",
+            "message": "_ae0095268fc6483faaa79b0a",
+            "execution": null
+        },
+        {
+            "key": "_71bf0cf7ab644d6eaad6e90a",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_aa26fad999a14985bd0406a1",
+            "enclosingInteraction": "tt-seq-rebook",
+            "message": "_81cfbe51096344f6859f1943",
+            "execution": null
+        },
+        {
+            "key": "_cf55917f26ce4935b833bc13",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_dd176b4afaa84bdebc005e81",
+            "enclosingInteraction": "tt-seq-rebook",
+            "message": "_81cfbe51096344f6859f1943",
+            "execution": null
+        },
+        {
+            "key": "_b2a0640a5e46429599d43bfb",
+            "type": "uml:BehaviorExecutionSpecification",
+            "name": null,
+            "covered": "_aa26fad999a14985bd0406a1",
+            "enclosingInteraction": "Rebook",
+            "message": null,
+            "execution": null,
+            "start": "_a3dbe60a9bb24c0aa37e3d17",
+            "finish": "_71bf0cf7ab644d6eaad6e90a"
+        },
+        {
+            "key": "_4a18ff5356d34f5282b93253",
+            "type": "uml:BehaviorExecutionSpecification",
+            "name": null,
+            "covered": "_9b8b83f979234dceb8832126",
+            "enclosingInteraction": "Rebook",
+            "message": null,
+            "execution": null,
+            "start": "_c181414f10ac4a6bb46604f9",
+            "finish": "_4e35e10f1c994ebfa15c8d4d"
+        },
+        {
+            "key": "_d37fe99f3c0048238af72f3c",
+            "type": "uml:BehaviorExecutionSpecification",
+            "name": null,
+            "covered": "_0102da344daa417b8723fd53",
+            "enclosingInteraction": "Rebook",
+            "message": null,
+            "execution": null,
+            "start": "_c48293b9a7b6436a9f3c7052",
+            "finish": "_a80a7146a8924257a5fe062b"
+        },
+        {
+            "key": "_121bb82fcc8a49188c5b5c93",
+            "type": "uml:BehaviorExecutionSpecification",
+            "name": null,
+            "covered": "_9cea399d34e949f6928ea6fe",
+            "enclosingInteraction": "Rebook",
+            "message": null,
+            "execution": null,
+            "start": "_f90e640073f3459fbe99d73e",
+            "finish": "_84b7f7addb8d4bcdbc2dc04c"
+        },
+        {
+            "key": "_841be2827cc7413294b933d4",
+            "type": "uml:BehaviorExecutionSpecification",
+            "name": null,
+            "covered": "_b7532858389b4cf69847afc2",
+            "enclosingInteraction": "Rebook",
+            "message": null,
+            "execution": null,
+            "start": "_3292eee8e18e4621b635e2be",
+            "finish": "_ec90079bc4284e3f94104b46"
+        },
+        {
+            "key": "_4b23343b83424ee6866d1bd0",
+            "type": "uml:BehaviorExecutionSpecification",
+            "name": null,
+            "covered": "_900d0ab2102c4e3589c352d3",
+            "enclosingInteraction": "Rebook",
+            "message": null,
+            "execution": null,
+            "start": "_bd6bba10e11b4b7fb54dc3bd",
+            "finish": "_66007b4df1ab4e54be5e962d"
+        },
+        {
+            "key": "_bdbf2fc2e776412393eac2f6",
+            "type": "uml:BehaviorExecutionSpecification",
+            "name": null,
+            "covered": "_9b8b83f979234dceb8832126",
+            "enclosingInteraction": "Rebook",
+            "message": null,
+            "execution": null,
+            "start": "_04067dfe7d864b6c8e751d84",
+            "finish": "_60853b373f544231bae7c95e"
+        },
+        {
+            "key": "_93e56a12f6d3467987ecb26b",
+            "type": "uml:BehaviorExecutionSpecification",
+            "name": null,
+            "covered": "_abe014637319451ca02b6068",
+            "enclosingInteraction": "Rebook",
+            "message": null,
+            "execution": null,
+            "start": "_7f2e06735b1d435ea2aa187b",
+            "finish": "_144f60d8e98d4a8ba264d9be"
+        }
+    ]
+}

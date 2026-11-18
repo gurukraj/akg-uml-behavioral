@@ -1,0 +1,47 @@
+{
+    "name": "TravelResult",
+    "key": "_9d0b17da9d2e4e72a659194e",
+    "type": "class",
+    "hasTypeVariable": false,
+    "position": null,
+    "modifiers": [],
+    "fields": {
+        "status": {
+            "name": "status",
+            "key": "_407ca78e1c5348258064aef8",
+            "type": "boolean",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "percent": {
+            "name": "percent",
+            "key": "_4a41c98c338048b8b66cd009",
+            "type": "double",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "trainType": {
+            "name": "trainType",
+            "key": "_2554891f7ef2465e84d70d47",
+            "type": "TrainType",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "prices": {
+            "name": "prices",
+            "key": "_41a35f9c60884d8e8721c8e1",
+            "type": "Map<String,String>",
+            "visibility": "private",
+            "isStatic": false
+        }
+    },
+    "methods": {},
+    "file_path": "./TravelResult",
+    "anonymous": false,
+    "auxclass": false,
+    "implements_": [],
+    "extends_": [],
+    "definedInClassOrInterfaceTypeKey": null,
+    "innerDefinedClasses": {},
+    "innerDefinedInterfaces": {}
+}

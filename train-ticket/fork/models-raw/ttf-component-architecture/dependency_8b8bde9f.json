@@ -1,0 +1,7 @@
+{
+    "name": "ts-rebook-service_depends_on_ts-travel-service",
+    "key": "_228493d6ac094b048b8bde9f",
+    "type": "dependency",
+    "source": "_85cbb4093fd34fd7b9700070",
+    "target": "_0671269c3d644026899a6187"
+}

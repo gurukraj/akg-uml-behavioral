@@ -1,0 +1,8 @@
+{
+    "name": "ForkNode_ParallelCreate_to_CreateConsign",
+    "key": "_d5fca8ca398f4f1ca8caf36d",
+    "type": "uml:ControlFlow",
+    "source": "_51071bb4709b46d3bcafff7d",
+    "target": "_58ef81b6c8ea4c129b023a5f",
+    "guard": null
+}

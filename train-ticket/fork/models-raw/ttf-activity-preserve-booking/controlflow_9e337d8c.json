@@ -1,0 +1,8 @@
+{
+    "name": "GetUserAccount_to_ForkNode_ParallelCreate",
+    "key": "_70dcedab63f94bee9e337d8c",
+    "type": "uml:ControlFlow",
+    "source": "_6e74ca4652a54fbb93059771",
+    "target": "_51071bb4709b46d3bcafff7d",
+    "guard": null
+}

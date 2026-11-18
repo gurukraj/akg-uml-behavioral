@@ -1,0 +1,45 @@
+{
+    "name": "CancelController",
+    "key": "_25356c4a961341fbb1b82239",
+    "type": "class",
+    "hasTypeVariable": false,
+    "position": null,
+    "modifiers": [],
+    "fields": {
+        "cancelService": {
+            "name": "cancelService",
+            "key": "_cdf17c5b1c8f497b951e72a6",
+            "type": "CancelService",
+            "visibility": "private",
+            "isStatic": false
+        }
+    },
+    "methods": {
+        "calculate": {
+            "name": "calculate",
+            "key": "_60548cf9d31e447da202018d",
+            "returnType": "HttpEntity",
+            "parameters": "String orderId, HttpHeaders headers",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "cancelTicket": {
+            "name": "cancelTicket",
+            "key": "_40f28450c1154046b9bb664d",
+            "returnType": "HttpEntity",
+            "parameters": "String orderId, String loginId, HttpHeaders headers",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        }
+    },
+    "file_path": "./CancelController",
+    "anonymous": false,
+    "auxclass": false,
+    "implements_": [],
+    "extends_": [],
+    "definedInClassOrInterfaceTypeKey": null,
+    "innerDefinedClasses": {},
+    "innerDefinedInterfaces": {}
+}

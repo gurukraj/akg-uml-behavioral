@@ -1,0 +1,64 @@
+{
+    "name": "TrainTypeRepository",
+    "key": "_82d77a7790c54662b76df978",
+    "type": "interface",
+    "hasTypeVariable": false,
+    "position": null,
+    "modifiers": [],
+    "fields": {},
+    "methods": {
+        "findById": {
+            "name": "findById",
+            "key": "_0e64573c896b43b4b2ca3f8a",
+            "returnType": "Optional<TrainType>",
+            "parameters": "String id",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": true
+        },
+        "findAll": {
+            "name": "findAll",
+            "key": "_1906851470b7449a847c436e",
+            "returnType": "List<TrainType>",
+            "parameters": "",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": true
+        },
+        "deleteById": {
+            "name": "deleteById",
+            "key": "_aa0946ebf11c4f1386ef9bb2",
+            "returnType": "void",
+            "parameters": "String id",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": true
+        },
+        "findByName": {
+            "name": "findByName",
+            "key": "_a3dff3239eb64261b03b3f45",
+            "returnType": "TrainType",
+            "parameters": "String name",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": true
+        },
+        "findByNames": {
+            "name": "findByNames",
+            "key": "_bc3e5708fbd142b3897f2d29",
+            "returnType": "List<TrainType>",
+            "parameters": "List<String> names",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": true
+        }
+    },
+    "file_path": "./TrainTypeRepository",
+    "anonymous": false,
+    "auxclass": false,
+    "implements_": [],
+    "extends_": [],
+    "definedInClassOrInterfaceTypeKey": null,
+    "innerDefinedClasses": {},
+    "innerDefinedInterfaces": {}
+}

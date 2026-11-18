@@ -1,0 +1,8 @@
+{
+    "name": "calls_ts_user_service",
+    "key": "_bedcc6061cce4222882fe62b",
+    "type": "dependency",
+    "source": "tt-class-cancel-service",
+    "target": "ts-user-service",
+    "endpoint": "GET /api/v1/userservice/users/id/{orderId}"
+}

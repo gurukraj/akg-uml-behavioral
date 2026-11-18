@@ -1,0 +1,23 @@
+{
+    "classification": {
+        "categories": [
+            "Class"
+        ],
+        "primary": "Class",
+        "is_class_diagram": true,
+        "is_behavioral": false
+    },
+    "detectedTypes": {
+        "uml:Class": 4,
+        "uml:Interface": 2,
+        "uml:Dependency": 2
+    },
+    "elementCounts": {
+        "classes": 4,
+        "interfaces": 2,
+        "dependencies": 2
+    },
+    "totalElements": 8,
+    "diagram_id": "ttf-class-user-service",
+    "source_file": "ttf-class-user-service.json"
+}

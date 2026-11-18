@@ -1,0 +1,117 @@
+{
+    "name": "FoodMapServiceImpl",
+    "key": "_c974eb145e8a471e912799e3",
+    "type": "class",
+    "hasTypeVariable": false,
+    "position": null,
+    "modifiers": [],
+    "fields": {},
+    "methods": {
+        "createFoodStore": {
+            "name": "createFoodStore",
+            "key": "_bc9fbaf0ad164ccdb5b04ff4",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "FoodStore",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "createTrainFood": {
+            "name": "createTrainFood",
+            "key": "_eb19f71c2a6340cea9fa93c6",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "TrainFood",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "listFoodStores": {
+            "name": "listFoodStores",
+            "key": "_cad63e58d1bd4a82a0ba175d",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "listTrainFood": {
+            "name": "listTrainFood",
+            "key": "_adf79f2480ab4378b2fa5726",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "listFoodStoresByStationId": {
+            "name": "listFoodStoresByStationId",
+            "key": "_19290e1ccc8b4b4e9e94b86c",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "String",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "listTrainFoodByTripId": {
+            "name": "listTrainFoodByTripId",
+            "key": "_bc1ba0c0987b49739ed21517",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "String",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "getFoodStoresByStationIds": {
+            "name": "getFoodStoresByStationIds",
+            "key": "_b923eebf128a45f6ae2baf51",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "List<String>",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        }
+    },
+    "file_path": "./FoodMapServiceImpl",
+    "anonymous": false,
+    "auxclass": false,
+    "implements_": [
+        "_bd47bf959ac24cde8850f9a6"
+    ],
+    "extends_": [],
+    "definedInClassOrInterfaceTypeKey": null,
+    "innerDefinedClasses": {},
+    "innerDefinedInterfaces": {}
+}

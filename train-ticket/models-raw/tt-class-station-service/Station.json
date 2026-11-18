@@ -1,0 +1,50 @@
+{
+    "name": "Station",
+    "key": "_4c6c855be9814cdfb1a76e7c",
+    "type": "class",
+    "hasTypeVariable": false,
+    "position": null,
+    "modifiers": [],
+    "fields": {
+        "id": {
+            "name": "id",
+            "key": "_b4aeb4e41b194c8caba53a48",
+            "type": "String",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "name": {
+            "name": "name",
+            "key": "_633010b1a90c45bd9b7e7a00",
+            "type": "String",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "stayTime": {
+            "name": "stayTime",
+            "key": "_ed57895e0d684519b2b7ec68",
+            "type": "int",
+            "visibility": "private",
+            "isStatic": false
+        }
+    },
+    "methods": {
+        "setName": {
+            "name": "setName",
+            "key": "_7d7e87de8278453785d690d4",
+            "returnType": "void",
+            "parameters": "String name",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        }
+    },
+    "file_path": "./Station",
+    "anonymous": false,
+    "auxclass": false,
+    "implements_": [],
+    "extends_": [],
+    "definedInClassOrInterfaceTypeKey": null,
+    "innerDefinedClasses": {},
+    "innerDefinedInterfaces": {}
+}

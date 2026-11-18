@@ -1,0 +1,22 @@
+{
+    "classification": {
+        "categories": [
+            "Sequence"
+        ],
+        "primary": "Sequence",
+        "is_class_diagram": false,
+        "is_behavioral": true
+    },
+    "detectedTypes": {
+        "uml:Class": 5,
+        "uml:Interaction": 1,
+        "uml:MessageOccurrenceSpecification": 16
+    },
+    "elementCounts": {
+        "classes": 5,
+        "interactions": 1
+    },
+    "totalElements": 6,
+    "diagram_id": "tt-seq-order-pay",
+    "source_file": "tt-seq-order-pay.json"
+}

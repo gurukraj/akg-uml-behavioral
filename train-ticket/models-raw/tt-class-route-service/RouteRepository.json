@@ -1,0 +1,64 @@
+{
+    "name": "RouteRepository",
+    "key": "_8ef0632a8f174783aefd945b",
+    "type": "interface",
+    "hasTypeVariable": false,
+    "position": null,
+    "modifiers": [],
+    "fields": {},
+    "methods": {
+        "findById": {
+            "name": "findById",
+            "key": "_eaf57a8a30a44410b1b9b3e3",
+            "returnType": "Optional<Route>",
+            "parameters": "String id",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": true
+        },
+        "findByIds": {
+            "name": "findByIds",
+            "key": "_f83fe06c83994f408bd5b173",
+            "returnType": "List<Route>",
+            "parameters": "List<String> ids",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": true
+        },
+        "findAll": {
+            "name": "findAll",
+            "key": "_68dedf9c292448ef8417dc2d",
+            "returnType": "ArrayList<Route>",
+            "parameters": "",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": true
+        },
+        "removeRouteById": {
+            "name": "removeRouteById",
+            "key": "_cee5bf286e694e578140bc60",
+            "returnType": "void",
+            "parameters": "String id",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": true
+        },
+        "findByStartStationAndEndStation": {
+            "name": "findByStartStationAndEndStation",
+            "key": "_a952a7cbdc55425197533f4d",
+            "returnType": "ArrayList<Route>",
+            "parameters": "String startStation, String endStation",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": true
+        }
+    },
+    "file_path": "./RouteRepository",
+    "anonymous": false,
+    "auxclass": false,
+    "implements_": [],
+    "extends_": [],
+    "definedInClassOrInterfaceTypeKey": null,
+    "innerDefinedClasses": {},
+    "innerDefinedInterfaces": {}
+}

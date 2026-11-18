@@ -1,0 +1,103 @@
+{
+    "name": "InsidePaymentController",
+    "key": "_1951b4973bec4c9bba697853",
+    "type": "class",
+    "hasTypeVariable": false,
+    "position": null,
+    "modifiers": [],
+    "fields": {},
+    "methods": {
+        "pay": {
+            "name": "pay",
+            "key": "_ce41c50f37c446a78bdc9eda",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "PaymentInfo",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "createAccount": {
+            "name": "createAccount",
+            "key": "_96520c426b8a4bc9ae8ff0a6",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "AccountInfo",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "addMoney": {
+            "name": "addMoney",
+            "key": "_71a6c11b11a34b559930e04b",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "String",
+                    "String",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "queryPayment": {
+            "name": "queryPayment",
+            "key": "_67b0d8d5d64c4889be827b2d",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "queryAccount": {
+            "name": "queryAccount",
+            "key": "_56563c6e04f345a0990325c6",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "drawBack": {
+            "name": "drawBack",
+            "key": "_aa1fbbc238c8403d86495c52",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "String",
+                    "String",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        }
+    },
+    "file_path": "./InsidePaymentController",
+    "anonymous": false,
+    "auxclass": false,
+    "implements_": [],
+    "extends_": [],
+    "definedInClassOrInterfaceTypeKey": null,
+    "innerDefinedClasses": {},
+    "innerDefinedInterfaces": {}
+}

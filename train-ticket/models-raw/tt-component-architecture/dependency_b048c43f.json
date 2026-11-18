@@ -1,0 +1,7 @@
+{
+    "name": "ts-auth-service_depends_on_ts-verification-code-service",
+    "key": "_dfe47eb2aed04ad2b048c43f",
+    "type": "dependency",
+    "source": "_c86e28c7b5404f5db36bd019",
+    "target": "_03cf3c3a61e842b3ae82b930"
+}

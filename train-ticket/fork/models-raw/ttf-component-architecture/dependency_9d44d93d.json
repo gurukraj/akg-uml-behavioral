@@ -1,0 +1,7 @@
+{
+    "name": "ts-order-other-service_depends_on_ts-station-service",
+    "key": "_bd141b25ab114c709d44d93d",
+    "type": "dependency",
+    "source": "_17c2c8ee60d546919041d852",
+    "target": "_d3816f92dda243b3a7782cc5"
+}

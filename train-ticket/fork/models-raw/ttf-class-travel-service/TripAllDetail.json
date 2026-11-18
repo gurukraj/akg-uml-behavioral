@@ -1,0 +1,33 @@
+{
+    "name": "TripAllDetail",
+    "key": "_5b4efef08d0c462797726c6a",
+    "type": "class",
+    "hasTypeVariable": false,
+    "position": null,
+    "modifiers": [],
+    "fields": {
+        "tripResponse": {
+            "name": "tripResponse",
+            "key": "_19eba16745ce49f5b086692b",
+            "type": "TripResponse",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "trip": {
+            "name": "trip",
+            "key": "_6d7b4e87ccf44df082acf2ac",
+            "type": "Trip",
+            "visibility": "private",
+            "isStatic": false
+        }
+    },
+    "methods": {},
+    "file_path": "./TripAllDetail",
+    "anonymous": false,
+    "auxclass": false,
+    "implements_": [],
+    "extends_": [],
+    "definedInClassOrInterfaceTypeKey": null,
+    "innerDefinedClasses": {},
+    "innerDefinedInterfaces": {}
+}

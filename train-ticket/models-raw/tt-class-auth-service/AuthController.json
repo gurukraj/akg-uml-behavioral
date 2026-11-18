@@ -1,0 +1,36 @@
+{
+    "name": "AuthController",
+    "key": "_dceb48db97c24e6583fc8416",
+    "type": "class",
+    "hasTypeVariable": false,
+    "position": null,
+    "modifiers": [],
+    "fields": {
+        "userService": {
+            "name": "userService",
+            "key": "_32a87b0800934372aead0080",
+            "type": "UserService",
+            "visibility": "private",
+            "isStatic": false
+        }
+    },
+    "methods": {
+        "createDefaultUser": {
+            "name": "createDefaultUser",
+            "key": "_809306d342224475bdcee475",
+            "returnType": "HttpEntity",
+            "parameters": "AuthDto authDto",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        }
+    },
+    "file_path": "./AuthController",
+    "anonymous": false,
+    "auxclass": false,
+    "implements_": [],
+    "extends_": [],
+    "definedInClassOrInterfaceTypeKey": null,
+    "innerDefinedClasses": {},
+    "innerDefinedInterfaces": {}
+}

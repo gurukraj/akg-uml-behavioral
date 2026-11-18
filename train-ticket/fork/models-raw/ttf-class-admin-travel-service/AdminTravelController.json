@@ -1,0 +1,74 @@
+{
+    "name": "AdminTravelController",
+    "key": "_fad11333b49e424782436e5d",
+    "type": "class",
+    "hasTypeVariable": false,
+    "position": null,
+    "modifiers": [],
+    "fields": {},
+    "methods": {
+        "getAllTravels": {
+            "name": "getAllTravels",
+            "key": "_ebafd81cd1b44766a36cb15a",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "addTravel": {
+            "name": "addTravel",
+            "key": "_27096d1b973d45939e0af095",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "TravelInfo",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "updateTravel": {
+            "name": "updateTravel",
+            "key": "_5e8fafbc6c844c008ae74a0f",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "TravelInfo",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "deleteTravel": {
+            "name": "deleteTravel",
+            "key": "_bd6dda34701c464e8867d0b7",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "String",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        }
+    },
+    "file_path": "./AdminTravelController",
+    "anonymous": false,
+    "auxclass": false,
+    "implements_": [],
+    "extends_": [],
+    "definedInClassOrInterfaceTypeKey": null,
+    "innerDefinedClasses": {},
+    "innerDefinedInterfaces": {}
+}

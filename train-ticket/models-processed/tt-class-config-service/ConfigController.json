@@ -1,0 +1,72 @@
+{
+    "name": "ConfigController",
+    "key": "_f2369420624e413c979c28a9",
+    "type": "class",
+    "hasTypeVariable": false,
+    "position": null,
+    "modifiers": [],
+    "fields": {
+        "configService": {
+            "name": "configService",
+            "key": "_56b1f9ef0c704de7812ebd4d",
+            "type": "ConfigService",
+            "visibility": "private",
+            "isStatic": false
+        }
+    },
+    "methods": {
+        "queryAll": {
+            "name": "queryAll",
+            "key": "_f57fcc6a84584148bd5d6322",
+            "returnType": "HttpEntity",
+            "parameters": "HttpHeaders headers",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "createConfig": {
+            "name": "createConfig",
+            "key": "_d7a02e069aba497e8b993758",
+            "returnType": "HttpEntity",
+            "parameters": "Config info, HttpHeaders headers",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "updateConfig": {
+            "name": "updateConfig",
+            "key": "_fa53340ade3c4260b5c1cb3d",
+            "returnType": "HttpEntity",
+            "parameters": "Config info, HttpHeaders headers",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "deleteConfig": {
+            "name": "deleteConfig",
+            "key": "_c083456c63f64df1bc68c924",
+            "returnType": "HttpEntity",
+            "parameters": "String configName, HttpHeaders headers",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "retrieve": {
+            "name": "retrieve",
+            "key": "_2ac0b297739842cf9f9a9a45",
+            "returnType": "HttpEntity",
+            "parameters": "String configName, HttpHeaders headers",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        }
+    },
+    "file_path": "./ConfigController",
+    "anonymous": false,
+    "auxclass": false,
+    "implements_": [],
+    "extends_": [],
+    "definedInClassOrInterfaceTypeKey": null,
+    "innerDefinedClasses": {},
+    "innerDefinedInterfaces": {}
+}

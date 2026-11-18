@@ -1,0 +1,8 @@
+{
+    "name": "DecisionNode_SecurityPass_to_GetContacts",
+    "key": "_f69819f4d2fd4c15bdaeb7c6",
+    "type": "uml:ControlFlow",
+    "source": "_db1f3a85aac74672bd8e084e",
+    "target": "_375c46ed38fe48a7b4e60879",
+    "guard": "pass"
+}

@@ -1,0 +1,7 @@
+{
+    "name": "ts-preserve-service_depends_on_ts-security-service",
+    "key": "_e4edd16da695425086a92e18",
+    "type": "dependency",
+    "source": "_7b342fb86d1e4256a0f3061e",
+    "target": "_81f820640df247709eea280f"
+}

@@ -1,0 +1,59 @@
+{
+    "name": "OrderOtherRepository",
+    "key": "_790bcc6c425f48e6a70732d7",
+    "type": "interface",
+    "hasTypeVariable": false,
+    "position": null,
+    "modifiers": [],
+    "fields": {},
+    "methods": {
+        "findByAccountId": {
+            "name": "findByAccountId",
+            "key": "_362c42c10f5643139f33b038",
+            "returnType": "List<Order>",
+            "parameters": [
+                [
+                    "UUID"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": true
+        },
+        "findByTravelDateAndTrainNumber": {
+            "name": "findByTravelDateAndTrainNumber",
+            "key": "_e00ccba1a41848f4b3f8a2d4",
+            "returnType": "List<Order>",
+            "parameters": [
+                [
+                    "Date",
+                    "String"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": true
+        },
+        "findById": {
+            "name": "findById",
+            "key": "_2d58c77fcd714e0e8d907693",
+            "returnType": "Order",
+            "parameters": [
+                [
+                    "UUID"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": true
+        }
+    },
+    "file_path": "./OrderOtherRepository",
+    "anonymous": false,
+    "auxclass": false,
+    "implements_": [],
+    "extends_": [],
+    "definedInClassOrInterfaceTypeKey": null,
+    "innerDefinedClasses": {},
+    "innerDefinedInterfaces": {}
+}

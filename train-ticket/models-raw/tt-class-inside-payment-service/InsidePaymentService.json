@@ -1,0 +1,91 @@
+{
+    "name": "InsidePaymentService",
+    "key": "_d0001bcaf9e8482d9d9d4016",
+    "type": "interface",
+    "hasTypeVariable": false,
+    "position": null,
+    "modifiers": [],
+    "fields": {},
+    "methods": {
+        "pay": {
+            "name": "pay",
+            "key": "_f3d73e2d844644e0bd24a048",
+            "returnType": "Response",
+            "parameters": "PaymentInfo info, HttpHeaders headers",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": true
+        },
+        "createAccount": {
+            "name": "createAccount",
+            "key": "_68c14e536c224b269f09cdf5",
+            "returnType": "Response",
+            "parameters": "AccountInfo info, HttpHeaders headers",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": true
+        },
+        "addMoney": {
+            "name": "addMoney",
+            "key": "_67027d2abf6540fb9bb4427f",
+            "returnType": "Response",
+            "parameters": "String userId, String money, HttpHeaders headers",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": true
+        },
+        "queryPayment": {
+            "name": "queryPayment",
+            "key": "_d1b41582c67a49c39106b414",
+            "returnType": "Response",
+            "parameters": "HttpHeaders headers",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": true
+        },
+        "queryAccount": {
+            "name": "queryAccount",
+            "key": "_0857d40bfd734d6c86fba4ab",
+            "returnType": "Response",
+            "parameters": "HttpHeaders headers",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": true
+        },
+        "drawBack": {
+            "name": "drawBack",
+            "key": "_1d49d8f8dcee4124a3761ed0",
+            "returnType": "Response",
+            "parameters": "String userId, String money, HttpHeaders headers",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": true
+        },
+        "payDifference": {
+            "name": "payDifference",
+            "key": "_8bfd44a4caa848338683730c",
+            "returnType": "Response",
+            "parameters": "PaymentInfo info, HttpHeaders headers",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": true
+        },
+        "queryAddMoney": {
+            "name": "queryAddMoney",
+            "key": "_a266e184779243e5821dfe8d",
+            "returnType": "Response",
+            "parameters": "HttpHeaders headers",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": true
+        }
+    },
+    "file_path": "./InsidePaymentService",
+    "anonymous": false,
+    "auxclass": false,
+    "implements_": [],
+    "extends_": [],
+    "definedInClassOrInterfaceTypeKey": null,
+    "innerDefinedClasses": {},
+    "innerDefinedInterfaces": {}
+}

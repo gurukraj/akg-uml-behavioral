@@ -1,0 +1,7 @@
+{
+    "name": "ts-inside-payment-service_depends_on_ts-payment-service",
+    "key": "_cae8913854fe4797b3e33eae",
+    "type": "dependency",
+    "source": "_dabc15d4db114573a0f35aea",
+    "target": "_05f1353b36ba4a23a1238b87"
+}

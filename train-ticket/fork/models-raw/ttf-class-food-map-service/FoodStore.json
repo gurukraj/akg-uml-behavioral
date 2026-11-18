@@ -1,0 +1,68 @@
+{
+    "name": "FoodStore",
+    "key": "_01e3b11e2abc48199ddc3bc6",
+    "type": "class",
+    "hasTypeVariable": false,
+    "position": null,
+    "modifiers": [],
+    "fields": {
+        "id": {
+            "name": "id",
+            "key": "_becf14ab07c84810b04ea46a",
+            "type": "UUID",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "stationId": {
+            "name": "stationId",
+            "key": "_0f6ae6b62d2a43c9b3505e81",
+            "type": "String",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "storeName": {
+            "name": "storeName",
+            "key": "_42ff025a4e7b461f80cf2d45",
+            "type": "String",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "telephone": {
+            "name": "telephone",
+            "key": "_4ddc053d77c140b193c83a75",
+            "type": "String",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "businessTime": {
+            "name": "businessTime",
+            "key": "_db1deffb979e4416998caa6c",
+            "type": "String",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "deliveryFee": {
+            "name": "deliveryFee",
+            "key": "_6d581d4cf59f4e328f596f91",
+            "type": "double",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "foodList": {
+            "name": "foodList",
+            "key": "_05969270dfbb4a8e99c29a2e",
+            "type": "List<Food>",
+            "visibility": "private",
+            "isStatic": false
+        }
+    },
+    "methods": {},
+    "file_path": "./FoodStore",
+    "anonymous": false,
+    "auxclass": false,
+    "implements_": [],
+    "extends_": [],
+    "definedInClassOrInterfaceTypeKey": null,
+    "innerDefinedClasses": {},
+    "innerDefinedInterfaces": {}
+}

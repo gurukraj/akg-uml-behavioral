@@ -1,0 +1,15 @@
+{
+    "name": "CancelServiceFlow",
+    "key": "_20d049e6815943b18eab268a",
+    "type": "uml:Collaboration",
+    "description": "Communication topology for order cancellation",
+    "objects": [
+        "_a3def8cec555467dace1db88",
+        "_79b702a7b2da4691b58a2221",
+        "_2502fdd2644d44cfb72d0666",
+        "_08d6445560af4d3d8d5a36d6",
+        "_fef7bad2cafc47aaa2e8e248",
+        "_d75b9b81fe054a479d89ecad"
+    ],
+    "links": 6
+}

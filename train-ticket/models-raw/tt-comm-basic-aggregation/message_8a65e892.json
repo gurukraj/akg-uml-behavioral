@@ -1,0 +1,8 @@
+{
+    "name": "3: queryTrainTypeByName()",
+    "key": "_4d8d60e2955b47f78a65e892",
+    "type": "uml:Message",
+    "sender": "_e622a5548a444900b78dd112",
+    "receiver": "_ca86501614734048b7d2b06c",
+    "messageLabel": "3: queryTrainTypeByName()"
+}

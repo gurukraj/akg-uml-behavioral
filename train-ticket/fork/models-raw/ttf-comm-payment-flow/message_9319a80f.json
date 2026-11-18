@@ -1,0 +1,8 @@
+{
+    "name": "4: modifyOrder(paid)",
+    "key": "_938b09789162416f9319a80f",
+    "type": "uml:Message",
+    "sender": "_67b44b67e5b74b89afe92741",
+    "receiver": "_9134531a12d84494919a0dd4",
+    "messageLabel": "4: modifyOrder(paid)"
+}

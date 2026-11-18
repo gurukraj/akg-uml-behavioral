@@ -1,0 +1,40 @@
+{
+    "name": "Balance",
+    "key": "_6ec3e566d3f7448f9934cd5b",
+    "type": "class",
+    "hasTypeVariable": false,
+    "position": null,
+    "modifiers": [],
+    "fields": {
+        "id": {
+            "name": "id",
+            "key": "_50f4bc9c8af84659b8dc733e",
+            "type": "String",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "userId": {
+            "name": "userId",
+            "key": "_9e9248b35ac74f2c835128f1",
+            "type": "String",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "balance": {
+            "name": "balance",
+            "key": "_5f821699d8574b8184989506",
+            "type": "String",
+            "visibility": "private",
+            "isStatic": false
+        }
+    },
+    "methods": {},
+    "file_path": "./Balance",
+    "anonymous": false,
+    "auxclass": false,
+    "implements_": [],
+    "extends_": [],
+    "definedInClassOrInterfaceTypeKey": null,
+    "innerDefinedClasses": {},
+    "innerDefinedInterfaces": {}
+}

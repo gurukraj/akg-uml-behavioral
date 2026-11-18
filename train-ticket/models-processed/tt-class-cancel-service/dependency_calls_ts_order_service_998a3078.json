@@ -1,0 +1,8 @@
+{
+    "name": "calls_ts_order_service",
+    "key": "_91d305ca5e934587998a3078",
+    "type": "dependency",
+    "source": "tt-class-cancel-service",
+    "target": "ts-order-service",
+    "endpoint": "GET /api/v1/orderservice/order/{orderId}"
+}

@@ -1,0 +1,9 @@
+{
+    "name": "TravelController_uses_TravelService",
+    "key": "_30be748ade554deda84914a3",
+    "type": "association",
+    "source": "_1b01e90e17f34bdb9ab1692e",
+    "target": "_4ca233b64f5d4ba6beeb51b6",
+    "sourceMultiplicity": "1",
+    "targetMultiplicity": "1"
+}

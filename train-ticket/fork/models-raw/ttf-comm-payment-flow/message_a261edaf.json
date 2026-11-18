@@ -1,0 +1,8 @@
+{
+    "name": "2: getOrderPrice()",
+    "key": "_9a5ac09fa80646bea261edaf",
+    "type": "uml:Message",
+    "sender": "_67b44b67e5b74b89afe92741",
+    "receiver": "_239f890a56994598bdc57196",
+    "messageLabel": "2: getOrderPrice()"
+}

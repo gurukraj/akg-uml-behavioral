@@ -1,0 +1,8 @@
+{
+    "name": "getAllOrders()",
+    "key": "_c6694efa11f1416c903326ab",
+    "type": "uml:Message",
+    "sender": "_9d8e087983784f53b954e6fe",
+    "receiver": "_6b697b8ca63b4911ae84df70",
+    "messageLabel": "getAllOrders()"
+}

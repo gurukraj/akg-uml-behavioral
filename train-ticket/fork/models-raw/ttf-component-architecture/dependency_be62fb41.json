@@ -1,0 +1,7 @@
+{
+    "name": "ts-food-service_depends_on_ts-station-service",
+    "key": "_92396a03308542afbe62fb41",
+    "type": "dependency",
+    "source": "_68155404e040496c8531e1cd",
+    "target": "_d3816f92dda243b3a7782cc5"
+}

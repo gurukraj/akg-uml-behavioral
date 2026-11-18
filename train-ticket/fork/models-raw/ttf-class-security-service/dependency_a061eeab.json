@@ -1,0 +1,7 @@
+{
+    "name": "SecurityServiceImpl_uses_SecurityRepository",
+    "key": "_ad44c483209f4e53a061eeab",
+    "type": "dependency",
+    "source": "_e07a2aa295f84bbeb3b9a784",
+    "target": "_6f31a42a860440febb03c30d"
+}

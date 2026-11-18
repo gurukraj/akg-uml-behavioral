@@ -1,0 +1,55 @@
+{
+    "name": "TripRepository",
+    "key": "_079610a4e005485d8af48fc5",
+    "type": "interface",
+    "hasTypeVariable": false,
+    "position": null,
+    "modifiers": [],
+    "fields": {},
+    "methods": {
+        "findByTripId": {
+            "name": "findByTripId",
+            "key": "_5a88f76331914444a8ecc017",
+            "returnType": "Trip",
+            "parameters": "TripId tripId",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": true
+        },
+        "deleteByTripId": {
+            "name": "deleteByTripId",
+            "key": "_ce310c3f20e34efcbf2f5a2a",
+            "returnType": "void",
+            "parameters": "TripId tripId",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": true
+        },
+        "findAll": {
+            "name": "findAll",
+            "key": "_5061c89805014859bbac4097",
+            "returnType": "ArrayList<Trip>",
+            "parameters": "",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": true
+        },
+        "findByRouteId": {
+            "name": "findByRouteId",
+            "key": "_36e69289ae604e18b1a03291",
+            "returnType": "ArrayList<Trip>",
+            "parameters": "String routeId",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": true
+        }
+    },
+    "file_path": "./TripRepository",
+    "anonymous": false,
+    "auxclass": false,
+    "implements_": [],
+    "extends_": [],
+    "definedInClassOrInterfaceTypeKey": null,
+    "innerDefinedClasses": {},
+    "innerDefinedInterfaces": {}
+}

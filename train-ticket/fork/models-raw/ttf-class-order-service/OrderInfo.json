@@ -1,0 +1,82 @@
+{
+    "name": "OrderInfo",
+    "key": "_245961b5557c46e4b650bef2",
+    "type": "class",
+    "hasTypeVariable": false,
+    "position": null,
+    "modifiers": [],
+    "fields": {
+        "loginId": {
+            "name": "loginId",
+            "key": "_c0281aa08f8a47e28ea41afc",
+            "type": "String",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "travelDateStart": {
+            "name": "travelDateStart",
+            "key": "_7d2939db32f2435ab3f04200",
+            "type": "String",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "travelDateEnd": {
+            "name": "travelDateEnd",
+            "key": "_26a1df6799b64d2aa7e662b8",
+            "type": "String",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "boughtDateStart": {
+            "name": "boughtDateStart",
+            "key": "_2061b742b96548c28e337971",
+            "type": "String",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "boughtDateEnd": {
+            "name": "boughtDateEnd",
+            "key": "_9c2f6f75673944d1b47454f1",
+            "type": "String",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "state": {
+            "name": "state",
+            "key": "_7d62812422854716927f1ec4",
+            "type": "int",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "enableTravelDateQuery": {
+            "name": "enableTravelDateQuery",
+            "key": "_190b7a20c9b04371995ae741",
+            "type": "boolean",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "enableBoughtDateQuery": {
+            "name": "enableBoughtDateQuery",
+            "key": "_dfc74999fea647b2bda9c72a",
+            "type": "boolean",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "enableStateQuery": {
+            "name": "enableStateQuery",
+            "key": "_fca0a9f2ea3d4c56b344f555",
+            "type": "boolean",
+            "visibility": "private",
+            "isStatic": false
+        }
+    },
+    "methods": {},
+    "file_path": "./OrderInfo",
+    "anonymous": false,
+    "auxclass": false,
+    "implements_": [],
+    "extends_": [],
+    "definedInClassOrInterfaceTypeKey": null,
+    "innerDefinedClasses": {},
+    "innerDefinedInterfaces": {}
+}

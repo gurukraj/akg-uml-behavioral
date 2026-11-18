@@ -1,0 +1,8 @@
+{
+    "name": "createDefaultAuthUser()",
+    "key": "_31fb11aacc274a2d8cbc265e",
+    "type": "uml:Message",
+    "sender": "_34c701898e064e9e8d382d6d",
+    "receiver": "_5c238683d66f4fb8a08a7f11",
+    "messageLabel": "createDefaultAuthUser()"
+}

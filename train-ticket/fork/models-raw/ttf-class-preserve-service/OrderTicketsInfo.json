@@ -1,0 +1,145 @@
+{
+    "name": "OrderTicketsInfo",
+    "key": "_f9a3f91f95ab418cab401761",
+    "type": "class",
+    "hasTypeVariable": false,
+    "position": null,
+    "modifiers": [],
+    "fields": {
+        "accountId": {
+            "name": "accountId",
+            "key": "_518c9bf0edb04f7c82f09d35",
+            "type": "String",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "contactsId": {
+            "name": "contactsId",
+            "key": "_7f304d2a1a9142ce9e687961",
+            "type": "String",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "tripId": {
+            "name": "tripId",
+            "key": "_892d8b26d66b4a80b08fc324",
+            "type": "String",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "seatType": {
+            "name": "seatType",
+            "key": "_9d0407982e134f76ad253904",
+            "type": "int",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "date": {
+            "name": "date",
+            "key": "_0d5272f388594c22b4ff8b6c",
+            "type": "Date",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "from": {
+            "name": "from",
+            "key": "_20b3c51795e34d43929a40ec",
+            "type": "String",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "to": {
+            "name": "to",
+            "key": "_c2570e3197aa448ea5895def",
+            "type": "String",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "assurance": {
+            "name": "assurance",
+            "key": "_43a0c90e1a1d46cc830f49e7",
+            "type": "int",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "foodType": {
+            "name": "foodType",
+            "key": "_c7b820b8e57d42f3b4e758ec",
+            "type": "int",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "foodName": {
+            "name": "foodName",
+            "key": "_f5590cc9c1f94a0099ec812a",
+            "type": "String",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "foodPrice": {
+            "name": "foodPrice",
+            "key": "_068e28cd11c6470d83d2c2ea",
+            "type": "double",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "stationName": {
+            "name": "stationName",
+            "key": "_9141f60dab3c453ba5be00fb",
+            "type": "String",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "storeName": {
+            "name": "storeName",
+            "key": "_1e23ebe903eb473098e7abc5",
+            "type": "String",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "handleDate": {
+            "name": "handleDate",
+            "key": "_5a4a428c0eac4d6381af7c98",
+            "type": "String",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "consigneeName": {
+            "name": "consigneeName",
+            "key": "_8db75bfb54ea4e819b2b8510",
+            "type": "String",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "consigneePhone": {
+            "name": "consigneePhone",
+            "key": "_9c7fe22e4eae415fbfef5f3f",
+            "type": "String",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "consigneeWeight": {
+            "name": "consigneeWeight",
+            "key": "_52fb8dde7f8145999cfc5057",
+            "type": "double",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "isWithin": {
+            "name": "isWithin",
+            "key": "_8eef71f8b55e4f0d914159c2",
+            "type": "boolean",
+            "visibility": "private",
+            "isStatic": false
+        }
+    },
+    "methods": {},
+    "file_path": "./OrderTicketsInfo",
+    "anonymous": false,
+    "auxclass": false,
+    "implements_": [],
+    "extends_": [],
+    "definedInClassOrInterfaceTypeKey": null,
+    "innerDefinedClasses": {},
+    "innerDefinedInterfaces": {}
+}

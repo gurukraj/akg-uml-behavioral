@@ -1,0 +1,8 @@
+{
+    "name": "AddAssurance_to_JoinNode_ParallelComplete",
+    "key": "_62395db76a52459cb1318483",
+    "type": "uml:ControlFlow",
+    "source": "_b63ff193ee6747f78b60780c",
+    "target": "_e8eb24e8e5d04449adb12160",
+    "guard": null
+}

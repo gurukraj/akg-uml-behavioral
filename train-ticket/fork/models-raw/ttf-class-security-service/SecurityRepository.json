@@ -1,0 +1,32 @@
+{
+    "name": "SecurityRepository",
+    "key": "_6f31a42a860440febb03c30d",
+    "type": "interface",
+    "hasTypeVariable": false,
+    "position": null,
+    "modifiers": [],
+    "fields": {},
+    "methods": {
+        "findByName": {
+            "name": "findByName",
+            "key": "_9124097c104a4de083d5b9a3",
+            "returnType": "SecurityConfig",
+            "parameters": [
+                [
+                    "String"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": true
+        }
+    },
+    "file_path": "./SecurityRepository",
+    "anonymous": false,
+    "auxclass": false,
+    "implements_": [],
+    "extends_": [],
+    "definedInClassOrInterfaceTypeKey": null,
+    "innerDefinedClasses": {},
+    "innerDefinedInterfaces": {}
+}

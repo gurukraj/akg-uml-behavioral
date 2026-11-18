@@ -1,0 +1,7 @@
+{
+    "name": "ts-cancel-service_depends_on_ts-user-service",
+    "key": "_44c5d70fb96b4d0596cbfb95",
+    "type": "dependency",
+    "source": "_bbf6c06250de418699b9fd49",
+    "target": "_030a684bbf2b4479b48bd990"
+}

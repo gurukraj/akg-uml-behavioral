@@ -1,0 +1,404 @@
+{
+    "name": "CancelOrderSequence",
+    "key": "_cc3bff0ea05b495c8b272a3f",
+    "type": "interaction",
+    "lifelines": [
+        {
+            "name": "Client",
+            "key": "_460e42d626ef4aac8e3203cc",
+            "represents": "_820e64605dc04f2b928149fd",
+            "coveredBy": []
+        },
+        {
+            "name": "ts-cancel-service",
+            "key": "_a1b1b39f568640a9a47248e7",
+            "represents": "_9338c0a72853445184a36514",
+            "coveredBy": []
+        },
+        {
+            "name": "ts-order-service",
+            "key": "_7c150b87c9b24112b7065324",
+            "represents": "_6fb88f466d274f2fb8b5748c",
+            "coveredBy": []
+        },
+        {
+            "name": "ts-order-other-service",
+            "key": "_d8b7d5e9e4224f67a9843a46",
+            "represents": "_9b03bcb53f1449f09b7c89bc",
+            "coveredBy": []
+        },
+        {
+            "name": "ts-user-service",
+            "key": "_721bee77b89d4662ace9fa27",
+            "represents": "_1613c81c4a8840a595b92ef3",
+            "coveredBy": []
+        },
+        {
+            "name": "ts-inside-payment-service",
+            "key": "_2910e6143a5d49e28bdfa1aa",
+            "represents": "_e7cf7fda5f8e45ed94affb57",
+            "coveredBy": []
+        },
+        {
+            "name": "ts-notification-service",
+            "key": "_ce0a69c756e34d6cb421bea3",
+            "represents": "_aa3bbb41ff6942c89644f868",
+            "coveredBy": []
+        }
+    ],
+    "messages": [
+        {
+            "name": "cancelTicket(orderId,loginId)",
+            "key": "_b5a858a48d19458a9aba2a84",
+            "messageSort": "synchCall",
+            "sendEvent": "_055b98ff88ed4ecd93db86f9",
+            "receiveEvent": "_8d0d917c1fdf4bdfaad5e792",
+            "connector": null,
+            "signature": null
+        },
+        {
+            "name": "getOrderById(orderId)",
+            "key": "_f52042a175ab4b6fa272446b",
+            "messageSort": "synchCall",
+            "sendEvent": "_1e3e49a2b34943b2bc59c7ba",
+            "receiveEvent": "_9108903ba3bc4cb1beb9f873",
+            "connector": null,
+            "signature": null
+        },
+        {
+            "name": "order",
+            "key": "_972000a4d6d84c63a1e04eb9",
+            "messageSort": "reply",
+            "sendEvent": "_70550e9f19ba4fd2a2cb610c",
+            "receiveEvent": "_f0fcac18c23a4f52b1cb5438",
+            "connector": null,
+            "signature": null
+        },
+        {
+            "name": "calculateRefund(order)",
+            "key": "_34aec59b1fc7493ca6555adb",
+            "messageSort": "synchCall",
+            "sendEvent": "_ae1ef16ebe904ab59afbd6f6",
+            "receiveEvent": "_b20597e5c78c4431a21c2e63",
+            "connector": null,
+            "signature": null
+        },
+        {
+            "name": "getUserById(userId)",
+            "key": "_a38c75cf0341415ca25736ab",
+            "messageSort": "synchCall",
+            "sendEvent": "_be1a70afd9ac4f8083f3ff97",
+            "receiveEvent": "_88131f82949a46e0a8ae8934",
+            "connector": null,
+            "signature": null
+        },
+        {
+            "name": "user",
+            "key": "_9d1921a185be440b8cbb1320",
+            "messageSort": "reply",
+            "sendEvent": "_c17724069bf44e8e8575be51",
+            "receiveEvent": "_907553a481a84f4093088b8d",
+            "connector": null,
+            "signature": null
+        },
+        {
+            "name": "drawBack(userId,money)",
+            "key": "_03e583335cf443fdbceab3da",
+            "messageSort": "synchCall",
+            "sendEvent": "_386457dcf36045508619276f",
+            "receiveEvent": "_f6963f83bb9745aabdbac3aa",
+            "connector": null,
+            "signature": null
+        },
+        {
+            "name": "drawbackResult",
+            "key": "_65606074afb54e98b03b0832",
+            "messageSort": "reply",
+            "sendEvent": "_637676703b524e0cbbf6454c",
+            "receiveEvent": "_ea29b01d08e7483da313fcec",
+            "connector": null,
+            "signature": null
+        },
+        {
+            "name": "modifyOrder(orderId,status)",
+            "key": "_d97c106407a0405db033384a",
+            "messageSort": "synchCall",
+            "sendEvent": "_edb8d786d41645bcb010a6ba",
+            "receiveEvent": "_e734660888cc49d2ba7a1fd3",
+            "connector": null,
+            "signature": null
+        },
+        {
+            "name": "updateResult",
+            "key": "_ed6f0d2770da4261b999ab76",
+            "messageSort": "reply",
+            "sendEvent": "_3d251490e53e490aa2603f12",
+            "receiveEvent": "_990e847a65804f87ab444ce0",
+            "connector": null,
+            "signature": null
+        },
+        {
+            "name": "orderCancelSuccess(notifyInfo)",
+            "key": "_86fb1692841e4059a889d54c",
+            "messageSort": "synchCall",
+            "sendEvent": "_cab7b0b1e3f541f5ab8dbdcd",
+            "receiveEvent": "_b8ce00ca6c1d494eadd03e54",
+            "connector": null,
+            "signature": null
+        },
+        {
+            "name": "emailSent",
+            "key": "_481f37b03fe344199a9a9979",
+            "messageSort": "reply",
+            "sendEvent": "_e1e8969392f44c068d959238",
+            "receiveEvent": "_5f89bc5c38374b59852ce80f",
+            "connector": null,
+            "signature": null
+        },
+        {
+            "name": "cancelResult",
+            "key": "_e6ca8b067d8d4194895fb1ed",
+            "messageSort": "reply",
+            "sendEvent": "_7be170e20817422db690a058",
+            "receiveEvent": "_1743ea66c00547e9968b3a49",
+            "connector": null,
+            "signature": null
+        }
+    ],
+    "fragments": [
+        {
+            "key": "_055b98ff88ed4ecd93db86f9",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_460e42d626ef4aac8e3203cc",
+            "enclosingInteraction": "ttf-seq-cancel-order",
+            "message": "_b5a858a48d19458a9aba2a84",
+            "execution": null
+        },
+        {
+            "key": "_8d0d917c1fdf4bdfaad5e792",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_a1b1b39f568640a9a47248e7",
+            "enclosingInteraction": "ttf-seq-cancel-order",
+            "message": "_b5a858a48d19458a9aba2a84",
+            "execution": null
+        },
+        {
+            "key": "_1e3e49a2b34943b2bc59c7ba",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_a1b1b39f568640a9a47248e7",
+            "enclosingInteraction": "ttf-seq-cancel-order",
+            "message": "_f52042a175ab4b6fa272446b",
+            "execution": null
+        },
+        {
+            "key": "_9108903ba3bc4cb1beb9f873",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_7c150b87c9b24112b7065324",
+            "enclosingInteraction": "ttf-seq-cancel-order",
+            "message": "_f52042a175ab4b6fa272446b",
+            "execution": null
+        },
+        {
+            "key": "_70550e9f19ba4fd2a2cb610c",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_7c150b87c9b24112b7065324",
+            "enclosingInteraction": "ttf-seq-cancel-order",
+            "message": "_972000a4d6d84c63a1e04eb9",
+            "execution": null
+        },
+        {
+            "key": "_f0fcac18c23a4f52b1cb5438",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_a1b1b39f568640a9a47248e7",
+            "enclosingInteraction": "ttf-seq-cancel-order",
+            "message": "_972000a4d6d84c63a1e04eb9",
+            "execution": null
+        },
+        {
+            "key": "_ae1ef16ebe904ab59afbd6f6",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_a1b1b39f568640a9a47248e7",
+            "enclosingInteraction": "ttf-seq-cancel-order",
+            "message": "_34aec59b1fc7493ca6555adb",
+            "execution": null
+        },
+        {
+            "key": "_b20597e5c78c4431a21c2e63",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_a1b1b39f568640a9a47248e7",
+            "enclosingInteraction": "ttf-seq-cancel-order",
+            "message": "_34aec59b1fc7493ca6555adb",
+            "execution": null
+        },
+        {
+            "key": "_be1a70afd9ac4f8083f3ff97",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_a1b1b39f568640a9a47248e7",
+            "enclosingInteraction": "ttf-seq-cancel-order",
+            "message": "_a38c75cf0341415ca25736ab",
+            "execution": null
+        },
+        {
+            "key": "_88131f82949a46e0a8ae8934",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_721bee77b89d4662ace9fa27",
+            "enclosingInteraction": "ttf-seq-cancel-order",
+            "message": "_a38c75cf0341415ca25736ab",
+            "execution": null
+        },
+        {
+            "key": "_c17724069bf44e8e8575be51",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_721bee77b89d4662ace9fa27",
+            "enclosingInteraction": "ttf-seq-cancel-order",
+            "message": "_9d1921a185be440b8cbb1320",
+            "execution": null
+        },
+        {
+            "key": "_907553a481a84f4093088b8d",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_a1b1b39f568640a9a47248e7",
+            "enclosingInteraction": "ttf-seq-cancel-order",
+            "message": "_9d1921a185be440b8cbb1320",
+            "execution": null
+        },
+        {
+            "key": "_386457dcf36045508619276f",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_a1b1b39f568640a9a47248e7",
+            "enclosingInteraction": "ttf-seq-cancel-order",
+            "message": "_03e583335cf443fdbceab3da",
+            "execution": null
+        },
+        {
+            "key": "_f6963f83bb9745aabdbac3aa",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_2910e6143a5d49e28bdfa1aa",
+            "enclosingInteraction": "ttf-seq-cancel-order",
+            "message": "_03e583335cf443fdbceab3da",
+            "execution": null
+        },
+        {
+            "key": "_637676703b524e0cbbf6454c",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_2910e6143a5d49e28bdfa1aa",
+            "enclosingInteraction": "ttf-seq-cancel-order",
+            "message": "_65606074afb54e98b03b0832",
+            "execution": null
+        },
+        {
+            "key": "_ea29b01d08e7483da313fcec",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_a1b1b39f568640a9a47248e7",
+            "enclosingInteraction": "ttf-seq-cancel-order",
+            "message": "_65606074afb54e98b03b0832",
+            "execution": null
+        },
+        {
+            "key": "_edb8d786d41645bcb010a6ba",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_a1b1b39f568640a9a47248e7",
+            "enclosingInteraction": "ttf-seq-cancel-order",
+            "message": "_d97c106407a0405db033384a",
+            "execution": null
+        },
+        {
+            "key": "_e734660888cc49d2ba7a1fd3",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_7c150b87c9b24112b7065324",
+            "enclosingInteraction": "ttf-seq-cancel-order",
+            "message": "_d97c106407a0405db033384a",
+            "execution": null
+        },
+        {
+            "key": "_3d251490e53e490aa2603f12",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_7c150b87c9b24112b7065324",
+            "enclosingInteraction": "ttf-seq-cancel-order",
+            "message": "_ed6f0d2770da4261b999ab76",
+            "execution": null
+        },
+        {
+            "key": "_990e847a65804f87ab444ce0",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_a1b1b39f568640a9a47248e7",
+            "enclosingInteraction": "ttf-seq-cancel-order",
+            "message": "_ed6f0d2770da4261b999ab76",
+            "execution": null
+        },
+        {
+            "key": "_cab7b0b1e3f541f5ab8dbdcd",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_a1b1b39f568640a9a47248e7",
+            "enclosingInteraction": "ttf-seq-cancel-order",
+            "message": "_86fb1692841e4059a889d54c",
+            "execution": null
+        },
+        {
+            "key": "_b8ce00ca6c1d494eadd03e54",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_ce0a69c756e34d6cb421bea3",
+            "enclosingInteraction": "ttf-seq-cancel-order",
+            "message": "_86fb1692841e4059a889d54c",
+            "execution": null
+        },
+        {
+            "key": "_e1e8969392f44c068d959238",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_ce0a69c756e34d6cb421bea3",
+            "enclosingInteraction": "ttf-seq-cancel-order",
+            "message": "_481f37b03fe344199a9a9979",
+            "execution": null
+        },
+        {
+            "key": "_5f89bc5c38374b59852ce80f",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_a1b1b39f568640a9a47248e7",
+            "enclosingInteraction": "ttf-seq-cancel-order",
+            "message": "_481f37b03fe344199a9a9979",
+            "execution": null
+        },
+        {
+            "key": "_7be170e20817422db690a058",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_a1b1b39f568640a9a47248e7",
+            "enclosingInteraction": "ttf-seq-cancel-order",
+            "message": "_e6ca8b067d8d4194895fb1ed",
+            "execution": null
+        },
+        {
+            "key": "_1743ea66c00547e9968b3a49",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_460e42d626ef4aac8e3203cc",
+            "enclosingInteraction": "ttf-seq-cancel-order",
+            "message": "_e6ca8b067d8d4194895fb1ed",
+            "execution": null
+        }
+    ]
+}

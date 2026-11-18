@@ -1,0 +1,8 @@
+{
+    "name": "CreateConsign_to_JoinNode_ParallelComplete",
+    "key": "_cbe810203b884b199b3c97d8",
+    "type": "uml:ControlFlow",
+    "source": "_58ef81b6c8ea4c129b023a5f",
+    "target": "_e8eb24e8e5d04449adb12160",
+    "guard": null
+}

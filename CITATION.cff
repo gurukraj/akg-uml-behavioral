@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use this software, ontology, or data, please cite it as below."
+title: "AKG for UML behavioral models: ontology, code, and data"
+version: 1.0.0
+date-released: 2026-11-18
+license: Apache-2.0
+repository-code: "https://github.com/gurukraj/akg-uml-behavioral"
+authors:
+  - family-names: Kulkarni
+    given-names: Gururaj
+    affiliation: "Manipal University Jaipur"
+  - family-names: Lamba
+    given-names: Chattar Singh
+    affiliation: "Manipal University Jaipur"
+  - family-names: Solanki
+    given-names: Surendra
+    affiliation: "Manipal University Jaipur"

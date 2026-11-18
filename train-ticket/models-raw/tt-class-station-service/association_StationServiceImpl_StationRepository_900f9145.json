@@ -1,0 +1,9 @@
+{
+    "name": "StationServiceImpl_uses_StationRepository",
+    "key": "_3b296efd6402454a900f9145",
+    "type": "association",
+    "source": "_e6937565eee34903aeac68e4",
+    "target": "_3cc0502336024d40b077eafa",
+    "sourceMultiplicity": "1",
+    "targetMultiplicity": "1"
+}

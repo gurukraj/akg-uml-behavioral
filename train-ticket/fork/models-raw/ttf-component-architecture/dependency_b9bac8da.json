@@ -1,0 +1,7 @@
+{
+    "name": "ts-food-service_depends_on_ts-food-map-service",
+    "key": "_40a813610da54de0b9bac8da",
+    "type": "dependency",
+    "source": "_68155404e040496c8531e1cd",
+    "target": "_b5108314147040cc9b1900f5"
+}

@@ -1,0 +1,90 @@
+{
+    "name": "ConfigServiceImpl",
+    "key": "_31e24f82b7be43218c01c850",
+    "type": "class",
+    "hasTypeVariable": false,
+    "position": null,
+    "modifiers": [],
+    "fields": {},
+    "methods": {
+        "create": {
+            "name": "create",
+            "key": "_03c694a6bac54c1ab22b5d77",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "Config",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "update": {
+            "name": "update",
+            "key": "_ca37034e2bbf42d79ddbe98b",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "Config",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "query": {
+            "name": "query",
+            "key": "_684b2fc622134117a1067b7b",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "String",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "delete": {
+            "name": "delete",
+            "key": "_82865175e47342e8b9004061",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "String",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "queryAll": {
+            "name": "queryAll",
+            "key": "_258264d315ad4ccaa99b7aa5",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        }
+    },
+    "file_path": "./ConfigServiceImpl",
+    "anonymous": false,
+    "auxclass": false,
+    "implements_": [
+        "_2e9949743b08433aa7c4f27b"
+    ],
+    "extends_": [],
+    "definedInClassOrInterfaceTypeKey": null,
+    "innerDefinedClasses": {},
+    "innerDefinedInterfaces": {}
+}

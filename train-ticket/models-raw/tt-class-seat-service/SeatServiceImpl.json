@@ -1,0 +1,63 @@
+{
+    "name": "SeatServiceImpl",
+    "key": "_0fcd0ac6a9c84f078b754468",
+    "type": "class",
+    "hasTypeVariable": false,
+    "position": null,
+    "modifiers": [],
+    "fields": {
+        "restTemplate": {
+            "name": "restTemplate",
+            "key": "_c12bdce83fd84f89a22e5a24",
+            "type": "RestTemplate",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "discoveryClient": {
+            "name": "discoveryClient",
+            "key": "_23e322d98d1346769903edf6",
+            "type": "DiscoveryClient",
+            "visibility": "private",
+            "isStatic": false
+        }
+    },
+    "methods": {
+        "distributeSeat": {
+            "name": "distributeSeat",
+            "key": "_b4e9bb3a63bd4c9b871cc737",
+            "returnType": "Response",
+            "parameters": "Seat seatRequest, HttpHeaders headers",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "getLeftTicketOfInterval": {
+            "name": "getLeftTicketOfInterval",
+            "key": "_d0b6def19dc14e1f9ee41796",
+            "returnType": "Response",
+            "parameters": "Seat seatRequest, HttpHeaders headers",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "getDirectProportion": {
+            "name": "getDirectProportion",
+            "key": "_ae59e4762b274cf3a91e6cfc",
+            "returnType": "double",
+            "parameters": "HttpHeaders headers",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        }
+    },
+    "file_path": "./SeatServiceImpl",
+    "anonymous": false,
+    "auxclass": false,
+    "implements_": [
+        "_d014cd5c28cd4888b81ce754"
+    ],
+    "extends_": [],
+    "definedInClassOrInterfaceTypeKey": null,
+    "innerDefinedClasses": {},
+    "innerDefinedInterfaces": {}
+}

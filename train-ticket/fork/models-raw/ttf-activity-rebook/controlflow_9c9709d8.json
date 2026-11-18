@@ -1,0 +1,8 @@
+{
+    "name": "ConvertStationNames_to_GetTripDetail",
+    "key": "_0d41e120aca746b79c9709d8",
+    "type": "uml:ControlFlow",
+    "source": "_c6431bb1369f4168a46c0a32",
+    "target": "_4e9bf7926c7848478ac243a9",
+    "guard": null
+}

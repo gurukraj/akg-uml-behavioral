@@ -1,0 +1,143 @@
+{
+    "name": "VoucherSequence",
+    "key": "_34d371c7a05c47e58dfe2cf9",
+    "type": "interaction",
+    "lifelines": [
+        {
+            "name": "Client",
+            "key": "_63affa10ac654469bde7d4a2",
+            "represents": "_7c93c29691e44590a8dcdfb7",
+            "coveredBy": []
+        },
+        {
+            "name": "ts-voucher-service",
+            "key": "_21e86c9d81d64471a937a22a",
+            "represents": "_8976f002ea0e46d2b725011f",
+            "coveredBy": []
+        },
+        {
+            "name": "ts-order-service",
+            "key": "_e9cb4071081e4e05911901ad",
+            "represents": "_4bbbcd5c98b545db8a46f994",
+            "coveredBy": []
+        },
+        {
+            "name": "ts-order-other-service",
+            "key": "_e80a5cdcfbc34ff994e5d613",
+            "represents": "_1624d78e263c4ab8bbbfb96c",
+            "coveredBy": []
+        }
+    ],
+    "messages": [
+        {
+            "name": "getVoucher(orderId)",
+            "key": "_3af470cb5cdf4ad0ac2fb065",
+            "messageSort": "synchCall",
+            "sendEvent": "_3a3454fd4365487f9804be42",
+            "receiveEvent": "_81288cf7e16a482faf0f3f61",
+            "connector": null,
+            "signature": null
+        },
+        {
+            "name": "getOrderById(orderId)",
+            "key": "_a1d024f28f1349f6a4404f4a",
+            "messageSort": "synchCall",
+            "sendEvent": "_e7f0a9fba8464d1484604151",
+            "receiveEvent": "_243ea1d60d244b64b839a236",
+            "connector": null,
+            "signature": null
+        },
+        {
+            "name": "order",
+            "key": "_217d35149d574b1c84eb73aa",
+            "messageSort": "reply",
+            "sendEvent": "_4a676240b7fe416e9d27cb1b",
+            "receiveEvent": "_572bdf2cf031409f8a05f589",
+            "connector": null,
+            "signature": null
+        },
+        {
+            "name": "voucher",
+            "key": "_25a3cdf804f0479d9011bdbd",
+            "messageSort": "reply",
+            "sendEvent": "_f59439ef7ad64408b7048929",
+            "receiveEvent": "_29e9aded36c34684ab498f88",
+            "connector": null,
+            "signature": null
+        }
+    ],
+    "fragments": [
+        {
+            "key": "_3a3454fd4365487f9804be42",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_63affa10ac654469bde7d4a2",
+            "enclosingInteraction": "ttf-seq-voucher",
+            "message": "_3af470cb5cdf4ad0ac2fb065",
+            "execution": null
+        },
+        {
+            "key": "_81288cf7e16a482faf0f3f61",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_21e86c9d81d64471a937a22a",
+            "enclosingInteraction": "ttf-seq-voucher",
+            "message": "_3af470cb5cdf4ad0ac2fb065",
+            "execution": null
+        },
+        {
+            "key": "_e7f0a9fba8464d1484604151",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_21e86c9d81d64471a937a22a",
+            "enclosingInteraction": "ttf-seq-voucher",
+            "message": "_a1d024f28f1349f6a4404f4a",
+            "execution": null
+        },
+        {
+            "key": "_243ea1d60d244b64b839a236",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_e9cb4071081e4e05911901ad",
+            "enclosingInteraction": "ttf-seq-voucher",
+            "message": "_a1d024f28f1349f6a4404f4a",
+            "execution": null
+        },
+        {
+            "key": "_4a676240b7fe416e9d27cb1b",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_e9cb4071081e4e05911901ad",
+            "enclosingInteraction": "ttf-seq-voucher",
+            "message": "_217d35149d574b1c84eb73aa",
+            "execution": null
+        },
+        {
+            "key": "_572bdf2cf031409f8a05f589",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_21e86c9d81d64471a937a22a",
+            "enclosingInteraction": "ttf-seq-voucher",
+            "message": "_217d35149d574b1c84eb73aa",
+            "execution": null
+        },
+        {
+            "key": "_f59439ef7ad64408b7048929",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_21e86c9d81d64471a937a22a",
+            "enclosingInteraction": "ttf-seq-voucher",
+            "message": "_25a3cdf804f0479d9011bdbd",
+            "execution": null
+        },
+        {
+            "key": "_29e9aded36c34684ab498f88",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_63affa10ac654469bde7d4a2",
+            "enclosingInteraction": "ttf-seq-voucher",
+            "message": "_25a3cdf804f0479d9011bdbd",
+            "execution": null
+        }
+    ]
+}

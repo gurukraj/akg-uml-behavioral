@@ -1,0 +1,8 @@
+{
+    "name": "calls_ts_inside_payment_service",
+    "key": "_e6f42b36e70f40d483922db2",
+    "type": "dependency",
+    "source": "tt-class-rebook-service",
+    "target": "ts-inside-payment-service",
+    "endpoint": "POST /api/v1/inside_pay_service/inside_payment/difference"
+}

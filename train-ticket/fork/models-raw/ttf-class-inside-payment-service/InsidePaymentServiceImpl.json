@@ -1,0 +1,92 @@
+{
+    "name": "InsidePaymentServiceImpl",
+    "key": "_d313da14b9694492822ebb87",
+    "type": "class",
+    "hasTypeVariable": false,
+    "position": null,
+    "modifiers": [],
+    "fields": {},
+    "methods": {
+        "pay": {
+            "name": "pay",
+            "key": "_c4fe8c4c82274230a3c9ce20",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "PaymentInfo",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "createAccount": {
+            "name": "createAccount",
+            "key": "_944e69a55edf48cd8bf4ccf2",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "AccountInfo",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "addMoney": {
+            "name": "addMoney",
+            "key": "_7a9d462a125b4fb1b0be0084",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "String",
+                    "String",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "queryPayment": {
+            "name": "queryPayment",
+            "key": "_8d350c07a3014d71a00ab55b",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "drawBack": {
+            "name": "drawBack",
+            "key": "_a1e2844cd7674f30a446a426",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "String",
+                    "String",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        }
+    },
+    "file_path": "./InsidePaymentServiceImpl",
+    "anonymous": false,
+    "auxclass": false,
+    "implements_": [
+        "_49f332d159c047aeb71a2989"
+    ],
+    "extends_": [],
+    "definedInClassOrInterfaceTypeKey": null,
+    "innerDefinedClasses": {},
+    "innerDefinedInterfaces": {}
+}

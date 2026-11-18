@@ -1,0 +1,8 @@
+{
+    "name": "DecisionNode_PaymentSuccess_to_SendNotification",
+    "key": "_8558c3ae4f994996ac71b2c4",
+    "type": "uml:ControlFlow",
+    "source": "_1ba6a6fdba224ae0aabab31f",
+    "target": "_1604187ce850486288a72f96",
+    "guard": "success"
+}

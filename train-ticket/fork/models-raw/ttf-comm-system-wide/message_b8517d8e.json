@@ -1,0 +1,8 @@
+{
+    "name": "securityInfoCheck()",
+    "key": "_8480e24e44674bacb8517d8e",
+    "type": "uml:Message",
+    "sender": "_c77f2401058c4e98828dfaad",
+    "receiver": "_6b697b8ca63b4911ae84df70",
+    "messageLabel": "securityInfoCheck()"
+}

@@ -1,0 +1,8 @@
+{
+    "name": "AddConsignment_to_JoinNode_OptionalServices",
+    "key": "_5e5337425f84425594513035",
+    "type": "uml:ControlFlow",
+    "source": "_aae1884472294a208a74a83d",
+    "target": "_c194c7f13c264a2391ce9e89",
+    "guard": null
+}

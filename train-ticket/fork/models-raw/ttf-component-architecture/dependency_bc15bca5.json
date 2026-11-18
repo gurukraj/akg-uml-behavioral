@@ -1,0 +1,7 @@
+{
+    "name": "ts-rebook-service_depends_on_ts-station-service",
+    "key": "_8e52c303821f4191bc15bca5",
+    "type": "dependency",
+    "source": "_85cbb4093fd34fd7b9700070",
+    "target": "_d3816f92dda243b3a7782cc5"
+}

@@ -1,0 +1,8 @@
+{
+    "name": "SearchTrips_to_DecisionNode_TripsFound",
+    "key": "_9803141e2ae74759a9dc1b01",
+    "type": "uml:ControlFlow",
+    "source": "_672942190e8c416e903aae5a",
+    "target": "_e1134a818b994b4b9040fa42",
+    "guard": null
+}

@@ -1,0 +1,18 @@
+{
+    "name": "FoodQueryWorkflow",
+    "key": "_2c07ad7db98a4413ba66902f",
+    "type": "uml:Activity",
+    "description": "Food query workflow (fork: through ts-food-map-service)",
+    "nodes": [
+        "_edad8f64262240429ed4ac84",
+        "_035706d5e8bb43ffbbf3e1e8",
+        "_158bdb2c4b16484b843c5330",
+        "_3e3dd5581fc544909c56cd63",
+        "_fddc3cfaab4343f29bb5a565",
+        "_b41f17bf8d88459a8a4860b2",
+        "_2ffa007f58064dc5bf930698",
+        "_938d3c811b4e46bfa7615cea",
+        "_595a178532f149ad87b47a84"
+    ],
+    "edges": 9
+}

@@ -1,0 +1,61 @@
+{
+    "name": "RebookInfo",
+    "key": "_e356ba84746e44a28c614008",
+    "type": "class",
+    "hasTypeVariable": false,
+    "position": null,
+    "modifiers": [],
+    "fields": {
+        "loginId": {
+            "name": "loginId",
+            "key": "_75a7b32b97ab403798bd6232",
+            "type": "String",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "orderId": {
+            "name": "orderId",
+            "key": "_b552aaadf5ea4b16919eb6fb",
+            "type": "String",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "oldTripId": {
+            "name": "oldTripId",
+            "key": "_f34f5a59d23740d9ba85a26b",
+            "type": "String",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "tripId": {
+            "name": "tripId",
+            "key": "_2fdc06ade09e42b3b113b5d3",
+            "type": "String",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "seatType": {
+            "name": "seatType",
+            "key": "_f087173a5a664b278fb3293b",
+            "type": "int",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "date": {
+            "name": "date",
+            "key": "_7ad8fbfacd454c70b6b3ff69",
+            "type": "String",
+            "visibility": "private",
+            "isStatic": false
+        }
+    },
+    "methods": {},
+    "file_path": "./RebookInfo",
+    "anonymous": false,
+    "auxclass": false,
+    "implements_": [],
+    "extends_": [],
+    "definedInClassOrInterfaceTypeKey": null,
+    "innerDefinedClasses": {},
+    "innerDefinedInterfaces": {}
+}

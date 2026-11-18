@@ -1,0 +1,49 @@
+{
+    "name": "VerifyController",
+    "key": "_d477ed3991a04d75a4781e63",
+    "type": "class",
+    "hasTypeVariable": false,
+    "position": null,
+    "modifiers": [],
+    "fields": {},
+    "methods": {
+        "imageCode": {
+            "name": "imageCode",
+            "key": "_487f4aca7fe942e58fdf526f",
+            "returnType": "void",
+            "parameters": [
+                [
+                    "HttpServletRequest",
+                    "HttpServletResponse",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "verifyCode": {
+            "name": "verifyCode",
+            "key": "_1d51193412f248d1ba22ca3e",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "String",
+                    "HttpServletRequest",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        }
+    },
+    "file_path": "./VerifyController",
+    "anonymous": false,
+    "auxclass": false,
+    "implements_": [],
+    "extends_": [],
+    "definedInClassOrInterfaceTypeKey": null,
+    "innerDefinedClasses": {},
+    "innerDefinedInterfaces": {}
+}

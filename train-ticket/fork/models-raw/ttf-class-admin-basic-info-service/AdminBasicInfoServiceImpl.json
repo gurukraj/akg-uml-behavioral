@@ -1,0 +1,86 @@
+{
+    "name": "AdminBasicInfoServiceImpl",
+    "key": "_90e0c746c5394cb4806c2aab",
+    "type": "class",
+    "hasTypeVariable": false,
+    "position": null,
+    "modifiers": [],
+    "fields": {},
+    "methods": {
+        "getAllContacts": {
+            "name": "getAllContacts",
+            "key": "_8e1c00b61165406a95e6da01",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "getAllStations": {
+            "name": "getAllStations",
+            "key": "_4a8efe2c2fde40c681bda8b0",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "getAllTrains": {
+            "name": "getAllTrains",
+            "key": "_15ba6c3445854e66aba6866d",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "getAllRoutes": {
+            "name": "getAllRoutes",
+            "key": "_339072ff1bd248388c7782cf",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "getAllPrices": {
+            "name": "getAllPrices",
+            "key": "_3bf47c5fee284193b0e6b802",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        }
+    },
+    "file_path": "./AdminBasicInfoServiceImpl",
+    "anonymous": false,
+    "auxclass": false,
+    "implements_": [
+        "_463ccccde0ac42e592a39068"
+    ],
+    "extends_": [],
+    "definedInClassOrInterfaceTypeKey": null,
+    "innerDefinedClasses": {},
+    "innerDefinedInterfaces": {}
+}

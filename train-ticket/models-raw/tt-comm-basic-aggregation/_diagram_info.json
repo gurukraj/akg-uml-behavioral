@@ -1,0 +1,23 @@
+{
+    "classification": {
+        "categories": [
+            "Communication"
+        ],
+        "primary": "Communication",
+        "is_class_diagram": false,
+        "is_behavioral": true
+    },
+    "detectedTypes": {
+        "uml:Collaboration": 1,
+        "uml:LifelineOrObject": 5,
+        "uml:Message": 5
+    },
+    "elementCounts": {
+        "collaborations": 1,
+        "objects": 5,
+        "messages": 5
+    },
+    "totalElements": 11,
+    "diagram_id": "tt-comm-basic-aggregation",
+    "source_file": "tt-comm-basic-aggregation.json"
+}

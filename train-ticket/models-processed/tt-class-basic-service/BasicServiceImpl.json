@@ -1,0 +1,90 @@
+{
+    "name": "BasicServiceImpl",
+    "key": "_8865f174bc2846f2bb3cc3b8",
+    "type": "class",
+    "hasTypeVariable": false,
+    "position": null,
+    "modifiers": [],
+    "fields": {
+        "restTemplate": {
+            "name": "restTemplate",
+            "key": "_5f97d2801144466aa42c4b53",
+            "type": "RestTemplate",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "discoveryClient": {
+            "name": "discoveryClient",
+            "key": "_9bb9a5f21c124089ba30af30",
+            "type": "DiscoveryClient",
+            "visibility": "private",
+            "isStatic": false
+        }
+    },
+    "methods": {
+        "queryForTravel": {
+            "name": "queryForTravel",
+            "key": "_ea2843cfd58745399b3fc7ff",
+            "returnType": "Response",
+            "parameters": "Travel info, HttpHeaders headers",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "queryForTravels": {
+            "name": "queryForTravels",
+            "key": "_0bad20ee232b470da18ef3a7",
+            "returnType": "Response",
+            "parameters": "List<Travel> infos, HttpHeaders headers",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "queryForStationId": {
+            "name": "queryForStationId",
+            "key": "_7e3eb67c0f0c4bd6a2715b1d",
+            "returnType": "Response",
+            "parameters": "String stationName, HttpHeaders headers",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "queryTrainTypeByName": {
+            "name": "queryTrainTypeByName",
+            "key": "_0718d465d2f7404fa6b855b5",
+            "returnType": "TrainType",
+            "parameters": "String trainTypeName, HttpHeaders headers",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "getRouteByRouteId": {
+            "name": "getRouteByRouteId",
+            "key": "_c52a0454dd0742adb31dec06",
+            "returnType": "Route",
+            "parameters": "String routeId, HttpHeaders headers",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "queryPriceConfigByRouteIdAndTrainType": {
+            "name": "queryPriceConfigByRouteIdAndTrainType",
+            "key": "_5824f70407a048b78de7559e",
+            "returnType": "PriceConfig",
+            "parameters": "String routeId, String trainType, HttpHeaders headers",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        }
+    },
+    "file_path": "./BasicServiceImpl",
+    "anonymous": false,
+    "auxclass": false,
+    "implements_": [
+        "_70d5cc65a06849ec97995ec5"
+    ],
+    "extends_": [],
+    "definedInClassOrInterfaceTypeKey": null,
+    "innerDefinedClasses": {},
+    "innerDefinedInterfaces": {}
+}

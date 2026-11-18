@@ -1,0 +1,8 @@
+{
+    "name": "calls_ts_consign_service",
+    "key": "_e262dbbc7e7b49e5a5316c16",
+    "type": "dependency",
+    "source": "tt-class-preserve-service",
+    "target": "ts-consign-service",
+    "endpoint": "POST /api/v1/consignservice/consigns"
+}

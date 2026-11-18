@@ -1,0 +1,22 @@
+{
+    "classification": {
+        "categories": [
+            "Sequence"
+        ],
+        "primary": "Sequence",
+        "is_class_diagram": false,
+        "is_behavioral": true
+    },
+    "detectedTypes": {
+        "uml:Class": 8,
+        "uml:Interaction": 1,
+        "uml:MessageOccurrenceSpecification": 32
+    },
+    "elementCounts": {
+        "classes": 8,
+        "interactions": 1
+    },
+    "totalElements": 9,
+    "diagram_id": "tt-seq-rebook",
+    "source_file": "tt-seq-rebook.json"
+}

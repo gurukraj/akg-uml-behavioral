@@ -1,0 +1,13 @@
+{
+    "name": "FoodMapServiceFlow",
+    "key": "_fb3a46cf6c054881aee5a847",
+    "type": "uml:Collaboration",
+    "description": "Communication topology for food query (fork: through food-map-service)",
+    "objects": [
+        "_4436a2172772463e8b1949c9",
+        "_e2fe4376dd7946e086e556b7",
+        "_967c18872fe746fda677832b",
+        "_248b963250e340adac2cd735"
+    ],
+    "links": 4
+}

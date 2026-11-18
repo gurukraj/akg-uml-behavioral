@@ -1,0 +1,7 @@
+{
+    "name": "ts-travel-service_depends_on_ts-seat-service",
+    "key": "_9fd065b75cc84da98ce22bdb",
+    "type": "dependency",
+    "source": "_50bfe41ba12145f7ab346112",
+    "target": "_54be9461f3534393adc17d54"
+}

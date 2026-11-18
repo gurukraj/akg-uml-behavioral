@@ -1,0 +1,9 @@
+{
+    "name": "ts-order-service",
+    "key": "_cd7ec6150ff84e80a81fdc18",
+    "type": "uml:ActivityPartition",
+    "nodes": [
+        "_956f727ab6c44d8a9120b537",
+        "_45fe588823ad465898c6a621"
+    ]
+}

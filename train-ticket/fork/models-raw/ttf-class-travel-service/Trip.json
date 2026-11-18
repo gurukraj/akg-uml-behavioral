@@ -1,0 +1,75 @@
+{
+    "name": "Trip",
+    "key": "_c399072287e54803b30d6cc8",
+    "type": "class",
+    "hasTypeVariable": false,
+    "position": null,
+    "modifiers": [],
+    "fields": {
+        "tripId": {
+            "name": "tripId",
+            "key": "_805e79678f2d4f5088ae26cf",
+            "type": "TripId",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "trainTypeId": {
+            "name": "trainTypeId",
+            "key": "_5dbd3a69f39a446e99d9122a",
+            "type": "String",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "routeId": {
+            "name": "routeId",
+            "key": "_9eb9511172af4628b49742ab",
+            "type": "String",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "startingStationId": {
+            "name": "startingStationId",
+            "key": "_d26f0a6a86454b71bf6b1a45",
+            "type": "String",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "stationsId": {
+            "name": "stationsId",
+            "key": "_ae993b25c5c3428fb01c832a",
+            "type": "String",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "terminalStationId": {
+            "name": "terminalStationId",
+            "key": "_0f055c2724794847bb01a3d9",
+            "type": "String",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "startingTime": {
+            "name": "startingTime",
+            "key": "_089b068d833c410a9a6a90fc",
+            "type": "Date",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "endTime": {
+            "name": "endTime",
+            "key": "_d6a0a2da2bb24dc7ad202510",
+            "type": "Date",
+            "visibility": "private",
+            "isStatic": false
+        }
+    },
+    "methods": {},
+    "file_path": "./Trip",
+    "anonymous": false,
+    "auxclass": false,
+    "implements_": [],
+    "extends_": [],
+    "definedInClassOrInterfaceTypeKey": null,
+    "innerDefinedClasses": {},
+    "innerDefinedInterfaces": {}
+}

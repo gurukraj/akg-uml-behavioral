@@ -1,0 +1,8 @@
+{
+    "name": "DetermineTrainType_to_DecisionNode_TrainType",
+    "key": "_07c702b7602b458cb4853165",
+    "type": "uml:ControlFlow",
+    "source": "_3d9dd7a8a7d64bbb967a2f21",
+    "target": "_9eee5209da714d5798c4879f",
+    "guard": null
+}

@@ -1,0 +1,8 @@
+{
+    "name": "CreateOrder_to_JoinNode_ParallelComplete",
+    "key": "_dde947d2d08a40bbbdf11f4d",
+    "type": "uml:ControlFlow",
+    "source": "_d4b66a0c4f6645e9b41a9b8d",
+    "target": "_e8eb24e8e5d04449adb12160",
+    "guard": null
+}

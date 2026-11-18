@@ -1,0 +1,19 @@
+PREFIX akg: <https://w3id.org/akg/behavioral#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+SELECT DISTINCT ?componentName
+WHERE {
+  ?comp rdf:type akg:CollaborationObject ;
+        akg:componentName ?componentName .
+
+  ?msg1 rdf:type akg:CollaborationMessage ;
+        akg:involves ?comp .
+
+  ?msg2 rdf:type akg:CollaborationMessage ;
+        akg:involves ?comp .
+
+  ?msg1 akg:precedes+ ?msg2 .
+  ?msg2 akg:causedBy+ ?msg1 .
+
+  FILTER(?msg1 != ?msg2)
+}

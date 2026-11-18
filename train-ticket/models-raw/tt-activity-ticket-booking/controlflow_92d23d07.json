@@ -1,0 +1,8 @@
+{
+    "name": "SelectTrip_to_SelectSeat",
+    "key": "_19f7898adc714ce692d23d07",
+    "type": "uml:ControlFlow",
+    "source": "_74d5cbf65aa54f04b039f2a7",
+    "target": "_a6dbd6f9be8f4f78ad816e50",
+    "guard": null
+}

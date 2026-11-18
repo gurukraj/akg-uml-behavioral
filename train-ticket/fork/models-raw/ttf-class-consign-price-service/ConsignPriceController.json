@@ -1,0 +1,61 @@
+{
+    "name": "ConsignPriceController",
+    "key": "_4c07308e2cbb48a885c040ac",
+    "type": "class",
+    "hasTypeVariable": false,
+    "position": null,
+    "modifiers": [],
+    "fields": {},
+    "methods": {
+        "getPriceByWeightAndRegion": {
+            "name": "getPriceByWeightAndRegion",
+            "key": "_619324d6d3d64f5db87c58f0",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "double",
+                    "boolean",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "queryPriceInformation": {
+            "name": "queryPriceInformation",
+            "key": "_1078024ad8cd47608ddf4246",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "createAndModifyPrice": {
+            "name": "createAndModifyPrice",
+            "key": "_f73080fba092428fa0b938db",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "ConsignPrice",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        }
+    },
+    "file_path": "./ConsignPriceController",
+    "anonymous": false,
+    "auxclass": false,
+    "implements_": [],
+    "extends_": [],
+    "definedInClassOrInterfaceTypeKey": null,
+    "innerDefinedClasses": {},
+    "innerDefinedInterfaces": {}
+}

@@ -1,0 +1,76 @@
+{
+    "name": "AdminTravelServiceImpl",
+    "key": "_7f629245805a4cc3b3fdb1e3",
+    "type": "class",
+    "hasTypeVariable": false,
+    "position": null,
+    "modifiers": [],
+    "fields": {},
+    "methods": {
+        "getAllTravels": {
+            "name": "getAllTravels",
+            "key": "_d9e9c42eaa3d49c2ae1b361d",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "addTravel": {
+            "name": "addTravel",
+            "key": "_e8cac5ae305848b8b6eef60c",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "TravelInfo",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "updateTravel": {
+            "name": "updateTravel",
+            "key": "_801dec324f994317b21e9f06",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "TravelInfo",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "deleteTravel": {
+            "name": "deleteTravel",
+            "key": "_8e287552b0354e1cb34b9e24",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "String",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        }
+    },
+    "file_path": "./AdminTravelServiceImpl",
+    "anonymous": false,
+    "auxclass": false,
+    "implements_": [
+        "_ec6b795054b24d6f903db967"
+    ],
+    "extends_": [],
+    "definedInClassOrInterfaceTypeKey": null,
+    "innerDefinedClasses": {},
+    "innerDefinedInterfaces": {}
+}

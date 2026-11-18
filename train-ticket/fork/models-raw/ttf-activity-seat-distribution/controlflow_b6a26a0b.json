@@ -1,0 +1,8 @@
+{
+    "name": "AssignSeat_to_FinalNode",
+    "key": "_91436b1226a446e6b6a26a0b",
+    "type": "uml:ControlFlow",
+    "source": "_e53919a13d34495b9927e96a",
+    "target": "_cf7f58939b8f4e2ea941a20f",
+    "guard": null
+}

@@ -1,0 +1,8 @@
+{
+    "name": "ForkNode_ParallelCreate_to_CreateFoodOrder",
+    "key": "_11a7b2245ecd47e99bb63ec9",
+    "type": "uml:ControlFlow",
+    "source": "_51071bb4709b46d3bcafff7d",
+    "target": "_4b67eac7b5de4cb98694a809",
+    "guard": null
+}

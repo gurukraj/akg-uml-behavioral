@@ -1,0 +1,54 @@
+{
+    "name": "TransferTravelInfo",
+    "key": "_8b1c5129194e43acb4bc2bf1",
+    "type": "class",
+    "hasTypeVariable": false,
+    "position": null,
+    "modifiers": [],
+    "fields": {
+        "fromStationName": {
+            "name": "fromStationName",
+            "key": "_b7dbfc38dacd4228889e4336",
+            "type": "String",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "viaStationName": {
+            "name": "viaStationName",
+            "key": "_a46e84dfa8f14263835aa69a",
+            "type": "String",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "toStationName": {
+            "name": "toStationName",
+            "key": "_e53aaa8a5ae94cda8f4e96e2",
+            "type": "String",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "travelDate": {
+            "name": "travelDate",
+            "key": "_f45679777ef846099b10a29e",
+            "type": "Date",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "trainType": {
+            "name": "trainType",
+            "key": "_5fb1091009e84beda3879104",
+            "type": "String",
+            "visibility": "private",
+            "isStatic": false
+        }
+    },
+    "methods": {},
+    "file_path": "./TransferTravelInfo",
+    "anonymous": false,
+    "auxclass": false,
+    "implements_": [],
+    "extends_": [],
+    "definedInClassOrInterfaceTypeKey": null,
+    "innerDefinedClasses": {},
+    "innerDefinedInterfaces": {}
+}

@@ -1,0 +1,81 @@
+{
+    "name": "ContactsController",
+    "key": "_23a27ab6fb19425d80311c41",
+    "type": "class",
+    "hasTypeVariable": false,
+    "position": null,
+    "modifiers": [],
+    "fields": {
+        "contactsService": {
+            "name": "contactsService",
+            "key": "_2e82b83522194255b7974f32",
+            "type": "ContactsService",
+            "visibility": "private",
+            "isStatic": false
+        }
+    },
+    "methods": {
+        "getAllContacts": {
+            "name": "getAllContacts",
+            "key": "_11938b894bfa480eb47092f5",
+            "returnType": "HttpEntity",
+            "parameters": "HttpHeaders headers",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "createNewContacts": {
+            "name": "createNewContacts",
+            "key": "_f18b4a38e87941748b95c13c",
+            "returnType": "HttpEntity",
+            "parameters": "Contacts contacts, HttpHeaders headers",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "deleteContacts": {
+            "name": "deleteContacts",
+            "key": "_8a618955facd450785242aad",
+            "returnType": "HttpEntity",
+            "parameters": "String contactsId, HttpHeaders headers",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "modifyContacts": {
+            "name": "modifyContacts",
+            "key": "_9b4280fe253843dc921c13d6",
+            "returnType": "HttpEntity",
+            "parameters": "Contacts contacts, HttpHeaders headers",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "findContactsByAccountId": {
+            "name": "findContactsByAccountId",
+            "key": "_81ee470e74ef423fb797578f",
+            "returnType": "HttpEntity",
+            "parameters": "String accountId, HttpHeaders headers",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "getContactsByContactsId": {
+            "name": "getContactsByContactsId",
+            "key": "_a6a880318b83444e8ff06260",
+            "returnType": "HttpEntity",
+            "parameters": "String id, HttpHeaders headers",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        }
+    },
+    "file_path": "./ContactsController",
+    "anonymous": false,
+    "auxclass": false,
+    "implements_": [],
+    "extends_": [],
+    "definedInClassOrInterfaceTypeKey": null,
+    "innerDefinedClasses": {},
+    "innerDefinedInterfaces": {}
+}

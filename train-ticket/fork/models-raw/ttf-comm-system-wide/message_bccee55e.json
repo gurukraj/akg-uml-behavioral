@@ -1,0 +1,8 @@
+{
+    "name": "createConsign()",
+    "key": "_6a9dee0c4a644f58bccee55e",
+    "type": "uml:Message",
+    "sender": "_d9d5a5caa3984328ae337519",
+    "receiver": "_f86a0667bcc24f37a65df7fa",
+    "messageLabel": "createConsign()"
+}

@@ -1,0 +1,9 @@
+{
+    "name": "AdminTrip_uses_Trip",
+    "key": "_19d3a7297203494d82f7aaf9",
+    "type": "association",
+    "source": "_1b2073e593434c5d911285a4",
+    "target": "_95e2c3b2efbc4cc4b78f1f73",
+    "sourceMultiplicity": "1",
+    "targetMultiplicity": "1"
+}

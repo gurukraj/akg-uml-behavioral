@@ -1,0 +1,7 @@
+{
+    "name": "ts-admin-route-service_depends_on_ts-route-service",
+    "key": "_4965ecbe6bc140a6b315a107",
+    "type": "dependency",
+    "source": "_873477a08d3c46cdb937e522",
+    "target": "_f9867068cb0b48cf8fe0740f"
+}

@@ -1,0 +1,9 @@
+{
+    "name": "ContactsServiceImpl_uses_ContactsRepository",
+    "key": "_04b61fbee6b048ab9a0ed8f4",
+    "type": "association",
+    "source": "_adad9946be7d420dacde3803",
+    "target": "_758d51af258146d680eb23dd",
+    "sourceMultiplicity": "1",
+    "targetMultiplicity": "1"
+}

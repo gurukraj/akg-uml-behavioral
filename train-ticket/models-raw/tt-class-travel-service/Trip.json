@@ -1,0 +1,82 @@
+{
+    "name": "Trip",
+    "key": "_95e2c3b2efbc4cc4b78f1f73",
+    "type": "class",
+    "hasTypeVariable": false,
+    "position": null,
+    "modifiers": [],
+    "fields": {
+        "id": {
+            "name": "id",
+            "key": "_45611db33679445cbcce1ef6",
+            "type": "String",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "tripId": {
+            "name": "tripId",
+            "key": "_4f2dbdb85e6e4927947e9fc0",
+            "type": "TripId",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "trainTypeName": {
+            "name": "trainTypeName",
+            "key": "_ffbaa0133de443ab8980fcef",
+            "type": "String",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "routeId": {
+            "name": "routeId",
+            "key": "_b5c21f328d104bf0b910ba12",
+            "type": "String",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "startStationName": {
+            "name": "startStationName",
+            "key": "_232eceeb2e3a448e919a64d5",
+            "type": "String",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "stationsName": {
+            "name": "stationsName",
+            "key": "_efd4c2b3f2e745b7b92048c6",
+            "type": "String",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "terminalStationName": {
+            "name": "terminalStationName",
+            "key": "_95457f25a9794b569611223c",
+            "type": "String",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "startTime": {
+            "name": "startTime",
+            "key": "_922e7c64759e4d69b5ef3220",
+            "type": "String",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "endTime": {
+            "name": "endTime",
+            "key": "_c8f9ef036b7f49f894bb546f",
+            "type": "String",
+            "visibility": "private",
+            "isStatic": false
+        }
+    },
+    "methods": {},
+    "file_path": "./Trip",
+    "anonymous": false,
+    "auxclass": false,
+    "implements_": [],
+    "extends_": [],
+    "definedInClassOrInterfaceTypeKey": null,
+    "innerDefinedClasses": {},
+    "innerDefinedInterfaces": {}
+}

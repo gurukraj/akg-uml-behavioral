@@ -1,0 +1,56 @@
+{
+    "name": "UserServiceImpl",
+    "key": "_f40946251c424594ad183ca2",
+    "type": "class",
+    "hasTypeVariable": false,
+    "position": null,
+    "modifiers": [],
+    "fields": {},
+    "methods": {
+        "saveUser": {
+            "name": "saveUser",
+            "key": "_ea9f5eae9d5b4aebaf0c21b6",
+            "returnType": "User",
+            "parameters": [
+                [
+                    "UserDto"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "getAllUsers": {
+            "name": "getAllUsers",
+            "key": "_bb8e37e6038045589d02fe0d",
+            "returnType": "List<User>",
+            "parameters": [],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "deleteByUserId": {
+            "name": "deleteByUserId",
+            "key": "_f450300be1e64f1385cd20dc",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "UUID"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        }
+    },
+    "file_path": "./UserServiceImpl",
+    "anonymous": false,
+    "auxclass": false,
+    "implements_": [
+        "_9711ac65376f42aea711bf18"
+    ],
+    "extends_": [],
+    "definedInClassOrInterfaceTypeKey": null,
+    "innerDefinedClasses": {},
+    "innerDefinedInterfaces": {}
+}

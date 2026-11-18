@@ -1,0 +1,49 @@
+{
+    "name": "ExecuteServiceImpl",
+    "key": "_2911cf3dfe544dfa87b90314",
+    "type": "class",
+    "hasTypeVariable": false,
+    "position": null,
+    "modifiers": [],
+    "fields": {},
+    "methods": {
+        "ticketExecute": {
+            "name": "ticketExecute",
+            "key": "_42c0bd49a7564cef85680e6b",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "String",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "ticketCollect": {
+            "name": "ticketCollect",
+            "key": "_867df6cc017b4d738819b9ec",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "String",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        }
+    },
+    "file_path": "./ExecuteServiceImpl",
+    "anonymous": false,
+    "auxclass": false,
+    "implements_": [
+        "_3eaa762743ad4b1c9142d512"
+    ],
+    "extends_": [],
+    "definedInClassOrInterfaceTypeKey": null,
+    "innerDefinedClasses": {},
+    "innerDefinedInterfaces": {}
+}

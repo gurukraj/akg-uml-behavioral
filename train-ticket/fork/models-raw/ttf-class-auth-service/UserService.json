@@ -1,0 +1,54 @@
+{
+    "name": "UserService",
+    "key": "_9711ac65376f42aea711bf18",
+    "type": "interface",
+    "hasTypeVariable": false,
+    "position": null,
+    "modifiers": [],
+    "fields": {},
+    "methods": {
+        "saveUser": {
+            "name": "saveUser",
+            "key": "_6b8ffb008eff4a628d875ff1",
+            "returnType": "User",
+            "parameters": [
+                [
+                    "UserDto"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": true
+        },
+        "getAllUsers": {
+            "name": "getAllUsers",
+            "key": "_be3d535d69b440d99d1a7e84",
+            "returnType": "List<User>",
+            "parameters": [],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": true
+        },
+        "deleteByUserId": {
+            "name": "deleteByUserId",
+            "key": "_254c0ae37bc1435382d55bda",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "UUID"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": true
+        }
+    },
+    "file_path": "./UserService",
+    "anonymous": false,
+    "auxclass": false,
+    "implements_": [],
+    "extends_": [],
+    "definedInClassOrInterfaceTypeKey": null,
+    "innerDefinedClasses": {},
+    "innerDefinedInterfaces": {}
+}

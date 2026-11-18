@@ -1,0 +1,7 @@
+{
+    "name": "ts-travel-service_depends_on_ts-order-service",
+    "key": "_ac644e13749e49a3ae98355f",
+    "type": "dependency",
+    "source": "_0671269c3d644026899a6187",
+    "target": "_84f6291b257048c19ccf7599"
+}

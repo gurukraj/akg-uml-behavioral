@@ -1,0 +1,23 @@
+{
+    "classification": {
+        "categories": [
+            "Class"
+        ],
+        "primary": "Class",
+        "is_class_diagram": true,
+        "is_behavioral": false
+    },
+    "detectedTypes": {
+        "uml:Class": 6,
+        "uml:Interface": 2,
+        "uml:Dependency": 4
+    },
+    "elementCounts": {
+        "classes": 6,
+        "interfaces": 2,
+        "dependencies": 4
+    },
+    "totalElements": 12,
+    "diagram_id": "ttf-class-food-map-service",
+    "source_file": "ttf-class-food-map-service.json"
+}

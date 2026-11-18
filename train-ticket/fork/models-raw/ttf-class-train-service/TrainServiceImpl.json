@@ -1,0 +1,90 @@
+{
+    "name": "TrainServiceImpl",
+    "key": "_5a03b66aeacc4eaa9e912de1",
+    "type": "class",
+    "hasTypeVariable": false,
+    "position": null,
+    "modifiers": [],
+    "fields": {},
+    "methods": {
+        "create": {
+            "name": "create",
+            "key": "_0c0760e3f3124db59cb60a54",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "TrainType",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "retrieve": {
+            "name": "retrieve",
+            "key": "_04e80cd67bfe4b3e8b3044de",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "String",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "update": {
+            "name": "update",
+            "key": "_7b7fd429e6134cd385ef9323",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "TrainType",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "delete": {
+            "name": "delete",
+            "key": "_66c13041bcee49ecb1d5e524",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "String",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "query": {
+            "name": "query",
+            "key": "_3d55f0653acd43518c7bd9ec",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        }
+    },
+    "file_path": "./TrainServiceImpl",
+    "anonymous": false,
+    "auxclass": false,
+    "implements_": [
+        "_5b45e275b1de4f8bbe88282b"
+    ],
+    "extends_": [],
+    "definedInClassOrInterfaceTypeKey": null,
+    "innerDefinedClasses": {},
+    "innerDefinedInterfaces": {}
+}

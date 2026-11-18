@@ -1,0 +1,21 @@
+{
+    "name": "PreserveServiceOrchestration",
+    "key": "_a27b68df21bc43b5881369b0",
+    "type": "uml:Collaboration",
+    "description": "Communication topology showing ts-preserve-service as hub orchestrator",
+    "objects": [
+        "_b83cac9fa51a4294857e69af",
+        "_95d06e8184614e48be6a8cd7",
+        "_3ef611ac72bb4b679896cae6",
+        "_1a9f4425650b485bb1c49365",
+        "_7a978518d12a4644993f7281",
+        "_41fdbf9a94c142e79873bc3b",
+        "_535d3311b7e1476d95fb47d4",
+        "_154bb5a206084c6d9df7e5a5",
+        "_253d7e58917d410c8dfae1ab",
+        "_f32c1514a72f456d9b79cd10",
+        "_24719ef99dbb457e9d020a41",
+        "_a75c072b25e645e79b2fa1da"
+    ],
+    "links": 13
+}

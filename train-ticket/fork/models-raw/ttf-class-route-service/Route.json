@@ -1,0 +1,54 @@
+{
+    "name": "Route",
+    "key": "_c40bb1205fd841b7a5ce40e7",
+    "type": "class",
+    "hasTypeVariable": false,
+    "position": null,
+    "modifiers": [],
+    "fields": {
+        "id": {
+            "name": "id",
+            "key": "_c7958ca5c95d45218acac549",
+            "type": "String",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "stations": {
+            "name": "stations",
+            "key": "_c40a7184f77b427cbdb09efd",
+            "type": "List<String>",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "distances": {
+            "name": "distances",
+            "key": "_95795466120e465c9623e238",
+            "type": "List<Integer>",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "startStationId": {
+            "name": "startStationId",
+            "key": "_41c877c6624744bcb2f96950",
+            "type": "String",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "terminalStationId": {
+            "name": "terminalStationId",
+            "key": "_2fb8b1de0df543d38d042986",
+            "type": "String",
+            "visibility": "private",
+            "isStatic": false
+        }
+    },
+    "methods": {},
+    "file_path": "./Route",
+    "anonymous": false,
+    "auxclass": false,
+    "implements_": [],
+    "extends_": [],
+    "definedInClassOrInterfaceTypeKey": null,
+    "innerDefinedClasses": {},
+    "innerDefinedInterfaces": {}
+}

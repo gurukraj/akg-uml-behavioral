@@ -1,0 +1,8 @@
+{
+    "name": "DecisionNode_SeatAvailable_to_GetUserAccount",
+    "key": "_677c82be7b764fbabe2e3d59",
+    "type": "uml:ControlFlow",
+    "source": "_25c464229f524c0b8e103d44",
+    "target": "_6e74ca4652a54fbb93059771",
+    "guard": "available"
+}

@@ -1,0 +1,27 @@
+{
+    "classification": {
+        "categories": [
+            "Activity"
+        ],
+        "primary": "Activity",
+        "is_class_diagram": false,
+        "is_behavioral": true
+    },
+    "detectedTypes": {
+        "uml:Activity": 1,
+        "uml:OpaqueAction": 9,
+        "uml:DecisionNode": 2,
+        "uml:ControlFlow": 14,
+        "uml:ActivityPartition": 6
+    },
+    "elementCounts": {
+        "activities": 1,
+        "actions": 9,
+        "decisionNodes": 2,
+        "controlFlows": 14,
+        "activityPartitions": 6
+    },
+    "totalElements": 32,
+    "diagram_id": "ttf-activity-rebook",
+    "source_file": "ttf-activity-rebook.json"
+}

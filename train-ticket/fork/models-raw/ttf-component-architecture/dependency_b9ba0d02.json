@@ -1,0 +1,7 @@
+{
+    "name": "ts-preserve-other-service_depends_on_ts-ticketinfo-service",
+    "key": "_443fae547a094c12b9ba0d02",
+    "type": "dependency",
+    "source": "_a3e74bff251744d2ac9fb8f0",
+    "target": "_1f6ca4df8ed14321a41d95e7"
+}

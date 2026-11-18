@@ -1,0 +1,8 @@
+{
+    "name": "QueryRouteFromTravel_to_QueryTrainTypeInfo",
+    "key": "_8cf63d9071cf48f7afaa9b3f",
+    "type": "uml:ControlFlow",
+    "source": "_a15ca52986e7411f971e239b",
+    "target": "_00d732ccfa6f46a0880859f2",
+    "guard": null
+}

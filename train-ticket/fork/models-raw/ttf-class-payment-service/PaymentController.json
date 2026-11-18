@@ -1,0 +1,60 @@
+{
+    "name": "PaymentController",
+    "key": "_36d1514b025f45cf96f37f06",
+    "type": "class",
+    "hasTypeVariable": false,
+    "position": null,
+    "modifiers": [],
+    "fields": {},
+    "methods": {
+        "pay": {
+            "name": "pay",
+            "key": "_8bbf21f9dde842c79ec77f07",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "Payment",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "addMoney": {
+            "name": "addMoney",
+            "key": "_26d6d8740fca4d7095c4a17b",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "Payment",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "query": {
+            "name": "query",
+            "key": "_598f854a7e0f446abf261ed1",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        }
+    },
+    "file_path": "./PaymentController",
+    "anonymous": false,
+    "auxclass": false,
+    "implements_": [],
+    "extends_": [],
+    "definedInClassOrInterfaceTypeKey": null,
+    "innerDefinedClasses": {},
+    "innerDefinedInterfaces": {}
+}

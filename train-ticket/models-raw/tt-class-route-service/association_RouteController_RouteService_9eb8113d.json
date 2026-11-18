@@ -1,0 +1,9 @@
+{
+    "name": "RouteController_uses_RouteService",
+    "key": "_9fcf208b6895483d9eb8113d",
+    "type": "association",
+    "source": "_ca2d1293f35b4138acbc7ab2",
+    "target": "_8666064482dd42f9946b0be2",
+    "sourceMultiplicity": "1",
+    "targetMultiplicity": "1"
+}

@@ -1,0 +1,8 @@
+{
+    "name": "GetSoldTickets_to_CalculateAvailableSeats",
+    "key": "_525e0a04938a4d73beccb890",
+    "type": "uml:ControlFlow",
+    "source": "_605cd46fa9c94f099042cbcb",
+    "target": "_295d2eb5b375425f83a2d1bd",
+    "guard": null
+}

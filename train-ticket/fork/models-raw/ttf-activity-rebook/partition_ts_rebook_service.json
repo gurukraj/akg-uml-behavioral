@@ -1,0 +1,11 @@
+{
+    "name": "ts-rebook-service",
+    "key": "_37a48b22534445f683eacbbb",
+    "type": "uml:ActivityPartition",
+    "nodes": [
+        "_eb2e85627011418598252637",
+        "_c6431bb1369f4168a46c0a32",
+        "_4e9bf7926c7848478ac243a9",
+        "_24cf43b23dae4280baf0f75b"
+    ]
+}

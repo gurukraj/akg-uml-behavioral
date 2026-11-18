@@ -1,0 +1,8 @@
+{
+    "name": "calls_ts_travel_service",
+    "key": "_20fe8baac2084ff49c58c8aa",
+    "type": "dependency",
+    "source": "tt-class-preserve-service",
+    "target": "ts-travel-service",
+    "endpoint": "POST /api/v1/travelservice/trip_detail"
+}

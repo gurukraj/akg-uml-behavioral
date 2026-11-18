@@ -1,0 +1,8 @@
+{
+    "name": "pay()",
+    "key": "_a3a3efa435f044fbadc5ed90",
+    "type": "uml:Message",
+    "sender": "_151c4612bfcb4764bade4cdb",
+    "receiver": "_304c23a924e64afabdcd2ded",
+    "messageLabel": "pay()"
+}

@@ -1,0 +1,8 @@
+{
+    "name": "GetRouteFromTravel_to_ExtractStationIds",
+    "key": "_e1b29d4068154d9e8dc92bd9",
+    "type": "uml:ControlFlow",
+    "source": "_035706d5e8bb43ffbbf3e1e8",
+    "target": "_158bdb2c4b16484b843c5330",
+    "guard": null
+}

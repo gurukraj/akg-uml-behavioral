@@ -1,0 +1,8 @@
+{
+    "name": "InitialNode_to_GetRouteFromTravel",
+    "key": "_534dba76676e4bad900f319f",
+    "type": "uml:ControlFlow",
+    "source": "_edad8f64262240429ed4ac84",
+    "target": "_035706d5e8bb43ffbbf3e1e8",
+    "guard": null
+}

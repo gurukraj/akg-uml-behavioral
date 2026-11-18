@@ -1,0 +1,7 @@
+{
+    "name": "ts-admin-user-service_depends_on_ts-user-service",
+    "key": "_9cf4845ba3424322bf6449e7",
+    "type": "dependency",
+    "source": "_3b3a774c24844f70a0d1ce07",
+    "target": "_95efdc96292e4243861bf9b8"
+}

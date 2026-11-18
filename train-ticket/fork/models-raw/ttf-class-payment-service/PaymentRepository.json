@@ -1,0 +1,28 @@
+{
+    "name": "PaymentRepository",
+    "key": "_1994072596c04ecba81007bc",
+    "type": "interface",
+    "hasTypeVariable": false,
+    "position": null,
+    "modifiers": [],
+    "fields": {},
+    "methods": {
+        "findAll": {
+            "name": "findAll",
+            "key": "_e4c25ea9343f439bb2a9aa1b",
+            "returnType": "List<Payment>",
+            "parameters": [],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": true
+        }
+    },
+    "file_path": "./PaymentRepository",
+    "anonymous": false,
+    "auxclass": false,
+    "implements_": [],
+    "extends_": [],
+    "definedInClassOrInterfaceTypeKey": null,
+    "innerDefinedClasses": {},
+    "innerDefinedInterfaces": {}
+}

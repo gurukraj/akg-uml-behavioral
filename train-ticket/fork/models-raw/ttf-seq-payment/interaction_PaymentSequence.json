@@ -1,0 +1,251 @@
+{
+    "name": "PaymentSequence",
+    "key": "_b8f9e841007b43329f28efa6",
+    "type": "interaction",
+    "lifelines": [
+        {
+            "name": "Client",
+            "key": "_50a2d4af71e641ad9c067474",
+            "represents": "_b3e1a20b5d334117a8ec90e0",
+            "coveredBy": []
+        },
+        {
+            "name": "ts-inside-payment-service",
+            "key": "_a587ca01e0b44734b6677f73",
+            "represents": "_1b3dff64751d47599ea31562",
+            "coveredBy": []
+        },
+        {
+            "name": "ts-order-service",
+            "key": "_9b9f186e0c1e4ec8a5b4f8c1",
+            "represents": "_a9456b0b35a048a6916f2c22",
+            "coveredBy": []
+        },
+        {
+            "name": "ts-payment-service",
+            "key": "_ea51e0e1aa4745ed953f3484",
+            "represents": "_07e69781457a498eab528433",
+            "coveredBy": []
+        }
+    ],
+    "messages": [
+        {
+            "name": "pay(paymentInfo)",
+            "key": "_1cd16fa87bd946f7b23455f0",
+            "messageSort": "synchCall",
+            "sendEvent": "_575d3116cff74b3a9933b4b3",
+            "receiveEvent": "_dc963804d8fb41eeb199c4b8",
+            "connector": null,
+            "signature": null
+        },
+        {
+            "name": "getOrderPrice(orderId)",
+            "key": "_2af746053636427aa8ec98fe",
+            "messageSort": "synchCall",
+            "sendEvent": "_39f4e597640741ee8a3058fe",
+            "receiveEvent": "_492d92690cba4fc290d5f93b",
+            "connector": null,
+            "signature": null
+        },
+        {
+            "name": "orderPrice",
+            "key": "_531675a001194428af66ab52",
+            "messageSort": "reply",
+            "sendEvent": "_279cec45ddf74677b18a2d25",
+            "receiveEvent": "_0544dd18ad4940feb5f6b9c0",
+            "connector": null,
+            "signature": null
+        },
+        {
+            "name": "pay(payment)",
+            "key": "_a419c03465104a949ac366e6",
+            "messageSort": "synchCall",
+            "sendEvent": "_93063776563f49a485b643e5",
+            "receiveEvent": "_7eb080afc5cb446b8500005a",
+            "connector": null,
+            "signature": null
+        },
+        {
+            "name": "paymentResult",
+            "key": "_886cd591fc3543a0a9e2609a",
+            "messageSort": "reply",
+            "sendEvent": "_2aea51953b2d487084eb25b1",
+            "receiveEvent": "_5d7d145b58ea4055bdda5f70",
+            "connector": null,
+            "signature": null
+        },
+        {
+            "name": "modifyOrder(orderId,paid)",
+            "key": "_6d6e5e5da64e4ba892a7e0c4",
+            "messageSort": "synchCall",
+            "sendEvent": "_df662c7e66fd4a679bc2639e",
+            "receiveEvent": "_60588224745745aca2389949",
+            "connector": null,
+            "signature": null
+        },
+        {
+            "name": "updateResult",
+            "key": "_1475014dc78749eabaaf292d",
+            "messageSort": "reply",
+            "sendEvent": "_b1834044d5254b3eb92989b8",
+            "receiveEvent": "_c56d3575ad794d7fbb6aeb2e",
+            "connector": null,
+            "signature": null
+        },
+        {
+            "name": "payResult",
+            "key": "_5229dd33018a45a0893aeec2",
+            "messageSort": "reply",
+            "sendEvent": "_525bbbea998744f3b0f6cf50",
+            "receiveEvent": "_8b1cd0e8bfe0468583b112a0",
+            "connector": null,
+            "signature": null
+        }
+    ],
+    "fragments": [
+        {
+            "key": "_575d3116cff74b3a9933b4b3",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_50a2d4af71e641ad9c067474",
+            "enclosingInteraction": "ttf-seq-payment",
+            "message": "_1cd16fa87bd946f7b23455f0",
+            "execution": null
+        },
+        {
+            "key": "_dc963804d8fb41eeb199c4b8",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_a587ca01e0b44734b6677f73",
+            "enclosingInteraction": "ttf-seq-payment",
+            "message": "_1cd16fa87bd946f7b23455f0",
+            "execution": null
+        },
+        {
+            "key": "_39f4e597640741ee8a3058fe",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_a587ca01e0b44734b6677f73",
+            "enclosingInteraction": "ttf-seq-payment",
+            "message": "_2af746053636427aa8ec98fe",
+            "execution": null
+        },
+        {
+            "key": "_492d92690cba4fc290d5f93b",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_9b9f186e0c1e4ec8a5b4f8c1",
+            "enclosingInteraction": "ttf-seq-payment",
+            "message": "_2af746053636427aa8ec98fe",
+            "execution": null
+        },
+        {
+            "key": "_279cec45ddf74677b18a2d25",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_9b9f186e0c1e4ec8a5b4f8c1",
+            "enclosingInteraction": "ttf-seq-payment",
+            "message": "_531675a001194428af66ab52",
+            "execution": null
+        },
+        {
+            "key": "_0544dd18ad4940feb5f6b9c0",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_a587ca01e0b44734b6677f73",
+            "enclosingInteraction": "ttf-seq-payment",
+            "message": "_531675a001194428af66ab52",
+            "execution": null
+        },
+        {
+            "key": "_93063776563f49a485b643e5",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_a587ca01e0b44734b6677f73",
+            "enclosingInteraction": "ttf-seq-payment",
+            "message": "_a419c03465104a949ac366e6",
+            "execution": null
+        },
+        {
+            "key": "_7eb080afc5cb446b8500005a",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_ea51e0e1aa4745ed953f3484",
+            "enclosingInteraction": "ttf-seq-payment",
+            "message": "_a419c03465104a949ac366e6",
+            "execution": null
+        },
+        {
+            "key": "_2aea51953b2d487084eb25b1",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_ea51e0e1aa4745ed953f3484",
+            "enclosingInteraction": "ttf-seq-payment",
+            "message": "_886cd591fc3543a0a9e2609a",
+            "execution": null
+        },
+        {
+            "key": "_5d7d145b58ea4055bdda5f70",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_a587ca01e0b44734b6677f73",
+            "enclosingInteraction": "ttf-seq-payment",
+            "message": "_886cd591fc3543a0a9e2609a",
+            "execution": null
+        },
+        {
+            "key": "_df662c7e66fd4a679bc2639e",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_a587ca01e0b44734b6677f73",
+            "enclosingInteraction": "ttf-seq-payment",
+            "message": "_6d6e5e5da64e4ba892a7e0c4",
+            "execution": null
+        },
+        {
+            "key": "_60588224745745aca2389949",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_9b9f186e0c1e4ec8a5b4f8c1",
+            "enclosingInteraction": "ttf-seq-payment",
+            "message": "_6d6e5e5da64e4ba892a7e0c4",
+            "execution": null
+        },
+        {
+            "key": "_b1834044d5254b3eb92989b8",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_9b9f186e0c1e4ec8a5b4f8c1",
+            "enclosingInteraction": "ttf-seq-payment",
+            "message": "_1475014dc78749eabaaf292d",
+            "execution": null
+        },
+        {
+            "key": "_c56d3575ad794d7fbb6aeb2e",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_a587ca01e0b44734b6677f73",
+            "enclosingInteraction": "ttf-seq-payment",
+            "message": "_1475014dc78749eabaaf292d",
+            "execution": null
+        },
+        {
+            "key": "_525bbbea998744f3b0f6cf50",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_a587ca01e0b44734b6677f73",
+            "enclosingInteraction": "ttf-seq-payment",
+            "message": "_5229dd33018a45a0893aeec2",
+            "execution": null
+        },
+        {
+            "key": "_8b1cd0e8bfe0468583b112a0",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_50a2d4af71e641ad9c067474",
+            "enclosingInteraction": "ttf-seq-payment",
+            "message": "_5229dd33018a45a0893aeec2",
+            "execution": null
+        }
+    ]
+}

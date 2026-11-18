@@ -1,0 +1,8 @@
+{
+    "name": "UpdateOrderStatus_to_SendCancelNotification",
+    "key": "_1f43def2e9234b8caea78bb4",
+    "type": "uml:ControlFlow",
+    "source": "_a73fbd73a6e7487f9818eacc",
+    "target": "_4bb296641dce499b9f3c1ea6",
+    "guard": null
+}

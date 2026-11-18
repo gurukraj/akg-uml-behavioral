@@ -1,0 +1,7 @@
+{
+    "name": "UserServiceImpl_uses_UserRepository",
+    "key": "_c481ba68bb9143a1aa30448f",
+    "type": "dependency",
+    "source": "_f40946251c424594ad183ca2",
+    "target": "_d251c3ecffdb4b93a04a5307"
+}

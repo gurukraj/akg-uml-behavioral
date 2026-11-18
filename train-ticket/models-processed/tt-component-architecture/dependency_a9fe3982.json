@@ -1,0 +1,7 @@
+{
+    "name": "ts-rebook-service_depends_on_ts-order-other-service",
+    "key": "_582d1602322c4ad0a9fe3982",
+    "type": "dependency",
+    "source": "_146049ac4799472f8fbc9bcd",
+    "target": "_885d5571a135470faf72aaeb"
+}

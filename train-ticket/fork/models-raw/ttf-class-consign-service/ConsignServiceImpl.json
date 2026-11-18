@@ -1,0 +1,77 @@
+{
+    "name": "ConsignServiceImpl",
+    "key": "_de8d1489c5ee42aaaab3af62",
+    "type": "class",
+    "hasTypeVariable": false,
+    "position": null,
+    "modifiers": [],
+    "fields": {},
+    "methods": {
+        "insertConsignRecord": {
+            "name": "insertConsignRecord",
+            "key": "_8f64c1476dcf4ecdacde624e",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "ConsignRecord",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "updateConsignRecord": {
+            "name": "updateConsignRecord",
+            "key": "_93e7c78b1e804c939c338485",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "ConsignRecord",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "queryByAccountId": {
+            "name": "queryByAccountId",
+            "key": "_66c2b58c87d04bc7877da44b",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "UUID",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "queryByOrderId": {
+            "name": "queryByOrderId",
+            "key": "_0ca2585bc8594447a7a529b4",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "UUID",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        }
+    },
+    "file_path": "./ConsignServiceImpl",
+    "anonymous": false,
+    "auxclass": false,
+    "implements_": [
+        "_c7a7cc40a1d949219c370ceb"
+    ],
+    "extends_": [],
+    "definedInClassOrInterfaceTypeKey": null,
+    "innerDefinedClasses": {},
+    "innerDefinedInterfaces": {}
+}

@@ -1,0 +1,47 @@
+{
+    "name": "RebookController",
+    "key": "_dadaeb3055b743179aa607c2",
+    "type": "class",
+    "hasTypeVariable": false,
+    "position": null,
+    "modifiers": [],
+    "fields": {},
+    "methods": {
+        "rebook": {
+            "name": "rebook",
+            "key": "_7b144ee5da8f40b3bf09983f",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "RebookInfo",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "payDifference": {
+            "name": "payDifference",
+            "key": "_15cffee18a8c413c834a16e4",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "RebookInfo",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        }
+    },
+    "file_path": "./RebookController",
+    "anonymous": false,
+    "auxclass": false,
+    "implements_": [],
+    "extends_": [],
+    "definedInClassOrInterfaceTypeKey": null,
+    "innerDefinedClasses": {},
+    "innerDefinedInterfaces": {}
+}

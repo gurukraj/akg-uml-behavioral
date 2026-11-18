@@ -1,0 +1,49 @@
+{
+    "name": "SeatServiceImpl",
+    "key": "_e17784d265b6440baff48a69",
+    "type": "class",
+    "hasTypeVariable": false,
+    "position": null,
+    "modifiers": [],
+    "fields": {},
+    "methods": {
+        "distributeSeat": {
+            "name": "distributeSeat",
+            "key": "_590e48b1f9144610b2c5595b",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "Seat",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "getLeftTicketOfInterval": {
+            "name": "getLeftTicketOfInterval",
+            "key": "_9befb46d7d944938a531d397",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "Seat",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        }
+    },
+    "file_path": "./SeatServiceImpl",
+    "anonymous": false,
+    "auxclass": false,
+    "implements_": [
+        "_bafe566bda684bda92fdcd07"
+    ],
+    "extends_": [],
+    "definedInClassOrInterfaceTypeKey": null,
+    "innerDefinedClasses": {},
+    "innerDefinedInterfaces": {}
+}

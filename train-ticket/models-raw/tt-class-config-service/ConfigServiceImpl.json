@@ -1,0 +1,74 @@
+{
+    "name": "ConfigServiceImpl",
+    "key": "_89f0f6b3d06d4bce8dbfb5d6",
+    "type": "class",
+    "hasTypeVariable": false,
+    "position": null,
+    "modifiers": [],
+    "fields": {
+        "repository": {
+            "name": "repository",
+            "key": "_cafa241fa54a42ef8a0b5f9c",
+            "type": "ConfigRepository",
+            "visibility": "private",
+            "isStatic": false
+        }
+    },
+    "methods": {
+        "create": {
+            "name": "create",
+            "key": "_60da8f01fca248c397d0ff0a",
+            "returnType": "Response",
+            "parameters": "Config info, HttpHeaders headers",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "update": {
+            "name": "update",
+            "key": "_0df47eeebdbc42bb8dc82177",
+            "returnType": "Response",
+            "parameters": "Config info, HttpHeaders headers",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "query": {
+            "name": "query",
+            "key": "_ce552d1e40134ca39bc9830b",
+            "returnType": "Response",
+            "parameters": "String name, HttpHeaders headers",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "delete": {
+            "name": "delete",
+            "key": "_e384d8c8e9d2475faea04214",
+            "returnType": "Response",
+            "parameters": "String name, HttpHeaders headers",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "queryAll": {
+            "name": "queryAll",
+            "key": "_78a6a53dcde44a26b09394d8",
+            "returnType": "Response",
+            "parameters": "HttpHeaders headers",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        }
+    },
+    "file_path": "./ConfigServiceImpl",
+    "anonymous": false,
+    "auxclass": false,
+    "implements_": [
+        "_312f8dc9543949e8993abd43"
+    ],
+    "extends_": [],
+    "definedInClassOrInterfaceTypeKey": null,
+    "innerDefinedClasses": {},
+    "innerDefinedInterfaces": {}
+}

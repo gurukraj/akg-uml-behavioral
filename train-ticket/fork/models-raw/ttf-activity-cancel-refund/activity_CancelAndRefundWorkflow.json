@@ -1,0 +1,23 @@
+{
+    "name": "CancelAndRefundWorkflow",
+    "key": "_f7c7285405714906825f481b",
+    "type": "uml:Activity",
+    "description": "Order cancellation and refund processing workflow (fork version)",
+    "nodes": [
+        "_8cb24c8fa8e54e99a7b32bef",
+        "_956f727ab6c44d8a9120b537",
+        "_3d486234763b46ff83e1a7eb",
+        "_ec59b2d831464f4ab50254db",
+        "_df1f3c33c9e44e0887542074",
+        "_40962ad3645e43eb86bb1fcc",
+        "_de86eb749a414e47a60a46a4",
+        "_e7023b6320bb495f96d8a03f",
+        "_2db4f0e1d3aa4ef188ac322d",
+        "_45fe588823ad465898c6a621",
+        "_2f30ae54f94e4cb1b0bf32ed",
+        "_154129496cfb46b9ac5c79f7",
+        "_46ec23c8c4964047932ebaa7",
+        "_c3ecf1452b2d4cd1a221bea2"
+    ],
+    "edges": 13
+}

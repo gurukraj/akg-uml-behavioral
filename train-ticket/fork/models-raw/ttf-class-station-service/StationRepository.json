@@ -1,0 +1,45 @@
+{
+    "name": "StationRepository",
+    "key": "_deb6185c6990412cb55bcc6c",
+    "type": "interface",
+    "hasTypeVariable": false,
+    "position": null,
+    "modifiers": [],
+    "fields": {},
+    "methods": {
+        "findByName": {
+            "name": "findByName",
+            "key": "_9e72a1df56f546829ad2670b",
+            "returnType": "Station",
+            "parameters": [
+                [
+                    "String"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": true
+        },
+        "findById": {
+            "name": "findById",
+            "key": "_609b8b018b914998b9a16b22",
+            "returnType": "Station",
+            "parameters": [
+                [
+                    "String"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": true
+        }
+    },
+    "file_path": "./StationRepository",
+    "anonymous": false,
+    "auxclass": false,
+    "implements_": [],
+    "extends_": [],
+    "definedInClassOrInterfaceTypeKey": null,
+    "innerDefinedClasses": {},
+    "innerDefinedInterfaces": {}
+}

@@ -1,0 +1,8 @@
+{
+    "name": "CalculateAvailableSeats_to_AssignSeat",
+    "key": "_8a8f3d896e1b468f861be2a7",
+    "type": "uml:ControlFlow",
+    "source": "_295d2eb5b375425f83a2d1bd",
+    "target": "_e53919a13d34495b9927e96a",
+    "guard": null
+}

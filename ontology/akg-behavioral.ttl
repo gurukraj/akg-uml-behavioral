@@ -1,0 +1,299 @@
+@prefix akg:     <https://w3id.org/akg/behavioral#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix vann:    <http://purl.org/vocab/vann/> .
+
+# AKG behavioral ontology (RDFS), Table 4 of "Architectural Knowledge Graphs from UML Behavioural Models
+# for Early Architectural Bottleneck and Smell Detection". OWL is used only for ontology metadata.
+
+<https://w3id.org/akg/behavioral>
+    a owl:Ontology ;
+    dcterms:title "AKG behavioral ontology"@en ;
+    dcterms:description "RDFS vocabulary of the Architectural Knowledge Graph (AKG) for representing elements and relationships extracted from UML sequence, state machine, activity, communication, and timing diagrams, used by the SPARQL detection queries for architectural bottlenecks and smells."@en ;
+    dcterms:creator "Gururaj Kulkarni", "Chattar Singh Lamba", "Surendra Solanki" ;
+    dcterms:publisher "Department of Artificial Intelligence and Machine Learning, Manipal University Jaipur" ;
+    dcterms:created "2026-11-18"^^xsd:date ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    owl:versionInfo "1.0.0" ;
+    owl:versionIRI <https://w3id.org/akg/behavioral/1.0.0> ;
+    vann:preferredNamespacePrefix "akg" ;
+    vann:preferredNamespaceUri "https://w3id.org/akg/behavioral#" ;
+    rdfs:seeAlso <https://github.com/gurukraj/akg-uml-behavioral> .
+
+akg:BehavioralElement a rdfs:Class ;
+    rdfs:label "Behavioral element"@en ;
+    rdfs:comment "Root class: any element extracted from a UML behavioral model."@en ;
+    rdfs:isDefinedBy <https://w3id.org/akg/behavioral> .
+
+akg:TemporalElement a rdfs:Class ;
+    rdfs:label "Temporal element"@en ;
+    rdfs:subClassOf akg:BehavioralElement ;
+    rdfs:comment "Element that carries an order or a time."@en ;
+    rdfs:isDefinedBy <https://w3id.org/akg/behavioral> .
+
+akg:StructuralElement a rdfs:Class ;
+    rdfs:label "Structural element"@en ;
+    rdfs:subClassOf akg:BehavioralElement ;
+    rdfs:comment "Participant of the behavior."@en ;
+    rdfs:isDefinedBy <https://w3id.org/akg/behavioral> .
+
+akg:PatternElement a rdfs:Class ;
+    rdfs:label "Pattern element"@en ;
+    rdfs:subClassOf akg:BehavioralElement ;
+    rdfs:comment "Annotation of a detected pattern."@en ;
+    rdfs:isDefinedBy <https://w3id.org/akg/behavioral> .
+
+akg:Lifeline a rdfs:Class ;
+    rdfs:label "Lifeline"@en ;
+    rdfs:subClassOf akg:StructuralElement ;
+    rdfs:comment "uml:Lifeline of a sequence diagram."@en ;
+    rdfs:isDefinedBy <https://w3id.org/akg/behavioral> .
+
+akg:Message a rdfs:Class ;
+    rdfs:label "Message"@en ;
+    rdfs:subClassOf akg:TemporalElement ;
+    rdfs:comment "uml:Message of a sequence diagram (reply messages are not represented)."@en ;
+    rdfs:isDefinedBy <https://w3id.org/akg/behavioral> .
+
+akg:InteractionFragment a rdfs:Class ;
+    rdfs:label "Interaction fragment"@en ;
+    rdfs:subClassOf akg:BehavioralElement ;
+    rdfs:comment "uml:InteractionFragment of a sequence diagram."@en ;
+    rdfs:isDefinedBy <https://w3id.org/akg/behavioral> .
+
+akg:State a rdfs:Class ;
+    rdfs:label "State"@en ;
+    rdfs:subClassOf akg:BehavioralElement ;
+    rdfs:comment "uml:State of a state machine diagram."@en ;
+    rdfs:isDefinedBy <https://w3id.org/akg/behavioral> .
+
+akg:Transition a rdfs:Class ;
+    rdfs:label "Transition"@en ;
+    rdfs:subClassOf akg:TemporalElement ;
+    rdfs:comment "uml:Transition of a state machine diagram."@en ;
+    rdfs:isDefinedBy <https://w3id.org/akg/behavioral> .
+
+akg:Event a rdfs:Class ;
+    rdfs:label "Event"@en ;
+    rdfs:subClassOf akg:BehavioralElement ;
+    rdfs:comment "Trigger event of a transition."@en ;
+    rdfs:isDefinedBy <https://w3id.org/akg/behavioral> .
+
+akg:Guard a rdfs:Class ;
+    rdfs:label "Guard"@en ;
+    rdfs:subClassOf akg:BehavioralElement ;
+    rdfs:comment "Guard condition of a transition."@en ;
+    rdfs:isDefinedBy <https://w3id.org/akg/behavioral> .
+
+akg:Action a rdfs:Class ;
+    rdfs:label "Action"@en ;
+    rdfs:subClassOf akg:BehavioralElement ;
+    rdfs:comment "uml:OpaqueAction or uml:CallBehaviorAction of an activity diagram."@en ;
+    rdfs:isDefinedBy <https://w3id.org/akg/behavioral> .
+
+akg:ControlFlow a rdfs:Class ;
+    rdfs:label "Control flow"@en ;
+    rdfs:subClassOf akg:TemporalElement ;
+    rdfs:comment "uml:ControlFlow of an activity diagram."@en ;
+    rdfs:isDefinedBy <https://w3id.org/akg/behavioral> .
+
+akg:ForkNode a rdfs:Class ;
+    rdfs:label "Fork node"@en ;
+    rdfs:subClassOf akg:BehavioralElement ;
+    rdfs:comment "uml:ForkNode of an activity diagram."@en ;
+    rdfs:isDefinedBy <https://w3id.org/akg/behavioral> .
+
+akg:JoinNode a rdfs:Class ;
+    rdfs:label "Join node"@en ;
+    rdfs:subClassOf akg:BehavioralElement ;
+    rdfs:comment "uml:JoinNode of an activity diagram."@en ;
+    rdfs:isDefinedBy <https://w3id.org/akg/behavioral> .
+
+akg:DecisionNode a rdfs:Class ;
+    rdfs:label "Decision node"@en ;
+    rdfs:subClassOf akg:BehavioralElement ;
+    rdfs:comment "uml:DecisionNode of an activity diagram."@en ;
+    rdfs:isDefinedBy <https://w3id.org/akg/behavioral> .
+
+akg:ActivityPartition a rdfs:Class ;
+    rdfs:label "Activity partition"@en ;
+    rdfs:subClassOf akg:StructuralElement ;
+    rdfs:comment "uml:ActivityPartition (swimlane) of an activity diagram."@en ;
+    rdfs:isDefinedBy <https://w3id.org/akg/behavioral> .
+
+akg:CollaborationObject a rdfs:Class ;
+    rdfs:label "Collaboration object"@en ;
+    rdfs:subClassOf akg:StructuralElement ;
+    rdfs:comment "Object (lifeline) of a communication diagram."@en ;
+    rdfs:isDefinedBy <https://w3id.org/akg/behavioral> .
+
+akg:CollaborationLink a rdfs:Class ;
+    rdfs:label "Collaboration link"@en ;
+    rdfs:subClassOf akg:StructuralElement ;
+    rdfs:comment "Link between two collaboration objects."@en ;
+    rdfs:isDefinedBy <https://w3id.org/akg/behavioral> .
+
+akg:CollaborationMessage a rdfs:Class ;
+    rdfs:label "Collaboration message"@en ;
+    rdfs:subClassOf akg:TemporalElement ;
+    rdfs:comment "Numbered message of a communication diagram."@en ;
+    rdfs:isDefinedBy <https://w3id.org/akg/behavioral> .
+
+akg:TimingLifeline a rdfs:Class ;
+    rdfs:label "Timing lifeline"@en ;
+    rdfs:subClassOf akg:StructuralElement ;
+    rdfs:comment "Lifeline of a timing diagram."@en ;
+    rdfs:isDefinedBy <https://w3id.org/akg/behavioral> .
+
+akg:TimeConstraint a rdfs:Class ;
+    rdfs:label "Time constraint"@en ;
+    rdfs:subClassOf akg:TemporalElement ;
+    rdfs:comment "uml:TimeConstraint of a timing diagram."@en ;
+    rdfs:isDefinedBy <https://w3id.org/akg/behavioral> .
+
+akg:DurationConstraint a rdfs:Class ;
+    rdfs:label "Duration constraint"@en ;
+    rdfs:subClassOf akg:TemporalElement ;
+    rdfs:comment "uml:DurationConstraint of a timing diagram."@en ;
+    rdfs:isDefinedBy <https://w3id.org/akg/behavioral> .
+
+akg:precedes a rdf:Property ;
+    rdfs:label "precedes"@en ;
+    rdfs:domain akg:BehavioralElement ;
+    rdfs:range akg:BehavioralElement ;
+    rdfs:comment "Immediate temporal successor (messages, transitions and states, actions)."@en ;
+    rdfs:isDefinedBy <https://w3id.org/akg/behavioral> .
+
+akg:causedBy a rdf:Property ;
+    rdfs:label "caused by"@en ;
+    rdfs:domain akg:BehavioralElement ;
+    rdfs:range akg:BehavioralElement ;
+    rdfs:comment "Direct cause, e.g., the synchronous call during whose execution a message is sent."@en ;
+    rdfs:isDefinedBy <https://w3id.org/akg/behavioral> .
+
+akg:synchronizesWith a rdf:Property ;
+    rdfs:label "synchronizes with"@en ;
+    rdfs:domain akg:TemporalElement ;
+    rdfs:range akg:TemporalElement ;
+    rdfs:comment "Synchronization of parallel elements."@en ;
+    rdfs:isDefinedBy <https://w3id.org/akg/behavioral> .
+
+akg:triggers a rdf:Property ;
+    rdfs:label "triggers"@en ;
+    rdfs:domain akg:Event ;
+    rdfs:range akg:Transition ;
+    rdfs:comment "Event that fires a transition."@en ;
+    rdfs:isDefinedBy <https://w3id.org/akg/behavioral> .
+
+akg:involves a rdf:Property ;
+    rdfs:label "involves"@en ;
+    rdfs:domain akg:BehavioralElement ;
+    rdfs:range akg:StructuralElement ;
+    rdfs:comment "Participating component (sender and receiver of a message; constrained lifeline)."@en ;
+    rdfs:isDefinedBy <https://w3id.org/akg/behavioral> .
+
+akg:sender a rdf:Property ;
+    rdfs:label "sender"@en ;
+    rdfs:subPropertyOf akg:involves ;
+    rdfs:domain akg:TemporalElement ;
+    rdfs:range akg:StructuralElement ;
+    rdfs:comment "Sending participant of a message (sub-property of akg:involves)."@en ;
+    rdfs:isDefinedBy <https://w3id.org/akg/behavioral> .
+
+akg:receiver a rdf:Property ;
+    rdfs:label "receiver"@en ;
+    rdfs:subPropertyOf akg:involves ;
+    rdfs:domain akg:TemporalElement ;
+    rdfs:range akg:StructuralElement ;
+    rdfs:comment "Receiving participant of a message (sub-property of akg:involves)."@en ;
+    rdfs:isDefinedBy <https://w3id.org/akg/behavioral> .
+
+akg:hasGuard a rdf:Property ;
+    rdfs:label "has guard"@en ;
+    rdfs:domain akg:Transition ;
+    rdfs:range akg:Guard ;
+    rdfs:comment "Guard condition of a transition."@en ;
+    rdfs:isDefinedBy <https://w3id.org/akg/behavioral> .
+
+akg:belongsToPartition a rdf:Property ;
+    rdfs:label "belongs to partition"@en ;
+    rdfs:domain akg:Action ;
+    rdfs:range akg:ActivityPartition ;
+    rdfs:comment "Partition responsible for an action."@en ;
+    rdfs:isDefinedBy <https://w3id.org/akg/behavioral> .
+
+akg:componentName a rdf:Property ;
+    rdfs:label "component name"@en ;
+    rdfs:range xsd:string ;
+    rdfs:comment "Name of the element."@en ;
+    rdfs:isDefinedBy <https://w3id.org/akg/behavioral> .
+
+akg:isSync a rdf:Property ;
+    rdfs:label "is synchronous"@en ;
+    rdfs:range xsd:boolean ;
+    rdfs:comment "True if the message is a synchronous (blocking) call."@en ;
+    rdfs:isDefinedBy <https://w3id.org/akg/behavioral> .
+
+akg:callChainDepth a rdf:Property ;
+    rdfs:label "call-chain depth"@en ;
+    rdfs:range xsd:integer ;
+    rdfs:comment "Nesting depth of a call in the chain of synchronous calls (1 = root call)."@en ;
+    rdfs:isDefinedBy <https://w3id.org/akg/behavioral> .
+
+akg:fanIn a rdf:Property ;
+    rdfs:label "fan-in"@en ;
+    rdfs:range xsd:integer ;
+    rdfs:comment "Number of distinct objects from which an object receives messages."@en ;
+    rdfs:isDefinedBy <https://w3id.org/akg/behavioral> .
+
+akg:fanOut a rdf:Property ;
+    rdfs:label "fan-out"@en ;
+    rdfs:range xsd:integer ;
+    rdfs:comment "Number of distinct objects to which an object sends messages; number of outgoing flows of a fork node."@en ;
+    rdfs:isDefinedBy <https://w3id.org/akg/behavioral> .
+
+akg:messageCount a rdf:Property ;
+    rdfs:label "message count"@en ;
+    rdfs:range xsd:integer ;
+    rdfs:comment "Number of messages."@en ;
+    rdfs:isDefinedBy <https://w3id.org/akg/behavioral> .
+
+akg:stateCount a rdf:Property ;
+    rdfs:label "state count"@en ;
+    rdfs:range xsd:integer ;
+    rdfs:comment "Number of states of a state machine, excluding pseudostates and final states."@en ;
+    rdfs:isDefinedBy <https://w3id.org/akg/behavioral> .
+
+akg:sequenceNumber a rdf:Property ;
+    rdfs:label "sequence number"@en ;
+    rdfs:range xsd:string ;
+    rdfs:comment "Sequence number of a collaboration message (e.g., \"3.1\")."@en ;
+    rdfs:isDefinedBy <https://w3id.org/akg/behavioral> .
+
+akg:timingBound a rdf:Property ;
+    rdfs:label "timing bound"@en ;
+    rdfs:range xsd:duration ;
+    rdfs:comment "Time or duration bound of a constraint."@en ;
+    rdfs:isDefinedBy <https://w3id.org/akg/behavioral> .
+
+akg:layer a rdf:Property ;
+    rdfs:label "layer"@en ;
+    rdfs:range xsd:string ;
+    rdfs:comment "Architectural layer annotation used for principle checks."@en ;
+    rdfs:isDefinedBy <https://w3id.org/akg/behavioral> .
+
+akg:boundedContext a rdf:Property ;
+    rdfs:label "bounded context"@en ;
+    rdfs:range xsd:string ;
+    rdfs:comment "Bounded-context annotation used for principle checks."@en ;
+    rdfs:isDefinedBy <https://w3id.org/akg/behavioral> .
+
+akg:sourceDiagram a rdf:Property ;
+    rdfs:label "source diagram"@en ;
+    rdfs:domain akg:BehavioralElement ;
+    rdfs:range xsd:string ;
+    rdfs:comment "Identifier of the UML diagram from which the element was extracted (diagram-level provenance)."@en ;
+    rdfs:isDefinedBy <https://w3id.org/akg/behavioral> .

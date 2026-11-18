@@ -1,0 +1,63 @@
+{
+    "name": "RoutePlanServiceImpl",
+    "key": "_0680ffd0b6f24d81b5e563b2",
+    "type": "class",
+    "hasTypeVariable": false,
+    "position": null,
+    "modifiers": [],
+    "fields": {},
+    "methods": {
+        "searchCheapestResult": {
+            "name": "searchCheapestResult",
+            "key": "_8564f4b3f9814ca493e809fa",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "RoutePlanInfo",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "searchQuickestResult": {
+            "name": "searchQuickestResult",
+            "key": "_4e665521908d40f69e67b358",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "RoutePlanInfo",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "searchMinStopStations": {
+            "name": "searchMinStopStations",
+            "key": "_4163962b467f4325a3444c1d",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "RoutePlanInfo",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        }
+    },
+    "file_path": "./RoutePlanServiceImpl",
+    "anonymous": false,
+    "auxclass": false,
+    "implements_": [
+        "_dd25379a7bf44aa4bf130b70"
+    ],
+    "extends_": [],
+    "definedInClassOrInterfaceTypeKey": null,
+    "innerDefinedClasses": {},
+    "innerDefinedInterfaces": {}
+}

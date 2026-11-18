@@ -1,0 +1,8 @@
+{
+    "name": "distributeSeat()",
+    "key": "_77bd1d2a7b4b450facfd2921",
+    "type": "uml:Message",
+    "sender": "_46f6dd8bb41c429db0a42943",
+    "receiver": "_cdcb894e2ffb48e38e4dcc62",
+    "messageLabel": "distributeSeat()"
+}

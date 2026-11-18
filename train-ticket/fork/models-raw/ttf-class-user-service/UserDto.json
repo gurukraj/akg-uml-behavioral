@@ -1,0 +1,68 @@
+{
+    "name": "UserDto",
+    "key": "_67d02a6fbe544dc2855a9511",
+    "type": "class",
+    "hasTypeVariable": false,
+    "position": null,
+    "modifiers": [],
+    "fields": {
+        "userId": {
+            "name": "userId",
+            "key": "_1f42347217d2481e9dabbd5d",
+            "type": "UUID",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "userName": {
+            "name": "userName",
+            "key": "_d50a624d3fce42719967482e",
+            "type": "String",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "password": {
+            "name": "password",
+            "key": "_891b58d6dc7e44dcb1b816e4",
+            "type": "String",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "gender": {
+            "name": "gender",
+            "key": "_999eadecab964bc2a6818b0e",
+            "type": "int",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "documentType": {
+            "name": "documentType",
+            "key": "_643cc5b423944d4d878e50a6",
+            "type": "int",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "documentNum": {
+            "name": "documentNum",
+            "key": "_26bcb0e574a3488fb2e1ad8e",
+            "type": "String",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "email": {
+            "name": "email",
+            "key": "_1aac52bee3b64c56a6686380",
+            "type": "String",
+            "visibility": "private",
+            "isStatic": false
+        }
+    },
+    "methods": {},
+    "file_path": "./UserDto",
+    "anonymous": false,
+    "auxclass": false,
+    "implements_": [],
+    "extends_": [],
+    "definedInClassOrInterfaceTypeKey": null,
+    "innerDefinedClasses": {},
+    "innerDefinedInterfaces": {}
+}

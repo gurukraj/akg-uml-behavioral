@@ -1,0 +1,8 @@
+{
+    "name": "4: queryPriceConfig()",
+    "key": "_4af7f1398539482fab0ef95e",
+    "type": "uml:Message",
+    "sender": "_5c5d546cf3bc4f5b93e2bde3",
+    "receiver": "_204e4609884f4fdd91d60b4c",
+    "messageLabel": "4: queryPriceConfig()"
+}

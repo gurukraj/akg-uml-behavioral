@@ -1,0 +1,9 @@
+{
+    "name": "PriceController_uses_PriceService",
+    "key": "_c47ba5ba287a478a83b648f1",
+    "type": "association",
+    "source": "_9a37276b5d4a4c338ad08210",
+    "target": "_ed656923b3154645a2163ce2",
+    "sourceMultiplicity": "1",
+    "targetMultiplicity": "1"
+}

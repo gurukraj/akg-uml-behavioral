@@ -1,0 +1,8 @@
+{
+    "name": "getOrderById()",
+    "key": "_6db432af826743ae859a9c67",
+    "type": "uml:Message",
+    "sender": "_8d1fd695c7024f2083f3724d",
+    "receiver": "_6b697b8ca63b4911ae84df70",
+    "messageLabel": "getOrderById()"
+}

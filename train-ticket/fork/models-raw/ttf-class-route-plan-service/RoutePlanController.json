@@ -1,0 +1,61 @@
+{
+    "name": "RoutePlanController",
+    "key": "_b67cf1c3d7304d89811f938e",
+    "type": "class",
+    "hasTypeVariable": false,
+    "position": null,
+    "modifiers": [],
+    "fields": {},
+    "methods": {
+        "getByCheapest": {
+            "name": "getByCheapest",
+            "key": "_f20246857bff4bd88a5cc01b",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "RoutePlanInfo",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "getByQuickest": {
+            "name": "getByQuickest",
+            "key": "_75c467c4fe904b76bab60c62",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "RoutePlanInfo",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "getByMinStation": {
+            "name": "getByMinStation",
+            "key": "_b58614f39cc44e7bb9379143",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "RoutePlanInfo",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        }
+    },
+    "file_path": "./RoutePlanController",
+    "anonymous": false,
+    "auxclass": false,
+    "implements_": [],
+    "extends_": [],
+    "definedInClassOrInterfaceTypeKey": null,
+    "innerDefinedClasses": {},
+    "innerDefinedInterfaces": {}
+}

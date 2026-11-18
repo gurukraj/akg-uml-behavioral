@@ -1,0 +1,8 @@
+{
+    "name": "calls_ts_contacts_service",
+    "key": "_bd011c649028420ab7c4162b",
+    "type": "dependency",
+    "source": "tt-class-preserve-service",
+    "target": "ts-contacts-service",
+    "endpoint": "GET /api/v1/contactservice/contacts/{contactsId}"
+}

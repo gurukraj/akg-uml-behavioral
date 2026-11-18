@@ -1,0 +1,7 @@
+{
+    "name": "AssuranceServiceImpl_uses_AssuranceRepository",
+    "key": "_f0037a4026cc4fe69ee2cbb1",
+    "type": "dependency",
+    "source": "_ad17d370904547bd8afbc1c6",
+    "target": "_066a08c341a8434e8771d047"
+}

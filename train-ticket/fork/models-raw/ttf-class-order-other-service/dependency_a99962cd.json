@@ -1,0 +1,7 @@
+{
+    "name": "OrderOtherController_uses_OrderOtherServiceImpl",
+    "key": "_351b309e5ca14892a99962cd",
+    "type": "dependency",
+    "source": "_1fc6119f048e46f99db23aa8",
+    "target": "_5a57589d902140a4b9583111"
+}

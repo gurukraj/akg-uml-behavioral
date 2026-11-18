@@ -1,0 +1,96 @@
+{
+    "name": "ConsignRecord",
+    "key": "_86e01bedd1614def8e5f0d82",
+    "type": "class",
+    "hasTypeVariable": false,
+    "position": null,
+    "modifiers": [],
+    "fields": {
+        "id": {
+            "name": "id",
+            "key": "_9d5799bb1a9e4078b4b4bb51",
+            "type": "UUID",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "orderId": {
+            "name": "orderId",
+            "key": "_67f79375a71d4ccd9efa232c",
+            "type": "UUID",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "accountId": {
+            "name": "accountId",
+            "key": "_3c9b564e38b741dcae88041e",
+            "type": "UUID",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "handleDate": {
+            "name": "handleDate",
+            "key": "_253230a86e0541ad9738a53a",
+            "type": "String",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "targetDate": {
+            "name": "targetDate",
+            "key": "_48ff4dc40d704349bc022f15",
+            "type": "String",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "from": {
+            "name": "from",
+            "key": "_2bc122c5584c46f48a741f3c",
+            "type": "String",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "to": {
+            "name": "to",
+            "key": "_19294bc658cb4b5eaeb342ff",
+            "type": "String",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "consignee": {
+            "name": "consignee",
+            "key": "_444d425b758c494491c65ae3",
+            "type": "String",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "phone": {
+            "name": "phone",
+            "key": "_e585f3a87f9a42ecb694d1c6",
+            "type": "String",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "weight": {
+            "name": "weight",
+            "key": "_b4483035bd1e44ada39d6b60",
+            "type": "double",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "isWithin": {
+            "name": "isWithin",
+            "key": "_e62b201a5d1242379f2bc1b4",
+            "type": "boolean",
+            "visibility": "private",
+            "isStatic": false
+        }
+    },
+    "methods": {},
+    "file_path": "./ConsignRecord",
+    "anonymous": false,
+    "auxclass": false,
+    "implements_": [],
+    "extends_": [],
+    "definedInClassOrInterfaceTypeKey": null,
+    "innerDefinedClasses": {},
+    "innerDefinedInterfaces": {}
+}

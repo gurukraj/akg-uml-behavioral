@@ -1,0 +1,82 @@
+{
+    "name": "TrainService",
+    "key": "_947d9e860acb4b18a28b74e9",
+    "type": "interface",
+    "hasTypeVariable": false,
+    "position": null,
+    "modifiers": [],
+    "fields": {},
+    "methods": {
+        "create": {
+            "name": "create",
+            "key": "_8deabe6c3f5b48a4bf8e6e11",
+            "returnType": "boolean",
+            "parameters": "TrainType trainType, HttpHeaders headers",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": true
+        },
+        "retrieve": {
+            "name": "retrieve",
+            "key": "_7d3621ace61443ff9a3a5898",
+            "returnType": "TrainType",
+            "parameters": "String id, HttpHeaders headers",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": true
+        },
+        "retrieveByName": {
+            "name": "retrieveByName",
+            "key": "_bed8aa88d2674cec9590ff59",
+            "returnType": "TrainType",
+            "parameters": "String name, HttpHeaders headers",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": true
+        },
+        "retrieveByNames": {
+            "name": "retrieveByNames",
+            "key": "_a95251f23d374215a9a9ccf4",
+            "returnType": "List<TrainType>",
+            "parameters": "List<String> name, HttpHeaders headers",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": true
+        },
+        "update": {
+            "name": "update",
+            "key": "_265945e02da947d6b96728dc",
+            "returnType": "boolean",
+            "parameters": "TrainType trainType, HttpHeaders headers",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": true
+        },
+        "delete": {
+            "name": "delete",
+            "key": "_8da67e7a08184e94881a44a1",
+            "returnType": "boolean",
+            "parameters": "String id, HttpHeaders headers",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": true
+        },
+        "query": {
+            "name": "query",
+            "key": "_daf3936a86f34719b18e06e9",
+            "returnType": "List<TrainType>",
+            "parameters": "HttpHeaders headers",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": true
+        }
+    },
+    "file_path": "./TrainService",
+    "anonymous": false,
+    "auxclass": false,
+    "implements_": [],
+    "extends_": [],
+    "definedInClassOrInterfaceTypeKey": null,
+    "innerDefinedClasses": {},
+    "innerDefinedInterfaces": {}
+}

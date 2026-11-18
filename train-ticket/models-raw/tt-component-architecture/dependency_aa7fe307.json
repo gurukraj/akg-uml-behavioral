@@ -1,0 +1,7 @@
+{
+    "name": "ts-travel-plan-service_depends_on_ts-train-service",
+    "key": "_fcfaf4ef93cf4c5aaa7fe307",
+    "type": "dependency",
+    "source": "_cf5a919999ab4c9ea1c85fc4",
+    "target": "_dc970c4a237f4c1f88fdf10b"
+}

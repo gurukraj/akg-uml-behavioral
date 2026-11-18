@@ -1,0 +1,7 @@
+{
+    "name": "AuthController_uses_TokenService",
+    "key": "_3f66ea2e3ad14cc3bdb0a2c0",
+    "type": "dependency",
+    "source": "_e7a92e7f8cbf41c687835257",
+    "target": "_c7b22cadedea415d86a7461b"
+}

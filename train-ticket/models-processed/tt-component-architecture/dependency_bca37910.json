@@ -1,0 +1,7 @@
+{
+    "name": "ts-rebook-service_depends_on_ts-inside-payment-service",
+    "key": "_beb92f070c9c428fbca37910",
+    "type": "dependency",
+    "source": "_146049ac4799472f8fbc9bcd",
+    "target": "_dabc15d4db114573a0f35aea"
+}

@@ -1,0 +1,7 @@
+{
+    "name": "FoodMapServiceImpl_uses_TrainFoodRepository",
+    "key": "_33c31677f105488b900f3ef5",
+    "type": "dependency",
+    "source": "_c974eb145e8a471e912799e3",
+    "target": "_d0163bd593f3408db7419e81"
+}

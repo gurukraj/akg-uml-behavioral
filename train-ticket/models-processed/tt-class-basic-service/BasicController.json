@@ -1,0 +1,54 @@
+{
+    "name": "BasicController",
+    "key": "_ce90f52b7cc94234b13aa749",
+    "type": "class",
+    "hasTypeVariable": false,
+    "position": null,
+    "modifiers": [],
+    "fields": {
+        "basicService": {
+            "name": "basicService",
+            "key": "_09974e02ca8a4ea9849a8509",
+            "type": "BasicService",
+            "visibility": "private",
+            "isStatic": false
+        }
+    },
+    "methods": {
+        "queryForTravel": {
+            "name": "queryForTravel",
+            "key": "_623ba055b3a740c4b450a36a",
+            "returnType": "HttpEntity",
+            "parameters": "Travel info, HttpHeaders headers",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "queryForTravels": {
+            "name": "queryForTravels",
+            "key": "_3d928b54b1d149ba9485e498",
+            "returnType": "HttpEntity",
+            "parameters": "List<Travel> infos, HttpHeaders headers",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "queryForStationId": {
+            "name": "queryForStationId",
+            "key": "_d8b2a7b6edef4e48a7a4b1cf",
+            "returnType": "HttpEntity",
+            "parameters": "String stationName, HttpHeaders headers",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        }
+    },
+    "file_path": "./BasicController",
+    "anonymous": false,
+    "auxclass": false,
+    "implements_": [],
+    "extends_": [],
+    "definedInClassOrInterfaceTypeKey": null,
+    "innerDefinedClasses": {},
+    "innerDefinedInterfaces": {}
+}

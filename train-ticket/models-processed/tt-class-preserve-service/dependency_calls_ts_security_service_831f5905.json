@@ -1,0 +1,8 @@
+{
+    "name": "calls_ts_security_service",
+    "key": "_53fc947edf404dbc831f5905",
+    "type": "dependency",
+    "source": "tt-class-preserve-service",
+    "target": "ts-security-service",
+    "endpoint": "GET /api/v1/securityservice/securityConfigs/{accountId}"
+}

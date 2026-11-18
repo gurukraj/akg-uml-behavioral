@@ -1,0 +1,8 @@
+{
+    "name": "queryAll()",
+    "key": "_773d3ca2d90544ea848912f7",
+    "type": "uml:Message",
+    "sender": "_be27b214f2dc4f5187bd60db",
+    "receiver": "_f27b792545a54e24af600aa9",
+    "messageLabel": "queryAll()"
+}

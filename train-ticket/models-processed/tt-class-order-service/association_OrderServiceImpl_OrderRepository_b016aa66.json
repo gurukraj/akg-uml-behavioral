@@ -1,0 +1,9 @@
+{
+    "name": "OrderServiceImpl_uses_OrderRepository",
+    "key": "_8775dd99a6f7409eb016aa66",
+    "type": "association",
+    "source": "_0e2cea267cbb46569106da21",
+    "target": "_2152cac2504949b4959235c5",
+    "sourceMultiplicity": "1",
+    "targetMultiplicity": "1"
+}

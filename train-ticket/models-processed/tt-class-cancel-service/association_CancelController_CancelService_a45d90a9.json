@@ -1,0 +1,9 @@
+{
+    "name": "CancelController_uses_CancelService",
+    "key": "_72baf3241c3f4786a45d90a9",
+    "type": "association",
+    "source": "_25356c4a961341fbb1b82239",
+    "target": "_4f37f28a51cd4281af8669c8",
+    "sourceMultiplicity": "1",
+    "targetMultiplicity": "1"
+}

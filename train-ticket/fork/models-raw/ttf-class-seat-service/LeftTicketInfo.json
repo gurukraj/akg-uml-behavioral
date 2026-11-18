@@ -1,0 +1,26 @@
+{
+    "name": "LeftTicketInfo",
+    "key": "_9d96a761b2944feb809cca20",
+    "type": "class",
+    "hasTypeVariable": false,
+    "position": null,
+    "modifiers": [],
+    "fields": {
+        "soldTickets": {
+            "name": "soldTickets",
+            "key": "_d27f06d6fe744785a1f1a378",
+            "type": "Set<Ticket>",
+            "visibility": "private",
+            "isStatic": false
+        }
+    },
+    "methods": {},
+    "file_path": "./LeftTicketInfo",
+    "anonymous": false,
+    "auxclass": false,
+    "implements_": [],
+    "extends_": [],
+    "definedInClassOrInterfaceTypeKey": null,
+    "innerDefinedClasses": {},
+    "innerDefinedInterfaces": {}
+}

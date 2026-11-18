@@ -1,0 +1,8 @@
+{
+    "name": "ForkNode_ParallelCreate_to_CreateOrder",
+    "key": "_b203ceb249c44e3b98b14793",
+    "type": "uml:ControlFlow",
+    "source": "_51071bb4709b46d3bcafff7d",
+    "target": "_d4b66a0c4f6645e9b41a9b8d",
+    "guard": null
+}

@@ -1,0 +1,89 @@
+{
+    "name": "Voucher",
+    "key": "_c0e56f3c0363434f94635ed8",
+    "type": "class",
+    "hasTypeVariable": false,
+    "position": null,
+    "modifiers": [],
+    "fields": {
+        "voucherId": {
+            "name": "voucherId",
+            "key": "_e37fab09505b4a709f195275",
+            "type": "int",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "orderId": {
+            "name": "orderId",
+            "key": "_3e8c8ddd44684f3ea1be9de3",
+            "type": "String",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "travelDate": {
+            "name": "travelDate",
+            "key": "_64ebc12ae35b44c3ab6af405",
+            "type": "String",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "contactName": {
+            "name": "contactName",
+            "key": "_05c1fce9daf94a5e9542d9fd",
+            "type": "String",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "trainNumber": {
+            "name": "trainNumber",
+            "key": "_92d5687862d245068da7f7f4",
+            "type": "String",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "seatClass": {
+            "name": "seatClass",
+            "key": "_065677e84157431d934da27f",
+            "type": "int",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "seatNumber": {
+            "name": "seatNumber",
+            "key": "_0d61551821a54cd8a84ed8ab",
+            "type": "String",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "startStation": {
+            "name": "startStation",
+            "key": "_791400fc16db48cbbe9ca60e",
+            "type": "String",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "destStation": {
+            "name": "destStation",
+            "key": "_8efcd1ec01ba42b0b90572ad",
+            "type": "String",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "price": {
+            "name": "price",
+            "key": "_8d49c788d7ef47fc8759a867",
+            "type": "float",
+            "visibility": "private",
+            "isStatic": false
+        }
+    },
+    "methods": {},
+    "file_path": "./Voucher",
+    "anonymous": false,
+    "auxclass": false,
+    "implements_": [],
+    "extends_": [],
+    "definedInClassOrInterfaceTypeKey": null,
+    "innerDefinedClasses": {},
+    "innerDefinedInterfaces": {}
+}

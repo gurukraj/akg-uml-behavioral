@@ -1,0 +1,25 @@
+{
+    "classification": {
+        "categories": [
+            "Class"
+        ],
+        "primary": "Class",
+        "is_class_diagram": true,
+        "is_behavioral": false
+    },
+    "detectedTypes": {
+        "uml:Class": 7,
+        "uml:Interface": 2,
+        "uml:Dependency": 5,
+        "uml:Association": 6
+    },
+    "elementCounts": {
+        "classes": 7,
+        "interfaces": 2,
+        "dependencies": 5,
+        "associations": 6
+    },
+    "totalElements": 20,
+    "diagram_id": "tt-class-travel-service",
+    "source_file": "tt-class-travel-service.json"
+}

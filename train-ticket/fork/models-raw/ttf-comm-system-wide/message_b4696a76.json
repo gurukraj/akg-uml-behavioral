@@ -1,0 +1,8 @@
+{
+    "name": "queryForTravel()",
+    "key": "_2295d40ad6df4a10b4696a76",
+    "type": "uml:Message",
+    "sender": "_d9d5a5caa3984328ae337519",
+    "receiver": "_52e3763a799f4838be62172c",
+    "messageLabel": "queryForTravel()"
+}

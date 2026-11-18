@@ -1,0 +1,7 @@
+{
+    "name": "ts-admin-basic-info-service_depends_on_ts-price-service",
+    "key": "_ab5e185eddf64f2fac98e0e2",
+    "type": "dependency",
+    "source": "_4a86440a832b401190fcb2b4",
+    "target": "_952d9a02b44f4811b02949dd"
+}

@@ -1,0 +1,7 @@
+{
+    "name": "ts-travel-service_depends_on_ts-ticketinfo-service",
+    "key": "_635d2cb748ec43a48b0f2060",
+    "type": "dependency",
+    "source": "_0671269c3d644026899a6187",
+    "target": "_1f6ca4df8ed14321a41d95e7"
+}

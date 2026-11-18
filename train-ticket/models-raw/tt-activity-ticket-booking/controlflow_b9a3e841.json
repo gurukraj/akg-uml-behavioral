@@ -1,0 +1,8 @@
+{
+    "name": "SelectSeat_to_SecurityCheck",
+    "key": "_61dbf47476d24f03b9a3e841",
+    "type": "uml:ControlFlow",
+    "source": "_a6dbd6f9be8f4f78ad816e50",
+    "target": "_1c187f0c8ddd4465a7d8ab39",
+    "guard": null
+}

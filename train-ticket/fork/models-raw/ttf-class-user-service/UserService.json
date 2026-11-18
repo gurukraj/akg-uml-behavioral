@@ -1,0 +1,102 @@
+{
+    "name": "UserService",
+    "key": "_ce7a83200e604628a2bee3ad",
+    "type": "interface",
+    "hasTypeVariable": false,
+    "position": null,
+    "modifiers": [],
+    "fields": {},
+    "methods": {
+        "saveUser": {
+            "name": "saveUser",
+            "key": "_443bea064d9b4533ade60fbf",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "UserDto",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": true
+        },
+        "getAllUsers": {
+            "name": "getAllUsers",
+            "key": "_9617a5ee88f845bc8f898493",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": true
+        },
+        "findByUserName": {
+            "name": "findByUserName",
+            "key": "_db6b8657a9f949729ce612b3",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "String",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": true
+        },
+        "findByUserId": {
+            "name": "findByUserId",
+            "key": "_2523e1d034f34b97a2702cf2",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "String",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": true
+        },
+        "deleteUser": {
+            "name": "deleteUser",
+            "key": "_9068dfd2b40d496aad6d8172",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "String",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": true
+        },
+        "updateUser": {
+            "name": "updateUser",
+            "key": "_8c440fca917a4e2d970d73e1",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "UserDto",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": true
+        }
+    },
+    "file_path": "./UserService",
+    "anonymous": false,
+    "auxclass": false,
+    "implements_": [],
+    "extends_": [],
+    "definedInClassOrInterfaceTypeKey": null,
+    "innerDefinedClasses": {},
+    "innerDefinedInterfaces": {}
+}

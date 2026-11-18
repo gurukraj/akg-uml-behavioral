@@ -1,0 +1,8 @@
+{
+    "name": "calls_ts_food_service",
+    "key": "_7d7a09dbe3694cc7833ef2d7",
+    "type": "dependency",
+    "source": "tt-class-preserve-service",
+    "target": "ts-food-service",
+    "endpoint": "POST /api/v1/foodservice/orders"
+}

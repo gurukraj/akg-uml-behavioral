@@ -1,0 +1,9 @@
+{
+    "name": "PreserveController_uses_PreserveService",
+    "key": "_025f3ea5e8104c5fb3dd3145",
+    "type": "association",
+    "source": "_016800d2d8d94107bb73cc15",
+    "target": "_d9f4687e16114cf7adfd77d0",
+    "sourceMultiplicity": "1",
+    "targetMultiplicity": "1"
+}

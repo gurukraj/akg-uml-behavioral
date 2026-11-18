@@ -1,0 +1,81 @@
+{
+    "name": "TrainController",
+    "key": "_23ff8c61d3a34f69be7b2e54",
+    "type": "class",
+    "hasTypeVariable": false,
+    "position": null,
+    "modifiers": [],
+    "fields": {
+        "trainService": {
+            "name": "trainService",
+            "key": "_d3461246cfe2474ba48ecb1c",
+            "type": "TrainService",
+            "visibility": "private",
+            "isStatic": false
+        }
+    },
+    "methods": {
+        "create": {
+            "name": "create",
+            "key": "_e8a4fa2f42324d87b395b163",
+            "returnType": "HttpEntity",
+            "parameters": "TrainType trainType, HttpHeaders headers",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "retrieve": {
+            "name": "retrieve",
+            "key": "_8821bef31f84442ab43514b8",
+            "returnType": "HttpEntity",
+            "parameters": "String id, HttpHeaders headers",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "retrieveByName": {
+            "name": "retrieveByName",
+            "key": "_5c8fa61c504a4e15b254cbf4",
+            "returnType": "HttpEntity",
+            "parameters": "String name, HttpHeaders headers",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "update": {
+            "name": "update",
+            "key": "_336e7e6abb094d7c9796aba2",
+            "returnType": "HttpEntity",
+            "parameters": "TrainType trainType, HttpHeaders headers",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "delete": {
+            "name": "delete",
+            "key": "_23f5a5d2600148fa95f1e727",
+            "returnType": "HttpEntity",
+            "parameters": "String id, HttpHeaders headers",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "query": {
+            "name": "query",
+            "key": "_01fa2e72889548b7b905e3d0",
+            "returnType": "HttpEntity",
+            "parameters": "HttpHeaders headers",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        }
+    },
+    "file_path": "./TrainController",
+    "anonymous": false,
+    "auxclass": false,
+    "implements_": [],
+    "extends_": [],
+    "definedInClassOrInterfaceTypeKey": null,
+    "innerDefinedClasses": {},
+    "innerDefinedInterfaces": {}
+}

@@ -1,0 +1,8 @@
+{
+    "name": "calls_ts_price_service",
+    "key": "_4339388f425e442abf1fe7e8",
+    "type": "dependency",
+    "source": "tt-class-basic-service",
+    "target": "ts-price-service",
+    "endpoint": "GET /api/v1/priceservice/prices/{routeId}/{trainType}"
+}

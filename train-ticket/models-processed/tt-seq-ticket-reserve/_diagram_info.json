@@ -1,0 +1,22 @@
+{
+    "classification": {
+        "categories": [
+            "Sequence"
+        ],
+        "primary": "Sequence",
+        "is_class_diagram": false,
+        "is_behavioral": true
+    },
+    "detectedTypes": {
+        "uml:Class": 14,
+        "uml:Interaction": 1,
+        "uml:MessageOccurrenceSpecification": 56
+    },
+    "elementCounts": {
+        "classes": 14,
+        "interactions": 1
+    },
+    "totalElements": 15,
+    "diagram_id": "tt-seq-ticket-reserve",
+    "source_file": "tt-seq-ticket-reserve.json"
+}

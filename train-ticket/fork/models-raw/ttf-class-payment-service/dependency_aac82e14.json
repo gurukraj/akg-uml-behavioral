@@ -1,0 +1,7 @@
+{
+    "name": "PaymentServiceImpl_uses_PaymentRepository",
+    "key": "_05edbed43f9544d4aac82e14",
+    "type": "dependency",
+    "source": "_269a0dffacc64c43b064ae48",
+    "target": "_1994072596c04ecba81007bc"
+}

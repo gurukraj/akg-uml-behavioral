@@ -1,0 +1,40 @@
+{
+    "name": "TokenDto",
+    "key": "_23807c2efcb84854a443c14e",
+    "type": "class",
+    "hasTypeVariable": false,
+    "position": null,
+    "modifiers": [],
+    "fields": {
+        "userId": {
+            "name": "userId",
+            "key": "_9110a3b3fa3c488fa2a56b10",
+            "type": "String",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "username": {
+            "name": "username",
+            "key": "_cf068016fbf044fe89692d1f",
+            "type": "String",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "token": {
+            "name": "token",
+            "key": "_67d1710f36394fa0a5c7d411",
+            "type": "String",
+            "visibility": "private",
+            "isStatic": false
+        }
+    },
+    "methods": {},
+    "file_path": "./TokenDto",
+    "anonymous": false,
+    "auxclass": false,
+    "implements_": [],
+    "extends_": [],
+    "definedInClassOrInterfaceTypeKey": null,
+    "innerDefinedClasses": {},
+    "innerDefinedInterfaces": {}
+}

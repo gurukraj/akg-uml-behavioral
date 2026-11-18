@@ -1,0 +1,27 @@
+{
+    "classification": {
+        "categories": [
+            "Activity"
+        ],
+        "primary": "Activity",
+        "is_class_diagram": false,
+        "is_behavioral": true
+    },
+    "detectedTypes": {
+        "uml:Activity": 1,
+        "uml:OpaqueAction": 7,
+        "uml:DecisionNode": 2,
+        "uml:ControlFlow": 12,
+        "uml:ActivityPartition": 5
+    },
+    "elementCounts": {
+        "activities": 1,
+        "actions": 7,
+        "decisionNodes": 2,
+        "controlFlows": 12,
+        "activityPartitions": 5
+    },
+    "totalElements": 27,
+    "diagram_id": "tt-activity-cancel-refund",
+    "source_file": "tt-activity-cancel-refund.json"
+}

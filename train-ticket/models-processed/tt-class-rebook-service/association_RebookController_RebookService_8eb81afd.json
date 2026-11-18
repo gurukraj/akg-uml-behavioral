@@ -1,0 +1,9 @@
+{
+    "name": "RebookController_uses_RebookService",
+    "key": "_6ca63c5d68e849f58eb81afd",
+    "type": "association",
+    "source": "_4dc7ed112b1b48be878633d4",
+    "target": "_1ead2eff04d64ef0a0afa592",
+    "sourceMultiplicity": "1",
+    "targetMultiplicity": "1"
+}

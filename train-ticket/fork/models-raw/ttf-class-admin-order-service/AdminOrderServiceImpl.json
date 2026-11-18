@@ -1,0 +1,77 @@
+{
+    "name": "AdminOrderServiceImpl",
+    "key": "_53ba6996fdba44f4aaaa5eee",
+    "type": "class",
+    "hasTypeVariable": false,
+    "position": null,
+    "modifiers": [],
+    "fields": {},
+    "methods": {
+        "getAllOrders": {
+            "name": "getAllOrders",
+            "key": "_dd646be726294b52b32cb1f3",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "addOrder": {
+            "name": "addOrder",
+            "key": "_8085c70d9f4d4557850cf57c",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "Order",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "deleteOrder": {
+            "name": "deleteOrder",
+            "key": "_a3d6cbac84594d3c8e786db4",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "String",
+                    "String",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "updateOrder": {
+            "name": "updateOrder",
+            "key": "_903b6744d0e04bf981bbde8d",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "Order",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        }
+    },
+    "file_path": "./AdminOrderServiceImpl",
+    "anonymous": false,
+    "auxclass": false,
+    "implements_": [
+        "_d17f2b401534452ea2dbe8fa"
+    ],
+    "extends_": [],
+    "definedInClassOrInterfaceTypeKey": null,
+    "innerDefinedClasses": {},
+    "innerDefinedInterfaces": {}
+}

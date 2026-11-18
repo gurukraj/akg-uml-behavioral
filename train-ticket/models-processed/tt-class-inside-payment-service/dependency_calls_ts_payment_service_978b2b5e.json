@@ -1,0 +1,8 @@
+{
+    "name": "calls_ts_payment_service",
+    "key": "_f223a82b0b104000978b2b5e",
+    "type": "dependency",
+    "source": "tt-class-inside-payment-service",
+    "target": "ts-payment-service",
+    "endpoint": "POST /api/v1/paymentservice/payment"
+}

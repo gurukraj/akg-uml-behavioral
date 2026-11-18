@@ -1,0 +1,8 @@
+{
+    "name": "CreateFoodOrder_to_JoinNode_ParallelComplete",
+    "key": "_43f4f6dd321244668c9ec837",
+    "type": "uml:ControlFlow",
+    "source": "_4b67eac7b5de4cb98694a809",
+    "target": "_e8eb24e8e5d04449adb12160",
+    "guard": null
+}

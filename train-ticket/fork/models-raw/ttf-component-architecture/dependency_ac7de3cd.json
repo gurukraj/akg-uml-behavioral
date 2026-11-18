@@ -1,0 +1,7 @@
+{
+    "name": "ts-ticketinfo-service_depends_on_ts-basic-service",
+    "key": "_d19325ecd13748b4ac7de3cd",
+    "type": "dependency",
+    "source": "_1f6ca4df8ed14321a41d95e7",
+    "target": "_345dfecb7cb4471ab8788b9e"
+}

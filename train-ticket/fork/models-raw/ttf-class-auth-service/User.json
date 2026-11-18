@@ -1,0 +1,47 @@
+{
+    "name": "User",
+    "key": "_1344f39bd59a4900889831a0",
+    "type": "class",
+    "hasTypeVariable": false,
+    "position": null,
+    "modifiers": [],
+    "fields": {
+        "userId": {
+            "name": "userId",
+            "key": "_7cc011a8240f422d80212182",
+            "type": "UUID",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "username": {
+            "name": "username",
+            "key": "_e11df1ed0e9946cd99e84a94",
+            "type": "String",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "password": {
+            "name": "password",
+            "key": "_2e953ae196924f559a23b89f",
+            "type": "String",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "roles": {
+            "name": "roles",
+            "key": "_24e2466d78244c7fa22f472e",
+            "type": "Set<String>",
+            "visibility": "private",
+            "isStatic": false
+        }
+    },
+    "methods": {},
+    "file_path": "./User",
+    "anonymous": false,
+    "auxclass": false,
+    "implements_": [],
+    "extends_": [],
+    "definedInClassOrInterfaceTypeKey": null,
+    "innerDefinedClasses": {},
+    "innerDefinedInterfaces": {}
+}

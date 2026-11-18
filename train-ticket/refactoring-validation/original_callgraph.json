@@ -1,0 +1,332 @@
+{
+ "root": "../train-ticket",
+ "entry": "ts-preserve-service POST /api/v1/preserveservice/preserve",
+ "summary": {
+  "max_depth": 4,
+  "sync_calls_total": 29,
+  "deepest_chains": [
+   "Client -> ts-preserve-service -> ts-travel-service -> ts-basic-service -> ts-price-service",
+   "Client -> ts-preserve-service -> ts-travel-service -> ts-basic-service -> ts-route-service",
+   "Client -> ts-preserve-service -> ts-travel-service -> ts-basic-service -> ts-station-service",
+   "Client -> ts-preserve-service -> ts-travel-service -> ts-basic-service -> ts-train-service",
+   "Client -> ts-preserve-service -> ts-travel-service -> ts-seat-service -> ts-config-service",
+   "Client -> ts-preserve-service -> ts-travel-service -> ts-seat-service -> ts-order-other-service",
+   "Client -> ts-preserve-service -> ts-travel-service -> ts-seat-service -> ts-order-service"
+  ],
+  "fan_out_distinct": {
+   "ts-basic-service": 4,
+   "ts-consign-service": 1,
+   "ts-preserve-service": 10,
+   "ts-seat-service": 3,
+   "ts-security-service": 2,
+   "ts-travel-service": 2
+  },
+  "fan_out_targets": {
+   "ts-basic-service": [
+    "ts-price-service",
+    "ts-route-service",
+    "ts-station-service",
+    "ts-train-service"
+   ],
+   "ts-consign-service": [
+    "ts-consign-price-service"
+   ],
+   "ts-preserve-service": [
+    "ts-assurance-service",
+    "ts-basic-service",
+    "ts-consign-service",
+    "ts-contacts-service",
+    "ts-food-service",
+    "ts-order-service",
+    "ts-seat-service",
+    "ts-security-service",
+    "ts-travel-service",
+    "ts-user-service"
+   ],
+   "ts-seat-service": [
+    "ts-config-service",
+    "ts-order-other-service",
+    "ts-order-service"
+   ],
+   "ts-security-service": [
+    "ts-order-other-service",
+    "ts-order-service"
+   ],
+   "ts-travel-service": [
+    "ts-basic-service",
+    "ts-seat-service"
+   ]
+  },
+  "async_sends": 0,
+  "unresolved_endpoints": []
+ },
+ "tree": {
+  "service": "ts-preserve-service",
+  "verb": "POST",
+  "path": "/api/v1/preserveservice/preserve",
+  "depth": 1,
+  "children": [
+   {
+    "service": "ts-security-service",
+    "verb": "GET",
+    "path": "/api/v1/securityservice/securityConfigs/",
+    "depth": 2,
+    "children": [
+     {
+      "service": "ts-order-service",
+      "verb": "GET",
+      "path": "/api/v1/orderservice/order/security/",
+      "depth": 3,
+      "children": [],
+      "async_sends": 0,
+      "resolved": true
+     },
+     {
+      "service": "ts-order-other-service",
+      "verb": "GET",
+      "path": "/api/v1/orderOtherService/orderOther/security/",
+      "depth": 3,
+      "children": [],
+      "async_sends": 0,
+      "resolved": true
+     }
+    ],
+    "async_sends": 0,
+    "resolved": true
+   },
+   {
+    "service": "ts-contacts-service",
+    "verb": "GET",
+    "path": "/api/v1/contactservice/contacts/",
+    "depth": 2,
+    "children": [],
+    "async_sends": 0,
+    "resolved": true
+   },
+   {
+    "service": "ts-travel-service",
+    "verb": "POST",
+    "path": "/api/v1/travelservice/trip_detail",
+    "depth": 2,
+    "children": [
+     {
+      "service": "ts-basic-service",
+      "verb": "POST",
+      "path": "/api/v1/basicservice/basic/travel",
+      "depth": 3,
+      "children": [
+       {
+        "service": "ts-station-service",
+        "verb": "GET",
+        "path": "/api/v1/stationservice/stations/id/",
+        "depth": 4,
+        "children": [],
+        "async_sends": 0,
+        "resolved": true
+       },
+       {
+        "service": "ts-train-service",
+        "verb": "GET",
+        "path": "/api/v1/trainservice/trains/byName/",
+        "depth": 4,
+        "children": [],
+        "async_sends": 0,
+        "resolved": true
+       },
+       {
+        "service": "ts-route-service",
+        "verb": "GET",
+        "path": "/api/v1/routeservice/routes/",
+        "depth": 4,
+        "children": [],
+        "async_sends": 0,
+        "resolved": true
+       },
+       {
+        "service": "ts-price-service",
+        "verb": "GET",
+        "path": "/api/v1/priceservice/prices/",
+        "depth": 4,
+        "children": [],
+        "async_sends": 0,
+        "resolved": true
+       }
+      ],
+      "async_sends": 0,
+      "resolved": true
+     },
+     {
+      "service": "ts-seat-service",
+      "verb": "POST",
+      "path": "/api/v1/seatservice/seats/left_tickets",
+      "depth": 3,
+      "children": [
+       {
+        "service": "ts-order-service",
+        "verb": "POST",
+        "path": "/api/v1/orderservice/order/tickets",
+        "depth": 4,
+        "children": [],
+        "async_sends": 0,
+        "resolved": true
+       },
+       {
+        "service": "ts-order-other-service",
+        "verb": "POST",
+        "path": "/api/v1/orderOtherService/orderOther/tickets",
+        "depth": 4,
+        "children": [],
+        "async_sends": 0,
+        "resolved": true
+       },
+       {
+        "service": "ts-config-service",
+        "verb": "GET",
+        "path": "/api/v1/configservice/configs/",
+        "depth": 4,
+        "children": [],
+        "async_sends": 0,
+        "resolved": true
+       }
+      ],
+      "async_sends": 0,
+      "resolved": true
+     }
+    ],
+    "async_sends": 0,
+    "resolved": true
+   },
+   {
+    "service": "ts-basic-service",
+    "verb": "POST",
+    "path": "/api/v1/basicservice/basic/travel",
+    "depth": 2,
+    "children": [
+     {
+      "service": "ts-station-service",
+      "verb": "GET",
+      "path": "/api/v1/stationservice/stations/id/",
+      "depth": 3,
+      "children": [],
+      "async_sends": 0,
+      "resolved": true
+     },
+     {
+      "service": "ts-train-service",
+      "verb": "GET",
+      "path": "/api/v1/trainservice/trains/byName/",
+      "depth": 3,
+      "children": [],
+      "async_sends": 0,
+      "resolved": true
+     },
+     {
+      "service": "ts-route-service",
+      "verb": "GET",
+      "path": "/api/v1/routeservice/routes/",
+      "depth": 3,
+      "children": [],
+      "async_sends": 0,
+      "resolved": true
+     },
+     {
+      "service": "ts-price-service",
+      "verb": "GET",
+      "path": "/api/v1/priceservice/prices/",
+      "depth": 3,
+      "children": [],
+      "async_sends": 0,
+      "resolved": true
+     }
+    ],
+    "async_sends": 0,
+    "resolved": true
+   },
+   {
+    "service": "ts-seat-service",
+    "verb": "POST",
+    "path": "/api/v1/seatservice/seats",
+    "depth": 2,
+    "children": [
+     {
+      "service": "ts-order-service",
+      "verb": "POST",
+      "path": "/api/v1/orderservice/order/tickets",
+      "depth": 3,
+      "children": [],
+      "async_sends": 0,
+      "resolved": true
+     },
+     {
+      "service": "ts-order-other-service",
+      "verb": "POST",
+      "path": "/api/v1/orderOtherService/orderOther/tickets",
+      "depth": 3,
+      "children": [],
+      "async_sends": 0,
+      "resolved": true
+     }
+    ],
+    "async_sends": 0,
+    "resolved": true
+   },
+   {
+    "service": "ts-order-service",
+    "verb": "POST",
+    "path": "/api/v1/orderservice/order",
+    "depth": 2,
+    "children": [],
+    "async_sends": 0,
+    "resolved": true
+   },
+   {
+    "service": "ts-assurance-service",
+    "verb": "GET",
+    "path": "/api/v1/assuranceservice/assurances/",
+    "depth": 2,
+    "children": [],
+    "async_sends": 0,
+    "resolved": true
+   },
+   {
+    "service": "ts-food-service",
+    "verb": "POST",
+    "path": "/api/v1/foodservice/orders",
+    "depth": 2,
+    "children": [],
+    "async_sends": 0,
+    "resolved": true
+   },
+   {
+    "service": "ts-consign-service",
+    "verb": "POST",
+    "path": "/api/v1/consignservice/consigns",
+    "depth": 2,
+    "children": [
+     {
+      "service": "ts-consign-price-service",
+      "verb": "GET",
+      "path": "/api/v1/consignpriceservice/consignprice/",
+      "depth": 3,
+      "children": [],
+      "async_sends": 0,
+      "resolved": true
+     }
+    ],
+    "async_sends": 0,
+    "resolved": true
+   },
+   {
+    "service": "ts-user-service",
+    "verb": "GET",
+    "path": "/api/v1/userservice/users/id/",
+    "depth": 2,
+    "children": [],
+    "async_sends": 0,
+    "resolved": true
+   }
+  ],
+  "async_sends": 0,
+  "resolved": true
+ }
+}

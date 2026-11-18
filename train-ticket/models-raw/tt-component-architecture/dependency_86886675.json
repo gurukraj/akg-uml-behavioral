@@ -1,0 +1,7 @@
+{
+    "name": "ts-admin-basic-info-service_depends_on_ts-train-service",
+    "key": "_0c23184924b04a9586886675",
+    "type": "dependency",
+    "source": "_4a86440a832b401190fcb2b4",
+    "target": "_dc970c4a237f4c1f88fdf10b"
+}

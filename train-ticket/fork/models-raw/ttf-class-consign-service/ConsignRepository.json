@@ -1,0 +1,45 @@
+{
+    "name": "ConsignRepository",
+    "key": "_d3cc73cb96ab483687e16b41",
+    "type": "interface",
+    "hasTypeVariable": false,
+    "position": null,
+    "modifiers": [],
+    "fields": {},
+    "methods": {
+        "findByAccountId": {
+            "name": "findByAccountId",
+            "key": "_539e4e629a224a2695643673",
+            "returnType": "List<ConsignRecord>",
+            "parameters": [
+                [
+                    "UUID"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": true
+        },
+        "findByOrderId": {
+            "name": "findByOrderId",
+            "key": "_a8d50de28876420d9336a735",
+            "returnType": "ConsignRecord",
+            "parameters": [
+                [
+                    "UUID"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": true
+        }
+    },
+    "file_path": "./ConsignRepository",
+    "anonymous": false,
+    "auxclass": false,
+    "implements_": [],
+    "extends_": [],
+    "definedInClassOrInterfaceTypeKey": null,
+    "innerDefinedClasses": {},
+    "innerDefinedInterfaces": {}
+}

@@ -1,0 +1,1019 @@
+{
+    "name": "PreserveBookingSequence",
+    "key": "_661975134b9b4bb69d4b78d7",
+    "type": "interaction",
+    "lifelines": [
+        {
+            "name": "Client",
+            "key": "_8c15a6a1e260454ea64aa870",
+            "represents": "_4f45519ead3843d1a47fa297",
+            "coveredBy": []
+        },
+        {
+            "name": "ts-preserve-service",
+            "key": "_9c6a058892884433924806d2",
+            "represents": "_68a7bc3cdd2e46f5b934422e",
+            "coveredBy": []
+        },
+        {
+            "name": "ts-security-service",
+            "key": "_2f262135d064445e8a396158",
+            "represents": "_e1fa22fc7beb4ee2b1ab3e01",
+            "coveredBy": []
+        },
+        {
+            "name": "ts-contacts-service",
+            "key": "_fcc4a4bbbff24e06889df646",
+            "represents": "_d36f7945f587478db7e8c8c0",
+            "coveredBy": []
+        },
+        {
+            "name": "ts-ticketinfo-service",
+            "key": "_ef000f784c714ef296450b58",
+            "represents": "_21a00ec2dd794a56b46f6d58",
+            "coveredBy": []
+        },
+        {
+            "name": "ts-basic-service",
+            "key": "_346c59d85724495b8598fddc",
+            "represents": "_5a22686f67594b2888d97700",
+            "coveredBy": []
+        },
+        {
+            "name": "ts-travel-service",
+            "key": "_3574679184dd428892a970ae",
+            "represents": "_a0b5bd7d3f7a4a6bae02d944",
+            "coveredBy": []
+        },
+        {
+            "name": "ts-seat-service",
+            "key": "_146f79292b9f47e59e999eb7",
+            "represents": "_91c44efa57784c84986f64f9",
+            "coveredBy": []
+        },
+        {
+            "name": "ts-order-service",
+            "key": "_12a537c2efad40f3ae33f9ce",
+            "represents": "_29ea1616accc431a8d955829",
+            "coveredBy": []
+        },
+        {
+            "name": "ts-user-service",
+            "key": "_24576913bb8a401da80ebee6",
+            "represents": "_db0a1e6726f9477099d18c74",
+            "coveredBy": []
+        },
+        {
+            "name": "ts-assurance-service",
+            "key": "_7605e5d944714c4ba86d3403",
+            "represents": "_272348871acb4a7fb1f6dcb0",
+            "coveredBy": []
+        },
+        {
+            "name": "ts-station-service",
+            "key": "_b23da3d1ab1e4d3c93c429d3",
+            "represents": "_4da1119280964e8da2b1fd69",
+            "coveredBy": []
+        },
+        {
+            "name": "ts-food-service",
+            "key": "_37ae0ffc7e1e404cae756eb1",
+            "represents": "_5fc0a0b188964274ae9068ee",
+            "coveredBy": []
+        },
+        {
+            "name": "ts-consign-service",
+            "key": "_5b95b255ce004f31aababba6",
+            "represents": "_a8691c321a064d31870b490c",
+            "coveredBy": []
+        },
+        {
+            "name": "ts-notification-service",
+            "key": "_8e68650a2b984f9f8e649a61",
+            "represents": "_6367775177334fe5b2837919",
+            "coveredBy": []
+        }
+    ],
+    "messages": [
+        {
+            "name": "preserve(orderTicketsInfo)",
+            "key": "_00314632ec4e4dd9a25e2c6a",
+            "messageSort": "synchCall",
+            "sendEvent": "_2d8e44f85111497dbacbda0f",
+            "receiveEvent": "_39cbc2092f1049098b7918c5",
+            "connector": null,
+            "signature": null
+        },
+        {
+            "name": "check(accountId)",
+            "key": "_4b8e693b1cd045d781b35e6d",
+            "messageSort": "synchCall",
+            "sendEvent": "_b480ae8e6bba4e13abb346af",
+            "receiveEvent": "_2c107225910748638d36e96d",
+            "connector": null,
+            "signature": null
+        },
+        {
+            "name": "securityInfoCheck(date,accountId)",
+            "key": "_d271e6606ec341c9ab915f1d",
+            "messageSort": "synchCall",
+            "sendEvent": "_eb370b40aba542288a9db98e",
+            "receiveEvent": "_4a916c0ed46249308992cd9b",
+            "connector": null,
+            "signature": null
+        },
+        {
+            "name": "securityResult",
+            "key": "_85a9e6367a4b4be7b310196f",
+            "messageSort": "reply",
+            "sendEvent": "_ba62c50daa794779898289b8",
+            "receiveEvent": "_8022fc825e4a493ba04d3849",
+            "connector": null,
+            "signature": null
+        },
+        {
+            "name": "securityCheckResult",
+            "key": "_944d40a2e82940f480cb33cd",
+            "messageSort": "reply",
+            "sendEvent": "_945d7d2276db400fb17734cc",
+            "receiveEvent": "_5990b149e2fc4fedbe0b5068",
+            "connector": null,
+            "signature": null
+        },
+        {
+            "name": "getContactsById(contactsId)",
+            "key": "_0c66dac6f3144f53be36bf84",
+            "messageSort": "synchCall",
+            "sendEvent": "_ab0387c0d03c435096e4864a",
+            "receiveEvent": "_663c8e7aceab4c95a549e89f",
+            "connector": null,
+            "signature": null
+        },
+        {
+            "name": "contacts",
+            "key": "_51cda77373ff4aa4aab8bf2a",
+            "messageSort": "reply",
+            "sendEvent": "_757306bbdc794ffdbfd2b6cb",
+            "receiveEvent": "_04ed4a354b834d6697da7281",
+            "connector": null,
+            "signature": null
+        },
+        {
+            "name": "queryForTravel(travel)",
+            "key": "_6df59ae5faef4fca8b07607e",
+            "messageSort": "synchCall",
+            "sendEvent": "_19b6ee25407d411187107443",
+            "receiveEvent": "_fa30b1a7d80f46adadc5df86",
+            "connector": null,
+            "signature": null
+        },
+        {
+            "name": "queryForTravel(travel)",
+            "key": "_21d169bc452046ed8364c0a6",
+            "messageSort": "synchCall",
+            "sendEvent": "_b65420fc4b8e492da0ed6976",
+            "receiveEvent": "_4ac1d415b3d64cc4855e6380",
+            "connector": null,
+            "signature": null
+        },
+        {
+            "name": "queryById(stationId)",
+            "key": "_4fe25e2c5b3b45009cd31f71",
+            "messageSort": "synchCall",
+            "sendEvent": "_4b8a4743681642509795dfea",
+            "receiveEvent": "_971f1bff1c104313ad91fc55",
+            "connector": null,
+            "signature": null
+        },
+        {
+            "name": "station",
+            "key": "_f480de16831c4c17b5577a2f",
+            "messageSort": "reply",
+            "sendEvent": "_1e9d1473a0134f2eb1f49e63",
+            "receiveEvent": "_02ec12e1580e4f279a98db97",
+            "connector": null,
+            "signature": null
+        },
+        {
+            "name": "travelResult",
+            "key": "_c3a22b26f44e4485880fd13d",
+            "messageSort": "reply",
+            "sendEvent": "_51b5d1f503904a58bc4a665a",
+            "receiveEvent": "_b3f50be6266040ac9c6667b7",
+            "connector": null,
+            "signature": null
+        },
+        {
+            "name": "travelResult",
+            "key": "_0376fb33ed6e4edbbf860f92",
+            "messageSort": "reply",
+            "sendEvent": "_49aad341c244435fa5172bc5",
+            "receiveEvent": "_a89323455a4b4560806fc65d",
+            "connector": null,
+            "signature": null
+        },
+        {
+            "name": "getTripAllDetailInfo(tripInfo)",
+            "key": "_30103061332b4b4cb3f39157",
+            "messageSort": "synchCall",
+            "sendEvent": "_e84b059a68d3418dbbc929fa",
+            "receiveEvent": "_464aaea4b1134389ac0d5fc8",
+            "connector": null,
+            "signature": null
+        },
+        {
+            "name": "tripAllDetail",
+            "key": "_76b7d56ad64b47908faed5c7",
+            "messageSort": "reply",
+            "sendEvent": "_fb28016a35eb4be4b06c9b01",
+            "receiveEvent": "_ebca0e3203a8429881fec055",
+            "connector": null,
+            "signature": null
+        },
+        {
+            "name": "distributeSeat(seat)",
+            "key": "_ab41d0438cc843b0af0a3b34",
+            "messageSort": "synchCall",
+            "sendEvent": "_0f439691500c481e8a65d373",
+            "receiveEvent": "_0e558ef352b54cea954af9ae",
+            "connector": null,
+            "signature": null
+        },
+        {
+            "name": "getTicketsByDateAndTripId(seat)",
+            "key": "_b53b4963f5fa45058e31e4ea",
+            "messageSort": "synchCall",
+            "sendEvent": "_9976a8646434490886b67e8c",
+            "receiveEvent": "_0fb0878ad3b4427da150b8a8",
+            "connector": null,
+            "signature": null
+        },
+        {
+            "name": "soldTickets",
+            "key": "_5167d97a9c6543509cdb2cfe",
+            "messageSort": "reply",
+            "sendEvent": "_bfecc6ff40e6458b81f29529",
+            "receiveEvent": "_0ed465ebba9f45cf8d387ebd",
+            "connector": null,
+            "signature": null
+        },
+        {
+            "name": "ticket",
+            "key": "_7feea0e5093848cd85ab7ffe",
+            "messageSort": "reply",
+            "sendEvent": "_3d24153722434e54a94d1865",
+            "receiveEvent": "_ae2d404cd22243b7a2e30c2f",
+            "connector": null,
+            "signature": null
+        },
+        {
+            "name": "getUserById(accountId)",
+            "key": "_343a8d1c3f5446a685118d9c",
+            "messageSort": "synchCall",
+            "sendEvent": "_98f2a685c9e5461c88b33c26",
+            "receiveEvent": "_abe34fa6186c4661a908b14d",
+            "connector": null,
+            "signature": null
+        },
+        {
+            "name": "user",
+            "key": "_9db64cdb3b3e4270b779372f",
+            "messageSort": "reply",
+            "sendEvent": "_c393d76e3bae4d179a27638c",
+            "receiveEvent": "_65806750d74745929c36e62f",
+            "connector": null,
+            "signature": null
+        },
+        {
+            "name": "addAssurance(type,orderId)",
+            "key": "_857cee438b6f4a9dab490c22",
+            "messageSort": "synchCall",
+            "sendEvent": "_98f58fb2a24b4ef692b1bf03",
+            "receiveEvent": "_c733424114e74ac58f5ba01a",
+            "connector": null,
+            "signature": null
+        },
+        {
+            "name": "assuranceResult",
+            "key": "_23a8d10d053e4fada1002470",
+            "messageSort": "reply",
+            "sendEvent": "_64b6609abcca4edfb58a76c1",
+            "receiveEvent": "_e5e376094fd1465e92c50f84",
+            "connector": null,
+            "signature": null
+        },
+        {
+            "name": "queryForStationId(name)",
+            "key": "_303529884fb14cf8813b76b9",
+            "messageSort": "synchCall",
+            "sendEvent": "_722f30d64ecd4bf1be8543cd",
+            "receiveEvent": "_12be46fd91504e96aacdbec5",
+            "connector": null,
+            "signature": null
+        },
+        {
+            "name": "stationId",
+            "key": "_a4d3ddb987dc4631a0beb56f",
+            "messageSort": "reply",
+            "sendEvent": "_d55c682f2bb547a3868b2913",
+            "receiveEvent": "_d3a9e841201348ae9569d352",
+            "connector": null,
+            "signature": null
+        },
+        {
+            "name": "createOrder(order)",
+            "key": "_bc2ba513854e4c038e61de84",
+            "messageSort": "synchCall",
+            "sendEvent": "_1cc399fcf4864b22b3b3375f",
+            "receiveEvent": "_90aa774103d04856aba43962",
+            "connector": null,
+            "signature": null
+        },
+        {
+            "name": "orderResult",
+            "key": "_b9981cd54e9245d6b8caa4fa",
+            "messageSort": "reply",
+            "sendEvent": "_f9e3c2decf0b4ff3b519fcf1",
+            "receiveEvent": "_8f2e84bbb517429e9bc5785e",
+            "connector": null,
+            "signature": null
+        },
+        {
+            "name": "createFoodOrder(foodOrder)",
+            "key": "_c774376203734ab5ad113a5b",
+            "messageSort": "synchCall",
+            "sendEvent": "_3033c2be75ad4a9db584f1f0",
+            "receiveEvent": "_4749e5ec1bf749a6b5f0ca53",
+            "connector": null,
+            "signature": null
+        },
+        {
+            "name": "foodResult",
+            "key": "_da98c169cc64446da678a98a",
+            "messageSort": "reply",
+            "sendEvent": "_5c1c6b7517c7451183df63f5",
+            "receiveEvent": "_de2f79b3283b425e94c49fd1",
+            "connector": null,
+            "signature": null
+        },
+        {
+            "name": "createConsign(consign)",
+            "key": "_250c9f7b9e354828a7810f7f",
+            "messageSort": "synchCall",
+            "sendEvent": "_6c365d87610e475d99556b6a",
+            "receiveEvent": "_e1627be361204e5f9d494b3e",
+            "connector": null,
+            "signature": null
+        },
+        {
+            "name": "consignResult",
+            "key": "_1f4d3b50379440618c1c8b73",
+            "messageSort": "reply",
+            "sendEvent": "_0ab5de2eb4d0405bb67bb58d",
+            "receiveEvent": "_46b90d704c424ade89d2b67c",
+            "connector": null,
+            "signature": null
+        },
+        {
+            "name": "preserveSuccess(notifyInfo)",
+            "key": "_55c03c0def8c41daa863538e",
+            "messageSort": "synchCall",
+            "sendEvent": "_a0b5192c1f9940db9c2397c8",
+            "receiveEvent": "_511133c9bd564e87a45c793d",
+            "connector": null,
+            "signature": null
+        },
+        {
+            "name": "emailSent",
+            "key": "_bec9cfd9cc234a38b91fb8cc",
+            "messageSort": "reply",
+            "sendEvent": "_db6bb7f23ac547e29644e3ed",
+            "receiveEvent": "_d93d49f75e8f4865a1f06bbd",
+            "connector": null,
+            "signature": null
+        },
+        {
+            "name": "bookingResult",
+            "key": "_93d167161b9f4f188861fc81",
+            "messageSort": "reply",
+            "sendEvent": "_8324936b7ef745fb86d48699",
+            "receiveEvent": "_0c09e81debf442cf9f1619fc",
+            "connector": null,
+            "signature": null
+        }
+    ],
+    "fragments": [
+        {
+            "key": "_2d8e44f85111497dbacbda0f",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_8c15a6a1e260454ea64aa870",
+            "enclosingInteraction": "ttf-seq-preserve-booking",
+            "message": "_00314632ec4e4dd9a25e2c6a",
+            "execution": null
+        },
+        {
+            "key": "_39cbc2092f1049098b7918c5",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_9c6a058892884433924806d2",
+            "enclosingInteraction": "ttf-seq-preserve-booking",
+            "message": "_00314632ec4e4dd9a25e2c6a",
+            "execution": null
+        },
+        {
+            "key": "_b480ae8e6bba4e13abb346af",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_9c6a058892884433924806d2",
+            "enclosingInteraction": "ttf-seq-preserve-booking",
+            "message": "_4b8e693b1cd045d781b35e6d",
+            "execution": null
+        },
+        {
+            "key": "_2c107225910748638d36e96d",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_2f262135d064445e8a396158",
+            "enclosingInteraction": "ttf-seq-preserve-booking",
+            "message": "_4b8e693b1cd045d781b35e6d",
+            "execution": null
+        },
+        {
+            "key": "_eb370b40aba542288a9db98e",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_2f262135d064445e8a396158",
+            "enclosingInteraction": "ttf-seq-preserve-booking",
+            "message": "_d271e6606ec341c9ab915f1d",
+            "execution": null
+        },
+        {
+            "key": "_4a916c0ed46249308992cd9b",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_12a537c2efad40f3ae33f9ce",
+            "enclosingInteraction": "ttf-seq-preserve-booking",
+            "message": "_d271e6606ec341c9ab915f1d",
+            "execution": null
+        },
+        {
+            "key": "_ba62c50daa794779898289b8",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_12a537c2efad40f3ae33f9ce",
+            "enclosingInteraction": "ttf-seq-preserve-booking",
+            "message": "_85a9e6367a4b4be7b310196f",
+            "execution": null
+        },
+        {
+            "key": "_8022fc825e4a493ba04d3849",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_2f262135d064445e8a396158",
+            "enclosingInteraction": "ttf-seq-preserve-booking",
+            "message": "_85a9e6367a4b4be7b310196f",
+            "execution": null
+        },
+        {
+            "key": "_945d7d2276db400fb17734cc",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_2f262135d064445e8a396158",
+            "enclosingInteraction": "ttf-seq-preserve-booking",
+            "message": "_944d40a2e82940f480cb33cd",
+            "execution": null
+        },
+        {
+            "key": "_5990b149e2fc4fedbe0b5068",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_9c6a058892884433924806d2",
+            "enclosingInteraction": "ttf-seq-preserve-booking",
+            "message": "_944d40a2e82940f480cb33cd",
+            "execution": null
+        },
+        {
+            "key": "_ab0387c0d03c435096e4864a",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_9c6a058892884433924806d2",
+            "enclosingInteraction": "ttf-seq-preserve-booking",
+            "message": "_0c66dac6f3144f53be36bf84",
+            "execution": null
+        },
+        {
+            "key": "_663c8e7aceab4c95a549e89f",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_fcc4a4bbbff24e06889df646",
+            "enclosingInteraction": "ttf-seq-preserve-booking",
+            "message": "_0c66dac6f3144f53be36bf84",
+            "execution": null
+        },
+        {
+            "key": "_757306bbdc794ffdbfd2b6cb",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_fcc4a4bbbff24e06889df646",
+            "enclosingInteraction": "ttf-seq-preserve-booking",
+            "message": "_51cda77373ff4aa4aab8bf2a",
+            "execution": null
+        },
+        {
+            "key": "_04ed4a354b834d6697da7281",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_9c6a058892884433924806d2",
+            "enclosingInteraction": "ttf-seq-preserve-booking",
+            "message": "_51cda77373ff4aa4aab8bf2a",
+            "execution": null
+        },
+        {
+            "key": "_19b6ee25407d411187107443",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_9c6a058892884433924806d2",
+            "enclosingInteraction": "ttf-seq-preserve-booking",
+            "message": "_6df59ae5faef4fca8b07607e",
+            "execution": null
+        },
+        {
+            "key": "_fa30b1a7d80f46adadc5df86",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_ef000f784c714ef296450b58",
+            "enclosingInteraction": "ttf-seq-preserve-booking",
+            "message": "_6df59ae5faef4fca8b07607e",
+            "execution": null
+        },
+        {
+            "key": "_b65420fc4b8e492da0ed6976",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_ef000f784c714ef296450b58",
+            "enclosingInteraction": "ttf-seq-preserve-booking",
+            "message": "_21d169bc452046ed8364c0a6",
+            "execution": null
+        },
+        {
+            "key": "_4ac1d415b3d64cc4855e6380",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_346c59d85724495b8598fddc",
+            "enclosingInteraction": "ttf-seq-preserve-booking",
+            "message": "_21d169bc452046ed8364c0a6",
+            "execution": null
+        },
+        {
+            "key": "_4b8a4743681642509795dfea",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_346c59d85724495b8598fddc",
+            "enclosingInteraction": "ttf-seq-preserve-booking",
+            "message": "_4fe25e2c5b3b45009cd31f71",
+            "execution": null
+        },
+        {
+            "key": "_971f1bff1c104313ad91fc55",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_b23da3d1ab1e4d3c93c429d3",
+            "enclosingInteraction": "ttf-seq-preserve-booking",
+            "message": "_4fe25e2c5b3b45009cd31f71",
+            "execution": null
+        },
+        {
+            "key": "_1e9d1473a0134f2eb1f49e63",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_b23da3d1ab1e4d3c93c429d3",
+            "enclosingInteraction": "ttf-seq-preserve-booking",
+            "message": "_f480de16831c4c17b5577a2f",
+            "execution": null
+        },
+        {
+            "key": "_02ec12e1580e4f279a98db97",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_346c59d85724495b8598fddc",
+            "enclosingInteraction": "ttf-seq-preserve-booking",
+            "message": "_f480de16831c4c17b5577a2f",
+            "execution": null
+        },
+        {
+            "key": "_51b5d1f503904a58bc4a665a",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_346c59d85724495b8598fddc",
+            "enclosingInteraction": "ttf-seq-preserve-booking",
+            "message": "_c3a22b26f44e4485880fd13d",
+            "execution": null
+        },
+        {
+            "key": "_b3f50be6266040ac9c6667b7",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_ef000f784c714ef296450b58",
+            "enclosingInteraction": "ttf-seq-preserve-booking",
+            "message": "_c3a22b26f44e4485880fd13d",
+            "execution": null
+        },
+        {
+            "key": "_49aad341c244435fa5172bc5",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_ef000f784c714ef296450b58",
+            "enclosingInteraction": "ttf-seq-preserve-booking",
+            "message": "_0376fb33ed6e4edbbf860f92",
+            "execution": null
+        },
+        {
+            "key": "_a89323455a4b4560806fc65d",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_9c6a058892884433924806d2",
+            "enclosingInteraction": "ttf-seq-preserve-booking",
+            "message": "_0376fb33ed6e4edbbf860f92",
+            "execution": null
+        },
+        {
+            "key": "_e84b059a68d3418dbbc929fa",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_9c6a058892884433924806d2",
+            "enclosingInteraction": "ttf-seq-preserve-booking",
+            "message": "_30103061332b4b4cb3f39157",
+            "execution": null
+        },
+        {
+            "key": "_464aaea4b1134389ac0d5fc8",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_3574679184dd428892a970ae",
+            "enclosingInteraction": "ttf-seq-preserve-booking",
+            "message": "_30103061332b4b4cb3f39157",
+            "execution": null
+        },
+        {
+            "key": "_fb28016a35eb4be4b06c9b01",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_3574679184dd428892a970ae",
+            "enclosingInteraction": "ttf-seq-preserve-booking",
+            "message": "_76b7d56ad64b47908faed5c7",
+            "execution": null
+        },
+        {
+            "key": "_ebca0e3203a8429881fec055",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_9c6a058892884433924806d2",
+            "enclosingInteraction": "ttf-seq-preserve-booking",
+            "message": "_76b7d56ad64b47908faed5c7",
+            "execution": null
+        },
+        {
+            "key": "_0f439691500c481e8a65d373",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_9c6a058892884433924806d2",
+            "enclosingInteraction": "ttf-seq-preserve-booking",
+            "message": "_ab41d0438cc843b0af0a3b34",
+            "execution": null
+        },
+        {
+            "key": "_0e558ef352b54cea954af9ae",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_146f79292b9f47e59e999eb7",
+            "enclosingInteraction": "ttf-seq-preserve-booking",
+            "message": "_ab41d0438cc843b0af0a3b34",
+            "execution": null
+        },
+        {
+            "key": "_9976a8646434490886b67e8c",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_146f79292b9f47e59e999eb7",
+            "enclosingInteraction": "ttf-seq-preserve-booking",
+            "message": "_b53b4963f5fa45058e31e4ea",
+            "execution": null
+        },
+        {
+            "key": "_0fb0878ad3b4427da150b8a8",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_12a537c2efad40f3ae33f9ce",
+            "enclosingInteraction": "ttf-seq-preserve-booking",
+            "message": "_b53b4963f5fa45058e31e4ea",
+            "execution": null
+        },
+        {
+            "key": "_bfecc6ff40e6458b81f29529",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_12a537c2efad40f3ae33f9ce",
+            "enclosingInteraction": "ttf-seq-preserve-booking",
+            "message": "_5167d97a9c6543509cdb2cfe",
+            "execution": null
+        },
+        {
+            "key": "_0ed465ebba9f45cf8d387ebd",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_146f79292b9f47e59e999eb7",
+            "enclosingInteraction": "ttf-seq-preserve-booking",
+            "message": "_5167d97a9c6543509cdb2cfe",
+            "execution": null
+        },
+        {
+            "key": "_3d24153722434e54a94d1865",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_146f79292b9f47e59e999eb7",
+            "enclosingInteraction": "ttf-seq-preserve-booking",
+            "message": "_7feea0e5093848cd85ab7ffe",
+            "execution": null
+        },
+        {
+            "key": "_ae2d404cd22243b7a2e30c2f",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_9c6a058892884433924806d2",
+            "enclosingInteraction": "ttf-seq-preserve-booking",
+            "message": "_7feea0e5093848cd85ab7ffe",
+            "execution": null
+        },
+        {
+            "key": "_98f2a685c9e5461c88b33c26",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_9c6a058892884433924806d2",
+            "enclosingInteraction": "ttf-seq-preserve-booking",
+            "message": "_343a8d1c3f5446a685118d9c",
+            "execution": null
+        },
+        {
+            "key": "_abe34fa6186c4661a908b14d",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_24576913bb8a401da80ebee6",
+            "enclosingInteraction": "ttf-seq-preserve-booking",
+            "message": "_343a8d1c3f5446a685118d9c",
+            "execution": null
+        },
+        {
+            "key": "_c393d76e3bae4d179a27638c",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_24576913bb8a401da80ebee6",
+            "enclosingInteraction": "ttf-seq-preserve-booking",
+            "message": "_9db64cdb3b3e4270b779372f",
+            "execution": null
+        },
+        {
+            "key": "_65806750d74745929c36e62f",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_9c6a058892884433924806d2",
+            "enclosingInteraction": "ttf-seq-preserve-booking",
+            "message": "_9db64cdb3b3e4270b779372f",
+            "execution": null
+        },
+        {
+            "key": "_98f58fb2a24b4ef692b1bf03",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_9c6a058892884433924806d2",
+            "enclosingInteraction": "ttf-seq-preserve-booking",
+            "message": "_857cee438b6f4a9dab490c22",
+            "execution": null
+        },
+        {
+            "key": "_c733424114e74ac58f5ba01a",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_7605e5d944714c4ba86d3403",
+            "enclosingInteraction": "ttf-seq-preserve-booking",
+            "message": "_857cee438b6f4a9dab490c22",
+            "execution": null
+        },
+        {
+            "key": "_64b6609abcca4edfb58a76c1",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_7605e5d944714c4ba86d3403",
+            "enclosingInteraction": "ttf-seq-preserve-booking",
+            "message": "_23a8d10d053e4fada1002470",
+            "execution": null
+        },
+        {
+            "key": "_e5e376094fd1465e92c50f84",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_9c6a058892884433924806d2",
+            "enclosingInteraction": "ttf-seq-preserve-booking",
+            "message": "_23a8d10d053e4fada1002470",
+            "execution": null
+        },
+        {
+            "key": "_722f30d64ecd4bf1be8543cd",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_9c6a058892884433924806d2",
+            "enclosingInteraction": "ttf-seq-preserve-booking",
+            "message": "_303529884fb14cf8813b76b9",
+            "execution": null
+        },
+        {
+            "key": "_12be46fd91504e96aacdbec5",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_b23da3d1ab1e4d3c93c429d3",
+            "enclosingInteraction": "ttf-seq-preserve-booking",
+            "message": "_303529884fb14cf8813b76b9",
+            "execution": null
+        },
+        {
+            "key": "_d55c682f2bb547a3868b2913",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_b23da3d1ab1e4d3c93c429d3",
+            "enclosingInteraction": "ttf-seq-preserve-booking",
+            "message": "_a4d3ddb987dc4631a0beb56f",
+            "execution": null
+        },
+        {
+            "key": "_d3a9e841201348ae9569d352",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_9c6a058892884433924806d2",
+            "enclosingInteraction": "ttf-seq-preserve-booking",
+            "message": "_a4d3ddb987dc4631a0beb56f",
+            "execution": null
+        },
+        {
+            "key": "_1cc399fcf4864b22b3b3375f",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_9c6a058892884433924806d2",
+            "enclosingInteraction": "ttf-seq-preserve-booking",
+            "message": "_bc2ba513854e4c038e61de84",
+            "execution": null
+        },
+        {
+            "key": "_90aa774103d04856aba43962",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_12a537c2efad40f3ae33f9ce",
+            "enclosingInteraction": "ttf-seq-preserve-booking",
+            "message": "_bc2ba513854e4c038e61de84",
+            "execution": null
+        },
+        {
+            "key": "_f9e3c2decf0b4ff3b519fcf1",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_12a537c2efad40f3ae33f9ce",
+            "enclosingInteraction": "ttf-seq-preserve-booking",
+            "message": "_b9981cd54e9245d6b8caa4fa",
+            "execution": null
+        },
+        {
+            "key": "_8f2e84bbb517429e9bc5785e",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_9c6a058892884433924806d2",
+            "enclosingInteraction": "ttf-seq-preserve-booking",
+            "message": "_b9981cd54e9245d6b8caa4fa",
+            "execution": null
+        },
+        {
+            "key": "_3033c2be75ad4a9db584f1f0",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_9c6a058892884433924806d2",
+            "enclosingInteraction": "ttf-seq-preserve-booking",
+            "message": "_c774376203734ab5ad113a5b",
+            "execution": null
+        },
+        {
+            "key": "_4749e5ec1bf749a6b5f0ca53",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_37ae0ffc7e1e404cae756eb1",
+            "enclosingInteraction": "ttf-seq-preserve-booking",
+            "message": "_c774376203734ab5ad113a5b",
+            "execution": null
+        },
+        {
+            "key": "_5c1c6b7517c7451183df63f5",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_37ae0ffc7e1e404cae756eb1",
+            "enclosingInteraction": "ttf-seq-preserve-booking",
+            "message": "_da98c169cc64446da678a98a",
+            "execution": null
+        },
+        {
+            "key": "_de2f79b3283b425e94c49fd1",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_9c6a058892884433924806d2",
+            "enclosingInteraction": "ttf-seq-preserve-booking",
+            "message": "_da98c169cc64446da678a98a",
+            "execution": null
+        },
+        {
+            "key": "_6c365d87610e475d99556b6a",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_9c6a058892884433924806d2",
+            "enclosingInteraction": "ttf-seq-preserve-booking",
+            "message": "_250c9f7b9e354828a7810f7f",
+            "execution": null
+        },
+        {
+            "key": "_e1627be361204e5f9d494b3e",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_5b95b255ce004f31aababba6",
+            "enclosingInteraction": "ttf-seq-preserve-booking",
+            "message": "_250c9f7b9e354828a7810f7f",
+            "execution": null
+        },
+        {
+            "key": "_0ab5de2eb4d0405bb67bb58d",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_5b95b255ce004f31aababba6",
+            "enclosingInteraction": "ttf-seq-preserve-booking",
+            "message": "_1f4d3b50379440618c1c8b73",
+            "execution": null
+        },
+        {
+            "key": "_46b90d704c424ade89d2b67c",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_9c6a058892884433924806d2",
+            "enclosingInteraction": "ttf-seq-preserve-booking",
+            "message": "_1f4d3b50379440618c1c8b73",
+            "execution": null
+        },
+        {
+            "key": "_a0b5192c1f9940db9c2397c8",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_9c6a058892884433924806d2",
+            "enclosingInteraction": "ttf-seq-preserve-booking",
+            "message": "_55c03c0def8c41daa863538e",
+            "execution": null
+        },
+        {
+            "key": "_511133c9bd564e87a45c793d",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_8e68650a2b984f9f8e649a61",
+            "enclosingInteraction": "ttf-seq-preserve-booking",
+            "message": "_55c03c0def8c41daa863538e",
+            "execution": null
+        },
+        {
+            "key": "_db6bb7f23ac547e29644e3ed",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_8e68650a2b984f9f8e649a61",
+            "enclosingInteraction": "ttf-seq-preserve-booking",
+            "message": "_bec9cfd9cc234a38b91fb8cc",
+            "execution": null
+        },
+        {
+            "key": "_d93d49f75e8f4865a1f06bbd",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_9c6a058892884433924806d2",
+            "enclosingInteraction": "ttf-seq-preserve-booking",
+            "message": "_bec9cfd9cc234a38b91fb8cc",
+            "execution": null
+        },
+        {
+            "key": "_8324936b7ef745fb86d48699",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_9c6a058892884433924806d2",
+            "enclosingInteraction": "ttf-seq-preserve-booking",
+            "message": "_93d167161b9f4f188861fc81",
+            "execution": null
+        },
+        {
+            "key": "_0c09e81debf442cf9f1619fc",
+            "type": "uml:MessageOccurrenceSpecification",
+            "name": null,
+            "covered": "_8c15a6a1e260454ea64aa870",
+            "enclosingInteraction": "ttf-seq-preserve-booking",
+            "message": "_93d167161b9f4f188861fc81",
+            "execution": null
+        }
+    ]
+}

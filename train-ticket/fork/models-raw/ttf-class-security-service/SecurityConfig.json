@@ -1,0 +1,47 @@
+{
+    "name": "SecurityConfig",
+    "key": "_fa03a9e9e82946d79d3e3439",
+    "type": "class",
+    "hasTypeVariable": false,
+    "position": null,
+    "modifiers": [],
+    "fields": {
+        "id": {
+            "name": "id",
+            "key": "_882c02c31e17405eae6872b9",
+            "type": "UUID",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "name": {
+            "name": "name",
+            "key": "_f732e4dbfebb4ef39f6a05a5",
+            "type": "String",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "value": {
+            "name": "value",
+            "key": "_acc83a1b85714169aed03c2d",
+            "type": "String",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "description": {
+            "name": "description",
+            "key": "_f7ee7c30596544239dfe4653",
+            "type": "String",
+            "visibility": "private",
+            "isStatic": false
+        }
+    },
+    "methods": {},
+    "file_path": "./SecurityConfig",
+    "anonymous": false,
+    "auxclass": false,
+    "implements_": [],
+    "extends_": [],
+    "definedInClassOrInterfaceTypeKey": null,
+    "innerDefinedClasses": {},
+    "innerDefinedInterfaces": {}
+}

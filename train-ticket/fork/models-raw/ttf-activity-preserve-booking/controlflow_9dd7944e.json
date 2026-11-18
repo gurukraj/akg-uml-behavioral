@@ -1,0 +1,8 @@
+{
+    "name": "GetTripDetail_to_DistributeSeat",
+    "key": "_f1a07619534e45b99dd7944e",
+    "type": "uml:ControlFlow",
+    "source": "_39da83bdd07342e8b2c0aaf4",
+    "target": "_0e42cea6025e4b869bfded59",
+    "guard": null
+}

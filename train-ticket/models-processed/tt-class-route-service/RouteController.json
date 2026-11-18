@@ -1,0 +1,81 @@
+{
+    "name": "RouteController",
+    "key": "_ca2d1293f35b4138acbc7ab2",
+    "type": "class",
+    "hasTypeVariable": false,
+    "position": null,
+    "modifiers": [],
+    "fields": {
+        "routeService": {
+            "name": "routeService",
+            "key": "_37b8e6d63a074f779cd010de",
+            "type": "RouteService",
+            "visibility": "private",
+            "isStatic": false
+        }
+    },
+    "methods": {
+        "createAndModifyRoute": {
+            "name": "createAndModifyRoute",
+            "key": "_52a781ef53eb4a249869a819",
+            "returnType": "ResponseEntity",
+            "parameters": "RouteInfo createAndModifyRouteInfo, HttpHeaders headers",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "deleteRoute": {
+            "name": "deleteRoute",
+            "key": "_222dffc99c374dd1a479bae1",
+            "returnType": "HttpEntity",
+            "parameters": "String routeId, HttpHeaders headers",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "queryById": {
+            "name": "queryById",
+            "key": "_4cf014f857b74b73a1cc0e29",
+            "returnType": "HttpEntity",
+            "parameters": "String routeId, HttpHeaders headers",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "queryByIds": {
+            "name": "queryByIds",
+            "key": "_81718a107008449bb6c4bcab",
+            "returnType": "HttpEntity",
+            "parameters": "List<String> routeIds, HttpHeaders headers",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "queryAll": {
+            "name": "queryAll",
+            "key": "_0870dcaed8bd4a76bd1b2f7f",
+            "returnType": "HttpEntity",
+            "parameters": "HttpHeaders headers",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "queryByStartAndTerminal": {
+            "name": "queryByStartAndTerminal",
+            "key": "_4d7477cea4cf4d0fb2f97d7c",
+            "returnType": "HttpEntity",
+            "parameters": "String start, String end, HttpHeaders headers",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        }
+    },
+    "file_path": "./RouteController",
+    "anonymous": false,
+    "auxclass": false,
+    "implements_": [],
+    "extends_": [],
+    "definedInClassOrInterfaceTypeKey": null,
+    "innerDefinedClasses": {},
+    "innerDefinedInterfaces": {}
+}

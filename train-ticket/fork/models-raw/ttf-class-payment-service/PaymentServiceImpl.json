@@ -1,0 +1,62 @@
+{
+    "name": "PaymentServiceImpl",
+    "key": "_269a0dffacc64c43b064ae48",
+    "type": "class",
+    "hasTypeVariable": false,
+    "position": null,
+    "modifiers": [],
+    "fields": {},
+    "methods": {
+        "pay": {
+            "name": "pay",
+            "key": "_992cd62451bc49248812827d",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "Payment",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "addMoney": {
+            "name": "addMoney",
+            "key": "_94218fad34114bce8d851a07",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "Payment",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "query": {
+            "name": "query",
+            "key": "_4c51374cba804d81abe2097c",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        }
+    },
+    "file_path": "./PaymentServiceImpl",
+    "anonymous": false,
+    "auxclass": false,
+    "implements_": [
+        "_f40e03874e0148a4a0ba4b58"
+    ],
+    "extends_": [],
+    "definedInClassOrInterfaceTypeKey": null,
+    "innerDefinedClasses": {},
+    "innerDefinedInterfaces": {}
+}

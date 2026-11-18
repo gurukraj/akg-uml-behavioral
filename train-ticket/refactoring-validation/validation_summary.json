@@ -1,0 +1,82 @@
+{
+ "static_code_analysis (entry: POST /api/v1/preserveservice/preserve)": {
+  "max_synchronous_call_depth": [
+   4,
+   4
+  ],
+  "chains_at_max_depth": [
+   7,
+   6
+  ],
+  "synchronous_calls_in_static_tree": [
+   29,
+   23
+  ],
+  "preserve_distinct_synchronous_targets": [
+   10,
+   7
+  ],
+  "preserve_asynchronous_publications": [
+   0,
+   1
+  ],
+  "deepest_chains_refactored": [
+   "Client -> ts-preserve-service -> ts-travel-service -> ts-basic-service -> ts-price-service",
+   "Client -> ts-preserve-service -> ts-travel-service -> ts-basic-service -> ts-route-service",
+   "Client -> ts-preserve-service -> ts-travel-service -> ts-basic-service -> ts-train-service",
+   "Client -> ts-preserve-service -> ts-travel-service -> ts-seat-service -> ts-config-service",
+   "Client -> ts-preserve-service -> ts-travel-service -> ts-seat-service -> ts-order-other-service",
+   "Client -> ts-preserve-service -> ts-travel-service -> ts-seat-service -> ts-order-service"
+  ]
+ },
+ "executed_service_code (mocked HTTP/AMQP, 50 ms per synchronous call)": {
+  "preserve_response": [
+   "Success.",
+   "Success."
+  ],
+  "preserve_synchronous_calls": [
+   10,
+   7
+  ],
+  "preserve_async_messages": [
+   [],
+   [
+    "exchange=order-events routingKey=''"
+   ]
+  ],
+  "preserve_blocking_time_ms": [
+   588,
+   456
+  ],
+  "basic_steady_state_calls": [
+   5,
+   3
+  ],
+  "basic_steady_state_calls_to_station_service": [
+   2,
+   0
+  ],
+  "basic_response_status": [
+   1,
+   1
+  ],
+  "station_event_updates": {
+   "create_visible": true,
+   "rename_removes_old_name": true,
+   "rename_adds_new_name": true,
+   "delete_removes_station": true
+  },
+  "async_consumers_invoked": {
+   "assurance.mq.OrderCreatedListener": [
+    "create [1, 5ad7750b-a68b-49c0-a8c0-32776b067703, headers(Bearer test-token)]"
+   ],
+   "foodsearch.mq.OrderCreatedListener": [
+    "createFoodOrder [FoodOrder(id=null, orderId=5ad7750b-a68b-49c0-a8c0-32776b067703, foodType=1, stationName=null, storeName=null, foodName=Bone Soup, price=2.5), headers(Bearer test-token)]"
+   ],
+   "consign.mq.OrderCreatedListener": [
+    "insertConsignRecord [Consign(id=null, orderId=5ad7750b-a68b-49c0-a8c0-32776b067703, accountId=4d2a46c7-71cb-4cf1-b5bb-b68406d9da6f, handleDate=null, targetDate=null, from=null, to=null, consignee=Alice, phone=123456, weight=5.0, isWithin=false), headers(Bearer test-token)]"
+   ]
+  }
+ },
+ "note": "Values are [original, refactored]."
+}

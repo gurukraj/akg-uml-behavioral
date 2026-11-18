@@ -1,0 +1,8 @@
+{
+    "name": "ForkNode_FoodQuery_to_QueryFoodStores",
+    "key": "_df10b5101da1468eb8d127ae",
+    "type": "uml:ControlFlow",
+    "source": "_3e3dd5581fc544909c56cd63",
+    "target": "_fddc3cfaab4343f29bb5a565",
+    "guard": null
+}

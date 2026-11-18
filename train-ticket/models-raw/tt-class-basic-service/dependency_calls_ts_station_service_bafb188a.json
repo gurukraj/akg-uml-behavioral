@@ -1,0 +1,8 @@
+{
+    "name": "calls_ts_station_service",
+    "key": "_412eac55883f401dbafb188a",
+    "type": "dependency",
+    "source": "tt-class-basic-service",
+    "target": "ts-station-service",
+    "endpoint": "GET /api/v1/stationservice/stations/id/{stationName}"
+}

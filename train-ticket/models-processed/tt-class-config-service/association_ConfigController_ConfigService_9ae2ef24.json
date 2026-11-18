@@ -1,0 +1,9 @@
+{
+    "name": "ConfigController_uses_ConfigService",
+    "key": "_33b84bf6ee7444a79ae2ef24",
+    "type": "association",
+    "source": "_f2369420624e413c979c28a9",
+    "target": "_312f8dc9543949e8993abd43",
+    "sourceMultiplicity": "1",
+    "targetMultiplicity": "1"
+}

@@ -1,0 +1,14 @@
+PREFIX akg: <https://w3id.org/akg/behavioral#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+SELECT ?componentName ?fanIn ?fanOut ?totalConnections
+WHERE {
+  ?component rdf:type akg:CollaborationObject ;
+             akg:componentName ?componentName ;
+             akg:fanIn ?fanIn ;
+             akg:fanOut ?fanOut .
+
+  BIND((?fanIn + ?fanOut) AS ?totalConnections)
+  FILTER(?totalConnections > 8)
+}
+ORDER BY DESC(?totalConnections)

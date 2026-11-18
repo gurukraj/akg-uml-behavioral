@@ -1,0 +1,7 @@
+{
+    "name": "FoodMapServiceImpl_uses_FoodStoreRepository",
+    "key": "_a149a1f312dd488e8c884123",
+    "type": "dependency",
+    "source": "_c974eb145e8a471e912799e3",
+    "target": "_958fca96d08c43a4a3e49891"
+}

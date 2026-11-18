@@ -1,0 +1,7 @@
+{
+    "name": "ts-cancel-service_depends_on_ts-notification-service",
+    "key": "_421c39ea9f104a7db0e4eccb",
+    "type": "dependency",
+    "source": "_e0638e12f1db44fa91f70547",
+    "target": "_1a201369e2bc45a4bc0774b4"
+}

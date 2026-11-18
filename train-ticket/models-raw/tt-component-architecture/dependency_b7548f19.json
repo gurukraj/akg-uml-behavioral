@@ -1,0 +1,7 @@
+{
+    "name": "ts-consign-service_depends_on_ts-consign-price-service",
+    "key": "_acf3c2eb38894f1bb7548f19",
+    "type": "dependency",
+    "source": "_db356428dae448acbef99258",
+    "target": "_d62bce78a57a42598c1f19b1"
+}

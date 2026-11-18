@@ -1,0 +1,99 @@
+{
+    "name": "CancelServiceImpl",
+    "key": "_c57ae22017fc4faebefdb67a",
+    "type": "class",
+    "hasTypeVariable": false,
+    "position": null,
+    "modifiers": [],
+    "fields": {
+        "restTemplate": {
+            "name": "restTemplate",
+            "key": "_5ef91ed1742144c89701e888",
+            "type": "RestTemplate",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "discoveryClient": {
+            "name": "discoveryClient",
+            "key": "_1eddaced47934567b082d0bc",
+            "type": "DiscoveryClient",
+            "visibility": "private",
+            "isStatic": false
+        }
+    },
+    "methods": {
+        "cancelOrder": {
+            "name": "cancelOrder",
+            "key": "_763398de64a34fcab554e203",
+            "returnType": "Response",
+            "parameters": "String orderId, String loginId, HttpHeaders headers",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "calculateRefund": {
+            "name": "calculateRefund",
+            "key": "_8053e83c137d44efb8da7901",
+            "returnType": "Response",
+            "parameters": "String orderId, HttpHeaders headers",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "sendEmail": {
+            "name": "sendEmail",
+            "key": "_7ea285ee82c048e1b01a907d",
+            "returnType": "boolean",
+            "parameters": "NotifyInfo notifyInfo, HttpHeaders headers",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "drawbackMoney": {
+            "name": "drawbackMoney",
+            "key": "_8d072744fa444dd38131d7b5",
+            "returnType": "boolean",
+            "parameters": "String money, String userId, HttpHeaders headers",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "getAccount": {
+            "name": "getAccount",
+            "key": "_735a01b7a5c244bea88566de",
+            "returnType": "Response",
+            "parameters": "String orderId, HttpHeaders headers",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "getOrderByIdFromOrder": {
+            "name": "getOrderByIdFromOrder",
+            "key": "_b55d47cf0de14b3aa332240d",
+            "returnType": "Response",
+            "parameters": "String orderId, HttpHeaders headers",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "getOrderByIdFromOrderOther": {
+            "name": "getOrderByIdFromOrderOther",
+            "key": "_08fc24c5241c4bacab108693",
+            "returnType": "Response",
+            "parameters": "String orderId, HttpHeaders headers",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        }
+    },
+    "file_path": "./CancelServiceImpl",
+    "anonymous": false,
+    "auxclass": false,
+    "implements_": [
+        "_4f37f28a51cd4281af8669c8"
+    ],
+    "extends_": [],
+    "definedInClassOrInterfaceTypeKey": null,
+    "innerDefinedClasses": {},
+    "innerDefinedInterfaces": {}
+}

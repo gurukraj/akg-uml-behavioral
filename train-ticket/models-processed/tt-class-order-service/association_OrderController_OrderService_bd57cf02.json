@@ -1,0 +1,9 @@
+{
+    "name": "OrderController_uses_OrderService",
+    "key": "_ff6b29127e2e4ff1bd57cf02",
+    "type": "association",
+    "source": "_9000ebc6ae2b421c96fd4da4",
+    "target": "_437fb849c1ec420b9ad26b70",
+    "sourceMultiplicity": "1",
+    "targetMultiplicity": "1"
+}

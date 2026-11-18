@@ -1,0 +1,40 @@
+{
+    "name": "Config",
+    "key": "_17399d8b2fc547f4bbc8254b",
+    "type": "class",
+    "hasTypeVariable": false,
+    "position": null,
+    "modifiers": [],
+    "fields": {
+        "name": {
+            "name": "name",
+            "key": "_f98a7d4a8e7c4bb790643f4b",
+            "type": "String",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "value": {
+            "name": "value",
+            "key": "_a663d4de0505464c9c0b9086",
+            "type": "String",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "description": {
+            "name": "description",
+            "key": "_3ef2ce41cae147e8ad2309c0",
+            "type": "String",
+            "visibility": "private",
+            "isStatic": false
+        }
+    },
+    "methods": {},
+    "file_path": "./Config",
+    "anonymous": false,
+    "auxclass": false,
+    "implements_": [],
+    "extends_": [],
+    "definedInClassOrInterfaceTypeKey": null,
+    "innerDefinedClasses": {},
+    "innerDefinedInterfaces": {}
+}

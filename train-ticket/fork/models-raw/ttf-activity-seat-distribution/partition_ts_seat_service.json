@@ -1,0 +1,10 @@
+{
+    "name": "ts-seat-service",
+    "key": "_916233908da44cdd9d07ec41",
+    "type": "uml:ActivityPartition",
+    "nodes": [
+        "_3d9dd7a8a7d64bbb967a2f21",
+        "_295d2eb5b375425f83a2d1bd",
+        "_e53919a13d34495b9927e96a"
+    ]
+}

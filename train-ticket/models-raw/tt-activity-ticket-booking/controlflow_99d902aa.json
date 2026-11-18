@@ -1,0 +1,8 @@
+{
+    "name": "SendNotification_to_FinalNode_Success",
+    "key": "_6a545eeecfa5498b99d902aa",
+    "type": "uml:ControlFlow",
+    "source": "_1604187ce850486288a72f96",
+    "target": "_b1552cf3ffee42529b5aa39c",
+    "guard": null
+}

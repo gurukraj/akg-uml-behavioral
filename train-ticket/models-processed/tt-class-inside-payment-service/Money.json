@@ -1,0 +1,47 @@
+{
+    "name": "Money",
+    "key": "_cb24d5144b7646dc962e42c2",
+    "type": "class",
+    "hasTypeVariable": false,
+    "position": null,
+    "modifiers": [],
+    "fields": {
+        "id": {
+            "name": "id",
+            "key": "_1feb4134c6f84f6d83896e2a",
+            "type": "String",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "userId": {
+            "name": "userId",
+            "key": "_ec72574c759a47078d12d621",
+            "type": "String",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "money": {
+            "name": "money",
+            "key": "_89bf27f9b31043c984b1b2b8",
+            "type": "String",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "type": {
+            "name": "type",
+            "key": "_6885090d26654d5e8912f9b6",
+            "type": "MoneyType",
+            "visibility": "private",
+            "isStatic": false
+        }
+    },
+    "methods": {},
+    "file_path": "./Money",
+    "anonymous": false,
+    "auxclass": false,
+    "implements_": [],
+    "extends_": [],
+    "definedInClassOrInterfaceTypeKey": null,
+    "innerDefinedClasses": {},
+    "innerDefinedInterfaces": {}
+}

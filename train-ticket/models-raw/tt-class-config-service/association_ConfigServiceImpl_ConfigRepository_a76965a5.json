@@ -1,0 +1,9 @@
+{
+    "name": "ConfigServiceImpl_uses_ConfigRepository",
+    "key": "_7e93382bd96f4e49a76965a5",
+    "type": "association",
+    "source": "_89f0f6b3d06d4bce8dbfb5d6",
+    "target": "_ce28b077873b4e399ab795f9",
+    "sourceMultiplicity": "1",
+    "targetMultiplicity": "1"
+}

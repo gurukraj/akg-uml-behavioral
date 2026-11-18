@@ -1,0 +1,30 @@
+{
+    "name": "PreserveBookingWorkflow",
+    "key": "_30100d9e94dc4d81a16aa327",
+    "type": "uml:Activity",
+    "description": "Ticket booking workflow (fork: via ts-ticketinfo-service intermediary)",
+    "nodes": [
+        "_1f7e77332cb24e9eb76a765a",
+        "_e2203a42bc3d4697b73121c0",
+        "_9a5fcff8f422445a83c60c3c",
+        "_db1f3a85aac74672bd8e084e",
+        "_375c46ed38fe48a7b4e60879",
+        "_c8dbcc0a7d1b4a77acab5e00",
+        "_2c197436259f4d939ab78337",
+        "_39da83bdd07342e8b2c0aaf4",
+        "_0e42cea6025e4b869bfded59",
+        "_25c464229f524c0b8e103d44",
+        "_6e74ca4652a54fbb93059771",
+        "_51071bb4709b46d3bcafff7d",
+        "_d4b66a0c4f6645e9b41a9b8d",
+        "_b63ff193ee6747f78b60780c",
+        "_4b67eac7b5de4cb98694a809",
+        "_58ef81b6c8ea4c129b023a5f",
+        "_e8eb24e8e5d04449adb12160",
+        "_8fa9717ec97844ab9ee506cd",
+        "_e26974d1cfc345dca8353c5a",
+        "_a91dbb680b144533b0d0faab",
+        "_6b62b8f75d894e7b91bf1f57"
+    ],
+    "edges": 23
+}

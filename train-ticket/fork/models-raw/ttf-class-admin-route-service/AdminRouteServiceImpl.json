@@ -1,0 +1,62 @@
+{
+    "name": "AdminRouteServiceImpl",
+    "key": "_befacdbc468a4783bad9b00b",
+    "type": "class",
+    "hasTypeVariable": false,
+    "position": null,
+    "modifiers": [],
+    "fields": {},
+    "methods": {
+        "getAllRoutes": {
+            "name": "getAllRoutes",
+            "key": "_d059c8d073c246cd9f4f5a51",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "createAndModifyRoute": {
+            "name": "createAndModifyRoute",
+            "key": "_49911e35c50f49a4b7d98efb",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "RouteInfo",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "deleteRoute": {
+            "name": "deleteRoute",
+            "key": "_4ef4f05aa9284333a6e1e2d6",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "String",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        }
+    },
+    "file_path": "./AdminRouteServiceImpl",
+    "anonymous": false,
+    "auxclass": false,
+    "implements_": [
+        "_f4bd96f2fa9e47f7bcda94a6"
+    ],
+    "extends_": [],
+    "definedInClassOrInterfaceTypeKey": null,
+    "innerDefinedClasses": {},
+    "innerDefinedInterfaces": {}
+}

@@ -1,0 +1,9 @@
+{
+    "name": "SeatController_uses_SeatService",
+    "key": "_8d34caf8b1f043e3b8cecbd8",
+    "type": "association",
+    "source": "_ea3976d37ff14232bc16a45f",
+    "target": "_d014cd5c28cd4888b81ce754",
+    "sourceMultiplicity": "1",
+    "targetMultiplicity": "1"
+}

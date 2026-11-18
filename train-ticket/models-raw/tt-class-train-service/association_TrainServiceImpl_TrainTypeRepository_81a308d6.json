@@ -1,0 +1,9 @@
+{
+    "name": "TrainServiceImpl_uses_TrainTypeRepository",
+    "key": "_82376a68ef0d432681a308d6",
+    "type": "association",
+    "source": "_35c42f5af06d408d8c3c695b",
+    "target": "_82d77a7790c54662b76df978",
+    "sourceMultiplicity": "1",
+    "targetMultiplicity": "1"
+}

@@ -1,0 +1,19 @@
+{
+    "classification": {
+        "categories": [
+            "Class"
+        ],
+        "primary": "Class",
+        "is_class_diagram": true,
+        "is_behavioral": false
+    },
+    "detectedTypes": {
+        "uml:Class": 2
+    },
+    "elementCounts": {
+        "classes": 2
+    },
+    "totalElements": 2,
+    "diagram_id": "ttf-class-voucher-service",
+    "source_file": "ttf-class-voucher-service.json"
+}

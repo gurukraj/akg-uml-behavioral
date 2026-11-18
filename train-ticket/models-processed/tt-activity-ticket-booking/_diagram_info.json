@@ -1,0 +1,31 @@
+{
+    "classification": {
+        "categories": [
+            "Activity"
+        ],
+        "primary": "Activity",
+        "is_class_diagram": false,
+        "is_behavioral": true
+    },
+    "detectedTypes": {
+        "uml:Activity": 1,
+        "uml:OpaqueAction": 11,
+        "uml:DecisionNode": 3,
+        "uml:ForkNode": 1,
+        "uml:JoinNode": 1,
+        "uml:ControlFlow": 22,
+        "uml:ActivityPartition": 8
+    },
+    "elementCounts": {
+        "activities": 1,
+        "actions": 11,
+        "decisionNodes": 3,
+        "forkNodes": 1,
+        "joinNodes": 1,
+        "controlFlows": 22,
+        "activityPartitions": 8
+    },
+    "totalElements": 47,
+    "diagram_id": "tt-activity-ticket-booking",
+    "source_file": "tt-activity-ticket-booking.json"
+}

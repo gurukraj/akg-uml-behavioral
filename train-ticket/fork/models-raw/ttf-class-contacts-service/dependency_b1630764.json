@@ -1,0 +1,7 @@
+{
+    "name": "ContactsServiceImpl_uses_ContactsRepository",
+    "key": "_655b3df47385481eb1630764",
+    "type": "dependency",
+    "source": "_4996bb88610b4d569012207f",
+    "target": "_42de664b1e8f4928ba70b173"
+}

@@ -1,0 +1,8 @@
+{
+    "name": "QueryTicketInfo_to_DelegateToBasicService",
+    "key": "_5db1497d3a2a4e5cbb95dfa4",
+    "type": "uml:ControlFlow",
+    "source": "_c8dbcc0a7d1b4a77acab5e00",
+    "target": "_2c197436259f4d939ab78337",
+    "guard": null
+}

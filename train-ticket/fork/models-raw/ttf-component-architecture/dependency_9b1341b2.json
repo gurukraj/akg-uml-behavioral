@@ -1,0 +1,7 @@
+{
+    "name": "ts-admin-order-service_depends_on_ts-order-other-service",
+    "key": "_2296bf5cf54543199b1341b2",
+    "type": "dependency",
+    "source": "_a985ba65ce5a4500b9101c67",
+    "target": "_17c2c8ee60d546919041d852"
+}

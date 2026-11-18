@@ -1,0 +1,8 @@
+{
+    "name": "SendCancelNotification_to_FinalNode_Success",
+    "key": "_9109e90f945443f98d0ef75f",
+    "type": "uml:ControlFlow",
+    "source": "_2f30ae54f94e4cb1b0bf32ed",
+    "target": "_154129496cfb46b9ac5c79f7",
+    "guard": null
+}

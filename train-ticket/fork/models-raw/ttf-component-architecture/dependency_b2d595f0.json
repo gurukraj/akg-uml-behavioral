@@ -1,0 +1,7 @@
+{
+    "name": "ts-rebook-service_depends_on_ts-seat-service",
+    "key": "_c400b1fbf5cd4932b2d595f0",
+    "type": "dependency",
+    "source": "_85cbb4093fd34fd7b9700070",
+    "target": "_e8244018e61a40798562a594"
+}

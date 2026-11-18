@@ -1,0 +1,9 @@
+{
+    "name": "Travel_uses_Trip",
+    "key": "_d41f4b84b3414910a68c1266",
+    "type": "association",
+    "source": "_60e2ffe9e70543f685dd9e2d",
+    "target": "_95e2c3b2efbc4cc4b78f1f73",
+    "sourceMultiplicity": "1",
+    "targetMultiplicity": "1"
+}

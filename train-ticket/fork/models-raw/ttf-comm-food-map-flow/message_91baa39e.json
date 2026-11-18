@@ -1,0 +1,8 @@
+{
+    "name": "1: getRouteByTripId()",
+    "key": "_b1a676449d1640a191baa39e",
+    "type": "uml:Message",
+    "sender": "_4436a2172772463e8b1949c9",
+    "receiver": "_967c18872fe746fda677832b",
+    "messageLabel": "1: getRouteByTripId()"
+}

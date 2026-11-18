@@ -1,0 +1,7 @@
+{
+    "name": "ts-preserve-other-service_depends_on_ts-seat-service",
+    "key": "_16ca9bf98b144f7c8a8208c7",
+    "type": "dependency",
+    "source": "_a3e74bff251744d2ac9fb8f0",
+    "target": "_e8244018e61a40798562a594"
+}

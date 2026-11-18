@@ -1,0 +1,64 @@
+{
+    "name": "OrderRepository",
+    "key": "_2152cac2504949b4959235c5",
+    "type": "interface",
+    "hasTypeVariable": false,
+    "position": null,
+    "modifiers": [],
+    "fields": {},
+    "methods": {
+        "findById": {
+            "name": "findById",
+            "key": "_7765bc6e5ef84d01aa387eda",
+            "returnType": "Optional<Order>",
+            "parameters": "String id",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": true
+        },
+        "findAll": {
+            "name": "findAll",
+            "key": "_386bdd003a1046a18302ad77",
+            "returnType": "ArrayList<Order>",
+            "parameters": "",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": true
+        },
+        "findByAccountId": {
+            "name": "findByAccountId",
+            "key": "_58add285f9b045a5af569cda",
+            "returnType": "ArrayList<Order>",
+            "parameters": "String accountId",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": true
+        },
+        "findByTravelDateAndTrainNumber": {
+            "name": "findByTravelDateAndTrainNumber",
+            "key": "_165a90370c024e9caf68e7cf",
+            "returnType": "ArrayList<Order>",
+            "parameters": "String travelDate, String trainNumber",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": true
+        },
+        "deleteById": {
+            "name": "deleteById",
+            "key": "_20dc406eddfa4af3b199e710",
+            "returnType": "void",
+            "parameters": "String id",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": true
+        }
+    },
+    "file_path": "./OrderRepository",
+    "anonymous": false,
+    "auxclass": false,
+    "implements_": [],
+    "extends_": [],
+    "definedInClassOrInterfaceTypeKey": null,
+    "innerDefinedClasses": {},
+    "innerDefinedInterfaces": {}
+}

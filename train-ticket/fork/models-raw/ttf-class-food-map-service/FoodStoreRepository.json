@@ -1,0 +1,41 @@
+{
+    "name": "FoodStoreRepository",
+    "key": "_958fca96d08c43a4a3e49891",
+    "type": "interface",
+    "hasTypeVariable": false,
+    "position": null,
+    "modifiers": [],
+    "fields": {},
+    "methods": {
+        "findByStationId": {
+            "name": "findByStationId",
+            "key": "_0fde8aedda3145d6a1553915",
+            "returnType": "List<FoodStore>",
+            "parameters": [
+                [
+                    "String"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": true
+        },
+        "findAll": {
+            "name": "findAll",
+            "key": "_bdc4658a843340cf8d0c5436",
+            "returnType": "List<FoodStore>",
+            "parameters": [],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": true
+        }
+    },
+    "file_path": "./FoodStoreRepository",
+    "anonymous": false,
+    "auxclass": false,
+    "implements_": [],
+    "extends_": [],
+    "definedInClassOrInterfaceTypeKey": null,
+    "innerDefinedClasses": {},
+    "innerDefinedInterfaces": {}
+}

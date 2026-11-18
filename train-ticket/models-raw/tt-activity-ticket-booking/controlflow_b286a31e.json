@@ -1,0 +1,8 @@
+{
+    "name": "GetContactInfo_to_ForkNode_OptionalServices",
+    "key": "_09146912271540b2b286a31e",
+    "type": "uml:ControlFlow",
+    "source": "_c7c93f6e820d407ca69174b2",
+    "target": "_10d6214267914765b2338906",
+    "guard": null
+}

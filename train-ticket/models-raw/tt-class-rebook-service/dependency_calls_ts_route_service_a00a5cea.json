@@ -1,0 +1,8 @@
+{
+    "name": "calls_ts_route_service",
+    "key": "_14e6ecbccb5f4caaa00a5cea",
+    "type": "dependency",
+    "source": "tt-class-rebook-service",
+    "target": "ts-route-service",
+    "endpoint": "GET /api/v1/routeservice/routes/{routeId}"
+}

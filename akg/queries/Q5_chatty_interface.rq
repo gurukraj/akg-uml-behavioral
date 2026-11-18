@@ -1,0 +1,17 @@
+PREFIX akg: <https://w3id.org/akg/behavioral#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+SELECT ?componentA ?componentB (COUNT(?msg) AS ?messageCount)
+WHERE {
+  ?msg rdf:type akg:Message ;
+       akg:involves ?lifelineA ;
+       akg:involves ?lifelineB .
+
+  ?lifelineA akg:componentName ?componentA .
+  ?lifelineB akg:componentName ?componentB .
+
+  FILTER(STR(?componentA) < STR(?componentB))
+}
+GROUP BY ?componentA ?componentB
+HAVING (COUNT(?msg) > 6)
+ORDER BY DESC(?messageCount)

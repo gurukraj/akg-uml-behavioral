@@ -1,0 +1,76 @@
+{
+    "name": "StationServiceImpl",
+    "key": "_dc91dc8369734e908a30ab2d",
+    "type": "class",
+    "hasTypeVariable": false,
+    "position": null,
+    "modifiers": [],
+    "fields": {},
+    "methods": {
+        "create": {
+            "name": "create",
+            "key": "_4d2992091f1b4d9e99452023",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "Station",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "update": {
+            "name": "update",
+            "key": "_bfef4a51c3a747feb9b03dc9",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "Station",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "delete": {
+            "name": "delete",
+            "key": "_fe5cfa3b0bc742d5bdba8ab8",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "String",
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "query": {
+            "name": "query",
+            "key": "_4a6c148397584c4fb68fba38",
+            "returnType": "Response",
+            "parameters": [
+                [
+                    "HttpHeaders"
+                ]
+            ],
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        }
+    },
+    "file_path": "./StationServiceImpl",
+    "anonymous": false,
+    "auxclass": false,
+    "implements_": [
+        "_6e944e5ea6d04b6295261623"
+    ],
+    "extends_": [],
+    "definedInClassOrInterfaceTypeKey": null,
+    "innerDefinedClasses": {},
+    "innerDefinedInterfaces": {}
+}

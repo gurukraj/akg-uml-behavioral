@@ -1,0 +1,54 @@
+{
+    "name": "UserController",
+    "key": "_df2afd44b26049daa7ac25ca",
+    "type": "class",
+    "hasTypeVariable": false,
+    "position": null,
+    "modifiers": [],
+    "fields": {
+        "tokenService": {
+            "name": "tokenService",
+            "key": "_a652c9d9d96a45298768078e",
+            "type": "TokenService",
+            "visibility": "private",
+            "isStatic": false
+        }
+    },
+    "methods": {
+        "getToken": {
+            "name": "getToken",
+            "key": "_bc59a52991db4852bd51b483",
+            "returnType": "ResponseEntity",
+            "parameters": "BasicAuthDto dao, HttpHeaders headers",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "getAllUser": {
+            "name": "getAllUser",
+            "key": "_35cd98c8cddf449eb85f53ba",
+            "returnType": "ResponseEntity",
+            "parameters": "HttpHeaders headers",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        },
+        "deleteUserById": {
+            "name": "deleteUserById",
+            "key": "_987d5390237f4611a9637d4d",
+            "returnType": "ResponseEntity",
+            "parameters": "String userId, HttpHeaders headers",
+            "visibility": "public",
+            "isStatic": false,
+            "isAbstract": false
+        }
+    },
+    "file_path": "./UserController",
+    "anonymous": false,
+    "auxclass": false,
+    "implements_": [],
+    "extends_": [],
+    "definedInClassOrInterfaceTypeKey": null,
+    "innerDefinedClasses": {},
+    "innerDefinedInterfaces": {}
+}

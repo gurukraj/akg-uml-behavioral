@@ -1,0 +1,22 @@
+{
+    "classification": {
+        "categories": [
+            "Sequence"
+        ],
+        "primary": "Sequence",
+        "is_class_diagram": false,
+        "is_behavioral": true
+    },
+    "detectedTypes": {
+        "uml:Class": 10,
+        "uml:Interaction": 1,
+        "uml:MessageOccurrenceSpecification": 36
+    },
+    "elementCounts": {
+        "classes": 10,
+        "interactions": 1
+    },
+    "totalElements": 11,
+    "diagram_id": "ttf-seq-query-tickets",
+    "source_file": "ttf-seq-query-tickets.json"
+}

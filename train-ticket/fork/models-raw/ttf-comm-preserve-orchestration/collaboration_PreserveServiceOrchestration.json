@@ -1,0 +1,23 @@
+{
+    "name": "PreserveServiceOrchestration",
+    "key": "_5a021edde2764d4a9486da88",
+    "type": "uml:Collaboration",
+    "description": "Communication topology showing ts-preserve-service as hub (fork: via ticketinfo)",
+    "objects": [
+        "_246fcd24625945719de37e53",
+        "_2ce6e88695bd44f08c1e22ee",
+        "_cc65824cf90e47c5832f2285",
+        "_423a30a12a614babb27d8054",
+        "_858d860b5ecd495ca05240e6",
+        "_79a4a64bc06747aeb60256f9",
+        "_9f120ab1369a45688d7231e6",
+        "_be8afea4cf1f49b79aca7592",
+        "_52d665af9685404294c6fdfd",
+        "_a41fa950eadb492c808ffcab",
+        "_6939b045bd5547ec98312e62",
+        "_a03c15de044a4ec6b4195288",
+        "_7d5a1a80d17b4be4a7f47c82",
+        "_fb72def103c2414fb05ab6b7"
+    ],
+    "links": 14
+}

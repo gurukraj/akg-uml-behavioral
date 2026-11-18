@@ -1,0 +1,8 @@
+{
+    "name": "PayDifference_to_DistributeSeat",
+    "key": "_2bc26250ed8740b69a9ee0f5",
+    "type": "uml:ControlFlow",
+    "source": "_788ed9e4b8be4330bb29d39e",
+    "target": "_4ded5cbaa284402788f8eb99",
+    "guard": null
+}

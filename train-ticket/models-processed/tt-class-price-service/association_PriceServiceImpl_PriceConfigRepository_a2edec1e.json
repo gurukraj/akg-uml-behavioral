@@ -1,0 +1,9 @@
+{
+    "name": "PriceServiceImpl_uses_PriceConfigRepository",
+    "key": "_a1f5f4f55330459aa2edec1e",
+    "type": "association",
+    "source": "_fc12f63a94b94c14aec984f0",
+    "target": "_07d85d7ff4f34ee89e1d0588",
+    "sourceMultiplicity": "1",
+    "targetMultiplicity": "1"
+}

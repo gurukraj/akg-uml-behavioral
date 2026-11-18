@@ -1,0 +1,27 @@
+PREFIX akg: <https://w3id.org/akg/behavioral#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+SELECT ?partition ?actionsInPartition ?totalActions ?percentage
+WHERE {
+  {
+    SELECT (COUNT(?allActions) AS ?totalActions)
+    WHERE {
+      ?allActions rdf:type akg:Action .
+    }
+  }
+
+  {
+    SELECT ?partition (COUNT(?action) AS ?actionsInPartition)
+    WHERE {
+      ?action rdf:type akg:Action ;
+              akg:belongsToPartition ?part .
+
+      ?part akg:componentName ?partition .
+    }
+    GROUP BY ?partition
+  }
+
+  BIND((?actionsInPartition * 100 / ?totalActions) AS ?percentage)
+  FILTER(?percentage > 40)
+}
+ORDER BY DESC(?percentage)

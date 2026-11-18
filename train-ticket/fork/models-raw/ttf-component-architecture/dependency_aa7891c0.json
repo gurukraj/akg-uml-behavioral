@@ -1,0 +1,7 @@
+{
+    "name": "ts-travel-plan-service_depends_on_ts-station-service",
+    "key": "_36f27b3d25424efeaa7891c0",
+    "type": "dependency",
+    "source": "_4840cf5864564aa4a94a048b",
+    "target": "_d3816f92dda243b3a7782cc5"
+}

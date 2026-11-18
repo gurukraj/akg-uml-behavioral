@@ -1,0 +1,8 @@
+{
+    "name": "DecisionNode_OrderFound_to_CheckOrderStatus",
+    "key": "_e3a08b7894484daf9674e2eb",
+    "type": "uml:ControlFlow",
+    "source": "_d36acb9837374ba48977371e",
+    "target": "_d0a0bcc510dc469a921847ab",
+    "guard": "found"
+}

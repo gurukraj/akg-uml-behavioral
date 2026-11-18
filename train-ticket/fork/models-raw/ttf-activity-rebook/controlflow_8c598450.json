@@ -1,0 +1,8 @@
+{
+    "name": "DecisionNode_PriceCompare_to_PayDifference",
+    "key": "_22f861d6f3cc446a8c598450",
+    "type": "uml:ControlFlow",
+    "source": "_ac1ce763fa2f43b1b6ff7349",
+    "target": "_788ed9e4b8be4330bb29d39e",
+    "guard": "new price higher"
+}

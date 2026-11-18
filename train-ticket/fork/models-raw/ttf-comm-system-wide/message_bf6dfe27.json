@@ -1,0 +1,8 @@
+{
+    "name": "getAllContacts()",
+    "key": "_d93db96df8b343e5bf6dfe27",
+    "type": "uml:Message",
+    "sender": "_7d9f649242164485a816cbcf",
+    "receiver": "_e97fa22a04e14b25b2263022",
+    "messageLabel": "getAllContacts()"
+}

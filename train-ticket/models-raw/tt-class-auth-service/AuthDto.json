@@ -1,0 +1,40 @@
+{
+    "name": "AuthDto",
+    "key": "_187173edb34b46e48d7f519c",
+    "type": "class",
+    "hasTypeVariable": false,
+    "position": null,
+    "modifiers": [],
+    "fields": {
+        "userId": {
+            "name": "userId",
+            "key": "_6d8b0a8f58744a9ba83e69e8",
+            "type": "String",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "userName": {
+            "name": "userName",
+            "key": "_cff446a382ce449d910b8dd0",
+            "type": "String",
+            "visibility": "private",
+            "isStatic": false
+        },
+        "password": {
+            "name": "password",
+            "key": "_ff8b3308d0424eb3849219eb",
+            "type": "String",
+            "visibility": "private",
+            "isStatic": false
+        }
+    },
+    "methods": {},
+    "file_path": "./AuthDto",
+    "anonymous": false,
+    "auxclass": false,
+    "implements_": [],
+    "extends_": [],
+    "definedInClassOrInterfaceTypeKey": null,
+    "innerDefinedClasses": {},
+    "innerDefinedInterfaces": {}
+}

@@ -1,0 +1,8 @@
+{
+    "name": "findByRouteIdAndTrainType()",
+    "key": "_254c09d7b0a847fda4909fef",
+    "type": "uml:Message",
+    "sender": "_06028be2c6e44522a519fb83",
+    "receiver": "_97e8d16cb0e2429aa84f2b48",
+    "messageLabel": "findByRouteIdAndTrainType()"
+}

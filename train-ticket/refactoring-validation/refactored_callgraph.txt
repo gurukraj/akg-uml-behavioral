@@ -1,0 +1,74 @@
+[d1] ts-preserve-service POST /api/v1/preserveservice/preserve (async sends: 1)
+  [d2] ts-security-service GET /api/v1/securityservice/securityConfigs/
+    [d3] ts-order-service GET /api/v1/orderservice/order/security/
+    [d3] ts-order-other-service GET /api/v1/orderOtherService/orderOther/security/
+  [d2] ts-contacts-service GET /api/v1/contactservice/contacts/
+  [d2] ts-travel-service POST /api/v1/travelservice/trip_detail
+    [d3] ts-basic-service POST /api/v1/basicservice/basic/travel
+      [d4] ts-train-service GET /api/v1/trainservice/trains/byName/
+      [d4] ts-route-service GET /api/v1/routeservice/routes/
+      [d4] ts-price-service GET /api/v1/priceservice/prices/
+    [d3] ts-seat-service POST /api/v1/seatservice/seats/left_tickets
+      [d4] ts-order-service POST /api/v1/orderservice/order/tickets
+      [d4] ts-order-other-service POST /api/v1/orderOtherService/orderOther/tickets
+      [d4] ts-config-service GET /api/v1/configservice/configs/
+  [d2] ts-basic-service POST /api/v1/basicservice/basic/travel
+    [d3] ts-train-service GET /api/v1/trainservice/trains/byName/
+    [d3] ts-route-service GET /api/v1/routeservice/routes/
+    [d3] ts-price-service GET /api/v1/priceservice/prices/
+  [d2] ts-seat-service POST /api/v1/seatservice/seats
+    [d3] ts-order-service POST /api/v1/orderservice/order/tickets
+    [d3] ts-order-other-service POST /api/v1/orderOtherService/orderOther/tickets
+  [d2] ts-order-service POST /api/v1/orderservice/order
+  [d2] ts-user-service GET /api/v1/userservice/users/id/
+
+{
+ "max_depth": 4,
+ "sync_calls_total": 23,
+ "deepest_chains": [
+  "Client -> ts-preserve-service -> ts-travel-service -> ts-basic-service -> ts-price-service",
+  "Client -> ts-preserve-service -> ts-travel-service -> ts-basic-service -> ts-route-service",
+  "Client -> ts-preserve-service -> ts-travel-service -> ts-basic-service -> ts-train-service",
+  "Client -> ts-preserve-service -> ts-travel-service -> ts-seat-service -> ts-config-service",
+  "Client -> ts-preserve-service -> ts-travel-service -> ts-seat-service -> ts-order-other-service",
+  "Client -> ts-preserve-service -> ts-travel-service -> ts-seat-service -> ts-order-service"
+ ],
+ "fan_out_distinct": {
+  "ts-basic-service": 3,
+  "ts-preserve-service": 7,
+  "ts-seat-service": 3,
+  "ts-security-service": 2,
+  "ts-travel-service": 2
+ },
+ "fan_out_targets": {
+  "ts-basic-service": [
+   "ts-price-service",
+   "ts-route-service",
+   "ts-train-service"
+  ],
+  "ts-preserve-service": [
+   "ts-basic-service",
+   "ts-contacts-service",
+   "ts-order-service",
+   "ts-seat-service",
+   "ts-security-service",
+   "ts-travel-service",
+   "ts-user-service"
+  ],
+  "ts-seat-service": [
+   "ts-config-service",
+   "ts-order-other-service",
+   "ts-order-service"
+  ],
+  "ts-security-service": [
+   "ts-order-other-service",
+   "ts-order-service"
+  ],
+  "ts-travel-service": [
+   "ts-basic-service",
+   "ts-seat-service"
+  ]
+ },
+ "async_sends": 1,
+ "unresolved_endpoints": []
+}

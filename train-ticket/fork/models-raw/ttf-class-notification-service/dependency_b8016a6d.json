@@ -1,0 +1,7 @@
+{
+    "name": "NotificationController_uses_NotificationServiceImpl",
+    "key": "_b72df3466d4543feb8016a6d",
+    "type": "dependency",
+    "source": "_c93b29c1968548f993054745",
+    "target": "_c64b486f98a647abbe639612"
+}

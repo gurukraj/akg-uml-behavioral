@@ -1,0 +1,8 @@
+{
+    "name": "QueryFoodStores_to_JoinNode_FoodResult",
+    "key": "_d46fd59251114bb09b9c27f3",
+    "type": "uml:ControlFlow",
+    "source": "_fddc3cfaab4343f29bb5a565",
+    "target": "_2ffa007f58064dc5bf930698",
+    "guard": null
+}
