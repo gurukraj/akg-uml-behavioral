@@ -15,7 +15,7 @@ It contains the AKG ontology, the extraction, sampling, reference-label, and det
 | `ontology/akg-behavioral.ttl` | AKG ontology (RDFS, Turtle), namespace `https://w3id.org/akg/behavioral#`, CC BY 4.0 | Table 4 |
 | `extraction/4_extract_all_uml_information.py` | Extraction of all UML element types from the GenMyModel XMI files into per-diagram JSON files | Sections 3.3, 6.1 |
 | `extraction/classify_uml_enhanced_v3.py` | Heuristic classification of the diagram type (scores per type) | Section 6.1 |
-| `evaluation/validate_behavioral_diagrams.py` | Sampling (seed 42), validation checks, semantic extraction, detection rules, reference labels (`GroundTruthEstablisher`), metrics | Sections 6.2–6.5, Tables 8–13 |
+| `evaluation/validate_behavioral_diagrams.py` | Sampling (seed 42), Script used for validation checks (heuristic analysis), semantic extraction, detection rules, reference labels (`GroundTruthEstablisher`), metrics | Sections 6.2–6.5, Tables 8–13 |
 | `evaluation/validate_behavioral_diagrams_original.py` | The script as run for the first submission (see "Determinism" below) | – |
 | `evaluation/behavioral_index_39220.json.gz` | Index of the 39,220 behavioral diagrams (7,391 primary-classified, 31,829 score-signal-classified): identifiers, file names, classification scores | Section 6.1 |
 | `evaluation/intervals_and_groups.py` | Wilson 95% intervals and results per classification group | Tables 12–13, Section 6.2 |
